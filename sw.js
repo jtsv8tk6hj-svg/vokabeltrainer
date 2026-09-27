@@ -1,4 +1,4 @@
-const CACHE='vokabeltrainer-v7';
+const CACHE='vokabeltrainer-v8';
 const FILES=['./','./index.html','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()));
