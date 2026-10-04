@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0e1013">
+<title>Vokabeltrainer</title>
+<style>
+  :root{
+    --bg:#0e1013; --card:#181b21; --raise:#20242b; --line:#2b3038;
+    --ink:#eceef1; --dim:#a2aab4; --faint:#727b86;
+    --de:#7aa7ff; --en:#f2836f; --fr:#5ecfa4; --pl:#e8b45c; --ru:#bb96ee;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --safe-b:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  [hidden]{display:none !important}
+  html,body{margin:0; padding:0}
+  body{background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:15px; line-height:1.5;
+       -webkit-text-size-adjust:100%}
+  body.drilling{overflow:hidden; position:fixed; width:100%}
+  button{font-family:inherit; cursor:pointer; color:var(--ink)}
+  input,select,textarea{font-family:inherit; color:var(--ink); background:var(--raise);
+    border:1px solid var(--line); border-radius:9px; padding:11px 12px; font-size:16px; max-width:100%}
+  input::placeholder,textarea::placeholder{color:var(--faint)}
+  :focus-visible{outline:2px solid var(--de); outline-offset:2px}
+  .wrap{max-width:820px; margin:0 auto; padding:0 16px calc(48px + var(--safe-b))}
+
+  header{position:sticky; top:0; background:var(--bg); z-index:10; border-bottom:1px solid var(--line);
+         padding-top:env(safe-area-inset-top,0px)}
+  .hrow{max-width:820px; margin:0 auto; padding:14px 16px 0; display:flex; align-items:baseline;
+        justify-content:space-between; gap:12px; flex-wrap:wrap}
+  h1{font-family:var(--serif); font-size:22px; font-weight:600; margin:0}
+  .stat{font-size:12.5px; color:var(--dim)}
+  .stat.warn{color:var(--en)}
+  nav{max-width:820px; margin:0 auto; padding:8px 16px 0; display:flex; gap:2px}
+  nav button{border:0; background:none; padding:10px 13px; font-size:14.5px; color:var(--faint);
+             border-bottom:2px solid transparent; margin-bottom:-1px}
+  nav button.on{color:var(--ink); border-bottom-color:var(--ink); font-weight:600}
+
+  .view{display:none; padding-top:18px}
+  .view.on{display:block}
+  .panel{background:var(--card); border:1px solid var(--line); border-radius:13px; padding:16px; margin-bottom:14px}
+  .panel h2{font-size:15px; margin:0 0 8px; font-weight:600}
+  .lead{font-size:13.5px; color:var(--dim); margin:0 0 12px}
+  .hint{font-size:12.5px; color:var(--faint); line-height:1.55}
+  .btn{background:var(--raise); border:1px solid var(--line); border-radius:10px; padding:12px 16px; font-size:15px}
+  .btn.main{background:var(--ink); color:#0e1013; border-color:var(--ink); font-weight:600}
+  .btn[disabled]{opacity:.4}
+  .wide{display:block; width:100%; margin-top:9px}
+  .flex{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+  .chips{display:flex; gap:7px; flex-wrap:wrap}
+  .chipbtn{background:none; border:1px solid var(--line); color:var(--dim); border-radius:20px;
+           padding:8px 14px; font-size:12.5px; font-weight:600}
+  .chipbtn.on{background:var(--ink); color:#0e1013; border-color:var(--ink)}
+  .tag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.07em; padding:4px 8px;
+       border-radius:5px; color:#0e1013; line-height:1}
+  .t-de{background:var(--de)} .t-en{background:var(--en)} .t-fr{background:var(--fr)}
+  .t-pl{background:var(--pl)} .t-ru{background:var(--ru)}
+
+  .counts{display:flex; gap:10px; margin-bottom:14px}
+  .cbox{flex:1; background:var(--card); border:1px solid var(--line); border-radius:13px; padding:16px 6px; text-align:center}
+  .cbox b{display:block; font-family:var(--serif); font-size:30px; font-weight:600; line-height:1}
+  .cbox span{display:block; font-size:11.5px; color:var(--faint); margin-top:6px}
+
+  /* Lernfenster: feste Höhe, nichts scrollt weg */
+  #drill{position:fixed; inset:0; z-index:100; background:var(--bg); display:none; flex-direction:column}
+  #drill.on{display:flex}
+  .dtop{flex:0 0 auto; padding:calc(10px + env(safe-area-inset-top,0px)) 16px 8px}
+  .dbar{height:3px; background:var(--line); border-radius:2px; overflow:hidden; margin-bottom:9px}
+  .dbar i{display:block; height:100%; background:var(--fr); width:0; transition:width .2s}
+  .dmeta{display:flex; justify-content:space-between; align-items:center; font-size:12px; color:var(--faint)}
+  .dmeta button{border:1px solid var(--line); background:none; color:var(--dim); border-radius:8px;
+                padding:5px 11px; font-size:12px}
+  .dmid{flex:1 1 auto; overflow-y:auto; -webkit-overflow-scrolling:touch;
+        display:flex; flex-direction:column; justify-content:center; padding:6px 18px; text-align:center;
+        max-width:640px; width:100%; margin:0 auto}
+  .qword{font-family:var(--serif); font-size:clamp(26px,7.4vw,38px); margin:10px 0 0; line-height:1.18}
+  .translit{font-size:14px; color:var(--faint); font-style:italic; margin:8px 0 0}
+  .sent{font-size:13.5px; color:var(--faint); font-style:italic; margin:14px auto 0; max-width:40ch; line-height:1.55}
+  .sent b{color:var(--ink); font-weight:600; font-style:normal}
+  .gap{color:var(--dim); letter-spacing:.06em}
+  .say{border:1px solid var(--line); background:none; color:var(--dim); border-radius:50%;
+       width:30px; height:30px; font-size:12px; line-height:1; vertical-align:middle; margin-left:9px; padding:0}
+  .rev .qword{font-size:clamp(17px,4.4vw,20px); color:var(--dim); margin:6px 0 0}
+  .rev .qzone .sent, .rev .qzone .translit, .rev .qzone .say{display:none}
+  .azone{margin-top:20px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--fr);
+         border-radius:14px; padding:18px 16px; text-align:left}
+  .aline{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:6px}
+  .aword{font-family:var(--serif); font-size:clamp(22px,6vw,28px); line-height:1.2}
+  .asent{font-size:13.5px; color:var(--dim); font-style:italic; margin:12px 0 0; line-height:1.55}
+  .asent b{color:var(--ink); font-weight:600; font-style:normal}
+  .asent.src{color:var(--faint); padding-top:10px; border-top:1px solid var(--line)}
+  .more{margin-top:14px; padding-top:12px; border-top:1px solid var(--line);
+        display:flex; flex-direction:column; gap:7px}
+  .mline{display:flex; gap:9px; align-items:baseline; font-size:13.5px; color:var(--dim)}
+  .mline .mw{font-family:var(--serif)}
+  .mline .mlat{color:var(--faint); font-size:12px; font-style:italic}
+  .tag.mini{font-size:9.5px; min-width:25px; padding:3px 5px; letter-spacing:.05em}
+  .acat{font-size:11px; color:var(--faint); letter-spacing:.06em; text-transform:uppercase; margin-top:12px}
+  .typed{width:100%; margin-top:16px; font-family:var(--serif); font-size:18px; text-align:center}
+  .verdict{font-size:13px; font-weight:600; margin:10px 0 0}
+  .ok{color:var(--fr)} .no{color:var(--en)}
+  .dbtm{flex:0 0 auto; padding:10px 16px calc(12px + var(--safe-b)); border-top:1px solid var(--line)}
+  .big{display:block; width:100%; min-height:58px; border-radius:12px; background:var(--ink); color:#0e1013;
+       border:0; font-size:16px; font-weight:600}
+  .grades{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
+  .g{min-height:58px; border:1px solid var(--line); background:var(--card); border-radius:12px; padding:8px 4px}
+  .g b{display:block; font-size:14.5px; font-weight:600}
+  .g small{display:block; color:var(--faint); font-size:11px; margin-top:3px}
+  .g1 b{color:var(--en)} .g3 b{color:var(--fr)}
+
+  .row{display:flex; gap:12px; align-items:flex-start; padding:12px 14px; border-bottom:1px solid var(--line)}
+  .row:last-child{border-bottom:0}
+  .rmain{flex:1; min-width:0}
+  .rword{font-family:var(--serif); font-size:16px}
+  .rsub{font-size:12.5px; color:var(--faint); margin-top:2px; overflow-wrap:anywhere}
+  .rbtns{display:flex; flex-direction:column; gap:4px}
+  .rbtns button{border:0; background:none; color:var(--dim); font-size:12px; padding:4px 2px; text-align:right}
+  .field{display:flex; flex-direction:column; gap:6px; margin-bottom:11px}
+  .field label{font-size:12px; color:var(--dim)}
+  .field .in{display:flex; gap:9px; align-items:center}
+  .field .in input{flex:1; font-family:var(--serif)}
+  .empty{color:var(--faint); text-align:center; padding:34px 12px}
+  #savebar{display:flex; align-items:center; justify-content:space-between; gap:9px; flex-wrap:wrap;
+    max-width:820px; margin:12px auto 0; padding:11px 13px; border-radius:11px; font-size:12.5px;
+    background:#2a1c1c; border:1px solid #55302e; color:#f6d5cf; width:calc(100% - 32px)}
+  #savebar.safe{background:#182520; border-color:#2d4a3c; color:#bfe3d2}
+  #savebar button{background:#f6d5cf; color:#2a1c1c; border:0; border-radius:8px;
+    padding:8px 14px; font-size:12.5px; font-weight:700; margin-left:6px}
+  #savebar.safe button{background:#bfe3d2; color:#182520}
+  #codeWrap{position:fixed; inset:0; z-index:160; background:var(--bg); overflow:auto;
+    padding:calc(24px + env(safe-area-inset-top,0px)) 16px calc(24px + var(--safe-b))}
+  #codeWrap .panel{max-width:520px; margin:20px auto}
+  #codeBox{width:100%; font-family:ui-monospace,Menlo,monospace; font-size:12px; word-break:break-all}
+  .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:calc(26px + var(--safe-b));
+         background:var(--ink); color:#0e1013; padding:12px 20px; border-radius:24px; font-size:14px;
+         font-weight:600; z-index:200; max-width:90vw; text-align:center}
+  @media(min-width:700px){ .grades{gap:10px} .dmid{padding:20px} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hrow"><h1>Vokabeltrainer</h1><span class="stat" id="stat"></span></div>
+  <nav>
+    <button class="on" data-v="learn">Lernen</button>
+    <button data-v="words">Wörter</button>
+    <button data-v="new">Neu</button>
+    <button data-v="data">Daten</button>
+  </nav>
+</header>
+
+<div id="savebar" hidden>
+  <span id="savetxt"></span>
+  <button id="sbCopy">Sichern</button>
+  <button id="sbLoad">Laden</button>
+</div>
+
+<div class="wrap">
+
+<section class="view on" id="v-learn">
+  <div class="counts">
+    <div class="cbox"><b id="cNew">0</b><span>neu heute</span></div>
+    <div class="cbox"><b id="cDue">0</b><span>Wiederholung</span></div>
+    <div class="cbox"><b id="cPool">0</b><span>in der Auswahl</span></div>
+  </div>
+  <button class="btn main wide" id="start" style="min-height:56px">Lernen starten</button>
+  <div class="panel" style="margin-top:16px">
+    <h2>Auswahl</h2>
+    <div class="chips" id="deckPick"></div>
+    <div class="chips" id="catPick" style="margin-top:9px"></div>
+  </div>
+</section>
+
+<section class="view" id="v-words">
+  <div class="flex" style="margin-bottom:12px">
+    <input id="search" placeholder="Suchen" style="flex:1; min-width:180px">
+    <select id="wDeck"></select>
+    <select id="wCat"></select>
+  </div>
+  <div class="panel" style="padding:0" id="list"></div>
+  <p class="hint" id="wCount"></p>
+</section>
+
+<section class="view" id="v-new">
+  <div class="panel">
+    <h2>Wort anlegen</h2>
+    <p class="lead">Ohne Internet: Felder selbst ausfüllen. Mit hinterlegtem Schlüssel: oben eintippen und übersetzen lassen.</p>
+    <div class="flex" style="margin-bottom:14px">
+      <input id="tWord" placeholder="Wort automatisch übersetzen" style="flex:1; min-width:200px">
+      <button class="btn" id="tGo">Los</button>
+    </div>
+    <div id="fields"></div>
+    <div class="field"><label>Kategorie</label><input id="fCat"></div>
+    <div class="field"><label>Stapel</label><input id="fDeck"></div>
+    <div class="field"><label>Beispielsatz (Ausgangssprache)</label><input id="fEx"></div>
+    <div class="field"><label>Beispielsatz deutsch</label><input id="fExDe"></div>
+    <div class="flex">
+      <button class="btn main" id="fSave">Speichern</button>
+      <button class="btn" id="fClear">Leeren</button>
+    </div>
+    <p class="hint" id="fMsg" style="margin-top:10px"></p>
+  </div>
+  <div class="panel">
+    <h2>Schlüssel für die Online-Übersetzung</h2>
+    <p class="lead">Nur nötig, wenn die App übersetzen soll. Bleibt auf diesem Gerät.</p>
+    <div class="flex">
+      <input id="apiKey" type="password" placeholder="sk-ant-…" style="flex:1; min-width:200px">
+      <button class="btn" id="keySave">Merken</button>
+    </div>
+  </div>
+</section>
+
+<section class="view" id="v-data">
+  <div class="panel">
+    <h2>Fortschritt mitnehmen</h2>
+    <p class="lead">Kurzer Code mit deinem Lernstand – zum Sichern in eine Notiz und späteren Zurückholen. Nötig überall dort, wo der Browser nichts speichern darf, etwa in der iPhone-Dateivorschau.</p>
+    <button class="btn main wide" id="codeCopy">Fortschritt kopieren</button>
+    <button class="btn wide" id="codeOpen">Fortschritt einsetzen</button>
+    <p class="hint" id="codeInfo" style="margin-top:10px"></p>
+  </div>
+  <div class="panel">
+    <h2>Speicher</h2>
+    <p class="lead" id="storeInfo"></p>
+    <div class="flex">
+      <button class="btn" id="expJson">Sicherung speichern</button>
+      <button class="btn" id="expCsv">CSV speichern</button>
+      <label class="btn" style="display:inline-block">Datei einlesen<input type="file" id="imp" accept=".json,.csv,.txt" hidden></label>
+    </div>
+    <p class="hint" style="margin-top:10px">JSON stellt den vollen Lernstand her. CSV im Format Englisch;Deutsch;Kategorie;Beispielsatz legt neue Wörter an.</p>
+  </div>
+  <div class="panel">
+    <h2>Lernweise</h2>
+    <p class="lead">Empfehlung: Lückensatz immer an, Tippen für die Sprache, die du aktiv sprechen willst.</p>
+    <div class="chips" id="modePick"></div>
+  </div>
+  <div class="panel">
+    <h2>Tagespensum</h2>
+    <div class="flex">
+      <span class="hint">Neue Karten pro Tag</span>
+      <input id="cfgNew" type="number" min="0" max="500" style="width:90px">
+      <button class="btn" id="cfgSave">Übernehmen</button>
+    </div>
+  </div>
+  <div class="panel">
+    <h2>Hilfe</h2>
+    <p class="lead">Kurze Einführung in Bedienung und Lernverfahren.</p>
+    <button class="btn wide" id="helpBtn">Einführung anzeigen</button>
+  </div>
+  <div class="panel">
+    <h2>Bestand</h2>
+    <p class="hint" id="statBlock"></p>
+    <button class="btn wide" id="seedBtn">Grundstock nachladen</button>
+    <button class="btn wide" id="resetBtn">Lernfortschritt zurücksetzen</button>
+  </div>
+</section>
+
+</div>
+
+<div id="drill">
+  <div class="dtop">
+    <div class="dbar"><i id="progFill"></i></div>
+    <div class="dmeta"><span id="counter"></span><span id="cardState"></span>
+      <button id="stop">Beenden</button></div>
+  </div>
+  <div class="dmid" id="dmid">
+    <div class="qzone" id="qzone">
+      <div><span class="tag" id="qLang"></span></div>
+      <p class="qword" id="qWord"></p>
+      <p class="translit" id="qLat"></p>
+      <p class="sent" id="qSent"></p>
+    </div>
+    <input class="typed" id="typed" hidden placeholder="Antwort eintippen" autocomplete="off"
+           autocapitalize="off" autocorrect="off" spellcheck="false">
+    <div class="azone" id="ans" hidden></div>
+  </div>
+  <div class="dbtm">
+    <button class="big" id="reveal">Aufdecken</button>
+    <div class="grades" id="grades" hidden>
+      <button class="g g1" data-g="0"><b>Nochmal</b><small id="n0"></small></button>
+      <button class="g g2" data-g="1"><b>Gut</b><small id="n1"></small></button>
+      <button class="g g3" data-g="2"><b>Leicht</b><small id="n2"></small></button>
+    </div>
+  </div>
+</div>
+
+<div id="welcome" hidden style="position:fixed;inset:0;z-index:150;background:var(--bg);overflow:auto;
+     padding:calc(26px + env(safe-area-inset-top,0px)) 18px calc(26px + var(--safe-b))">
+  <div style="max-width:520px;margin:0 auto">
+    <h2 style="font-family:var(--serif);font-size:27px;font-weight:600;margin:0 0 6px">Vokabeltrainer</h2>
+    <p class="lead">301 Fachbegriffe der Personalgewinnung in fünf Sprachen, mit Beispielsätzen und Karteikartensystem. Läuft vollständig ohne Internet.</p>
+    <div class="panel">
+      <h2>So lernst du</h2>
+      <p class="hint">Du siehst einen Begriff und den Beispielsatz mit Lücke. Antwort überlegen, dann <b>Aufdecken</b>. Anschließend selbst bewerten:</p>
+      <p class="hint" style="margin-top:9px"><b>Nochmal</b> – saß nicht, kommt gleich wieder.<br>
+      <b>Gut</b> – saß, nächster Abstand.<br>
+      <b>Leicht</b> – saß sofort, doppelter Sprung.</p>
+      <p class="hint" style="margin-top:9px">Die Abstände wachsen mit: 1, 3, 7, 16, 35, 75, 150, 300 Tage. Wer täglich ein paar Minuten übt, behält den Stoff dauerhaft.</p>
+    </div>
+    <div class="panel">
+      <h2>Gut zu wissen</h2>
+      <p class="hint">Der Lernstand bleibt auf diesem Gerät, in diesem Browser – nutze also immer dasselbe.
+      Unter <b>Daten</b> kannst du eine Sicherung speichern, eigene Wortlisten einlesen und die Lernweise umstellen
+      (Lückensatz, Antwort eintippen, Aussprache, weitere Abfragesprachen).</p>
+      <p class="hint" style="margin-top:9px">Unter <b>Neu</b> legst du eigene Wörter an – von Hand oder, mit eigenem API-Schlüssel, automatisch übersetzt.</p>
+    </div>
+    <button class="btn main wide" id="welcomeGo" style="min-height:54px">Los geht's</button>
+    <p class="hint" style="text-align:center;margin-top:12px">Diese Übersicht findest du jederzeit unter „Daten".</p>
+  </div>
+</div>
+<div id="codeWrap" hidden>
+  <div class="panel">
+    <h2 id="codeTitle">Fortschritt</h2>
+    <p class="hint" id="codeHint"></p>
+    <textarea id="codeBox" rows="6"></textarea>
+    <button class="btn main wide" id="codeApply">Übernehmen</button>
+    <button class="btn wide" id="codeClose">Schließen</button>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const SEED = __SEED__;
+(function(){
+  const KEY='vokabeltrainer-v1';
+  const L=[['de','DE'],['en','EN'],['fr','FR'],['pl','PL'],['ru','RU']];
+  const NAME={de:'Deutsch',en:'Englisch',fr:'Französisch',pl:'Polnisch',ru:'Russisch'};
+  const DAY=864e5, LADDER=[1,3,7,16,35,75,150,300];
+  let data={items:[],cfg:{newPerDay:20,typing:false,gap:true,audio:true},log:{},key:''};
+  let ses=null, deck='alle', cat='alle', edit=null, store=true;
+
+  const $=s=>document.querySelector(s);
+  const esc=s=>(s||'').replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+  const today=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');};
+  const dtxt=n=>n===1?'1 Tag':n<31?n+' Tage':Math.round(n/30)+' Monate';
+  function toast(m){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(t._x);t._x=setTimeout(()=>t.hidden=true,2600);}
+
+  function load(){
+    try{
+      const raw=localStorage.getItem(KEY);
+      if(raw) data=Object.assign(data,JSON.parse(raw));
+      store=true;
+    }catch(e){ store=false; }
+    if(!Array.isArray(data.items)||!data.items.length) data.items=SEED.map(s=>Object.assign({},s));
+    if(store){ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){ store=false; } }
+    if(!data.cfg) data.cfg={newPerDay:20};
+    if(data.cfg.typing===undefined) data.cfg.typing=false;
+    if(data.cfg.gap===undefined) data.cfg.gap=true;
+    if(data.cfg.audio===undefined) data.cfg.audio=true;
+    if(data.cfg.askAll===undefined) data.cfg.askAll=false;
+    if(!data.log) data.log={};
+    // deutsche Beispielsätze in bestehende Bestände nachtragen
+    const m={}; SEED.forEach(s=>{ if(s.exde) m[s.id]=s.exde; });
+    data.items.forEach(i=>{ if(!i.exde&&m[i.id]) i.exde=m[i.id]; });
+  }
+  function save(){
+    if(!store) return;
+    try{ localStorage.setItem(KEY,JSON.stringify(data)); }
+    catch(e){ store=false; render(); toast('Speicher gesperrt – bitte Sicherung speichern'); }
+  }
+
+  const decks=()=>['alle',...new Set(data.items.map(i=>i.deck||'Eigene'))];
+  const cats =()=>['alle',...[...new Set(data.items.map(i=>i.cat).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de'))];
+  const pool =()=>data.items.filter(i=>(deck==='alle'||(i.deck||'Eigene')===deck)&&(cat==='alle'||i.cat===cat));
+  const newToday=()=>data.log[today()]||0;
+  function counts(){
+    const p=pool(), t=Date.now();
+    const fresh=p.filter(i=>!i.due), due=p.filter(i=>i.due&&i.due<=t);
+    return {pool:p.length, due:due.length, dueList:due, freshList:fresh,
+            newLeft:Math.max(0,Math.min(fresh.length,data.cfg.newPerDay-newToday()))};
+  }
+  function idx(i,g){ return Math.min(i.due?(i.step||0)+(g===2?2:1):(g===2?1:0),LADDER.length-1); }
+  function plan(i,g){
+    if(!i.due) data.log[today()]=newToday()+1;
+    if(g===0){ i.step=0; i.due=Date.now()+6e5; }
+    else{ i.step=idx(i,g); i.due=Date.now()+LADDER[i.step]*DAY; }
+  }
+  /* Fortschritt als kurzer Code */
+  const SIDX={}; SEED.forEach((s,n)=>SIDX[s.id]=n);
+  const b36=n=>Math.round(n).toString(36);
+  function makeCode(){
+    const parts=[], extra=[];
+    data.items.forEach(i=>{
+      if(SIDX[i.id]!==undefined){ if(i.due) parts.push(b36(SIDX[i.id])+'.'+b36(i.step||0)+'.'+b36(i.due/864e5)); }
+      else extra.push(i);
+    });
+    let c='VT1|'+parts.join(',')+'|'+b36(newToday());
+    if(extra.length) c+='|'+btoa(unescape(encodeURIComponent(JSON.stringify(extra))));
+    return c;
+  }
+  function applyCode(txt){
+    const c=(txt||'').trim();
+    if(c.indexOf('VT1|')!==0) throw new Error('kein gültiger Code');
+    const f=c.split('|');
+    const byIdx={}; data.items.forEach(i=>{ if(SIDX[i.id]!==undefined) byIdx[SIDX[i.id]]=i; });
+    let n=0;
+    (f[1]||'').split(',').filter(Boolean).forEach(t=>{
+      const a=t.split('.'); const it=byIdx[parseInt(a[0],36)];
+      if(it){ it.step=parseInt(a[1],36)||0; it.due=parseInt(a[2],36)*864e5; n++; }
+    });
+    if(f[3]){
+      const ex=JSON.parse(decodeURIComponent(escape(atob(f[3]))));
+      const known=new Set(data.items.map(i=>i.id));
+      ex.forEach(i=>{ if(i&&i.id&&!known.has(i.id)){ data.items.push(i); n++; } });
+    }
+    if(f[2]) data.log[today()]=parseInt(f[2],36)||0;
+    return n;
+  }
+  let unsaved=0;
+  function savebar(){
+    const b=$('#savebar');
+    if(store){ b.hidden=true; return; }
+    b.hidden=false;
+    b.className=unsaved?'':'safe';
+    $('#savetxt').textContent=unsaved
+      ? 'Dieses Gerät speichert nicht – '+unsaved+' Antworten noch nicht gesichert'
+      : 'Dieses Gerät speichert nicht – Fortschritt ist gesichert';
+  }
+  async function copyCode(){
+    const c=makeCode();
+    try{ await navigator.clipboard.writeText(c); unsaved=0; savebar(); render();
+      toast('Kopiert – jetzt in eine Notiz einfügen'); }
+    catch(e){ showCode('copy',c); }
+  }
+  function showCode(mode,val){
+    $('#codeWrap').hidden=false;
+    $('#codeTitle').textContent=mode==='copy'?'Fortschritt sichern':'Fortschritt einsetzen';
+    $('#codeHint').textContent=mode==='copy'
+      ? 'Text markieren, kopieren und in einer Notiz ablegen.'
+      : 'Den gesicherten Code hier einfügen und übernehmen.';
+    $('#codeApply').hidden=(mode==='copy');
+    $('#codeBox').value=val||'';
+    if(mode==='copy'){ $('#codeBox').focus(); $('#codeBox').select(); }
+  }
+  const sentFor=(i,k)=>k==='de'?(i.exde||''):(i.ex||'');
+  const LOC={de:'de-DE',en:'en-US',fr:'fr-FR',pl:'pl-PL',ru:'ru-RU'};
+  function say(text,lang){
+    try{ if(!window.speechSynthesis||!text) return;
+      const u=new SpeechSynthesisUtterance(String(text).replace(/\s*\([^)]*\)/g,''));
+      u.lang=LOC[lang]||'en-US'; u.rate=.92; speechSynthesis.cancel(); speechSynthesis.speak(u);
+    }catch(e){}
+  }
+  function variants(term){
+    const out=[];
+    (term||'').split('/').forEach(part=>{
+      const t=part.trim(); if(!t) return;
+      out.push(t);
+      out.push(t.replace(/\s*\([^)]*\)/g,'').trim());
+      const inner=t.match(/\(([^)]+)\)/); if(inner) out.push(inner[1].trim());
+      out.push(t.replace(/^(der|die|das|the|le|la|les)\s+/i,'').trim());
+    });
+    return [...new Set(out.filter(x=>x.length>2))].sort((a,b)=>b.length-a.length);
+  }
+  function wrap(sent,term,fn){
+    if(!sent) return '';
+    const vs=variants(term).map(v=>v.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+    if(!vs.length) return esc(sent);
+    // alle Formen treffen, auch gebeugte (bis zu vier angehängte Buchstaben)
+    const r=new RegExp('(^|[^\\p{L}])((?:'+vs.join('|')+')\\p{L}{0,4})(?![\\p{L}])','giu');
+    const out=esc(sent).replace(r,(m,a,b)=>a+fn(b));
+    return out;
+  }
+  const gapSent=(s,t)=>wrap(s,t,()=>'<span class="gap">–––––</span>');
+  const markSent=(s,t)=>wrap(s,t,b=>'<b>'+b+'</b>');
+  const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+      .replace(/\s*\([^)]*\)/g,'').replace(/^(der|die|das|the|le|la|to)\s+/,'')
+      .replace(/[^\p{L}\p{N} ]/gu,'').replace(/\s+/g,' ').trim();
+  function matches(given,target){
+    const g=norm(given); if(!g) return false;
+    return (target||'').split(/[\/,]/).some(t=>{ const n=norm(t); return !!n&&n===g; });
+  }
+
+  /* Lernen */
+  $('#start').onclick=()=>{
+    const c=counts();
+    const q=c.dueList.concat(c.freshList.slice(0,c.newLeft));
+    if(!q.length){ toast('Nichts fällig in dieser Auswahl'); return; }
+    ses={q:q.sort(()=>Math.random()-.5),total:q.length,done:0};
+    document.body.classList.add('drilling'); $('#drill').classList.add('on'); show();
+  };
+  function show(){
+    if(!ses.q.length){ stop('Durchgang beendet'); return; }
+    const i=ses.q[0], have=L.filter(([k])=>i[k]);
+    let cand=have;
+    if(!data.cfg.askAll){ const core=have.filter(([k])=>k==='de'||k==='en'); if(core.length) cand=core; }
+    const from=cand[Math.floor(Math.random()*cand.length)];
+    ses.from=from[0];
+    $('#counter').textContent='Noch '+ses.q.length+' von '+ses.total;
+    $('#cardState').textContent=i.due?'Wiederholung':'neu';
+    $('#progFill').style.width=Math.round(ses.done/ses.total*100)+'%';
+    $('#qLang').className='tag t-'+from[0]; $('#qLang').textContent=from[1];
+    $('#qWord').textContent=i[from[0]];
+    $('#qLat').textContent=from[0]==='ru'?(i.rulat||''):'';
+    const qs=sentFor(i,from[0]);
+    $('#qSent').innerHTML=data.cfg.gap?gapSent(qs,i[from[0]]):esc(qs);
+    $('#qWord').innerHTML=esc(i[from[0]])
+      +(window.speechSynthesis?' <button class="say" id="sayQ" aria-label="Vorlesen">&#9658;</button>':'');
+    const sq=$('#sayQ'); if(sq) sq.onclick=ev=>{ev.stopPropagation(); say(i[ses.from],ses.from);};
+    const other=have.filter(([k])=>k!==ses.from);
+    // Hauptlösung: das Gegenstück Deutsch/Englisch, die übrigen Sprachen klein darunter
+    const wish=ses.from==='de'?'en':'de';
+    const main=other.find(([k])=>k===wish)||other[0]||null;
+    ses.target=main?main[0]:null;
+    const rest=other.filter(o=>o!==main);
+    const mainSent=main?sentFor(i,main[0]):'';
+    $('#ans').innerHTML=(main?
+        '<div class="aline"><span class="tag t-'+main[0]+'">'+main[1]+'</span><span class="aword">'+esc(i[main[0]])+'</span>'
+        +(window.speechSynthesis?'<button class="say" data-say="'+main[0]+'" aria-label="Vorlesen">&#9658;</button>':'')+'</div>'
+        +(main[0]==='ru'&&i.rulat?'<div class="translit" style="text-align:left">'+esc(i.rulat)+'</div>':''):'')
+      +(mainSent?'<p class="asent">'+markSent(mainSent,i[main[0]])+'</p>':'')
+      +(qs?'<p class="asent src">'+markSent(qs,i[ses.from])+'</p>':'')
+      +(rest.length?'<div class="more">'+rest.map(([k,l])=>
+          '<div class="mline"><span class="tag mini t-'+k+'">'+l+'</span><span class="mw">'+esc(i[k])+'</span>'
+          +(k==='ru'&&i.rulat?'<span class="mlat">'+esc(i.rulat)+'</span>':'')
+          +(window.speechSynthesis?'<button class="say" data-say="'+k+'" aria-label="Vorlesen" style="width:24px;height:24px;font-size:10px;margin-left:auto">&#9658;</button>':'')
+          +'</div>').join('')+'</div>':'')
+      +(i.cat?'<p class="acat">'+esc(i.cat)+'</p>':'')
+      +'<p class="verdict" id="verdict"></p>';
+    $('#ans').querySelectorAll('[data-say]').forEach(b=>b.onclick=ev=>{ev.stopPropagation(); say(i[b.dataset.say],b.dataset.say);});
+    $('#ans').hidden=true; $('#grades').hidden=true; $('#reveal').hidden=false;
+    $('#dmid').classList.remove('rev'); $('#dmid').scrollTop=0;
+    const ti=$('#typed');
+    ti.hidden=!data.cfg.typing; ti.value='';
+    $('#reveal').textContent=data.cfg.typing?'Prüfen':'Aufdecken';
+    [0,1,2].forEach(g=>$('#n'+g).textContent=g===0?'10 Min':dtxt(LADDER[idx(i,g)]));
+  }
+  function reveal(){
+    const i=ses.q[0], ti=$('#typed');
+    $('#dmid').classList.add('rev');
+    $('#ans').hidden=false; $('#grades').hidden=false; $('#reveal').hidden=true;
+    if(data.cfg.typing&&ses.target){
+      const v=$('#verdict');
+      if(ti.value.trim()){
+        const ok=matches(ti.value,i[ses.target]);
+        v.className='verdict '+(ok?'ok':'no');
+        v.textContent=ok?'Richtig geschrieben.':'Eingetippt: '+ti.value.trim();
+      }
+      ti.hidden=true;
+    }
+    if(data.cfg.audio&&ses.target) say(i[ses.target],ses.target);
+    $('#dmid').scrollTop=0;
+  }
+  $('#reveal').onclick=reveal;
+  $('#typed').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); if($('#grades').hidden) reveal(); }});
+  $('#grades').onclick=e=>{const b=e.target.closest('.g'); if(b) answer(+b.dataset.g);};
+  function answer(g){
+    if(!ses||$('#grades').hidden) return;
+    const i=ses.q.shift(); plan(i,g);
+    if(g===0) ses.q.push(i); else ses.done++;
+    if(!store){ unsaved++; savebar(); }
+    save(); show();
+  }
+  function stop(m){
+    $('#drill').classList.remove('on'); document.body.classList.remove('drilling');
+    ses=null; render();
+    if(!store&&unsaved){ toast('Nicht vergessen: Fortschritt oben sichern'); }
+    else if(m) toast(m);
+  }
+  $('#stop').onclick=()=>stop();
+  document.addEventListener('keydown',e=>{
+    if(!ses||e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    if(e.code==='Space'){ e.preventDefault(); if($('#grades').hidden) reveal(); return; }
+    if(e.key==='1') answer(0);
+    if(e.key==='2'||e.key==='Enter') answer(1);
+    if(e.key==='3') answer(2);
+    if(e.key==='Escape') stop();
+  });
+
+  /* Anzeige */
+  function render(){
+    const c=counts();
+    $('#stat').textContent=data.items.length+' Wörter · '+(store?'gespeichert':'kein Speicher');
+    $('#stat').className=store?'stat':'stat warn';
+    $('#cNew').textContent=c.newLeft; $('#cDue').textContent=c.due; $('#cPool').textContent=c.pool;
+    $('#deckPick').innerHTML=decks().map(d=>'<button class="chipbtn'+(d===deck?' on':'')+'" data-d="'+esc(d)+'">'+(d==='alle'?'Alle Stapel':esc(d))+'</button>').join('');
+    $('#catPick').innerHTML=cats().map(k=>'<button class="chipbtn'+(k===cat?' on':'')+'" data-c="'+esc(k)+'">'+(k==='alle'?'Alle Kategorien':esc(k))+'</button>').join('');
+    $('#cfgNew').value=data.cfg.newPerDay;
+    $('#storeInfo').textContent=store?'Alles liegt lokal auf diesem Gerät. Kein Internet nötig.'
+      :'Der Browser verweigert den Speicher. Bitte Sicherung als Datei ablegen.';
+    savebar();
+    $('#codeInfo').textContent=store
+      ? 'Auf diesem Gerät wird automatisch gespeichert – der Code ist nur zum Umziehen auf ein anderes Gerät nötig.'
+      : 'Dieses Gerät speichert nichts. Sichere den Code nach jeder Lernrunde, sonst ist der Fortschritt weg.';
+    $('#statBlock').textContent=data.items.length+' Wörter · '+data.items.filter(i=>i.due).length
+      +' begonnen · '+data.items.filter(i=>i.step>=4).length+' sitzen fest · heute '+newToday()+' neue';
+    modeChips();
+    words();
+  }
+  $('#deckPick').onclick=e=>{const d=e.target.dataset.d; if(d){deck=d; render();}};
+  $('#catPick').onclick=e=>{const k=e.target.dataset.c; if(k){cat=k; render();}};
+
+  function words(){
+    const q=$('#search').value.trim().toLowerCase();
+    const fd=$('#wDeck').value||'alle', fc=$('#wCat').value||'alle';
+    const list=data.items.filter(i=>(fd==='alle'||(i.deck||'Eigene')===fd)&&(fc==='alle'||i.cat===fc)
+      &&(!q||L.some(([k])=>(i[k]||'').toLowerCase().includes(q))||(i.ex||'').toLowerCase().includes(q)));
+    $('#list').innerHTML=list.slice(0,300).map(i=>{
+      const extra=L.filter(([k])=>k!=='en'&&i[k]).map(([k,l])=>l+' '+esc(i[k])).join(' · ');
+      const due=!i.due?'neu':(i.due<=Date.now()?'fällig':'in '+dtxt(Math.ceil((i.due-Date.now())/DAY)));
+      return '<div class="row"><div class="rmain"><div class="rword">'+esc(i.en||i.de)+'</div>'
+        +'<div class="rsub">'+extra+'</div><div class="rsub">'+esc(i.cat||'')+' · '+due+'</div></div>'
+        +'<div class="rbtns"><button data-e="'+i.id+'">ändern</button><button data-x="'+i.id+'">löschen</button></div></div>';
+    }).join('')||'<p class="empty">Nichts gefunden.</p>';
+    $('#wCount').textContent=list.length+' Treffer'+(list.length>300?' (300 angezeigt)':'');
+  }
+  $('#search').oninput=words;
+  function fillSelects(){
+    $('#wDeck').innerHTML=decks().map(d=>'<option value="'+esc(d)+'">'+(d==='alle'?'Alle Stapel':esc(d))+'</option>').join('');
+    $('#wCat').innerHTML=cats().map(k=>'<option value="'+esc(k)+'">'+(k==='alle'?'Alle Kategorien':esc(k))+'</option>').join('');
+  }
+  $('#wDeck').onchange=words; $('#wCat').onchange=words;
+  $('#list').onclick=e=>{
+    const x=e.target.dataset.x, ed=e.target.dataset.e;
+    if(x){ data.items=data.items.filter(i=>i.id!==x); save(); fillSelects(); render(); toast('Gelöscht'); }
+    if(ed){ edit=data.items.find(i=>i.id===ed); fillForm(edit); go('new'); $('#fMsg').textContent='Eintrag wird geändert.'; }
+  };
+
+  /* Neu */
+  function formHtml(){
+    $('#fields').innerHTML=L.map(([k,l])=>
+      '<div class="field"><label>'+NAME[k]+'</label><div class="in"><span class="tag t-'+k+'">'+l+'</span><input id="f-'+k+'"></div></div>'
+      +(k==='ru'?'<div class="field"><label>Umschrift</label><input id="f-rulat"></div>':'')).join('');
+  }
+  function fillForm(o){
+    o=o||{}; L.forEach(([k])=>$('#f-'+k).value=o[k]||'');
+    $('#f-rulat').value=o.rulat||''; $('#fCat').value=o.cat||'';
+    $('#fDeck').value=o.deck||'Eigene'; $('#fEx').value=o.ex||''; $('#fExDe').value=o.exde||'';
+  }
+  $('#fClear').onclick=()=>{ edit=null; fillForm({}); $('#tWord').value=''; $('#fMsg').textContent=''; };
+  $('#fSave').onclick=()=>{
+    const o=edit||{id:'u'+Date.now(),step:0,due:0};
+    L.forEach(([k])=>o[k]=$('#f-'+k).value.trim());
+    o.rulat=$('#f-rulat').value.trim(); o.cat=$('#fCat').value.trim();
+    o.deck=$('#fDeck').value.trim()||'Eigene'; o.ex=$('#fEx').value.trim(); o.exde=$('#fExDe').value.trim();
+    if(!L.some(([k])=>o[k])){ toast('Mindestens ein Wort eintragen'); return; }
+    if(!edit) data.items.unshift(o);
+    edit=null; save(); fillSelects(); render(); fillForm({}); $('#tWord').value='';
+    $('#fMsg').textContent='Gespeichert.'; toast('Gespeichert');
+  };
+  $('#keySave').onclick=()=>{ data.key=$('#apiKey').value.trim(); save(); toast(data.key?'Schlüssel gemerkt':'Schlüssel gelöscht'); };
+  $('#tGo').onclick=async()=>{
+    const w=$('#tWord').value.trim(); if(!w) return;
+    if(!data.key){ toast('Kein Schlüssel hinterlegt'); return; }
+    $('#tGo').disabled=true; $('#fMsg').textContent='Übersetze …';
+    try{
+      const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
+        headers:{'Content-Type':'application/json','x-api-key':data.key,'anthropic-version':'2023-06-01',
+                 'anthropic-dangerous-direct-browser-access':'true'},
+        body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:800,messages:[{role:'user',content:
+          'Wörterbuch Deutsch, Englisch, Französisch, Polnisch, Russisch. Antworte nur mit JSON: '
+          +'{"de":"","en":"","fr":"","pl":"","ru":"","rulat":"","ex":"","exde":""} '
+          +'Deutsche Substantive mit Artikel, französische mit le/la, Verben in der Grundform. '
+          +'"ru" kyrillisch mit Betonungszeichen, "rulat" deutsche Umschrift. '
+          +'"ex" kurzer Beispielsatz in der Ausgangssprache, "exde" derselbe Satz auf Deutsch. Wort: '+w}]})});
+      if(!r.ok) throw new Error('Server '+r.status);
+      const j=await r.json();
+      const t=j.content.filter(b=>b.type==='text').map(b=>b.text).join('');
+      const o=JSON.parse(t.slice(t.indexOf('{'),t.lastIndexOf('}')+1));
+      o.cat=$('#fCat').value; o.deck=$('#fDeck').value||'Eigene';
+      fillForm(o); $('#fMsg').textContent='Übersetzt – prüfen und speichern.';
+    }catch(e){ $('#fMsg').textContent='Fehlgeschlagen ('+e.message+'). Felder von Hand ausfüllen.'; }
+    finally{ $('#tGo').disabled=false; }
+  };
+
+  /* Daten */
+  function dl(n,t,ty){ const a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([t],{type:ty})); a.download=n; a.click(); URL.revokeObjectURL(a.href); }
+  $('#expJson').onclick=()=>dl('vokabeln-'+today()+'.json',JSON.stringify(data),'application/json');
+  $('#expCsv').onclick=()=>dl('vokabeln-'+today()+'.csv',
+    'Englisch;Deutsch;Französisch;Polnisch;Russisch;Umschrift;Kategorie;Beispielsatz;Beispielsatz deutsch\n'
+    +data.items.map(i=>[i.en,i.de,i.fr,i.pl,i.ru,i.rulat,i.cat,i.ex,i.exde].map(v=>'"'+(v||'').replace(/"/g,'""')+'"').join(';')).join('\n'),
+    'text/csv;charset=utf-8');
+  $('#imp').onchange=e=>{
+    const f=e.target.files[0]; if(!f) return;
+    const r=new FileReader();
+    r.onload=()=>{
+      try{
+        const txt=r.result;
+        if(f.name.toLowerCase().endsWith('.json')){
+          const inc=JSON.parse(txt), items=inc.items||inc, known=new Set(data.items.map(i=>i.id));
+          let n=0; items.forEach(i=>{ if(i&&i.id&&!known.has(i.id)){ data.items.push(i); n++; } });
+          if(inc.cfg) data.cfg=Object.assign(data.cfg,inc.cfg);
+          toast(n+' Wörter ergänzt');
+        }else{
+          const lines=txt.split(/\r?\n/).filter(x=>x.trim()); let n=0;
+          lines.slice(1).forEach(line=>{
+            const c=line.split(';').map(x=>x.replace(/^"|"$/g,'').trim());
+            if(!c[0]&&!c[1]) return;
+            data.items.push({id:'c'+Date.now()+'-'+(n++),en:c[0]||'',de:c[1]||'',cat:c[2]||'',ex:c[3]||'',
+              exde:c[8]||'',deck:f.name.replace(/\.[^.]+$/,''),step:0,due:0});
+          });
+          toast(n+' Wörter angelegt');
+        }
+        save(); fillSelects(); render();
+      }catch(err){ toast('Datei nicht lesbar'); }
+      e.target.value='';
+    };
+    r.readAsText(f,'utf-8');
+  };
+  function modeChips(){
+    const opts=[['gap','Lückensatz'],['typing','Antwort eintippen'],['audio','Aussprache beim Aufdecken'],
+                ['askAll','Auch aus FR, PL, RU abfragen']];
+    $('#modePick').innerHTML=opts.map(([k,l])=>'<button class="chipbtn'+(data.cfg[k]?' on':'')+'" data-m="'+k+'">'+l+'</button>').join('');
+  }
+  $('#modePick').addEventListener('click',e=>{
+    const k=e.target.dataset.m; if(!k) return;
+    data.cfg[k]=!data.cfg[k]; save(); modeChips(); toast((data.cfg[k]?'An: ':'Aus: ')+e.target.textContent);
+  });
+  $('#codeCopy').onclick=copyCode;
+  $('#sbCopy').onclick=copyCode;
+  $('#codeOpen').onclick=()=>showCode('paste','');
+  $('#sbLoad').onclick=()=>showCode('paste','');
+  $('#codeClose').onclick=()=>{ $('#codeWrap').hidden=true; };
+  $('#codeApply').onclick=()=>{
+    try{ const n=applyCode($('#codeBox').value);
+      $('#codeWrap').hidden=true; unsaved=0; save(); render();
+      toast(n+' Einträge übernommen');
+    }catch(e){ toast('Das war kein gültiger Code'); }
+  };
+  $('#cfgSave').onclick=()=>{ data.cfg.newPerDay=Math.max(0,+$('#cfgNew').value||0); save(); render(); toast('Übernommen'); };
+  $('#seedBtn').onclick=()=>{
+    const known=new Set(data.items.map(i=>i.id)); let n=0;
+    SEED.forEach(s=>{ if(!known.has(s.id)){ data.items.push(Object.assign({},s)); n++; } });
+    save(); fillSelects(); render(); toast(n?n+' Wörter nachgeladen':'Grundstock vollständig');
+  };
+  $('#resetBtn').onclick=()=>{
+    if(!confirm('Alle Fälligkeiten zurücksetzen? Die Wörter bleiben erhalten.')) return;
+    data.items.forEach(i=>{i.step=0;i.due=0;}); data.log={};
+    if(!data.items.length) data.items=SEED.map(s=>Object.assign({},s));
+    save(); fillSelects(); render(); toast('Zurückgesetzt');
+  };
+
+  $('#welcomeGo').onclick=()=>{ $('#welcome').hidden=true; try{localStorage.setItem(KEY+'-seen','1');}catch(e){} };
+  $('#helpBtn').onclick=()=>{ $('#welcome').hidden=false; };
+  function go(v){
+    document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
+    document.querySelectorAll('.view').forEach(s=>s.classList.toggle('on',s.id==='v-'+v));
+    window.scrollTo(0,0);
+  }
+  document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>go(b.dataset.v));
+
+  let firstRun=false;
+  try{ firstRun=!localStorage.getItem(KEY+'-seen'); }catch(e){ firstRun=true; }
+  try{
+    load(); formHtml(); fillForm({}); fillSelects(); $('#apiKey').value=data.key||''; render(); save();
+    if(firstRun) $('#welcome').hidden=false;
+  }catch(err){
+    document.body.innerHTML='<div style="max-width:440px;margin:60px auto;padding:0 20px;font-family:'
+      +'-apple-system,BlinkMacSystemFont,sans-serif;color:#eceef1">'
+      +'<h1 style="font-size:21px;margin:0 0 10px">Start fehlgeschlagen</h1>'
+      +'<p style="font-size:14px;color:#a2aab4;line-height:1.55">Die App konnte nicht geladen werden. '
+      +'Meist hilft ein Zurücksetzen – die mitgelieferten Wörter sind in der Datei gespeichert und gehen dabei nicht verloren. '
+      +'Nur selbst angelegte Wörter und der Lernfortschritt auf diesem Gerät werden entfernt.</p>'
+      +'<p style="font-size:12px;color:#727b86;margin-top:14px">'+String(err&&err.message||err)+'</p>'
+      +'<button id="rescue" style="margin-top:18px;width:100%;padding:14px;border:0;border-radius:10px;'
+      +'background:#eceef1;color:#0e1013;font-size:15px;font-weight:600;font-family:inherit">Zurücksetzen und neu starten</button></div>';
+    document.getElementById('rescue').onclick=()=>{
+      try{ localStorage.removeItem(KEY); localStorage.removeItem(KEY+'-seen'); }catch(e){}
+      location.reload();
+    };
+  }
+})();
+</script>
+</body>
+</html>

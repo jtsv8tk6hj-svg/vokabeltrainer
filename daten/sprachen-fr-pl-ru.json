@@ -1,0 +1,2109 @@
+{
+ "pg001": {
+  "fr": "l'Office fédéral de gestion du personnel de la Bundeswehr (BAPersBw)",
+  "id": "pg001",
+  "pl": "Federalny Urząd Zarządzania Personelem Bundeswehry (BAPersBw)",
+  "ru": "Федера́льное управле́ние по персона́лу бундесве́ра (BAPersBw)",
+  "rulat": "Federálnoje uprawlénije po personálu bundesvéra (BAPersBw)"
+ },
+ "pg002": {
+  "fr": "la Division II – Montée en puissance",
+  "id": "pg002",
+  "pl": "Wydział II – Rozbudowa sił",
+  "ru": "Отде́л II – Нара́щивание",
+  "rulat": "Otdél II – Naráschtschiwanije"
+ },
+ "pg003": {
+  "fr": "la montée en puissance",
+  "id": "pg003",
+  "pl": "rozbudowa sił",
+  "ru": "нара́щивание",
+  "rulat": "naráschtschiwanije"
+ },
+ "pg004": {
+  "fr": "le chef de division",
+  "id": "pg004",
+  "pl": "szef wydziału",
+  "ru": "нача́льник управле́ния",
+  "rulat": "natschálnik uprawlénija"
+ },
+ "pg005": {
+  "fr": "le général de brigade (GBR)",
+  "id": "pg005",
+  "pl": "generał brygady",
+  "ru": "брига́дный генера́л",
+  "rulat": "brigádnyj generál"
+ },
+ "pg006": {
+  "fr": "le Ministère fédéral de la Défense (BMVg)",
+  "id": "pg006",
+  "pl": "Federalne Ministerstwo Obrony (BMVg)",
+  "ru": "Федера́льное министе́рство оборо́ны (BMVg)",
+  "rulat": "Federálnoje ministérstwo oboróny (BMVg)"
+ },
+ "pg007": {
+  "fr": "la marque employeur de la Bundeswehr (AGMBw)",
+  "id": "pg007",
+  "pl": "marka pracodawcy Bundeswehry (AGMBw)",
+  "ru": "бренд работода́теля бундесве́ра (AGMBw)",
+  "rulat": "brend rabotodátelja bundesvéra (AGMBw)"
+ },
+ "pg008": {
+  "fr": "le collaborateur / la collaboratrice",
+  "id": "pg008",
+  "pl": "pracownik / pracownica",
+  "ru": "сотру́дник / сотру́дница",
+  "rulat": "sotrúdnik / sotrúdniza"
+ },
+ "pg009": {
+  "fr": "le centre de carrières de la Bundeswehr (KarrCBw)",
+  "id": "pg009",
+  "pl": "Centrum Kariery Bundeswehry (KarrCBw)",
+  "ru": "Центр карье́ры бундесве́ра (KarrCBw)",
+  "rulat": "Zentr karjéry bundesvéra (KarrCBw)"
+ },
+ "pg010": {
+  "fr": "le bureau de conseil en carrière (KarrBB)",
+  "id": "pg010",
+  "pl": "Biuro Doradztwa Zawodowego (KarrBB)",
+  "ru": "Бюро́ карье́рного консульти́рования (KarrBB)",
+  "rulat": "Bjuró karjérnogo konsultírowanija (KarrBB)"
+ },
+ "pg011": {
+  "fr": "le centre de sélection militaire (visite médicale d'incorporation)",
+  "id": "pg011",
+  "pl": "centrum kwalifikacji wojskowej",
+  "ru": "призывно́й пункт",
+  "rulat": "prisywnój punkt"
+ },
+ "pg012": {
+  "fr": "le centre d'évaluation (Assessment Center)",
+  "id": "pg012",
+  "pl": "centrum oceny (Assessment Center)",
+  "ru": "Центр оце́нки (Assessment Center)",
+  "rulat": "Zentr ozénki (Assessment Center)"
+ },
+ "pg013": {
+  "fr": "le centre d'évaluation pour cadres dirigeants",
+  "id": "pg013",
+  "pl": "centrum oceny dla kadry kierowniczej",
+  "ru": "Центр оце́нки для руководя́щего соста́ва",
+  "rulat": "Zentr ozénki dlja rukowodjáschtschego sostáwa"
+ },
+ "pg014": {
+  "fr": "le Centre de communication de la Bundeswehr (KommCBw)",
+  "id": "pg014",
+  "pl": "Centrum Komunikacji Bundeswehry (KommCBw)",
+  "ru": "Центр коммуника́ций бундесве́ра (KommCBw)",
+  "rulat": "Zentr kommunikázij bundesvéra (KommCBw)"
+ },
+ "pg015": {
+  "fr": "le conseiller en carrière / la conseillère en carrière",
+  "id": "pg015",
+  "pl": "doradca kariery / doradczyni kariery",
+  "ru": "карье́рный консульта́нт / карье́рная консульта́нтка",
+  "rulat": "karjérnyj konsultánt"
+ },
+ "pg016": {
+  "fr": "le recruteur / la recruteuse",
+  "id": "pg016",
+  "pl": "rekruter / rekruterka",
+  "ru": "рекрутёр",
+  "rulat": "rekrutjór"
+ },
+ "pg017": {
+  "fr": "le bureau de recrutement (US)",
+  "id": "pg017",
+  "pl": "biuro rekrutacyjne (USA)",
+  "ru": "вербо́вочный пункт (США)",
+  "rulat": "werbówotschnyj punkt (USA)"
+ },
+ "pg018": {
+  "fr": "la garnison",
+  "id": "pg018",
+  "pl": "garnizon",
+  "ru": "гарнизо́н",
+  "rulat": "garnisón"
+ },
+ "pg019": {
+  "fr": "la force armée / le domaine organisationnel",
+  "id": "pg019",
+  "pl": "rodzaj wojsk / obszar organizacyjny",
+  "ru": "вид войск / организацио́нная о́бласть",
+  "rulat": "wid wojsk / organisaziónnaja óblast"
+ },
+ "pg020": {
+  "fr": "l'Armée de terre",
+  "id": "pg020",
+  "pl": "Wojska Lądowe",
+  "ru": "Сухопу́тные войска́",
+  "rulat": "Suchopútnyje wojská"
+ },
+ "pg021": {
+  "fr": "l'Armée de l'air et de l'espace",
+  "id": "pg021",
+  "pl": "Siły Powietrzne",
+  "ru": "Вое́нно-возду́шные си́лы",
+  "rulat": "Wojénno-wosdúschnyje síly"
+ },
+ "pg022": {
+  "fr": "la Marine nationale",
+  "id": "pg022",
+  "pl": "Marynarka Wojenna",
+  "ru": "Вое́нно-морско́й флот",
+  "rulat": "Wojénno-morskój flot"
+ },
+ "pg023": {
+  "fr": "le Service interarmées de soutien et d'appui",
+  "id": "pg023",
+  "pl": "Wspólne Siły Wsparcia",
+  "ru": "Объединённая слу́жба обеспе́чения",
+  "rulat": "Objedinjónnaja slúschba obespétschenija"
+ },
+ "pg024": {
+  "fr": "le Service de santé des armées",
+  "id": "pg024",
+  "pl": "Wojskowa Służba Zdrowia",
+  "ru": "Медици́нская слу́жба",
+  "rulat": "Medizínskaja slúschba"
+ },
+ "pg025": {
+  "fr": "le Service du cyberespace et de l'information",
+  "id": "pg025",
+  "pl": "Służba Cyberprzestrzeni i Informacji",
+  "ru": "Слу́жба киберпростра́нства и информацио́нной сфе́ры",
+  "rulat": "Slúschba kiberprostránstwa i informaziónnoj sféry"
+ },
+ "pg026": {
+  "fr": "la réserve",
+  "id": "pg026",
+  "pl": "rezerwa",
+  "ru": "резе́рв",
+  "rulat": "resérw"
+ },
+ "pg027": {
+  "fr": "le service actif",
+  "id": "pg027",
+  "pl": "służba aktywna",
+  "ru": "действи́тельная вое́нная слу́жба",
+  "rulat": "dejstwítelnaja wojénnaja slúschba"
+ },
+ "pg028": {
+  "fr": "le recrutement du personnel",
+  "id": "pg028",
+  "pl": "rekrutacja personelu",
+  "ru": "набо́р персона́ла",
+  "rulat": "nabór personála"
+ },
+ "pg029": {
+  "fr": "le recrutement / l'acquisition",
+  "id": "pg029",
+  "pl": "rekrutacja / akwizycja",
+  "ru": "набо́р / привлече́ние персона́ла",
+  "rulat": "nabór / priwletschénije personála"
+ },
+ "pg030": {
+  "fr": "la fidélisation du personnel",
+  "id": "pg030",
+  "pl": "retencja personelu",
+  "ru": "удержа́ние персона́ла",
+  "rulat": "uderschánije personála"
+ },
+ "pg031": {
+  "fr": "le remplacement du personnel",
+  "id": "pg031",
+  "pl": "uzupełnienia personalne",
+  "ru": "попо́лнение ли́чного соста́ва",
+  "rulat": "popólnenije lítschnogo sostáwa"
+ },
+ "pg032": {
+  "fr": "le système de conscription (service de remplacement militaire)",
+  "id": "pg032",
+  "pl": "system uzupełnień wojskowych",
+  "ru": "систе́ма во́инского учёта и призы́ва",
+  "rulat": "sistéma wóinskogo utschjóta i prisýwa"
+ },
+ "pg033": {
+  "fr": "la promotion professionnelle",
+  "id": "pg033",
+  "pl": "wspieranie rozwoju zawodowego",
+  "ru": "профессиона́льное продвиже́ние",
+  "rulat": "professionálnoje prodwischénije"
+ },
+ "pg034": {
+  "fr": "le Service de promotion professionnelle (BFD)",
+  "id": "pg034",
+  "pl": "Służba Wspierania Rozwoju Zawodowego (BFD)",
+  "ru": "Слу́жба профессиона́льного продвиже́ния (BFD)",
+  "rulat": "Slúschba professionálnogo prodwischénija (BFD)"
+ },
+ "pg035": {
+  "fr": "le nouveau service militaire",
+  "id": "pg035",
+  "pl": "nowa służba wojskowa",
+  "ru": "но́вая вое́нная слу́жба",
+  "rulat": "nówaja wojénnaja slúschba"
+ },
+ "pg036": {
+  "fr": "le service militaire volontaire",
+  "id": "pg036",
+  "pl": "dobrowolna służba wojskowa",
+  "ru": "доброво́льная вое́нная слу́жба",
+  "rulat": "dobrowólnaja wojénnaja slúschba"
+ },
+ "pg037": {
+  "fr": "l'engagement de courte durée (service militaire, 12 mois)",
+  "id": "pg037",
+  "pl": "krótkoterminowa służba wojskowa (zobowiązanie na 12 miesięcy)",
+  "ru": "кратковре́менная слу́жба по контра́кту (обяза́тельство на 12 ме́сяцев)",
+  "rulat": "kratkowrémennaja slúschba po kontráktu (objasátelstwo na 12 mésjazew)"
+ },
+ "pg038": {
+  "fr": "le soldat sous contrat à durée déterminée (SaZ)",
+  "id": "pg038",
+  "pl": "żołnierz zawodowy na czas określony (SaZ)",
+  "ru": "солда́т по контра́кту на определённый срок (SaZ)",
+  "rulat": "soldát po kontráktu na opredeljónnyj srok (SaZ)"
+ },
+ "pg039": {
+  "fr": "le soldat de carrière",
+  "id": "pg039",
+  "pl": "żołnierz zawodowy stałej służby",
+  "ru": "ка́дровый военнослу́жащий",
+  "rulat": "kádrowyj wojennoslúschaschtschij"
+ },
+ "pg040": {
+  "fr": "les militaires du rang",
+  "id": "pg040",
+  "pl": "żołnierze szeregowi",
+  "ru": "рядово́й соста́в",
+  "rulat": "rjadowój sostáw"
+ },
+ "pg041": {
+  "fr": "le sous-officier",
+  "id": "pg041",
+  "pl": "podoficer",
+  "ru": "сержа́нт",
+  "rulat": "serschánt"
+ },
+ "pg042": {
+  "fr": "l'officier",
+  "id": "pg042",
+  "pl": "oficer",
+  "ru": "офице́р",
+  "rulat": "ofizér"
+ },
+ "pg043": {
+  "fr": "l'aspirant officier",
+  "id": "pg043",
+  "pl": "kandydat na oficera",
+  "ru": "кандида́т в офице́ры",
+  "rulat": "kandidát w ofizéry"
+ },
+ "pg044": {
+  "fr": "le candidat à la promotion au grade d'officier",
+  "id": "pg044",
+  "pl": "kandydat do awansu na oficera",
+  "ru": "кандида́т на продвиже́ние по офице́рской карье́ре",
+  "rulat": "kandidát na prodwischénije po ofizérskoj karjére"
+ },
+ "pg045": {
+  "fr": "le fonctionnaire / la fonctionnaire",
+  "id": "pg045",
+  "pl": "urzędnik / urzędniczka",
+  "ru": "госуда́рственный слу́жащий / госуда́рственная слу́жащая",
+  "rulat": "gosudárstwennyj slúschaschtschij"
+ },
+ "pg046": {
+  "fr": "l'employé civil / l'employée civile",
+  "id": "pg046",
+  "pl": "pracownik cywilny / pracownica cywilna",
+  "ru": "гражда́нский слу́жащий / гражда́нская слу́жащая",
+  "rulat": "graschdánskij slúschaschtschij"
+ },
+ "pg047": {
+  "fr": "le marché civil de l'emploi",
+  "id": "pg047",
+  "pl": "cywilny rynek pracy",
+  "ru": "гражда́нский ры́нок труда́",
+  "rulat": "graschdánskij rýnok trudá"
+ },
+ "pg048": {
+  "fr": "le service militaire obligatoire",
+  "id": "pg048",
+  "pl": "obowiązkowa służba wojskowa",
+  "ru": "обяза́тельная вое́нная слу́жба",
+  "rulat": "objasátelnaja wojénnaja slúschba"
+ },
+ "pg049": {
+  "fr": "la conscription / l'appel sous les drapeaux",
+  "id": "pg049",
+  "pl": "pobór / powołanie do służby wojskowej",
+  "ru": "во́инская обя́занность / призы́в",
+  "rulat": "wóinskaja objásannost / prisýw"
+ },
+ "pg050": {
+  "fr": "l'appel sous les drapeaux / l'incorporation",
+  "id": "pg050",
+  "pl": "powołanie do służby",
+  "ru": "призы́в",
+  "rulat": "prisýw"
+ },
+ "pg051": {
+  "fr": "la conscription (terme américain : « draft »)",
+  "id": "pg051",
+  "pl": "pobór (termin amerykański: „draft”)",
+  "ru": "во́инская обя́занность (америка́нский те́рмин: «драфт»)",
+  "rulat": "wóinskaja objásannost (amerikánskij términ: «draft»)"
+ },
+ "pg052": {
+  "fr": "la loi de modernisation du service militaire",
+  "id": "pg052",
+  "pl": "ustawa o modernizacji służby wojskowej",
+  "ru": "Зако́н о модерниза́ции вое́нной слу́жбы",
+  "rulat": "Sakón o modernisázii wojénnoj slúschby"
+ },
+ "pg053": {
+  "fr": "la loi sur le service militaire obligatoire",
+  "id": "pg053",
+  "pl": "ustawa o obowiązku służby wojskowej",
+  "ru": "Зако́н о во́инской обя́занности",
+  "rulat": "Sakón o wóinskoj objásannosti"
+ },
+ "pg054": {
+  "fr": "la modification / l'amendement",
+  "id": "pg054",
+  "pl": "zmiana / nowelizacja",
+  "ru": "попра́вка / нове́лла",
+  "rulat": "poprávka / nowélla"
+ },
+ "pg055": {
+  "fr": "la base légale",
+  "id": "pg055",
+  "pl": "podstawa prawna",
+  "ru": "правова́я осно́ва",
+  "rulat": "prawowája osnówa"
+ },
+ "pg056": {
+  "fr": "la disposition / la prescription",
+  "id": "pg056",
+  "pl": "przepis / postanowienie",
+  "ru": "предписа́ние / положе́ние",
+  "rulat": "predpisánie / poloschénie"
+ },
+ "pg057": {
+  "fr": "la promulgation d'une loi",
+  "id": "pg057",
+  "pl": "wydanie ustawy",
+  "ru": "изда́ние зако́на",
+  "rulat": "Isdánie sakóna"
+ },
+ "pg058": {
+  "fr": "l'approbation du Bundestag",
+  "id": "pg058",
+  "pl": "zgoda Bundestagu",
+  "ru": "согла́сие Бундеста́га",
+  "rulat": "Soglásie Bundestága"
+ },
+ "pg059": {
+  "fr": "la Loi fondamentale",
+  "id": "pg059",
+  "pl": "Ustawa Zasadnicza",
+  "ru": "Осно́вной зако́н",
+  "rulat": "Osnównoj sakón"
+ },
+ "pg060": {
+  "fr": "l'objecteur de conscience",
+  "id": "pg060",
+  "pl": "osoba odmawiająca służby wojskowej ze względów sumienia",
+  "ru": "отка́зник по убежде́ниям со́вести",
+  "rulat": "Otkásnik po ubeschdénijam sówesti"
+ },
+ "pg061": {
+  "fr": "l'objection de conscience",
+  "id": "pg061",
+  "pl": "odmowa służby wojskowej z powodów sumienia",
+  "ru": "отка́з от вое́нной слу́жбы по убежде́ниям со́вести",
+  "rulat": "Otkás ot wojénnoj slúschby po ubeschdénijam sówesti"
+ },
+ "pg062": {
+  "fr": "l'assujetti au service militaire",
+  "id": "pg062",
+  "pl": "poborowy",
+  "ru": "военнообя́занный",
+  "rulat": "Wojennoobjásannyj"
+ },
+ "pg063": {
+  "fr": "les données d'enregistrement / les données de déclaration",
+  "id": "pg063",
+  "pl": "dane rejestracyjne / dane meldunkowe",
+  "ru": "уче́тные да́нные / регистрацио́нные да́нные",
+  "rulat": "Utschjótnyje dánnyje / registraziónnyje dánnyje"
+ },
+ "pg064": {
+  "fr": "la déclaration de disponibilité",
+  "id": "pg064",
+  "pl": "deklaracja gotowości",
+  "ru": "заявле́ние о гото́вности",
+  "rulat": "Sajawlénie o gotównosti"
+ },
+ "pg065": {
+  "fr": "le questionnaire",
+  "id": "pg065",
+  "pl": "kwestionariusz",
+  "ru": "анке́та",
+  "rulat": "Ankéta"
+ },
+ "pg066": {
+  "fr": "la visite médicale / l'examen médical d'aptitude",
+  "id": "pg066",
+  "pl": "badanie lekarskie / kwalifikacja wojskowa",
+  "ru": "медици́нское освиде́тельствование / враче́бный осмо́тр",
+  "rulat": "Medizínskoje oswidételstwowanije / wratschébnyj osmótr"
+ },
+ "pg067": {
+  "fr": "obligatoire",
+  "id": "pg067",
+  "pl": "obowiązkowy",
+  "ru": "обяза́тельный",
+  "rulat": "Objasátelnyj"
+ },
+ "pg068": {
+  "fr": "l'exemption / la dérogation",
+  "id": "pg068",
+  "pl": "zwolnienie / wyjątek",
+  "ru": "освобожде́ние / исключе́ние",
+  "rulat": "Oswoboschdénije / iskljutschénije"
+ },
+ "pg069": {
+  "fr": "la sélection aléatoire / le tirage au sort",
+  "id": "pg069",
+  "pl": "wybór losowy / procedura losowania",
+  "ru": "случа́йный отбо́р / жеребьёвка",
+  "rulat": "Slutschájnyj otbór / scherebjówka"
+ },
+ "pg070": {
+  "fr": "le tirage au sort",
+  "id": "pg070",
+  "pl": "losowanie",
+  "ru": "жеребьёвка",
+  "rulat": "Scherebjówka"
+ },
+ "pg071": {
+  "fr": "l'amende administrative",
+  "id": "pg071",
+  "pl": "grzywna administracyjna",
+  "ru": "административный штраф",
+  "rulat": "Administratíwnyj schtráf"
+ },
+ "pg072": {
+  "fr": "la classe d'âge",
+  "id": "pg072",
+  "pl": "rocznik",
+  "ru": "год рожде́ния",
+  "rulat": "Gód roschdénija"
+ },
+ "pg073": {
+  "fr": "la classe 2008",
+  "id": "pg073",
+  "pl": "rocznik 2008",
+  "ru": "рождённые в 2008 году́",
+  "rulat": "Roschdjónnyje w 2008 godú"
+ },
+ "pg074": {
+  "fr": "le droit",
+  "id": "pg074",
+  "pl": "uprawnienie",
+  "ru": "пра́во",
+  "rulat": "Práwo"
+ },
+ "pg075": {
+  "fr": "la subvention / l'indemnité",
+  "id": "pg075",
+  "pl": "dopłata / dodatek",
+  "ru": "дота́ция / надба́вка",
+  "rulat": "Dotázija / nadbáwka"
+ },
+ "pg076": {
+  "fr": "le permis de conduire (voiture / camion)",
+  "id": "pg076",
+  "pl": "prawo jazdy (samochód osobowy / ciężarowy)",
+  "ru": "води́тельские права́ (легково́й автомоби́ль / грузови́к)",
+  "rulat": "Wodítelskije prawá (legkowój awtomobíl / grusowík)"
+ },
+ "pg077": {
+  "fr": "la protection des données",
+  "id": "pg077",
+  "pl": "ochrona danych",
+  "ru": "защи́та да́нных",
+  "rulat": "Saschtschíta dánnych"
+ },
+ "pg078": {
+  "fr": "le Règlement général sur la protection des données (RGPD)",
+  "id": "pg078",
+  "pl": "ogólne rozporządzenie o ochronie danych (RODO)",
+  "ru": "О́бщий регла́мент по защи́те да́нных (GDPR)",
+  "rulat": "Óbschtschij regláment po saschtschíte dánnych (GDPR)"
+ },
+ "pg079": {
+  "fr": "le consentement",
+  "id": "pg079",
+  "pl": "zgoda",
+  "ru": "согла́сие",
+  "rulat": "Soglásie"
+ },
+ "pg080": {
+  "fr": "le règlement de l'UE sur l'intelligence artificielle (RIA)",
+  "id": "pg080",
+  "pl": "unijny akt w sprawie sztucznej inteligencji (AI Act)",
+  "ru": "Регла́мент ЕС об иску́сственном интелле́кте (AI Act)",
+  "rulat": "Regláment JES ob iskústwennom intellékte (AI Act)"
+ },
+ "pg081": {
+  "fr": "le système à haut risque",
+  "id": "pg081",
+  "pl": "system wysokiego ryzyka",
+  "ru": "систе́ма высо́кого ри́ска",
+  "rulat": "Sistéma wysókogo ríska"
+ },
+ "pg082": {
+  "fr": "le contrôle humain",
+  "id": "pg082",
+  "pl": "nadzór ludzki",
+  "ru": "челове́ческий надзо́р",
+  "rulat": "Tschelowétscheskij nadsór"
+ },
+ "pg083": {
+  "fr": "le contrôle de sécurité",
+  "id": "pg083",
+  "pl": "postępowanie sprawdzające",
+  "ru": "прове́рка благонадёжности",
+  "rulat": "Prowérka blagonadjóschnosti"
+ },
+ "pg084": {
+  "fr": "le contrôle de fidélité à la Constitution",
+  "id": "pg084",
+  "pl": "weryfikacja lojalności wobec konstytucji",
+  "ru": "прове́рка ве́рности конститу́ции",
+  "rulat": "Prowérka wérnosti konstitúzii"
+ },
+ "pg085": {
+  "fr": "le parcours du candidat",
+  "id": "pg085",
+  "pl": "ścieżka kandydata",
+  "ru": "пу́ть кандида́та",
+  "rulat": "Pút kandidáta"
+ },
+ "pg086": {
+  "fr": "l'approche modulaire",
+  "id": "pg086",
+  "pl": "podejście modułowe",
+  "ru": "мо́дульный подхо́д",
+  "rulat": "Módulnyj podchód"
+ },
+ "pg087": {
+  "fr": "l'activation",
+  "id": "pg087",
+  "pl": "aktywacja",
+  "ru": "актива́ция",
+  "rulat": "Aktiwázija"
+ },
+ "pg088": {
+  "fr": "la préactivation",
+  "id": "pg088",
+  "pl": "wstępna aktywacja",
+  "ru": "предвари́тельная актива́ция",
+  "rulat": "Predwarítelnaja aktiwázija"
+ },
+ "pg089": {
+  "fr": "l'activation en cours de processus",
+  "id": "pg089",
+  "pl": "aktywacja w trakcie procesu",
+  "ru": "актива́ция в проце́ссе",
+  "rulat": "Aktiwázija w prozésse"
+ },
+ "pg090": {
+  "fr": "la post-activation / la réactivation",
+  "id": "pg090",
+  "pl": "aktywacja następcza / reaktywacja",
+  "ru": "после́дующая актива́ция / реактива́ция",
+  "rulat": "Poslédujuschtschaja aktiwázija / reaktiwázija"
+ },
+ "pg091": {
+  "fr": "le conseil de carrière",
+  "id": "pg091",
+  "pl": "doradztwo zawodowe",
+  "ru": "карье́рное консульти́рование",
+  "rulat": "Karjérnoje konsultírowanije"
+ },
+ "pg092": {
+  "fr": "la consultation initiale / l'entretien initial de conseil",
+  "id": "pg092",
+  "pl": "pierwsza konsultacja / pierwsza rozmowa doradcza",
+  "ru": "перви́чная консульта́ция / перви́чная бесе́да",
+  "rulat": "Perwítschnaja konsultázija / perwítschnaja beséda"
+ },
+ "pg093": {
+  "fr": "l'entretien d'information",
+  "id": "pg093",
+  "pl": "rozmowa informacyjna",
+  "ru": "информацио́нная бесе́да",
+  "rulat": "Informaziónnaja beséda"
+ },
+ "pg094": {
+  "fr": "la personne intéressée",
+  "id": "pg094",
+  "pl": "osoba zainteresowana",
+  "ru": "заинтересо́ванное лицо́",
+  "rulat": "Sainteresówannoje lizó"
+ },
+ "pg095": {
+  "fr": "le prospect",
+  "id": "pg095",
+  "pl": "potencjalny klient",
+  "ru": "потенциа́льный клие́нт",
+  "rulat": "Potenziálnyj kliént"
+ },
+ "pg096": {
+  "fr": "le contact / le lead",
+  "id": "pg096",
+  "pl": "kontakt / lead",
+  "ru": "конта́кт / ли́д",
+  "rulat": "Kontákt / líd"
+ },
+ "pg097": {
+  "fr": "la candidate / le candidat",
+  "id": "pg097",
+  "pl": "kandydatka / kandydat",
+  "ru": "кандида́тка / кандида́т",
+  "rulat": "Kandidátka / kandidát"
+ },
+ "pg098": {
+  "fr": "la candidature",
+  "id": "pg098",
+  "pl": "aplikacja",
+  "ru": "зая́вка",
+  "rulat": "Sajáwka"
+ },
+ "pg099": {
+  "fr": "le dépôt de candidature",
+  "id": "pg099",
+  "pl": "złożenie aplikacji",
+  "ru": "пода́ча зая́вки",
+  "rulat": "Podátscha sajáwki"
+ },
+ "pg100": {
+  "fr": "la candidature papier",
+  "id": "pg100",
+  "pl": "aplikacja papierowa",
+  "ru": "бума́жная зая́вка",
+  "rulat": "Bumáschnaja sajáwka"
+ },
+ "pg101": {
+  "fr": "la rupture médiatique",
+  "id": "pg101",
+  "pl": "nieciągłość medialna",
+  "ru": "меди́йный разры́в",
+  "rulat": "Medíjnyj rasrýw"
+ },
+ "pg102": {
+  "fr": "la numérisation",
+  "id": "pg102",
+  "pl": "cyfryzacja",
+  "ru": "цифровиза́ция",
+  "rulat": "Zifrowisázija"
+ },
+ "pg103": {
+  "fr": "la rationalisation des processus",
+  "id": "pg103",
+  "pl": "optymalizacja procesów",
+  "ru": "оптимиза́ция проце́ссов",
+  "rulat": "optimisázija prozéssow"
+ },
+ "pg104": {
+  "fr": "le délai d'attente",
+  "id": "pg104",
+  "pl": "okres oczekiwania",
+  "ru": "срок ожида́ния",
+  "rulat": "srok oschidánija"
+ },
+ "pg105": {
+  "fr": "l'évaluation d'aptitude",
+  "id": "pg105",
+  "pl": "ocena przydatności",
+  "ru": "оце́нка приго́дности",
+  "rulat": "ozénka prigódnosti"
+ },
+ "pg106": {
+  "fr": "l'évaluation positive d'aptitude",
+  "id": "pg106",
+  "pl": "pozytywna ocena przydatności",
+  "ru": "положи́тельная оце́нка приго́дности",
+  "rulat": "poloschítelnaja ozénka prigódnosti"
+ },
+ "pg107": {
+  "fr": "le test d'aptitude",
+  "id": "pg107",
+  "pl": "test predyspozycji",
+  "ru": "тест на приго́дность",
+  "rulat": "test na prigódnost"
+ },
+ "pg108": {
+  "fr": "le test adaptatif par ordinateur (CAT)",
+  "id": "pg108",
+  "pl": "testowanie adaptacyjne komputerowe (CAT)",
+  "ru": "компью́терно-адапти́вное тестирова́ние (CAT)",
+  "rulat": "kompjúterno-adaptíwnoje testirowánije (CAT)"
+ },
+ "pg109": {
+  "fr": "le service psychologique",
+  "id": "pg109",
+  "pl": "służba psychologiczna",
+  "ru": "психологи́ческая слу́жба",
+  "rulat": "psichologítscheskaja slúschba"
+ },
+ "pg110": {
+  "fr": "l'expertise médicale",
+  "id": "pg110",
+  "pl": "ocena lekarska",
+  "ru": "медици́нское заключе́ние",
+  "rulat": "medizínskoje sakljutschénije"
+ },
+ "pg111": {
+  "fr": "l'aptitude au service militaire",
+  "id": "pg111",
+  "pl": "zdolność do służby wojskowej",
+  "ru": "приго́дность к вое́нной слу́жбе",
+  "rulat": "prigódnost k wojénnoj slúschbe"
+ },
+ "pg112": {
+  "fr": "le poste (budgétaire)",
+  "id": "pg112",
+  "pl": "etat (stanowisko)",
+  "ru": "до́лжность",
+  "rulat": "dólschnost"
+ },
+ "pg113": {
+  "fr": "l'affectation au poste",
+  "id": "pg113",
+  "pl": "przydział etatowy",
+  "ru": "назначе́ние на до́лжность",
+  "rulat": "nasnatschénije na dólschnost"
+ },
+ "pg114": {
+  "fr": "le recrutement (l'embauche)",
+  "id": "pg114",
+  "pl": "przyjęcie do służby",
+  "ru": "приём на слу́жбу",
+  "rulat": "prijóm na slúschbu"
+ },
+ "pg115": {
+  "fr": "la nouvelle recrue",
+  "id": "pg115",
+  "pl": "nowo przyjęty",
+  "ru": "новобра́нец",
+  "rulat": "nowobránez"
+ },
+ "pg116": {
+  "fr": "le délai de recrutement",
+  "id": "pg116",
+  "pl": "czas do zatrudnienia",
+  "ru": "вре́мя до приёма на слу́жбу",
+  "rulat": "wrémja do prijóma na slúschbu"
+ },
+ "pg117": {
+  "fr": "la Fast Lane (la voie rapide)",
+  "id": "pg117",
+  "pl": "Fast Lane (szybka ścieżka)",
+  "ru": "Fast Lane (уско́ренная процеду́ра)",
+  "rulat": "Fast Lane (uskórennaja prozedúra)"
+ },
+ "pg118": {
+  "fr": "le candidat déterminé",
+  "id": "pg118",
+  "pl": "zdecydowany kandydat",
+  "ru": "реши́тельный кандида́т",
+  "rulat": "reschítelnyj kandidát"
+ },
+ "pg119": {
+  "fr": "l'engagement (dans les forces armées)",
+  "id": "pg119",
+  "pl": "wstąpienie do służby",
+  "ru": "зачисле́ние на слу́жбу",
+  "rulat": "satschislénije na slúschbu"
+ },
+ "pg120": {
+  "fr": "le premier engagement (l'engagement initial)",
+  "id": "pg120",
+  "pl": "pierwszy zaciąg",
+  "ru": "перви́чное зачисле́ние на слу́жбу",
+  "rulat": "perwítschnoje satschislénije na slúschbu"
+ },
+ "pg121": {
+  "fr": "la durée de service",
+  "id": "pg121",
+  "pl": "okres służby",
+  "ru": "срок слу́жбы",
+  "rulat": "srok slúschby"
+ },
+ "pg122": {
+  "fr": "la fin de service (le départ des forces)",
+  "id": "pg122",
+  "pl": "zwolnienie ze służby",
+  "ru": "увольне́ние со слу́жбы",
+  "rulat": "uwolnénije so slúschby"
+ },
+ "pg123": {
+  "fr": "la transition (vers la vie civile)",
+  "id": "pg123",
+  "pl": "przejście do życia cywilnego",
+  "ru": "перехо́д (в гражда́нскую жизнь)",
+  "rulat": "perechód (w graschdánskuju schisn)"
+ },
+ "pg124": {
+  "fr": "l'attrition (l'usure des effectifs)",
+  "id": "pg124",
+  "pl": "ubytek stanu osobowego",
+  "ru": "у́быль ли́чного соста́ва",
+  "rulat": "ýbyl lítschnogo sostáwa"
+ },
+ "pg125": {
+  "fr": "l'abandon (le décrochage)",
+  "id": "pg125",
+  "pl": "odpad kandydatów",
+  "ru": "отсе́в кандида́тов",
+  "rulat": "otséw kandidátow"
+ },
+ "pg126": {
+  "fr": "le taux de rétention (la fidélisation)",
+  "id": "pg126",
+  "pl": "wskaźnik retencji",
+  "ru": "коэффицие́нт удержа́ния",
+  "rulat": "koeffiziént uderschánija"
+ },
+ "pg127": {
+  "fr": "le taux de conversion",
+  "id": "pg127",
+  "pl": "wskaźnik konwersji",
+  "ru": "коэффицие́нт конве́рсии",
+  "rulat": "koeffiziént konwérsii"
+ },
+ "pg128": {
+  "fr": "le ratio recruteurs / nouvelles recrues",
+  "id": "pg128",
+  "pl": "wskaźnik rekruterów do nowo przyjętych",
+  "ru": "соотноше́ние ве́рбовщиков и новобра́нцев",
+  "rulat": "sootnoschénije wérbowschtschikow i nowobránzew"
+ },
+ "pg129": {
+  "fr": "le point de référence (l'étalon)",
+  "id": "pg129",
+  "pl": "wartość odniesienia",
+  "ru": "контро́льный показа́тель",
+  "rulat": "kontrólnyj pokasátel"
+ },
+ "pg130": {
+  "fr": "les indicateurs de performance",
+  "id": "pg130",
+  "pl": "wskaźniki efektywności",
+  "ru": "показа́тели эффекти́вности",
+  "rulat": "pokasáteli effektíwnosti"
+ },
+ "pg131": {
+  "fr": "l'indicateur clé de performance (ICP)",
+  "id": "pg131",
+  "pl": "kluczowy wskaźnik efektywności (KPI)",
+  "ru": "ключево́й показа́тель эффекти́вности (КПЭ)",
+  "rulat": "kljutschewój pokasátel effektíwnosti (KPE)"
+ },
+ "pg132": {
+  "fr": "la valeur cible",
+  "id": "pg132",
+  "pl": "wartość docelowa",
+  "ru": "целево́й показа́тель",
+  "rulat": "zelewój pokasátel"
+ },
+ "pg133": {
+  "fr": "l'objectif minimal / maximal",
+  "id": "pg133",
+  "pl": "dolna / górna wartość docelowa",
+  "ru": "ни́жний / ве́рхний целево́й показа́тель",
+  "rulat": "níschnij / wérchnij zelewój pokasátel"
+ },
+ "pg134": {
+  "fr": "par rapport à l'année précédente",
+  "id": "pg134",
+  "pl": "w porównaniu do roku poprzedniego",
+  "ru": "по сравне́нию с предыду́щим го́дом",
+  "rulat": "po srawnéniju s predydúschtschim gódom"
+ },
+ "pg135": {
+  "fr": "en glissement annuel",
+  "id": "pg135",
+  "pl": "rok do roku",
+  "ru": "в годово́м сравне́нии",
+  "rulat": "w godowóm srawnénii"
+ },
+ "pg136": {
+  "fr": "l'effectif cible",
+  "id": "pg136",
+  "pl": "docelowy stan liczebny",
+  "ru": "пла́новая чи́сленность ли́чного соста́ва",
+  "rulat": "plánowaja tschíslennost lítschnogo sostáwa"
+ },
+ "pg137": {
+  "fr": "l'incorporation (les effectifs entrants) (US)",
+  "id": "pg137",
+  "pl": "nabór uzupełniający (US)",
+  "ru": "пополне́ние ли́чного соста́ва (США)",
+  "rulat": "popolnénije lítschnogo sostáwa (SSchA)"
+ },
+ "pg138": {
+  "fr": "le Centre de recrutement de l'US Air Force (AFAC)",
+  "id": "pg138",
+  "pl": "Centrum Naboru Sił Powietrznych USA (AFAC)",
+  "ru": "Центр набора Вое́нно-возду́шных сил США (AFAC)",
+  "rulat": "Zentr nabóra Wojénno-wosdúschnych sil SSchA (AFAC)"
+ },
+ "pg139": {
+  "fr": "le Service de recrutement de l'US Air Force (AFRS)",
+  "id": "pg139",
+  "pl": "Służba Naboru Sił Powietrznych USA (AFRS)",
+  "ru": "Слу́жба вербо́вки Вое́нно-возду́шных сил США (AFRS)",
+  "rulat": "Slúschba werbówki Wojénno-wosdúschnych sil SSchA (AFRS)"
+ },
+ "pg140": {
+  "fr": "le Centre de traitement des recrues (MEPS)",
+  "id": "pg140",
+  "pl": "Ośrodek Przetwarzania Poborowych (MEPS)",
+  "ru": "Пункт призы́ва и медосмо́тра (США) (MEPS)",
+  "rulat": "Punkt prisýwa i medosmótra (SSchA) (MEPS)"
+ },
+ "pg141": {
+  "fr": "le test d'aptitude des forces armées américaines (ASVAB)",
+  "id": "pg141",
+  "pl": "Bateria Testów Predyspozycji Zawodowych Sił Zbrojnych USA (ASVAB)",
+  "ru": "Тест профессиона́льной приго́дности вооружённых сил (США) (ASVAB)",
+  "rulat": "Test professionálnoj prigódnosti wooruschónnych sil (SSchA) (ASVAB)"
+ },
+ "pg142": {
+  "fr": "le programme d'entrée différée (US) (DEP)",
+  "id": "pg142",
+  "pl": "Program Odroczonego Wstąpienia do Służby (US) (DEP)",
+  "ru": "Програ́мма отсро́ченного вступле́ния в слу́жбу (США) (DEP)",
+  "rulat": "Prográmma otsrótschennogo wstuplénija w slúschbu (SSchA) (DEP)"
+ },
+ "pg143": {
+  "fr": "la formation militaire de base (US Air Force) (BMT)",
+  "id": "pg143",
+  "pl": "Podstawowe Szkolenie Wojskowe (Sił Powietrznych USA) (BMT)",
+  "ru": "Базо́вая вое́нная подгото́вка (Вое́нно-возду́шных сил США) (BMT)",
+  "rulat": "Basówaja wojénnaja podgotówka (Wojénno-wosdúschnych sil SSchA) (BMT)"
+ },
+ "pg144": {
+  "fr": "la formation de base",
+  "id": "pg144",
+  "pl": "szkolenie podstawowe",
+  "ru": "Нача́льная вое́нная подгото́вка",
+  "rulat": "Natschálnaja wojénnaja podgotówka"
+ },
+ "pg145": {
+  "fr": "le code de spécialité (US Air Force) (AFSC)",
+  "id": "pg145",
+  "pl": "Kod Specjalności (Sił Powietrznych USA) (AFSC)",
+  "ru": "Код специа́льности (Вое́нно-возду́шных сил США) (AFSC)",
+  "rulat": "Kod speziálnosti (Wojénno-wosdúschnych sil SSchA) (AFSC)"
+ },
+ "pg146": {
+  "fr": "la prime d'engagement",
+  "id": "pg146",
+  "pl": "premia za wstąpienie do służby",
+  "ru": "пре́мия за зачисле́ние на слу́жбу",
+  "rulat": "prémija sa satschislénije na slúschbu"
+ },
+ "pg147": {
+  "fr": "le Service de sélection militaire (USA) (Selective Service System)",
+  "id": "pg147",
+  "pl": "System Rejestracji Poborowych (USA) (Selective Service System)",
+  "ru": "Систе́ма учёта во́инской обя́занности (США) (Selective Service System)",
+  "rulat": "Sistéma utschóta wóinskoj objásannosti (SSchA) (Selective Service System)"
+ },
+ "pg148": {
+  "fr": "l'année fiscale (l'exercice budgétaire)",
+  "id": "pg148",
+  "pl": "rok fiskalny (rok budżetowy)",
+  "ru": "фина́нсовый год",
+  "rulat": "finánsowyj god"
+ },
+ "pg149": {
+  "fr": "l'objectif de recrutement",
+  "id": "pg149",
+  "pl": "cel naboru",
+  "ru": "план вербо́вки",
+  "rulat": "plan werbówki"
+ },
+ "pg150": {
+  "fr": "la propension à servir",
+  "id": "pg150",
+  "pl": "skłonność do służby wojskowej",
+  "ru": "скло́нность к вое́нной слу́жбе",
+  "rulat": "sklónnost k wojénnoj slúschbe"
+ },
+ "pg151": {
+  "fr": "la part de jeunes aptes et disponibles (USA) (QMA)",
+  "id": "pg151",
+  "pl": "odsetek zdolnej i dostępnej młodzieży (USA) (QMA)",
+  "ru": "до́ля го́дной и досту́пной молодёжи (США) (QMA)",
+  "rulat": "dólja gódnoj i dostúpnoj molodjóschi (SSchA) (QMA)"
+ },
+ "pg152": {
+  "fr": "le public cible / le groupe cible",
+  "id": "pg152",
+  "pl": "grupa docelowa",
+  "ru": "целева́я аудито́рия / целева́я гру́ппа",
+  "rulat": "zelewája auditórija / zelewája grúppa"
+ },
+ "pg153": {
+  "fr": "le groupe cible principal",
+  "id": "pg153",
+  "pl": "główna grupa docelowa",
+  "ru": "осно́вная целева́я гру́ппа",
+  "rulat": "osnownája zelewája grúppa"
+ },
+ "pg154": {
+  "fr": "la visibilité",
+  "id": "pg154",
+  "pl": "widoczność",
+  "ru": "ви́димость",
+  "rulat": "wídimost"
+ },
+ "pg155": {
+  "fr": "l'authenticité",
+  "id": "pg155",
+  "pl": "autentyczność",
+  "ru": "аутенти́чность",
+  "rulat": "autentítschnost"
+ },
+ "pg156": {
+  "fr": "la marque employeur",
+  "id": "pg156",
+  "pl": "marka pracodawcy",
+  "ru": "бренд рабо́тодателя",
+  "rulat": "brend rabótodatelja"
+ },
+ "pg157": {
+  "fr": "le mix marketing",
+  "id": "pg157",
+  "pl": "mix marketingowy",
+  "ru": "ма́ркетинг-микс",
+  "rulat": "márketing-miks"
+ },
+ "pg158": {
+  "fr": "la publicité extérieure",
+  "id": "pg158",
+  "pl": "reklama zewnętrzna",
+  "ru": "нару́жная рекла́ма",
+  "rulat": "narúschnaja rekláma"
+ },
+ "pg159": {
+  "fr": "la publicité de recrutement axée sur les besoins",
+  "id": "pg159",
+  "pl": "reklama rekrutacyjna ukierunkowana na potrzeby",
+  "ru": "ка́дровая рекла́ма по потре́бности",
+  "rulat": "kádrowaja rekláma po potrébnosti"
+ },
+ "pg160": {
+  "fr": "la campagne publicitaire",
+  "id": "pg160",
+  "pl": "kampania reklamowa",
+  "ru": "рекла́мная кампа́ния",
+  "rulat": "reklámnaja kampánija"
+ },
+ "pg161": {
+  "fr": "la campagne de dialogue",
+  "id": "pg161",
+  "pl": "kampania dialogowa",
+  "ru": "диало́говая кампа́ния",
+  "rulat": "dialógowaja kampánija"
+ },
+ "pg162": {
+  "fr": "les produits promotionnels",
+  "id": "pg162",
+  "pl": "gadżety reklamowe",
+  "ru": "рекла́мная проду́кция",
+  "rulat": "reklámnaja prodúkzija"
+ },
+ "pg163": {
+  "fr": "le portail d'information",
+  "id": "pg163",
+  "pl": "portal informacyjny",
+  "ru": "информацио́нный порта́л",
+  "rulat": "informaziónnyj portál"
+ },
+ "pg164": {
+  "fr": "l'orientation professionnelle",
+  "id": "pg164",
+  "pl": "orientacja zawodowa",
+  "ru": "профессиона́льная ориента́ция",
+  "rulat": "professionálnaja orientázija"
+ },
+ "pg165": {
+  "fr": "la gestion de la relation client (GRC)",
+  "id": "pg165",
+  "pl": "zarządzanie relacjami z klientami (CRM)",
+  "ru": "управле́ние отноше́ниями с клие́нтами (CRM)",
+  "rulat": "uprawlénije otnoschénijami s kliéntami (CRM)"
+ },
+ "pg166": {
+  "fr": "la relance",
+  "id": "pg166",
+  "pl": "działanie przypominające",
+  "ru": "повто́рное обраще́ние",
+  "rulat": "powtórnoje obraschtschénije"
+ },
+ "pg167": {
+  "fr": "l'offre sur mesure",
+  "id": "pg167",
+  "pl": "oferta szyta na miarę",
+  "ru": "индивидуа́льное предложе́ние",
+  "rulat": "indiwiduálnoje predloschénije"
+ },
+ "pg168": {
+  "fr": "le formulaire de contact",
+  "id": "pg168",
+  "pl": "formularz kontaktowy",
+  "ru": "конта́ктная фо́рма",
+  "rulat": "kontáktnaja fórma"
+ },
+ "pg169": {
+  "fr": "le point de contact numérique",
+  "id": "pg169",
+  "pl": "cyfrowy punkt kontaktowy",
+  "ru": "цифрова́я то́чка конта́кта",
+  "rulat": "zifrowája tótschka kontákta"
+ },
+ "pg170": {
+  "fr": "le site carrière",
+  "id": "pg170",
+  "pl": "strona kariery",
+  "ru": "карье́рный сайт",
+  "rulat": "karjérnyj sajt"
+ },
+ "pg171": {
+  "fr": "les pages vues",
+  "id": "pg171",
+  "pl": "odsłony strony",
+  "ru": "просмо́тры страни́ц",
+  "rulat": "prosmótry straníz"
+ },
+ "pg172": {
+  "fr": "l'abonné",
+  "id": "pg172",
+  "pl": "obserwator",
+  "ru": "подпи́счик",
+  "rulat": "podpístschik"
+ },
+ "pg173": {
+  "fr": "le salon professionnel",
+  "id": "pg173",
+  "pl": "targi",
+  "ru": "вы́ставка",
+  "rulat": "wýstawka"
+ },
+ "pg174": {
+  "fr": "le stand d'exposition",
+  "id": "pg174",
+  "pl": "stanowisko targowe",
+  "ru": "вы́ставочный стенд",
+  "rulat": "wýstawotschnyj stend"
+ },
+ "pg175": {
+  "fr": "le stand éphémère",
+  "id": "pg175",
+  "pl": "tymczasowe stanowisko pop-up",
+  "ru": "вре́менный стенд «поп-а́п»",
+  "rulat": "wrémennyj stend «pop-áp»"
+ },
+ "pg176": {
+  "fr": "le van carrière",
+  "id": "pg176",
+  "pl": "van kariery",
+  "ru": "карье́рный автомоби́ль",
+  "rulat": "karjérnyj awtomobíl"
+ },
+ "pg177": {
+  "fr": "le van d'information",
+  "id": "pg177",
+  "pl": "infobus",
+  "ru": "информацио́нный автомоби́ль",
+  "rulat": "informaziónnyj awtomobíl"
+ },
+ "pg178": {
+  "fr": "le camion carrière",
+  "id": "pg178",
+  "pl": "ciężarówka kariery",
+  "ru": "карье́рный грузови́к",
+  "rulat": "karjérnyj grusowík"
+ },
+ "pg179": {
+  "fr": "la base carrière",
+  "id": "pg179",
+  "pl": "baza kariery",
+  "ru": "карье́рная ба́за",
+  "rulat": "karjérnaja báza"
+ },
+ "pg180": {
+  "fr": "l'événement de recrutement",
+  "id": "pg180",
+  "pl": "wydarzenie rekrutacyjne",
+  "ru": "мероприя́тие по набо́ру ка́дров",
+  "rulat": "meroprijátije po nabóru kádrow"
+ },
+ "pg181": {
+  "fr": "l'événement national",
+  "id": "pg181",
+  "pl": "wydarzenie ogólnokrajowe",
+  "ru": "общенациона́льное мероприя́тие",
+  "rulat": "obschtschenazionálnoje meroprijátije"
+ },
+ "pg182": {
+  "fr": "les journées découverte",
+  "id": "pg182",
+  "pl": "dni odkryć",
+  "ru": "дни откры́тий",
+  "rulat": "dni otkrýtij"
+ },
+ "pg183": {
+  "fr": "la chasse aux talents (Journée de la Bundeswehr)",
+  "id": "pg183",
+  "pl": "poszukiwanie talentów (Dzień Bundeswehry)",
+  "ru": "по́иск тала́нтов (День Бу́ндесвера)",
+  "rulat": "póisk talántow (Den Búndeswera)"
+ },
+ "pg184": {
+  "fr": "la Journée portes ouvertes de la Bundeswehr",
+  "id": "pg184",
+  "pl": "Dzień Bundeswehry (dni otwarte)",
+  "ru": "День откры́тых двере́й Бу́ндесвера",
+  "rulat": "Den otkrýtych dweréj Búndeswera"
+ },
+ "pg185": {
+  "fr": "Olympix (événement sportif)",
+  "id": "pg185",
+  "pl": "Olympix (wydarzenie sportowe)",
+  "ru": "Оли́мпикс (спорти́вное мероприя́тие)",
+  "rulat": "Olímpiks (sportíwnoje meroprijátije)"
+ },
+ "pg186": {
+  "fr": "la Journée des filles et des garçons (Girls'Day / Boys'Day)",
+  "id": "pg186",
+  "pl": "Dzień Dziewczyn i Dzień Chłopców (Girls'Day / Boys'Day)",
+  "ru": "День де́вочек и ма́льчиков (Girls'Day / Boys'Day)",
+  "rulat": "Den dévotschek i máltschikow (Girls'Day / Boys'Day)"
+ },
+ "pg187": {
+  "fr": "le centre d'accueil des visiteurs",
+  "id": "pg187",
+  "pl": "centrum dla zwiedzających",
+  "ru": "центр для посети́телей",
+  "rulat": "zentr dlja posetítelej"
+ },
+ "pg188": {
+  "fr": "le/la participant(e)",
+  "id": "pg188",
+  "pl": "uczestnik / uczestniczka",
+  "ru": "уча́стник / уча́стница",
+  "rulat": "utschástnik / utschástniza"
+ },
+ "pg189": {
+  "fr": "l'orientation professionnelle solide",
+  "id": "pg189",
+  "pl": "solidna orientacja zawodowa",
+  "ru": "обосно́ванная профессиона́льная ориента́ция",
+  "rulat": "obosnówannaja professionálnaja orientázija"
+ },
+ "pg190": {
+  "fr": "l'expérience pratique",
+  "id": "pg190",
+  "pl": "praktyczne doświadczenie",
+  "ru": "практи́ческий о́пыт",
+  "rulat": "praktítscheskij ópyt"
+ },
+ "pg191": {
+  "fr": "la recommandation de personnes de confiance",
+  "id": "pg191",
+  "pl": "polecenie od osób godnych zaufania",
+  "ru": "рекоменда́ция от дове́ренных лиц",
+  "rulat": "rekomendázija ot dowérennych liz"
+ },
+ "pg192": {
+  "fr": "l'expérience de première main",
+  "id": "pg192",
+  "pl": "doświadczenie z pierwszej ręki",
+  "ru": "о́пыт из пе́рвых рук",
+  "rulat": "ópyt is pérwych ruk"
+ },
+ "pg193": {
+  "fr": "l'approche systémique",
+  "id": "pg193",
+  "pl": "podejście systemowe",
+  "ru": "систе́мный подхо́д",
+  "rulat": "sistémnyj podchód"
+ },
+ "pg194": {
+  "fr": "le pilotage centralisé",
+  "id": "pg194",
+  "pl": "centralne kierowanie",
+  "ru": "центра́льное управле́ние",
+  "rulat": "zentrálnoje uprawlénije"
+ },
+ "pg195": {
+  "fr": "les services locaux et unités militaires",
+  "id": "pg195",
+  "pl": "lokalne placówki i jednostki wojskowe",
+  "ru": "ме́стные слу́жбы и во́инские ча́сти",
+  "rulat": "méstnyje slúschby i wóinskije tschásti"
+ },
+ "pg196": {
+  "fr": "les questions de principe",
+  "id": "pg196",
+  "pl": "sprawy zasadnicze",
+  "ru": "принципиа́льные вопро́сы",
+  "rulat": "prinzipiálnyje woprósy"
+ },
+ "pg197": {
+  "fr": "la tenue des dossiers",
+  "id": "pg197",
+  "pl": "przechowywanie akt",
+  "ru": "хране́ние дел",
+  "rulat": "chranénije del"
+ },
+ "pg198": {
+  "fr": "le concept type",
+  "id": "pg198",
+  "pl": "koncepcja modelowa",
+  "ru": "типова́я конце́пция",
+  "rulat": "tipowája konzépzija"
+ },
+ "pg199": {
+  "fr": "la voie à suivre",
+  "id": "pg199",
+  "pl": "dalsza droga",
+  "ru": "дальне́йший путь",
+  "rulat": "dalnéjschij put"
+ },
+ "pg200": {
+  "fr": "l'union des forces",
+  "id": "pg200",
+  "pl": "łączenie sił",
+  "ru": "объедине́ние сил",
+  "rulat": "objedinénije sil"
+ },
+ "pg201": {
+  "fr": "la couverture territoriale complète",
+  "id": "pg201",
+  "pl": "pełne pokrycie terytorialne",
+  "ru": "по́лное территориа́льное покры́тие",
+  "rulat": "pólnoje territoriálnoje pokrýtije"
+ },
+ "pg202": {
+  "fr": "la numérisation globale",
+  "id": "pg202",
+  "pl": "kompleksowa cyfryzacja",
+  "ru": "всео́бщая цифровиза́ция",
+  "rulat": "wseóbschtschaja zifrowizázija"
+ },
+ "pg203": {
+  "fr": "le conscrit potentiel",
+  "id": "pg203",
+  "pl": "potencjalny poborowy",
+  "ru": "возмо́жный призывни́к",
+  "rulat": "wosmóschnyj prisywník"
+ },
+ "pg204": {
+  "fr": "l'intelligence artificielle (IA)",
+  "id": "pg204",
+  "pl": "sztuczna inteligencja (SI)",
+  "ru": "иску́сственный интелле́кт (ИИ)",
+  "rulat": "iskústwennyj intellékt (II)"
+ },
+ "pg205": {
+  "fr": "le chatbot conversationnel",
+  "id": "pg205",
+  "pl": "chatbot konwersacyjny",
+  "ru": "разгово́рный чат-бо́т",
+  "rulat": "rasgowórnyj tschat-bót"
+ },
+ "pg206": {
+  "fr": "la base de connaissances",
+  "id": "pg206",
+  "pl": "baza wiedzy",
+  "ru": "ба́за зна́ний",
+  "rulat": "bása snánij"
+ },
+ "pg207": {
+  "fr": "l'intention (chatbot)",
+  "id": "pg207",
+  "pl": "intencja (chatbot)",
+  "ru": "наме́рение (чат-бо́т)",
+  "rulat": "namérenije (tschat-bót)"
+ },
+ "pg208": {
+  "fr": "la répartition par code postal",
+  "id": "pg208",
+  "pl": "przydział według kodu pocztowego",
+  "ru": "распределе́ние по почто́вому и́ндексу",
+  "rulat": "raspredelénije po potschtówomu índeksu"
+ },
+ "pg209": {
+  "fr": "le rappel de rendez-vous",
+  "id": "pg209",
+  "pl": "przypomnienie o terminie",
+  "ru": "напомина́ние о встре́че",
+  "rulat": "napominánije o wstrétsche"
+ },
+ "pg210": {
+  "fr": "le respect des rendez-vous",
+  "id": "pg210",
+  "pl": "dotrzymywanie terminów",
+  "ru": "соблюде́ние сро́ков за́писи",
+  "rulat": "sobljudénije srókow sápisi"
+ },
+ "pg211": {
+  "fr": "le délai de préparation",
+  "id": "pg211",
+  "pl": "czas wyprzedzenia",
+  "ru": "сро́к подгото́вки",
+  "rulat": "srók podgotówki"
+ },
+ "pg212": {
+  "fr": "les données propriétaires",
+  "id": "pg212",
+  "pl": "dane własne",
+  "ru": "со́бственные да́нные по́льзователей",
+  "rulat": "sóbstwennye dánnye pólsowatelej"
+ },
+ "pg213": {
+  "fr": "le consentement actif",
+  "id": "pg213",
+  "pl": "zgoda aktywna",
+  "ru": "акти́вное согла́сие",
+  "rulat": "aktíwnoje soglásije"
+ },
+ "pg214": {
+  "fr": "le projet pilote",
+  "id": "pg214",
+  "pl": "projekt pilotażowy",
+  "ru": "пило́тный прое́кт",
+  "rulat": "pilótnyj projékt"
+ },
+ "pg215": {
+  "fr": "le déploiement généralisé",
+  "id": "pg215",
+  "pl": "wdrożenie na szeroką skalę",
+  "ru": "масшта́бное внедре́ние",
+  "rulat": "masschtábnoje wnedrénije"
+ },
+ "pg216": {
+  "fr": "les enseignements",
+  "id": "pg216",
+  "pl": "wnioski z doświadczeń",
+  "ru": "извлечённые уро́ки",
+  "rulat": "iswletschjónnyje uróki"
+ },
+ "pg217": {
+  "fr": "en résumé",
+  "id": "pg217",
+  "pl": "w skrócie",
+  "ru": "вкра́тце",
+  "rulat": "wkrátze"
+ },
+ "pg218": {
+  "fr": "pour être direct",
+  "id": "pg218",
+  "pl": "mówiąc wprost",
+  "ru": "говоря́ пря́мо",
+  "rulat": "goworjá prjámo"
+ },
+ "pg219": {
+  "fr": "permettez-moi de reformuler cela",
+  "id": "pg219",
+  "pl": "ujmę to inaczej",
+  "ru": "позво́льте мне́ переформули́ровать",
+  "rulat": "poswólte mné pereformulírowat"
+ },
+ "pg220": {
+  "fr": "Je recommence cette phrase.",
+  "id": "pg220",
+  "pl": "Zacznę to zdanie jeszcze raz.",
+  "ru": "Я начну́ э́то предложе́ние ещё раз.",
+  "rulat": "Ja natschnú éto predloschénije jeschtschjó rás."
+ },
+ "pg221": {
+  "fr": "la trajectoire de montée en puissance",
+  "id": "pg221",
+  "pl": "ścieżka rozbudowy",
+  "ru": "пу́ть нара́щивания",
+  "rulat": "pút naráschtschiwanija"
+ },
+ "pg222": {
+  "fr": "La montée en puissance est l'objectif.",
+  "id": "pg222",
+  "pl": "Rozbudowa jest celem.",
+  "ru": "Нара́щивание — э́то це́ль.",
+  "rulat": "Naráschtschiwanije — éto zél."
+ },
+ "pg223": {
+  "fr": "le remplacement militaire",
+  "id": "pg223",
+  "pl": "uzupełnienie osobowe",
+  "ru": "во́инское пополне́ние",
+  "rulat": "woínskoje popolnénije"
+ },
+ "pg224": {
+  "fr": "l'autorité de recensement",
+  "id": "pg224",
+  "pl": "organ ewidencyjny",
+  "ru": "о́рган учёта",
+  "rulat": "órgan utschjóta"
+ },
+ "pg225": {
+  "fr": "le recensement militaire",
+  "id": "pg225",
+  "pl": "rejestracja wojskowa",
+  "ru": "во́инский учёт",
+  "rulat": "wóinskij utschjót"
+ },
+ "pg226": {
+  "fr": "effectuer le recensement militaire",
+  "id": "pg226",
+  "pl": "przeprowadzić rejestrację wojskową",
+  "ru": "проводи́ть во́инский учёт",
+  "rulat": "prowodít wóinskij utschjót"
+ },
+ "pg227": {
+  "fr": "le bureau central de coordination",
+  "id": "pg227",
+  "pl": "centralne biuro koordynacyjne",
+  "ru": "центра́льное координацио́нное бюро́",
+  "rulat": "zentrálnoje koordinazionnóje bjuró"
+ },
+ "pg228": {
+  "fr": "le bureau d'enregistrement des résidents",
+  "id": "pg228",
+  "pl": "urząd ewidencji ludności",
+  "ru": "отде́л регистра́ции населе́ния",
+  "rulat": "otdél registrázii naselénija"
+ },
+ "pg229": {
+  "fr": "l'envoi postal",
+  "id": "pg229",
+  "pl": "wysyłka",
+  "ru": "почто́вая рассы́лка",
+  "rulat": "potschtówaja rassýlka"
+ },
+ "pg230": {
+  "fr": "l'impression et l'expédition",
+  "id": "pg230",
+  "pl": "druk i wysyłka",
+  "ru": "печа́ть и рассы́лка",
+  "rulat": "petschát i rassýlka"
+ },
+ "pg231": {
+  "fr": "le prestataire de services d'expédition",
+  "id": "pg231",
+  "pl": "dostawca usług wysyłkowych",
+  "ru": "слу́жба рассы́лки",
+  "rulat": "slúschba rassýlki"
+ },
+ "pg232": {
+  "fr": "la lettre d'accompagnement avec code QR",
+  "id": "pg232",
+  "pl": "pismo przewodnie z kodem QR",
+  "ru": "сопроводи́тельное письмо́ с QR-ко́дом",
+  "rulat": "soprowodítelnoje pismó s ku-er-kódom"
+ },
+ "pg233": {
+  "fr": "l'enquête en ligne",
+  "id": "pg233",
+  "pl": "ankieta internetowa",
+  "ru": "онла́йн-опро́с",
+  "rulat": "onlájn-oprós"
+ },
+ "pg234": {
+  "fr": "la réponse",
+  "id": "pg234",
+  "pl": "odpowiedź",
+  "ru": "отве́т",
+  "rulat": "otwét"
+ },
+ "pg235": {
+  "fr": "le taux de réponse",
+  "id": "pg235",
+  "pl": "wskaźnik odpowiedzi",
+  "ru": "у́ровень ответо́в",
+  "rulat": "úrowen otwetów"
+ },
+ "pg236": {
+  "fr": "le conscrit",
+  "id": "pg236",
+  "pl": "poborowy",
+  "ru": "призывни́к",
+  "rulat": "prisywník"
+ },
+ "pg237": {
+  "fr": "le non-conscrit (femmes, volontaires)",
+  "id": "pg237",
+  "pl": "osoba nieobjęta poborem (kobiety, ochotnicy)",
+  "ru": "лицо́, не подлежа́щее призы́ву (же́нщины, доброво́льцы)",
+  "rulat": "lizó, ne podlescháschtscheje prisýwu (schénschtschiny, dobrowólzy)"
+ },
+ "pg238": {
+  "fr": "les conscrits sans intérêt",
+  "id": "pg238",
+  "pl": "poborowi niezainteresowani",
+  "ru": "незаинтересо́ванные призывники́",
+  "rulat": "nesainteresówannyje prisywnikí"
+ },
+ "pg239": {
+  "fr": "les candidats sélectionnés",
+  "id": "pg239",
+  "pl": "wybrani kandydaci",
+  "ru": "ото́бранные кандида́ты",
+  "rulat": "otóbrannyje kandidáty"
+ },
+ "pg240": {
+  "fr": "le stockage des données",
+  "id": "pg240",
+  "pl": "przechowywanie danych",
+  "ru": "хране́ние да́нных",
+  "rulat": "chranénije dánnych"
+ },
+ "pg241": {
+  "fr": "la lettre de rappel",
+  "id": "pg241",
+  "pl": "pismo przypominające",
+  "ru": "письмо́-напомина́ние",
+  "rulat": "pismó-napominánije"
+ },
+ "pg242": {
+  "fr": "la lettre d'audition",
+  "id": "pg242",
+  "pl": "pismo o wysłuchaniu",
+  "ru": "уведомле́ние о заслу́шивании",
+  "rulat": "uwedomlénije o saslúschiwanii"
+ },
+ "pg243": {
+  "fr": "l'avis d'amende",
+  "id": "pg243",
+  "pl": "decyzja o karze pieniężnej",
+  "ru": "постановле́ние о штра́фе",
+  "rulat": "postanowlénije o schtráfe"
+ },
+ "pg244": {
+  "fr": "l'opposition",
+  "id": "pg244",
+  "pl": "odwołanie",
+  "ru": "возраже́ние",
+  "rulat": "wosraschénije"
+ },
+ "pg245": {
+  "fr": "la voie de recours",
+  "id": "pg245",
+  "pl": "środek prawny",
+  "ru": "сре́дство правово́й защи́ты",
+  "rulat": "srédstwo prawowój saschtschíty"
+ },
+ "pg246": {
+  "fr": "l'accusé de réception",
+  "id": "pg246",
+  "pl": "potwierdzenie odbioru",
+  "ru": "подтвержде́ние получе́ния",
+  "rulat": "podtwerschdénije polutschénija"
+ },
+ "pg247": {
+  "fr": "la loi sur le service militaire obligatoire (WPflG)",
+  "id": "pg247",
+  "pl": "ustawa o obowiązku służby wojskowej (WPflG)",
+  "ru": "зако́н о во́инской обя́занности (WPflG)",
+  "rulat": "Sakón o wóinskoj objásannosti (WPflG)"
+ },
+ "pg248": {
+  "fr": "la loi sur le statut des militaires (SG)",
+  "id": "pg248",
+  "pl": "ustawa o statusie prawnym żołnierzy (SG)",
+  "ru": "зако́н о правово́м ста́тусе военнослу́жащих (SG)",
+  "rulat": "Sakón o prawowóm státuse wojennosluscháschtschich (SG)"
+ },
+ "pg249": {
+  "fr": "l'article (§)",
+  "id": "pg249",
+  "pl": "paragraf (§)",
+  "ru": "парагра́ф (§)",
+  "rulat": "paragráf (§)"
+ },
+ "pg250": {
+  "fr": "l'hypothèse",
+  "id": "pg250",
+  "pl": "założenie",
+  "ru": "предположе́ние",
+  "rulat": "predpoloschénije"
+ },
+ "pg251": {
+  "fr": "l'évaluation et la répartition",
+  "id": "pg251",
+  "pl": "ocena i przydział",
+  "ru": "ана́лиз и распределе́ние",
+  "rulat": "anális i raspredelénije"
+ },
+ "pg252": {
+  "fr": "la logique d'analyse",
+  "id": "pg252",
+  "pl": "logika analizy",
+  "ru": "ло́гика ана́лиза",
+  "rulat": "lógika análisa"
+ },
+ "pg253": {
+  "fr": "la valeur en points",
+  "id": "pg253",
+  "pl": "wartość punktowa",
+  "ru": "ба́лльное значе́ние",
+  "rulat": "bálnoje snatschénije"
+ },
+ "pg254": {
+  "fr": "la catégorie",
+  "id": "pg254",
+  "pl": "kategoria",
+  "ru": "катего́рия",
+  "rulat": "kategórija"
+ },
+ "pg255": {
+  "fr": "la répartition automatisée",
+  "id": "pg255",
+  "pl": "automatyczny przydział",
+  "ru": "автомати́ческое распределе́ние",
+  "rulat": "awtomatítscheskoje raspredelénije"
+ },
+ "pg256": {
+  "fr": "orienter quelqu'un vers",
+  "id": "pg256",
+  "pl": "skierować kogoś do",
+  "ru": "направля́ть кого́-либо к",
+  "rulat": "naprawlját kogó-libo k"
+ },
+ "pg257": {
+  "fr": "la gestion des capacités",
+  "id": "pg257",
+  "pl": "zarządzanie zdolnościami",
+  "ru": "управле́ние мощностя́ми",
+  "rulat": "uprawlénije moschtschnostjámi"
+ },
+ "pg258": {
+  "fr": "le centre d'opérations de recrutement (ROC)",
+  "id": "pg258",
+  "pl": "Centrum Operacji Rekrutacyjnych (ROC)",
+  "ru": "Операти́вный центр набо́ра персона́ла (ROC)",
+  "rulat": "Operatíwnyj zentr nabóra personála (ROC)"
+ },
+ "pg259": {
+  "fr": "le centre de carrières d'accueil",
+  "id": "pg259",
+  "pl": "przyjmujące centrum kariery",
+  "ru": "принима́ющий центр карье́ры",
+  "rulat": "prinimájuschtschij zentr karjéry"
+ },
+ "pg260": {
+  "fr": "selon les capacités disponibles",
+  "id": "pg260",
+  "pl": "w zależności od dostępnych zdolności",
+  "ru": "согла́сно и́меющимся возмо́жностям",
+  "rulat": "soglásno ímejuschtschimsja wosmóshnostjam"
+ },
+ "pg261": {
+  "fr": "sur une base volontaire",
+  "id": "pg261",
+  "pl": "na zasadzie dobrowolności",
+  "ru": "на доброво́льной осно́ве",
+  "rulat": "na dobrowólnoj osnówe"
+ },
+ "pg262": {
+  "fr": "la carte de chaleur",
+  "id": "pg262",
+  "pl": "mapa cieplna",
+  "ru": "теплова́я ка́рта",
+  "rulat": "teplowája kárta"
+ },
+ "pg263": {
+  "fr": "le centre de sélection (site de screening)",
+  "id": "pg263",
+  "pl": "centrum kwalifikacyjne (punkt selekcji)",
+  "ru": "центр отбо́ра (скри́нинговый пункт)",
+  "rulat": "zentr otbóra (skríningowyj punkt)"
+ },
+ "pg264": {
+  "fr": "le centre de conscription",
+  "id": "pg264",
+  "pl": "centrum poboru wojskowego",
+  "ru": "призывно́й пункт",
+  "rulat": "prisywnój punkt"
+ },
+ "pg265": {
+  "fr": "le conscrit",
+  "id": "pg265",
+  "pl": "poborowy",
+  "ru": "призывни́к",
+  "rulat": "prisywník"
+ },
+ "pg266": {
+  "fr": "la capacité opérationnelle initiale (IOC)",
+  "id": "pg266",
+  "pl": "początkowa zdolność operacyjna (IOC)",
+  "ru": "нача́льная операти́вная гото́вность (IOC)",
+  "rulat": "natschálnaja operatíwnaja gotównost (IOC)"
+ },
+ "pg267": {
+  "fr": "la capacité opérationnelle totale (FOC)",
+  "id": "pg267",
+  "pl": "pełna zdolność operacyjna (FOC)",
+  "ru": "по́лная операти́вная гото́вность (FOC)",
+  "rulat": "pólnaja operatíwnaja gotównost (FOC)"
+ },
+ "pg268": {
+  "fr": "la mise en place",
+  "id": "pg268",
+  "pl": "utworzenie",
+  "ru": "созда́ние",
+  "rulat": "sosdánije"
+ },
+ "pg269": {
+  "fr": "l'intégration dans les structures existantes",
+  "id": "pg269",
+  "pl": "integracja z istniejącymi strukturami",
+  "ru": "интегра́ция в существу́ющие структу́ры",
+  "rulat": "integrázija w suschtschestwújuschtschije struktúry"
+ },
+ "pg270": {
+  "fr": "le poste (poste d'état-major)",
+  "id": "pg270",
+  "pl": "stanowisko (etatowe)",
+  "ru": "до́лжность (шта́тная до́лжность)",
+  "rulat": "dólshnost (schtátnaja dólshnost)"
+ },
+ "pg271": {
+  "fr": "le besoin en surface",
+  "id": "pg271",
+  "pl": "zapotrzebowanie na powierzchnię",
+  "ru": "потре́бность в площадя́х",
+  "rulat": "potrébnost w ploschtschadjách"
+ },
+ "pg272": {
+  "fr": "le premier point de contact",
+  "id": "pg272",
+  "pl": "pierwszy punkt kontaktowy",
+  "ru": "пе́рвая то́чка конта́кта",
+  "rulat": "pérwaja tótschka kontákta"
+ },
+ "pg273": {
+  "fr": "l'espace d'accueil et d'attente",
+  "id": "pg273",
+  "pl": "strefa recepcji i oczekiwania",
+  "ru": "зо́на приёма и ожида́ния",
+  "rulat": "sóna prijóma i oshidánija"
+ },
+ "pg274": {
+  "fr": "l'effet wow",
+  "id": "pg274",
+  "pl": "efekt wow",
+  "ru": "эффе́кт «ва́у»",
+  "rulat": "effékt «wáu»"
+ },
+ "pg275": {
+  "fr": "l'espace numérique",
+  "id": "pg275",
+  "pl": "strefa cyfrowa",
+  "ru": "цифрова́я зо́на",
+  "rulat": "zifrowája sóna"
+ },
+ "pg276": {
+  "fr": "l'espace équipement",
+  "id": "pg276",
+  "pl": "strefa sprzętu",
+  "ru": "зо́на снаряже́ния",
+  "rulat": "sóna snarjashénija"
+ },
+ "pg277": {
+  "fr": "la signalétique",
+  "id": "pg277",
+  "pl": "oznakowanie",
+  "ru": "систе́ма указа́телей",
+  "rulat": "sistéma ukasátelej"
+ },
+ "pg278": {
+  "fr": "le vestiaire et les casiers",
+  "id": "pg278",
+  "pl": "szatnia i szafki",
+  "ru": "гардеро́б и шка́фчики",
+  "rulat": "garderób i schkáftschiki"
+ },
+ "pg279": {
+  "fr": "le distributeur automatique (snacks/boissons)",
+  "id": "pg279",
+  "pl": "automat (przekąski/napoje)",
+  "ru": "торго́вый автома́т (снэ́ки/напи́тки)",
+  "rulat": "torgówyj awtomát (snéki/napítki)"
+ },
+ "pg280": {
+  "fr": "rendre la Bundeswehr tangible",
+  "id": "pg280",
+  "pl": "uczynić Bundeswehrę odczuwalną",
+  "ru": "сде́лать Бундесве́р бли́же",
+  "rulat": "sdélat Bundeswér blishe"
+ },
+ "pg281": {
+  "fr": "susciter la curiosité",
+  "id": "pg281",
+  "pl": "wzbudzić ciekawość",
+  "ru": "пробужда́ть любопы́тство",
+  "rulat": "probushdat ljubopýtstwo"
+ },
+ "pg282": {
+  "fr": "éveiller le potentiel",
+  "id": "pg282",
+  "pl": "uwolnić potencjał",
+  "ru": "пробужда́ть потенциа́л",
+  "rulat": "probushdat potenziál"
+ },
+ "pg283": {
+  "fr": "le conseil ciblé",
+  "id": "pg283",
+  "pl": "ukierunkowane poradnictwo",
+  "ru": "целево́е консульти́рование",
+  "rulat": "zelewóje konsultírowanije"
+ },
+ "pg284": {
+  "fr": "l'examen de conscription (visite médicale d'incorporation)",
+  "id": "pg284",
+  "pl": "badanie kwalifikacyjne",
+  "ru": "призывно́е освиде́тельствование",
+  "rulat": "prisywnóje oswidételstwowanije"
+ },
+ "pg285": {
+  "fr": "l'aptitude au service",
+  "id": "pg285",
+  "pl": "zdolność do służby",
+  "ru": "го́дность к слу́жбе",
+  "rulat": "gódnost k slushbe"
+ },
+ "pg286": {
+  "fr": "la détermination de l'aptitude au service militaire",
+  "id": "pg286",
+  "pl": "orzeczenie o zdolności do służby wojskowej",
+  "ru": "определе́ние го́дности к вое́нной слу́жбе",
+  "rulat": "opredelénije gódnosti k wojénnoj slushbe"
+ },
+ "pg287": {
+  "fr": "l'officier de conscription",
+  "id": "pg287",
+  "pl": "oficer poborowy",
+  "ru": "офице́р призывно́й слу́жбы",
+  "rulat": "ofizér prisywnój slushby"
+ },
+ "pg288": {
+  "fr": "la notification",
+  "id": "pg288",
+  "pl": "zawiadomienie",
+  "ru": "уведомле́ние",
+  "rulat": "uwedomlénije"
+ },
+ "pg289": {
+  "fr": "l'entretien de conscription",
+  "id": "pg289",
+  "pl": "rozmowa kwalifikacyjna w ramach poboru",
+  "ru": "бесе́да при призы́ве",
+  "rulat": "beséda pri prisýwe"
+ },
+ "pg290": {
+  "fr": "l'entretien avec l'examinateur",
+  "id": "pg290",
+  "pl": "rozmowa z egzaminatorem",
+  "ru": "бесе́да с руководи́телем тестирова́ния",
+  "rulat": "beséda s rukowodítelem testirowánija"
+ },
+ "pg291": {
+  "fr": "la pépite (candidat particulièrement adapté)",
+  "id": "pg291",
+  "pl": "perła (szczególnie odpowiedni kandydat)",
+  "ru": "золото́й саморо́док",
+  "rulat": "solotój samoródok"
+ },
+ "pg292": {
+  "fr": "l'aptitude de base au service militaire",
+  "id": "pg292",
+  "pl": "podstawowa przydatność do służby wojskowej",
+  "ru": "ба́зовая приго́дность к вое́нной слу́жбе",
+  "rulat": "bázowaja prigódnost k wojénnoj slushbe"
+ },
+ "pg293": {
+  "fr": "le recensement militaire jusqu'à l'âge de 60 ans",
+  "id": "pg293",
+  "pl": "ewidencja wojskowa do 60. roku życia",
+  "ru": "во́инский учёт до 60 лет",
+  "rulat": "wóinskij utschjót do 60 let"
+ },
+ "pg294": {
+  "fr": "l'organisation hybride de recrutement et de remplacement militaire",
+  "id": "pg294",
+  "pl": "hybrydowa organizacja rekrutacji i uzupełnień wojskowych",
+  "ru": "ги́бридная организа́ция набо́ра персона́ла и вое́нного восполне́ния",
+  "rulat": "gíbridnaja organisázija nabóra personála i wojénnogo wospolnénija"
+ },
+ "pg295": {
+  "fr": "le sergent",
+  "id": "pg295",
+  "pl": "sierżant",
+  "ru": "сержа́нт",
+  "rulat": "sershánt"
+ },
+ "pg296": {
+  "fr": "l'objectif à moyen terme",
+  "id": "pg296",
+  "pl": "cel średnioterminowy",
+  "ru": "среднесро́чная цель",
+  "rulat": "srednesrótschnaja zel"
+ },
+ "pg297": {
+  "fr": "diffusion restreinte (VS-NfD)",
+  "id": "pg297",
+  "pl": "zastrzeżone (VS-NfD)",
+  "ru": "для служе́бного по́льзования (VS-NfD)",
+  "rulat": "dlja slushébnogo pólsowanija (VS-NfD)"
+ },
+ "pg298": {
+  "fr": "non classifié",
+  "id": "pg298",
+  "pl": "jawne",
+  "ru": "несекре́тно",
+  "rulat": "nesekrétno"
+ },
+ "pg299": {
+  "fr": "la subvention",
+  "id": "pg299",
+  "pl": "dotacja",
+  "ru": "субси́дия",
+  "rulat": "subsídija"
+ },
+ "pg300": {
+  "fr": "la déclaration de consentement",
+  "id": "pg300",
+  "pl": "oświadczenie o zgodzie",
+  "ru": "заявле́ние о согла́сии",
+  "rulat": "sajawlénije o soglásii"
+ },
+ "pg301": {
+  "fr": "l'ordre de mutation",
+  "id": "pg301",
+  "pl": "rozkaz przeniesienia",
+  "ru": "прика́з о перево́де",
+  "rulat": "prikás o perewóde"
+ }
+}
