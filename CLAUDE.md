@@ -62,8 +62,12 @@ Ein Wort ist ein Objekt; alle Wörter liegen in `data.items`.
 | `step` | Stufe auf der Wiederholungsleiter (Index in `LADDER`) |
 | `due` | Fälligkeit als Zeitstempel in Millisekunden; `0` = noch nie gelernt |
 
-Daneben im Speicher: `cfg` (Tagespensum, Lernweise), `log` (neue Karten je Tag,
-Schlüssel `JJJJ-MM-TT` nach Ortszeit), `key` (optionaler API-Schlüssel).
+Daneben im Speicher: `cfg` (Tagespensum, Lernweise, Antwortmodus `mode`), `log` (neue
+Karten je Tag, Schlüssel `JJJJ-MM-TT` nach Ortszeit), `key` (optionaler API-Schlüssel).
+
+`cfg.mode` ist einer von `check` (überlegen und aufdecken, Vorgabe), `type` (Antwort
+eintippen) oder `look` (nur anschauen). Das frühere Feld `cfg.typing` wird in `load()`
+nach `mode` übernommen und gelöscht.
 
 Speicherschlüssel: `localStorage["vokabeltrainer-v1"]`, dazu
 `vokabeltrainer-v1-seen` für die einmalige Begrüßung.
@@ -87,6 +91,11 @@ startet bei Stufe 0 (Gut → 1 Tag) bzw. Stufe 1 (Leicht → 3 Tage).
 Bewusst gewählt gegen SM-2: nachvollziehbar, leicht zu erklären, in der Praxis
 gleichwertig. Eine frühere Fassung hatte den vollen Anki-Algorithmus mit
 Leichtigkeitsfaktor — er wurde auf Wunsch zugunsten der Verständlichkeit entfernt.
+
+**Nur anschauen** (`mode: look`) ist ein Durchsehen, kein Lernen: Frage und Lösung
+stehen zusammen, es gibt nur **Weiter**, `step` und `due` bleiben unberührt, die Runde
+läuft über die ganze Auswahl (Fälliges und Neues zuerst, dann der Rest). Der
+Startknopf heißt dann „Durchsehen starten“.
 
 **Eine Karte je Wort**, nicht eine je Sprachrichtung. Die Abfragesprache wechselt
 zufällig; das vervierfacht nicht die Wiederholungsmenge. Standardmäßig wird nur aus
@@ -113,8 +122,37 @@ gesetzt und sollten nicht aus Bequemlichkeit zurückgedreht werden:
 5. **Russisch mit Betonungszeichen** (учи́тель) und deutscher Umschrift. Die Betonung
    ist im Russischen nicht vorhersagbar; wer sie nicht mitlernt, spricht dauerhaft
    falsch. Bei Verben steht das Aspektpaar.
-6. **Antwort eintippen** ist abschaltbar (`cfg.typing`), Vergleich über `matches()`
-   mit Normalisierung (Artikel, Akzente, Klammerzusätze).
+6. **Antwortmodus** (`cfg.mode`, Chips auf der Lernseite). `check` ist der Regelfall.
+   `type` vergleicht die Eingabe über `matches()` mit Normalisierung (Artikel, Akzente,
+   Klammerzusätze). `look` zeigt Frage und Lösung zusammen und bewertet nicht — das
+   ist die ausdrücklich gewünschte Ausnahme von Punkt 1 und darf nicht zur Vorgabe
+   werden.
+
+## Listenimport und Übersetzung
+
+*Neu → Liste übernehmen* nimmt Text an, eine Zeile je Wort. `parseList()` entfernt
+Aufzählungszeichen, liest `# Name` bzw. `Stapel: Name` als Stapelnamen und trennt
+„Wort – Übersetzung“ an ` – `, ` - `, `=`, `:` (mit Leerzeichen danach), `;` oder Tab.
+Die Sprache der ersten Spalte wählt der Nutzer (Deutsch oder Englisch), die zweite ist
+die jeweils andere. Dubletten werden je Sprache über `norm()` gegen den ganzen Bestand
+erkannt und übersprungen, damit eine wachsende Notiz mehrfach eingelesen werden kann.
+
+Drei Zugänge zum selben Feld: Einfügen von Hand, `navigator.clipboard.readText()`
+(Knopf *Aus Zwischenablage einfügen*, braucht eine Nutzergeste), und `fromLink()`,
+das `#liste=…` oder `?liste=…` aus der Adresse übernimmt, die Adresse per
+`history.replaceState` bereinigt und zur Ansicht *Neu* wechselt. Letzteres ist für
+Kurzbefehle gedacht; auf dem iPhone landet es in Safari, nicht im Home-Bildschirm-
+Symbol (getrennter Speicher), siehe README.
+
+Die Übersetzung läuft über eine gemeinsame Funktion `translate(list)` für Einzelwort,
+Liste und *Nachübersetzen*: direkter `fetch` auf `api.anthropic.com/v1/messages` mit
+dem Schlüssel des Nutzers (Kopfzeile `anthropic-dangerous-direct-browser-access`, weil
+ohne Server), Modell `claude-opus-5-5`, Antwort über `output_config.format` an ein
+JSON-Schema mit genau den Feldern `de en fr pl ru rulat ex exde cat` gebunden.
+`fillItems()` schickt Blöcke von 20 Wörtern, füllt nur leere Felder und speichert nach
+jedem Block, sodass ein Abbruch nichts verliert. Bewusst kein SDK und kein Bundler:
+die App bleibt eine Datei ohne Abhängigkeiten. Kein Fallback-Modell konfiguriert;
+ein `stop_reason: "refusal"` wird als Fehler gemeldet.
 
 ## Oberfläche
 
@@ -162,8 +200,11 @@ Ortszeit.
   `VT1|<index>.<stufe>.<tag>,…|<neue heute>|<eigene Wörter base64>` trägt den
   Lernstand über die Zwischenablage. Rund 11 Zeichen je gelerntem Wort.
 - Der Lernstand hängt an Gerät und Browser. Kein Abgleich zwischen Geräten.
-- Die automatische Übersetzung beim Anlegen neuer Wörter braucht einen eigenen
-  API-Schlüssel (unter *Neu* zu hinterlegen, bleibt lokal) und Internet.
+- Die automatische Übersetzung (Einzelwort, Liste, Nachübersetzen) braucht einen
+  eigenen API-Schlüssel (unter *Neu* zu hinterlegen, bleibt lokal) und Internet. Der
+  Schlüssel liegt im Browser-Speicher; wer das Gerät teilt, sollte das wissen.
+- Apple Notizen hat keine Schnittstelle für Web-Apps. Der Weg führt über Zwischenablage
+  oder Kurzbefehl (siehe README), nicht über einen direkten Zugriff auf die Notiz.
 - FR/PL/RU wurden maschinell ergänzt und sind nicht von Muttersprachlern geprüft.
 - Die Beispielsätze enthalten Zahlen aus dem Fachbereich (Zielgrößen, Quoten,
   Standortplanungen). Die Adresse ist öffentlich erreichbar — bewusst so entschieden.
@@ -175,9 +216,11 @@ iPhone-Format. Voraussetzung ist ein global installiertes `playwright` samt Chro
 (`npm i -g playwright && npx playwright install chromium`); liegt es nicht im
 Modulpfad, hilft `NODE_PATH=$(npm root -g)`. Abgedeckt sind: Begrüßung nur beim
 ersten Start, Verbergen und Aufdecken, Lage und Beschriftung der Bewertungsknöpfe,
-Speichern der Bewertung, Start ohne Speicher mit Sichern und Einsetzen des
-Fortschritts-Codes, Selbstheilung bei leerem Speicherstand und Offline-Start über
-den Service Worker. Jede Zeile der Ausgabe beginnt mit `OK` oder `FEHL`, der
+Speichern der Bewertung, die drei Antwortmodi, Listenimport mit Dubletten und
+nachgestellter API (`page.route` auf `api.anthropic.com`, prüft auch Modell und
+Schema der Anfrage), Nachübersetzen, Übernahme aus dem Link, Start ohne Speicher mit
+Sichern und Einsetzen des Fortschritts-Codes, Selbstheilung bei leerem Speicherstand
+und Offline-Start über den Service Worker. Jede Zeile der Ausgabe beginnt mit `OK` oder `FEHL`, der
 Exit-Code ist 1 bei Fehlschlägen. Neue Fälle dort ergänzen, nach demselben Muster:
 
 ```js

@@ -90,6 +90,9 @@
        width:30px; height:30px; font-size:12px; line-height:1; vertical-align:middle; margin-left:9px; padding:0}
   .rev .qword{font-size:clamp(17px,4.4vw,20px); color:var(--dim); margin:6px 0 0}
   .rev .qzone .sent, .rev .qzone .translit, .rev .qzone .say{display:none}
+  /* Nur anschauen: Frage bleibt lesbar, Lösung steht gleich darunter */
+  .look .qword{font-size:clamp(22px,6vw,30px); color:var(--ink)}
+  .look .qzone .sent{display:block}
   .azone{margin-top:20px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--fr);
          border-radius:14px; padding:18px 16px; text-align:left}
   .aline{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:6px}
@@ -139,6 +142,11 @@
     padding:calc(24px + env(safe-area-inset-top,0px)) 16px calc(24px + var(--safe-b))}
   #codeWrap .panel{max-width:520px; margin:20px auto}
   #codeBox{width:100%; font-family:ui-monospace,Menlo,monospace; font-size:12px; word-break:break-all}
+  #listBox{width:100%; font-size:15px; line-height:1.5}
+  details.howto{margin-top:12px; font-size:12.5px; color:var(--faint)}
+  details.howto summary{cursor:pointer; color:var(--dim); font-weight:600}
+  details.howto ol{margin:8px 0 0; padding-left:20px; line-height:1.6}
+  details.howto code{font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--dim); word-break:break-all}
   .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:calc(26px + var(--safe-b));
          background:var(--ink); color:#0e1013; padding:12px 20px; border-radius:24px; font-size:14px;
          font-weight:600; z-index:200; max-width:90vw; text-align:center}
@@ -173,6 +181,11 @@
   </div>
   <button class="btn main wide" id="start" style="min-height:56px">Lernen starten</button>
   <div class="panel" style="margin-top:16px">
+    <h2>Antwortmodus</h2>
+    <div class="chips" id="answerPick"></div>
+    <p class="hint" id="answerHint" style="margin-top:9px"></p>
+  </div>
+  <div class="panel">
     <h2>Auswahl</h2>
     <div class="chips" id="deckPick"></div>
     <div class="chips" id="catPick" style="margin-top:9px"></div>
@@ -209,6 +222,36 @@
     <p class="hint" id="fMsg" style="margin-top:10px"></p>
   </div>
   <div class="panel">
+    <h2>Liste übernehmen</h2>
+    <p class="lead">Eine Wortliste einfügen, etwa aus Apple Notizen – eine Zeile je Wort, wahlweise mit Übersetzung („Bewerbung – application"). Mit hinterlegtem Schlüssel ergänzt die App alle fünf Sprachen samt Beispielsätzen.</p>
+    <textarea id="listBox" rows="7" placeholder="Bewerbung – application&#10;die Laufbahn&#10;Eignungstest"></textarea>
+    <div class="flex" style="margin-top:10px">
+      <span class="hint">Sprache der Liste</span>
+      <div class="chips" id="listLang"></div>
+    </div>
+    <div class="field" style="margin-top:12px"><label>Stapel</label><input id="listDeck" value="Notizen"></div>
+    <div class="flex">
+      <button class="btn main" id="listGo">Übernehmen</button>
+      <button class="btn" id="listPaste">Aus Zwischenablage einfügen</button>
+    </div>
+    <p class="hint" id="listMsg" style="margin-top:10px"></p>
+    <details class="howto">
+      <summary>Aus einer Notiz auf dem iPhone</summary>
+      <ol>
+        <li>In Apple Notizen eine Notiz „Vokabeln" führen, eine Zeile je Wort.</li>
+        <li>Text der Notiz markieren und kopieren, dann hier <b>Aus Zwischenablage einfügen</b>.</li>
+        <li>Schneller mit einem Kurzbefehl: <i>Notizen suchen</i> (Name ist „Vokabeln") → <i>Details der Notiz abrufen</i> (Text) → <i>In Zwischenablage kopieren</i>. Danach die App öffnen und einfügen.</li>
+        <li>Wer die App in Safari nutzt, kann den Kurzbefehl stattdessen den Text URL-codieren und <code>…/vokabeltrainer/#liste=</code> gefolgt vom Text öffnen lassen – die Liste steht dann sofort hier.</li>
+      </ol>
+    </details>
+  </div>
+  <div class="panel">
+    <h2>Fehlende Übersetzungen</h2>
+    <p class="lead" id="fillInfo"></p>
+    <button class="btn wide" id="fillGo">Nachübersetzen</button>
+    <p class="hint" id="fillMsg" style="margin-top:10px"></p>
+  </div>
+  <div class="panel">
     <h2>Schlüssel für die Online-Übersetzung</h2>
     <p class="lead">Nur nötig, wenn die App übersetzen soll. Bleibt auf diesem Gerät.</p>
     <div class="flex">
@@ -238,7 +281,7 @@
   </div>
   <div class="panel">
     <h2>Lernweise</h2>
-    <p class="lead">Empfehlung: Lückensatz immer an, Tippen für die Sprache, die du aktiv sprechen willst.</p>
+    <p class="lead">Empfehlung: Lückensatz immer an. Den Antwortmodus (aufdecken, eintippen, nur anschauen) wählst du auf der Lernseite.</p>
     <div class="chips" id="modePick"></div>
   </div>
   <div class="panel">
@@ -283,6 +326,7 @@
   </div>
   <div class="dbtm">
     <button class="big" id="reveal">Aufdecken</button>
+    <button class="big" id="next" hidden>Weiter</button>
     <div class="grades" id="grades" hidden>
       <button class="g g1" data-g="0"><b>Nochmal</b><small id="n0"></small></button>
       <button class="g g2" data-g="1"><b>Gut</b><small id="n1"></small></button>
@@ -303,13 +347,14 @@
       <b>Gut</b> – saß, nächster Abstand.<br>
       <b>Leicht</b> – saß sofort, doppelter Sprung.</p>
       <p class="hint" style="margin-top:9px">Die Abstände wachsen mit: 1, 3, 7, 16, 35, 75, 150, 300 Tage. Wer täglich ein paar Minuten übt, behält den Stoff dauerhaft.</p>
+      <p class="hint" style="margin-top:9px">Der <b>Antwortmodus</b> auf der Lernseite bestimmt, wie du antwortest: überlegen und aufdecken, die Antwort eintippen, oder nur anschauen ohne Bewertung.</p>
     </div>
     <div class="panel">
       <h2>Gut zu wissen</h2>
       <p class="hint">Der Lernstand bleibt auf diesem Gerät, in diesem Browser – nutze also immer dasselbe.
       Unter <b>Daten</b> kannst du eine Sicherung speichern, eigene Wortlisten einlesen und die Lernweise umstellen
       (Lückensatz, Antwort eintippen, Aussprache, weitere Abfragesprachen).</p>
-      <p class="hint" style="margin-top:9px">Unter <b>Neu</b> legst du eigene Wörter an – von Hand oder, mit eigenem API-Schlüssel, automatisch übersetzt.</p>
+      <p class="hint" style="margin-top:9px">Unter <b>Neu</b> legst du eigene Wörter an – einzeln oder als ganze Liste aus Apple Notizen. Mit eigenem API-Schlüssel übersetzt die App alles in fünf Sprachen, samt Beispielsätzen.</p>
     </div>
     <button class="btn main wide" id="welcomeGo" style="min-height:54px">Los geht's</button>
     <p class="hint" style="text-align:center;margin-top:12px">Diese Übersicht findest du jederzeit unter „Daten".</p>
@@ -338,7 +383,11 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   const L=[['de','DE'],['en','EN'],['fr','FR'],['pl','PL'],['ru','RU']];
   const NAME={de:'Deutsch',en:'Englisch',fr:'Französisch',pl:'Polnisch',ru:'Russisch'};
   const DAY=864e5, LADDER=[1,3,7,16,35,75,150,300];
-  let data={items:[],cfg:{newPerDay:20,typing:false,gap:true,audio:true},log:{},key:''};
+  let data={items:[],cfg:{newPerDay:20,mode:'check',gap:true,audio:true},log:{},key:''};
+  // Antwortmodus: check = überlegen und aufdecken, type = eintippen, look = nur anschauen
+  const MODES=[['check','Überlegen und aufdecken','Begriff ansehen, Antwort im Kopf bilden, aufdecken, selbst bewerten. Der Regelfall.'],
+               ['type','Antwort eintippen','Antwort schreiben, die App vergleicht. Streng, gut für die Sprache, die du aktiv sprechen willst.'],
+               ['look','Nur anschauen','Begriff und Lösung stehen gleich zusammen, ohne Bewertung. Zum Durchsehen – verändert den Lernstand nicht.']];
   let ses=null, deck='alle', cat='alle', edit=null, store=true;
 
   const $=s=>document.querySelector(s);
@@ -356,7 +405,8 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     if(!Array.isArray(data.items)||!data.items.length) data.items=SEED.map(s=>Object.assign({},s));
     if(store){ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){ store=false; } }
     if(!data.cfg) data.cfg={newPerDay:20};
-    if(data.cfg.typing===undefined) data.cfg.typing=false;
+    if(!MODES.some(([k])=>k===data.cfg.mode)) data.cfg.mode=data.cfg.typing?'type':'check';
+    delete data.cfg.typing;
     if(data.cfg.gap===undefined) data.cfg.gap=true;
     if(data.cfg.audio===undefined) data.cfg.audio=true;
     if(data.cfg.askAll===undefined) data.cfg.askAll=false;
@@ -483,11 +533,20 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   }
 
   /* Lernen */
+  const shuffle=a=>a.sort(()=>Math.random()-.5);
   $('#start').onclick=()=>{
-    const c=counts();
-    const q=c.dueList.concat(c.freshList.slice(0,c.newLeft));
-    if(!q.length){ toast('Nichts fällig in dieser Auswahl'); return; }
-    ses={q:q.sort(()=>Math.random()-.5),total:q.length,done:0};
+    const c=counts(), look=data.cfg.mode==='look';
+    let q;
+    if(look){
+      // Durchsehen: erst Fälliges und Neues, dann der Rest der Auswahl; nichts wird gewertet
+      const first=c.dueList.concat(c.freshList), fs=new Set(first);
+      q=shuffle(first).concat(shuffle(pool().filter(i=>!fs.has(i))));
+      if(!q.length){ toast('Keine Wörter in dieser Auswahl'); return; }
+    }else{
+      q=shuffle(c.dueList.concat(c.freshList.slice(0,c.newLeft)));
+      if(!q.length){ toast('Nichts fällig in dieser Auswahl'); return; }
+    }
+    ses={q,total:q.length,done:0,look};
     document.body.classList.add('drilling'); $('#drill').classList.add('on'); show();
   };
   function show(){
@@ -498,7 +557,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     const from=cand[Math.floor(Math.random()*cand.length)];
     ses.from=from[0];
     $('#counter').textContent='Noch '+ses.q.length+' von '+ses.total;
-    $('#cardState').textContent=i.due?'Wiederholung':'neu';
+    $('#cardState').textContent=ses.look?'Durchsehen':(i.due?'Wiederholung':'neu');
     $('#progFill').style.width=Math.round(ses.done/ses.total*100)+'%';
     $('#qLang').className='tag t-'+from[0]; $('#qLang').textContent=from[1];
     $('#qWord').textContent=i[from[0]];
@@ -529,18 +588,20 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
       +(i.cat?'<p class="acat">'+esc(i.cat)+'</p>':'')
       +'<p class="verdict" id="verdict"></p>';
     $('#ans').querySelectorAll('[data-say]').forEach(b=>b.onclick=ev=>{ev.stopPropagation(); say(i[b.dataset.say],b.dataset.say);});
-    $('#ans').hidden=true; $('#grades').hidden=true; $('#reveal').hidden=false;
-    $('#dmid').classList.remove('rev'); $('#dmid').scrollTop=0;
-    const ti=$('#typed');
-    ti.hidden=!data.cfg.typing; ti.value='';
-    $('#reveal').textContent=data.cfg.typing?'Prüfen':'Aufdecken';
+    $('#ans').hidden=true; $('#grades').hidden=true; $('#next').hidden=true; $('#reveal').hidden=false;
+    $('#dmid').classList.remove('rev'); $('#dmid').classList.toggle('look',!!ses.look); $('#dmid').scrollTop=0;
+    const ti=$('#typed'), typing=data.cfg.mode==='type';
+    ti.hidden=!typing; ti.value='';
+    $('#reveal').textContent=typing?'Prüfen':'Aufdecken';
     [0,1,2].forEach(g=>$('#n'+g).textContent=g===0?'10 Min':dtxt(LADDER[idx(i,g)]));
+    if(ses.look) reveal();
   }
   function reveal(){
     const i=ses.q[0], ti=$('#typed');
     $('#dmid').classList.add('rev');
-    $('#ans').hidden=false; $('#grades').hidden=false; $('#reveal').hidden=true;
-    if(data.cfg.typing&&ses.target){
+    $('#ans').hidden=false; $('#reveal').hidden=true;
+    $('#grades').hidden=!!ses.look; $('#next').hidden=!ses.look;
+    if(data.cfg.mode==='type'&&ses.target){
       const v=$('#verdict');
       if(ti.value.trim()){
         const ok=matches(ti.value,i[ses.target]);
@@ -555,8 +616,11 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   $('#reveal').onclick=reveal;
   $('#typed').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); if($('#grades').hidden) reveal(); }});
   $('#grades').onclick=e=>{const b=e.target.closest('.g'); if(b) answer(+b.dataset.g);};
+  // Durchsehen: weiterblättern ohne Wertung
+  function next(){ if(!ses||!ses.look) return; ses.q.shift(); ses.done++; show(); }
+  $('#next').onclick=next;
   function answer(g){
-    if(!ses||$('#grades').hidden) return;
+    if(!ses||ses.look||$('#grades').hidden) return;
     const i=ses.q.shift(); plan(i,g);
     if(g===0) ses.q.push(i); else ses.done++;
     if(!store){ unsaved++; savebar(); }
@@ -571,6 +635,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   $('#stop').onclick=()=>stop();
   document.addEventListener('keydown',e=>{
     if(!ses||e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+    if(ses.look){ if(e.code==='Space'||e.key==='Enter'){ e.preventDefault(); next(); } if(e.key==='Escape') stop(); return; }
     if(e.code==='Space'){ e.preventDefault(); if($('#grades').hidden) reveal(); return; }
     if(e.key==='1') answer(0);
     if(e.key==='2'||e.key==='Enter') answer(1);
@@ -595,9 +660,18 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
       : 'Dieses Gerät speichert nichts. Sichere den Code nach jeder Lernrunde, sonst ist der Fortschritt weg.';
     $('#statBlock').textContent=data.items.length+' Wörter · '+data.items.filter(i=>i.due).length
       +' begonnen · '+data.items.filter(i=>i.step>=4).length+' sitzen fest · heute '+newToday()+' neue';
-    modeChips();
+    modeChips(); answerChips();
+    const miss=missing().length;
+    $('#fillInfo').textContent=miss?miss+' Wörter ohne vollständige Übersetzung oder Beispielsatz.':'Alle Wörter sind vollständig übersetzt.';
+    $('#fillGo').disabled=!miss;
     words();
   }
+  function answerChips(){
+    $('#answerPick').innerHTML=MODES.map(([k,l])=>'<button class="chipbtn'+(data.cfg.mode===k?' on':'')+'" data-a="'+k+'">'+l+'</button>').join('');
+    const m=MODES.find(([k])=>k===data.cfg.mode); $('#answerHint').textContent=m?m[2]:'';
+    $('#start').textContent=data.cfg.mode==='look'?'Durchsehen starten':'Lernen starten';
+  }
+  $('#answerPick').onclick=e=>{const k=e.target.dataset.a; if(k){ data.cfg.mode=k; save(); answerChips(); }};
   $('#deckPick').onclick=e=>{const d=e.target.dataset.d; if(d){deck=d; render();}};
   $('#catPick').onclick=e=>{const k=e.target.dataset.c; if(k){cat=k; render();}};
 
@@ -650,29 +724,133 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     $('#fMsg').textContent='Gespeichert.'; toast('Gespeichert');
   };
   $('#keySave').onclick=()=>{ data.key=$('#apiKey').value.trim(); save(); toast(data.key?'Schlüssel gemerkt':'Schlüssel gelöscht'); };
+
+  /* Übersetzung über die Anthropic-API, direkt aus dem Browser mit eigenem Schlüssel.
+     Ein Aufruf ergänzt bis zu CHUNK Einträge; die Antwort ist durch ein JSON-Schema festgelegt. */
+  const FIELDS=['de','en','fr','pl','ru','rulat','ex','exde','cat'];
+  const CHUNK=20;
+  const ENTRY_SCHEMA={type:'object',properties:Object.fromEntries(FIELDS.map(k=>[k,{type:'string'}])),required:FIELDS,additionalProperties:false};
+  const SYSTEM='Du bist ein fünfsprachiges Fachwörterbuch (Deutsch, Englisch, Französisch, Polnisch, Russisch) '
+    +'für Verwaltungs-, Personal- und Alltagswortschatz. Du bekommst Einträge, bei denen einzelne Felder leer sind, und füllst alle Felder. '
+    +'Vorhandene Angaben bleiben unverändert. Regeln: deutsche Substantive mit Artikel (der/die/das), französische mit le/la/les, '
+    +'Verben in der Grundform; "ru" kyrillisch mit Betonungszeichen auf dem betonten Vokal (учи́тель), bei Verben das Aspektpaar; '
+    +'"rulat" deutsche Umschrift mit Betonungsakzent; "ex" ein kurzer Beispielsatz auf Englisch, der das Wort enthält; '
+    +'"exde" derselbe Satz auf Deutsch mit dem deutschen Wort; "cat" eine knappe Kategorie, bei Vorgabe diese übernehmen. '
+    +'Antworte mit genau so vielen Einträgen wie vorgegeben, in derselben Reihenfolge.';
+  async function translate(list){
+    const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':data.key,'anthropic-version':'2023-06-01',
+               'anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-opus-5-5',max_tokens:16000,system:SYSTEM,
+        output_config:{format:{type:'json_schema',schema:{type:'object',
+          properties:{items:{type:'array',items:ENTRY_SCHEMA}},required:['items'],additionalProperties:false}}},
+        messages:[{role:'user',content:'Ergänze diese '+list.length+' Einträge:\n'+JSON.stringify(list)}]})});
+    if(!r.ok) throw new Error('Server '+r.status);
+    const j=await r.json();
+    if(j.stop_reason==='refusal') throw new Error('Anfrage abgelehnt');
+    const t=j.content.filter(b=>b.type==='text').map(b=>b.text).join('');
+    const o=JSON.parse(t.slice(t.indexOf('{'),t.lastIndexOf('}')+1));
+    if(!o.items||o.items.length!==list.length) throw new Error('Antwort unvollständig');
+    return o.items;
+  }
+  // leere Felder der Wörter aus der Antwort auffüllen; Vorhandenes bleibt
+  async function fillItems(items,progress){
+    let done=0;
+    for(let k=0;k<items.length;k+=CHUNK){
+      const part=items.slice(k,k+CHUNK);
+      if(progress) progress(done,items.length);
+      const got=await translate(part.map(i=>Object.fromEntries(FIELDS.map(f=>[f,i[f]||'']))));
+      part.forEach((i,n)=>FIELDS.forEach(f=>{ if(!i[f]&&got[n][f]) i[f]=got[n][f]; }));
+      done+=part.length; save();
+    }
+    return done;
+  }
+  const missing=()=>data.items.filter(i=>!(i.de&&i.en&&i.fr&&i.pl&&i.ru&&i.ex&&i.exde));
   $('#tGo').onclick=async()=>{
     const w=$('#tWord').value.trim(); if(!w) return;
     if(!data.key){ toast('Kein Schlüssel hinterlegt'); return; }
     $('#tGo').disabled=true; $('#fMsg').textContent='Übersetze …';
     try{
-      const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
-        headers:{'Content-Type':'application/json','x-api-key':data.key,'anthropic-version':'2023-06-01',
-                 'anthropic-dangerous-direct-browser-access':'true'},
-        body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:800,messages:[{role:'user',content:
-          'Wörterbuch Deutsch, Englisch, Französisch, Polnisch, Russisch. Antworte nur mit JSON: '
-          +'{"de":"","en":"","fr":"","pl":"","ru":"","rulat":"","ex":"","exde":""} '
-          +'Deutsche Substantive mit Artikel, französische mit le/la, Verben in der Grundform. '
-          +'"ru" kyrillisch mit Betonungszeichen, "rulat" deutsche Umschrift. '
-          +'"ex" kurzer Beispielsatz in der Ausgangssprache, "exde" derselbe Satz auf Deutsch. Wort: '+w}]})});
-      if(!r.ok) throw new Error('Server '+r.status);
-      const j=await r.json();
-      const t=j.content.filter(b=>b.type==='text').map(b=>b.text).join('');
-      const o=JSON.parse(t.slice(t.indexOf('{'),t.lastIndexOf('}')+1));
-      o.cat=$('#fCat').value; o.deck=$('#fDeck').value||'Eigene';
+      const o=(await translate([{wort:w}]))[0];
+      o.cat=$('#fCat').value||o.cat; o.deck=$('#fDeck').value||'Eigene';
       fillForm(o); $('#fMsg').textContent='Übersetzt – prüfen und speichern.';
     }catch(e){ $('#fMsg').textContent='Fehlgeschlagen ('+e.message+'). Felder von Hand ausfüllen.'; }
     finally{ $('#tGo').disabled=false; }
   };
+
+  /* Liste übernehmen: eine Zeile je Wort, wahlweise "Wort – Übersetzung" */
+  let listLang='de';
+  function listLangChips(){
+    $('#listLang').innerHTML=[['de','Deutsch'],['en','Englisch']].map(([k,l])=>
+      '<button class="chipbtn'+(listLang===k?' on':'')+'" data-l="'+k+'">'+l+'</button>').join('');
+  }
+  $('#listLang').onclick=e=>{const k=e.target.dataset.l; if(k){ listLang=k; listLangChips(); }};
+  function parseList(txt){
+    const words=[]; let deckName='';
+    (txt||'').split(/\r?\n/).forEach(raw=>{
+      const s=raw.replace(/^\s*(?:[-•*–·]|\d+[.)])\s+/,'').trim();
+      if(!s) return;
+      const h=s.match(/^(?:#+\s*|Stapel:\s*)(.+)$/i);
+      if(h){ if(!deckName) deckName=h[1].trim(); return; }
+      const p=s.split(/\s+[–—-]\s+|\s*[=→;]\s*|\s*:\s+|\t/);
+      const a=p[0].trim(), b=(p[1]||'').trim();
+      if(a) words.push({a,b});
+    });
+    return {words,deckName};
+  }
+  $('#listPaste').onclick=async()=>{
+    try{ const t=await navigator.clipboard.readText(); if(!t.trim()) throw new Error('leer');
+      $('#listBox').value=t; $('#listMsg').textContent=parseList(t).words.length+' Zeilen erkannt.'; }
+    catch(e){ $('#listMsg').textContent='Zwischenablage nicht lesbar – bitte den Text direkt in das Feld einfügen.'; }
+  };
+  $('#listGo').onclick=async()=>{
+    const {words,deckName}=parseList($('#listBox').value);
+    if(!words.length){ $('#listMsg').textContent='Keine Zeilen gefunden.'; return; }
+    const deckN=(deckName||$('#listDeck').value.trim()||'Notizen');
+    const other=listLang==='de'?'en':'de';
+    // Dubletten je Sprache überspringen, damit eine wachsende Notiz mehrfach eingelesen werden kann
+    const known={de:new Set(),en:new Set()};
+    data.items.forEach(i=>{ if(i.de) known.de.add(norm(i.de)); if(i.en) known.en.add(norm(i.en)); });
+    const fresh=[]; let skipped=0;
+    words.forEach((w,n)=>{
+      if(known[listLang].has(norm(w.a))||(w.b&&known[other].has(norm(w.b)))){ skipped++; return; }
+      known[listLang].add(norm(w.a)); if(w.b) known[other].add(norm(w.b));
+      const o={id:'u'+Date.now()+'-'+n,de:'',en:'',fr:'',pl:'',ru:'',rulat:'',cat:'',ex:'',exde:'',deck:deckN,step:0,due:0};
+      o[listLang]=w.a; o[other]=w.b; fresh.push(o);
+    });
+    data.items.push(...fresh); save(); fillSelects(); render();
+    const head=fresh.length+' Wörter im Stapel „'+deckN+'" angelegt'+(skipped?', '+skipped+' schon vorhanden':'')+'.';
+    if(!fresh.length){ $('#listMsg').textContent=head; return; }
+    if(!data.key){ $('#listMsg').textContent=head+' Ohne Schlüssel bleiben die übrigen Sprachen leer – unten den Schlüssel hinterlegen und „Nachübersetzen" wählen.'; return; }
+    $('#listGo').disabled=true;
+    try{
+      await fillItems(fresh,(d,t)=>{ $('#listMsg').textContent=head+' Übersetze '+d+' von '+t+' …'; });
+      $('#listMsg').textContent=head+' Alle übersetzt – unter „Wörter" prüfen.'; $('#listBox').value='';
+      toast(fresh.length+' Wörter übersetzt');
+    }catch(e){ $('#listMsg').textContent=head+' Übersetzung abgebrochen ('+e.message+'). Später „Nachübersetzen" wählen.'; }
+    finally{ $('#listGo').disabled=false; fillSelects(); render(); }
+  };
+  $('#fillGo').onclick=async()=>{
+    const todo=missing(); if(!todo.length) return;
+    if(!data.key){ $('#fillMsg').textContent='Kein Schlüssel hinterlegt – unten eintragen.'; return; }
+    $('#fillGo').disabled=true;
+    try{
+      await fillItems(todo,(d,t)=>{ $('#fillMsg').textContent='Übersetze '+d+' von '+t+' …'; });
+      $('#fillMsg').textContent=todo.length+' Wörter ergänzt.'; toast('Übersetzung ergänzt');
+    }catch(e){ $('#fillMsg').textContent='Abgebrochen ('+e.message+'). Erneut versuchen, der Stand bleibt erhalten.'; }
+    finally{ fillSelects(); render(); }
+  };
+  // Liste aus dem Link übernehmen (#liste=… oder ?liste=…), etwa von einem Kurzbefehl
+  function fromLink(){
+    const m=(location.hash+location.search).match(/[#?&]liste=([^&]*)/);
+    if(!m) return;
+    let t=''; try{ t=decodeURIComponent(m[1].replace(/\+/g,' ')); }catch(e){ return; }
+    history.replaceState(null,'',location.pathname);
+    if(!t.trim()) return;
+    $('#listBox').value=t; go('new');
+    $('#listMsg').textContent=parseList(t).words.length+' Zeilen aus dem Link übernommen – Stapel prüfen und „Übernehmen" wählen.';
+    toast('Liste aus dem Link übernommen');
+  }
 
   /* Daten */
   function dl(n,t,ty){ const a=document.createElement('a');
@@ -710,8 +888,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     r.readAsText(f,'utf-8');
   };
   function modeChips(){
-    const opts=[['gap','Lückensatz'],['typing','Antwort eintippen'],['audio','Aussprache beim Aufdecken'],
-                ['askAll','Auch aus FR, PL, RU abfragen']];
+    const opts=[['gap','Lückensatz'],['audio','Aussprache beim Aufdecken'],['askAll','Auch aus FR, PL, RU abfragen']];
     $('#modePick').innerHTML=opts.map(([k,l])=>'<button class="chipbtn'+(data.cfg[k]?' on':'')+'" data-m="'+k+'">'+l+'</button>').join('');
   }
   $('#modePick').addEventListener('click',e=>{
@@ -754,8 +931,9 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   let firstRun=false;
   try{ firstRun=!localStorage.getItem(KEY+'-seen'); }catch(e){ firstRun=true; }
   try{
-    load(); formHtml(); fillForm({}); fillSelects(); $('#apiKey').value=data.key||''; render(); save();
+    load(); formHtml(); fillForm({}); fillSelects(); listLangChips(); $('#apiKey').value=data.key||''; render(); save();
     if(firstRun) $('#welcome').hidden=false;
+    fromLink();
   }catch(err){
     document.body.innerHTML='<div style="max-width:440px;margin:60px auto;padding:0 20px;font-family:'
       +'-apple-system,BlinkMacSystemFont,sans-serif;color:#eceef1">'

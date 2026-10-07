@@ -68,6 +68,34 @@ async function server() {
     ok('„Nochmal“ setzt Wiedervorlage auf ~10 Minuten', again === 1);
     await p.click('#stop'); await p.waitForTimeout(200);
     ok('Lernfenster geschlossen', !(await p.isVisible('#drill')));
+
+    // Antwortmodus: drei Chips, Vorgabe „Überlegen und aufdecken“
+    const chips = await p.$$eval('#answerPick .chipbtn', b => b.map(x => [x.dataset.a, x.classList.contains('on')]));
+    ok('Antwortmodus: drei Chips, Vorgabe check', chips.length === 3 && chips[0][0] === 'check' && chips[0][1] && !chips[1][1] && !chips[2][1], JSON.stringify(chips));
+    const dueBefore = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.due).length);
+    // Nur anschauen
+    await p.click('#answerPick [data-a="look"]');
+    ok('Nur anschauen: Startknopf heißt „Durchsehen starten“', (await p.textContent('#start')).trim() === 'Durchsehen starten');
+    await p.click('#start'); await p.waitForTimeout(200);
+    ok('Nur anschauen: Lösung sofort sichtbar, keine Bewertung, „Weiter“', await p.isVisible('#ans') && !(await p.isVisible('#grades')) && !(await p.isVisible('#reveal')) && await p.isVisible('#next'));
+    ok('Nur anschauen: ganze Auswahl, Kennzeichnung „Durchsehen“', /Noch 301 von 301/.test(await p.textContent('#counter')) && (await p.textContent('#cardState')) === 'Durchsehen');
+    await p.click('#next'); await p.waitForTimeout(100);
+    ok('Nur anschauen: „Weiter“ blättert', /Noch 300 von 301/.test(await p.textContent('#counter')) && await p.isVisible('#ans'));
+    await p.keyboard.press('Space'); await p.waitForTimeout(100);
+    ok('Nur anschauen: Leertaste blättert', /Noch 299 von 301/.test(await p.textContent('#counter')));
+    await p.click('#stop'); await p.waitForTimeout(100);
+    const dueAfter = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.due).length);
+    ok('Nur anschauen: Lernstand unverändert', dueBefore === dueAfter, dueBefore + ' → ' + dueAfter);
+    // Antwort eintippen
+    await p.click('#answerPick [data-a="type"]');
+    await p.click('#start'); await p.waitForTimeout(200);
+    ok('Eintippen: Eingabefeld sichtbar, Knopf heißt „Prüfen“', await p.isVisible('#typed') && (await p.textContent('#reveal')).trim() === 'Prüfen' && !(await p.isVisible('#ans')));
+    await p.fill('#typed', 'xyzxyz'); await p.click('#reveal'); await p.waitForTimeout(100);
+    const verdict = await p.$eval('#verdict', v => [v.className, v.textContent]);
+    ok('Eintippen: falsche Antwort wird als falsch gemeldet, Bewertung offen', /no/.test(verdict[0]) && /Eingetippt/.test(verdict[1]) && await p.isVisible('#grades'), verdict.join(' / '));
+    await p.click('#stop'); await p.waitForTimeout(100);
+    await p.click('#answerPick [data-a="check"]');
+    ok('Antwortmodus gespeichert', await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).cfg.mode === 'check'));
     // Zweiter Start ohne Begrüßung
     await p.reload(); await p.waitForTimeout(400);
     ok('Begrüßung beim zweiten Start nicht mehr', !(await p.isVisible('#welcome')));
@@ -76,7 +104,59 @@ async function server() {
 
   }
 
-  // 2. Start ohne Speicher
+  // 2. Liste übernehmen: ohne Schlüssel, mit Dubletten, dann mit nachgestellter API, Nachübersetzen, Link
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    await ctx.addInitScript(() => { try { localStorage.setItem('vokabeltrainer-v1-seen', '1'); } catch (e) {} });
+    const p = await ctx.newPage();
+    const errs = []; p.on('pageerror', e => errs.push(e.message));
+    // Nachgestellte API: füllt leere Felder aus den gelieferten Angaben, prüft Anfrageform
+    const requests = [];
+    await p.route('https://api.anthropic.com/**', async route => {
+      const body = JSON.parse(route.request().postData());
+      requests.push(body);
+      const list = JSON.parse(body.messages[0].content.slice(body.messages[0].content.indexOf('[')));
+      const items = list.map(e => { const w = e.de || e.en || e.wort || 'x'; return { de: e.de || 'de:' + w, en: e.en || 'en:' + w, fr: 'fr:' + w, pl: 'pl:' + w, ru: 'ru:' + w, rulat: 'lat:' + w, ex: 'Ex ' + w + '.', exde: 'Bsp ' + w + '.', cat: e.cat || 'Test' }; });
+      await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ stop_reason: 'end_turn', content: [{ type: 'thinking', thinking: '' }, { type: 'text', text: JSON.stringify({ items }) }] }) });
+    });
+    await p.goto(URL); await p.waitForTimeout(400);
+    await p.click('nav button[data-v="new"]');
+    await p.fill('#listBox', '# Dienst\n- Apfel – apple\ndie Birne\n3. Kirsche: cherry\n\n');
+    await p.click('#listGo'); await p.waitForTimeout(200);
+    let items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
+    ok('Liste ohne Schlüssel: 3 Wörter im Stapel aus der Überschrift', items.length === 3 && items[0].de === 'Apfel' && items[0].en === 'apple' && items[1].de === 'die Birne' && items[1].en === '' && items[2].en === 'cherry', JSON.stringify(items.map(i => [i.de, i.en])));
+    ok('Liste ohne Schlüssel: Hinweis auf Schlüssel', /3 Wörter im Stapel „Dienst"/.test(await p.textContent('#listMsg')) && /Schlüssel/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
+    await p.click('#listGo'); await p.waitForTimeout(200);
+    items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
+    ok('Liste erneut: nichts doppelt angelegt', items.length === 3 && /0 Wörter/.test(await p.textContent('#listMsg')) && /3 schon vorhanden/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
+    ok('Nachübersetzen: 3 unvollständige Wörter gemeldet', /^3 Wörter ohne/.test((await p.textContent('#fillInfo')).trim()), (await p.textContent('#fillInfo')).trim());
+    // Schlüssel hinterlegen, Liste in Englisch mit Übersetzung
+    await p.fill('#apiKey', 'sk-ant-test'); await p.click('#keySave');
+    await p.click('#listLang [data-l="en"]');
+    await p.fill('#listDeck', 'Englisch');
+    await p.fill('#listBox', 'certificate\ncollective agreement = Tarifvertrag');
+    await p.click('#listGo');
+    await p.waitForFunction(() => /Alle übersetzt/.test(document.querySelector('#listMsg').textContent), null, { timeout: 5000 }).catch(() => {});
+    items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Englisch'));
+    ok('Liste mit Schlüssel: Englisch als Ausgangssprache, alle Felder gefüllt, Vorhandenes bleibt', items.length === 2 && items[0].en === 'certificate' && items[0].de === 'de:certificate' && items[0].ru === 'ru:certificate' && items[0].exde === 'Bsp certificate.' && items[1].de === 'Tarifvertrag' && items[1].fr === 'fr:Tarifvertrag', JSON.stringify(items));
+    ok('Liste mit Schlüssel: Feld geleert, Meldung', (await p.inputValue('#listBox')) === '' && /Alle übersetzt/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
+    const req = requests[0];
+    ok('API-Anfrage: Modell, JSON-Schema, Schlüssel im Kopf', req && req.model === 'claude-opus-5-5' && req.output_config.format.type === 'json_schema' && req.output_config.format.schema.properties.items.items.required.includes('rulat') && req.max_tokens >= 4000, req && JSON.stringify([req.model, req.output_config && req.output_config.format.type]));
+    // Nachübersetzen füllt die drei alten Wörter
+    await p.click('#fillGo');
+    await p.waitForFunction(() => /ergänzt/.test(document.querySelector('#fillMsg').textContent), null, { timeout: 5000 }).catch(() => {});
+    items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
+    ok('Nachübersetzen: alte Wörter vervollständigt, eingegebene Übersetzung bleibt', items.every(i => i.fr && i.pl && i.ru && i.ex && i.exde) && items[0].en === 'apple' && items[1].en === 'en:die Birne', JSON.stringify(items.map(i => [i.de, i.en, i.fr])));
+    ok('Nachübersetzen: nichts mehr offen', /vollständig übersetzt/.test(await p.textContent('#fillInfo')) && await p.$eval('#fillGo', b => b.disabled), (await p.textContent('#fillInfo')).trim());
+    ok('Zwei Aufrufe für zwei Übersetzungsrunden', requests.length === 2, 'Aufrufe: ' + requests.length);
+    // Liste aus dem Link
+    await p.goto('about:blank'); await p.goto(URL + '#liste=' + encodeURIComponent('Urlaub – leave\nDienstreise')); await p.waitForTimeout(400);
+    ok('Link: Liste im Feld, Ansicht „Neu“, Adresse bereinigt', (await p.inputValue('#listBox')) === 'Urlaub – leave\nDienstreise' && await p.$eval('#v-new', v => v.classList.contains('on')) && await p.evaluate(() => location.hash === '' && location.search === '') && /2 Zeilen aus dem Link/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
+    ok('Liste: keine Seitenfehler', errs.length === 0, errs.join('; '));
+    await ctx.close();
+  }
+
+  // 3. Start ohne Speicher
   {
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
     await ctx.addInitScript(() => { Object.defineProperty(window, 'localStorage', { get() { throw new Error('gesperrt'); } }); });
@@ -110,7 +190,7 @@ async function server() {
     await ctx2.close();
   }
 
-  // 3. Leerer Speicherstand
+  // 4. Leerer Speicherstand
   {
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
     await ctx.addInitScript(() => { localStorage.setItem('vokabeltrainer-v1', JSON.stringify({ cfg: { newPerDay: 5 } })); localStorage.setItem('vokabeltrainer-v1-seen', '1'); });
@@ -121,7 +201,7 @@ async function server() {
     await ctx.close();
   }
 
-  // 4. Offline-Start nach erstem Besuch (Service Worker)
+  // 5. Offline-Start nach erstem Besuch (Service Worker)
   {
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
     const p = await ctx.newPage();
