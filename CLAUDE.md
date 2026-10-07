@@ -23,6 +23,7 @@ index.html                          erzeugt — nicht von Hand bearbeiten
 sw.js                               Service Worker (Offline-Betrieb)
 manifest.webmanifest, icon.svg      Home-Bildschirm-Symbol
 .nojekyll                           verhindert Jekyll-Verarbeitung auf GitHub Pages
+test/pruefung.js                    Playwright-Prüfung der App (siehe „Prüfen")
 ```
 
 **Wichtig:** `index.html` ist ein Erzeugnis. Änderungen an der App gehören in
@@ -34,6 +35,7 @@ bearbeitet, verliert die Änderung beim nächsten `build.py`.
 ```bash
 python3 build.py                 # index.html neu erzeugen
 python3 -m http.server 8000      # lokal prüfen unter localhost:8000
+node test/pruefung.js            # Playwright-Prüfung (startet den Server bei Bedarf selbst)
 git add -A && git commit -m "…" && git push
 ```
 
@@ -168,8 +170,15 @@ Ortszeit.
 
 ## Prüfen
 
-Es gibt keine Testsuite. Geprüft wurde mit Playwright gegen Chromium; die Muster sind
-übertragbar:
+`test/pruefung.js` prüft die gebaute `index.html` mit Playwright gegen Chromium im
+iPhone-Format. Voraussetzung ist ein global installiertes `playwright` samt Chromium
+(`npm i -g playwright && npx playwright install chromium`); liegt es nicht im
+Modulpfad, hilft `NODE_PATH=$(npm root -g)`. Abgedeckt sind: Begrüßung nur beim
+ersten Start, Verbergen und Aufdecken, Lage und Beschriftung der Bewertungsknöpfe,
+Speichern der Bewertung, Start ohne Speicher mit Sichern und Einsetzen des
+Fortschritts-Codes, Selbstheilung bei leerem Speicherstand und Offline-Start über
+den Service Worker. Jede Zeile der Ausgabe beginnt mit `OK` oder `FEHL`, der
+Exit-Code ist 1 bei Fehlschlägen. Neue Fälle dort ergänzen, nach demselben Muster:
 
 ```js
 // Sichtbarkeit statt .hidden abfragen — sonst entgeht Falle 1
