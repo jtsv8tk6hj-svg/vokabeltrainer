@@ -20,7 +20,8 @@ daten/vokabeln-personalgewinnung.csv  Quelle: Englisch;Deutsch;Kategorie;Beispie
 daten/beispielsaetze-de.json        {id: deutscher Beispielsatz}
 daten/sprachen-fr-pl-ru.json        {id: {fr, pl, ru, rulat}}
 daten/verben.csv                    60 Verben in fünf Sprachen mit Aspektpaaren (Stapel Verben)
-daten/formen.json                   Formentafeln je Verb, erzeugt von formen.py; Platzhalter __FORMS__
+daten/substantive.csv               60 Substantive in fünf Sprachen mit Artikel (Stapel Substantive)
+daten/formen.json                   Formentafeln je Wort (Konjugation, Deklination), erzeugt von formen.py; Platzhalter __FORMS__
 formen.py                           erzeugt und prüft die Formentafeln über die API (auf dem eigenen Rechner)
 index.html                          erzeugt — nicht von Hand bearbeiten
 sw.js                               Service Worker (Offline-Betrieb)
@@ -135,7 +136,7 @@ dem Vergleich) mit einem Knopf **Übernehmen**; bei einer Zielsprache bleiben di
 Knöpfe, im Tippmodus ist der passende vorgewählt. Nicht gewählte Sprachen laufen klein
 in der Auflösung mit (`.more`).
 
-## Verben und Formkarten
+## Verben, Substantive und Formkarten
 
 Der Stapel **Verben** enthält 60 kuratierte Verben (`daten/verben.csv`, zwei Drittel
 allgemein, ein Drittel Personalgewinnung), dieselben Begriffe in fünf Sprachen, bei
@@ -159,8 +160,21 @@ beiden Verben `arbeiten` und `fragen` sind von Hand geschrieben und dienen als M
 und Prüfdaten. Die Tafeln sind maschinell; die App sagt das unter *Daten → Meldungen*
 und bietet in jeder Formkarte **Form melden** (`data.rep`, kopierbar als JSON).
 
+**Substantive.** Der Stapel **Substantive** enthält 60 kuratierte Substantive
+(`daten/substantive.csv`), Deutsch und Französisch mit Artikel im Wortfeld. Ihre Tafeln
+nutzen dasselbe Format: Gruppen `Singular` und `Plural` (DE vier Fälle mit Artikel, PL
+sieben Fälle, RU sechs Fälle mit Betonung), Englisch und Französisch eine Gruppe
+`Formen` mit Singular und Plural. Dazu `gender` (m, f, n) am Spracheintrag, auf der
+Karte hinter der Grundform. Pluraliatantum haben eine leere Singular-Gruppe und einen
+Hinweis in `note`. `formen.py` unterscheidet die Wortart an der Kennung (`vb`, `sb`)
+und nutzt je eigenen Systemtext (`SYSTEM`, `SYSTEM_SUBST`) und Tafelsatz (`TEMPORA`,
+`KASUS`); die App ebenso (`FORM_SYSTEM`, `NOUN_SYSTEM`, `nounLike()`: Kennung `sb` oder ein unter *Neu*
+einzeln angelegtes Wort mit deutschem Artikel, Merkmal `tbl`; Listenimporte bekommen
+bewusst keine Kasustafeln, sonst löste jede Notiz mit Artikeln hundert Anfragen aus). `das Haus` und `die Arbeit` sind von Hand
+geschrieben.
+
 **Formkarte.** Ein Eintrag der Warteschlange ist `{i}` für ein Wort oder `{i, k, t}`
-für Verb × Sprache × Tempus (`entries()`). Je Karte wird eine zufällige Zeile der
+für Wort × Sprache × Tafel (`entries()`), bei Substantiven also Singular oder Plural. Je Karte wird eine zufällige Zeile der
 Tafel gefragt: „*arbeiten* · Präsens · du“ (`#qTask`), Antwort eintippen oder
 aufdecken, die Auflösung zeigt die Form groß und darunter die ganze Tafel des Tempus
 mit markierter Zeile. Der Stand liegt in `i.g[k][t]`, dieselbe Leiter, dasselbe
@@ -336,8 +350,9 @@ Listenimport mit Dubletten und
 nachgestellter API (`page.route` auf `api.anthropic.com`, prüft auch Modell und
 Schema der Anfrage), Nachübersetzen, Übernahme aus dem Link, Start ohne Speicher mit
 Sichern und Einsetzen des Fortschritts-Codes, Formkarten (Stapel Verben, Aufgabe,
-Tafel, Melden, Stand, Code mit Grammatikfeld, Schalter „Verbformen mitlernen“,
-Formen-Abruf über die Attrappe), Selbstheilung bei leerem Speicherstand und
+Tafel, Melden, Stand, Code mit Grammatikfeld, Schalter „Formen mitlernen“,
+Formen-Abruf über die Attrappe), Kasuskarten (Stapel Substantive, Genus, sechs
+russische Fälle), Selbstheilung bei leerem Speicherstand und
 Offline-Start über den Service Worker. Jede Zeile der Ausgabe beginnt mit `OK` oder `FEHL`, der
 Exit-Code ist 1 bei Fehlschlägen. Neue Fälle dort ergänzen, nach demselben Muster:
 
@@ -361,11 +376,10 @@ einsetzen.
 - Richtung Deutsch → Englisch strenger takten als umgekehrt; Produktion ist schwerer
   als Verstehen. Mit dem Stand je Zielsprache ist die Grundlage da, die Leiter ist
   noch für alle Richtungen gleich.
-- Abgestimmter Ausbau in Stufen: Stufe 2 Verben ist gebaut, die Tafeln für 58 Verben
-  entstehen erst mit `python3 formen.py` auf dem Rechner des Nutzers. Stufe 3
-  Substantive mit Kasus für Russisch, Polnisch, Deutsch, Stufe 4 Adjektive und
-  Pronomen. Alles im selben Stapel-, Leiter- und Code-System; Kasustafeln können
-  dasselbe Tafelformat `{t, rows:[{p, f}]}` nutzen.
+- Abgestimmter Ausbau in Stufen: Stufe 2 Verben und Stufe 3 Substantive sind gebaut;
+  die Tafeln für 116 Wörter entstehen erst mit `python3 formen.py` auf dem Rechner des
+  Nutzers. Stufe 4 Adjektive und Pronomen folgt im selben Tafelformat
+  `{t, rows:[{p, f}]}` (Adjektive: Gruppen je Genus und Numerus, Komparation).
 - Zweiter Stapel mit Alltagswortschatz, damit die App auch privat taugt.
 - FR/PL/RU von Muttersprachlern gegenlesen lassen.
 - Import weiterer CSV-Dateien als eigene Stapel ist bereits eingebaut

@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Erzeugt die Verbformen fuer daten/verben.csv und schreibt sie nach daten/formen.json.
+"""Erzeugt die Formentafeln fuer daten/verben.csv (Konjugation) und daten/substantive.csv
+(Deklination) und schreibt sie nach daten/formen.json.
 
 Aufruf auf dem eigenen Rechner (braucht einen API-Schluessel von Anthropic):
 
     export ANTHROPIC_API_KEY=sk-ant-...
-    python3 formen.py              # fehlende Verben erzeugen, dann pruefen
-    python3 formen.py --nur vb019  # nur ein Verb
-    python3 formen.py --pruefen    # nur den Pruefdurchgang fuer alle Verben
-    python3 formen.py --neu vb019  # ein Verb neu erzeugen, auch wenn es schon da ist
+    python3 formen.py              # fehlende Woerter erzeugen, dann pruefen
+    python3 formen.py --nur sb001  # nur ein Wort (vb… Verb, sb… Substantiv)
+    python3 formen.py --pruefen    # nur den Pruefdurchgang fuer alle Woerter
+    python3 formen.py --neu vb019  # ein Wort neu erzeugen, auch wenn es schon da ist
 
 Das Skript speichert nach jedem Verb, ein Abbruch verliert nichts. Beim naechsten
 Aufruf macht es dort weiter, wo es stand. Danach: python3 build.py, commit, push.
@@ -29,11 +30,12 @@ import urllib.request
 
 WURZEL = pathlib.Path(__file__).parent
 VERBEN = WURZEL / "daten" / "verben.csv"
+SUBSTANTIVE = WURZEL / "daten" / "substantive.csv"
 ZIEL = WURZEL / "daten" / "formen.json"
 MODELL = "claude-opus-5-5"
 URL = "https://api.anthropic.com/v1/messages"
 
-# Tempora je Sprache, in dieser Reihenfolge und mit diesen Namen
+# Tafeln je Sprache, in dieser Reihenfolge und mit diesen Namen: Tempora bei Verben, Numerus bei Substantiven
 TEMPORA = {
     "de": ["Präsens", "Präteritum", "Perfekt", "Futur I", "Imperativ", "Konjunktiv II"],
     "en": ["Präsens", "Vergangenheit", "Perfekt", "Futur", "Imperativ", "Formen"],
@@ -42,14 +44,26 @@ TEMPORA = {
     "ru": ["Präsens", "Vergangenheit", "Futur (unvollendet)", "Futur (vollendet)", "Imperativ"],
 }
 
+KASUS = {
+    "de": ["Singular", "Plural"], "en": ["Formen"], "fr": ["Formen"], "pl": ["Singular", "Plural"], "ru": ["Singular", "Plural"],
+}
+FAELLE = {
+    "de": "Nominativ, Genitiv, Dativ, Akkusativ (jeweils mit bestimmtem Artikel)",
+    "en": "Singular, Plural",
+    "fr": "Singular, Plural (jeweils mit bestimmtem Artikel le/la/l'/les)",
+    "pl": "Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Lokativ, Vokativ",
+    "ru": "Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Präpositiv",
+}
+
 ZEILE = {"type": "object", "properties": {"p": {"type": "string"}, "f": {"type": "string"}},
          "required": ["p", "f"], "additionalProperties": False}
 TEMPUS = {"type": "object", "properties": {"t": {"type": "string"}, "rows": {"type": "array", "items": ZEILE}},
           "required": ["t", "rows"], "additionalProperties": False}
 SPRACHE = {"type": "object",
            "properties": {"inf": {"type": "string"}, "aspect": {"type": "string"}, "pair": {"type": "string"},
-                          "note": {"type": "string"}, "tenses": {"type": "array", "items": TEMPUS}},
-           "required": ["inf", "aspect", "pair", "note", "tenses"], "additionalProperties": False}
+                          "gender": {"type": "string"}, "note": {"type": "string"},
+                          "tenses": {"type": "array", "items": TEMPUS}},
+           "required": ["inf", "aspect", "pair", "gender", "note", "tenses"], "additionalProperties": False}
 SCHEMA = {"type": "object",
           "properties": {k: SPRACHE for k in TEMPORA} | {"ex": {"type": "string"}, "exde": {"type": "string"}},
           "required": list(TEMPORA) + ["ex", "exde"], "additionalProperties": False}
@@ -70,8 +84,26 @@ SYSTEM = (
     "Vergangenheit mit он, она́, оно́, они́. Futur (unvollendet) mit бу́ду + Infinitiv, Futur (vollendet) mit dem vollendeten "
     "Partner (einfaches Futur); fehlt der Partner, leere Zeilenliste. Imperativ ты, вы. Reflexive Verben mit -ся/-сь.\n"
     "- aspect ist bei Polnisch und Russisch ipf, pair der vollendete Partner (oder leer); bei den anderen Sprachen beide leer.\n"
-    "- note: knapper Hinweis auf Unregelmäßigkeiten, sonst leer.\n"
+    "- gender bleibt bei Verben leer. note: knapper Hinweis auf Unregelmäßigkeiten, sonst leer.\n"
     "- ex: ein kurzer englischer Beispielsatz mit dem Verb, exde: derselbe Satz auf Deutsch.\n"
+    "Keine Erklärungen, nur das JSON."
+)
+
+SYSTEM_SUBST = (
+    "Du bist ein Deklinationswörterbuch für Deutsch, Englisch, Französisch, Polnisch und Russisch. "
+    "Du lieferst vollständige, korrekte Formentafeln für Substantive. Regeln:\n"
+    "- Je Sprache genau die vorgegebenen Tafeln (Feld t) in der vorgegebenen Reihenfolge mit exakt den vorgegebenen Namen; "
+    "die Zeilen p sind die vorgegebenen Fälle bzw. Numeri in dieser Reihenfolge, f die Form.\n"
+    "- Deutsch: jede Form mit bestimmtem Artikel (das Haus, des Hauses); inf ist die Grundform mit Artikel.\n"
+    "- Französisch: Singular und Plural mit Artikel (le travail, les travaux), inf mit Artikel.\n"
+    "- Englisch: Singular und Plural ohne Artikel; bei unzählbaren Wörtern Plural trotzdem angeben und in note erklären.\n"
+    "- Polnisch: sieben Fälle im Singular und Plural, ohne Artikel; bei Pluraliatantum (drzwi, pieniądze) Singular mit leerer Zeilenliste "
+    "und Hinweis in note.\n"
+    "- Russisch: sechs Fälle im Singular und Plural, alle Formen mit Betonungszeichen (U+0301) außer bei ё und Einsilbern; "
+    "bei Pluraliatantum (де́ньги) Singular mit leerer Zeilenliste und Hinweis in note; belebte Substantive mit Akkusativ = Genitiv.\n"
+    "- gender: m, f oder n (Englisch leer). aspect und pair leer. note: Besonderheiten (Fluchtvokal, Betonungswechsel, "
+    "unregelmäßiger Plural), sonst leer.\n"
+    "- ex: ein kurzer englischer Beispielsatz mit dem Wort, exde: derselbe Satz auf Deutsch.\n"
     "Keine Erklärungen, nur das JSON."
 )
 
@@ -109,25 +141,39 @@ def anfrage(system, text, schluessel):
     return json.loads(text)
 
 
+def art(v):
+    return "subst" if v["id"].startswith("sb") else "verb"
+
+
+def tafeln(v):
+    return KASUS if art(v) == "subst" else TEMPORA
+
+
 def vorgabe(v):
-    zeilen = ["Verb: %s (id %s)" % (v["de"], v["id"]),
+    subst = art(v) == "subst"
+    zeilen = ["%s: %s (id %s)" % ("Substantiv" if subst else "Verb", v["de"], v["id"]),
               "Deutsch: %s | Englisch: %s | Französisch: %s | Polnisch: %s | Russisch: %s"
-              % (v["de"], v["en"], v["fr"], v["pl"], v["ru"]),
-              "Bei Polnisch und Russisch steht 'unvollendet / vollendet'. Tempora je Sprache:"]
-    for k, ts in TEMPORA.items():
-        zeilen.append("  %s: %s" % (k, ", ".join(ts)))
+              % (v["de"], v["en"], v["fr"], v["pl"], v["ru"])]
+    if subst:
+        zeilen.append("Tafeln je Sprache, Zeilen in dieser Reihenfolge:")
+        for k, ts in KASUS.items():
+            zeilen.append("  %s: %s – Zeilen: %s" % (k, ", ".join(ts), FAELLE[k]))
+    else:
+        zeilen.append("Bei Polnisch und Russisch steht 'unvollendet / vollendet'. Tempora je Sprache:")
+        for k, ts in TEMPORA.items():
+            zeilen.append("  %s: %s" % (k, ", ".join(ts)))
     return "\n".join(zeilen)
 
 
 def pruefen_struktur(f, v):
     """Stellt sicher, dass Tempora vollstaendig und richtig benannt sind."""
     fehler = []
-    for k, ts in TEMPORA.items():
+    for k, ts in tafeln(v).items():
         got = [t["t"] for t in f[k]["tenses"]]
         if got != ts:
-            fehler.append("%s: Tempora %s statt %s" % (k, got, ts))
+            fehler.append("%s: Tafeln %s statt %s" % (k, got, ts))
         for t in f[k]["tenses"]:
-            if not t["rows"] and "vollendet" not in t["t"]:
+            if not t["rows"] and "vollendet" not in t["t"] and not f[k].get("note"):
                 fehler.append("%s/%s: keine Zeilen" % (k, t["t"]))
     if "́" not in json.dumps(f["ru"], ensure_ascii=False) and len(v["ru"]) > 5:
         fehler.append("ru: keine Betonungszeichen")
@@ -143,8 +189,11 @@ def main():
     neu = args[args.index("--neu") + 1] if "--neu" in args else None
     nur_pruefen = "--pruefen" in args
 
-    with VERBEN.open(encoding="utf-8") as fh:
-        verben = list(csv.DictReader(fh, delimiter=";"))
+    verben = []
+    for datei in (VERBEN, SUBSTANTIVE):
+        if datei.exists():
+            with datei.open(encoding="utf-8") as fh:
+                verben += list(csv.DictReader(fh, delimiter=";"))
     formen = json.loads(ZIEL.read_text(encoding="utf-8")) if ZIEL.exists() else {}
 
     def speichern():
@@ -156,7 +205,7 @@ def main():
             if v["id"] in formen and neu != v["id"]:
                 continue
             print("Erzeuge", v["id"], v["de"])
-            f = anfrage(SYSTEM, vorgabe(v), schluessel)
+            f = anfrage(SYSTEM_SUBST if art(v) == "subst" else SYSTEM, vorgabe(v), schluessel)
             for fe in pruefen_struktur(f, v):
                 print("  Hinweis:", fe)
             formen[v["id"]] = f
@@ -180,7 +229,7 @@ def main():
         speichern()
 
     fertig = sum(1 for v in verben if v["id"] in formen)
-    print("formen.json: %d von %d Verben, %d geprüft" % (fertig, len(verben),
+    print("formen.json: %d von %d Wörtern, %d geprüft" % (fertig, len(verben),
           sum(1 for v in formen.values() if v.get("_geprueft"))))
 
 

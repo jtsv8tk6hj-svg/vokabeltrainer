@@ -375,7 +375,7 @@
   </div>
   <div class="panel">
     <h2>Meldungen</h2>
-    <p class="lead">Zweifelhafte Verbformen, die du in der Auflösung mit „Form melden“ gesammelt hast. Die Formen sind maschinell erzeugt und nicht von Muttersprachlern geprüft.</p>
+    <p class="lead">Zweifelhafte Formen, die du in der Auflösung mit „Form melden“ gesammelt hast. Die Tafeln sind maschinell erzeugt und nicht von Muttersprachlern geprüft.</p>
     <p class="hint" id="repInfo"></p>
     <div class="flex" style="margin-top:10px">
       <button class="btn" id="repCopy">Meldungen kopieren</button>
@@ -446,7 +446,7 @@
       Unter <b>Daten</b> kannst du eine Sicherung speichern, eigene Wortlisten einlesen und die Lernweise umstellen
       (Lückensatz, Antwort eintippen, Aussprache, weitere Abfragesprachen).</p>
       <p class="hint" style="margin-top:9px">Unter <b>Neu</b> legst du eigene Wörter an – einzeln oder als ganze Liste aus Apple Notizen. Mit eigenem API-Schlüssel übersetzt die App alles in fünf Sprachen, samt Beispielsätzen.</p>
-      <p class="hint" style="margin-top:9px">Der Stapel <b>Verben</b> übt zusätzlich Formen: „<i>arbeiten</i> · Präsens · du“. Die Auflösung zeigt die ganze Tafel des Tempus. Jede Tafel hat ihren eigenen Lernstand.</p>
+      <p class="hint" style="margin-top:9px">Die Stapel <b>Verben</b> und <b>Substantive</b> üben zusätzlich Formen: „<i>arbeiten</i> · Präsens · du“ oder „<i>дом</i> · Plural · Genitiv“. Die Auflösung zeigt die ganze Tafel. Jede Tafel hat ihren eigenen Lernstand.</p>
     </div>
     <button class="btn main wide" id="welcomeGo" style="min-height:54px">Los geht's</button>
     <p class="hint" style="text-align:center;margin-top:12px">Diese Übersicht findest du jederzeit unter „Daten".</p>
@@ -784,7 +784,7 @@ const FORMS = __FORMS__;
     head(e,t);
     $('#qLat').textContent=k==='ru'?(i.rulat||''):'';
     $('#qSent').innerHTML='';
-    $('#qWord').innerHTML=esc(f.inf)+(f.pair?' <span class="pair">/ '+esc(f.pair)+'</span>':'')
+    $('#qWord').innerHTML=esc(f.inf)+(f.pair?' <span class="pair">/ '+esc(f.pair)+'</span>':'')+(f.gender?' <span class="pair">· '+esc(f.gender)+'</span>':'')
       +(window.speechSynthesis?' <button class="say" id="sayQ" aria-label="Vorlesen">&#9658;</button>':'');
     const sq=$('#sayQ'); if(sq) sq.onclick=ev=>{ev.stopPropagation(); say(f.inf,k);};
     $('#qTask').hidden=false; $('#qTask').innerHTML='<b>'+esc(tn.t)+'</b> · '+esc(row.p);
@@ -913,7 +913,7 @@ const FORMS = __FORMS__;
     modeChips(); answerChips(); dirChips(); wLangChips();
     const miss=missing().length, mv=verbsMissing().length;
     $('#fillInfo').textContent=(miss?miss+' Wörter ohne vollständige Übersetzung oder Beispielsatz':'Alle Wörter sind vollständig übersetzt')
-      +(mv?', '+mv+' Verben ohne Formen.':'.');
+      +(mv?', '+mv+' Verben oder Substantive ohne Formentafel.':'.');
     $('#fillGo').disabled=!(miss||mv);
     $('#repInfo').textContent=data.rep.length?data.rep.length+' gemeldete Formen, zuletzt '+data.rep[data.rep.length-1].inf+' ('+data.rep[data.rep.length-1].tense+').':'Keine Meldungen.';
     $('#repCopy').disabled=!data.rep.length; $('#repClear').disabled=!data.rep.length;
@@ -1017,12 +1017,13 @@ const FORMS = __FORMS__;
     o.rulat=$('#f-rulat').value.trim(); o.cat=$('#fCat').value.trim();
     o.deck=$('#fDeck').value.trim()||'Eigene'; o.ex=$('#fEx').value.trim(); o.exde=$('#fExDe').value.trim();
     if(!L.some(([k])=>o[k])){ toast('Mindestens ein Wort eintragen'); return; }
+    if(nounForm(o)) o.tbl=1;
     if(!edit) data.items.unshift(o);
     edit=null; save(); fillSelects(); render(); fillForm({}); $('#tWord').value='';
     $('#fMsg').textContent='Gespeichert.'; toast('Gespeichert');
-    if(verbLike(o)&&!formsOf(o)&&data.key){
-      $('#fMsg').textContent='Gespeichert. Verbformen werden ergänzt …';
-      fetchForms(o).then(()=>{ render(); $('#fMsg').textContent='Gespeichert, Verbformen ergänzt.'; toast('Verbformen ergänzt'); })
+    if(tableLike(o)&&!formsOf(o)&&data.key){
+      $('#fMsg').textContent='Gespeichert. Formentafel wird ergänzt …';
+      fetchForms(o).then(()=>{ render(); $('#fMsg').textContent='Gespeichert, Formentafel ergänzt.'; toast('Formentafel ergänzt'); })
         .catch(e=>{ $('#fMsg').textContent='Gespeichert. Formen fehlgeschlagen ('+e.message+'), später „Nachübersetzen" wählen.'; });
     }
   };
@@ -1071,9 +1072,14 @@ const FORMS = __FORMS__;
   // Verb erkannt an der Grundstock-Kennung oder am deutschen Infinitiv (kleingeschrieben, ein Wort, wahlweise „sich“);
   // liegt Englisch vor, muss es mit „to“ beginnen, sonst wäre „offen“ ein Verb
   const verbLike=i=>/^vb\d/.test(i.id||'')||((!i.en||/^to\s/i.test(i.en))&&(i.de?/^(sich\s)?\p{Ll}\p{L}*(en|ern|eln)$/u.test(i.de):/^to\s\p{L}+$/u.test(i.en||'')));
-  const verbsMissing=()=>data.items.filter(i=>verbLike(i)&&!formsOf(i));
-  // unvollständige Wörter; Verben ohne Tafel bekommen Beispielsätze mit den Formen, deshalb hier nicht doppelt
-  const missing=()=>data.items.filter(i=>!(i.de&&i.en&&i.fr&&i.pl&&i.ru&&i.ex&&i.exde)&&!(verbLike(i)&&!formsOf(i)));
+  // Substantiv mit Tafel: Grundstock-Kennung oder unter „Neu“ einzeln angelegt (tbl); Listen bekommen keine Kasustafeln,
+  // sonst würde jede eingelesene Notiz mit Artikeln hundert Anfragen auslösen
+  const nounForm=i=>/^(der|die|das)\s\p{Lu}\p{L}*$/u.test(i.de||'');
+  const nounLike=i=>/^sb\d/.test(i.id||'')||(!!i.tbl&&nounForm(i));
+  const tableLike=i=>verbLike(i)||nounLike(i);
+  const verbsMissing=()=>data.items.filter(i=>tableLike(i)&&!formsOf(i));
+  // unvollständige Wörter; Verben und Substantive ohne Tafel bekommen Beispielsätze mit den Formen, deshalb hier nicht doppelt
+  const missing=()=>data.items.filter(i=>!(i.de&&i.en&&i.fr&&i.pl&&i.ru&&i.ex&&i.exde)&&!(tableLike(i)&&!formsOf(i)));
   /* Formentafeln für selbst angelegte Verben: dasselbe Schema und dieselben Tempora wie formen.py */
   const TEMPORA={de:['Präsens','Präteritum','Perfekt','Futur I','Imperativ','Konjunktiv II'],
     en:['Präsens','Vergangenheit','Perfekt','Futur','Imperativ','Formen'],
@@ -1082,7 +1088,14 @@ const FORMS = __FORMS__;
     ru:['Präsens','Vergangenheit','Futur (unvollendet)','Futur (vollendet)','Imperativ']};
   const ROW_SCHEMA={type:'object',properties:{p:{type:'string'},f:{type:'string'}},required:['p','f'],additionalProperties:false};
   const TENSE_SCHEMA={type:'object',properties:{t:{type:'string'},rows:{type:'array',items:ROW_SCHEMA}},required:['t','rows'],additionalProperties:false};
-  const LANG_SCHEMA={type:'object',properties:{inf:{type:'string'},aspect:{type:'string'},pair:{type:'string'},note:{type:'string'},tenses:{type:'array',items:TENSE_SCHEMA}},required:['inf','aspect','pair','note','tenses'],additionalProperties:false};
+  const LANG_SCHEMA={type:'object',properties:{inf:{type:'string'},aspect:{type:'string'},pair:{type:'string'},gender:{type:'string'},note:{type:'string'},tenses:{type:'array',items:TENSE_SCHEMA}},required:['inf','aspect','pair','gender','note','tenses'],additionalProperties:false};
+  const KASUS={de:['Singular','Plural'],en:['Formen'],fr:['Formen'],pl:['Singular','Plural'],ru:['Singular','Plural']};
+  const FAELLE={de:'Nominativ, Genitiv, Dativ, Akkusativ (jeweils mit bestimmtem Artikel)',en:'Singular, Plural',fr:'Singular, Plural (jeweils mit bestimmtem Artikel)',
+    pl:'Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Lokativ, Vokativ',ru:'Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Präpositiv'};
+  const NOUN_SYSTEM='Du bist ein Deklinationswörterbuch für Deutsch, Englisch, Französisch, Polnisch und Russisch und lieferst vollständige, korrekte Formentafeln für Substantive. '
+    +'Je Sprache genau die vorgegebenen Tafeln (t) in der vorgegebenen Reihenfolge mit exakt den vorgegebenen Namen; die Zeilen p sind die vorgegebenen Fälle bzw. Numeri in dieser Reihenfolge, f die Form. '
+    +'Deutsch und Französisch mit bestimmtem Artikel, inf mit Artikel. Englisch ohne Artikel. Polnisch sieben Fälle, Russisch sechs Fälle, jeweils Singular und Plural, Russisch mit Betonungszeichen (U+0301) außer bei ё und Einsilbern; '
+    +'Pluraliatantum mit leerem Singular und Hinweis in note; belebte russische Substantive mit Akkusativ = Genitiv. gender m, f oder n (Englisch leer), aspect und pair leer, note für Besonderheiten. ex: kurzer englischer Beispielsatz, exde: derselbe auf Deutsch. Nur das JSON.';
   const FORM_SCHEMA={type:'object',properties:Object.assign(Object.fromEntries(LANGS.map(k=>[k,LANG_SCHEMA])),{ex:{type:'string'},exde:{type:'string'}}),required:LANGS.concat(['ex','exde']),additionalProperties:false};
   const FORM_SYSTEM='Du bist ein Konjugationswörterbuch für Deutsch, Englisch, Französisch, Polnisch und Russisch und lieferst vollständige, korrekte Formentabellen. '
     +'Je Sprache genau die vorgegebenen Tempora in der vorgegebenen Reihenfolge, Feld t exakt mit dem vorgegebenen Namen. Zeilen: p = Person oder Beschriftung in der jeweiligen Sprache, f = Form ohne Pronomen, zusammengesetzte Zeiten mit Hilfsverb. '
@@ -1091,11 +1104,14 @@ const FORMS = __FORMS__;
     +'Russisch: alle Formen mit Betonungszeichen (U+0301) außer bei ё und Einsilbern, Vergangenheit он/она́/оно́/они́, Futur (unvollendet) mit бу́ду + Infinitiv, Futur (vollendet) mit dem vollendeten Partner oder leer, Imperativ ты/вы. '
     +'aspect und pair nur bei Polnisch und Russisch (ipf und vollendeter Partner), sonst leer. note: knapper Hinweis auf Unregelmäßigkeiten oder leer. ex: kurzer englischer Beispielsatz, exde: derselbe auf Deutsch. Nur das JSON.';
   async function fetchForms(i){
-    const text='Verb: '+(i.de||i.en)+'\nDeutsch: '+(i.de||'?')+' | Englisch: '+(i.en||'?')+' | Französisch: '+(i.fr||'?')+' | Polnisch: '+(i.pl||'?')+' | Russisch: '+(i.ru||'?')
-      +'\nFehlende Sprachen selbst ergänzen. Tempora je Sprache:\n'+LANGS.map(k=>'  '+k+': '+TEMPORA[k].join(', ')).join('\n');
+    const noun=nounLike(i)&&!verbLike(i);
+    const text=(noun?'Substantiv: ':'Verb: ')+(i.de||i.en)+'\nDeutsch: '+(i.de||'?')+' | Englisch: '+(i.en||'?')+' | Französisch: '+(i.fr||'?')+' | Polnisch: '+(i.pl||'?')+' | Russisch: '+(i.ru||'?')
+      +'\nFehlende Sprachen selbst ergänzen. '+(noun
+        ?'Tafeln je Sprache, Zeilen in dieser Reihenfolge:\n'+LANGS.map(k=>'  '+k+': '+KASUS[k].join(', ')+' – Zeilen: '+FAELLE[k]).join('\n')
+        :'Tempora je Sprache:\n'+LANGS.map(k=>'  '+k+': '+TEMPORA[k].join(', ')).join('\n'));
     const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
       headers:{'Content-Type':'application/json','x-api-key':data.key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-opus-5-5',max_tokens:16000,system:FORM_SYSTEM,
+      body:JSON.stringify({model:'claude-opus-5-5',max_tokens:16000,system:noun?NOUN_SYSTEM:FORM_SYSTEM,
         output_config:{format:{type:'json_schema',schema:FORM_SCHEMA}},messages:[{role:'user',content:text}]})});
     if(!r.ok) throw new Error('Server '+r.status);
     const j=await r.json();
@@ -1176,8 +1192,8 @@ const FORMS = __FORMS__;
     try{
       if(todo.length) await fillItems(todo,(d,t)=>{ $('#fillMsg').textContent='Übersetze '+d+' von '+t+' …'; });
       let n=0;
-      for(const v of verbs){ $('#fillMsg').textContent='Verbformen '+(n+1)+' von '+verbs.length+' …'; await fetchForms(v); n++; }
-      $('#fillMsg').textContent=(todo.length?todo.length+' Wörter ergänzt':'')+(todo.length&&n?', ':'')+(n?n+' Verben mit Formen':'')+'.'; toast('Ergänzt');
+      for(const v of verbs){ $('#fillMsg').textContent='Formentafel '+(n+1)+' von '+verbs.length+' …'; await fetchForms(v); n++; }
+      $('#fillMsg').textContent=(todo.length?todo.length+' Wörter ergänzt':'')+(todo.length&&n?', ':'')+(n?n+' Formentafeln':'')+'.'; toast('Ergänzt');
     }catch(e){ $('#fillMsg').textContent='Abgebrochen ('+e.message+'). Erneut versuchen, der Stand bleibt erhalten.'; }
     finally{ fillSelects(); render(); }
   };
@@ -1235,7 +1251,7 @@ const FORMS = __FORMS__;
     r.readAsText(f,'utf-8');
   };
   function modeChips(){
-    const opts=[['gap','Lückensatz'],['audio','Aussprache beim Aufdecken'],['askAll','Auch aus FR, PL, RU abfragen'],['forms','Verbformen mitlernen']];
+    const opts=[['gap','Lückensatz'],['audio','Aussprache beim Aufdecken'],['askAll','Auch aus FR, PL, RU abfragen'],['forms','Formen mitlernen (Verben, Substantive)']];
     $('#modePick').innerHTML=opts.map(([k,l])=>chip(!!data.cfg[k],'data-m="'+k+'"',l)).join('');
   }
   $('#modePick').addEventListener('click',e=>{

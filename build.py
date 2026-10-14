@@ -19,12 +19,14 @@ CSV_DATEI = WURZEL / "daten" / "vokabeln-personalgewinnung.csv"
 SAETZE_DE = WURZEL / "daten" / "beispielsaetze-de.json"
 SPRACHEN = WURZEL / "daten" / "sprachen-fr-pl-ru.json"
 VERBEN = WURZEL / "daten" / "verben.csv"
+SUBSTANTIVE = WURZEL / "daten" / "substantive.csv"
 FORMEN = WURZEL / "daten" / "formen.json"
 VORLAGE = WURZEL / "src" / "template.html"
 ZIEL = WURZEL / "index.html"
 
 STAPEL = "Personalgewinnung"
 STAPEL_VERBEN = "Verben"
+STAPEL_SUBSTANTIVE = "Substantive"
 
 # Als data:-URI eingebettet, damit iOS beim Ablegen auf dem Home-Bildschirm
 # sofort ein Symbol hat, ohne eine zweite Datei zu laden.
@@ -92,17 +94,20 @@ def vokabeln():
 
 
 def verben():
-    """Die kuratierten Verben als Woerter des Stapels Verben; die Formen kommen getrennt."""
+    """Die kuratierten Verben und Substantive als Woerter ihrer Stapel; die Formen kommen getrennt."""
     formen = json.loads(FORMEN.read_text(encoding="utf-8")) if FORMEN.exists() else {}
     eintraege = []
-    with VERBEN.open(encoding="utf-8") as f:
-        for z in csv.DictReader(f, delimiter=";"):
-            fo = formen.get(z["id"], {})
-            eintraege.append({
-                "id": z["id"], "de": z["de"], "en": z["en"], "fr": z["fr"], "pl": z["pl"], "ru": z["ru"],
-                "rulat": z["rulat"], "cat": "Verb " + z["bereich"], "deck": STAPEL_VERBEN,
-                "ex": fo.get("ex", ""), "exde": fo.get("exde", ""),
-            })
+    for datei, stapel, wortart in ((VERBEN, STAPEL_VERBEN, "Verb"), (SUBSTANTIVE, STAPEL_SUBSTANTIVE, "Substantiv")):
+        if not datei.exists():
+            continue
+        with datei.open(encoding="utf-8") as f:
+            for z in csv.DictReader(f, delimiter=";"):
+                fo = formen.get(z["id"], {})
+                eintraege.append({
+                    "id": z["id"], "de": z["de"], "en": z["en"], "fr": z["fr"], "pl": z["pl"], "ru": z["ru"],
+                    "rulat": z["rulat"], "cat": wortart + " " + z["bereich"], "deck": stapel,
+                    "ex": fo.get("ex", ""), "exde": fo.get("exde", ""),
+                })
     # Formen ohne Beispielsaetze und Pruefvermerk, nur die fuenf Sprachen
     tafeln = {vid: {k: v for k, v in fo.items() if k in ("de", "en", "fr", "pl", "ru")}
               for vid, fo in formen.items()}
@@ -137,10 +142,10 @@ def main():
 
     ohne_satz = sum(1 for d in daten if not d["exde"])
     ohne_sprachen = sum(1 for d in daten if not (d["fr"] and d["pl"] and d["ru"]))
-    print("index.html geschrieben: %d Woerter (davon %d Verben, %d mit Formen), %d Bytes"
+    print("index.html geschrieben: %d Woerter (davon %d Verben und Substantive, %d mit Formen), %d Bytes"
           % (len(daten), len(verb_eintraege), len(tafeln), len(seite)))
     if len(tafeln) < len(verb_eintraege):
-        print("  Hinweis: Formen fehlen fuer %d Verben - python3 formen.py mit API-Schluessel ausfuehren"
+        print("  Hinweis: Formen fehlen fuer %d Woerter - python3 formen.py mit API-Schluessel ausfuehren"
               % (len(verb_eintraege) - len(tafeln)))
     if ohne_satz:
         print("  Hinweis: %d Eintraege ohne deutschen Beispielsatz" % ohne_satz)

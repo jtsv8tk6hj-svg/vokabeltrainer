@@ -1,0 +1,61 @@
+id;de;en;fr;pl;ru;rulat;bereich
+sb001;das Haus;house;la maison;dom;дом;dom;allgemein
+sb002;die Arbeit;work;le travail;praca;рабо́та;rabóta;allgemein
+sb003;die Frage;question;la question;pytanie;вопро́с;woprós;allgemein
+sb004;die Antwort;answer;la réponse;odpowiedź;отве́т;otwét;allgemein
+sb005;die Zeit;time;le temps;czas;вре́мя;wrémja;allgemein
+sb006;der Tag;day;le jour;dzień;день;den;allgemein
+sb007;die Woche;week;la semaine;tydzień;неде́ля;nedélja;allgemein
+sb008;das Jahr;year;l'année;rok;год;god;allgemein
+sb009;der Mann;man;l'homme;mężczyzna;мужчи́на;muschtschína;allgemein
+sb010;die Frau;woman;la femme;kobieta;же́нщина;schénschtschina;allgemein
+sb011;das Kind;child;l'enfant;dziecko;ребёнок;rebjónok;allgemein
+sb012;der Freund;friend;l'ami;przyjaciel;друг;drug;allgemein
+sb013;die Stadt;city;la ville;miasto;го́род;górod;allgemein
+sb014;das Land;country;le pays;kraj;страна́;straná;allgemein
+sb015;die Straße;street;la rue;ulica;у́лица;úliza;allgemein
+sb016;das Auto;car;la voiture;samochód;маши́на;maschína;allgemein
+sb017;der Zug;train;le train;pociąg;по́езд;pójesd;allgemein
+sb018;das Buch;book;le livre;książka;кни́га;kníga;allgemein
+sb019;die Schule;school;l'école;szkoła;шко́ла;schkóla;allgemein
+sb020;das Wasser;water;l'eau;woda;вода́;wodá;allgemein
+sb021;das Brot;bread;le pain;chleb;хлеб;chleb;allgemein
+sb022;das Geld;money;l'argent;pieniądze;де́ньги;déngi;allgemein
+sb023;die Hand;hand;la main;ręka;рука́;ruká;allgemein
+sb024;der Kopf;head;la tête;głowa;голова́;golowá;allgemein
+sb025;das Auge;eye;l'œil;oko;глаз;glas;allgemein
+sb026;das Wort;word;le mot;słowo;сло́во;slówo;allgemein
+sb027;die Sprache;language;la langue;język;язы́к;jasýk;allgemein
+sb028;die Familie;family;la famille;rodzina;семья́;semjá;allgemein
+sb029;die Mutter;mother;la mère;matka;мать;mat;allgemein
+sb030;der Vater;father;le père;ojciec;оте́ц;otéz;allgemein
+sb031;die Tür;door;la porte;drzwi;дверь;dwer;allgemein
+sb032;das Fenster;window;la fenêtre;okno;окно́;oknó;allgemein
+sb033;der Tisch;table;la table;stół;стол;stol;allgemein
+sb034;der Stuhl;chair;la chaise;krzesło;стул;stul;allgemein
+sb035;die Nacht;night;la nuit;noc;ночь;notsch;allgemein
+sb036;der Morgen;morning;le matin;poranek;у́тро;útro;allgemein
+sb037;das Leben;life;la vie;życie;жизнь;schisn;allgemein
+sb038;die Welt;world;le monde;świat;мир;mir;allgemein
+sb039;der Platz;place;la place;miejsce;ме́сто;mésto;allgemein
+sb040;der Weg;way;le chemin;droga;доро́га;doróga;allgemein
+sb041;die Bewerbung;application;la candidature;aplikacja;зая́вка;sajáwka;Personalgewinnung
+sb042;der Bewerber;applicant;le candidat;kandydat;кандида́т;kandidát;Personalgewinnung
+sb043;die Beratung;counselling;le conseil;doradztwo;консульта́ция;konsultázija;Personalgewinnung
+sb044;das Gespräch;conversation;l'entretien;rozmowa;разгово́р;rasgowór;Personalgewinnung
+sb045;der Vertrag;contract;le contrat;umowa;догово́р;dogowór;Personalgewinnung
+sb046;die Ausbildung;training;la formation;szkolenie;обуче́ние;obutschénije;Personalgewinnung
+sb047;der Beruf;profession;le métier;zawód;профе́ссия;proféssija;Personalgewinnung
+sb048;die Stelle;position;le poste;stanowisko;до́лжность;dólschnost;Personalgewinnung
+sb049;die Laufbahn;career;la carrière;kariera;карье́ра;karjéra;Personalgewinnung
+sb050;der Soldat;soldier;le soldat;żołnierz;солда́т;soldát;Personalgewinnung
+sb051;der Offizier;officer;l'officier;oficer;офице́р;ofizér;Personalgewinnung
+sb052;der Dienst;service;le service;służba;слу́жба;slúschba;Personalgewinnung
+sb053;die Einheit;unit;l'unité;jednostka;подразделе́ние;podrasdelénije;Personalgewinnung
+sb054;der Standort;garrison;la garnison;garnizon;гарнизо́н;garnisón;Personalgewinnung
+sb055;der Termin;appointment;le rendez-vous;termin;встре́ча;wstrétscha;Personalgewinnung
+sb056;die Unterschrift;signature;la signature;podpis;по́дпись;pódpis;Personalgewinnung
+sb057;das Zeugnis;certificate;le certificat;świadectwo;свиде́тельство;swidételstwo;Personalgewinnung
+sb058;die Prüfung;examination;l'examen;egzamin;экза́мен;eksámen;Personalgewinnung
+sb059;die Entscheidung;decision;la décision;decyzja;реше́ние;reschénije;Personalgewinnung
+sb060;der Mitarbeiter;employee;l'employé;pracownik;сотру́дник;sotrúdnik;Personalgewinnung

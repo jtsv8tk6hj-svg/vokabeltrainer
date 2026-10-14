@@ -165,7 +165,8 @@
       }
      ]
     }
-   ]
+   ],
+   "gender": ""
   },
   "en": {
    "inf": "to work",
@@ -324,7 +325,8 @@
       }
      ]
     }
-   ]
+   ],
+   "gender": ""
   },
   "fr": {
    "inf": "travailler",
@@ -491,7 +493,8 @@
       }
      ]
     }
-   ]
+   ],
+   "gender": ""
   },
   "pl": {
    "inf": "pracować",
@@ -659,7 +662,8 @@
       }
      ]
     }
-   ]
+   ],
+   "gender": ""
   },
   "ru": {
    "inf": "рабо́тать",
@@ -787,7 +791,8 @@
       }
      ]
     }
-   ]
+   ],
+   "gender": ""
   },
   "ex": "She works at the career centre in Cologne.",
   "exde": "Sie arbeitet im Karrierecenter in Köln."
@@ -958,7 +963,8 @@
       }
      ]
     }
-   ]
+   ],
+   "gender": ""
   },
   "en": {
    "inf": "to ask",
@@ -1117,7 +1123,8 @@
       }
      ]
     }
-   ]
+   ],
+   "gender": ""
   },
   "fr": {
    "inf": "demander",
@@ -1284,7 +1291,8 @@
       }
      ]
     }
-   ]
+   ],
+   "gender": ""
   },
   "pl": {
    "inf": "pytać",
@@ -1452,7 +1460,8 @@
       }
      ]
     }
-   ]
+   ],
+   "gender": ""
   },
   "ru": {
    "inf": "спра́шивать",
@@ -1580,9 +1589,492 @@
       }
      ]
     }
-   ]
+   ],
+   "gender": ""
   },
   "ex": "Applicants often ask about the training.",
   "exde": "Bewerber fragen oft nach der Ausbildung."
+ },
+ "sb001": {
+  "de": {
+   "inf": "das Haus",
+   "aspect": "",
+   "pair": "",
+   "gender": "n",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Singular",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "das Haus"
+      },
+      {
+       "p": "Genitiv",
+       "f": "des Hauses"
+      },
+      {
+       "p": "Dativ",
+       "f": "dem Haus"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "das Haus"
+      }
+     ]
+    },
+    {
+     "t": "Plural",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "die Häuser"
+      },
+      {
+       "p": "Genitiv",
+       "f": "der Häuser"
+      },
+      {
+       "p": "Dativ",
+       "f": "den Häusern"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "die Häuser"
+      }
+     ]
+    }
+   ]
+  },
+  "en": {
+   "inf": "house",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Formen",
+     "rows": [
+      {
+       "p": "Singular",
+       "f": "house"
+      },
+      {
+       "p": "Plural",
+       "f": "houses"
+      }
+     ]
+    }
+   ]
+  },
+  "fr": {
+   "inf": "la maison",
+   "aspect": "",
+   "pair": "",
+   "gender": "f",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Formen",
+     "rows": [
+      {
+       "p": "Singular",
+       "f": "la maison"
+      },
+      {
+       "p": "Plural",
+       "f": "les maisons"
+      }
+     ]
+    }
+   ]
+  },
+  "pl": {
+   "inf": "dom",
+   "aspect": "",
+   "pair": "",
+   "gender": "m",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Singular",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "dom"
+      },
+      {
+       "p": "Genitiv",
+       "f": "domu"
+      },
+      {
+       "p": "Dativ",
+       "f": "domowi"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "dom"
+      },
+      {
+       "p": "Instrumental",
+       "f": "domem"
+      },
+      {
+       "p": "Lokativ",
+       "f": "domu"
+      },
+      {
+       "p": "Vokativ",
+       "f": "domu"
+      }
+     ]
+    },
+    {
+     "t": "Plural",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "domy"
+      },
+      {
+       "p": "Genitiv",
+       "f": "domów"
+      },
+      {
+       "p": "Dativ",
+       "f": "domom"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "domy"
+      },
+      {
+       "p": "Instrumental",
+       "f": "domami"
+      },
+      {
+       "p": "Lokativ",
+       "f": "domach"
+      },
+      {
+       "p": "Vokativ",
+       "f": "domy"
+      }
+     ]
+    }
+   ]
+  },
+  "ru": {
+   "inf": "дом",
+   "aspect": "",
+   "pair": "",
+   "gender": "m",
+   "note": "Plural auf -а́ mit Betonung auf der Endung",
+   "tenses": [
+    {
+     "t": "Singular",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "дом"
+      },
+      {
+       "p": "Genitiv",
+       "f": "до́ма"
+      },
+      {
+       "p": "Dativ",
+       "f": "до́му"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "дом"
+      },
+      {
+       "p": "Instrumental",
+       "f": "до́мом"
+      },
+      {
+       "p": "Präpositiv",
+       "f": "до́ме"
+      }
+     ]
+    },
+    {
+     "t": "Plural",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "дома́"
+      },
+      {
+       "p": "Genitiv",
+       "f": "домо́в"
+      },
+      {
+       "p": "Dativ",
+       "f": "дома́м"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "дома́"
+      },
+      {
+       "p": "Instrumental",
+       "f": "дома́ми"
+      },
+      {
+       "p": "Präpositiv",
+       "f": "дома́х"
+      }
+     ]
+    }
+   ]
+  },
+  "ex": "The house is near the station.",
+  "exde": "Das Haus liegt in der Nähe des Bahnhofs."
+ },
+ "sb002": {
+  "de": {
+   "inf": "die Arbeit",
+   "aspect": "",
+   "pair": "",
+   "gender": "f",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Singular",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "die Arbeit"
+      },
+      {
+       "p": "Genitiv",
+       "f": "der Arbeit"
+      },
+      {
+       "p": "Dativ",
+       "f": "der Arbeit"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "die Arbeit"
+      }
+     ]
+    },
+    {
+     "t": "Plural",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "die Arbeiten"
+      },
+      {
+       "p": "Genitiv",
+       "f": "der Arbeiten"
+      },
+      {
+       "p": "Dativ",
+       "f": "den Arbeiten"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "die Arbeiten"
+      }
+     ]
+    }
+   ]
+  },
+  "en": {
+   "inf": "work",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "meist unzählbar; works nur für Werke",
+   "tenses": [
+    {
+     "t": "Formen",
+     "rows": [
+      {
+       "p": "Singular",
+       "f": "work"
+      },
+      {
+       "p": "Plural",
+       "f": "works"
+      }
+     ]
+    }
+   ]
+  },
+  "fr": {
+   "inf": "le travail",
+   "aspect": "",
+   "pair": "",
+   "gender": "m",
+   "note": "Plural auf -aux",
+   "tenses": [
+    {
+     "t": "Formen",
+     "rows": [
+      {
+       "p": "Singular",
+       "f": "le travail"
+      },
+      {
+       "p": "Plural",
+       "f": "les travaux"
+      }
+     ]
+    }
+   ]
+  },
+  "pl": {
+   "inf": "praca",
+   "aspect": "",
+   "pair": "",
+   "gender": "f",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Singular",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "praca"
+      },
+      {
+       "p": "Genitiv",
+       "f": "pracy"
+      },
+      {
+       "p": "Dativ",
+       "f": "pracy"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "pracę"
+      },
+      {
+       "p": "Instrumental",
+       "f": "pracą"
+      },
+      {
+       "p": "Lokativ",
+       "f": "pracy"
+      },
+      {
+       "p": "Vokativ",
+       "f": "praco"
+      }
+     ]
+    },
+    {
+     "t": "Plural",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "prace"
+      },
+      {
+       "p": "Genitiv",
+       "f": "prac"
+      },
+      {
+       "p": "Dativ",
+       "f": "pracom"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "prace"
+      },
+      {
+       "p": "Instrumental",
+       "f": "pracami"
+      },
+      {
+       "p": "Lokativ",
+       "f": "pracach"
+      },
+      {
+       "p": "Vokativ",
+       "f": "prace"
+      }
+     ]
+    }
+   ]
+  },
+  "ru": {
+   "inf": "рабо́та",
+   "aspect": "",
+   "pair": "",
+   "gender": "f",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Singular",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "рабо́та"
+      },
+      {
+       "p": "Genitiv",
+       "f": "рабо́ты"
+      },
+      {
+       "p": "Dativ",
+       "f": "рабо́те"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "рабо́ту"
+      },
+      {
+       "p": "Instrumental",
+       "f": "рабо́той"
+      },
+      {
+       "p": "Präpositiv",
+       "f": "рабо́те"
+      }
+     ]
+    },
+    {
+     "t": "Plural",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "рабо́ты"
+      },
+      {
+       "p": "Genitiv",
+       "f": "рабо́т"
+      },
+      {
+       "p": "Dativ",
+       "f": "рабо́там"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "рабо́ты"
+      },
+      {
+       "p": "Instrumental",
+       "f": "рабо́тами"
+      },
+      {
+       "p": "Präpositiv",
+       "f": "рабо́тах"
+      }
+     ]
+    }
+   ]
+  },
+  "ex": "The work starts at eight.",
+  "exde": "Die Arbeit beginnt um acht."
  }
 }

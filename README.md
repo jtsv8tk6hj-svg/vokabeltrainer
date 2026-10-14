@@ -67,19 +67,21 @@ Russisch.
 über Verfahren bis Vortragssprache. Eigene Wörter lassen sich unter *Neu* anlegen,
 weitere Listen unter *Daten* als CSV einlesen.
 
-## Verben und Formen
+## Verben, Substantive und Formen
 
 Der Stapel **Verben** bringt 60 häufige Verben in allen fünf Sprachen mit, bei
-Polnisch und Russisch als Aspektpaar. Dazu übt die App Formen: „*arbeiten* · Präsens ·
-du“, Antwort eintippen oder aufdecken, die Auflösung zeigt die ganze Tafel des Tempus.
-Jede Tafel hat ihren eigenen Lernstand, zählt im Tagespensum wie eine Karte und wandert
-mit dem Fortschritts-Code. Unter *Daten → Lernweise* lässt sich „Verbformen mitlernen“
-abschalten.
+Polnisch und Russisch als Aspektpaar, der Stapel **Substantive** 60 häufige Substantive
+mit Artikel und Genus. Dazu übt die App Formen: „*arbeiten* · Präsens · du“ oder
+„*дом* · Plural · Genitiv“, Antwort eintippen oder aufdecken, die Auflösung zeigt die
+ganze Tafel: Tempus mit allen Personen, Numerus mit allen Fällen (Deutsch vier,
+Russisch sechs, Polnisch sieben). Jede Tafel hat ihren eigenen Lernstand, zählt im
+Tagespensum wie eine Karte und wandert mit dem Fortschritts-Code. Unter *Daten →
+Lernweise* lässt sich „Formen mitlernen“ abschalten.
 
 Die Tafeln sind maschinell erzeugt. Wer eine Form für falsch hält, tippt in der
 Auflösung auf **Form melden**; die Meldungen sammeln sich unter *Daten* und lassen sich
-kopieren. Eigene Verben bekommen ihre Tafel beim Speichern, wenn ein API-Schlüssel
-hinterlegt ist.
+kopieren. Eigene Verben und Substantive (mit Artikel eingetragen) bekommen ihre Tafel
+beim Speichern, wenn ein API-Schlüssel hinterlegt ist.
 
 ## Wortliste aus Apple Notizen
 
@@ -117,7 +119,7 @@ nicht als Wort angelegt.
 python3 build.py        # erzeugt index.html aus src/template.html und daten/
 ```
 
-Die Formentafeln der Verben entstehen einmalig mit einem eigenen API-Schlüssel:
+Die Formentafeln der Verben und Substantive entstehen einmalig mit einem eigenen API-Schlüssel:
 
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-…
