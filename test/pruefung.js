@@ -301,10 +301,12 @@ async function server() {
     ok('Stapel Substantive: 60 Wörter, 4 neue Kasuskarten (2 Wörter × Singular und Plural)', (await p.textContent('#cPool')) === '60' && (await p.textContent('#cNew')) === '4', 'pool=' + await p.textContent('#cPool') + ' neu=' + await p.textContent('#cNew'));
     await p.click('#start'); await p.waitForTimeout(200);
     const qw = (await p.textContent('#qWord')).replace(/\s+/g, ' ').trim(), task = await p.innerHTML('#qTask');
-    ok('Kasuskarte: Grundform mit Genus, Aufgabe „Numerus · Fall“', /^(дом|рабо́та) · (m|f)/.test(qw) && /<b>(Singular|Plural)<\/b> · (Nominativ|Genitiv|Dativ|Akkusativ|Instrumental|Präpositiv)/.test(task), qw + ' / ' + task);
+    ok('Kasuskarte: Grundform mit Genus, Aufgabe „Numerus · Fall“ mit Frage', /^(дом|рабо́та) · (m|f)/.test(qw) && /<b>(Singular|Plural)<\/b> · (Nominativ|Genitiv|Dativ|Akkusativ|Instrumental|Präpositiv) <span class="qq">[^<]*\?[^<]*<\/span>/.test(task), qw + ' / ' + task);
     await p.click('#reveal'); await p.waitForTimeout(100);
     const rows = await p.$$eval('#ans .ftab tr', tr => tr.map(r => r.children[0].textContent));
-    ok('Kasuskarte: Tafel mit sechs Fällen, Lösung markiert', rows.length === 6 && rows[0] === 'Nominativ' && rows[5] === 'Präpositiv' && (await p.$$('#ans .ftab tr.hit')).length === 1, rows.join(','));
+    ok('Kasuskarte: Tafel mit sechs Fällen, Lösung markiert', rows.length === 6 && /^Nominativ/.test(rows[0]) && /^Präpositiv/.test(rows[5]) && (await p.$$('#ans .ftab tr.hit')).length === 1, rows.join(','));
+    const smalls = await p.$$eval('#ans .ftab tr td:first-child small', el => el.map(x => x.textContent));
+    ok('Kasuskarte: Fragewörter und russische Fallnamen in Aufgabe und Tafel', /\?/.test(task) && smalls.length === 6 && smalls[0] === 'имени́тельный · кто? что?' && smalls[2] === 'да́тельный · кому́? чему́?', smalls.join(' | '));
     await p.click('#n2'); await p.waitForTimeout(100);
     const g = await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const out = []; d.items.forEach(i => Object.keys(i.g || {}).forEach(k => Object.keys(i.g[k]).forEach(t => out.push([i.id, k, +t, i.g[k][t].s])))); return out; });
     ok('Kasuskarte „Leicht“: Stand auf Stufe 1 unter sb-Kennung und ru', g.length === 1 && /^sb/.test(g[0][0]) && g[0][1] === 'ru' && g[0][3] === 1, JSON.stringify(g));

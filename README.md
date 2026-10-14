@@ -74,7 +74,8 @@ Polnisch und Russisch als Aspektpaar, der Stapel **Substantive** 60 häufige Sub
 mit Artikel und Genus. Dazu übt die App Formen: „*arbeiten* · Präsens · du“ oder
 „*дом* · Plural · Genitiv“, Antwort eintippen oder aufdecken, die Auflösung zeigt die
 ganze Tafel: Tempus mit allen Personen, Numerus mit allen Fällen (Deutsch vier,
-Russisch sechs, Polnisch sieben). Jede Tafel hat ihren eigenen Lernstand, zählt im
+Russisch sechs, Polnisch sieben). Zu jedem Fall stehen der einheimische Name und die
+Fragewörter, etwa „celownik · komu? czemu?“. Jede Tafel hat ihren eigenen Lernstand, zählt im
 Tagespensum wie eine Karte und wandert mit dem Fortschritts-Code. Unter *Daten →
 Lernweise* lässt sich „Formen mitlernen“ abschalten.
 

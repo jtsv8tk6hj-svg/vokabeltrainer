@@ -139,6 +139,10 @@
   /* Formkarte: Aufgabe unter dem Infinitiv, Tafel in der Auflösung */
   .qtask{font-size:15.5px; color:var(--dim); margin:12px 0 0}
   .qtask b{color:var(--ink); font-weight:600}
+  .qtask small{display:block; font-size:12.5px; color:var(--faint); margin-top:2px}
+  .qq{color:var(--fr); font-weight:600}
+  .rev .qtask small{display:none}
+  .ftab td small{display:block; font-size:11px; color:var(--faint); line-height:1.3; margin-top:1px}
   .rev .qtask{font-size:13px; margin:4px 0 0}
   .pair{font-size:.62em; color:var(--faint); font-weight:400}
   .atask{font-size:13px; color:var(--dim)}
@@ -555,6 +559,15 @@ const FORMS = {"vb019":{"de":{"inf":"arbeiten","tenses":[{"t":"Präsens","rows":
   const cardLangs=i=>{ const s=new Set(); dirPairs(i).forEach(o=>o.to.forEach(k=>s.add(k))); return [...s]; };
   /* Verbformen: Tafeln aus dem Grundstock (FORMS) oder am Wort (i.forms); Stand je Sprache und Tempus in i.g */
   const formsOf=i=>i.forms||FORMS[i.id]||null;
+  // Kasus: einheimischer Name und Fragewörter, der Lernanker beim Deklinieren
+  const CASES={
+    pl:{Nominativ:['mianownik','kto? co?'],Genitiv:['dopełniacz','kogo? czego?'],Dativ:['celownik','komu? czemu?'],
+        Akkusativ:['biernik','kogo? co?'],Instrumental:['narzędnik','(z) kim? (z) czym?'],Lokativ:['miejscownik','(o) kim? (o) czym?'],Vokativ:['wołacz','o!']},
+    ru:{Nominativ:['имени́тельный','кто? что?'],Genitiv:['роди́тельный','кого́? чего́?'],Dativ:['да́тельный','кому́? чему́?'],
+        Akkusativ:['вини́тельный','кого́? что?'],Instrumental:['твори́тельный','кем? чем?'],Präpositiv:['предло́жный','о ком? о чём?']},
+    de:{Nominativ:['1. Fall','wer? was?'],Genitiv:['2. Fall','wessen?'],Dativ:['3. Fall','wem?'],Akkusativ:['4. Fall','wen? was?']}};
+  const caseInfo=(k,p)=>(CASES[k]&&CASES[k][p])||null;
+  const caseQ=(k,p)=>{ const c=caseInfo(k,p); return c?' <span class="qq">'+esc(c[1])+'</span>':''; };
   const gst=(i,k,t)=>(i.g&&i.g[k]&&i.g[k][t])||null;
   // Einträge einer Karte: das Wort (wenn eine Zielsprache da ist) und je Zielsprache und Tempus eine Formkarte
   function entries(i){
@@ -795,10 +808,12 @@ const FORMS = {"vb019":{"de":{"inf":"arbeiten","tenses":[{"t":"Präsens","rows":
     $('#qWord').innerHTML=esc(f.inf)+(f.pair?' <span class="pair">/ '+esc(f.pair)+'</span>':'')+(f.gender?' <span class="pair">· '+esc(f.gender)+'</span>':'')
       +(window.speechSynthesis?' <button class="say" id="sayQ" aria-label="Vorlesen">&#9658;</button>':'');
     const sq=$('#sayQ'); if(sq) sq.onclick=ev=>{ev.stopPropagation(); say(f.inf,k);};
-    $('#qTask').hidden=false; $('#qTask').innerHTML='<b>'+esc(tn.t)+'</b> · '+esc(row.p);
-    $('#ans').innerHTML='<div class="tline" data-k="'+k+'"><div class="aline">'+TAG(k)+'<span class="atask">'+esc(tn.t)+' · '+esc(row.p)+'</span>'+sayBtn(k)+'</div>'
+    const ci=caseInfo(k,row.p);
+    $('#qTask').hidden=false; $('#qTask').innerHTML='<b>'+esc(tn.t)+'</b> · '+esc(row.p)+caseQ(k,row.p)+(ci?'<small>'+esc(ci[0])+'</small>':'');
+    $('#ans').innerHTML='<div class="tline" data-k="'+k+'"><div class="aline">'+TAG(k)+'<span class="atask">'+esc(tn.t)+' · '+esc(row.p)+caseQ(k,row.p)+'</span>'+sayBtn(k)+'</div>'
       +'<div class="aword">'+esc(row.f)+'</div><p class="verdict" data-v="'+k+'"></p></div>'
-      +'<table class="ftab" aria-label="'+esc(tn.t)+'">'+tn.rows.map(r=>'<tr'+(r===row?' class="hit"':'')+'><td>'+esc(r.p)+'</td><td>'+esc(r.f)+'</td></tr>').join('')+'</table>'
+      +'<table class="ftab" aria-label="'+esc(tn.t)+'">'+tn.rows.map(r=>{ const c=caseInfo(k,r.p);
+          return '<tr'+(r===row?' class="hit"':'')+'><td>'+esc(r.p)+(c?'<small>'+esc(c[0])+' · '+esc(c[1])+'</small>':'')+'</td><td>'+esc(r.f)+'</td></tr>'; }).join('')+'</table>'
       +(f.note?'<p class="acat">'+esc(f.note)+'</p>':'')
       +'<button class="btn rep" id="repBtn">Form melden</button>';
     $('#ans').querySelectorAll('[data-say]').forEach(b=>b.onclick=ev=>{ev.stopPropagation(); say(row.f,k);});

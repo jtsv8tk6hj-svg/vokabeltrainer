@@ -166,7 +166,11 @@ nutzen dasselbe Format: Gruppen `Singular` und `Plural` (DE vier Fälle mit Arti
 sieben Fälle, RU sechs Fälle mit Betonung), Englisch und Französisch eine Gruppe
 `Formen` mit Singular und Plural. Dazu `gender` (m, f, n) am Spracheintrag, auf der
 Karte hinter der Grundform. Pluraliatantum haben eine leere Singular-Gruppe und einen
-Hinweis in `note`. `formen.py` unterscheidet die Wortart an der Kennung (`vb`, `sb`)
+Hinweis in `note`. Zu jedem Fall zeigt die App den einheimischen Namen und die
+Fragewörter (`CASES` in `src/template.html`: polnisch „celownik · komu? czemu?“,
+russisch „да́тельный · кому́? чему́?“, deutsch „wem?“), in der Aufgabe und in jeder
+Tafelzeile, weil das Fragewort der Lernanker beim Deklinieren ist. `formen.py`
+unterscheidet die Wortart an der Kennung (`vb`, `sb`)
 und nutzt je eigenen Systemtext (`SYSTEM`, `SYSTEM_SUBST`) und Tafelsatz (`TEMPORA`,
 `KASUS`); die App ebenso (`FORM_SYSTEM`, `NOUN_SYSTEM`, `nounLike()`: Kennung `sb` oder ein unter *Neu*
 einzeln angelegtes Wort mit deutschem Artikel, Merkmal `tbl`; Listenimporte bekommen
