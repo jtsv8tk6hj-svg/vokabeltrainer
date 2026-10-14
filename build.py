@@ -22,8 +22,11 @@ VERBEN = WURZEL / "daten" / "verben.csv"
 SUBSTANTIVE = WURZEL / "daten" / "substantive.csv"
 ADJEKTIVE = WURZEL / "daten" / "adjektive.csv"
 PRONOMEN = WURZEL / "daten" / "pronomen.csv"
-ALLTAG = WURZEL / "daten" / "alltag.csv"
-ALLTAG_SPRACHEN = WURZEL / "daten" / "alltag-sprachen.json"
+# Kuratierte Themenstapel: CSV id;de;en;thema plus Sprachen-JSON aus woerter.py
+THEMENSTAPEL = [
+    ("Alltag", WURZEL / "daten" / "alltag.csv", WURZEL / "daten" / "alltag-sprachen.json"),
+    ("Küche", WURZEL / "daten" / "kueche.csv", WURZEL / "daten" / "kueche-sprachen.json"),
+]
 FORMEN = WURZEL / "daten" / "formen.json"
 VORLAGE = WURZEL / "src" / "template.html"
 ZIEL = WURZEL / "index.html"
@@ -33,7 +36,6 @@ STAPEL_VERBEN = "Verben"
 STAPEL_SUBSTANTIVE = "Substantive"
 STAPEL_ADJEKTIVE = "Adjektive"
 STAPEL_PRONOMEN = "Pronomen"
-STAPEL_ALLTAG = "Alltag"
 
 # Als data:-URI eingebettet, damit iOS beim Ablegen auf dem Home-Bildschirm
 # sofort ein Symbol hat, ohne eine zweite Datei zu laden.
@@ -122,20 +124,21 @@ def verben():
     return eintraege, tafeln
 
 
-def alltag():
-    """Alltagswortschatz nach Themen: CSV mit id;de;en;thema, Sprachen aus woerter.py."""
-    if not ALLTAG.exists():
-        return []
-    sprachen = json.loads(ALLTAG_SPRACHEN.read_text(encoding="utf-8")) if ALLTAG_SPRACHEN.exists() else {}
+def themenstapel():
+    """Kuratierte Stapel nach Themen: CSV mit id;de;en;thema, Sprachen aus woerter.py."""
     eintraege = []
-    with ALLTAG.open(encoding="utf-8") as f:
-        for z in csv.DictReader(f, delimiter=";"):
-            w = sprachen.get(z["id"], {})
-            eintraege.append({
-                "id": z["id"], "de": z["de"], "en": z["en"],
-                "fr": w.get("fr", ""), "pl": w.get("pl", ""), "ru": w.get("ru", ""), "rulat": w.get("rulat", ""),
-                "cat": z["thema"], "deck": STAPEL_ALLTAG, "ex": w.get("ex", ""), "exde": w.get("exde", ""),
-            })
+    for stapel, csv_datei, json_datei in THEMENSTAPEL:
+        if not csv_datei.exists():
+            continue
+        sprachen = json.loads(json_datei.read_text(encoding="utf-8")) if json_datei.exists() else {}
+        with csv_datei.open(encoding="utf-8") as f:
+            for z in csv.DictReader(f, delimiter=";"):
+                w = sprachen.get(z["id"], {})
+                eintraege.append({
+                    "id": z["id"], "de": z["de"], "en": z["en"],
+                    "fr": w.get("fr", ""), "pl": w.get("pl", ""), "ru": w.get("ru", ""), "rulat": w.get("rulat", ""),
+                    "cat": z["thema"], "deck": stapel, "ex": w.get("ex", ""), "exde": w.get("exde", ""),
+                })
     return eintraege
 
 
@@ -143,7 +146,7 @@ def main():
     daten = vokabeln()
     verb_eintraege, tafeln = verben()
     daten += verb_eintraege
-    alltag_eintraege = alltag()
+    alltag_eintraege = themenstapel()
     daten += alltag_eintraege
     vorlage = VORLAGE.read_text(encoding="utf-8")
 
@@ -169,7 +172,7 @@ def main():
 
     ohne_alltag = sum(1 for d in alltag_eintraege if not d["ru"])
     if ohne_alltag:
-        print("  Hinweis: %d Alltagswoerter ohne FR/PL/RU - python3 woerter.py mit API-Schluessel ausfuehren" % ohne_alltag)
+        print("  Hinweis: %d Woerter der Themenstapel ohne FR/PL/RU - python3 woerter.py mit API-Schluessel ausfuehren" % ohne_alltag)
     ohne_satz = sum(1 for d in daten if not d["exde"])
     ohne_sprachen = sum(1 for d in daten if not (d["fr"] and d["pl"] and d["ru"]))
     print("index.html geschrieben: %d Woerter (davon %d mit Tafeln vorgesehen, %d mit Formen), %d Bytes"

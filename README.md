@@ -64,16 +64,18 @@ Russisch.
 ## Was drin ist
 
 301 Fachbegriffe der Personalgewinnung der Bundeswehr in elf Kategorien, 240
-Alltagswörter in zwölf Themen, dazu Verben, Substantive, Adjektive und Pronomen mit
-Formentafeln. Eigene Wörter lassen sich unter *Neu* anlegen,
+Alltagswörter in zwölf Themen, 500 Begriffe rund um Lebensmittel, Küche und Kochen in
+zwanzig Themen, dazu Verben, Substantive, Adjektive und Pronomen mit Formentafeln. Eigene Wörter lassen sich unter *Neu* anlegen,
 weitere Listen unter *Daten* als CSV einlesen.
 
-## Alltag und Themen
+## Alltag, Küche und Themen
 
 Der Stapel **Alltag** bringt 240 Wörter und Wendungen in zwölf Themen mit, von
-„Begrüßung und Höflichkeit“ über „Unterwegs“ bis „Körper und Gesundheit“. Unter
-*Lernen* den Stapel wählen, dann das Thema, dann starten. Die Themen eines Stapels
-erscheinen als Kategorien.
+„Begrüßung und Höflichkeit“ über „Unterwegs“ bis „Körper und Gesundheit“, der Stapel
+**Küche** 500 Begriffe zu Lebensmitteln, Küche und Kochen in zwanzig Themen, von Obst
+und Gemüse über Küchengeräte und Garmethoden bis zum Restaurant. Unter *Lernen* den
+Stapel wählen, dann das Thema, dann starten. Die Themen eines Stapels erscheinen als
+Kategorien.
 
 Eigene Themen entstehen unter *Neu → Thema aufbereiten*: Thema nennen, etwa „Beim
 Arzt“, Anzahl wählen, und die App stellt mit hinterlegtem API-Schlüssel den Wortschatz

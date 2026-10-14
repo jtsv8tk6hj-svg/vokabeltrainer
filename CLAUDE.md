@@ -24,7 +24,9 @@ daten/substantive.csv               60 Substantive in fünf Sprachen mit Artikel
 daten/adjektive.csv                 40 Adjektive (Stapel Adjektive)
 daten/pronomen.csv                  11 Pronomen (Stapel Pronomen)
 daten/alltag.csv                    240 Alltagswörter in zwölf Themen: id;de;en;thema (Stapel Alltag)
-daten/alltag-sprachen.json          {id: {fr, pl, ru, rulat, ex, exde}} zu alltag.csv, erzeugt von woerter.py
+daten/kueche.csv                    500 Begriffe zu Lebensmitteln, Küche und Kochen in zwanzig Themen (Stapel Küche)
+daten/*-sprachen.json               {id: {fr, pl, ru, rulat, ex, exde}} zur jeweiligen CSV, erzeugt von woerter.py
+liste.py                            stellt eine kuratierte de/en-Liste zu einem Gebiet über die API zusammen (Plan in PLAENE)
 woerter.py                          ergänzt FR, PL, RU, Umschrift und Beispielsätze für eine Wortliste über die API
 daten/formen.json                   Formentafeln je Wort (Konjugation, Deklination), erzeugt von formen.py; Platzhalter __FORMS__
 formen.py                           erzeugt und prüft die Formentafeln über die API (auf dem eigenen Rechner)
@@ -214,7 +216,17 @@ Wort ab (`i.forms`); *Nachübersetzen* holt sie für alle Verben ohne Tafel nach
 für Grundstock-Verben, solange `formen.json` sie noch nicht enthält (`formsOf()` nimmt
 `i.forms` vor `FORMS`).
 
-## Alltag und Themen
+## Alltag, Küche und Themen
+
+Kuratierte Themenstapel stehen in `build.py` unter `THEMENSTAPEL` (Stapelname, CSV,
+Sprachen-JSON). Der Stapel **Küche** (`daten/kueche.csv`, 500 Begriffe, Kennung `ku`)
+deckt Lebensmittel, Küche und Kochen in zwanzig Themen ab, von Obst und Gemüse über
+Küchengeräte und Garmethoden bis zum Restaurant; die de/en-Liste hat `liste.py`
+über die API zusammengestellt (je Thema die nützlichsten Wörter, Ausschlussliste
+gegen alle vorhandenen Stapel und die schon erzeugten Themen, Normalisierung wie in
+der App), die übrigen Sprachen `woerter.py`. Weitere Gebiete: Plan in `PLAENE`
+ergänzen, `python3 liste.py <gebiet>`, dann `woerter.py`, dann den Stapel in
+`THEMENSTAPEL` eintragen.
 
 Der Stapel **Alltag** (`daten/alltag.csv`, 240 Wörter) ist nach zwölf **Themen**
 gegliedert: Begrüßung und Höflichkeit, Zahlen und Zeit, Familie und Menschen, Essen
