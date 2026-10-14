@@ -180,6 +180,39 @@ jedem Block, sodass ein Abbruch nichts verliert. Bewusst kein SDK und kein Bundl
 die App bleibt eine Datei ohne Abhängigkeiten. Kein Fallback-Modell konfiguriert;
 ein `stop_reason: "refusal"` wird als Fehler gemeldet.
 
+## Gestaltung
+
+Ziel ist eine App, die auch außerhalb des Dienstes gern genutzt wird und später als
+Produkt bestehen kann. Deshalb gelten feste Regeln:
+
+- **Farben nur über Tokens** in `:root` (`--bg --card --raise --line --edge --ink
+  --onink --dim --faint`, Sprachfarben `--de … --ru`, Warn- und Sicherfarben). Keine
+  festen Hexwerte in Regeln oder in erzeugtem HTML. Das **helle Schema** kommt über
+  `prefers-color-scheme: light` und tauscht nur die Tokens; `theme-color` ist je Schema
+  gesetzt. Die Anleitungsseite `kurzbefehl.html` führt dieselben Tokens.
+- **Kontraste geprüft** (WCAG 2.1 AA): `faint` ≥ 4,5:1 auf `bg` und `card`
+  (`#8b939d`, das frühere `#727b86` lag bei 4,0:1), Ränder von Knöpfen und Chips über
+  `--edge` ≥ 3:1 (`--line` ist nur für Trennlinien und Kartenränder, 1,3:1).
+  Sprachfarben tragen dunklen Text `--ontag`.
+- **Tipp-Ziele** mindestens 40 px hoch (Chips, Urteil-Knöpfe, Reiter 44 px,
+  Vorlese-Knopf 34 px).
+- **Flaggen** sind eingebettete SVG-Grafiken (`.flag.f-xx`), weil Emoji-Flaggen auf
+  Windows nicht dargestellt werden. Sie stehen überall neben dem farbigen
+  Sprachkürzel (`TAG()`), in der Richtungswahl, in der Wörterliste und im Formular.
+  Englisch führt die britische Flagge.
+- **Wörterliste je Sprache.** Jede Sprache steht in einer eigenen Zeile mit Flagge,
+  Kürzel, Wort, Umschrift und Lernstand (`fällig` rot). Die Chips „Zeigen“ wählen,
+  welche Sprachen gelistet werden (`cfg.wl`), damit sich eine Sprache einzeln
+  betrachten lässt. Kein Fließtext mehr.
+- **Bewegung sparsam**: Knöpfe drücken sich leicht ein, die Auflösung blendet in
+  180 ms ein; `prefers-reduced-motion` schaltet alles ab. Die Frage bleibt beim
+  Scrollen der Auflösung als klebrige Kopfzeile sichtbar.
+- **Rollen für Bildschirmleser**: Chips tragen `aria-pressed`, Reiter `aria-current`,
+  Lernfenster und Begrüßung `role="dialog"`, Eingabefelder `aria-label`, Toast und
+  Auflösung `aria-live`.
+- Das Bundeswehr-Design (Skill `bw-design-karriereberatung`) wird bewusst nicht
+  verwendet: die App ist ein eigenes Produkt, kein Dienstwerkzeug.
+
 ## Oberfläche
 
 Das Lernfenster `#drill` ist ein Vollbild mit fester Dreiteilung: Kopf (Fortschritt,

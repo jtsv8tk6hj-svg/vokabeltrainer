@@ -143,7 +143,8 @@ async function server() {
     const curA = await p.evaluate(aId => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.find(i => i.id === aId), cardA.id);
     ok('Vorzeitig: Karte mit neuer Zielsprache erscheint, Kennzeichnung neu', (await p.textContent('#qWord')).includes(curA.de) && (await p.textContent('#cardState')) === 'neu');
     await p.fill('#typeFields input[data-k="en"]', curA.en); await p.fill('#typeFields input[data-k="pl"]', curA.pl);
-    await p.click('#reveal'); await p.click('#apply'); await p.waitForTimeout(200);
+    await p.click('#reveal'); await p.click('#apply');
+    await p.waitForFunction(() => !document.querySelector('#drill').classList.contains('on'), null, { timeout: 3000 }).catch(() => {});
     states = await p.evaluate(STATES);
     const aEn = states.find(x => x.id === cardA.id && x.k === 'en'), aPl = states.find(x => x.id === cardA.id && x.k === 'pl');
     ok('Vorzeitig richtig zählt nicht: EN unverändert, PL neu auf Stufe 0', aEn && aEn.s === 0 && Math.abs(aEn.d - Date.now() - 864e5) < 6e4 && aPl && aPl.s === 0, JSON.stringify([aEn, aPl]));

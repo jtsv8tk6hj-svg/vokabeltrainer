@@ -53,6 +53,14 @@ auf der Karte ein Eingabefeld je Zielsprache, nach dem Aufdecken ein Urteil je S
 Jedes Wort hat je Zielsprache einen eigenen Lernstand. Wer Polnisch übt, verändert
 damit nichts am Stand für Englisch. Das Tagespensum zählt je Wort und Zielsprache.
 
+## Erscheinungsbild
+
+Die App folgt der Systemeinstellung: dunkel oder hell. Jede Sprache hat eine Flagge und
+eine feste Farbe, die sich durch Lernkarte, Richtungswahl, Wörterliste und Formular
+zieht. Unter *Wörter* steht jede Sprache in einer eigenen Zeile; über die Chips
+„Zeigen“ lässt sich die Liste auf einzelne Sprachen beschränken, etwa nur Polnisch und
+Russisch.
+
 ## Was drin ist
 
 301 Fachbegriffe der Personalgewinnung der Bundeswehr, in elf Kategorien von Recht

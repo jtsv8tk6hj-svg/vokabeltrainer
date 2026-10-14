@@ -5,19 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#0e1013">
+<meta name="theme-color" content="#0e1013" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f4ef" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
 <title>Vokabeltrainer</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%230e1013'/%3E%3Ctext x='90' y='120' font-size='96' font-family='Georgia,serif' fill='%23eceef1' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
 <meta name="apple-mobile-web-app-title" content="Vokabeln">
 <style>
+  /* Farbtokens. Kontraste geprüft: dim und faint ≥ 4,5:1 auf bg und card, edge ≥ 3:1 (Ränder von Knöpfen) */
   :root{
-    --bg:#0e1013; --card:#181b21; --raise:#20242b; --line:#2b3038;
-    --ink:#eceef1; --dim:#a2aab4; --faint:#727b86;
+    --bg:#0e1013; --card:#181b21; --raise:#20242b; --line:#2b3038; --edge:#6a7280;
+    --ink:#eceef1; --onink:#0e1013; --dim:#a2aab4; --faint:#8b939d;
     --de:#7aa7ff; --en:#f2836f; --fr:#5ecfa4; --pl:#e8b45c; --ru:#bb96ee;
+    --ontag:#0e1013; --warn-bg:#2a1c1c; --warn-line:#55302e; --warn-ink:#f6d5cf;
+    --safe-bg:#182520; --safe-line:#2d4a3c; --safe-ink:#bfe3d2;
+    color-scheme:dark;
     --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
     --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     --safe-b:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f5f4ef; --card:#ffffff; --raise:#edebe4; --line:#e1dfd7; --edge:#8e9299;
+      --ink:#1a1c21; --onink:#f5f4ef; --dim:#4b535e; --faint:#646c76;
+      --de:#9dbcff; --en:#f7a08f; --fr:#8adbbb; --pl:#efc77c; --ru:#cdb1f3;
+      --warn-bg:#fbe9e5; --warn-line:#e7b9b0; --warn-ink:#6b2a22;
+      --safe-bg:#e4f3ea; --safe-line:#b7d9c5; --safe-ink:#1f4a35;
+      color-scheme:light;
+    }
   }
   *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
   [hidden]{display:none !important}
@@ -25,12 +41,18 @@
   body{background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:15px; line-height:1.5;
        -webkit-text-size-adjust:100%}
   body.drilling{overflow:hidden; position:fixed; width:100%}
-  button{font-family:inherit; cursor:pointer; color:var(--ink)}
+  button{font-family:inherit; cursor:pointer; color:var(--ink); transition:transform .08s ease, background-color .15s ease, border-color .15s ease}
+  button:active{transform:scale(.97)}
+  @media (prefers-reduced-motion: reduce){ *{transition:none !important; animation:none !important} }
   input,select,textarea{font-family:inherit; color:var(--ink); background:var(--raise);
     border:1px solid var(--line); border-radius:9px; padding:11px 12px; font-size:16px; max-width:100%}
   input::placeholder,textarea::placeholder{color:var(--faint)}
   :focus-visible{outline:2px solid var(--de); outline-offset:2px}
   .wrap{max-width:820px; margin:0 auto; padding:0 16px calc(48px + var(--safe-b))}
+  .filters{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px}
+  .filters input{grid-column:1 / -1}
+  .filters select{min-width:0; width:100%}
+  #start.done{background:var(--raise); color:var(--dim); border-color:var(--line)}
 
   header{position:sticky; top:0; background:var(--bg); z-index:10; border-bottom:1px solid var(--line);
          padding-top:env(safe-area-inset-top,0px)}
@@ -40,8 +62,8 @@
   .stat{font-size:12.5px; color:var(--dim)}
   .stat.warn{color:var(--en)}
   nav{max-width:820px; margin:0 auto; padding:8px 16px 0; display:flex; gap:2px}
-  nav button{border:0; background:none; padding:10px 13px; font-size:14.5px; color:var(--faint);
-             border-bottom:2px solid transparent; margin-bottom:-1px}
+  nav button{border:0; background:none; padding:12px 13px; min-height:44px; font-size:14.5px; color:var(--faint);
+             border-bottom:2px solid transparent; margin-bottom:-1px; border-radius:0}
   nav button.on{color:var(--ink); border-bottom-color:var(--ink); font-weight:600}
 
   .view{display:none; padding-top:18px}
@@ -51,18 +73,46 @@
   .lead{font-size:13.5px; color:var(--dim); margin:0 0 12px}
   .hint{font-size:12.5px; color:var(--faint); line-height:1.55}
   .btn{background:var(--raise); border:1px solid var(--line); border-radius:10px; padding:12px 16px; font-size:15px}
-  .btn.main{background:var(--ink); color:#0e1013; border-color:var(--ink); font-weight:600}
+  .btn.main{background:var(--ink); color:var(--onink); border-color:var(--ink); font-weight:600}
   .btn[disabled]{opacity:.4}
   .wide{display:block; width:100%; margin-top:9px}
   .flex{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
   .chips{display:flex; gap:7px; flex-wrap:wrap}
-  .chipbtn{background:none; border:1px solid var(--line); color:var(--dim); border-radius:20px;
-           padding:8px 14px; font-size:12.5px; font-weight:600}
-  .chipbtn.on{background:var(--ink); color:#0e1013; border-color:var(--ink)}
+  .chipbtn{background:none; border:1px solid var(--edge); color:var(--dim); border-radius:20px;
+           padding:8px 14px; min-height:40px; font-size:13px; font-weight:600}
+  .chipbtn.on{background:var(--ink); color:var(--onink); border-color:var(--ink)}
+  /* Sprachchips: kurz, mit Farbpunkt der Sprache */
+  .chipbtn.l{padding:8px 12px; letter-spacing:.04em}
+  .chipbtn.l .flag{margin-right:7px; width:18px; height:12px}
+  .chiprow{display:flex; gap:8px; align-items:center; flex-wrap:wrap}
+  .chiprow .lbl{font-size:12.5px; color:var(--faint); min-width:36px}
+  /* Segmentwahl: drei gleich breite Felder */
+  .seg{display:grid; grid-template-columns:repeat(3,1fr); gap:6px}
+  .seg .chipbtn{border-radius:10px; padding:9px 6px}
   .tag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.07em; padding:4px 8px;
-       border-radius:5px; color:#0e1013; line-height:1}
+       border-radius:5px; color:var(--ontag); line-height:1}
   .t-de{background:var(--de)} .t-en{background:var(--en)} .t-fr{background:var(--fr)}
   .t-pl{background:var(--pl)} .t-ru{background:var(--ru)}
+  /* Flaggen als eingebettete SVG, damit sie überall gleich aussehen (Emoji-Flaggen fehlen auf Windows) */
+  .flag{display:inline-block; width:20px; height:14px; border-radius:3px; background-size:cover; background-position:center;
+        vertical-align:-2px; box-shadow:0 0 0 1px rgba(0,0,0,.18); flex:0 0 auto}
+  .f-de{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='3' height='2' fill='%23000'/%3E%3Crect y='.667' width='3' height='.667' fill='%23d00'/%3E%3Crect y='1.333' width='3' height='.667' fill='%23ffce00'/%3E%3C/svg%3E")}
+  .f-en{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3Crect width='60' height='30' fill='%23012169'/%3E%3Cpath d='M0 0L60 30M60 0L0 30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0 0L60 30M60 0L0 30' stroke='%23c8102e' stroke-width='2'/%3E%3Cpath d='M30 0V30M0 15H60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30 0V30M0 15H60' stroke='%23c8102e' stroke-width='6'/%3E%3C/svg%3E")}
+  .f-fr{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23002395'/%3E%3Crect x='1' width='1' height='2' fill='%23fff'/%3E%3Crect x='2' width='1' height='2' fill='%23ed2939'/%3E%3C/svg%3E")}
+  .f-pl{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='3' height='1' fill='%23fff'/%3E%3Crect y='1' width='3' height='1' fill='%23dc143c'/%3E%3C/svg%3E")}
+  .f-ru{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='3' height='.667' fill='%23fff'/%3E%3Crect y='.667' width='3' height='.667' fill='%230039a6'/%3E%3Crect y='1.333' width='3' height='.667' fill='%23d52b1e'/%3E%3C/svg%3E")}
+  .lang{display:inline-flex; align-items:center; gap:6px}
+  /* Wörterliste: eine Zeile je Sprache */
+  .rl{display:flex; align-items:flex-start; gap:9px; padding:6px 0; border-top:1px solid var(--line)}
+  .rl:first-child{border-top:0; padding-top:0}
+  .rl .rk{display:flex; align-items:center; gap:6px; padding-top:3px; flex:0 0 auto}
+  .rl .rt{font-size:10.5px; font-weight:700; letter-spacing:.07em; color:var(--faint); min-width:20px}
+  .rl .rw{font-family:var(--serif); font-size:15.5px; flex:1; min-width:0; overflow-wrap:anywhere; line-height:1.4}
+  .rl .rw.first{font-size:17px}
+  .rl .rs{font-size:11.5px; color:var(--faint); white-space:nowrap}
+  .rl .rs.due{color:var(--en)}
+  .rl .rlat{font-size:12px; color:var(--faint); font-style:italic}
+  .rmeta{font-size:12px; color:var(--faint); margin-top:7px}
 
   .counts{display:flex; gap:10px; margin-bottom:14px}
   .cbox{flex:1; background:var(--card); border:1px solid var(--line); border-radius:13px; padding:16px 6px; text-align:center}
@@ -76,8 +126,8 @@
   .dbar{height:3px; background:var(--line); border-radius:2px; overflow:hidden; margin-bottom:9px}
   .dbar i{display:block; height:100%; background:var(--fr); width:0; transition:width .2s}
   .dmeta{display:flex; justify-content:space-between; align-items:center; font-size:12px; color:var(--faint)}
-  .dmeta button{border:1px solid var(--line); background:none; color:var(--dim); border-radius:8px;
-                padding:5px 11px; font-size:12px}
+  .dmeta button{border:1px solid var(--edge); background:none; color:var(--dim); border-radius:8px;
+                padding:8px 12px; min-height:36px; font-size:12.5px}
   .dmid{flex:1 1 auto; overflow-y:auto; -webkit-overflow-scrolling:touch;
         display:flex; flex-direction:column; justify-content:center; padding:6px 18px; text-align:center;
         max-width:640px; width:100%; margin:0 auto}
@@ -86,16 +136,20 @@
   .sent{font-size:13.5px; color:var(--faint); font-style:italic; margin:14px auto 0; max-width:40ch; line-height:1.55}
   .sent b{color:var(--ink); font-weight:600; font-style:normal}
   .gap{color:var(--dim); letter-spacing:.06em}
-  .say{border:1px solid var(--line); background:none; color:var(--dim); border-radius:50%;
-       width:30px; height:30px; font-size:12px; line-height:1; vertical-align:middle; margin-left:9px; padding:0}
+  .say{border:1px solid var(--edge); background:none; color:var(--dim); border-radius:50%;
+       width:34px; height:34px; font-size:12px; line-height:1; vertical-align:middle; margin-left:9px; padding:0; flex:0 0 auto}
   .rev .qword{font-size:clamp(17px,4.4vw,20px); color:var(--dim); margin:6px 0 0}
+  .rev .qzone{position:sticky; top:0; z-index:1; background:var(--bg); padding:4px 0 8px; box-shadow:0 -10px 0 0 var(--bg)}
+  @keyframes rise{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none}}
+  .rev .azone{animation:rise .18s ease-out}
   .rev .qzone .sent, .rev .qzone .translit, .rev .qzone .say{display:none}
   /* Nur anschauen: Frage bleibt lesbar, Lösung steht gleich darunter */
   .look .qword{font-size:clamp(22px,6vw,30px); color:var(--ink)}
   .look .qzone .sent{display:block}
   .azone{margin-top:20px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--fr);
          border-radius:14px; padding:18px 16px; text-align:left}
-  .aline{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:6px}
+  .aline{display:flex; gap:10px; align-items:center; margin-bottom:6px}
+  .tline .aline .say{margin-left:auto}
   .aword{font-family:var(--serif); font-size:clamp(22px,6vw,28px); line-height:1.2}
   .asent{font-size:13.5px; color:var(--dim); font-style:italic; margin:12px 0 0; line-height:1.55}
   .asent b{color:var(--ink); font-weight:600; font-style:normal}
@@ -114,17 +168,17 @@
   .tfrow .typed{flex:1; margin-top:0; text-align:left; min-width:0}
   .tline+.tline{border-top:1px solid var(--line); margin-top:10px; padding-top:12px}
   .vsel{display:flex; gap:6px; margin-top:9px}
-  .vsel button{flex:1; border:1px solid var(--line); background:none; color:var(--dim); border-radius:8px;
-               padding:8px 4px; font-size:12.5px; font-weight:600}
-  .vsel button.on{background:var(--ink); color:#0e1013; border-color:var(--ink)}
+  .vsel button{flex:1; border:1px solid var(--edge); background:none; color:var(--dim); border-radius:8px;
+               padding:8px 4px; min-height:40px; font-size:12.5px; font-weight:600}
+  .vsel button.on{background:var(--ink); color:var(--onink); border-color:var(--ink)}
   .g.pick{border-color:var(--ink); box-shadow:inset 0 0 0 1px var(--ink)}
   .verdict{font-size:13px; font-weight:600; margin:10px 0 0}
   .ok{color:var(--fr)} .no{color:var(--en)}
   .dbtm{flex:0 0 auto; padding:10px 16px calc(12px + var(--safe-b)); border-top:1px solid var(--line)}
-  .big{display:block; width:100%; min-height:58px; border-radius:12px; background:var(--ink); color:#0e1013;
+  .big{display:block; width:100%; min-height:58px; border-radius:12px; background:var(--ink); color:var(--onink);
        border:0; font-size:16px; font-weight:600}
   .grades{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
-  .g{min-height:58px; border:1px solid var(--line); background:var(--card); border-radius:12px; padding:8px 4px}
+  .g{min-height:58px; border:1px solid var(--edge); background:var(--card); border-radius:12px; padding:8px 4px}
   .g b{display:block; font-size:14.5px; font-weight:600}
   .g small{display:block; color:var(--faint); font-size:11px; margin-top:3px}
   .g1 b{color:var(--en)} .g3 b{color:var(--fr)}
@@ -135,7 +189,7 @@
   .rword{font-family:var(--serif); font-size:16px}
   .rsub{font-size:12.5px; color:var(--faint); margin-top:2px; overflow-wrap:anywhere}
   .rbtns{display:flex; flex-direction:column; gap:4px}
-  .rbtns button{border:0; background:none; color:var(--dim); font-size:12px; padding:4px 2px; text-align:right}
+  .rbtns button{border:0; background:none; color:var(--dim); font-size:12.5px; padding:9px 4px; min-height:36px; text-align:right}
   .field{display:flex; flex-direction:column; gap:6px; margin-bottom:11px}
   .field label{font-size:12px; color:var(--dim)}
   .field .in{display:flex; gap:9px; align-items:center}
@@ -143,11 +197,11 @@
   .empty{color:var(--faint); text-align:center; padding:34px 12px}
   #savebar{display:flex; align-items:center; justify-content:space-between; gap:9px; flex-wrap:wrap;
     max-width:820px; margin:12px auto 0; padding:11px 13px; border-radius:11px; font-size:12.5px;
-    background:#2a1c1c; border:1px solid #55302e; color:#f6d5cf; width:calc(100% - 32px)}
-  #savebar.safe{background:#182520; border-color:#2d4a3c; color:#bfe3d2}
-  #savebar button{background:#f6d5cf; color:#2a1c1c; border:0; border-radius:8px;
-    padding:8px 14px; font-size:12.5px; font-weight:700; margin-left:6px}
-  #savebar.safe button{background:#bfe3d2; color:#182520}
+    background:var(--warn-bg); border:1px solid var(--warn-line); color:var(--warn-ink); width:calc(100% - 32px)}
+  #savebar.safe{background:var(--safe-bg); border-color:var(--safe-line); color:var(--safe-ink)}
+  #savebar button{background:var(--warn-ink); color:var(--warn-bg); border:0; border-radius:8px;
+    padding:9px 14px; min-height:36px; font-size:12.5px; font-weight:700; margin-left:6px}
+  #savebar.safe button{background:var(--safe-ink); color:var(--safe-bg)}
   #codeWrap{position:fixed; inset:0; z-index:160; background:var(--bg); overflow:auto;
     padding:calc(24px + env(safe-area-inset-top,0px)) 16px calc(24px + var(--safe-b))}
   #codeWrap .panel{max-width:520px; margin:20px auto}
@@ -158,8 +212,8 @@
   details.howto ol{margin:8px 0 0; padding-left:20px; line-height:1.6}
   details.howto code{font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--dim); word-break:break-all}
   .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:calc(26px + var(--safe-b));
-         background:var(--ink); color:#0e1013; padding:12px 20px; border-radius:24px; font-size:14px;
-         font-weight:600; z-index:200; max-width:90vw; text-align:center}
+         background:var(--ink); color:var(--onink); padding:12px 20px; border-radius:24px; font-size:14px;
+         font-weight:600; z-index:200; max-width:90vw; text-align:center; box-shadow:0 6px 24px rgba(0,0,0,.25)}
   @media(min-width:700px){ .grades{gap:10px} .dmid{padding:20px} }
 </style>
 </head>
@@ -191,15 +245,15 @@
   </div>
   <button class="btn main wide" id="start" style="min-height:56px">Lernen starten</button>
   <div class="panel" style="margin-top:16px">
-    <h2>Antwortmodus</h2>
-    <div class="chips" id="answerPick"></div>
-    <p class="hint" id="answerHint" style="margin-top:9px"></p>
+    <h2>Richtung</h2>
+    <div class="chiprow"><span class="lbl">Von</span><div class="chips" id="fromPick" role="group" aria-label="Fragesprache"></div></div>
+    <div class="chiprow" id="toRow" style="margin-top:9px"><span class="lbl">Nach</span><div class="chips" id="toPick" role="group" aria-label="Zielsprachen"></div></div>
+    <p class="hint" id="dirHint" style="margin-top:9px"></p>
   </div>
   <div class="panel">
-    <h2>Richtung</h2>
-    <div class="chips" id="fromPick"></div>
-    <div class="chips" id="toPick" style="margin-top:9px"></div>
-    <p class="hint" id="dirHint" style="margin-top:9px"></p>
+    <h2>Antwortmodus</h2>
+    <div class="seg" id="answerPick" role="group" aria-label="Antwortmodus"></div>
+    <p class="hint" id="answerHint" style="margin-top:9px"></p>
   </div>
   <div class="panel">
     <h2>Auswahl</h2>
@@ -209,11 +263,12 @@
 </section>
 
 <section class="view" id="v-words">
-  <div class="flex" style="margin-bottom:12px">
-    <input id="search" placeholder="Suchen" style="flex:1; min-width:180px">
-    <select id="wDeck"></select>
-    <select id="wCat"></select>
+  <div class="filters">
+    <input id="search" placeholder="Suchen" aria-label="Wörter durchsuchen">
+    <select id="wDeck" aria-label="Stapel"></select>
+    <select id="wCat" aria-label="Kategorie"></select>
   </div>
+  <div class="chiprow" style="margin-bottom:12px"><span class="lbl">Zeigen</span><div class="chips" id="wLangs" role="group" aria-label="Sprachen in der Liste"></div></div>
   <div class="panel" style="padding:0" id="list"></div>
   <p class="hint" id="wCount"></p>
 </section>
@@ -322,7 +377,7 @@
 
 </div>
 
-<div id="drill">
+<div id="drill" role="dialog" aria-modal="true" aria-label="Lernkarte">
   <div class="dtop">
     <div class="dbar"><i id="progFill"></i></div>
     <div class="dmeta"><span id="counter"></span><span id="cardState"></span>
@@ -330,13 +385,13 @@
   </div>
   <div class="dmid" id="dmid">
     <div class="qzone" id="qzone">
-      <div><span class="tag" id="qLang"></span></div>
+      <div class="lang" style="justify-content:center"><span class="flag" id="qFlag"></span><span class="tag" id="qLang"></span></div>
       <p class="qword" id="qWord"></p>
       <p class="translit" id="qLat"></p>
       <p class="sent" id="qSent"></p>
     </div>
     <div id="typeFields" hidden></div>
-    <div class="azone" id="ans" hidden></div>
+    <div class="azone" id="ans" aria-live="polite" hidden></div>
   </div>
   <div class="dbtm">
     <button class="big" id="reveal">Aufdecken</button>
@@ -350,10 +405,10 @@
   </div>
 </div>
 
-<div id="welcome" hidden style="position:fixed;inset:0;z-index:150;background:var(--bg);overflow:auto;
+<div id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle" hidden style="position:fixed;inset:0;z-index:150;background:var(--bg);overflow:auto;
      padding:calc(26px + env(safe-area-inset-top,0px)) 18px calc(26px + var(--safe-b))">
   <div style="max-width:520px;margin:0 auto">
-    <h2 style="font-family:var(--serif);font-size:27px;font-weight:600;margin:0 0 6px">Vokabeltrainer</h2>
+    <h2 id="welcomeTitle" style="font-family:var(--serif);font-size:27px;font-weight:600;margin:0 0 6px">Vokabeltrainer</h2>
     <p class="lead">301 Fachbegriffe der Personalgewinnung in fünf Sprachen, mit Beispielsätzen und Karteikartensystem. Läuft vollständig ohne Internet.</p>
     <div class="panel">
       <h2>So lernst du</h2>
@@ -384,7 +439,7 @@
     <button class="btn wide" id="codeClose">Schließen</button>
   </div>
 </div>
-<div class="toast" id="toast" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <script>
 if("serviceWorker" in navigator && (location.protocol==="https:"||location.hostname==="localhost")){
@@ -400,13 +455,14 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   const DAY=864e5, LADDER=[1,3,7,16,35,75,150,300];
   let data={items:[],cfg:{newPerDay:20,mode:'check',gap:true,audio:true},log:{},key:''};
   // Antwortmodus: check = überlegen und aufdecken, type = eintippen, look = nur anschauen
-  const MODES=[['check','Überlegen und aufdecken','Begriff ansehen, Antwort im Kopf bilden, aufdecken, selbst bewerten. Der Regelfall.'],
-               ['type','Antwort eintippen','Antwort schreiben, die App vergleicht. Streng, gut für die Sprache, die du aktiv sprechen willst.'],
-               ['look','Nur anschauen','Begriff und Lösung stehen gleich zusammen, ohne Bewertung. Zum Durchsehen – verändert den Lernstand nicht.']];
+  const MODES=[['check','Aufdecken','Begriff ansehen, Antwort im Kopf bilden, aufdecken, selbst bewerten. Der Regelfall.'],
+               ['type','Eintippen','Antwort schreiben, die App vergleicht und schlägt die Bewertung vor. Gut für die Sprache, die du aktiv sprechen willst.'],
+               ['look','Anschauen','Begriff und Lösung stehen gleich zusammen, ohne Bewertung. Zum Durchsehen – verändert den Lernstand nicht.']];
   let ses=null, deck='alle', cat='alle', edit=null, store=true;
 
   const $=s=>document.querySelector(s);
   const esc=s=>(s||'').replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+  const FLAG=k=>'<span class="flag f-'+k+'" aria-hidden="true"></span>';
   const today=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');};
   const dtxt=n=>n===1?'1 Tag':n<31?n+' Tage':Math.round(n/30)+' Monate';
   function toast(m){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(t._x);t._x=setTimeout(()=>t.hidden=true,2600);}
@@ -427,6 +483,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     if(data.cfg.askAll===undefined) data.cfg.askAll=false;
     if(data.cfg.from!=='mix'&&!LANGS.includes(data.cfg.from)) data.cfg.from='mix';
     if(!Array.isArray(data.cfg.to)||!data.cfg.to.length) data.cfg.to=['en'];
+    if(!Array.isArray(data.cfg.wl)||!data.cfg.wl.length) data.cfg.wl=LANGS.slice();
     if(!data.log) data.log={};
     data.items.forEach(migrate);
     // deutsche Beispielsätze in bestehende Bestände nachtragen
@@ -607,7 +664,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   };
   const sayBtn=(k,small)=>window.speechSynthesis?'<button class="say" data-say="'+k+'" aria-label="Vorlesen"'
     +(small?' style="width:24px;height:24px;font-size:10px;margin-left:auto"':'')+'>&#9658;</button>':'';
-  const TAG=k=>'<span class="tag t-'+k+'">'+k.toUpperCase()+'</span>';
+  const TAG=k=>'<span class="lang">'+FLAG(k)+'<span class="tag t-'+k+'">'+k.toUpperCase()+'</span></span>';
   function show(){
     if(!ses.q.length){ stop('Durchgang beendet'); return; }
     const i=ses.q[0], t=Date.now();
@@ -619,7 +676,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     $('#counter').textContent='Noch '+ses.q.length+' von '+ses.total;
     $('#cardState').textContent=ses.look?'Durchsehen':(ses.to.some(k=>isDue(i,k,t))?'Wiederholung':'neu');
     $('#progFill').style.width=Math.round(ses.done/ses.total*100)+'%';
-    $('#qLang').className='tag t-'+ses.from; $('#qLang').textContent=ses.from.toUpperCase();
+    $('#qLang').className='tag t-'+ses.from; $('#qLang').textContent=ses.from.toUpperCase(); $('#qFlag').className='flag f-'+ses.from;
     $('#qLat').textContent=ses.from==='ru'?(i.rulat||''):'';
     const qs=sentFor(i,ses.from);
     $('#qSent').innerHTML=data.cfg.gap?gapSent(qs,i[ses.from]):esc(qs);
@@ -630,13 +687,13 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     const rest=L.filter(([k])=>k!==ses.from&&!ses.to.includes(k)&&i[k]);
     const sl=ses.to.find(k=>sentFor(i,k)), tSent=sl?sentFor(i,sl):'';
     $('#ans').innerHTML=ses.to.map(k=>
-        '<div class="tline" data-k="'+k+'"><div class="aline">'+TAG(k)+'<span class="aword">'+esc(i[k])+'</span>'+sayBtn(k)+'</div>'
+        '<div class="tline" data-k="'+k+'"><div class="aline">'+TAG(k)+sayBtn(k)+'</div><div class="aword">'+esc(i[k])+'</div>'
         +(k==='ru'&&i.rulat?'<div class="translit" style="text-align:left">'+esc(i.rulat)+'</div>':'')
         +'<p class="verdict" data-v="'+k+'"></p><div class="vsel" data-k="'+k+'" hidden></div></div>').join('')
       +(tSent?'<p class="asent">'+markSent(tSent,i[sl])+'</p>':'')
       +(qs?'<p class="asent src">'+markSent(qs,i[ses.from])+'</p>':'')
       +(rest.length?'<div class="more">'+rest.map(([k,l])=>
-          '<div class="mline"><span class="tag mini t-'+k+'">'+l+'</span><span class="mw">'+esc(i[k])+'</span>'
+          '<div class="mline"><span class="lang">'+FLAG(k)+'<span class="tag mini t-'+k+'">'+l+'</span></span><span class="mw">'+esc(i[k])+'</span>'
           +(k==='ru'&&i.rulat?'<span class="mlat">'+esc(i.rulat)+'</span>':'')+sayBtn(k,true)+'</div>').join('')+'</div>':'')
       +(i.cat?'<p class="acat">'+esc(i.cat)+'</p>':'');
     $('#ans').querySelectorAll('[data-say]').forEach(b=>b.onclick=ev=>{ev.stopPropagation(); say(i[b.dataset.say],b.dataset.say);});
@@ -646,7 +703,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     const tf=$('#typeFields');
     tf.hidden=!typing;
     tf.innerHTML=typing?ses.to.map(k=>'<div class="tfrow">'+TAG(k)
-      +'<input class="typed" data-k="'+k+'" lang="'+k+'" placeholder="'+NAME[k]+(k==='ru'?' oder Umschrift':'')
+      +'<input class="typed" data-k="'+k+'" lang="'+k+'" aria-label="Antwort auf '+NAME[k]+'" placeholder="'+NAME[k]+(k==='ru'?' oder Umschrift':'')
       +'" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"></div>').join(''):'';
     $('#reveal').textContent=typing?'Prüfen':'Aufdecken';
     $('#grades').querySelectorAll('.g').forEach(b=>b.classList.remove('pick'));
@@ -748,8 +805,8 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     $('#stat').textContent=data.items.length+' Wörter · '+(store?'gespeichert':'kein Speicher');
     $('#stat').className=store?'stat':'stat warn';
     $('#cNew').textContent=c.newLeft; $('#cDue').textContent=c.due; $('#cPool').textContent=c.pool;
-    $('#deckPick').innerHTML=decks().map(d=>'<button class="chipbtn'+(d===deck?' on':'')+'" data-d="'+esc(d)+'">'+(d==='alle'?'Alle Stapel':esc(d))+'</button>').join('');
-    $('#catPick').innerHTML=cats().map(k=>'<button class="chipbtn'+(k===cat?' on':'')+'" data-c="'+esc(k)+'">'+(k==='alle'?'Alle Kategorien':esc(k))+'</button>').join('');
+    $('#deckPick').innerHTML=decks().map(d=>chip(d===deck,'data-d="'+esc(d)+'"',d==='alle'?'Alle Stapel':esc(d))).join('');
+    $('#catPick').innerHTML=cats().map(k=>chip(k===cat,'data-c="'+esc(k)+'"',k==='alle'?'Alle Kategorien':esc(k))).join('');
     $('#cfgNew').value=data.cfg.newPerDay;
     $('#storeInfo').textContent=store?'Alles liegt lokal auf diesem Gerät. Kein Internet nötig.'
       :'Der Browser verweigert den Speicher. Bitte Sicherung als Datei ablegen.';
@@ -759,36 +816,41 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
       : 'Dieses Gerät speichert nichts. Sichere den Code nach jeder Lernrunde, sonst ist der Fortschritt weg.';
     $('#statBlock').textContent=data.items.length+' Wörter · '+data.items.filter(i=>LANGS.some(k=>st(i,k))).length
       +' begonnen · '+data.items.filter(i=>LANGS.some(k=>(st(i,k)||{}).s>=4)).length+' sitzen fest · heute '+newToday()+' neue';
-    modeChips(); answerChips(); dirChips();
+    modeChips(); answerChips(); dirChips(); wLangChips();
     const miss=missing().length;
     $('#fillInfo').textContent=miss?miss+' Wörter ohne vollständige Übersetzung oder Beispielsatz.':'Alle Wörter sind vollständig übersetzt.';
     $('#fillGo').disabled=!miss;
     words();
   }
+  const chip=(on,attr,inner,cls)=>'<button class="chipbtn'+(cls?' '+cls:'')+(on?' on':'')+'" aria-pressed="'+(on?'true':'false')+'" '+attr+'>'+inner+'</button>';
+  const lchip=(k,on,attr)=>chip(on,attr,FLAG(k)+k.toUpperCase(),'l');
   function answerChips(){
-    $('#answerPick').innerHTML=MODES.map(([k,l])=>'<button class="chipbtn'+(data.cfg.mode===k?' on':'')+'" data-a="'+k+'">'+l+'</button>').join('');
+    $('#answerPick').innerHTML=MODES.map(([k,l])=>chip(data.cfg.mode===k,'data-a="'+k+'"',l)).join('');
     const m=MODES.find(([k])=>k===data.cfg.mode); $('#answerHint').textContent=m?m[2]:'';
-    $('#start').textContent=data.cfg.mode==='look'?'Durchsehen starten':'Lernen starten';
+    const c=counts(), look=data.cfg.mode==='look', nothing=!look&&!c.due&&!c.take.length;
+    const b=$('#start');
+    b.textContent=look?'Durchsehen starten':nothing?(c.freshList.length?'Tagespensum erreicht':'Heute nichts fällig'):'Lernen starten';
+    b.classList.toggle('done',nothing);
   }
-  $('#answerPick').onclick=e=>{const k=e.target.dataset.a; if(k){ data.cfg.mode=k; save(); answerChips(); }};
+  $('#answerPick').onclick=e=>{const b=e.target.closest('[data-a]'), k=b&&b.dataset.a; if(k){ data.cfg.mode=k; save(); answerChips(); }};
   function dirChips(){
     const from=data.cfg.from, to=data.cfg.to;
-    $('#fromPick').innerHTML=[['mix','Deutsch und Englisch gemischt']].concat(L.map(([k])=>[k,'Von '+NAME[k]]))
-      .map(([k,l])=>'<button class="chipbtn'+(from===k?' on':'')+'" data-f="'+k+'">'+l+'</button>').join('');
-    const tp=$('#toPick'); tp.hidden=from==='mix';
-    tp.innerHTML=L.filter(([k])=>k!==from).map(([k])=>'<button class="chipbtn'+(to.includes(k)?' on':'')+'" data-t="'+k+'">Nach '+NAME[k]+'</button>').join('');
+    $('#fromPick').innerHTML=chip(from==='mix','data-f="mix"','Gemischt')
+      +L.map(([k])=>lchip(k,from===k,'data-f="'+k+'"')).join('');
+    $('#toRow').hidden=from==='mix';
+    $('#toPick').innerHTML=L.filter(([k])=>k!==from).map(([k])=>lchip(k,to.includes(k),'data-t="'+k+'"')).join('');
     $('#dirHint').textContent=from==='mix'
-      ? 'Die App fragt abwechselnd auf Deutsch und Englisch, gesucht ist die jeweils andere Sprache.'
+      ? 'Deutsch und Englisch im Wechsel, gesucht ist die jeweils andere Sprache.'
       : 'Von '+NAME[from]+' nach '+to.map(k=>NAME[k]).join(', ')+'.'+(to.length>1?' Ein Feld je Zielsprache, jede mit eigenem Lernstand.':'');
   }
   $('#fromPick').onclick=e=>{
-    const k=e.target.dataset.f; if(!k) return;
+    const b=e.target.closest('[data-f]'), k=b&&b.dataset.f; if(!k) return;
     data.cfg.from=k; data.cfg.to=data.cfg.to.filter(x=>x!==k);
     if(!data.cfg.to.length) data.cfg.to=[k==='de'?'en':'de'];
     save(); render();
   };
   $('#toPick').onclick=e=>{
-    const k=e.target.dataset.t; if(!k) return;
+    const b=e.target.closest('[data-t]'), k=b&&b.dataset.t; if(!k) return;
     const to=data.cfg.to;
     if(to.includes(k)){ if(to.length===1){ toast('Mindestens eine Zielsprache'); return; } data.cfg.to=to.filter(x=>x!==k); }
     else data.cfg.to=LANGS.filter(x=>x===k||to.includes(x));
@@ -802,17 +864,33 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     const fd=$('#wDeck').value||'alle', fc=$('#wCat').value||'alle';
     const list=data.items.filter(i=>(fd==='alle'||(i.deck||'Eigene')===fd)&&(fc==='alle'||i.cat===fc)
       &&(!q||L.some(([k])=>(i[k]||'').toLowerCase().includes(q))||(i.ex||'').toLowerCase().includes(q)));
+    const t=Date.now(), show=(data.cfg.wl||LANGS);
     $('#list').innerHTML=list.slice(0,300).map(i=>{
-      const extra=L.filter(([k])=>k!=='en'&&i[k]).map(([k,l])=>l+' '+esc(i[k])).join(' · ');
-      const t=Date.now(), due=LANGS.filter(k=>st(i,k)).map(k=>{ const s=st(i,k);
-        return k.toUpperCase()+' '+(s.d<=t?'fällig':'in '+dtxt(Math.max(1,Math.ceil((s.d-t)/DAY)))); }).join(' · ')||'neu';
-      return '<div class="row"><div class="rmain"><div class="rword">'+esc(i.en||i.de)+'</div>'
-        +'<div class="rsub">'+extra+'</div><div class="rsub">'+esc(i.cat||'')+' · '+due+'</div></div>'
+      // eine Zeile je gewählter Sprache: Flagge, Kürzel, Wort, Lernstand
+      const lines=show.filter(k=>i[k]).map((k,n)=>{
+        const s=st(i,k), state=!s?'':(s.d<=t?'fällig':'in '+dtxt(Math.max(1,Math.ceil((s.d-t)/DAY))));
+        return '<div class="rl"><span class="rk">'+FLAG(k)+'<span class="rt">'+k.toUpperCase()+'</span></span><span class="rw'+(n===0?' first':'')+'">'+esc(i[k])
+          +(k==='ru'&&i.rulat?' <span class="rlat">'+esc(i.rulat)+'</span>':'')+'</span>'
+          +(state?'<span class="rs'+(s.d<=t?' due':'')+'">'+state+'</span>':'')+'</div>';
+      }).join('');
+      return '<div class="row"><div class="rmain">'+(lines||'<div class="rl"><span class="rw">'+esc(i.en||i.de||'')+'</span></div>')
+        +'<div class="rmeta">'+esc(i.cat||'')+(i.cat?' · ':'')+esc(i.deck||'Eigene')+'</div></div>'
         +'<div class="rbtns"><button data-e="'+i.id+'">ändern</button><button data-x="'+i.id+'">löschen</button></div></div>';
     }).join('')||'<p class="empty">Nichts gefunden.</p>';
     $('#wCount').textContent=list.length+' Treffer'+(list.length>300?' (300 angezeigt)':'');
   }
   $('#search').oninput=words;
+  function wLangChips(){
+    const wl=data.cfg.wl||LANGS;
+    $('#wLangs').innerHTML=L.map(([k])=>lchip(k,wl.includes(k),'data-w="'+k+'"')).join('');
+  }
+  $('#wLangs').onclick=e=>{
+    const b=e.target.closest('[data-w]'), k=b&&b.dataset.w; if(!k) return;
+    const wl=data.cfg.wl||LANGS.slice();
+    if(wl.includes(k)){ if(wl.length===1){ toast('Mindestens eine Sprache'); return; } data.cfg.wl=wl.filter(x=>x!==k); }
+    else data.cfg.wl=LANGS.filter(x=>x===k||wl.includes(x));
+    save(); wLangChips(); words();
+  };
   function fillSelects(){
     $('#wDeck').innerHTML=decks().map(d=>'<option value="'+esc(d)+'">'+(d==='alle'?'Alle Stapel':esc(d))+'</option>').join('');
     $('#wCat').innerHTML=cats().map(k=>'<option value="'+esc(k)+'">'+(k==='alle'?'Alle Kategorien':esc(k))+'</option>').join('');
@@ -827,7 +905,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   /* Neu */
   function formHtml(){
     $('#fields').innerHTML=L.map(([k,l])=>
-      '<div class="field"><label>'+NAME[k]+'</label><div class="in"><span class="tag t-'+k+'">'+l+'</span><input id="f-'+k+'"></div></div>'
+      '<div class="field"><label for="f-'+k+'">'+NAME[k]+'</label><div class="in">'+TAG(k)+'<input id="f-'+k+'"></div></div>'
       +(k==='ru'?'<div class="field"><label>Umschrift</label><input id="f-rulat"></div>':'')).join('');
   }
   function fillForm(o){
@@ -904,8 +982,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   /* Liste übernehmen: eine Zeile je Wort, wahlweise "Wort – Übersetzung" */
   let listLang='de';
   function listLangChips(){
-    $('#listLang').innerHTML=[['de','Deutsch'],['en','Englisch']].map(([k,l])=>
-      '<button class="chipbtn'+(listLang===k?' on':'')+'" data-l="'+k+'">'+l+'</button>').join('');
+    $('#listLang').innerHTML=[['de','Deutsch'],['en','Englisch']].map(([k,l])=>chip(listLang===k,'data-l="'+k+'"',l)).join('');
   }
   $('#listLang').onclick=e=>{const k=e.target.dataset.l; if(k){ listLang=k; listLangChips(); }};
   function parseList(txt){
@@ -1012,7 +1089,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   };
   function modeChips(){
     const opts=[['gap','Lückensatz'],['audio','Aussprache beim Aufdecken'],['askAll','Auch aus FR, PL, RU abfragen']];
-    $('#modePick').innerHTML=opts.map(([k,l])=>'<button class="chipbtn'+(data.cfg[k]?' on':'')+'" data-m="'+k+'">'+l+'</button>').join('');
+    $('#modePick').innerHTML=opts.map(([k,l])=>chip(!!data.cfg[k],'data-m="'+k+'"',l)).join('');
   }
   $('#modePick').addEventListener('click',e=>{
     const k=e.target.dataset.m; if(!k) return;
@@ -1045,7 +1122,7 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
   $('#welcomeGo').onclick=()=>{ $('#welcome').hidden=true; try{localStorage.setItem(KEY+'-seen','1');}catch(e){} };
   $('#helpBtn').onclick=()=>{ $('#welcome').hidden=false; };
   function go(v){
-    document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
+    document.querySelectorAll('nav button').forEach(b=>{ b.classList.toggle('on',b.dataset.v===v); if(b.dataset.v===v) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
     document.querySelectorAll('.view').forEach(s=>s.classList.toggle('on',s.id==='v-'+v));
     window.scrollTo(0,0);
   }
@@ -1059,14 +1136,14 @@ const SEED = [{"id":"pg001","en":"Federal Office of Bundeswehr Personnel Managem
     fromLink();
   }catch(err){
     document.body.innerHTML='<div style="max-width:440px;margin:60px auto;padding:0 20px;font-family:'
-      +'-apple-system,BlinkMacSystemFont,sans-serif;color:#eceef1">'
+      +'-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink)">'
       +'<h1 style="font-size:21px;margin:0 0 10px">Start fehlgeschlagen</h1>'
-      +'<p style="font-size:14px;color:#a2aab4;line-height:1.55">Die App konnte nicht geladen werden. '
+      +'<p style="font-size:14px;color:var(--dim);line-height:1.55">Die App konnte nicht geladen werden. '
       +'Meist hilft ein Zurücksetzen – die mitgelieferten Wörter sind in der Datei gespeichert und gehen dabei nicht verloren. '
       +'Nur selbst angelegte Wörter und der Lernfortschritt auf diesem Gerät werden entfernt.</p>'
-      +'<p style="font-size:12px;color:#727b86;margin-top:14px">'+String(err&&err.message||err)+'</p>'
+      +'<p style="font-size:12px;color:var(--faint);margin-top:14px">'+String(err&&err.message||err)+'</p>'
       +'<button id="rescue" style="margin-top:18px;width:100%;padding:14px;border:0;border-radius:10px;'
-      +'background:#eceef1;color:#0e1013;font-size:15px;font-weight:600;font-family:inherit">Zurücksetzen und neu starten</button></div>';
+      +'background:var(--ink);color:var(--onink);font-size:15px;font-weight:600;font-family:inherit">Zurücksetzen und neu starten</button></div>';
     document.getElementById('rescue').onclick=()=>{
       try{ localStorage.removeItem(KEY); localStorage.removeItem(KEY+'-seen'); }catch(e){}
       location.reload();

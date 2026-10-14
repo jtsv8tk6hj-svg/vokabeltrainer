@@ -1,4 +1,4 @@
-const CACHE='vokabeltrainer-v10';
+const CACHE='vokabeltrainer-v11';
 const FILES=['./','./index.html','./manifest.webmanifest','./icon.svg','./kurzbefehl.html'];
 
 self.addEventListener('install',e=>{

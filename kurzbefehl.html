@@ -3,12 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0e1013">
+<meta name="theme-color" content="#0e1013" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f4ef" media="(prefers-color-scheme: light)">
 <title>Kurzbefehl: Notiz in den Vokabeltrainer</title>
 <style>
-  :root{ --bg:#0e1013; --card:#181b21; --raise:#20242b; --line:#2b3038; --ink:#eceef1; --dim:#a2aab4; --faint:#727b86; --fr:#5ecfa4;
+  :root{ --bg:#0e1013; --card:#181b21; --raise:#20242b; --line:#2b3038; --ink:#eceef1; --dim:#a2aab4; --faint:#8b939d; --fr:#5ecfa4; --link:#7aa7ff;
          --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
-         --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif }
+         --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; color-scheme:dark }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f5f4ef; --card:#ffffff; --raise:#edebe4; --line:#e1dfd7; --ink:#1a1c21; --dim:#4b535e; --faint:#646c76; --fr:#3fae84; --link:#2f63c9; color-scheme:light }
+  }
   *{box-sizing:border-box}
   body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:15px; line-height:1.55;
        padding:calc(18px + env(safe-area-inset-top,0px)) 16px calc(40px + env(safe-area-inset-bottom,0px))}
@@ -26,7 +30,7 @@
   .act{display:inline-block; border:1px solid var(--line); border-radius:7px; padding:1px 8px; color:var(--ink); background:var(--raise); font-weight:600; font-size:13.5px}
   .hint{font-size:13px; color:var(--faint)}
   .ok{border-left:4px solid var(--fr)}
-  a{color:#7aa7ff}
+  a{color:var(--link)}
   table{width:100%; border-collapse:collapse; font-size:14px}
   td{padding:7px 6px; border-top:1px solid var(--line); vertical-align:top}
   td:first-child{color:var(--dim); white-space:nowrap; padding-right:12px}
