@@ -3862,5 +3862,141 @@
   "rulat": "appetít",
   "ex": "I have no appetite today.",
   "exde": "Ich habe heute keinen Appetit."
+ },
+ "ku484": {
+  "fr": "à point",
+  "pl": "średnio wysmażony",
+  "ru": "среднепрожа́ренный",
+  "rulat": "srednjeproschárennyj",
+  "ex": "I'd like my steak medium, please.",
+  "exde": "Ich hätte mein Steak gern halb durch, bitte."
+ },
+ "ku485": {
+  "fr": "les surgelés",
+  "pl": "mrożonki",
+  "ru": "заморо́женные проду́кты",
+  "rulat": "samoróschennyje prodúkty",
+  "ex": "We keep the frozen food in the freezer.",
+  "exde": "Wir bewahren die Tiefkühlkost im Gefrierschrank auf."
+ },
+ "ku486": {
+  "fr": "la table pour deux",
+  "pl": "stolik dla dwóch osób",
+  "ru": "сто́лик на двои́х",
+  "rulat": "stólik na dwoích",
+  "ex": "We'd like a table for two, please.",
+  "exde": "Wir hätten gern einen Tisch für zwei, bitte."
+ },
+ "ku487": {
+  "fr": "la cuisine familiale",
+  "pl": "domowe jedzenie",
+  "ru": "дома́шняя еда́",
+  "rulat": "domáschnjaja jedá",
+  "ex": "I miss my mother's home cooking.",
+  "exde": "Ich vermisse die Hausmannskost meiner Mutter."
+ },
+ "ku488": {
+  "fr": "la cocotte",
+  "pl": "brytfanna",
+  "ru": "жаро́вня",
+  "rulat": "scharównja",
+  "ex": "Put the meat in the casserole dish.",
+  "exde": "Gib das Fleisch in den Schmortopf."
+ },
+ "ku489": {
+  "fr": "le dîner froid",
+  "pl": "kolacja",
+  "ru": "у́жин",
+  "rulat": "úschin",
+  "ex": "We usually have supper at seven.",
+  "exde": "Wir essen meistens um sieben Abendbrot."
+ },
+ "ku490": {
+  "fr": "le gratin",
+  "pl": "zapiekanka",
+  "ru": "запека́нка",
+  "rulat": "sapekánka",
+  "ex": "She made a casserole for dinner.",
+  "exde": "Sie hat zum Abendessen einen Auflauf gemacht."
+ },
+ "ku491": {
+  "fr": "le plat préparé",
+  "pl": "gotowe danie",
+  "ru": "гото́вое блю́до",
+  "rulat": "gotówoje bljúdo",
+  "ex": "I don't like eating ready meals.",
+  "exde": "Ich esse nicht gern Fertiggerichte."
+ },
+ "ku492": {
+  "fr": "la collation",
+  "pl": "przekąska",
+  "ru": "переку́с",
+  "rulat": "perekús",
+  "ex": "An apple is a healthy snack between meals.",
+  "exde": "Ein Apfel ist eine gesunde Zwischenmahlzeit."
+ },
+ "ku493": {
+  "fr": "les restes",
+  "pl": "resztki",
+  "ru": "оста́тки еды́",
+  "rulat": "ostátki jedý",
+  "ex": "We ate the leftovers for lunch.",
+  "exde": "Wir haben die Reste zum Mittagessen gegessen."
+ },
+ "ku494": {
+  "fr": "copieux",
+  "pl": "sycący",
+  "ru": "сы́тный",
+  "rulat": "sýtnyj",
+  "ex": "In winter I like a hearty soup.",
+  "exde": "Im Winter mag ich eine deftige Suppe."
+ },
+ "ku495": {
+  "fr": "la pince à barbecue",
+  "pl": "szczypce do grilla",
+  "ru": "щипцы́ для гри́ля",
+  "rulat": "schtschipzý dlja grílja",
+  "ex": "Use the tongs to turn the sausages.",
+  "exde": "Benutze die Grillzange, um die Würstchen zu wenden."
+ },
+ "ku496": {
+  "fr": "le casse-croûte",
+  "pl": "przekąska",
+  "ru": "переку́с",
+  "rulat": "perekús",
+  "ex": "After the hike we had a snack with bread and cold cuts.",
+  "exde": "Nach der Wanderung haben wir Brotzeit gemacht."
+ },
+ "ku497": {
+  "fr": "le festin",
+  "pl": "uczta",
+  "ru": "пир",
+  "rulat": "pir",
+  "ex": "Grandma prepared a feast for Christmas.",
+  "exde": "Oma hat zu Weihnachten ein Festessen zubereitet."
+ },
+ "ku498": {
+  "fr": "la manique",
+  "pl": "rękawica kuchenna",
+  "ru": "прихва́тка",
+  "rulat": "prichwátka",
+  "ex": "Use an oven glove to take the tray out of the oven.",
+  "exde": "Nimm einen Topflappen, um das Blech aus dem Ofen zu holen."
+ },
+ "ku499": {
+  "fr": "faire tremper",
+  "pl": "namoczyć",
+  "ru": "замочи́ть",
+  "rulat": "samotschít",
+  "ex": "Soak the beans in water overnight.",
+  "exde": "Weiche die Bohnen über Nacht in Wasser ein."
+ },
+ "ku500": {
+  "fr": "la température à cœur",
+  "pl": "temperatura wewnętrzna",
+  "ru": "вну́тренняя температу́ра",
+  "rulat": "wnútrennjaja temperatúra",
+  "ex": "Check the core temperature of the chicken with a thermometer.",
+  "exde": "Prüfe die Kerntemperatur des Hähnchens mit einem Thermometer."
  }
 }

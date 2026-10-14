@@ -209,11 +209,15 @@ Stapel Verben in der Auswahl ist und `cfg.forms` an ist (Lernweise „Verbformen
 mitlernen“). Sie folgen der gewählten Richtung: Zielsprachen sind die Sprachen der
 Formkarten.
 
-**Eigene Verben.** `verbLike()` erkennt einen deutschen Infinitiv (kleingeschrieben,
-ein Wort, wahlweise „sich“) oder ohne Deutsch ein englisches „to …“. Beim Speichern
-unter *Neu* holt `fetchForms()` mit hinterlegtem Schlüssel die Tafel und legt sie am
-Wort ab (`i.forms`); *Nachübersetzen* holt sie für alle Verben ohne Tafel nach, auch
-für Grundstock-Verben, solange `formen.json` sie noch nicht enthält (`formsOf()` nimmt
+**Eigene Verben.** `verbForm()` erkennt einen deutschen Infinitiv (kleingeschrieben,
+ein Wort, wahlweise „sich“) oder ohne Deutsch ein englisches „to …“. Eine Tafel bekommt
+ein Verb aber nur mit Grundstock-Kennung `vb` oder einzeln unter *Neu* angelegt
+(Merkmal `tbl`, `verbLike()`), wie bei den Substantiven: Listenimporte und die
+Themenstapel Alltag und Küche enthalten Dutzende Verben (kochen, backen …), die sonst
+bei *Nachübersetzen* je eine Anfrage auslösten. Beim Speichern unter *Neu* holt
+`fetchForms()` mit hinterlegtem Schlüssel die Tafel und legt sie am Wort ab
+(`i.forms`); *Nachübersetzen* holt sie für alle Tafelwörter ohne Tafel nach, auch für
+Grundstock-Verben, solange `formen.json` sie noch nicht enthält (`formsOf()` nimmt
 `i.forms` vor `FORMS`).
 
 ## Alltag, Küche und Themen

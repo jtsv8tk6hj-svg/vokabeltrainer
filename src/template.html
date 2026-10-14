@@ -1045,7 +1045,7 @@ const FORMS = __FORMS__;
     o.rulat=$('#f-rulat').value.trim(); o.cat=$('#fCat').value.trim();
     o.deck=$('#fDeck').value.trim()||'Eigene'; o.ex=$('#fEx').value.trim(); o.exde=$('#fExDe').value.trim();
     if(!L.some(([k])=>o[k])){ toast('Mindestens ein Wort eintragen'); return; }
-    if(nounForm(o)) o.tbl=1;
+    if(nounForm(o)||verbForm(o)) o.tbl=1;
     if(!edit) data.items.unshift(o);
     edit=null; save(); fillSelects(); render(); fillForm({}); $('#tWord').value='';
     $('#fMsg').textContent='Gespeichert.'; toast('Gespeichert');
@@ -1097,11 +1097,14 @@ const FORMS = __FORMS__;
     }
     return done;
   }
-  // Verb erkannt an der Grundstock-Kennung oder am deutschen Infinitiv (kleingeschrieben, ein Wort, wahlweise „sich“);
-  // liegt Englisch vor, muss es mit „to“ beginnen, sonst wäre „offen“ ein Verb
-  const verbLike=i=>/^vb\d/.test(i.id||'')||((!i.en||/^to\s/i.test(i.en))&&(i.de?/^(sich\s)?\p{Ll}\p{L}*(en|ern|eln)$/u.test(i.de):/^to\s\p{L}+$/u.test(i.en||'')));
-  // Substantiv mit Tafel: Grundstock-Kennung oder unter „Neu“ einzeln angelegt (tbl); Listen bekommen keine Kasustafeln,
-  // sonst würde jede eingelesene Notiz mit Artikeln hundert Anfragen auslösen
+  // Verbform: deutscher Infinitiv (kleingeschrieben, ein Wort, wahlweise „sich“); liegt Englisch vor, muss es mit „to“
+  // beginnen, sonst wäre „offen“ ein Verb. Tafel bekommt ein Verb nur mit Grundstock-Kennung oder einzeln unter „Neu“
+  // angelegt (tbl): Listen und Themenstapel (Alltag, Küche) enthalten Dutzende Verben, die sonst bei „Nachübersetzen“
+  // je eine Anfrage auslösten; eine bereits geholte Tafel (i.forms) bleibt in jedem Fall erhalten
+  const verbForm=i=>(!i.en||/^to\s/i.test(i.en))&&(i.de?/^(sich\s)?\p{Ll}\p{L}*(en|ern|eln)$/u.test(i.de):/^to\s\p{L}+$/u.test(i.en||''));
+  const verbLike=i=>/^vb\d/.test(i.id||'')||(!!i.tbl&&verbForm(i));
+  // Substantiv mit Tafel: ebenso Grundstock-Kennung oder unter „Neu“ einzeln angelegt (tbl); Listen bekommen keine
+  // Kasustafeln, sonst würde jede eingelesene Notiz mit Artikeln hundert Anfragen auslösen
   const nounForm=i=>/^(der|die|das)\s\p{Lu}\p{L}*$/u.test(i.de||'');
   const nounLike=i=>/^sb\d/.test(i.id||'')||(!!i.tbl&&nounForm(i));
   const adjLike=i=>/^aj\d/.test(i.id||''), pronLike=i=>/^pn\d/.test(i.id||'');
