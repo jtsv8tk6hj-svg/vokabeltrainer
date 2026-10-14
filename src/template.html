@@ -1068,8 +1068,9 @@ const FORMS = __FORMS__;
     }
     return done;
   }
-  // Verb erkannt am deutschen Infinitiv (kleingeschrieben, ein Wort, wahlweise „sich“), ohne Deutsch am englischen „to …“
-  const verbLike=i=>/^vb\d/.test(i.id||'')||(i.de?/^(sich\s)?\p{Ll}\p{L}*(en|ern|eln)$/u.test(i.de):/^to\s\p{L}+$/u.test(i.en||''));
+  // Verb erkannt an der Grundstock-Kennung oder am deutschen Infinitiv (kleingeschrieben, ein Wort, wahlweise „sich“);
+  // liegt Englisch vor, muss es mit „to“ beginnen, sonst wäre „offen“ ein Verb
+  const verbLike=i=>/^vb\d/.test(i.id||'')||((!i.en||/^to\s/i.test(i.en))&&(i.de?/^(sich\s)?\p{Ll}\p{L}*(en|ern|eln)$/u.test(i.de):/^to\s\p{L}+$/u.test(i.en||'')));
   const verbsMissing=()=>data.items.filter(i=>verbLike(i)&&!formsOf(i));
   // unvollständige Wörter; Verben ohne Tafel bekommen Beispielsätze mit den Formen, deshalb hier nicht doppelt
   const missing=()=>data.items.filter(i=>!(i.de&&i.en&&i.fr&&i.pl&&i.ru&&i.ex&&i.exde)&&!(verbLike(i)&&!formsOf(i)));
