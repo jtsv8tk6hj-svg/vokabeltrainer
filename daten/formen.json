@@ -2821,7 +2821,8 @@
    ]
   },
   "ex": "I work in Cologne.",
-  "exde": "Ich arbeite in Köln."
+  "exde": "Ich arbeite in Köln.",
+  "_geprueft": true
  },
  "vb001": {
   "de": {
@@ -12244,7 +12245,7 @@
    "aspect": "ipf",
    "pair": "",
    "gender": "",
-   "note": "",
+   "note": "kein vollendeter Partner; Futur nur zusammengesetzt (бу́ду знать)",
    "tenses": [
     {
      "t": "Präsens",
@@ -84333,7 +84334,8 @@
    ]
   },
   "ex": "She is a very competent doctor.",
-  "exde": "Sie ist eine sehr kompetente Ärztin."
+  "exde": "Sie ist eine sehr kompetente Ärztin.",
+  "_geprueft": true
  },
  "aj040": {
   "de": {
@@ -84882,7 +84884,8 @@
    ]
   },
   "ex": "She is very resilient under pressure.",
-  "exde": "Sie ist unter Druck sehr belastbar."
+  "exde": "Sie ist unter Druck sehr belastbar.",
+  "_geprueft": true
  },
  "pn002": {
   "de": {
@@ -85052,7 +85055,8 @@
    ]
   },
   "ex": "I love you.",
-  "exde": "Ich liebe dich."
+  "exde": "Ich liebe dich.",
+  "_geprueft": true
  },
  "pn003": {
   "de": {
@@ -85150,7 +85154,7 @@
    "aspect": "",
    "pair": "",
    "gender": "",
-   "note": "Nach Präpositionen n-Formen: niego, niemu, nim; Akkusativ nach Präposition auch „niego“ (veraltet „niń“).",
+   "note": "Nach Präpositionen n-Formen: niego, niemu, nim; Akkusativ nach Präposition auch „niego“ (veraltet verschmolzene Formen wie „nań“, „zań“, „weń“).",
    "tenses": [
     {
      "t": "Fälle",
@@ -85222,7 +85226,8 @@
    ]
   },
   "ex": "He is reading a book.",
-  "exde": "Er liest ein Buch."
+  "exde": "Er liest ein Buch.",
+  "_geprueft": true
  },
  "pn004": {
   "de": {
@@ -85392,7 +85397,8 @@
    ]
   },
   "ex": "She gave her brother a book.",
-  "exde": "Sie gab ihrem Bruder ein Buch."
+  "exde": "Sie gab ihrem Bruder ein Buch.",
+  "_geprueft": true
  },
  "pn005": {
   "de": {
@@ -85562,7 +85568,8 @@
    ]
   },
   "ex": "The child is tired; it wants to sleep.",
-  "exde": "Das Kind ist müde; es will schlafen."
+  "exde": "Das Kind ist müde; es will schlafen.",
+  "_geprueft": true
  },
  "pn006": {
   "de": {
@@ -85732,7 +85739,8 @@
    ]
   },
   "ex": "We are going to the cinema tonight.",
-  "exde": "Wir gehen heute Abend ins Kino."
+  "exde": "Wir gehen heute Abend ins Kino.",
+  "_geprueft": true
  },
  "pn007": {
   "de": {
@@ -85902,7 +85910,8 @@
    ]
   },
   "ex": "Are you coming with us?",
-  "exde": "Kommt ihr mit uns?"
+  "exde": "Kommt ihr mit uns?",
+  "_geprueft": true
  },
  "pn008": {
   "de": {
@@ -86072,7 +86081,8 @@
    ]
   },
   "ex": "They are coming tomorrow.",
-  "exde": "Sie kommen morgen."
+  "exde": "Sie kommen morgen.",
+  "_geprueft": true
  },
  "pn009": {
   "de": {
@@ -86242,7 +86252,8 @@
    ]
   },
   "ex": "Can I help you, sir?",
-  "exde": "Kann ich Ihnen helfen?"
+  "exde": "Kann ich Ihnen helfen?",
+  "_geprueft": true
  },
  "pn010": {
   "de": {
@@ -86412,7 +86423,8 @@
    ]
   },
   "ex": "Who is at the door?",
-  "exde": "Wer ist an der Tür?"
+  "exde": "Wer ist an der Tür?",
+  "_geprueft": true
  },
  "pn011": {
   "de": {
@@ -86582,6 +86594,7 @@
    ]
   },
   "ex": "What are you doing?",
-  "exde": "Was machst du?"
+  "exde": "Was machst du?",
+  "_geprueft": true
  }
 }

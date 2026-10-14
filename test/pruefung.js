@@ -85,7 +85,7 @@ async function server() {
     await p.click('#start'); await p.waitForTimeout(200);
     ok('Nur anschauen: Lösung sofort sichtbar, keine Bewertung, „Weiter“', await p.isVisible('#ans') && !(await p.isVisible('#grades')) && !(await p.isVisible('#reveal')) && await p.isVisible('#next'));
     const total = +((await p.textContent('#counter')).match(/von (\d+)/) || [0, 0])[1];
-    ok('Nur anschauen: ganze Auswahl samt Form- und Kasuskarten, Kennzeichnung „Durchsehen“', total === 472 + 36 && (await p.textContent('#counter')) === 'Noch ' + total + ' von ' + total && (await p.textContent('#cardState')) === 'Durchsehen', await p.textContent('#counter'));
+    ok('Nur anschauen: ganze Auswahl samt Form- und Kasuskarten, Kennzeichnung „Durchsehen“', total === 472 + 1082 && (await p.textContent('#counter')) === 'Noch ' + total + ' von ' + total && (await p.textContent('#cardState')) === 'Durchsehen', await p.textContent('#counter'));
     await p.click('#next'); await p.waitForTimeout(100);
     ok('Nur anschauen: „Weiter“ blättert', (await p.textContent('#counter')) === 'Noch ' + (total - 1) + ' von ' + total && await p.isVisible('#ans'));
     await p.keyboard.press('Space'); await p.waitForTimeout(100);
@@ -201,7 +201,7 @@ async function server() {
     await p.click('#listGo'); await p.waitForTimeout(200);
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
     ok('Liste erneut: nichts doppelt angelegt', items.length === 3 && /0 Wörter/.test(await p.textContent('#listMsg')) && /3 schon vorhanden/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
-    ok('Nachübersetzen: 3 unvollständige Wörter und 165 Wörter ohne Formentafel gemeldet', /^3 Wörter ohne.*165 Wörter ohne Formentafel/.test((await p.textContent('#fillInfo')).trim()), (await p.textContent('#fillInfo')).trim());
+    ok('Nachübersetzen: 3 unvollständige Wörter gemeldet, keine Tafeln offen', /^3 Wörter ohne vollständige Übersetzung oder Beispielsatz\.$/.test((await p.textContent('#fillInfo')).trim()), (await p.textContent('#fillInfo')).trim());
     // Schlüssel hinterlegen, Liste in Englisch mit Übersetzung
     await p.fill('#apiKey', 'sk-ant-test'); await p.click('#keySave');
     await p.click('#listLang [data-l="en"]');
@@ -220,9 +220,12 @@ async function server() {
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
     ok('Nachübersetzen: alte Wörter vervollständigt, eingegebene Übersetzung bleibt', items.every(i => i.fr && i.pl && i.ru && i.ex && i.exde) && items[0].en === 'apple' && items[1].en === 'en:die Birne', JSON.stringify(items.map(i => [i.de, i.en, i.fr])));
     ok('Nachübersetzen: nichts mehr offen', /vollständig übersetzt/.test(await p.textContent('#fillInfo')) && await p.$eval('#fillGo', b => b.disabled), (await p.textContent('#fillInfo')).trim());
-    ok('Zwei Aufrufe für zwei Übersetzungsrunden, 165 für Formentafeln', requests.length === 2 && formReqs.length === 165 && formReqs[0].output_config.format.schema.required.includes('ru'), 'Aufrufe: ' + requests.length + ' / Formen: ' + formReqs.length);
-    const vf = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.forms).length);
-    ok('Formentafeln am Wort gespeichert, Beispielsätze ergänzt', vf === 165 && await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.find(i => i.id === 'vb001').ex === 'Ex.'), 'mit Formen: ' + vf);
+    ok('Zwei Aufrufe für zwei Übersetzungsrunden, keine für Formentafeln (Grundstock vollständig)', requests.length === 2 && formReqs.length === 0, 'Aufrufe: ' + requests.length + ' / Formen: ' + formReqs.length);
+    // Formentafel für ein eigenes Verb beim Anlegen unter „Neu“
+    await p.click('nav button[data-v="new"]'); await p.fill('#f-de', 'tanzen'); await p.fill('#f-en', 'to dance'); await p.click('#fSave');
+    await p.waitForFunction(() => /Formentafel ergänzt/.test(document.querySelector('#fMsg').textContent), null, { timeout: 10000 }).catch(() => {});
+    const own = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.find(i => i.de === 'tanzen'));
+    ok('Eigenes Verb: Tafel über die API geholt und am Wort gespeichert', formReqs.length === 1 && own && own.forms && own.forms.ru && own.ex === 'Ex.' && formReqs[0].output_config.format.schema.required.includes('ru'), JSON.stringify(own && Object.keys(own.forms || {})));
     // Liste aus dem Link
     await p.goto('about:blank'); await p.goto(URL + '#liste=' + encodeURIComponent('Urlaub – leave\nDienstreise')); await p.waitForTimeout(400);
     ok('Link: Liste im Feld, Ansicht „Neu“, Adresse bereinigt', (await p.inputValue('#listBox')) === 'Urlaub – leave\nDienstreise' && await p.$eval('#v-new', v => v.classList.contains('on')) && await p.evaluate(() => location.hash === '' && location.search === '') && /2 Zeilen aus dem Link/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
@@ -242,10 +245,10 @@ async function server() {
       localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); });
     await p.reload(); await p.waitForTimeout(400);
     await p.click('#deckPick [data-d="Verben"]'); await p.waitForTimeout(100);
-    ok('Stapel Verben: 60 Verben in der Auswahl, 12 neue Formkarten (2 Verben × 6 Tempora)', (await p.textContent('#cPool')) === '60' && (await p.textContent('#cNew')) === '12', 'pool=' + await p.textContent('#cPool') + ' neu=' + await p.textContent('#cNew'));
+    ok('Stapel Verben: 60 Verben in der Auswahl, Tagespensum 20 aus 360 neuen Formkarten', (await p.textContent('#cPool')) === '60' && (await p.textContent('#cNew')) === '20', 'pool=' + await p.textContent('#cPool') + ' neu=' + await p.textContent('#cNew'));
     await p.click('#start'); await p.waitForTimeout(200);
     const task = await p.innerHTML('#qTask');
-    ok('Formkarte: Infinitiv, Aufgabe „Tempus · Person“, Sprache EN, ein Feld', /^to (work|ask)/.test((await p.textContent('#qWord')).trim()) && await p.isVisible('#qTask') && /<b>[^<]+<\/b> · .+/.test(task) && (await p.textContent('#qLang')) === 'EN' && (await p.$$('#typeFields input')).length === 1 && (await p.textContent('#counter')) === 'Noch 12 von 12', task);
+    ok('Formkarte: Infinitiv, Aufgabe „Tempus · Person“, Sprache EN, ein Feld', /^(to |can)/.test((await p.textContent('#qWord')).trim()) && await p.isVisible('#qTask') && /<b>[^<]+<\/b> · .+/.test(task) && (await p.textContent('#qLang')) === 'EN' && (await p.$$('#typeFields input')).length === 1 && (await p.textContent('#counter')) === 'Noch 20 von 20', task + ' / ' + (await p.textContent('#qWord')).trim());
     await p.fill('#typeFields input', 'zzz'); await p.click('#reveal'); await p.waitForTimeout(100);
     const hit = await p.$eval('#ans .ftab tr.hit td:last-child', td => td.textContent);
     const shown = await p.$eval('#ans .aword', a => a.textContent);
@@ -255,7 +258,7 @@ async function server() {
     ok('Form melden: Eintrag mit Verb, Sprache, Tempus, Person, Form', rep1.length === 1 && rep1[0].lang === 'en' && rep1[0].f === hit && rep1[0].tense && rep1[0].p && (await p.textContent('#repBtn')) === 'Gemeldet', JSON.stringify(rep1));
     await p.click('#n1'); await p.waitForTimeout(100);
     let g = await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const out = []; d.items.forEach(i => Object.keys(i.g || {}).forEach(k => Object.keys(i.g[k]).forEach(t => out.push([i.id, k, +t, i.g[k][t].s])))); return out; });
-    ok('Formkarte „Gut“: Stand je Verb, Sprache, Tempus auf Stufe 0, Zähler weiter', g.length === 1 && g[0][1] === 'en' && g[0][3] === 0 && (await p.textContent('#counter')) === 'Noch 11 von 12', JSON.stringify(g));
+    ok('Formkarte „Gut“: Stand je Verb, Sprache, Tempus auf Stufe 0, Zähler weiter', g.length === 1 && g[0][1] === 'en' && g[0][3] === 0 && (await p.textContent('#counter')) === 'Noch 19 von 20', JSON.stringify(g));
     // zweite Karte richtig: Lösung steht verborgen schon im DOM
     const answer = await p.$eval('#ans .aword', a => a.textContent.trim());
     await p.fill('#typeFields input', answer); await p.keyboard.press('Enter'); await p.waitForTimeout(100);
@@ -298,10 +301,10 @@ async function server() {
       localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); });
     await p.reload(); await p.waitForTimeout(400);
     await p.click('#deckPick [data-d="Substantive"]'); await p.waitForTimeout(100);
-    ok('Stapel Substantive: 60 Wörter, 4 neue Kasuskarten (2 Wörter × Singular und Plural)', (await p.textContent('#cPool')) === '60' && (await p.textContent('#cNew')) === '4', 'pool=' + await p.textContent('#cPool') + ' neu=' + await p.textContent('#cNew'));
+    ok('Stapel Substantive: 60 Wörter, Tagespensum 20 aus den Kasuskarten', (await p.textContent('#cPool')) === '60' && (await p.textContent('#cNew')) === '20', 'pool=' + await p.textContent('#cPool') + ' neu=' + await p.textContent('#cNew'));
     await p.click('#start'); await p.waitForTimeout(200);
     const qw = (await p.textContent('#qWord')).replace(/\s+/g, ' ').trim(), task = await p.innerHTML('#qTask');
-    ok('Kasuskarte: Grundform mit Genus, Aufgabe „Numerus · Fall“ mit Frage', /^(дом|рабо́та) · (m|f)/.test(qw) && /<b>(Singular|Plural)<\/b> · (Nominativ|Genitiv|Dativ|Akkusativ|Instrumental|Präpositiv) <span class="qq">[^<]*\?[^<]*<\/span>/.test(task), qw + ' / ' + task);
+    ok('Kasuskarte: Grundform mit Genus, Aufgabe „Numerus · Fall“ mit Frage', /^[\u0400-\u04ff\u0301 ]+ · (m|f|n)/.test(qw) && /<b>(Singular|Plural)<\/b> · (Nominativ|Genitiv|Dativ|Akkusativ|Instrumental|Präpositiv) <span class="qq">[^<]*\?[^<]*<\/span>/.test(task), qw + ' / ' + task);
     await p.click('#reveal'); await p.waitForTimeout(100);
     const rows = await p.$$eval('#ans .ftab tr', tr => tr.map(r => r.children[0].textContent));
     ok('Kasuskarte: Tafel mit sechs Fällen, Lösung markiert', rows.length === 6 && /^Nominativ/.test(rows[0]) && /^Präpositiv/.test(rows[5]) && (await p.$$('#ans .ftab tr.hit')).length === 1, rows.join(','));
@@ -327,22 +330,22 @@ async function server() {
       localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); });
     await p.reload(); await p.waitForTimeout(400);
     await p.click('#deckPick [data-d="Adjektive"]'); await p.waitForTimeout(100);
-    ok('Stapel Adjektive: 40 Wörter, 3 neue Tafelkarten (groß: Komparation, Singular, Plural)', (await p.textContent('#cPool')) === '40' && (await p.textContent('#cNew')) === '3', 'pool=' + await p.textContent('#cPool') + ' neu=' + await p.textContent('#cNew'));
+    ok('Stapel Adjektive: 40 Wörter, Tagespensum 20 aus 120 Tafelkarten', (await p.textContent('#cPool')) === '40' && (await p.textContent('#cNew')) === '20', 'pool=' + await p.textContent('#cPool') + ' neu=' + await p.textContent('#cNew'));
     await p.click('#start'); await p.waitForTimeout(200);
     const task = await p.innerHTML('#qTask');
-    ok('Adjektivkarte: duży, Aufgabe aus Komparation oder Kasus mit Genus', /^duży/.test((await p.textContent('#qWord')).trim()) && /<b>(Komparation|Singular|Plural)<\/b> · /.test(task), task);
+    ok('Adjektivkarte: polnisches Adjektiv, Aufgabe aus Komparation oder Kasus mit Genus', /^\p{Ll}/u.test((await p.textContent('#qWord')).trim()) && /<b>(Komparation|Singular|Plural)<\/b> · /.test(task), task + ' / ' + (await p.textContent('#qWord')).trim());
     await p.click('#reveal'); await p.waitForTimeout(100);
     const n = (await p.$$('#ans .ftab tr')).length;
     const qs = (await p.$$('#ans .ftab tr td:first-child small')).length;
     ok('Adjektivkarte: Tafel vollständig (3, 21 oder 14 Zeilen), Fragewörter bei Kasuszeilen wie „Dativ f“', [3, 21, 14].includes(n) && (await p.$$('#ans .ftab tr.hit')).length === 1 && qs === (n === 3 ? 0 : n), 'Zeilen: ' + n + ', mit Frage: ' + qs);
     await p.click('#n1'); await p.waitForTimeout(100); await p.click('#stop'); await p.waitForTimeout(100);
     await p.click('#deckPick [data-d="Pronomen"]'); await p.waitForTimeout(100);
-    ok('Stapel Pronomen: 11 Wörter, 1 neue Tafelkarte (ich: Fälle)', (await p.textContent('#cPool')) === '11' && (await p.textContent('#cNew')) === '1');
+    ok('Stapel Pronomen: 11 Wörter, 11 neue Tafelkarten (je eine Tafel Fälle)', (await p.textContent('#cPool')) === '11' && (await p.textContent('#cNew')) === '11', 'neu=' + await p.textContent('#cNew'));
     await p.click('#start'); await p.waitForTimeout(200);
     const pw = (await p.textContent('#qWord')).trim(), pt = await p.innerHTML('#qTask');
     await p.click('#reveal'); await p.waitForTimeout(100);
     const rows = await p.$$eval('#ans .ftab tr', tr => tr.map(r => r.children[1].textContent));
-    ok('Pronomenkarte: ja, Fälle mit Fragewörtern, Tafel mit sechs Formen', /^ja/.test(pw) && /<b>Fälle<\/b> · (Nominativ|Genitiv|Dativ|Akkusativ|Instrumental|Lokativ) <span class="qq">/.test(pt) && rows.length === 6 && rows[0] === 'ja' && rows[4] === 'mną', pw + ' / ' + rows.join(','));
+    ok('Pronomenkarte: polnisches Pronomen, Fälle mit Fragewörtern, Tafel mit sechs Formen', /^\p{L}/u.test(pw) && /<b>Fälle<\/b> · (Nominativ|Genitiv|Dativ|Akkusativ|Instrumental|Lokativ) <span class="qq">/.test(pt) && rows.length === 6 && rows.every(Boolean), pw + ' / ' + rows.join(','));
     await p.click('#stop'); await p.waitForTimeout(100);
     ok('Adjektive und Pronomen: keine Seitenfehler', errs.length === 0, errs.join('; '));
     await ctx.close();

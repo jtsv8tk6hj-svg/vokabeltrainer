@@ -396,8 +396,12 @@ einsetzen.
   als Verstehen. Mit dem Stand je Zielsprache ist die Grundlage da, die Leiter ist
   noch für alle Richtungen gleich.
 - Der abgestimmte Ausbau (Richtungen, Verben, Substantive, Adjektive, Pronomen) ist
-  gebaut. Die Tafeln für 165 Wörter entstehen erst mit `python3 formen.py` auf dem
-  Rechner des Nutzers; bis dahin tragen nur sechs Wörter Tafeln.
+  gebaut; alle 171 Tafelwörter sind erzeugt und gegengeprüft (16.147 Zeilen, Lauf vom
+  14.10.2026, elf Tafeln im Prüfdurchgang korrigiert, alle polnisch oder russisch).
+  `index.html` ist damit rund 950 KB groß; die Tafeln liegen in `FORMS`, nicht im
+  Speicher der Nutzer. Meldungen aus der App (*Daten → Meldungen*) sind der Weg,
+  zweifelhafte Formen einzusammeln und mit `python3 formen.py --neu <id>` neu zu
+  erzeugen.
 - Zweiter Stapel mit Alltagswortschatz, damit die App auch privat taugt.
 - FR/PL/RU von Muttersprachlern gegenlesen lassen.
 - Import weiterer CSV-Dateien als eigene Stapel ist bereits eingebaut
