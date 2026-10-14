@@ -1,0 +1,3666 @@
+{
+ "ku001": {
+  "fr": "la poire",
+  "pl": "gruszka",
+  "ru": "гру́ша",
+  "rulat": "grúscha",
+  "ex": "This pear is very juicy.",
+  "exde": "Diese Birne ist sehr saftig."
+ },
+ "ku002": {
+  "fr": "la banane",
+  "pl": "banan",
+  "ru": "бана́н",
+  "rulat": "banán",
+  "ex": "I eat a banana every morning.",
+  "exde": "Ich esse jeden Morgen eine Banane."
+ },
+ "ku003": {
+  "fr": "l'orange",
+  "pl": "pomarańcza",
+  "ru": "апельси́н",
+  "rulat": "apelssín",
+  "ex": "She peeled an orange for her son.",
+  "exde": "Sie hat ihrem Sohn eine Orange geschält."
+ },
+ "ku004": {
+  "fr": "le citron",
+  "pl": "cytryna",
+  "ru": "лимо́н",
+  "rulat": "limón",
+  "ex": "I'd like tea with lemon, please.",
+  "exde": "Ich hätte gern Tee mit Zitrone, bitte."
+ },
+ "ku005": {
+  "fr": "la fraise",
+  "pl": "truskawka",
+  "ru": "клубни́ка",
+  "rulat": "klubníka",
+  "ex": "This strawberry is really sweet.",
+  "exde": "Diese Erdbeere ist richtig süß."
+ },
+ "ku006": {
+  "fr": "le raisin",
+  "pl": "winogrono",
+  "ru": "виногра́д",
+  "rulat": "winográd",
+  "ex": "These grapes have no seeds.",
+  "exde": "Diese Weintrauben haben keine Kerne."
+ },
+ "ku007": {
+  "fr": "la cerise",
+  "pl": "wiśnia, czereśnia",
+  "ru": "ви́шня",
+  "rulat": "wíschnja",
+  "ex": "There is a cherry on top of the cake.",
+  "exde": "Auf der Torte liegt eine Kirsche."
+ },
+ "ku008": {
+  "fr": "la prune",
+  "pl": "śliwka",
+  "ru": "сли́ва",
+  "rulat": "slíwa",
+  "ex": "We picked plums in the garden.",
+  "exde": "Wir haben im Garten Pflaumen gepflückt."
+ },
+ "ku009": {
+  "fr": "la pêche",
+  "pl": "brzoskwinia",
+  "ru": "пе́рсик",
+  "rulat": "pérsik",
+  "ex": "This peach is soft and sweet.",
+  "exde": "Dieser Pfirsich ist weich und süß."
+ },
+ "ku010": {
+  "fr": "l'abricot",
+  "pl": "morela",
+  "ru": "абрико́с",
+  "rulat": "abrikós",
+  "ex": "Dried apricots are a healthy snack.",
+  "exde": "Getrocknete Aprikosen sind ein gesunder Snack."
+ },
+ "ku011": {
+  "fr": "la framboise",
+  "pl": "malina",
+  "ru": "мали́на",
+  "rulat": "malína",
+  "ex": "The raspberries in the forest are ripe.",
+  "exde": "Die Himbeeren im Wald sind reif."
+ },
+ "ku012": {
+  "fr": "la myrtille",
+  "pl": "borówka",
+  "ru": "черни́ка",
+  "rulat": "tscherníka",
+  "ex": "I put blueberries in my yogurt.",
+  "exde": "Ich gebe Heidelbeeren in meinen Joghurt."
+ },
+ "ku013": {
+  "fr": "l'ananas",
+  "pl": "ananas",
+  "ru": "анана́с",
+  "rulat": "ananás",
+  "ex": "Would you like a piece of pineapple?",
+  "exde": "Möchtest du ein Stück Ananas?"
+ },
+ "ku014": {
+  "fr": "la mangue",
+  "pl": "mango",
+  "ru": "ма́нго",
+  "rulat": "mángo",
+  "ex": "The mango is not ripe yet.",
+  "exde": "Die Mango ist noch nicht reif."
+ },
+ "ku015": {
+  "fr": "la pastèque",
+  "pl": "arbuz",
+  "ru": "арбу́з",
+  "rulat": "arbús",
+  "ex": "In summer we eat watermelon on the balcony.",
+  "exde": "Im Sommer essen wir Wassermelone auf dem Balkon."
+ },
+ "ku016": {
+  "fr": "le kiwi",
+  "pl": "kiwi",
+  "ru": "ки́ви",
+  "rulat": "kíwi",
+  "ex": "A kiwi fruit has a lot of vitamin C.",
+  "exde": "Eine Kiwi hat viel Vitamin C."
+ },
+ "ku017": {
+  "fr": "la mandarine",
+  "pl": "mandarynka",
+  "ru": "мандари́н",
+  "rulat": "mandarín",
+  "ex": "The children ate mandarins at Christmas.",
+  "exde": "Die Kinder haben an Weihnachten Mandarinen gegessen."
+ },
+ "ku018": {
+  "fr": "la baie",
+  "pl": "jagoda",
+  "ru": "я́года",
+  "rulat": "jágoda",
+  "ex": "Don't eat that berry, it's poisonous.",
+  "exde": "Iss diese Beere nicht, sie ist giftig."
+ },
+ "ku019": {
+  "fr": "la peau, l'écorce",
+  "pl": "skórka",
+  "ru": "кожура́",
+  "rulat": "koschurá",
+  "ex": "Wash the apple, you can eat the skin.",
+  "exde": "Wasch den Apfel, die Schale kann man mitessen."
+ },
+ "ku020": {
+  "fr": "le pépin, le noyau",
+  "pl": "pestka",
+  "ru": "ко́сточка",
+  "rulat": "kóstotschka",
+  "ex": "I swallowed a pip by accident.",
+  "exde": "Ich habe aus Versehen einen Kern verschluckt."
+ },
+ "ku021": {
+  "fr": "le noyau",
+  "pl": "pestka",
+  "ru": "ко́сточка",
+  "rulat": "kóstotschka",
+  "ex": "Be careful, the cherry has a stone.",
+  "exde": "Vorsicht, die Kirsche hat einen Stein."
+ },
+ "ku022": {
+  "fr": "mûr",
+  "pl": "dojrzały",
+  "ru": "спе́лый",
+  "rulat": "spélyj",
+  "ex": "The bananas are ripe.",
+  "exde": "Die Bananen sind reif."
+ },
+ "ku023": {
+  "fr": "pas mûr",
+  "pl": "niedojrzały",
+  "ru": "неспе́лый",
+  "rulat": "nespélyj",
+  "ex": "This mango is still unripe.",
+  "exde": "Diese Mango ist noch unreif."
+ },
+ "ku024": {
+  "fr": "juteux",
+  "pl": "soczysty",
+  "ru": "со́чный",
+  "rulat": "sótschnyj",
+  "ex": "The peach is very juicy.",
+  "exde": "Der Pfirsich ist sehr saftig."
+ },
+ "ku025": {
+  "fr": "acide",
+  "pl": "kwaśny",
+  "ru": "ки́слый",
+  "rulat": "kíslyj",
+  "ex": "Lemons are sour.",
+  "exde": "Zitronen sind sauer."
+ },
+ "ku026": {
+  "fr": "la pomme de terre",
+  "pl": "ziemniak",
+  "ru": "карто́фель",
+  "rulat": "kartófel",
+  "ex": "I am peeling a potato.",
+  "exde": "Ich schäle eine Kartoffel."
+ },
+ "ku027": {
+  "fr": "la carotte",
+  "pl": "marchewka",
+  "ru": "морко́вь",
+  "rulat": "morków",
+  "ex": "The rabbit is eating a carrot.",
+  "exde": "Das Kaninchen frisst eine Karotte."
+ },
+ "ku028": {
+  "fr": "la tomate",
+  "pl": "pomidor",
+  "ru": "помидо́р",
+  "rulat": "pomidór",
+  "ex": "I cut a tomato for the salad.",
+  "exde": "Ich schneide eine Tomate für den Salat."
+ },
+ "ku029": {
+  "fr": "le concombre",
+  "pl": "ogórek",
+  "ru": "огуре́ц",
+  "rulat": "oguréz",
+  "ex": "The cucumber is fresh and crisp.",
+  "exde": "Die Gurke ist frisch und knackig."
+ },
+ "ku030": {
+  "fr": "l'oignon",
+  "pl": "cebula",
+  "ru": "лук",
+  "rulat": "luk",
+  "ex": "Cutting an onion makes me cry.",
+  "exde": "Beim Schneiden einer Zwiebel muss ich weinen."
+ },
+ "ku031": {
+  "fr": "l'ail",
+  "pl": "czosnek",
+  "ru": "чесно́к",
+  "rulat": "tschesnók",
+  "ex": "The sauce needs more garlic.",
+  "exde": "Die Soße braucht mehr Knoblauch."
+ },
+ "ku032": {
+  "fr": "la laitue",
+  "pl": "sałata",
+  "ru": "сала́т",
+  "rulat": "salát",
+  "ex": "Wash the lettuce before eating it.",
+  "exde": "Wasch den Salat vor dem Essen."
+ },
+ "ku033": {
+  "fr": "le poivron",
+  "pl": "papryka",
+  "ru": "пе́рец",
+  "rulat": "pérez",
+  "ex": "I like red pepper in my salad.",
+  "exde": "Ich mag rote Paprika in meinem Salat."
+ },
+ "ku034": {
+  "fr": "le brocoli",
+  "pl": "brokuł",
+  "ru": "бро́кколи",
+  "rulat": "brókkoli",
+  "ex": "Broccoli is very healthy.",
+  "exde": "Brokkoli ist sehr gesund."
+ },
+ "ku035": {
+  "fr": "le chou-fleur",
+  "pl": "kalafior",
+  "ru": "цветна́я капу́ста",
+  "rulat": "zwetnája kapústa",
+  "ex": "We had cauliflower with cheese sauce.",
+  "exde": "Wir hatten Blumenkohl mit Käsesoße."
+ },
+ "ku036": {
+  "fr": "les épinards",
+  "pl": "szpinak",
+  "ru": "шпина́т",
+  "rulat": "schpinát",
+  "ex": "Popeye eats spinach.",
+  "exde": "Popeye isst Spinat."
+ },
+ "ku037": {
+  "fr": "le petit pois",
+  "pl": "groszek",
+  "ru": "горо́х",
+  "rulat": "goróch",
+  "ex": "The child doesn't like peas.",
+  "exde": "Das Kind mag keine Erbsen."
+ },
+ "ku038": {
+  "fr": "le haricot",
+  "pl": "fasola",
+  "ru": "фасо́ль",
+  "rulat": "fassól",
+  "ex": "I put beans in the soup.",
+  "exde": "Ich gebe Bohnen in die Suppe."
+ },
+ "ku039": {
+  "fr": "le maïs",
+  "pl": "kukurydza",
+  "ru": "кукуру́за",
+  "rulat": "kukurúsa",
+  "ex": "Sweetcorn is sweet and yellow.",
+  "exde": "Mais ist süß und gelb."
+ },
+ "ku040": {
+  "fr": "la courgette",
+  "pl": "cukinia",
+  "ru": "кабачо́к",
+  "rulat": "kabatschók",
+  "ex": "I am grilling a courgette.",
+  "exde": "Ich grille eine Zucchini."
+ },
+ "ku041": {
+  "fr": "l'aubergine",
+  "pl": "bakłażan",
+  "ru": "баклажа́н",
+  "rulat": "baklaschán",
+  "ex": "I am cooking a dish with aubergine.",
+  "exde": "Ich koche ein Gericht mit Aubergine."
+ },
+ "ku042": {
+  "fr": "la citrouille",
+  "pl": "dynia",
+  "ru": "ты́ква",
+  "rulat": "týkwa",
+  "ex": "We carved a pumpkin for Halloween.",
+  "exde": "Wir haben für Halloween einen Kürbis geschnitzt."
+ },
+ "ku043": {
+  "fr": "le champignon",
+  "pl": "grzyb",
+  "ru": "гриб",
+  "rulat": "grib",
+  "ex": "She found a mushroom in the forest.",
+  "exde": "Sie hat im Wald einen Pilz gefunden."
+ },
+ "ku044": {
+  "fr": "le poireau",
+  "pl": "por",
+  "ru": "лук-поре́й",
+  "rulat": "luk-porjéj",
+  "ex": "Add the leek to the soup.",
+  "exde": "Gib den Lauch in die Suppe."
+ },
+ "ku045": {
+  "fr": "le céleri",
+  "pl": "seler",
+  "ru": "сельдере́й",
+  "rulat": "seljderéj",
+  "ex": "I like celery in salads.",
+  "exde": "Ich mag Sellerie im Salat."
+ },
+ "ku046": {
+  "fr": "le chou",
+  "pl": "kapusta",
+  "ru": "капу́ста",
+  "rulat": "kapústa",
+  "ex": "My grandmother likes to cook cabbage.",
+  "exde": "Meine Großmutter kocht gern Kohl."
+ },
+ "ku047": {
+  "fr": "les choux de Bruxelles",
+  "pl": "brukselka",
+  "ru": "брюссе́льская капу́ста",
+  "rulat": "brjussélskaja kapústa",
+  "ex": "Many children don't like Brussels sprouts.",
+  "exde": "Viele Kinder mögen keinen Rosenkohl."
+ },
+ "ku048": {
+  "fr": "le radis",
+  "pl": "rzodkiewka",
+  "ru": "реди́ска",
+  "rulat": "redíska",
+  "ex": "I put a radish on my bread.",
+  "exde": "Ich lege ein Radieschen auf mein Brot."
+ },
+ "ku049": {
+  "fr": "la betterave",
+  "pl": "burak",
+  "ru": "свёкла",
+  "rulat": "swjókla",
+  "ex": "The beetroot turns everything red.",
+  "exde": "Die Rote Bete färbt alles rot."
+ },
+ "ku050": {
+  "fr": "l'asperge",
+  "pl": "szparagi",
+  "ru": "спа́ржа",
+  "rulat": "spárscha",
+  "ex": "In spring we eat fresh asparagus.",
+  "exde": "Im Frühling essen wir frischen Spargel."
+ },
+ "ku051": {
+  "fr": "la saucisse",
+  "pl": "kiełbasa",
+  "ru": "колбаса́",
+  "rulat": "kolbassá",
+  "ex": "He grilled a sausage.",
+  "exde": "Er hat eine Wurst gegrillt."
+ },
+ "ku052": {
+  "fr": "le bœuf",
+  "pl": "wołowina",
+  "ru": "говя́дина",
+  "rulat": "gowjádina",
+  "ex": "This soup is made with beef.",
+  "exde": "Diese Suppe wird mit Rindfleisch gemacht."
+ },
+ "ku053": {
+  "fr": "le porc",
+  "pl": "wieprzowina",
+  "ru": "свини́на",
+  "rulat": "swinína",
+  "ex": "Some people don't eat pork.",
+  "exde": "Manche Menschen essen kein Schweinefleisch."
+ },
+ "ku054": {
+  "fr": "le poulet",
+  "pl": "kurczak",
+  "ru": "ку́рица",
+  "rulat": "kúriza",
+  "ex": "We are having chicken for dinner.",
+  "exde": "Zum Abendessen gibt es Hähnchen."
+ },
+ "ku055": {
+  "fr": "l'agneau",
+  "pl": "jagnięcina",
+  "ru": "ягня́тина",
+  "rulat": "jagnjátina",
+  "ex": "Lamb is often eaten at Easter.",
+  "exde": "Zu Ostern isst man oft Lammfleisch."
+ },
+ "ku056": {
+  "fr": "le veau",
+  "pl": "cielęcina",
+  "ru": "теля́тина",
+  "rulat": "teljátina",
+  "ex": "Wiener schnitzel is made from veal.",
+  "exde": "Wiener Schnitzel wird aus Kalbfleisch gemacht."
+ },
+ "ku057": {
+  "fr": "la dinde",
+  "pl": "indyk",
+  "ru": "инде́йка",
+  "rulat": "indéjka",
+  "ex": "Americans eat turkey at Thanksgiving.",
+  "exde": "Die Amerikaner essen an Thanksgiving Pute."
+ },
+ "ku058": {
+  "fr": "la viande hachée",
+  "pl": "mięso mielone",
+  "ru": "фарш",
+  "rulat": "farsch",
+  "ex": "I need half a kilo of mince for the lasagne.",
+  "exde": "Ich brauche ein halbes Kilo Hackfleisch für die Lasagne."
+ },
+ "ku059": {
+  "fr": "le jambon",
+  "pl": "szynka",
+  "ru": "ветчина́",
+  "rulat": "wetschiná",
+  "ex": "I'd like a sandwich with ham and cheese.",
+  "exde": "Ich hätte gern ein Sandwich mit Schinken und Käse."
+ },
+ "ku060": {
+  "fr": "le lard",
+  "pl": "boczek",
+  "ru": "беко́н",
+  "rulat": "bekón",
+  "ex": "He eats eggs and bacon for breakfast.",
+  "exde": "Er isst zum Frühstück Eier mit Speck."
+ },
+ "ku061": {
+  "fr": "le salami",
+  "pl": "salami",
+  "ru": "саля́ми",
+  "rulat": "saljámi",
+  "ex": "I like salami on my pizza.",
+  "exde": "Ich mag Salami auf meiner Pizza."
+ },
+ "ku062": {
+  "fr": "la saucisse de Francfort",
+  "pl": "parówka",
+  "ru": "соси́ска",
+  "rulat": "sossíska",
+  "ex": "The child ate a frankfurter with mustard.",
+  "exde": "Das Kind aß ein Würstchen mit Senf."
+ },
+ "ku063": {
+  "fr": "le steak",
+  "pl": "stek",
+  "ru": "стейк",
+  "rulat": "stejk",
+  "ex": "I'd like my steak medium, please.",
+  "exde": "Ich hätte mein Steak gern medium, bitte."
+ },
+ "ku064": {
+  "fr": "l'escalope",
+  "pl": "sznycel",
+  "ru": "шни́цель",
+  "rulat": "schnízel",
+  "ex": "We ordered an escalope with fries.",
+  "exde": "Wir bestellten ein Schnitzel mit Pommes."
+ },
+ "ku065": {
+  "fr": "le rôti",
+  "pl": "pieczeń",
+  "ru": "жарко́е",
+  "rulat": "scharkóje",
+  "ex": "On Sunday we have a roast for lunch.",
+  "exde": "Am Sonntag gibt es zum Mittagessen einen Braten."
+ },
+ "ku066": {
+  "fr": "la côtelette",
+  "pl": "kotlet",
+  "ru": "отбивна́я",
+  "rulat": "otbiwnája",
+  "ex": "He grilled a chop for dinner.",
+  "exde": "Er grillte ein Kotelett zum Abendessen."
+ },
+ "ku067": {
+  "fr": "le blanc de poulet",
+  "pl": "pierś z kurczaka",
+  "ru": "кури́ная гру́дка",
+  "rulat": "kurínaja grúdka",
+  "ex": "Chicken breast is low in fat.",
+  "exde": "Hähnchenbrust ist fettarm."
+ },
+ "ku068": {
+  "fr": "la cuisse",
+  "pl": "udko",
+  "ru": "но́жка",
+  "rulat": "nóschka",
+  "ex": "My son always wants the chicken leg.",
+  "exde": "Mein Sohn will immer die Keule vom Hähnchen."
+ },
+ "ku069": {
+  "fr": "le filet",
+  "pl": "filet",
+  "ru": "филе́",
+  "rulat": "filé",
+  "ex": "The beef fillet was very tender.",
+  "exde": "Das Filet vom Rind war sehr zart."
+ },
+ "ku070": {
+  "fr": "la charcuterie",
+  "pl": "wędlina",
+  "ru": "мясна́я наре́зка",
+  "rulat": "mjasnája narésska",
+  "ex": "We bought cold cuts for breakfast.",
+  "exde": "Wir kauften Aufschnitt fürs Frühstück."
+ },
+ "ku071": {
+  "fr": "la boulette de viande",
+  "pl": "kotlet mielony",
+  "ru": "котле́та",
+  "rulat": "kotljéta",
+  "ex": "Grandma makes the best meatballs.",
+  "exde": "Oma macht die besten Frikadellen."
+ },
+ "ku072": {
+  "fr": "le boucher",
+  "pl": "rzeźnik",
+  "ru": "мясни́к",
+  "rulat": "mjasník",
+  "ex": "The butcher cut the meat for me.",
+  "exde": "Der Metzger schnitt das Fleisch für mich."
+ },
+ "ku073": {
+  "fr": "la boucherie",
+  "pl": "sklep mięsny",
+  "ru": "мясна́я ла́вка",
+  "rulat": "mjasnája láwka",
+  "ex": "The butcher's shop opens at eight.",
+  "exde": "Die Metzgerei öffnet um acht."
+ },
+ "ku074": {
+  "fr": "le rayon boucherie",
+  "pl": "stoisko mięsne",
+  "ru": "мясно́й прила́вок",
+  "rulat": "mjasnój priláwok",
+  "ex": "Please ask at the meat counter.",
+  "exde": "Fragen Sie bitte an der Fleischtheke."
+ },
+ "ku075": {
+  "fr": "maigre",
+  "pl": "chudy",
+  "ru": "нежи́рный",
+  "rulat": "neschírnyj",
+  "ex": "I prefer lean meat.",
+  "exde": "Ich bevorzuge mageres Fleisch."
+ },
+ "ku076": {
+  "fr": "les fruits de mer",
+  "pl": "owoce morza",
+  "ru": "морепроду́кты",
+  "rulat": "moreprodúkty",
+  "ex": "She is allergic to seafood.",
+  "exde": "Sie ist allergisch gegen Meeresfrüchte."
+ },
+ "ku077": {
+  "fr": "le saumon",
+  "pl": "łosoś",
+  "ru": "лосо́сь",
+  "rulat": "lossóss",
+  "ex": "We had grilled salmon for dinner.",
+  "exde": "Wir hatten gegrillten Lachs zum Abendessen."
+ },
+ "ku078": {
+  "fr": "le thon",
+  "pl": "tuńczyk",
+  "ru": "туне́ц",
+  "rulat": "tunéz",
+  "ex": "I'll have a tuna sandwich.",
+  "exde": "Ich nehme ein Sandwich mit Thunfisch."
+ },
+ "ku079": {
+  "fr": "le cabillaud",
+  "pl": "dorsz",
+  "ru": "треска́",
+  "rulat": "treská",
+  "ex": "The cod was very fresh today.",
+  "exde": "Der Kabeljau war heute sehr frisch."
+ },
+ "ku080": {
+  "fr": "la truite",
+  "pl": "pstrąg",
+  "ru": "форе́ль",
+  "rulat": "foréll",
+  "ex": "My father caught a trout in the river.",
+  "exde": "Mein Vater fing eine Forelle im Fluss."
+ },
+ "ku081": {
+  "fr": "le hareng",
+  "pl": "śledź",
+  "ru": "селёдка",
+  "rulat": "seljódka",
+  "ex": "I like pickled herring.",
+  "exde": "Ich mag eingelegten Hering."
+ },
+ "ku082": {
+  "fr": "le maquereau",
+  "pl": "makrela",
+  "ru": "скумбри́я",
+  "rulat": "skumbríja",
+  "ex": "We grilled a mackerel for dinner.",
+  "exde": "Wir haben zum Abendessen eine Makrele gegrillt."
+ },
+ "ku083": {
+  "fr": "la sardine",
+  "pl": "sardynka",
+  "ru": "сарди́на",
+  "rulat": "sardína",
+  "ex": "She ate a grilled sardine with bread.",
+  "exde": "Sie aß eine gegrillte Sardine mit Brot."
+ },
+ "ku084": {
+  "fr": "la crevette",
+  "pl": "krewetka",
+  "ru": "креве́тка",
+  "rulat": "krewétka",
+  "ex": "The prawn was very fresh.",
+  "exde": "Die Garnele war sehr frisch."
+ },
+ "ku085": {
+  "fr": "la moule",
+  "pl": "małża",
+  "ru": "ми́дия",
+  "rulat": "mídija",
+  "ex": "This mussel is still closed.",
+  "exde": "Diese Muschel ist noch geschlossen."
+ },
+ "ku086": {
+  "fr": "le calmar",
+  "pl": "kałamarnica",
+  "ru": "кальма́р",
+  "rulat": "kaljmár",
+  "ex": "We had fried squid at the beach.",
+  "exde": "Wir haben am Strand frittierten Tintenfisch gegessen."
+ },
+ "ku087": {
+  "fr": "le homard",
+  "pl": "homar",
+  "ru": "ома́р",
+  "rulat": "omár",
+  "ex": "Lobster is very expensive here.",
+  "exde": "Hummer ist hier sehr teuer."
+ },
+ "ku088": {
+  "fr": "le crabe",
+  "pl": "krab",
+  "ru": "краб",
+  "rulat": "krab",
+  "ex": "A small crab ran across the sand.",
+  "exde": "Eine kleine Krabbe lief über den Sand."
+ },
+ "ku089": {
+  "fr": "l'huître",
+  "pl": "ostryga",
+  "ru": "у́стрица",
+  "rulat": "ústriza",
+  "ex": "Have you ever eaten an oyster?",
+  "exde": "Hast du schon einmal eine Auster gegessen?"
+ },
+ "ku090": {
+  "fr": "l'arête",
+  "pl": "ość",
+  "ru": "ры́бья кость",
+  "rulat": "rýbja kostj",
+  "ex": "Be careful, there is a fish bone in it.",
+  "exde": "Vorsicht, da ist eine Gräte drin."
+ },
+ "ku091": {
+  "fr": "l'écaille",
+  "pl": "łuska",
+  "ru": "чешуя́",
+  "rulat": "tscheschujá",
+  "ex": "Remove each scale with a knife.",
+  "exde": "Entferne jede Schuppe mit einem Messer."
+ },
+ "ku092": {
+  "fr": "le saumon fumé",
+  "pl": "łosoś wędzony",
+  "ru": "копчёный лосо́сь",
+  "rulat": "koptschónyj lossósj",
+  "ex": "I had smoked salmon on my bagel.",
+  "exde": "Ich hatte Räucherlachs auf meinem Bagel."
+ },
+ "ku093": {
+  "fr": "le bâtonnet de poisson",
+  "pl": "paluszek rybny",
+  "ru": "ры́бная па́лочка",
+  "rulat": "rýbnaja pálotschka",
+  "ex": "The kids want fish fingers for lunch.",
+  "exde": "Die Kinder wollen Fischstäbchen zum Mittagessen."
+ },
+ "ku094": {
+  "fr": "le poissonnier",
+  "pl": "sprzedawca ryb",
+  "ru": "торго́вец ры́бой",
+  "rulat": "torgówez rýboj",
+  "ex": "The fishmonger recommended the cod.",
+  "exde": "Der Fischhändler empfahl den Kabeljau."
+ },
+ "ku095": {
+  "fr": "le rayon poissonnerie",
+  "pl": "stoisko rybne",
+  "ru": "ры́бный прила́вок",
+  "rulat": "rýbnyj priláwok",
+  "ex": "Let's buy prawns at the fish counter.",
+  "exde": "Lass uns Garnelen an der Fischtheke kaufen."
+ },
+ "ku096": {
+  "fr": "frais",
+  "pl": "świeży",
+  "ru": "све́жий",
+  "rulat": "swéschij",
+  "ex": "Is this fish fresh?",
+  "exde": "Ist dieser Fisch frisch?"
+ },
+ "ku097": {
+  "fr": "fumé",
+  "pl": "wędzony",
+  "ru": "копчёный",
+  "rulat": "koptschónyj",
+  "ex": "I prefer smoked fish.",
+  "exde": "Ich bevorzuge geräucherten Fisch."
+ },
+ "ku098": {
+  "fr": "désarêter",
+  "pl": "usuwać ości",
+  "ru": "удаля́ть ко́сти",
+  "rulat": "udaljátj kósti",
+  "ex": "Can you bone the fish for me?",
+  "exde": "Können Sie den Fisch für mich entgräten?"
+ },
+ "ku099": {
+  "fr": "vider",
+  "pl": "patroszyć",
+  "ru": "потроши́ть",
+  "rulat": "potroschítj",
+  "ex": "First you have to gut the fish.",
+  "exde": "Zuerst musst du den Fisch ausnehmen."
+ },
+ "ku100": {
+  "fr": "le sandre",
+  "pl": "sandacz",
+  "ru": "суда́к",
+  "rulat": "sudák",
+  "ex": "We caught a pike-perch in the lake.",
+  "exde": "Wir haben im See einen Zander gefangen."
+ },
+ "ku101": {
+  "fr": "le beurre",
+  "pl": "masło",
+  "ru": "ма́сло",
+  "rulat": "máslo",
+  "ex": "Could you pass the butter, please?",
+  "exde": "Kannst du mir bitte die Butter reichen?"
+ },
+ "ku102": {
+  "fr": "le yaourt",
+  "pl": "jogurt",
+  "ru": "йо́гурт",
+  "rulat": "jógurt",
+  "ex": "I eat yoghurt with fruit for breakfast.",
+  "exde": "Ich esse zum Frühstück Joghurt mit Obst."
+ },
+ "ku103": {
+  "fr": "la crème",
+  "pl": "śmietanka",
+  "ru": "сли́вки",
+  "rulat": "slíwki",
+  "ex": "Do you take cream in your coffee?",
+  "exde": "Nimmst du Sahne in den Kaffee?"
+ },
+ "ku104": {
+  "fr": "le fromage blanc",
+  "pl": "twaróg",
+  "ru": "творо́г",
+  "rulat": "twarók",
+  "ex": "She is baking a cake with quark.",
+  "exde": "Sie backt einen Kuchen mit Quark."
+ },
+ "ku105": {
+  "fr": "le fromage frais",
+  "pl": "serek śmietankowy",
+  "ru": "сли́вочный сыр",
+  "rulat": "slíwotschnyj syr",
+  "ex": "I spread cream cheese on my bagel.",
+  "exde": "Ich streiche Frischkäse auf meinen Bagel."
+ },
+ "ku106": {
+  "fr": "la crème aigre",
+  "pl": "kwaśna śmietana",
+  "ru": "смета́на",
+  "rulat": "smetána",
+  "ex": "Borscht is served with soured cream.",
+  "exde": "Borschtsch wird mit saurer Sahne serviert."
+ },
+ "ku107": {
+  "fr": "la crème chantilly",
+  "pl": "bita śmietana",
+  "ru": "взби́тые сли́вки",
+  "rulat": "wsbítyje slíwki",
+  "ex": "I'd like a piece of cake with whipped cream.",
+  "exde": "Ich hätte gern ein Stück Kuchen mit Schlagsahne."
+ },
+ "ku108": {
+  "fr": "le jaune d'œuf",
+  "pl": "żółtko",
+  "ru": "желто́к",
+  "rulat": "scheltók",
+  "ex": "Separate the egg yolk from the white.",
+  "exde": "Trenne das Eigelb vom Eiweiß."
+ },
+ "ku109": {
+  "fr": "le blanc d'œuf",
+  "pl": "białko",
+  "ru": "бело́к",
+  "rulat": "belók",
+  "ex": "Beat the egg white until stiff.",
+  "exde": "Schlag das Eiweiß steif."
+ },
+ "ku110": {
+  "fr": "la coquille d'œuf",
+  "pl": "skorupka jajka",
+  "ru": "яи́чная скорлупа́",
+  "rulat": "jaítschnaja skorlupá",
+  "ex": "There's a piece of eggshell in my omelette.",
+  "exde": "In meinem Omelett ist ein Stück Eierschale."
+ },
+ "ku111": {
+  "fr": "l'œuf au plat",
+  "pl": "jajko sadzone",
+  "ru": "глазу́нья",
+  "rulat": "glasúnja",
+  "ex": "He had a fried egg on toast.",
+  "exde": "Er aß ein Spiegelei auf Toast."
+ },
+ "ku112": {
+  "fr": "les œufs brouillés",
+  "pl": "jajecznica",
+  "ru": "яи́чница-болту́нья",
+  "rulat": "jaítschniza-boltúnja",
+  "ex": "The kids love scrambled eggs.",
+  "exde": "Die Kinder lieben Rührei."
+ },
+ "ku113": {
+  "fr": "l'œuf à la coque",
+  "pl": "jajko gotowane",
+  "ru": "варёное яйцо́",
+  "rulat": "warjónoje jajzó",
+  "ex": "I have a boiled egg every morning.",
+  "exde": "Ich esse jeden Morgen ein gekochtes Ei."
+ },
+ "ku114": {
+  "fr": "l'œuf poché",
+  "pl": "jajko w koszulce",
+  "ru": "яйцо́-пашо́т",
+  "rulat": "jajzó-paschót",
+  "ex": "I'd like a poached egg on toast, please.",
+  "exde": "Ich hätte gern ein pochiertes Ei auf Toast, bitte."
+ },
+ "ku115": {
+  "fr": "le lait entier",
+  "pl": "mleko pełnotłuste",
+  "ru": "це́льное молоко́",
+  "rulat": "zélnoje molokó",
+  "ex": "We buy whole milk for the baby.",
+  "exde": "Wir kaufen Vollmilch für das Baby."
+ },
+ "ku116": {
+  "fr": "le lait demi-écrémé",
+  "pl": "mleko półtłuste",
+  "ru": "нежи́рное молоко́",
+  "rulat": "neschírnoje molokó",
+  "ex": "I only drink semi-skimmed milk.",
+  "exde": "Ich trinke nur fettarme Milch."
+ },
+ "ku117": {
+  "fr": "le babeurre",
+  "pl": "maślanka",
+  "ru": "па́хта",
+  "rulat": "páchta",
+  "ex": "Buttermilk is refreshing in summer.",
+  "exde": "Buttermilch ist im Sommer erfrischend."
+ },
+ "ku118": {
+  "fr": "le lait UHT",
+  "pl": "mleko UHT",
+  "ru": "ультрапастеризо́ванное молоко́",
+  "rulat": "ultrapasterisówannoje molokó",
+  "ex": "UHT milk keeps for months.",
+  "exde": "H-Milch hält sich monatelang."
+ },
+ "ku119": {
+  "fr": "le fromage râpé",
+  "pl": "ser tarty",
+  "ru": "тёртый сыр",
+  "rulat": "tjórtyj syr",
+  "ex": "Sprinkle grated cheese over the pasta.",
+  "exde": "Streu Reibekäse über die Nudeln."
+ },
+ "ku120": {
+  "fr": "le fromage à pâte dure",
+  "pl": "ser twardy",
+  "ru": "твёрдый сыр",
+  "rulat": "twjórdyj syr",
+  "ex": "Parmesan is a hard cheese.",
+  "exde": "Parmesan ist ein Hartkäse."
+ },
+ "ku121": {
+  "fr": "les produits laitiers",
+  "pl": "nabiał",
+  "ru": "моло́чные проду́кты",
+  "rulat": "malótschnyje prodúkty",
+  "ex": "I try to eat fewer dairy products.",
+  "exde": "Ich versuche, weniger Milchprodukte zu essen."
+ },
+ "ku122": {
+  "fr": "sans lactose",
+  "pl": "bez laktozy",
+  "ru": "безлакто́зный",
+  "rulat": "beslaktósnyj",
+  "ex": "Do you have lactose-free milk?",
+  "exde": "Haben Sie laktosefreie Milch?"
+ },
+ "ku123": {
+  "fr": "le lait d'avoine",
+  "pl": "mleko owsiane",
+  "ru": "овся́ное молоко́",
+  "rulat": "owsjánoje malakó",
+  "ex": "I drink my coffee with oat milk.",
+  "exde": "Ich trinke meinen Kaffee mit Hafermilch."
+ },
+ "ku124": {
+  "fr": "l'œuf de plein air",
+  "pl": "jajko z wolnego wybiegu",
+  "ru": "яйцо́ от кур свобо́дного вы́гула",
+  "rulat": "jajzó ot kur swabódnowo wýgula",
+  "ex": "We only buy free-range eggs.",
+  "exde": "Wir kaufen nur Freilandeier."
+ },
+ "ku125": {
+  "fr": "la boîte à œufs",
+  "pl": "wytłaczanka na jajka",
+  "ru": "коро́бка для яи́ц",
+  "rulat": "karóbka dlja jaíz",
+  "ex": "There are two eggs left in the egg box.",
+  "exde": "Im Eierkarton sind noch zwei Eier."
+ },
+ "ku126": {
+  "fr": "le petit pain",
+  "pl": "bułka",
+  "ru": "бу́лочка",
+  "rulat": "búlotschka",
+  "ex": "I buy fresh bread rolls every morning.",
+  "exde": "Ich kaufe jeden Morgen frische Brötchen."
+ },
+ "ku127": {
+  "fr": "le pain complet",
+  "pl": "chleb pełnoziarnisty",
+  "ru": "цельнозерново́й хлеб",
+  "rulat": "zelnosernowój chlep",
+  "ex": "Wholemeal bread keeps you full longer.",
+  "exde": "Vollkornbrot macht länger satt."
+ },
+ "ku128": {
+  "fr": "le pain blanc",
+  "pl": "biały chleb",
+  "ru": "бе́лый хлеб",
+  "rulat": "bélyj chlep",
+  "ex": "The children prefer white bread.",
+  "exde": "Die Kinder essen lieber Weißbrot."
+ },
+ "ku129": {
+  "fr": "le pain de seigle",
+  "pl": "chleb żytni",
+  "ru": "ржано́й хлеб",
+  "rulat": "rschanój chlep",
+  "ex": "Rye bread goes well with cheese.",
+  "exde": "Roggenbrot passt gut zu Käse."
+ },
+ "ku130": {
+  "fr": "le pain de mie",
+  "pl": "chleb tostowy",
+  "ru": "то́стовый хлеб",
+  "rulat": "tóstowyj chlep",
+  "ex": "Put two slices of sliced white bread in the toaster.",
+  "exde": "Leg zwei Scheiben Toastbrot in den Toaster."
+ },
+ "ku131": {
+  "fr": "la baguette",
+  "pl": "bagietka",
+  "ru": "баге́т",
+  "rulat": "bagét",
+  "ex": "She bought a baguette at the bakery.",
+  "exde": "Sie hat beim Bäcker ein Baguette gekauft."
+ },
+ "ku132": {
+  "fr": "le bretzel",
+  "pl": "precel",
+  "ru": "кре́ндель",
+  "rulat": "kréndel",
+  "ex": "In Bavaria, a pretzel is a popular snack.",
+  "exde": "In Bayern ist die Brezel ein beliebter Snack."
+ },
+ "ku133": {
+  "fr": "le croissant",
+  "pl": "rogalik",
+  "ru": "круасса́н",
+  "rulat": "kruassán",
+  "ex": "I had a croissant for breakfast.",
+  "exde": "Ich habe zum Frühstück ein Croissant gegessen."
+ },
+ "ku134": {
+  "fr": "la miche",
+  "pl": "bochenek",
+  "ru": "буха́нка",
+  "rulat": "buchánka",
+  "ex": "Could I have a loaf of rye bread, please?",
+  "exde": "Könnte ich bitte einen Laib Roggenbrot haben?"
+ },
+ "ku135": {
+  "fr": "la tranche",
+  "pl": "kromka",
+  "ru": "ло́мтик",
+  "rulat": "lómtik",
+  "ex": "Would you like another slice of bread?",
+  "exde": "Möchtest du noch eine Scheibe Brot?"
+ },
+ "ku136": {
+  "fr": "la croûte",
+  "pl": "skórka",
+  "ru": "ко́рка",
+  "rulat": "kórka",
+  "ex": "The crust of this bread is very crispy.",
+  "exde": "Die Kruste dieses Brotes ist sehr knusprig."
+ },
+ "ku137": {
+  "fr": "la mie",
+  "pl": "miękisz",
+  "ru": "мя́киш",
+  "rulat": "mjákisch",
+  "ex": "The crumb is soft and airy.",
+  "exde": "Die Krume ist weich und luftig."
+ },
+ "ku138": {
+  "fr": "la pâte",
+  "pl": "ciasto",
+  "ru": "те́сто",
+  "rulat": "tésto",
+  "ex": "The dough needs to rise for an hour.",
+  "exde": "Der Teig muss eine Stunde gehen."
+ },
+ "ku139": {
+  "fr": "la farine",
+  "pl": "mąka",
+  "ru": "мука́",
+  "rulat": "muká",
+  "ex": "We need more flour for the cake.",
+  "exde": "Wir brauchen mehr Mehl für den Kuchen."
+ },
+ "ku140": {
+  "fr": "la levure",
+  "pl": "drożdże",
+  "ru": "дро́жжи",
+  "rulat": "dróschschi",
+  "ex": "Add the yeast to warm water.",
+  "exde": "Gib die Hefe in warmes Wasser."
+ },
+ "ku141": {
+  "fr": "le levain",
+  "pl": "zakwas",
+  "ru": "заква́ска",
+  "rulat": "sakwáska",
+  "ex": "This bread is made with sourdough.",
+  "exde": "Dieses Brot wird mit Sauerteig gemacht."
+ },
+ "ku142": {
+  "fr": "la boulangerie",
+  "pl": "piekarnia",
+  "ru": "пека́рня",
+  "rulat": "pekárnja",
+  "ex": "I buy fresh bread at the bakery every morning.",
+  "exde": "Ich kaufe jeden Morgen frisches Brot in der Bäckerei."
+ },
+ "ku143": {
+  "fr": "le boulanger",
+  "pl": "piekarz",
+  "ru": "пе́карь",
+  "rulat": "pékar",
+  "ex": "The baker starts work at four in the morning.",
+  "exde": "Der Bäcker fängt um vier Uhr morgens an zu arbeiten."
+ },
+ "ku144": {
+  "fr": "les pâtisseries",
+  "pl": "wypieki",
+  "ru": "вы́печка",
+  "rulat": "wýpetschka",
+  "ex": "We had coffee and pastries.",
+  "exde": "Wir hatten Kaffee und Gebäck."
+ },
+ "ku145": {
+  "fr": "le gâteau",
+  "pl": "ciasto",
+  "ru": "пиро́г",
+  "rulat": "pirók",
+  "ex": "My grandmother baked a cake for my birthday.",
+  "exde": "Meine Großmutter hat zu meinem Geburtstag einen Kuchen gebacken."
+ },
+ "ku146": {
+  "fr": "le gâteau à la crème",
+  "pl": "tort",
+  "ru": "торт",
+  "rulat": "tort",
+  "ex": "She ordered a chocolate gateau for the party.",
+  "exde": "Sie hat für die Party eine Torte mit Schokolade bestellt."
+ },
+ "ku147": {
+  "fr": "le biscuit",
+  "pl": "herbatnik",
+  "ru": "пече́нье",
+  "rulat": "petschénje",
+  "ex": "Would you like a biscuit with your tea?",
+  "exde": "Möchtest du einen Keks zum Tee?"
+ },
+ "ku148": {
+  "fr": "la chapelure",
+  "pl": "bułka tarta",
+  "ru": "панирово́чные сухари́",
+  "rulat": "panirowótschnyje sucharí",
+  "ex": "Coat the fish in breadcrumbs before frying.",
+  "exde": "Wende den Fisch vor dem Braten in Paniermehl."
+ },
+ "ku149": {
+  "fr": "cuire au four",
+  "pl": "piec",
+  "ru": "печь",
+  "rulat": "petsch",
+  "ex": "We like to bake bread on Sundays.",
+  "exde": "Wir backen sonntags gern Brot."
+ },
+ "ku150": {
+  "fr": "pétrir",
+  "pl": "zagniatać",
+  "ru": "меси́ть",
+  "rulat": "messít",
+  "ex": "Knead the dough for ten minutes.",
+  "exde": "Knete den Teig zehn Minuten lang."
+ },
+ "ku151": {
+  "fr": "les céréales",
+  "pl": "zboża",
+  "ru": "зерновы́е",
+  "rulat": "sernowýje",
+  "ex": "Many breakfast foods are made from cereals.",
+  "exde": "Viele Frühstücksprodukte werden aus Getreide hergestellt."
+ },
+ "ku152": {
+  "fr": "le riz",
+  "pl": "ryż",
+  "ru": "рис",
+  "rulat": "ris",
+  "ex": "We eat rice with vegetables.",
+  "exde": "Wir essen Reis mit Gemüse."
+ },
+ "ku153": {
+  "fr": "les pâtes",
+  "pl": "makaron",
+  "ru": "макаро́ны",
+  "rulat": "makaróny",
+  "ex": "The children love pasta with tomato sauce.",
+  "exde": "Die Kinder lieben Nudeln mit Tomatensoße."
+ },
+ "ku154": {
+  "fr": "le blé",
+  "pl": "pszenica",
+  "ru": "пшени́ца",
+  "rulat": "pschenítza",
+  "ex": "This flour is made from wheat.",
+  "exde": "Dieses Mehl wird aus Weizen hergestellt."
+ },
+ "ku155": {
+  "fr": "le seigle",
+  "pl": "żyto",
+  "ru": "рожь",
+  "rulat": "rosch",
+  "ex": "Rye bread is very popular in Germany.",
+  "exde": "Brot aus Roggen ist in Deutschland sehr beliebt."
+ },
+ "ku156": {
+  "fr": "l'orge",
+  "pl": "jęczmień",
+  "ru": "ячме́нь",
+  "rulat": "jatschmén",
+  "ex": "Barley is used to make beer.",
+  "exde": "Gerste wird zum Bierbrauen verwendet."
+ },
+ "ku157": {
+  "fr": "l'avoine",
+  "pl": "owies",
+  "ru": "овёс",
+  "rulat": "owjós",
+  "ex": "Horses like to eat oats.",
+  "exde": "Pferde fressen gern Hafer."
+ },
+ "ku158": {
+  "fr": "les flocons d'avoine",
+  "pl": "płatki owsiane",
+  "ru": "овся́ные хло́пья",
+  "rulat": "owsjányje chlópja",
+  "ex": "I eat porridge oats with milk for breakfast.",
+  "exde": "Ich esse zum Frühstück Haferflocken mit Milch."
+ },
+ "ku159": {
+  "fr": "le riz complet",
+  "pl": "ryż brązowy",
+  "ru": "бу́рый рис",
+  "rulat": "búryj ris",
+  "ex": "Brown rice takes longer to cook.",
+  "exde": "Vollkornreis braucht länger zum Kochen."
+ },
+ "ku160": {
+  "fr": "le riz basmati",
+  "pl": "ryż basmati",
+  "ru": "рис ба́смати",
+  "rulat": "ris básmati",
+  "ex": "Basmati rice goes well with curry.",
+  "exde": "Basmatireis passt gut zu Curry."
+ },
+ "ku161": {
+  "fr": "le riz au lait",
+  "pl": "ryż na mleku",
+  "ru": "моло́чная ри́совая ка́ша",
+  "rulat": "malótschnaja ríssowaja káscha",
+  "ex": "My grandmother makes the best rice pudding.",
+  "exde": "Meine Oma macht den besten Milchreis."
+ },
+ "ku162": {
+  "fr": "les spaghettis",
+  "pl": "spaghetti",
+  "ru": "спаге́тти",
+  "rulat": "spagétti",
+  "ex": "We're having spaghetti for dinner tonight.",
+  "exde": "Heute Abend gibt es Spaghetti."
+ },
+ "ku163": {
+  "fr": "le couscous",
+  "pl": "kuskus",
+  "ru": "куску́с",
+  "rulat": "kuskús",
+  "ex": "The couscous is ready in five minutes.",
+  "exde": "Der Couscous ist in fünf Minuten fertig."
+ },
+ "ku164": {
+  "fr": "le boulgour",
+  "pl": "kasza bulgur",
+  "ru": "булгу́р",
+  "rulat": "bulgúr",
+  "ex": "I use bulgur wheat for tabbouleh.",
+  "exde": "Ich nehme Bulgur für Taboulé."
+ },
+ "ku165": {
+  "fr": "le millet",
+  "pl": "proso",
+  "ru": "пшено́",
+  "rulat": "pschenó",
+  "ex": "Millet is naturally gluten-free.",
+  "exde": "Hirse ist von Natur aus glutenfrei."
+ },
+ "ku166": {
+  "fr": "l'épeautre",
+  "pl": "orkisz",
+  "ru": "по́лба",
+  "rulat": "pólba",
+  "ex": "This bread is made from spelt.",
+  "exde": "Dieses Brot ist aus Dinkel."
+ },
+ "ku167": {
+  "fr": "le muesli",
+  "pl": "musli",
+  "ru": "мю́сли",
+  "rulat": "mjúsli",
+  "ex": "I eat muesli with yogurt every morning.",
+  "exde": "Ich esse jeden Morgen Müsli mit Joghurt."
+ },
+ "ku168": {
+  "fr": "les corn-flakes",
+  "pl": "płatki kukurydziane",
+  "ru": "кукуру́зные хло́пья",
+  "rulat": "kukurúsnyje chlópja",
+  "ex": "The kids want cornflakes for breakfast.",
+  "exde": "Die Kinder wollen Cornflakes zum Frühstück."
+ },
+ "ku169": {
+  "fr": "le grain",
+  "pl": "ziarno",
+  "ru": "зерно́",
+  "rulat": "sernó",
+  "ex": "The birds are eating every grain.",
+  "exde": "Die Vögel fressen jedes Korn."
+ },
+ "ku170": {
+  "fr": "les pâtes complètes",
+  "pl": "makaron pełnoziarnisty",
+  "ru": "цельнозерновы́е макаро́ны",
+  "rulat": "zelnosernowýje makaróny",
+  "ex": "Wholemeal pasta keeps you full longer.",
+  "exde": "Vollkornnudeln machen länger satt."
+ },
+ "ku171": {
+  "fr": "al dente",
+  "pl": "al dente",
+  "ru": "аль де́нте",
+  "rulat": "al dénte",
+  "ex": "Cook the pasta until it is al dente.",
+  "exde": "Koch die Nudeln, bis sie bissfest sind."
+ },
+ "ku172": {
+  "fr": "faire bouillir",
+  "pl": "gotować",
+  "ru": "вари́ть",
+  "rulat": "warít",
+  "ex": "Boil the rice for twenty minutes.",
+  "exde": "Koch den Reis zwanzig Minuten lang."
+ },
+ "ku173": {
+  "fr": "égoutter",
+  "pl": "odcedzić",
+  "ru": "отцеди́ть",
+  "rulat": "otzedít",
+  "ex": "Drain the pasta and add the sauce.",
+  "exde": "Gieß die Nudeln ab und gib die Soße dazu."
+ },
+ "ku174": {
+  "fr": "la passoire",
+  "pl": "durszlak",
+  "ru": "дуршла́г",
+  "rulat": "durschlág",
+  "ex": "Pour the spaghetti into the colander.",
+  "exde": "Schütte die Spaghetti in das Sieb."
+ },
+ "ku175": {
+  "fr": "les lasagnes",
+  "pl": "lasagne",
+  "ru": "лаза́нья",
+  "rulat": "lasánja",
+  "ex": "Lasagne is my favourite dish.",
+  "exde": "Lasagne ist mein Lieblingsgericht."
+ },
+ "ku176": {
+  "fr": "l'épice",
+  "pl": "przyprawa",
+  "ru": "спе́ция",
+  "rulat": "spézija",
+  "ex": "This spice is very hot.",
+  "exde": "Dieses Gewürz ist sehr scharf."
+ },
+ "ku177": {
+  "fr": "l'herbe aromatique",
+  "pl": "zioło",
+  "ru": "пря́ная трава́",
+  "rulat": "prjánaja trawá",
+  "ex": "Add a fresh herb at the end.",
+  "exde": "Gib am Ende ein frisches Kraut dazu."
+ },
+ "ku178": {
+  "fr": "la cannelle",
+  "pl": "cynamon",
+  "ru": "кори́ца",
+  "rulat": "karíza",
+  "ex": "I love cinnamon in my coffee.",
+  "exde": "Ich liebe Zimt im Kaffee."
+ },
+ "ku179": {
+  "fr": "le persil",
+  "pl": "pietruszka",
+  "ru": "петру́шка",
+  "rulat": "petrúschka",
+  "ex": "Sprinkle some parsley on the soup.",
+  "exde": "Streu etwas Petersilie auf die Suppe."
+ },
+ "ku180": {
+  "fr": "le basilic",
+  "pl": "bazylia",
+  "ru": "базили́к",
+  "rulat": "basilík",
+  "ex": "Basil goes well with tomatoes.",
+  "exde": "Basilikum passt gut zu Tomaten."
+ },
+ "ku181": {
+  "fr": "la ciboulette",
+  "pl": "szczypiorek",
+  "ru": "лук-резане́ц",
+  "rulat": "luk-resanjéz",
+  "ex": "Sprinkle some chives on the soup.",
+  "exde": "Streu etwas Schnittlauch auf die Suppe."
+ },
+ "ku182": {
+  "fr": "le romarin",
+  "pl": "rozmaryn",
+  "ru": "розмари́н",
+  "rulat": "rosmarín",
+  "ex": "I roast potatoes with rosemary.",
+  "exde": "Ich brate Kartoffeln mit Rosmarin."
+ },
+ "ku183": {
+  "fr": "le thym",
+  "pl": "tymianek",
+  "ru": "тимья́н",
+  "rulat": "timján",
+  "ex": "Add a little thyme to the sauce.",
+  "exde": "Gib ein wenig Thymian in die Soße."
+ },
+ "ku184": {
+  "fr": "l'origan",
+  "pl": "oregano",
+  "ru": "орега́но",
+  "rulat": "oregáno",
+  "ex": "Pizza tastes better with oregano.",
+  "exde": "Pizza schmeckt mit Oregano besser."
+ },
+ "ku185": {
+  "fr": "l'aneth",
+  "pl": "koperek",
+  "ru": "укро́п",
+  "rulat": "ukróp",
+  "ex": "My grandmother puts dill in the cucumber salad.",
+  "exde": "Meine Oma gibt Dill in den Gurkensalat."
+ },
+ "ku186": {
+  "fr": "la menthe",
+  "pl": "mięta",
+  "ru": "мя́та",
+  "rulat": "mjáta",
+  "ex": "I like tea with fresh mint.",
+  "exde": "Ich mag Tee mit frischer Minze."
+ },
+ "ku187": {
+  "fr": "le gingembre",
+  "pl": "imbir",
+  "ru": "имби́рь",
+  "rulat": "imbír",
+  "ex": "Ginger is good for a cold.",
+  "exde": "Ingwer ist gut bei einer Erkältung."
+ },
+ "ku188": {
+  "fr": "la noix de muscade",
+  "pl": "gałka muszkatołowa",
+  "ru": "муска́тный оре́х",
+  "rulat": "muskátnyj oréch",
+  "ex": "Grate some nutmeg over the mashed potatoes.",
+  "exde": "Reib etwas Muskatnuss über das Kartoffelpüree."
+ },
+ "ku189": {
+  "fr": "le carvi",
+  "pl": "kminek",
+  "ru": "тмин",
+  "rulat": "tmin",
+  "ex": "This bread contains caraway.",
+  "exde": "Dieses Brot enthält Kümmel."
+ },
+ "ku190": {
+  "fr": "le cumin",
+  "pl": "kmin rzymski",
+  "ru": "зира́",
+  "rulat": "sirá",
+  "ex": "Cumin is used a lot in Indian cooking.",
+  "exde": "Kreuzkümmel wird in der indischen Küche oft verwendet."
+ },
+ "ku191": {
+  "fr": "la feuille de laurier",
+  "pl": "liść laurowy",
+  "ru": "лавро́вый лист",
+  "rulat": "lawrówyj list",
+  "ex": "Put a bay leaf in the soup.",
+  "exde": "Leg ein Lorbeerblatt in die Suppe."
+ },
+ "ku192": {
+  "fr": "le clou de girofle",
+  "pl": "goździk",
+  "ru": "гвозди́ка",
+  "rulat": "gwosdíka",
+  "ex": "Mulled wine needs cinnamon and a clove or two.",
+  "exde": "Glühwein braucht Zimt und ein, zwei Gewürznelken."
+ },
+ "ku193": {
+  "fr": "le piment",
+  "pl": "papryczka chili",
+  "ru": "пе́рец чи́ли",
+  "rulat": "pérez tschíli",
+  "ex": "Be careful, this chilli is very hot.",
+  "exde": "Vorsicht, dieser Chili ist sehr scharf."
+ },
+ "ku194": {
+  "fr": "la vanille",
+  "pl": "wanilia",
+  "ru": "вани́ль",
+  "rulat": "waníl",
+  "ex": "The cake smells of vanilla.",
+  "exde": "Der Kuchen riecht nach Vanille."
+ },
+ "ku195": {
+  "fr": "la coriandre",
+  "pl": "kolendra",
+  "ru": "кориа́ндр",
+  "rulat": "koriándr",
+  "ex": "Fresh coriander is popular in Thai food.",
+  "exde": "Frischer Koriander ist in der thailändischen Küche beliebt."
+ },
+ "ku196": {
+  "fr": "la poudre de curry",
+  "pl": "curry w proszku",
+  "ru": "порошо́к ка́рри",
+  "rulat": "poroschók kárri",
+  "ex": "Add a spoonful of curry powder.",
+  "exde": "Gib einen Löffel Currypulver dazu."
+ },
+ "ku197": {
+  "fr": "la moutarde",
+  "pl": "musztarda",
+  "ru": "горчи́ца",
+  "rulat": "gortschíza",
+  "ex": "I eat sausages with mustard.",
+  "exde": "Ich esse Würstchen mit Senf."
+ },
+ "ku198": {
+  "fr": "épicé",
+  "pl": "ostry",
+  "ru": "о́стрый",
+  "rulat": "óstryj",
+  "ex": "This curry is too hot for me.",
+  "exde": "Dieses Curry ist mir zu scharf."
+ },
+ "ku199": {
+  "fr": "assaisonner",
+  "pl": "przyprawiać",
+  "ru": "приправля́ть",
+  "rulat": "priprawlját",
+  "ex": "Season the meat with salt and pepper.",
+  "exde": "Würz das Fleisch mit Salz und Pfeffer."
+ },
+ "ku200": {
+  "fr": "la pincée",
+  "pl": "szczypta",
+  "ru": "щепо́тка",
+  "rulat": "schtschepótka",
+  "ex": "Add a pinch of salt.",
+  "exde": "Gib eine Prise Salz dazu."
+ },
+ "ku201": {
+  "fr": "la boisson",
+  "pl": "napój",
+  "ru": "напи́ток",
+  "rulat": "napítok",
+  "ex": "Would you like a drink?",
+  "exde": "Möchtest du ein Getränk?"
+ },
+ "ku202": {
+  "fr": "l'eau minérale",
+  "pl": "woda mineralna",
+  "ru": "минера́льная вода́",
+  "rulat": "minerálnaja wodá",
+  "ex": "I'll have a bottle of mineral water.",
+  "exde": "Ich nehme eine Flasche Mineralwasser."
+ },
+ "ku203": {
+  "fr": "le jus",
+  "pl": "sok",
+  "ru": "сок",
+  "rulat": "sok",
+  "ex": "The children are drinking juice.",
+  "exde": "Die Kinder trinken Saft."
+ },
+ "ku204": {
+  "fr": "le jus d'orange",
+  "pl": "sok pomarańczowy",
+  "ru": "апельси́новый сок",
+  "rulat": "apelsínowyj sok",
+  "ex": "A glass of orange juice, please.",
+  "exde": "Ein Glas Orangensaft, bitte."
+ },
+ "ku205": {
+  "fr": "le jus de pomme",
+  "pl": "sok jabłkowy",
+  "ru": "я́блочный сок",
+  "rulat": "jáblotschnyj sok",
+  "ex": "My son loves apple juice.",
+  "exde": "Mein Sohn liebt Apfelsaft."
+ },
+ "ku206": {
+  "fr": "le jus de fruits à l'eau gazeuse",
+  "pl": "sok z wodą gazowaną",
+  "ru": "сок с газиро́ванной водо́й",
+  "rulat": "sok s gasirówannoj wodój",
+  "ex": "In summer I like to drink a juice spritzer.",
+  "exde": "Im Sommer trinke ich gern eine Saftschorle."
+ },
+ "ku207": {
+  "fr": "la limonade",
+  "pl": "lemoniada",
+  "ru": "лимона́д",
+  "rulat": "limonád",
+  "ex": "The kids ordered lemonade.",
+  "exde": "Die Kinder haben Limonade bestellt."
+ },
+ "ku208": {
+  "fr": "le coca",
+  "pl": "cola",
+  "ru": "ко́ла",
+  "rulat": "kóla",
+  "ex": "Can I have a cola with ice?",
+  "exde": "Kann ich eine Cola mit Eis haben?"
+ },
+ "ku209": {
+  "fr": "le chocolat chaud",
+  "pl": "gorąca czekolada",
+  "ru": "горя́чий шокола́д",
+  "rulat": "gorjátschij schokolád",
+  "ex": "On cold days I drink hot chocolate.",
+  "exde": "An kalten Tagen trinke ich heiße Schokolade."
+ },
+ "ku210": {
+  "fr": "la bière",
+  "pl": "piwo",
+  "ru": "пи́во",
+  "rulat": "píwo",
+  "ex": "He ordered a cold beer.",
+  "exde": "Er hat ein kaltes Bier bestellt."
+ },
+ "ku211": {
+  "fr": "le vin",
+  "pl": "wino",
+  "ru": "вино́",
+  "rulat": "winó",
+  "ex": "We drank wine with dinner.",
+  "exde": "Wir haben zum Abendessen Wein getrunken."
+ },
+ "ku212": {
+  "fr": "le vin rouge",
+  "pl": "czerwone wino",
+  "ru": "кра́сное вино́",
+  "rulat": "krássnoje winó",
+  "ex": "Red wine goes well with meat.",
+  "exde": "Rotwein passt gut zu Fleisch."
+ },
+ "ku213": {
+  "fr": "le vin blanc",
+  "pl": "białe wino",
+  "ru": "бе́лое вино́",
+  "rulat": "béloje winó",
+  "ex": "She prefers white wine.",
+  "exde": "Sie trinkt lieber Weißwein."
+ },
+ "ku214": {
+  "fr": "le vin mousseux",
+  "pl": "wino musujące",
+  "ru": "игри́стое вино́",
+  "rulat": "igrísstoje winó",
+  "ex": "We celebrated with sparkling wine.",
+  "exde": "Wir haben mit Sekt gefeiert."
+ },
+ "ku215": {
+  "fr": "l'eau-de-vie",
+  "pl": "sznaps",
+  "ru": "шнапс",
+  "rulat": "schnaps",
+  "ex": "After dinner, grandpa drank a schnapps.",
+  "exde": "Nach dem Essen trank Opa einen Schnaps."
+ },
+ "ku216": {
+  "fr": "le cocktail",
+  "pl": "koktajl",
+  "ru": "кокте́йль",
+  "rulat": "koktéjl",
+  "ex": "She ordered a cocktail at the bar.",
+  "exde": "Sie bestellte an der Bar einen Cocktail."
+ },
+ "ku217": {
+  "fr": "sans alcool",
+  "pl": "bezalkoholowy",
+  "ru": "безалкого́льный",
+  "rulat": "besalkogólnyj",
+  "ex": "Do you have non-alcoholic beer?",
+  "exde": "Haben Sie alkoholfreies Bier?"
+ },
+ "ku218": {
+  "fr": "gazeux",
+  "pl": "gazowany",
+  "ru": "газиро́ванный",
+  "rulat": "gasirówannyj",
+  "ex": "I prefer sparkling water.",
+  "exde": "Ich trinke lieber Wasser mit Kohlensäure."
+ },
+ "ku219": {
+  "fr": "plat",
+  "pl": "niegazowany",
+  "ru": "негазиро́ванный",
+  "rulat": "negasirówannyj",
+  "ex": "A bottle of still water, please.",
+  "exde": "Eine Flasche Wasser ohne Kohlensäure, bitte."
+ },
+ "ku220": {
+  "fr": "le glaçon",
+  "pl": "kostka lodu",
+  "ru": "ку́бик льда",
+  "rulat": "kúbik lda",
+  "ex": "Put two ice cubes in my glass.",
+  "exde": "Tu mir zwei Eiswürfel ins Glas."
+ },
+ "ku221": {
+  "fr": "la paille",
+  "pl": "słomka",
+  "ru": "соло́минка",
+  "rulat": "solomínka",
+  "ex": "Can I have a straw, please?",
+  "exde": "Kann ich bitte einen Strohhalm haben?"
+ },
+ "ku222": {
+  "fr": "verser",
+  "pl": "nalewać",
+  "ru": "налива́ть",
+  "rulat": "naliwát",
+  "ex": "Can you pour me some water?",
+  "exde": "Kannst du mir etwas Wasser einschenken?"
+ },
+ "ku223": {
+  "fr": "assoiffé",
+  "pl": "spragniony",
+  "ru": "жа́ждущий",
+  "rulat": "scháschduschtschi",
+  "ex": "I am very thirsty.",
+  "exde": "Ich bin sehr durstig."
+ },
+ "ku224": {
+  "fr": "la soif",
+  "pl": "pragnienie",
+  "ru": "жа́жда",
+  "rulat": "scháschda",
+  "ex": "Water is the best drink for thirst.",
+  "exde": "Wasser ist das beste Getränk gegen Durst."
+ },
+ "ku225": {
+  "fr": "Santé !",
+  "pl": "Na zdrowie!",
+  "ru": "За здоро́вье!",
+  "rulat": "sa sdarówje!",
+  "ex": "Let's raise our glasses – cheers!",
+  "exde": "Lasst uns die Gläser erheben – Prost!"
+ },
+ "ku226": {
+  "fr": "le dessert",
+  "pl": "deser",
+  "ru": "десе́рт",
+  "rulat": "dessért",
+  "ex": "What's for dessert?",
+  "exde": "Was gibt es zum Nachtisch?"
+ },
+ "ku227": {
+  "fr": "la sucrerie",
+  "pl": "słodycz",
+  "ru": "сла́дость",
+  "rulat": "sládost",
+  "ex": "This sweet is too sugary for me.",
+  "exde": "Diese Süßigkeit ist mir zu süß."
+ },
+ "ku228": {
+  "fr": "le chocolat",
+  "pl": "czekolada",
+  "ru": "шокола́д",
+  "rulat": "schokolád",
+  "ex": "I love dark chocolate.",
+  "exde": "Ich liebe dunkle Schokolade."
+ },
+ "ku229": {
+  "fr": "la glace",
+  "pl": "lody",
+  "ru": "моро́женое",
+  "rulat": "maróschenoje",
+  "ex": "Let's get an ice cream.",
+  "exde": "Lass uns ein Eis holen."
+ },
+ "ku230": {
+  "fr": "la boule de glace",
+  "pl": "gałka lodów",
+  "ru": "ша́рик моро́женого",
+  "rulat": "schárik maróschenowo",
+  "ex": "One scoop of ice cream costs two euros.",
+  "exde": "Eine Kugel Eis kostet zwei Euro."
+ },
+ "ku231": {
+  "fr": "la crème dessert",
+  "pl": "budyń",
+  "ru": "пу́динг",
+  "rulat": "púding",
+  "ex": "The pudding is still warm.",
+  "exde": "Der Pudding ist noch warm."
+ },
+ "ku232": {
+  "fr": "le bonbon",
+  "pl": "cukierek",
+  "ru": "ледене́ц",
+  "rulat": "ledenéz",
+  "ex": "She offered me a boiled sweet.",
+  "exde": "Sie bot mir ein Bonbon an."
+ },
+ "ku233": {
+  "fr": "le miel",
+  "pl": "miód",
+  "ru": "мёд",
+  "rulat": "mjot",
+  "ex": "I put honey in my tea.",
+  "exde": "Ich gebe Honig in meinen Tee."
+ },
+ "ku234": {
+  "fr": "la confiture",
+  "pl": "dżem",
+  "ru": "варе́нье",
+  "rulat": "warénje",
+  "ex": "I like bread with strawberry jam.",
+  "exde": "Ich mag Brot mit Erdbeermarmelade."
+ },
+ "ku235": {
+  "fr": "le sucre glace",
+  "pl": "cukier puder",
+  "ru": "са́харная пу́дра",
+  "rulat": "sácharnaja púdra",
+  "ex": "Dust the cake with icing sugar.",
+  "exde": "Bestäube den Kuchen mit Puderzucker."
+ },
+ "ku236": {
+  "fr": "le strudel aux pommes",
+  "pl": "strudel jabłkowy",
+  "ru": "я́блочный штру́дель",
+  "rulat": "jáblotschny schtrúdel",
+  "ex": "The apple strudel is served with vanilla sauce.",
+  "exde": "Der Apfelstrudel wird mit Vanillesoße serviert."
+ },
+ "ku237": {
+  "fr": "la salade de fruits",
+  "pl": "sałatka owocowa",
+  "ru": "фрукто́вый сала́т",
+  "rulat": "fruktówy salát",
+  "ex": "I made a fresh fruit salad.",
+  "exde": "Ich habe einen frischen Obstsalat gemacht."
+ },
+ "ku238": {
+  "fr": "la gaufre",
+  "pl": "gofr",
+  "ru": "ва́фля",
+  "rulat": "wáflja",
+  "ex": "She ate a waffle with cream.",
+  "exde": "Sie aß eine Waffel mit Sahne."
+ },
+ "ku239": {
+  "fr": "la crêpe",
+  "pl": "naleśnik",
+  "ru": "блин",
+  "rulat": "blin",
+  "ex": "We make pancakes on Sundays.",
+  "exde": "Sonntags machen wir Pfannkuchen."
+ },
+ "ku240": {
+  "fr": "le glaçage",
+  "pl": "lukier",
+  "ru": "глазу́рь",
+  "rulat": "glasúr",
+  "ex": "The cake has pink icing.",
+  "exde": "Der Kuchen hat eine rosa Glasur."
+ },
+ "ku241": {
+  "fr": "grignoter des sucreries",
+  "pl": "podjadać słodycze",
+  "ru": "лако́миться",
+  "rulat": "lakómitsja",
+  "ex": "I like to nibble on sweets in the evening.",
+  "exde": "Ich nasche abends gern."
+ },
+ "ku242": {
+  "fr": "le muffin",
+  "pl": "muffinka",
+  "ru": "ма́ффин",
+  "rulat": "máffin",
+  "ex": "This muffin is still warm.",
+  "exde": "Der Muffin ist noch warm."
+ },
+ "ku243": {
+  "fr": "la compote",
+  "pl": "kompot",
+  "ru": "компо́т",
+  "rulat": "kompót",
+  "ex": "Grandma served stewed fruit with the pancakes.",
+  "exde": "Oma servierte Kompott zu den Pfannkuchen."
+ },
+ "ku244": {
+  "fr": "la mousse au chocolat",
+  "pl": "mus czekoladowy",
+  "ru": "шокола́дный мусс",
+  "rulat": "schokoládnyj muss",
+  "ex": "For dessert there was chocolate mousse.",
+  "exde": "Zum Nachtisch gab es Mousse au Chocolat."
+ },
+ "ku245": {
+  "fr": "le gâteau au fromage",
+  "pl": "sernik",
+  "ru": "чизке́йк",
+  "rulat": "tschiskéjk",
+  "ex": "My mother makes the best cheesecake.",
+  "exde": "Meine Mutter macht den besten Käsekuchen."
+ },
+ "ku246": {
+  "fr": "le nounours en gélatine",
+  "pl": "miś żelkowy",
+  "ru": "мармела́дный ми́шка",
+  "rulat": "marmeládnyj míschka",
+  "ex": "The children ate a whole bag of jelly bears.",
+  "exde": "Die Kinder haben eine ganze Tüte Gummibärchen gegessen."
+ },
+ "ku247": {
+  "fr": "le pain d'épices",
+  "pl": "piernik",
+  "ru": "пря́ник",
+  "rulat": "prjánik",
+  "ex": "We buy gingerbread at the Christmas market.",
+  "exde": "Wir kaufen Lebkuchen auf dem Weihnachtsmarkt."
+ },
+ "ku248": {
+  "fr": "la garniture",
+  "pl": "nadzienie",
+  "ru": "начи́нка",
+  "rulat": "natschínka",
+  "ex": "The filling is made of cherries.",
+  "exde": "Die Füllung ist aus Kirschen."
+ },
+ "ku249": {
+  "fr": "le bec sucré",
+  "pl": "łasuch",
+  "ru": "сластёна",
+  "rulat": "slastjóna",
+  "ex": "I'm someone with a sweet tooth.",
+  "exde": "Ich bin eine Naschkatze."
+ },
+ "ku250": {
+  "fr": "le four",
+  "pl": "piekarnik",
+  "ru": "духо́вка",
+  "rulat": "duchówka",
+  "ex": "Put the cake in the oven for 40 minutes.",
+  "exde": "Stell den Kuchen für 40 Minuten in den Backofen."
+ },
+ "ku251": {
+  "fr": "le micro-ondes",
+  "pl": "mikrofalówka",
+  "ru": "микроволно́вка",
+  "rulat": "mikrowolnówka",
+  "ex": "Heat the soup in the microwave.",
+  "exde": "Wärm die Suppe in der Mikrowelle auf."
+ },
+ "ku252": {
+  "fr": "le lave-vaisselle",
+  "pl": "zmywarka",
+  "ru": "посудомо́ечная маши́на",
+  "rulat": "possudomójetschnaja maschína",
+  "ex": "Can you empty the dishwasher?",
+  "exde": "Kannst du die Spülmaschine ausräumen?"
+ },
+ "ku253": {
+  "fr": "la bouilloire",
+  "pl": "czajnik elektryczny",
+  "ru": "электри́ческий ча́йник",
+  "rulat": "elektrítscheskij tschájnik",
+  "ex": "Switch on the kettle, please.",
+  "exde": "Schalte bitte den Wasserkocher ein."
+ },
+ "ku254": {
+  "fr": "le grille-pain",
+  "pl": "toster",
+  "ru": "то́стер",
+  "rulat": "tóster",
+  "ex": "The toaster is broken.",
+  "exde": "Der Toaster ist kaputt."
+ },
+ "ku255": {
+  "fr": "la machine à café",
+  "pl": "ekspres do kawy",
+  "ru": "кофева́рка",
+  "rulat": "kofewárka",
+  "ex": "The coffee machine needs descaling.",
+  "exde": "Die Kaffeemaschine muss entkalkt werden."
+ },
+ "ku256": {
+  "fr": "le mixeur",
+  "pl": "blender",
+  "ru": "бле́ндер",
+  "rulat": "blénder",
+  "ex": "I make smoothies with the blender.",
+  "exde": "Ich mache Smoothies mit dem Mixer."
+ },
+ "ku257": {
+  "fr": "le mixeur plongeant",
+  "pl": "blender ręczny",
+  "ru": "погружно́й бле́ндер",
+  "rulat": "pogruschnój blénder",
+  "ex": "Purée the soup with a hand blender.",
+  "exde": "Püriere die Suppe mit dem Pürierstab."
+ },
+ "ku258": {
+  "fr": "le robot de cuisine",
+  "pl": "robot kuchenny",
+  "ru": "ку́хонный комба́йн",
+  "rulat": "kúchonnyj kombájn",
+  "ex": "The food processor kneads the dough.",
+  "exde": "Die Küchenmaschine knetet den Teig."
+ },
+ "ku259": {
+  "fr": "le congélateur",
+  "pl": "zamrażarka",
+  "ru": "морози́льник",
+  "rulat": "morosílnik",
+  "ex": "There is ice cream in the freezer.",
+  "exde": "Im Gefrierschrank ist Eis."
+ },
+ "ku260": {
+  "fr": "la poêle",
+  "pl": "patelnia",
+  "ru": "сковорода́",
+  "rulat": "skoworodá",
+  "ex": "Heat some oil in the frying pan.",
+  "exde": "Erhitze etwas Öl in der Pfanne."
+ },
+ "ku261": {
+  "fr": "la casserole",
+  "pl": "garnek",
+  "ru": "кастрю́ля",
+  "rulat": "kastrjúlja",
+  "ex": "Put the pasta in the saucepan.",
+  "exde": "Gib die Nudeln in den Topf."
+ },
+ "ku262": {
+  "fr": "le fouet",
+  "pl": "trzepaczka",
+  "ru": "ве́нчик",
+  "rulat": "wéntschik",
+  "ex": "Beat the eggs with a whisk.",
+  "exde": "Schlag die Eier mit dem Schneebesen."
+ },
+ "ku263": {
+  "fr": "la planche à découper",
+  "pl": "deska do krojenia",
+  "ru": "разде́лочная доска́",
+  "rulat": "rasdélotschnaja doská",
+  "ex": "Cut the onions on the chopping board.",
+  "exde": "Schneide die Zwiebeln auf dem Schneidebrett."
+ },
+ "ku264": {
+  "fr": "le couteau de cuisine",
+  "pl": "nóż kuchenny",
+  "ru": "ку́хонный нож",
+  "rulat": "kúchonnyj nosch",
+  "ex": "This kitchen knife is very sharp.",
+  "exde": "Dieses Küchenmesser ist sehr scharf."
+ },
+ "ku265": {
+  "fr": "la râpe",
+  "pl": "tarka",
+  "ru": "тёрка",
+  "rulat": "tjórka",
+  "ex": "I need a grater for the cheese.",
+  "exde": "Ich brauche eine Reibe für den Käse."
+ },
+ "ku266": {
+  "fr": "l'ouvre-boîte",
+  "pl": "otwieracz do konserw",
+  "ru": "консе́рвный нож",
+  "rulat": "konsérwnyj nosch",
+  "ex": "Where is the tin opener?",
+  "exde": "Wo ist der Dosenöffner?"
+ },
+ "ku267": {
+  "fr": "le décapsuleur",
+  "pl": "otwieracz do butelek",
+  "ru": "открыва́лка",
+  "rulat": "otkrywálka",
+  "ex": "Can you pass me the bottle opener?",
+  "exde": "Kannst du mir den Flaschenöffner geben?"
+ },
+ "ku268": {
+  "fr": "le tire-bouchon",
+  "pl": "korkociąg",
+  "ru": "што́пор",
+  "rulat": "schtópor",
+  "ex": "We need a corkscrew to open the wine.",
+  "exde": "Wir brauchen einen Korkenzieher, um den Wein zu öffnen."
+ },
+ "ku269": {
+  "fr": "la cuillère en bois",
+  "pl": "drewniana łyżka",
+  "ru": "деревя́нная ло́жка",
+  "rulat": "derewjánnaja lóschka",
+  "ex": "Stir the soup with a wooden spoon.",
+  "exde": "Rühr die Suppe mit einem Kochlöffel um."
+ },
+ "ku270": {
+  "fr": "la spatule",
+  "pl": "łopatka",
+  "ru": "лопа́тка",
+  "rulat": "lopátka",
+  "ex": "Turn the pancake with the spatula.",
+  "exde": "Wende den Pfannkuchen mit dem Pfannenwender."
+ },
+ "ku271": {
+  "fr": "la louche",
+  "pl": "chochla",
+  "ru": "поло́вник",
+  "rulat": "polównik",
+  "ex": "Serve the soup with a ladle.",
+  "exde": "Serviere die Suppe mit der Schöpfkelle."
+ },
+ "ku272": {
+  "fr": "l'éplucheur",
+  "pl": "obieraczka",
+  "ru": "овощечи́стка",
+  "rulat": "owoschtschetschístka",
+  "ex": "Peel the potatoes with a peeler.",
+  "exde": "Schäl die Kartoffeln mit dem Sparschäler."
+ },
+ "ku273": {
+  "fr": "la balance de cuisine",
+  "pl": "waga kuchenna",
+  "ru": "ку́хонные весы́",
+  "rulat": "kúchonnyje wessý",
+  "ex": "Weigh the flour on the kitchen scales.",
+  "exde": "Wieg das Mehl auf der Küchenwaage ab."
+ },
+ "ku274": {
+  "fr": "le verre doseur",
+  "pl": "miarka",
+  "ru": "ме́рный стака́н",
+  "rulat": "mérnyj stakán",
+  "ex": "Fill the measuring jug with half a litre of milk.",
+  "exde": "Füll den Messbecher mit einem halben Liter Milch."
+ },
+ "ku275": {
+  "fr": "les couverts",
+  "pl": "sztućce",
+  "ru": "столо́вые прибо́ры",
+  "rulat": "stolówyje pribóry",
+  "ex": "Please put the cutlery on the table.",
+  "exde": "Leg bitte das Besteck auf den Tisch."
+ },
+ "ku276": {
+  "fr": "la fourchette",
+  "pl": "widelec",
+  "ru": "ви́лка",
+  "rulat": "wílka",
+  "ex": "I eat salad with a fork.",
+  "exde": "Ich esse Salat mit einer Gabel."
+ },
+ "ku277": {
+  "fr": "le couteau",
+  "pl": "nóż",
+  "ru": "нож",
+  "rulat": "nosch",
+  "ex": "Can I have a knife, please?",
+  "exde": "Kann ich bitte ein Messer haben?"
+ },
+ "ku278": {
+  "fr": "la cuillère",
+  "pl": "łyżka",
+  "ru": "ло́жка",
+  "rulat": "lóschka",
+  "ex": "You need a spoon for the soup.",
+  "exde": "Für die Suppe brauchst du einen Löffel."
+ },
+ "ku279": {
+  "fr": "la petite cuillère",
+  "pl": "łyżeczka",
+  "ru": "ча́йная ло́жка",
+  "rulat": "tschájnaja lóschka",
+  "ex": "Add a teaspoon of sugar.",
+  "exde": "Gib einen Teelöffel Zucker dazu."
+ },
+ "ku280": {
+  "fr": "la cuillère à soupe",
+  "pl": "łyżka stołowa",
+  "ru": "столо́вая ло́жка",
+  "rulat": "stolówaja lóschka",
+  "ex": "Add two tablespoons of oil.",
+  "exde": "Gib zwei Esslöffel Öl dazu."
+ },
+ "ku281": {
+  "fr": "le couvercle",
+  "pl": "pokrywka",
+  "ru": "кры́шка",
+  "rulat": "krýschka",
+  "ex": "Put the lid on the pot.",
+  "exde": "Leg den Deckel auf den Topf."
+ },
+ "ku282": {
+  "fr": "l'assiette",
+  "pl": "talerz",
+  "ru": "таре́лка",
+  "rulat": "tarélka",
+  "ex": "The plate is still hot.",
+  "exde": "Der Teller ist noch heiß."
+ },
+ "ku283": {
+  "fr": "la tasse",
+  "pl": "filiżanka",
+  "ru": "ча́шка",
+  "rulat": "tscháschka",
+  "ex": "Would you like a cup of tea?",
+  "exde": "Möchtest du eine Tasse Tee?"
+ },
+ "ku284": {
+  "fr": "le verre",
+  "pl": "szklanka",
+  "ru": "стака́н",
+  "rulat": "stakán",
+  "ex": "Can I have a glass of water?",
+  "exde": "Kann ich ein Glas Wasser haben?"
+ },
+ "ku285": {
+  "fr": "le bol",
+  "pl": "miska",
+  "ru": "ми́ска",
+  "rulat": "míska",
+  "ex": "Mix the eggs in a large bowl.",
+  "exde": "Verrühre die Eier in einer großen Schüssel."
+ },
+ "ku286": {
+  "fr": "la vaisselle",
+  "pl": "naczynia",
+  "ru": "посу́да",
+  "rulat": "possúda",
+  "ex": "The crockery is in the cupboard.",
+  "exde": "Das Geschirr ist im Schrank."
+ },
+ "ku287": {
+  "fr": "le rouleau à pâtisserie",
+  "pl": "wałek do ciasta",
+  "ru": "ска́лка",
+  "rulat": "skálka",
+  "ex": "Roll out the dough with a rolling pin.",
+  "exde": "Roll den Teig mit dem Nudelholz aus."
+ },
+ "ku288": {
+  "fr": "le plat à gratin",
+  "pl": "naczynie żaroodporne",
+  "ru": "фо́рма для запека́ния",
+  "rulat": "fórma dlja sapekánija",
+  "ex": "Pour the mixture into a baking dish.",
+  "exde": "Gieß die Masse in eine Auflaufform."
+ },
+ "ku289": {
+  "fr": "la plaque de cuisson",
+  "pl": "blacha do pieczenia",
+  "ru": "про́тивень",
+  "rulat": "prótiwen",
+  "ex": "Put the cookies on the baking tray.",
+  "exde": "Leg die Kekse auf das Backblech."
+ },
+ "ku290": {
+  "fr": "le mug",
+  "pl": "kubek",
+  "ru": "кру́жка",
+  "rulat": "krúschka",
+  "ex": "He drinks coffee from a big mug.",
+  "exde": "Er trinkt Kaffee aus einem großen Becher."
+ },
+ "ku291": {
+  "fr": "la cafetière",
+  "pl": "dzbanek do kawy",
+  "ru": "кофе́йник",
+  "rulat": "kaféjnik",
+  "ex": "The coffee pot is empty.",
+  "exde": "Die Kaffeekanne ist leer."
+ },
+ "ku292": {
+  "fr": "les ciseaux de cuisine",
+  "pl": "nożyczki kuchenne",
+  "ru": "ку́хонные но́жницы",
+  "rulat": "kúchonnyje nóschnizy",
+  "ex": "Cut the herbs with kitchen scissors.",
+  "exde": "Schneide die Kräuter mit der Küchenschere."
+ },
+ "ku293": {
+  "fr": "la pince de cuisine",
+  "pl": "szczypce kuchenne",
+  "ru": "ку́хонные щипцы́",
+  "rulat": "kúchonnyje schtschipzý",
+  "ex": "Turn the meat with the kitchen tongs.",
+  "exde": "Wende das Fleisch mit der Küchenzange."
+ },
+ "ku294": {
+  "fr": "la soucoupe",
+  "pl": "spodek",
+  "ru": "блю́дце",
+  "rulat": "bljúdze",
+  "ex": "Put the cup on the saucer.",
+  "exde": "Stell die Tasse auf die Untertasse."
+ },
+ "ku295": {
+  "fr": "mettre la table",
+  "pl": "nakrywać do stołu",
+  "ru": "накрыва́ть на стол",
+  "rulat": "nakrywát na stol",
+  "ex": "Can you lay the table, please?",
+  "exde": "Kannst du bitte den Tisch decken?"
+ },
+ "ku296": {
+  "fr": "la cocotte-minute",
+  "pl": "szybkowar",
+  "ru": "скорова́рка",
+  "rulat": "skorowárka",
+  "ex": "Beans cook quickly in a pressure cooker.",
+  "exde": "Bohnen garen schnell im Schnellkochtopf."
+ },
+ "ku297": {
+  "fr": "couper",
+  "pl": "kroić",
+  "ru": "ре́зать",
+  "rulat": "résat",
+  "ex": "Cut the bread into slices.",
+  "exde": "Schneide das Brot in Scheiben."
+ },
+ "ku298": {
+  "fr": "éplucher",
+  "pl": "obierać",
+  "ru": "чи́стить",
+  "rulat": "tschístit",
+  "ex": "Peel the potatoes first.",
+  "exde": "Schäl zuerst die Kartoffeln."
+ },
+ "ku299": {
+  "fr": "remuer",
+  "pl": "mieszać",
+  "ru": "меша́ть",
+  "rulat": "meschát",
+  "ex": "Stir the soup slowly.",
+  "exde": "Rühr die Suppe langsam um."
+ },
+ "ku300": {
+  "fr": "mélanger",
+  "pl": "mieszać",
+  "ru": "сме́шивать",
+  "rulat": "sméschiwat",
+  "ex": "Mix the flour with the sugar.",
+  "exde": "Misch das Mehl mit dem Zucker."
+ },
+ "ku301": {
+  "fr": "griller",
+  "pl": "grillować",
+  "ru": "жа́рить на гри́ле",
+  "rulat": "shárit na gríle",
+  "ex": "We grill sausages in the garden.",
+  "exde": "Wir grillen Würstchen im Garten."
+ },
+ "ku302": {
+  "fr": "cuire à la vapeur",
+  "pl": "gotować na parze",
+  "ru": "гото́вить на пару́",
+  "rulat": "gotówit na parú",
+  "ex": "I steam the vegetables.",
+  "exde": "Ich dämpfe das Gemüse."
+ },
+ "ku303": {
+  "fr": "braiser",
+  "pl": "dusić",
+  "ru": "туши́ть",
+  "rulat": "tuschít",
+  "ex": "She braises the beef for three hours.",
+  "exde": "Sie schmort das Rindfleisch drei Stunden lang."
+ },
+ "ku304": {
+  "fr": "frire",
+  "pl": "smażyć w głębokim tłuszczu",
+  "ru": "жа́рить во фритю́ре",
+  "rulat": "shárit wo fritjúre",
+  "ex": "They deep-fry the potatoes.",
+  "exde": "Sie frittieren die Kartoffeln."
+ },
+ "ku305": {
+  "fr": "râper",
+  "pl": "trzeć na tarce",
+  "ru": "натира́ть",
+  "rulat": "natirát",
+  "ex": "Can you grate the cheese?",
+  "exde": "Kannst du den Käse reiben?"
+ },
+ "ku306": {
+  "fr": "saler",
+  "pl": "solić",
+  "ru": "соли́ть",
+  "rulat": "solít",
+  "ex": "Don't forget to salt the water.",
+  "exde": "Vergiss nicht, das Wasser zu salzen."
+ },
+ "ku307": {
+  "fr": "rectifier l'assaisonnement",
+  "pl": "doprawiać do smaku",
+  "ru": "приправля́ть по вку́су",
+  "rulat": "priprawlját po wkúsu",
+  "ex": "Season the soup to taste with salt and pepper.",
+  "exde": "Schmeck die Suppe mit Salz und Pfeffer ab."
+ },
+ "ku308": {
+  "fr": "réchauffer",
+  "pl": "odgrzewać",
+  "ru": "разогрева́ть",
+  "rulat": "rasogrewát",
+  "ex": "I'll reheat the soup.",
+  "exde": "Ich wärme die Suppe auf."
+ },
+ "ku309": {
+  "fr": "décongeler",
+  "pl": "rozmrażać",
+  "ru": "размора́живать",
+  "rulat": "rasmoráshiwat",
+  "ex": "Let the chicken defrost overnight.",
+  "exde": "Lass das Hähnchen über Nacht auftauen."
+ },
+ "ku310": {
+  "fr": "congeler",
+  "pl": "zamrażać",
+  "ru": "замора́живать",
+  "rulat": "samoráshiwat",
+  "ex": "We freeze the leftover bread.",
+  "exde": "Wir frieren das übrige Brot ein."
+ },
+ "ku311": {
+  "fr": "préchauffer",
+  "pl": "nagrzewać",
+  "ru": "предвари́тельно разогрева́ть",
+  "rulat": "predwarítelno rasogrewát",
+  "ex": "Preheat the oven to 200 degrees.",
+  "exde": "Heize den Backofen auf 200 Grad vor."
+ },
+ "ku312": {
+  "fr": "réduire en purée",
+  "pl": "miksować",
+  "ru": "измельча́ть в пюре́",
+  "rulat": "ismeltschát w pjuré",
+  "ex": "Purée the soup with a hand blender.",
+  "exde": "Püriere die Suppe mit dem Stabmixer."
+ },
+ "ku313": {
+  "fr": "faire revenir",
+  "pl": "podsmażać",
+  "ru": "обжа́ривать",
+  "rulat": "obsháriwat",
+  "ex": "Brown the onions in a little oil.",
+  "exde": "Brate die Zwiebeln in etwas Öl an."
+ },
+ "ku314": {
+  "fr": "mijoter",
+  "pl": "gotować na wolnym ogniu",
+  "ru": "томи́ть",
+  "rulat": "tomít",
+  "ex": "Let the sauce simmer for ten minutes.",
+  "exde": "Lass die Soße zehn Minuten köcheln."
+ },
+ "ku315": {
+  "fr": "gratiner",
+  "pl": "zapiekać",
+  "ru": "запека́ть",
+  "rulat": "sapekát",
+  "ex": "We bake the potatoes au gratin with cheese.",
+  "exde": "Wir überbacken die Kartoffeln mit Käse."
+ },
+ "ku316": {
+  "fr": "mariner",
+  "pl": "marynować",
+  "ru": "маринова́ть",
+  "rulat": "marinowát",
+  "ex": "Marinate the meat overnight.",
+  "exde": "Mariniere das Fleisch über Nacht."
+ },
+ "ku317": {
+  "fr": "garnir",
+  "pl": "dekorować",
+  "ru": "украша́ть",
+  "rulat": "ukraschát",
+  "ex": "Garnish the plate with parsley.",
+  "exde": "Garniere den Teller mit Petersilie."
+ },
+ "ku318": {
+  "fr": "couper en dés",
+  "pl": "kroić w kostkę",
+  "ru": "ре́зать ку́биками",
+  "rulat": "résat kúbikami",
+  "ex": "Dice the carrots.",
+  "exde": "Würfle die Karotten."
+ },
+ "ku319": {
+  "fr": "farcir",
+  "pl": "faszerować",
+  "ru": "фарширова́ть",
+  "rulat": "faschirowát",
+  "ex": "We stuff the peppers with rice.",
+  "exde": "Wir füllen die Paprika mit Reis."
+ },
+ "ku320": {
+  "fr": "porter à ébullition",
+  "pl": "zagotować",
+  "ru": "доводи́ть до кипе́ния",
+  "rulat": "dowodít do kipénija",
+  "ex": "Bring the milk briefly to the boil.",
+  "exde": "Lass die Milch kurz aufkochen."
+ },
+ "ku321": {
+  "fr": "étuver",
+  "pl": "dusić",
+  "ru": "туши́ть",
+  "rulat": "tuschít'",
+  "ex": "Gently braise the vegetables in a little water.",
+  "exde": "Dünste das Gemüse in etwas Wasser."
+ },
+ "ku322": {
+  "fr": "cuire",
+  "pl": "gotować",
+  "ru": "гото́вить",
+  "rulat": "gotówit'",
+  "ex": "Cook the fish for ten minutes.",
+  "exde": "Gare den Fisch zehn Minuten lang."
+ },
+ "ku323": {
+  "fr": "blanchir",
+  "pl": "blanszować",
+  "ru": "бланши́ровать",
+  "rulat": "blanschírowat'",
+  "ex": "Blanch the almonds before peeling them.",
+  "exde": "Blanchiere die Mandeln vor dem Schälen."
+ },
+ "ku324": {
+  "fr": "pocher",
+  "pl": "poszować",
+  "ru": "припуска́ть",
+  "rulat": "pripuskát'",
+  "ex": "She likes to poach eggs for breakfast.",
+  "exde": "Sie pochiert gern Eier zum Frühstück."
+ },
+ "ku325": {
+  "fr": "caraméliser",
+  "pl": "karmelizować",
+  "ru": "карамелизова́ть",
+  "rulat": "karamelisowát'",
+  "ex": "Caramelise the onions over low heat.",
+  "exde": "Karamellisiere die Zwiebeln bei schwacher Hitze."
+ },
+ "ku326": {
+  "fr": "fumer",
+  "pl": "wędzić",
+  "ru": "копти́ть",
+  "rulat": "koptít'",
+  "ex": "We smoke the fish ourselves.",
+  "exde": "Wir räuchern den Fisch selbst."
+ },
+ "ku327": {
+  "fr": "réduire",
+  "pl": "redukować",
+  "ru": "уварива́ть",
+  "rulat": "uwariwát'",
+  "ex": "Reduce the sauce by half.",
+  "exde": "Reduziere die Soße um die Hälfte."
+ },
+ "ku328": {
+  "fr": "rafraîchir",
+  "pl": "przelać zimną wodą",
+  "ru": "обда́ть холо́дной водо́й",
+  "rulat": "obdát' cholódnoj wodój",
+  "ex": "Drain the beans and refresh them in cold water.",
+  "exde": "Gieß die Bohnen ab und schrecke sie kalt ab."
+ },
+ "ku329": {
+  "fr": "le temps de cuisson",
+  "pl": "czas gotowania",
+  "ru": "вре́мя приготовле́ния",
+  "rulat": "wrémja prigotowlénija",
+  "ex": "The cooking time is about twenty minutes.",
+  "exde": "Die Garzeit beträgt etwa zwanzig Minuten."
+ },
+ "ku330": {
+  "fr": "cuit",
+  "pl": "ugotowany",
+  "ru": "гото́вый",
+  "rulat": "gotówyj",
+  "ex": "The potatoes are cooked through.",
+  "exde": "Die Kartoffeln sind gar."
+ },
+ "ku331": {
+  "fr": "cru",
+  "pl": "surowy",
+  "ru": "сыро́й",
+  "rulat": "syrój",
+  "ex": "Don't eat raw chicken.",
+  "exde": "Iss kein rohes Hähnchen."
+ },
+ "ku332": {
+  "fr": "bien cuit",
+  "pl": "dobrze wysmażony",
+  "ru": "прожа́ренный",
+  "rulat": "proschárennyj",
+  "ex": "I'd like my steak well done, please.",
+  "exde": "Ich möchte mein Steak bitte durchgebraten."
+ },
+ "ku333": {
+  "fr": "saignant",
+  "pl": "krwisty",
+  "ru": "с кро́вью",
+  "rulat": "s krówju",
+  "ex": "He always orders his steak rare.",
+  "exde": "Er bestellt sein Steak immer englisch."
+ },
+ "ku334": {
+  "fr": "croustillant",
+  "pl": "chrupiący",
+  "ru": "хрустя́щий",
+  "rulat": "chrustjáschtschij",
+  "ex": "The fries are nice and crispy.",
+  "exde": "Die Pommes sind schön knusprig."
+ },
+ "ku335": {
+  "fr": "attacher",
+  "pl": "przypalić się",
+  "ru": "подгора́ть",
+  "rulat": "podgorát'",
+  "ex": "Stir the rice so it doesn't burn.",
+  "exde": "Rühr den Reis um, damit er nicht anbrennt."
+ },
+ "ku336": {
+  "fr": "tendre",
+  "pl": "kruchy",
+  "ru": "не́жный",
+  "rulat": "néschnyj",
+  "ex": "The meat is very tender.",
+  "exde": "Das Fleisch ist sehr zart."
+ },
+ "ku337": {
+  "fr": "le goût",
+  "pl": "smak",
+  "ru": "вкус",
+  "rulat": "wkus",
+  "ex": "This soup has a strange taste.",
+  "exde": "Diese Suppe hat einen seltsamen Geschmack."
+ },
+ "ku338": {
+  "fr": "salé",
+  "pl": "słony",
+  "ru": "солёный",
+  "rulat": "soljónyj",
+  "ex": "The soup is too salty.",
+  "exde": "Die Suppe ist zu salzig."
+ },
+ "ku339": {
+  "fr": "amer",
+  "pl": "gorzki",
+  "ru": "го́рький",
+  "rulat": "gór'kij",
+  "ex": "This coffee tastes bitter.",
+  "exde": "Dieser Kaffee schmeckt bitter."
+ },
+ "ku340": {
+  "fr": "relevé",
+  "pl": "dobrze przyprawiony",
+  "ru": "пря́ный",
+  "rulat": "prjányj",
+  "ex": "The sauce is well-seasoned and delicious.",
+  "exde": "Die Soße ist würzig und lecker."
+ },
+ "ku341": {
+  "fr": "fade",
+  "pl": "mdły",
+  "ru": "пре́сный",
+  "rulat": "présnyj",
+  "ex": "The soup is a bit bland.",
+  "exde": "Die Suppe ist etwas fad."
+ },
+ "ku342": {
+  "fr": "délicieux",
+  "pl": "pyszny",
+  "ru": "вку́сный",
+  "rulat": "wkúsnyj",
+  "ex": "This cake is delicious.",
+  "exde": "Dieser Kuchen ist köstlich."
+ },
+ "ku343": {
+  "fr": "mou",
+  "pl": "miękki",
+  "ru": "мя́гкий",
+  "rulat": "mjáchkij",
+  "ex": "The bread is still soft.",
+  "exde": "Das Brot ist noch weich."
+ },
+ "ku344": {
+  "fr": "dur",
+  "pl": "twardy",
+  "ru": "твёрдый",
+  "rulat": "twjórdyj",
+  "ex": "The cookies are too hard.",
+  "exde": "Die Kekse sind zu hart."
+ },
+ "ku345": {
+  "fr": "sec",
+  "pl": "suchy",
+  "ru": "сухо́й",
+  "rulat": "suchój",
+  "ex": "The chicken is very dry.",
+  "exde": "Das Hähnchen ist sehr trocken."
+ },
+ "ku346": {
+  "fr": "coriace",
+  "pl": "łykowaty",
+  "ru": "жёсткий",
+  "rulat": "schjóstkij",
+  "ex": "The meat is tough.",
+  "exde": "Das Fleisch ist zäh."
+ },
+ "ku347": {
+  "fr": "crémeux",
+  "pl": "kremowy",
+  "ru": "кремообра́зный",
+  "rulat": "kremoobrásnyj",
+  "ex": "The sauce is nice and creamy.",
+  "exde": "Die Soße ist schön cremig."
+ },
+ "ku348": {
+  "fr": "gras",
+  "pl": "tłusty",
+  "ru": "жи́рный",
+  "rulat": "schírnyj",
+  "ex": "The fries are too greasy.",
+  "exde": "Die Pommes sind zu fettig."
+ },
+ "ku349": {
+  "fr": "doux",
+  "pl": "łagodny",
+  "ru": "нео́стрый",
+  "rulat": "neóstryj",
+  "ex": "I prefer a mild curry.",
+  "exde": "Ich mag lieber ein mildes Curry."
+ },
+ "ku350": {
+  "fr": "en bouillie",
+  "pl": "papkowaty",
+  "ru": "разва́ренный",
+  "rulat": "raswárennyj",
+  "ex": "The vegetables are mushy.",
+  "exde": "Das Gemüse ist matschig."
+ },
+ "ku351": {
+  "fr": "collant",
+  "pl": "lepki",
+  "ru": "ли́пкий",
+  "rulat": "lípkij",
+  "ex": "The rice is sticky.",
+  "exde": "Der Reis ist klebrig."
+ },
+ "ku352": {
+  "fr": "coulant",
+  "pl": "płynny",
+  "ru": "жи́дкий",
+  "rulat": "schídkij",
+  "ex": "I like my egg yolk runny.",
+  "exde": "Ich mag mein Eigelb flüssig."
+ },
+ "ku353": {
+  "fr": "épais",
+  "pl": "gęsty",
+  "ru": "густо́й",
+  "rulat": "gustój",
+  "ex": "The soup is very thick.",
+  "exde": "Die Suppe ist sehr dickflüssig."
+ },
+ "ku354": {
+  "fr": "granuleux",
+  "pl": "ziarnisty",
+  "ru": "зерни́стый",
+  "rulat": "sernístyj",
+  "ex": "The sauce turned grainy.",
+  "exde": "Die Soße wurde körnig."
+ },
+ "ku355": {
+  "fr": "aérien",
+  "pl": "puszysty",
+  "ru": "возду́шный",
+  "rulat": "wosdúschnyj",
+  "ex": "The pancakes are light and fluffy.",
+  "exde": "Die Pfannkuchen sind leicht und luftig."
+ },
+ "ku356": {
+  "fr": "goûter",
+  "pl": "spróbować",
+  "ru": "попро́бовать",
+  "rulat": "popróbowat",
+  "ex": "Would you like to try the cheese?",
+  "exde": "Möchtest du den Käse probieren?"
+ },
+ "ku357": {
+  "fr": "l'arrière-goût",
+  "pl": "posmak",
+  "ru": "послевку́сие",
+  "rulat": "poslewkússije",
+  "ex": "This wine has a bitter aftertaste.",
+  "exde": "Dieser Wein hat einen bitteren Nachgeschmack."
+ },
+ "ku358": {
+  "fr": "la texture",
+  "pl": "konsystencja",
+  "ru": "консисте́нция",
+  "rulat": "konsisténzija",
+  "ex": "I don't like the texture of tofu.",
+  "exde": "Ich mag die Konsistenz von Tofu nicht."
+ },
+ "ku359": {
+  "fr": "salé",
+  "pl": "wytrawny",
+  "ru": "солёный",
+  "rulat": "saljónyj",
+  "ex": "I prefer savoury snacks to sweet ones.",
+  "exde": "Ich mag herzhafte Snacks lieber als süße."
+ },
+ "ku360": {
+  "fr": "le gramme",
+  "pl": "gram",
+  "ru": "грамм",
+  "rulat": "gramm",
+  "ex": "Add 200 grams of flour.",
+  "exde": "Gib 200 Gramm Mehl dazu."
+ },
+ "ku361": {
+  "fr": "le kilogramme",
+  "pl": "kilogram",
+  "ru": "килогра́мм",
+  "rulat": "kilográmm",
+  "ex": "I bought a kilogram of apples.",
+  "exde": "Ich habe ein Kilogramm Äpfel gekauft."
+ },
+ "ku362": {
+  "fr": "le litre",
+  "pl": "litr",
+  "ru": "литр",
+  "rulat": "litr",
+  "ex": "We need a litre of milk.",
+  "exde": "Wir brauchen einen Liter Milch."
+ },
+ "ku363": {
+  "fr": "le millilitre",
+  "pl": "mililitr",
+  "ru": "миллили́тр",
+  "rulat": "millilítr",
+  "ex": "Add 200 millilitres of water.",
+  "exde": "Gib 200 Milliliter Wasser dazu."
+ },
+ "ku364": {
+  "fr": "le morceau",
+  "pl": "kawałek",
+  "ru": "кусо́к",
+  "rulat": "kussók",
+  "ex": "Would you like a piece of cake?",
+  "exde": "Möchtest du ein Stück Kuchen?"
+ },
+ "ku365": {
+  "fr": "le paquet",
+  "pl": "opakowanie",
+  "ru": "па́чка",
+  "rulat": "pátschka",
+  "ex": "I'll buy a packet of biscuits.",
+  "exde": "Ich kaufe eine Packung Kekse."
+ },
+ "ku366": {
+  "fr": "la boîte de conserve",
+  "pl": "puszka",
+  "ru": "ба́нка",
+  "rulat": "bánka",
+  "ex": "Open a tin of tomatoes.",
+  "exde": "Öffne eine Dose Tomaten."
+ },
+ "ku367": {
+  "fr": "la bouteille",
+  "pl": "butelka",
+  "ru": "буты́лка",
+  "rulat": "butýlka",
+  "ex": "A bottle of water, please.",
+  "exde": "Eine Flasche Wasser, bitte."
+ },
+ "ku368": {
+  "fr": "la livre",
+  "pl": "pół kilo",
+  "ru": "полкило́",
+  "rulat": "polkiló",
+  "ex": "A pound of cherries, please.",
+  "exde": "Ein Pfund Kirschen, bitte."
+ },
+ "ku369": {
+  "fr": "la botte",
+  "pl": "pęczek",
+  "ru": "пучо́к",
+  "rulat": "putschók",
+  "ex": "I need a bunch of parsley.",
+  "exde": "Ich brauche einen Bund Petersilie."
+ },
+ "ku370": {
+  "fr": "le trait",
+  "pl": "odrobina",
+  "ru": "чу́точка",
+  "rulat": "tschútotschka",
+  "ex": "Add a dash of milk to the coffee.",
+  "exde": "Gib einen Schuss Milch in den Kaffee."
+ },
+ "ku371": {
+  "fr": "la giclée",
+  "pl": "kropelka",
+  "ru": "ка́пелька",
+  "rulat": "kápelka",
+  "ex": "Add a splash of lemon juice.",
+  "exde": "Füge einen Spritzer Zitronensaft hinzu."
+ },
+ "ku372": {
+  "fr": "la quantité",
+  "pl": "ilość",
+  "ru": "коли́чество",
+  "rulat": "kolítschestwo",
+  "ex": "This quantity is enough for four people.",
+  "exde": "Diese Menge reicht für vier Personen."
+ },
+ "ku373": {
+  "fr": "la portion",
+  "pl": "porcja",
+  "ru": "по́рция",
+  "rulat": "pórzija",
+  "ex": "This portion is too big for me.",
+  "exde": "Diese Portion ist zu groß für mich."
+ },
+ "ku374": {
+  "fr": "la moitié",
+  "pl": "połowa",
+  "ru": "полови́на",
+  "rulat": "polowína",
+  "ex": "I'll take half of the pizza.",
+  "exde": "Ich nehme die Hälfte der Pizza."
+ },
+ "ku375": {
+  "fr": "le quart",
+  "pl": "ćwierć",
+  "ru": "че́тверть",
+  "rulat": "tschétwert",
+  "ex": "Give me a quarter of the cake.",
+  "exde": "Gib mir ein Viertel vom Kuchen."
+ },
+ "ku376": {
+  "fr": "peser",
+  "pl": "odważyć",
+  "ru": "взве́сить",
+  "rulat": "wswéssit",
+  "ex": "Can you weigh out 500 grams of flour?",
+  "exde": "Kannst du 500 Gramm Mehl abwiegen?"
+ },
+ "ku377": {
+  "fr": "mesurer",
+  "pl": "odmierzyć",
+  "ru": "отме́рить",
+  "rulat": "otmérit",
+  "ex": "Measure out a cup of rice.",
+  "exde": "Miss eine Tasse Reis ab."
+ },
+ "ku378": {
+  "fr": "le cube",
+  "pl": "kostka",
+  "ru": "ку́бик",
+  "rulat": "kúbik",
+  "ex": "Cut the cheese into small cubes.",
+  "exde": "Schneide den Käse in kleine Würfel."
+ },
+ "ku379": {
+  "fr": "la douzaine",
+  "pl": "tuzin",
+  "ru": "дю́жина",
+  "rulat": "djúschina",
+  "ex": "I bought a dozen eggs.",
+  "exde": "Ich habe ein Dutzend Eier gekauft."
+ },
+ "ku380": {
+  "fr": "la goutte",
+  "pl": "kropla",
+  "ru": "ка́пля",
+  "rulat": "káplja",
+  "ex": "Add a few drops of vanilla.",
+  "exde": "Gib ein paar Tropfen Vanille dazu."
+ },
+ "ku381": {
+  "fr": "la poignée",
+  "pl": "garść",
+  "ru": "горсть",
+  "rulat": "gorst",
+  "ex": "Add a handful of nuts to the salad.",
+  "exde": "Gib eine Handvoll Nüsse in den Salat."
+ },
+ "ku382": {
+  "fr": "le sachet",
+  "pl": "saszetka",
+  "ru": "паке́тик",
+  "rulat": "pakétik",
+  "ex": "Stir a sachet of sugar into your coffee.",
+  "exde": "Rühr ein Päckchen Zucker in deinen Kaffee."
+ },
+ "ku383": {
+  "fr": "le chariot",
+  "pl": "wózek sklepowy",
+  "ru": "теле́жка",
+  "rulat": "teléschka",
+  "ex": "I pushed the trolley through the supermarket.",
+  "exde": "Ich schob den Einkaufswagen durch den Supermarkt."
+ },
+ "ku384": {
+  "fr": "le panier",
+  "pl": "koszyk",
+  "ru": "корзи́нка",
+  "rulat": "korsínka",
+  "ex": "She put the apples in the shopping basket.",
+  "exde": "Sie legte die Äpfel in den Einkaufskorb."
+ },
+ "ku385": {
+  "fr": "la liste de courses",
+  "pl": "lista zakupów",
+  "ru": "спи́сок поку́пок",
+  "rulat": "spíssok pokúpok",
+  "ex": "Don't forget the shopping list!",
+  "exde": "Vergiss den Einkaufszettel nicht!"
+ },
+ "ku386": {
+  "fr": "le ticket de caisse",
+  "pl": "paragon",
+  "ru": "чек",
+  "rulat": "tschek",
+  "ex": "Please keep the receipt.",
+  "exde": "Bitte heben Sie den Kassenbon auf."
+ },
+ "ku387": {
+  "fr": "la promotion",
+  "pl": "promocja",
+  "ru": "специа́льное предложе́ние",
+  "rulat": "speziálnoje predloschénije",
+  "ex": "The cheese is a special offer this week.",
+  "exde": "Der Käse ist diese Woche ein Sonderangebot."
+ },
+ "ku388": {
+  "fr": "la date de péremption",
+  "pl": "data ważności",
+  "ru": "срок го́дности",
+  "rulat": "srok gódnosti",
+  "ex": "Check the best-before date on the milk.",
+  "exde": "Prüf das Haltbarkeitsdatum auf der Milch."
+ },
+ "ku389": {
+  "fr": "la provision",
+  "pl": "zapas",
+  "ru": "запа́с",
+  "rulat": "sapás",
+  "ex": "We have a good supply of rice.",
+  "exde": "Wir haben einen guten Vorrat an Reis."
+ },
+ "ku390": {
+  "fr": "le garde-manger",
+  "pl": "spiżarnia",
+  "ru": "кладова́я",
+  "rulat": "kladowája",
+  "ex": "The flour is in the larder.",
+  "exde": "Das Mehl ist in der Vorratskammer."
+ },
+ "ku391": {
+  "fr": "la conserve",
+  "pl": "konserwa",
+  "ru": "консе́рвы",
+  "rulat": "konsérwy",
+  "ex": "I bought tinned food for the camping trip.",
+  "exde": "Ich habe Konserven für den Campingausflug gekauft."
+ },
+ "ku392": {
+  "fr": "surgelé",
+  "pl": "mrożony",
+  "ru": "заморо́женный",
+  "rulat": "samoróschennyj",
+  "ex": "I bought frozen peas.",
+  "exde": "Ich habe tiefgekühlte Erbsen gekauft."
+ },
+ "ku393": {
+  "fr": "le congélateur coffre",
+  "pl": "zamrażarka skrzyniowa",
+  "ru": "морози́льный ларь",
+  "rulat": "morosílnyj lar",
+  "ex": "The ice cream is in the chest freezer.",
+  "exde": "Das Eis ist in der Tiefkühltruhe."
+ },
+ "ku394": {
+  "fr": "non périssable",
+  "pl": "trwały",
+  "ru": "долгохраня́щийся",
+  "rulat": "dolgochranjáschtschijsja",
+  "ex": "Pasta is non-perishable.",
+  "exde": "Nudeln sind lange haltbar."
+ },
+ "ku395": {
+  "fr": "périssable",
+  "pl": "łatwo psujący się",
+  "ru": "скоропо́ртящийся",
+  "rulat": "skoropórtjaschtschijsja",
+  "ex": "Fish is perishable, so keep it cold.",
+  "exde": "Fisch ist verderblich, also halte ihn kühl."
+ },
+ "ku396": {
+  "fr": "périmé",
+  "pl": "przeterminowany",
+  "ru": "просро́ченный",
+  "rulat": "prossrótschennyj",
+  "ex": "This yoghurt is out of date.",
+  "exde": "Dieser Joghurt ist abgelaufen."
+ },
+ "ku397": {
+  "fr": "faire les courses",
+  "pl": "robić zakupy",
+  "ru": "де́лать поку́пки",
+  "rulat": "délat pokúpki",
+  "ex": "I do the shopping on Saturdays.",
+  "exde": "Ich kaufe samstags ein."
+ },
+ "ku398": {
+  "fr": "en stock",
+  "pl": "na stanie",
+  "ru": "в нали́чии",
+  "rulat": "w nalítschii",
+  "ex": "Is this jacket in stock?",
+  "exde": "Ist diese Jacke vorrätig?"
+ },
+ "ku399": {
+  "fr": "le marché hebdomadaire",
+  "pl": "targ cotygodniowy",
+  "ru": "еженеде́льный ры́нок",
+  "rulat": "jeschenedélnyj rýnok",
+  "ex": "We buy vegetables at the weekly market.",
+  "exde": "Wir kaufen Gemüse auf dem Wochenmarkt."
+ },
+ "ku400": {
+  "fr": "le sac",
+  "pl": "torba",
+  "ru": "паке́т",
+  "rulat": "pakét",
+  "ex": "Do you need a bag?",
+  "exde": "Brauchen Sie eine Tüte?"
+ },
+ "ku401": {
+  "fr": "la consigne",
+  "pl": "kaucja",
+  "ru": "зало́г",
+  "rulat": "salók",
+  "ex": "You get the deposit back when you return the bottles.",
+  "exde": "Du bekommst das Pfand zurück, wenn du die Flaschen zurückgibst."
+ },
+ "ku402": {
+  "fr": "stocker",
+  "pl": "przechowywać",
+  "ru": "храни́ть",
+  "rulat": "chranít",
+  "ex": "Store potatoes in a cool, dark place.",
+  "exde": "Lagere Kartoffeln an einem kühlen, dunklen Ort."
+ },
+ "ku403": {
+  "fr": "l'étagère",
+  "pl": "półka",
+  "ru": "по́лка",
+  "rulat": "pólka",
+  "ex": "The rice is on the top shelf.",
+  "exde": "Der Reis steht im obersten Regal."
+ },
+ "ku404": {
+  "fr": "le pourboire",
+  "pl": "napiwek",
+  "ru": "чаевы́е",
+  "rulat": "tschajewýje",
+  "ex": "We left a tip for the waiter.",
+  "exde": "Wir haben dem Kellner Trinkgeld gegeben."
+ },
+ "ku405": {
+  "fr": "le serveur",
+  "pl": "kelner",
+  "ru": "официа́нт",
+  "rulat": "ofiziánt",
+  "ex": "The waiter brought us the menu.",
+  "exde": "Der Kellner brachte uns die Speisekarte."
+ },
+ "ku406": {
+  "fr": "la serveuse",
+  "pl": "kelnerka",
+  "ru": "официа́нтка",
+  "rulat": "ofiziántka",
+  "ex": "The waitress was very friendly.",
+  "exde": "Die Kellnerin war sehr freundlich."
+ },
+ "ku407": {
+  "fr": "réserver",
+  "pl": "zarezerwować",
+  "ru": "заброни́ровать",
+  "rulat": "sabronírowat",
+  "ex": "I'd like to book a table for two.",
+  "exde": "Ich möchte einen Tisch für zwei reservieren."
+ },
+ "ku408": {
+  "fr": "l'entrée",
+  "pl": "przystawka",
+  "ru": "заку́ска",
+  "rulat": "sakúska",
+  "ex": "We shared a starter.",
+  "exde": "Wir haben uns eine Vorspeise geteilt."
+ },
+ "ku409": {
+  "fr": "le plat principal",
+  "pl": "danie główne",
+  "ru": "основно́е блю́до",
+  "rulat": "osnownóje bljúdo",
+  "ex": "For the main course I'll have fish.",
+  "exde": "Als Hauptgericht nehme ich Fisch."
+ },
+ "ku410": {
+  "fr": "commander",
+  "pl": "zamówić",
+  "ru": "заказа́ть",
+  "rulat": "sakasát",
+  "ex": "Are you ready to order?",
+  "exde": "Möchten Sie jetzt bestellen?"
+ },
+ "ku411": {
+  "fr": "la carte des boissons",
+  "pl": "karta napojów",
+  "ru": "ка́рта напи́тков",
+  "rulat": "kárta napítkow",
+  "ex": "Could we see the drinks menu, please?",
+  "exde": "Könnten wir bitte die Getränkekarte sehen?"
+ },
+ "ku412": {
+  "fr": "le plat du jour",
+  "pl": "danie dnia",
+  "ru": "блю́до дня",
+  "rulat": "bljúdo dnja",
+  "ex": "What is the dish of the day?",
+  "exde": "Was ist das Tagesgericht?"
+ },
+ "ku413": {
+  "fr": "l'accompagnement",
+  "pl": "dodatek",
+  "ru": "гарни́р",
+  "rulat": "garnír",
+  "ex": "Would you like rice or fries as a side dish?",
+  "exde": "Möchten Sie Reis oder Pommes als Beilage?"
+ },
+ "ku414": {
+  "fr": "la serviette",
+  "pl": "serwetka",
+  "ru": "салфе́тка",
+  "rulat": "salfétka",
+  "ex": "Could I have another napkin?",
+  "exde": "Könnte ich noch eine Serviette haben?"
+ },
+ "ku415": {
+  "fr": "Bon appétit !",
+  "pl": "Smacznego!",
+  "ru": "Прия́тного аппети́та!",
+  "rulat": "Prijátnowo appetíta!",
+  "ex": "Here's your soup. Enjoy your meal!",
+  "exde": "Hier ist Ihre Suppe. Guten Appetit!"
+ },
+ "ku416": {
+  "fr": "Gardez la monnaie.",
+  "pl": "Reszty nie trzeba.",
+  "ru": "Сда́чи не на́до.",
+  "rulat": "Sdátschi ne nádo.",
+  "ex": "That's twenty euros. Keep the change.",
+  "exde": "Das sind zwanzig Euro. Stimmt so."
+ },
+ "ku417": {
+  "fr": "payer séparément",
+  "pl": "płacić osobno",
+  "ru": "плати́ть разде́льно",
+  "rulat": "platít rasdélno",
+  "ex": "Can we pay separately, please?",
+  "exde": "Können wir bitte getrennt zahlen?"
+ },
+ "ku418": {
+  "fr": "végétarien",
+  "pl": "wegetariański",
+  "ru": "вегетариа́нский",
+  "rulat": "wegetariánski",
+  "ex": "Do you have any vegetarian dishes?",
+  "exde": "Haben Sie vegetarische Gerichte?"
+ },
+ "ku419": {
+  "fr": "le cuisinier",
+  "pl": "kucharz",
+  "ru": "по́вар",
+  "rulat": "pówar",
+  "ex": "The chef recommends the fish.",
+  "exde": "Der Koch empfiehlt den Fisch."
+ },
+ "ku420": {
+  "fr": "rassasié",
+  "pl": "najedzony",
+  "ru": "сы́тый",
+  "rulat": "sýtyj",
+  "ex": "No dessert, thanks, I'm full.",
+  "exde": "Keinen Nachtisch, danke, ich bin satt."
+ },
+ "ku421": {
+  "fr": "le repas",
+  "pl": "posiłek",
+  "ru": "еда́",
+  "rulat": "jedá",
+  "ex": "We eat three meals a day.",
+  "exde": "Wir essen drei Mahlzeiten am Tag."
+ },
+ "ku422": {
+  "fr": "le plat",
+  "pl": "danie",
+  "ru": "блю́до",
+  "rulat": "bljúdo",
+  "ex": "This dish is very spicy.",
+  "exde": "Dieses Gericht ist sehr scharf."
+ },
+ "ku423": {
+  "fr": "le ragoût",
+  "pl": "potrawka",
+  "ru": "рагу́",
+  "rulat": "ragú",
+  "ex": "My grandmother makes a delicious stew.",
+  "exde": "Meine Oma kocht einen leckeren Eintopf."
+ },
+ "ku424": {
+  "fr": "les pommes de terre sautées",
+  "pl": "smażone ziemniaki",
+  "ru": "жа́реная карто́шка",
+  "rulat": "schárenaja kartóschka",
+  "ex": "We had fried potatoes with eggs.",
+  "exde": "Wir aßen Bratkartoffeln mit Eiern."
+ },
+ "ku425": {
+  "fr": "la purée de pommes de terre",
+  "pl": "purée ziemniaczane",
+  "ru": "карто́фельное пюре́",
+  "rulat": "kartófelnoje pjuré",
+  "ex": "The children love mashed potatoes.",
+  "exde": "Die Kinder lieben Kartoffelbrei."
+ },
+ "ku426": {
+  "fr": "les frites",
+  "pl": "frytki",
+  "ru": "карто́фель фри",
+  "rulat": "kartófel fri",
+  "ex": "Can I have chips with my burger?",
+  "exde": "Kann ich Pommes zu meinem Burger haben?"
+ },
+ "ku427": {
+  "fr": "le casse-croûte",
+  "pl": "przekąska",
+  "ru": "переку́с",
+  "rulat": "perekús",
+  "ex": "Let's grab a quick snack.",
+  "exde": "Lass uns schnell einen Imbiss holen."
+ },
+ "ku428": {
+  "fr": "la sauce",
+  "pl": "sos",
+  "ru": "со́ус",
+  "rulat": "sóus",
+  "ex": "The sauce is too salty.",
+  "exde": "Die Soße ist zu salzig."
+ },
+ "ku429": {
+  "fr": "la recette",
+  "pl": "przepis",
+  "ru": "реце́пт",
+  "rulat": "rezépt",
+  "ex": "Can you give me the recipe?",
+  "exde": "Kannst du mir das Rezept geben?"
+ },
+ "ku430": {
+  "fr": "affamé",
+  "pl": "głodny",
+  "ru": "голо́дный",
+  "rulat": "galódnyj",
+  "ex": "I'm really hungry.",
+  "exde": "Ich bin wirklich hungrig."
+ },
+ "ku431": {
+  "fr": "prendre le petit-déjeuner",
+  "pl": "jeść śniadanie",
+  "ru": "за́втракать",
+  "rulat": "sáwtrakat",
+  "ex": "We have breakfast at seven.",
+  "exde": "Wir frühstücken um sieben."
+ },
+ "ku432": {
+  "fr": "déjeuner",
+  "pl": "jeść obiad",
+  "ru": "обе́дать",
+  "rulat": "abjédat",
+  "ex": "Where do you have lunch?",
+  "exde": "Wo isst du zu Mittag?"
+ },
+ "ku433": {
+  "fr": "aller au restaurant",
+  "pl": "iść do restauracji",
+  "ru": "ходи́ть в рестора́н",
+  "rulat": "chadít w restorán",
+  "ex": "We like to eat out on Fridays.",
+  "exde": "Wir gehen freitags gern essen."
+ },
+ "ku434": {
+  "fr": "l'hygiène",
+  "pl": "higiena",
+  "ru": "гигие́на",
+  "rulat": "gigijéna",
+  "ex": "Good hygiene is important in the kitchen.",
+  "exde": "Gute Hygiene ist in der Küche wichtig."
+ },
+ "ku435": {
+  "fr": "le liquide vaisselle",
+  "pl": "płyn do mycia naczyń",
+  "ru": "сре́дство для мытья́ посу́ды",
+  "rulat": "srédstwo dlja mytjá passúdy",
+  "ex": "We've run out of washing-up liquid.",
+  "exde": "Uns ist das Spülmittel ausgegangen."
+ },
+ "ku436": {
+  "fr": "l'éponge",
+  "pl": "gąbka",
+  "ru": "гу́бка",
+  "rulat": "gúbka",
+  "ex": "Use a sponge to clean the pan.",
+  "exde": "Nimm einen Schwamm, um die Pfanne zu reinigen."
+ },
+ "ku437": {
+  "fr": "le torchon",
+  "pl": "ściereczka do naczyń",
+  "ru": "посу́дное полоте́нце",
+  "rulat": "passúdnoje palatjénze",
+  "ex": "Hang the tea towel on the hook.",
+  "exde": "Häng das Geschirrtuch an den Haken."
+ },
+ "ku438": {
+  "fr": "le chiffon",
+  "pl": "szmatka",
+  "ru": "тря́пка",
+  "rulat": "trjápka",
+  "ex": "Wipe the table with a damp cloth.",
+  "exde": "Wisch den Tisch mit einem feuchten Lappen ab."
+ },
+ "ku439": {
+  "fr": "faire la vaisselle",
+  "pl": "zmywać naczynia",
+  "ru": "мыть посу́ду",
+  "rulat": "myt passúdu",
+  "ex": "It's your turn to do the washing-up today.",
+  "exde": "Du bist heute mit dem Abwaschen dran."
+ },
+ "ku440": {
+  "fr": "essuyer la vaisselle",
+  "pl": "wycierać naczynia",
+  "ru": "вытира́ть посу́ду",
+  "rulat": "wytirát passúdu",
+  "ex": "I'll wash and you dry up.",
+  "exde": "Ich wasche ab und du trocknest ab."
+ },
+ "ku441": {
+  "fr": "l'évier",
+  "pl": "zlewozmywak",
+  "ru": "ра́ковина",
+  "rulat": "rákowina",
+  "ex": "The dirty dishes are in the sink.",
+  "exde": "Das schmutzige Geschirr ist in der Spüle."
+ },
+ "ku442": {
+  "fr": "se laver les mains",
+  "pl": "myć ręce",
+  "ru": "мыть ру́ки",
+  "rulat": "myt rúki",
+  "ex": "Always wash your hands before cooking.",
+  "exde": "Wasch dir immer die Hände vor dem Kochen."
+ },
+ "ku443": {
+  "fr": "le savon",
+  "pl": "mydło",
+  "ru": "мы́ло",
+  "rulat": "mýlo",
+  "ex": "There is no soap in the bathroom.",
+  "exde": "Im Bad gibt es keine Seife."
+ },
+ "ku444": {
+  "fr": "propre",
+  "pl": "czysty",
+  "ru": "чи́стый",
+  "rulat": "tschístyj",
+  "ex": "The kitchen is clean now.",
+  "exde": "Die Küche ist jetzt sauber."
+ },
+ "ku445": {
+  "fr": "sale",
+  "pl": "brudny",
+  "ru": "гря́зный",
+  "rulat": "grjásnyj",
+  "ex": "My hands are dirty.",
+  "exde": "Meine Hände sind schmutzig."
+ },
+ "ku446": {
+  "fr": "la poubelle",
+  "pl": "kosz na śmieci",
+  "ru": "му́сорное ведро́",
+  "rulat": "músornoje wedró",
+  "ex": "Please take out the bin.",
+  "exde": "Bitte bring den Mülleimer raus."
+ },
+ "ku447": {
+  "fr": "essuyer",
+  "pl": "wycierać",
+  "ru": "вытира́ть",
+  "rulat": "wytirát",
+  "ex": "Can you wipe the table?",
+  "exde": "Kannst du den Tisch abwischen?"
+ },
+ "ku448": {
+  "fr": "désinfecter",
+  "pl": "dezynfekować",
+  "ru": "дезинфици́ровать",
+  "rulat": "desinfizírowat",
+  "ex": "We disinfect the kitchen every day.",
+  "exde": "Wir desinfizieren die Küche jeden Tag."
+ },
+ "ku449": {
+  "fr": "le germe",
+  "pl": "zarazek",
+  "ru": "микро́б",
+  "rulat": "mikróp",
+  "ex": "Soap kills germs.",
+  "exde": "Seife tötet Keime."
+ },
+ "ku450": {
+  "fr": "les bactéries",
+  "pl": "bakterie",
+  "ru": "бакте́рии",
+  "rulat": "baktérii",
+  "ex": "Bacteria grow quickly in warm food.",
+  "exde": "Bakterien wachsen schnell in warmem Essen."
+ },
+ "ku451": {
+  "fr": "moisi",
+  "pl": "spleśniały",
+  "ru": "запле́сневелый",
+  "rulat": "sapléssnewelyj",
+  "ex": "The bread is mouldy.",
+  "exde": "Das Brot ist schimmelig."
+ },
+ "ku452": {
+  "fr": "la moisissure",
+  "pl": "pleśń",
+  "ru": "пле́сень",
+  "rulat": "plésen",
+  "ex": "There is mould on the cheese.",
+  "exde": "Auf dem Käse ist Schimmel."
+ },
+ "ku453": {
+  "fr": "avarié",
+  "pl": "zepsuty",
+  "ru": "испо́рченный",
+  "rulat": "isspórtschennyj",
+  "ex": "This milk is off.",
+  "exde": "Diese Milch ist verdorben."
+ },
+ "ku454": {
+  "fr": "le plan de travail",
+  "pl": "blat kuchenny",
+  "ru": "рабо́чая пове́рхность",
+  "rulat": "rabótschaja powérchnost",
+  "ex": "Keep the worktop clean.",
+  "exde": "Halte die Arbeitsfläche sauber."
+ },
+ "ku455": {
+  "fr": "le tablier",
+  "pl": "fartuch",
+  "ru": "фа́ртук",
+  "rulat": "fártuk",
+  "ex": "Put on an apron before you cook.",
+  "exde": "Zieh eine Schürze an, bevor du kochst."
+ },
+ "ku456": {
+  "fr": "l'intoxication alimentaire",
+  "pl": "zatrucie pokarmowe",
+  "ru": "пищево́е отравле́ние",
+  "rulat": "pischtschewóje otrawlénije",
+  "ex": "He got food poisoning from the chicken.",
+  "exde": "Er hat vom Hähnchen eine Lebensmittelvergiftung bekommen."
+ },
+ "ku457": {
+  "fr": "l'essuie-tout",
+  "pl": "ręcznik papierowy",
+  "ru": "бума́жное полоте́нце",
+  "rulat": "bumáschnoje poloténze",
+  "ex": "Use kitchen roll to dry your hands.",
+  "exde": "Nimm Küchenpapier, um dir die Hände abzutrocknen."
+ },
+ "ku458": {
+  "fr": "le film alimentaire",
+  "pl": "folia spożywcza",
+  "ru": "пищева́я плёнка",
+  "rulat": "pischtschewája pljónka",
+  "ex": "Cover the bowl with cling film.",
+  "exde": "Deck die Schüssel mit Frischhaltefolie ab."
+ }
+}

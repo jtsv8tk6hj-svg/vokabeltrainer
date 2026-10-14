@@ -5,7 +5,8 @@ gegen die schon vorhandenen Stapel. Ergebnis ist eine CSV id;de;en;thema, die da
 mit woerter.py um FR, PL, RU, Umschrift und Beispielsaetze ergaenzt wird.
 
     export ANTHROPIC_API_KEY=sk-ant-...
-    python3 liste.py kueche          # schreibt daten/kueche.csv nach dem Plan unten
+    python3 liste.py kueche               # schreibt daten/kueche.csv nach dem Plan unten
+    python3 liste.py kueche --auffuellen  # füllt unterbesetzte Themen bis zur Zielzahl nach
 
 Bewusst nur Standardbibliothek. Der Plan je Gebiet steht in PLAENE.
 """
@@ -107,11 +108,23 @@ def main():
     ziel = WURZEL / ziel
     de_alt, en_alt = vorhanden()
     zeilen, de_neu, en_neu = [], set(), set()
+    auffuellen = "--auffuellen" in sys.argv and ziel.exists()
+    if auffuellen:
+        # vorhandene Liste laden und nur die unterbesetzten Themen nachfüllen
+        with ziel.open(encoding="utf-8") as f:
+            for z in csv.DictReader(f, delimiter=";"):
+                zeilen.append({"de": z["de"], "en": z["en"], "thema": z["thema"]})
+                de_neu.add(norm(z["de"])); en_neu.add(norm(z["en"]))
     for thema in themen:
-        ausschluss = sorted(de_neu)[-80:]
-        print("Thema:", thema)
-        items = anfrage("Thema: %s (Gebiet: Lebensmittel, Küche, Kochen)\nAnzahl: %d Einträge\nAusschlussliste (schon vorhanden): %s"
-                        % (thema, je + 6, ", ".join(ausschluss) or "–"), schluessel)
+        haben = sum(1 for z in zeilen if z["thema"] == thema)
+        if haben >= je:
+            continue
+        fehlt = je - haben
+        # Ausschluss: alle Wörter dieses Themas und die zuletzt erzeugten, damit nichts doppelt kommt
+        ausschluss = sorted({z["de"] for z in zeilen if z["thema"] == thema} | set(sorted(de_neu)[-80:]))
+        print("Thema:", thema, "(%d fehlen)" % fehlt if auffuellen else "")
+        items = anfrage("Thema: %s (Gebiet: Lebensmittel, Küche, Kochen)\nAnzahl: %d Einträge\nAusschlussliste (schon vorhanden, nicht erneut liefern): %s"
+                        % (thema, fehlt + 10, ", ".join(ausschluss) or "–"), schluessel)
         n = 0
         for o in items:
             d, e = norm(o["de"]), norm(o["en"])
@@ -120,7 +133,7 @@ def main():
             de_neu.add(d); en_neu.add(e)
             zeilen.append({"de": o["de"].strip(), "en": o["en"].strip(), "thema": thema})
             n += 1
-            if n >= je:
+            if n >= fehlt:
                 break
         print("  %d übernommen" % n)
     with ziel.open("w", encoding="utf-8", newline="") as f:

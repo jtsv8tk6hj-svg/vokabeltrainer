@@ -1,0 +1,459 @@
+id;de;en;thema
+ku001;die Birne;pear;Obst
+ku002;die Banane;banana;Obst
+ku003;die Orange;orange;Obst
+ku004;die Zitrone;lemon;Obst
+ku005;die Erdbeere;strawberry;Obst
+ku006;die Weintraube;grape;Obst
+ku007;die Kirsche;cherry;Obst
+ku008;die Pflaume;plum;Obst
+ku009;der Pfirsich;peach;Obst
+ku010;die Aprikose;apricot;Obst
+ku011;die Himbeere;raspberry;Obst
+ku012;die Heidelbeere;blueberry;Obst
+ku013;die Ananas;pineapple;Obst
+ku014;die Mango;mango;Obst
+ku015;die Wassermelone;watermelon;Obst
+ku016;die Kiwi;kiwi fruit;Obst
+ku017;die Mandarine;mandarin;Obst
+ku018;die Beere;berry;Obst
+ku019;die Schale;peel, skin;Obst
+ku020;der Kern;pip, seed;Obst
+ku021;der Stein;stone;Obst
+ku022;reif;ripe;Obst
+ku023;unreif;unripe;Obst
+ku024;saftig;juicy;Obst
+ku025;sauer;sour;Obst
+ku026;die Kartoffel;potato;Gemüse
+ku027;die Karotte;carrot;Gemüse
+ku028;die Tomate;tomato;Gemüse
+ku029;die Gurke;cucumber;Gemüse
+ku030;die Zwiebel;onion;Gemüse
+ku031;der Knoblauch;garlic;Gemüse
+ku032;der Salat;lettuce;Gemüse
+ku033;die Paprika;pepper;Gemüse
+ku034;der Brokkoli;broccoli;Gemüse
+ku035;der Blumenkohl;cauliflower;Gemüse
+ku036;der Spinat;spinach;Gemüse
+ku037;die Erbse;pea;Gemüse
+ku038;die Bohne;bean;Gemüse
+ku039;der Mais;sweetcorn;Gemüse
+ku040;die Zucchini;courgette;Gemüse
+ku041;die Aubergine;aubergine;Gemüse
+ku042;der Kürbis;pumpkin;Gemüse
+ku043;der Pilz;mushroom;Gemüse
+ku044;der Lauch;leek;Gemüse
+ku045;der Sellerie;celery;Gemüse
+ku046;der Kohl;cabbage;Gemüse
+ku047;der Rosenkohl;Brussels sprouts;Gemüse
+ku048;das Radieschen;radish;Gemüse
+ku049;die Rote Bete;beetroot;Gemüse
+ku050;der Spargel;asparagus;Gemüse
+ku051;die Wurst;sausage;Fleisch und Wurst
+ku052;das Rindfleisch;beef;Fleisch und Wurst
+ku053;das Schweinefleisch;pork;Fleisch und Wurst
+ku054;das Hähnchen;chicken;Fleisch und Wurst
+ku055;das Lammfleisch;lamb;Fleisch und Wurst
+ku056;das Kalbfleisch;veal;Fleisch und Wurst
+ku057;die Pute;turkey;Fleisch und Wurst
+ku058;das Hackfleisch;mince;Fleisch und Wurst
+ku059;der Schinken;ham;Fleisch und Wurst
+ku060;der Speck;bacon;Fleisch und Wurst
+ku061;die Salami;salami;Fleisch und Wurst
+ku062;das Würstchen;frankfurter;Fleisch und Wurst
+ku063;das Steak;steak;Fleisch und Wurst
+ku064;das Schnitzel;escalope;Fleisch und Wurst
+ku065;der Braten;roast;Fleisch und Wurst
+ku066;das Kotelett;chop;Fleisch und Wurst
+ku067;die Hähnchenbrust;chicken breast;Fleisch und Wurst
+ku068;die Keule;leg;Fleisch und Wurst
+ku069;das Filet;fillet;Fleisch und Wurst
+ku070;der Aufschnitt;cold cuts;Fleisch und Wurst
+ku071;die Frikadelle;meatball;Fleisch und Wurst
+ku072;der Metzger;butcher;Fleisch und Wurst
+ku073;die Metzgerei;butcher's shop;Fleisch und Wurst
+ku074;die Fleischtheke;meat counter;Fleisch und Wurst
+ku075;mager;lean;Fleisch und Wurst
+ku076;die Meeresfrüchte;seafood;Fisch und Meeresfrüchte
+ku077;der Lachs;salmon;Fisch und Meeresfrüchte
+ku078;der Thunfisch;tuna;Fisch und Meeresfrüchte
+ku079;der Kabeljau;cod;Fisch und Meeresfrüchte
+ku080;die Forelle;trout;Fisch und Meeresfrüchte
+ku081;der Hering;herring;Fisch und Meeresfrüchte
+ku082;die Makrele;mackerel;Fisch und Meeresfrüchte
+ku083;die Sardine;sardine;Fisch und Meeresfrüchte
+ku084;die Garnele;prawn;Fisch und Meeresfrüchte
+ku085;die Muschel;mussel;Fisch und Meeresfrüchte
+ku086;der Tintenfisch;squid;Fisch und Meeresfrüchte
+ku087;der Hummer;lobster;Fisch und Meeresfrüchte
+ku088;die Krabbe;crab;Fisch und Meeresfrüchte
+ku089;die Auster;oyster;Fisch und Meeresfrüchte
+ku090;die Gräte;fish bone;Fisch und Meeresfrüchte
+ku091;die Schuppe;scale;Fisch und Meeresfrüchte
+ku092;der Räucherlachs;smoked salmon;Fisch und Meeresfrüchte
+ku093;das Fischstäbchen;fish finger;Fisch und Meeresfrüchte
+ku094;der Fischhändler;fishmonger;Fisch und Meeresfrüchte
+ku095;die Fischtheke;fish counter;Fisch und Meeresfrüchte
+ku096;frisch;fresh;Fisch und Meeresfrüchte
+ku097;geräuchert;smoked;Fisch und Meeresfrüchte
+ku098;entgräten;to bone;Fisch und Meeresfrüchte
+ku099;ausnehmen;to gut;Fisch und Meeresfrüchte
+ku100;der Zander;pike-perch;Fisch und Meeresfrüchte
+ku101;die Butter;butter;Milchprodukte und Eier
+ku102;der Joghurt;yoghurt;Milchprodukte und Eier
+ku103;die Sahne;cream;Milchprodukte und Eier
+ku104;der Quark;quark;Milchprodukte und Eier
+ku105;der Frischkäse;cream cheese;Milchprodukte und Eier
+ku106;die saure Sahne;soured cream;Milchprodukte und Eier
+ku107;die Schlagsahne;whipped cream;Milchprodukte und Eier
+ku108;das Eigelb;egg yolk;Milchprodukte und Eier
+ku109;das Eiweiß;egg white;Milchprodukte und Eier
+ku110;die Eierschale;eggshell;Milchprodukte und Eier
+ku111;das Spiegelei;fried egg;Milchprodukte und Eier
+ku112;das Rührei;scrambled eggs;Milchprodukte und Eier
+ku113;das gekochte Ei;boiled egg;Milchprodukte und Eier
+ku114;das pochierte Ei;poached egg;Milchprodukte und Eier
+ku115;die Vollmilch;whole milk;Milchprodukte und Eier
+ku116;die fettarme Milch;semi-skimmed milk;Milchprodukte und Eier
+ku117;die Buttermilch;buttermilk;Milchprodukte und Eier
+ku118;die H-Milch;UHT milk;Milchprodukte und Eier
+ku119;der Reibekäse;grated cheese;Milchprodukte und Eier
+ku120;der Hartkäse;hard cheese;Milchprodukte und Eier
+ku121;die Milchprodukte;dairy products;Milchprodukte und Eier
+ku122;laktosefrei;lactose-free;Milchprodukte und Eier
+ku123;die Hafermilch;oat milk;Milchprodukte und Eier
+ku124;das Freilandei;free-range egg;Milchprodukte und Eier
+ku125;der Eierkarton;egg box;Milchprodukte und Eier
+ku126;das Brötchen;bread roll;Brot und Backwaren
+ku127;das Vollkornbrot;wholemeal bread;Brot und Backwaren
+ku128;das Weißbrot;white bread;Brot und Backwaren
+ku129;das Roggenbrot;rye bread;Brot und Backwaren
+ku130;das Toastbrot;sliced white bread;Brot und Backwaren
+ku131;das Baguette;baguette;Brot und Backwaren
+ku132;die Brezel;pretzel;Brot und Backwaren
+ku133;das Croissant;croissant;Brot und Backwaren
+ku134;der Laib;loaf;Brot und Backwaren
+ku135;die Scheibe;slice;Brot und Backwaren
+ku136;die Kruste;crust;Brot und Backwaren
+ku137;die Krume;crumb;Brot und Backwaren
+ku138;der Teig;dough;Brot und Backwaren
+ku139;das Mehl;flour;Brot und Backwaren
+ku140;die Hefe;yeast;Brot und Backwaren
+ku141;der Sauerteig;sourdough;Brot und Backwaren
+ku142;die Bäckerei;bakery;Brot und Backwaren
+ku143;der Bäcker;baker;Brot und Backwaren
+ku144;das Gebäck;pastries;Brot und Backwaren
+ku145;der Kuchen;cake;Brot und Backwaren
+ku146;die Torte;gateau;Brot und Backwaren
+ku147;der Keks;biscuit;Brot und Backwaren
+ku148;das Paniermehl;breadcrumbs;Brot und Backwaren
+ku149;backen;to bake;Brot und Backwaren
+ku150;kneten;to knead;Brot und Backwaren
+ku151;das Getreide;cereals;Getreide, Nudeln und Reis
+ku152;der Reis;rice;Getreide, Nudeln und Reis
+ku153;die Nudeln;pasta;Getreide, Nudeln und Reis
+ku154;der Weizen;wheat;Getreide, Nudeln und Reis
+ku155;der Roggen;rye;Getreide, Nudeln und Reis
+ku156;die Gerste;barley;Getreide, Nudeln und Reis
+ku157;der Hafer;oats;Getreide, Nudeln und Reis
+ku158;die Haferflocken;porridge oats;Getreide, Nudeln und Reis
+ku159;der Vollkornreis;brown rice;Getreide, Nudeln und Reis
+ku160;der Basmatireis;basmati rice;Getreide, Nudeln und Reis
+ku161;der Milchreis;rice pudding;Getreide, Nudeln und Reis
+ku162;die Spaghetti;spaghetti;Getreide, Nudeln und Reis
+ku163;der Couscous;couscous;Getreide, Nudeln und Reis
+ku164;der Bulgur;bulgur wheat;Getreide, Nudeln und Reis
+ku165;die Hirse;millet;Getreide, Nudeln und Reis
+ku166;der Dinkel;spelt;Getreide, Nudeln und Reis
+ku167;das Müsli;muesli;Getreide, Nudeln und Reis
+ku168;die Cornflakes;cornflakes;Getreide, Nudeln und Reis
+ku169;das Korn;grain;Getreide, Nudeln und Reis
+ku170;die Vollkornnudeln;wholemeal pasta;Getreide, Nudeln und Reis
+ku171;bissfest;al dente;Getreide, Nudeln und Reis
+ku172;kochen;to boil;Getreide, Nudeln und Reis
+ku173;abgießen;to drain;Getreide, Nudeln und Reis
+ku174;das Sieb;colander;Getreide, Nudeln und Reis
+ku175;die Lasagne;lasagne;Getreide, Nudeln und Reis
+ku176;das Gewürz;spice;Gewürze und Kräuter
+ku177;das Kraut;herb;Gewürze und Kräuter
+ku178;der Zimt;cinnamon;Gewürze und Kräuter
+ku179;die Petersilie;parsley;Gewürze und Kräuter
+ku180;das Basilikum;basil;Gewürze und Kräuter
+ku181;der Schnittlauch;chives;Gewürze und Kräuter
+ku182;der Rosmarin;rosemary;Gewürze und Kräuter
+ku183;der Thymian;thyme;Gewürze und Kräuter
+ku184;der Oregano;oregano;Gewürze und Kräuter
+ku185;der Dill;dill;Gewürze und Kräuter
+ku186;die Minze;mint;Gewürze und Kräuter
+ku187;der Ingwer;ginger;Gewürze und Kräuter
+ku188;die Muskatnuss;nutmeg;Gewürze und Kräuter
+ku189;der Kümmel;caraway;Gewürze und Kräuter
+ku190;der Kreuzkümmel;cumin;Gewürze und Kräuter
+ku191;das Lorbeerblatt;bay leaf;Gewürze und Kräuter
+ku192;die Gewürznelke;clove;Gewürze und Kräuter
+ku193;der Chili;chilli;Gewürze und Kräuter
+ku194;die Vanille;vanilla;Gewürze und Kräuter
+ku195;der Koriander;coriander;Gewürze und Kräuter
+ku196;das Currypulver;curry powder;Gewürze und Kräuter
+ku197;der Senf;mustard;Gewürze und Kräuter
+ku198;scharf;hot;Gewürze und Kräuter
+ku199;würzen;to season;Gewürze und Kräuter
+ku200;die Prise;pinch;Gewürze und Kräuter
+ku201;das Getränk;drink;Getränke
+ku202;das Mineralwasser;mineral water;Getränke
+ku203;der Saft;juice;Getränke
+ku204;der Orangensaft;orange juice;Getränke
+ku205;der Apfelsaft;apple juice;Getränke
+ku206;die Saftschorle;juice spritzer;Getränke
+ku207;die Limonade;lemonade;Getränke
+ku208;die Cola;cola;Getränke
+ku209;die heiße Schokolade;hot chocolate;Getränke
+ku210;das Bier;beer;Getränke
+ku211;der Wein;wine;Getränke
+ku212;der Rotwein;red wine;Getränke
+ku213;der Weißwein;white wine;Getränke
+ku214;der Sekt;sparkling wine;Getränke
+ku215;der Schnaps;schnapps;Getränke
+ku216;der Cocktail;cocktail;Getränke
+ku217;alkoholfrei;non-alcoholic;Getränke
+ku218;mit Kohlensäure;sparkling;Getränke
+ku219;ohne Kohlensäure;still;Getränke
+ku220;der Eiswürfel;ice cube;Getränke
+ku221;der Strohhalm;straw;Getränke
+ku222;einschenken;to pour;Getränke
+ku223;durstig;thirsty;Getränke
+ku224;der Durst;thirst;Getränke
+ku225;Prost!;Cheers!;Getränke
+ku226;der Nachtisch;dessert;Süßes und Desserts
+ku227;die Süßigkeit;sweet;Süßes und Desserts
+ku228;die Schokolade;chocolate;Süßes und Desserts
+ku229;das Eis;ice cream;Süßes und Desserts
+ku230;die Kugel Eis;scoop of ice cream;Süßes und Desserts
+ku231;der Pudding;blancmange-style pudding;Süßes und Desserts
+ku232;das Bonbon;boiled sweet;Süßes und Desserts
+ku233;der Honig;honey;Süßes und Desserts
+ku234;die Marmelade;jam;Süßes und Desserts
+ku235;der Puderzucker;icing sugar;Süßes und Desserts
+ku236;der Apfelstrudel;apple strudel;Süßes und Desserts
+ku237;der Obstsalat;fruit salad;Süßes und Desserts
+ku238;die Waffel;waffle;Süßes und Desserts
+ku239;der Pfannkuchen;pancake;Süßes und Desserts
+ku240;die Glasur;icing;Süßes und Desserts
+ku241;naschen;to nibble on sweets;Süßes und Desserts
+ku242;der Muffin;muffin;Süßes und Desserts
+ku243;das Kompott;stewed fruit;Süßes und Desserts
+ku244;die Mousse au Chocolat;chocolate mousse;Süßes und Desserts
+ku245;der Käsekuchen;cheesecake;Süßes und Desserts
+ku246;das Gummibärchen;jelly bear;Süßes und Desserts
+ku247;der Lebkuchen;gingerbread;Süßes und Desserts
+ku248;die Füllung;filling;Süßes und Desserts
+ku249;die Naschkatze;someone with a sweet tooth;Süßes und Desserts
+ku250;der Backofen;oven;Küchengeräte
+ku251;die Mikrowelle;microwave;Küchengeräte
+ku252;die Spülmaschine;dishwasher;Küchengeräte
+ku253;der Wasserkocher;kettle;Küchengeräte
+ku254;der Toaster;toaster;Küchengeräte
+ku255;die Kaffeemaschine;coffee machine;Küchengeräte
+ku256;der Mixer;blender;Küchengeräte
+ku257;der Pürierstab;hand blender;Küchengeräte
+ku258;die Küchenmaschine;food processor;Küchengeräte
+ku259;der Gefrierschrank;freezer;Küchengeräte
+ku260;die Pfanne;frying pan;Küchengeräte
+ku261;der Topf;saucepan;Küchengeräte
+ku262;der Schneebesen;whisk;Küchengeräte
+ku263;das Schneidebrett;chopping board;Küchengeräte
+ku264;das Küchenmesser;kitchen knife;Küchengeräte
+ku265;die Reibe;grater;Küchengeräte
+ku266;der Dosenöffner;tin opener;Küchengeräte
+ku267;der Flaschenöffner;bottle opener;Küchengeräte
+ku268;der Korkenzieher;corkscrew;Küchengeräte
+ku269;der Kochlöffel;wooden spoon;Küchengeräte
+ku270;der Pfannenwender;spatula;Küchengeräte
+ku271;die Schöpfkelle;ladle;Küchengeräte
+ku272;der Sparschäler;peeler;Küchengeräte
+ku273;die Küchenwaage;kitchen scales;Küchengeräte
+ku274;der Messbecher;measuring jug;Küchengeräte
+ku275;das Besteck;cutlery;Kochgeschirr und Besteck
+ku276;die Gabel;fork;Kochgeschirr und Besteck
+ku277;das Messer;knife;Kochgeschirr und Besteck
+ku278;der Löffel;spoon;Kochgeschirr und Besteck
+ku279;der Teelöffel;teaspoon;Kochgeschirr und Besteck
+ku280;der Esslöffel;tablespoon;Kochgeschirr und Besteck
+ku281;der Deckel;lid;Kochgeschirr und Besteck
+ku282;der Teller;plate;Kochgeschirr und Besteck
+ku283;die Tasse;cup;Kochgeschirr und Besteck
+ku284;das Glas;glass;Kochgeschirr und Besteck
+ku285;die Schüssel;bowl;Kochgeschirr und Besteck
+ku286;das Geschirr;crockery;Kochgeschirr und Besteck
+ku287;das Nudelholz;rolling pin;Kochgeschirr und Besteck
+ku288;die Auflaufform;baking dish;Kochgeschirr und Besteck
+ku289;das Backblech;baking tray;Kochgeschirr und Besteck
+ku290;der Becher;mug;Kochgeschirr und Besteck
+ku291;die Kaffeekanne;coffee pot;Kochgeschirr und Besteck
+ku292;die Küchenschere;kitchen scissors;Kochgeschirr und Besteck
+ku293;die Küchenzange;kitchen tongs;Kochgeschirr und Besteck
+ku294;die Untertasse;saucer;Kochgeschirr und Besteck
+ku295;den Tisch decken;to lay the table;Kochgeschirr und Besteck
+ku296;der Schnellkochtopf;pressure cooker;Kochgeschirr und Besteck
+ku297;schneiden;to cut;Zubereiten (Verben)
+ku298;schälen;to peel;Zubereiten (Verben)
+ku299;rühren;to stir;Zubereiten (Verben)
+ku300;mischen;to mix;Zubereiten (Verben)
+ku301;grillen;to grill;Zubereiten (Verben)
+ku302;dämpfen;to steam;Zubereiten (Verben)
+ku303;schmoren;to braise;Zubereiten (Verben)
+ku304;frittieren;to deep-fry;Zubereiten (Verben)
+ku305;reiben;to grate;Zubereiten (Verben)
+ku306;salzen;to salt;Zubereiten (Verben)
+ku307;abschmecken;to season to taste;Zubereiten (Verben)
+ku308;aufwärmen;to reheat;Zubereiten (Verben)
+ku309;auftauen;to defrost;Zubereiten (Verben)
+ku310;einfrieren;to freeze;Zubereiten (Verben)
+ku311;vorheizen;to preheat;Zubereiten (Verben)
+ku312;pürieren;to purée;Zubereiten (Verben)
+ku313;anbraten;to brown;Zubereiten (Verben)
+ku314;köcheln;to simmer;Zubereiten (Verben)
+ku315;überbacken;to bake au gratin;Zubereiten (Verben)
+ku316;marinieren;to marinate;Zubereiten (Verben)
+ku317;garnieren;to garnish;Zubereiten (Verben)
+ku318;würfeln;to dice;Zubereiten (Verben)
+ku319;füllen;to stuff;Zubereiten (Verben)
+ku320;aufkochen;to bring to the boil;Zubereiten (Verben)
+ku321;dünsten;to braise gently;Garmethoden
+ku322;garen;to cook;Garmethoden
+ku323;blanchieren;to blanch;Garmethoden
+ku324;pochieren;to poach;Garmethoden
+ku325;karamellisieren;to caramelise;Garmethoden
+ku326;räuchern;to smoke;Garmethoden
+ku327;reduzieren;to reduce;Garmethoden
+ku328;abschrecken;to refresh in cold water;Garmethoden
+ku329;die Garzeit;cooking time;Garmethoden
+ku330;gar;cooked through;Garmethoden
+ku331;roh;raw;Garmethoden
+ku332;durchgebraten;well done;Garmethoden
+ku333;englisch;rare;Garmethoden
+ku334;knusprig;crispy;Garmethoden
+ku335;anbrennen;to burn;Garmethoden
+ku336;zart;tender;Garmethoden
+ku337;der Geschmack;taste;Geschmack und Beschaffenheit
+ku338;salzig;salty;Geschmack und Beschaffenheit
+ku339;bitter;bitter;Geschmack und Beschaffenheit
+ku340;würzig;well-seasoned;Geschmack und Beschaffenheit
+ku341;fad;bland;Geschmack und Beschaffenheit
+ku342;köstlich;delicious;Geschmack und Beschaffenheit
+ku343;weich;soft;Geschmack und Beschaffenheit
+ku344;hart;hard;Geschmack und Beschaffenheit
+ku345;trocken;dry;Geschmack und Beschaffenheit
+ku346;zäh;tough;Geschmack und Beschaffenheit
+ku347;cremig;creamy;Geschmack und Beschaffenheit
+ku348;fettig;greasy;Geschmack und Beschaffenheit
+ku349;mild;mild;Geschmack und Beschaffenheit
+ku350;matschig;mushy;Geschmack und Beschaffenheit
+ku351;klebrig;sticky;Geschmack und Beschaffenheit
+ku352;flüssig;runny;Geschmack und Beschaffenheit
+ku353;dickflüssig;thick;Geschmack und Beschaffenheit
+ku354;körnig;grainy;Geschmack und Beschaffenheit
+ku355;luftig;fluffy;Geschmack und Beschaffenheit
+ku356;probieren;to try;Geschmack und Beschaffenheit
+ku357;der Nachgeschmack;aftertaste;Geschmack und Beschaffenheit
+ku358;die Konsistenz;texture;Geschmack und Beschaffenheit
+ku359;herzhaft;savoury;Geschmack und Beschaffenheit
+ku360;das Gramm;gram;Maße und Mengen
+ku361;das Kilogramm;kilogram;Maße und Mengen
+ku362;der Liter;litre;Maße und Mengen
+ku363;der Milliliter;millilitre;Maße und Mengen
+ku364;das Stück;piece;Maße und Mengen
+ku365;die Packung;packet;Maße und Mengen
+ku366;die Dose;tin;Maße und Mengen
+ku367;die Flasche;bottle;Maße und Mengen
+ku368;das Pfund;pound (half a kilo);Maße und Mengen
+ku369;der Bund;bunch;Maße und Mengen
+ku370;der Schuss;dash;Maße und Mengen
+ku371;der Spritzer;splash;Maße und Mengen
+ku372;die Menge;quantity;Maße und Mengen
+ku373;die Portion;portion;Maße und Mengen
+ku374;die Hälfte;half;Maße und Mengen
+ku375;das Viertel;quarter;Maße und Mengen
+ku376;abwiegen;to weigh out;Maße und Mengen
+ku377;abmessen;to measure out;Maße und Mengen
+ku378;der Würfel;cube;Maße und Mengen
+ku379;das Dutzend;dozen;Maße und Mengen
+ku380;der Tropfen;drop;Maße und Mengen
+ku381;die Handvoll;handful;Maße und Mengen
+ku382;das Päckchen;sachet;Maße und Mengen
+ku383;der Einkaufswagen;the trolley;Einkaufen und Vorrat
+ku384;der Einkaufskorb;the shopping basket;Einkaufen und Vorrat
+ku385;der Einkaufszettel;the shopping list;Einkaufen und Vorrat
+ku386;der Kassenbon;the receipt;Einkaufen und Vorrat
+ku387;das Sonderangebot;the special offer;Einkaufen und Vorrat
+ku388;das Haltbarkeitsdatum;the best-before date;Einkaufen und Vorrat
+ku389;der Vorrat;the supply;Einkaufen und Vorrat
+ku390;die Vorratskammer;the larder;Einkaufen und Vorrat
+ku391;die Konserve;the tinned food;Einkaufen und Vorrat
+ku392;tiefgekühlt;frozen;Einkaufen und Vorrat
+ku393;die Tiefkühltruhe;the chest freezer;Einkaufen und Vorrat
+ku394;haltbar;non-perishable;Einkaufen und Vorrat
+ku395;verderblich;perishable;Einkaufen und Vorrat
+ku396;abgelaufen;out of date;Einkaufen und Vorrat
+ku397;einkaufen;to do the shopping;Einkaufen und Vorrat
+ku398;vorrätig;in stock;Einkaufen und Vorrat
+ku399;der Wochenmarkt;the weekly market;Einkaufen und Vorrat
+ku400;die Tüte;the bag;Einkaufen und Vorrat
+ku401;das Pfand;the deposit;Einkaufen und Vorrat
+ku402;lagern;to store;Einkaufen und Vorrat
+ku403;das Regal;the shelf;Einkaufen und Vorrat
+ku404;das Trinkgeld;tip;Im Restaurant
+ku405;der Kellner;waiter;Im Restaurant
+ku406;die Kellnerin;waitress;Im Restaurant
+ku407;reservieren;to book;Im Restaurant
+ku408;die Vorspeise;starter;Im Restaurant
+ku409;das Hauptgericht;main course;Im Restaurant
+ku410;bestellen;to order;Im Restaurant
+ku411;die Getränkekarte;drinks menu;Im Restaurant
+ku412;das Tagesgericht;dish of the day;Im Restaurant
+ku413;die Beilage;side dish;Im Restaurant
+ku414;die Serviette;napkin;Im Restaurant
+ku415;Guten Appetit!;Enjoy your meal!;Im Restaurant
+ku416;Stimmt so.;Keep the change.;Im Restaurant
+ku417;getrennt zahlen;to pay separately;Im Restaurant
+ku418;vegetarisch;vegetarian;Im Restaurant
+ku419;der Koch;chef;Im Restaurant
+ku420;satt;full;Im Restaurant
+ku421;die Mahlzeit;meal;Mahlzeiten und Gerichte
+ku422;das Gericht;dish;Mahlzeiten und Gerichte
+ku423;der Eintopf;stew;Mahlzeiten und Gerichte
+ku424;die Bratkartoffeln;fried potatoes;Mahlzeiten und Gerichte
+ku425;der Kartoffelbrei;mashed potatoes;Mahlzeiten und Gerichte
+ku426;die Pommes;chips;Mahlzeiten und Gerichte
+ku427;der Imbiss;snack;Mahlzeiten und Gerichte
+ku428;die Soße;sauce;Mahlzeiten und Gerichte
+ku429;das Rezept;recipe;Mahlzeiten und Gerichte
+ku430;hungrig;hungry;Mahlzeiten und Gerichte
+ku431;frühstücken;to have breakfast;Mahlzeiten und Gerichte
+ku432;zu Mittag essen;to have lunch;Mahlzeiten und Gerichte
+ku433;essen gehen;to eat out;Mahlzeiten und Gerichte
+ku434;die Hygiene;hygiene;Küche und Hygiene
+ku435;das Spülmittel;washing-up liquid;Küche und Hygiene
+ku436;der Schwamm;sponge;Küche und Hygiene
+ku437;das Geschirrtuch;tea towel;Küche und Hygiene
+ku438;der Lappen;cloth;Küche und Hygiene
+ku439;abwaschen;to do the washing-up;Küche und Hygiene
+ku440;abtrocknen;to dry up;Küche und Hygiene
+ku441;die Spüle;sink;Küche und Hygiene
+ku442;sich die Hände waschen;to wash one's hands;Küche und Hygiene
+ku443;die Seife;soap;Küche und Hygiene
+ku444;sauber;clean;Küche und Hygiene
+ku445;schmutzig;dirty;Küche und Hygiene
+ku446;der Mülleimer;bin;Küche und Hygiene
+ku447;abwischen;to wipe;Küche und Hygiene
+ku448;desinfizieren;to disinfect;Küche und Hygiene
+ku449;der Keim;germ;Küche und Hygiene
+ku450;die Bakterien;bacteria;Küche und Hygiene
+ku451;schimmelig;mouldy;Küche und Hygiene
+ku452;der Schimmel;mould;Küche und Hygiene
+ku453;verdorben;off;Küche und Hygiene
+ku454;die Arbeitsfläche;worktop;Küche und Hygiene
+ku455;die Schürze;apron;Küche und Hygiene
+ku456;die Lebensmittelvergiftung;food poisoning;Küche und Hygiene
+ku457;das Küchenpapier;kitchen roll;Küche und Hygiene
+ku458;die Frischhaltefolie;cling film;Küche und Hygiene
