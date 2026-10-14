@@ -67,6 +67,20 @@ Russisch.
 über Verfahren bis Vortragssprache. Eigene Wörter lassen sich unter *Neu* anlegen,
 weitere Listen unter *Daten* als CSV einlesen.
 
+## Verben und Formen
+
+Der Stapel **Verben** bringt 60 häufige Verben in allen fünf Sprachen mit, bei
+Polnisch und Russisch als Aspektpaar. Dazu übt die App Formen: „*arbeiten* · Präsens ·
+du“, Antwort eintippen oder aufdecken, die Auflösung zeigt die ganze Tafel des Tempus.
+Jede Tafel hat ihren eigenen Lernstand, zählt im Tagespensum wie eine Karte und wandert
+mit dem Fortschritts-Code. Unter *Daten → Lernweise* lässt sich „Verbformen mitlernen“
+abschalten.
+
+Die Tafeln sind maschinell erzeugt. Wer eine Form für falsch hält, tippt in der
+Auflösung auf **Form melden**; die Meldungen sammeln sich unter *Daten* und lassen sich
+kopieren. Eigene Verben bekommen ihre Tafel beim Speichern, wenn ein API-Schlüssel
+hinterlegt ist.
+
 ## Wortliste aus Apple Notizen
 
 Unter *Neu → Liste übernehmen* nimmt die App eine Wortliste als Text an: eine Zeile je
@@ -101,6 +115,13 @@ nicht als Wort angelegt.
 
 ```bash
 python3 build.py        # erzeugt index.html aus src/template.html und daten/
+```
+
+Die Formentafeln der Verben entstehen einmalig mit einem eigenen API-Schlüssel:
+
+```bash
+export ANTHROPIC_API_KEY=sk-ant-…
+python3 formen.py       # schreibt daten/formen.json, danach build.py, commit, push
 ```
 
 Aufbau, Datenmodell, didaktische Festlegungen und bekannte Fallstricke stehen in

@@ -1,0 +1,1588 @@
+{
+ "vb019": {
+  "de": {
+   "inf": "arbeiten",
+   "tenses": [
+    {
+     "t": "Präsens",
+     "rows": [
+      {
+       "p": "ich",
+       "f": "arbeite"
+      },
+      {
+       "p": "du",
+       "f": "arbeitest"
+      },
+      {
+       "p": "er/sie/es",
+       "f": "arbeitet"
+      },
+      {
+       "p": "wir",
+       "f": "arbeiten"
+      },
+      {
+       "p": "ihr",
+       "f": "arbeitet"
+      },
+      {
+       "p": "sie/Sie",
+       "f": "arbeiten"
+      }
+     ]
+    },
+    {
+     "t": "Präteritum",
+     "rows": [
+      {
+       "p": "ich",
+       "f": "arbeitete"
+      },
+      {
+       "p": "du",
+       "f": "arbeitetest"
+      },
+      {
+       "p": "er/sie/es",
+       "f": "arbeitete"
+      },
+      {
+       "p": "wir",
+       "f": "arbeiteten"
+      },
+      {
+       "p": "ihr",
+       "f": "arbeitetet"
+      },
+      {
+       "p": "sie/Sie",
+       "f": "arbeiteten"
+      }
+     ]
+    },
+    {
+     "t": "Perfekt",
+     "rows": [
+      {
+       "p": "ich",
+       "f": "habe gearbeitet"
+      },
+      {
+       "p": "du",
+       "f": "hast gearbeitet"
+      },
+      {
+       "p": "er/sie/es",
+       "f": "hat gearbeitet"
+      },
+      {
+       "p": "wir",
+       "f": "haben gearbeitet"
+      },
+      {
+       "p": "ihr",
+       "f": "habt gearbeitet"
+      },
+      {
+       "p": "sie/Sie",
+       "f": "haben gearbeitet"
+      }
+     ]
+    },
+    {
+     "t": "Futur I",
+     "rows": [
+      {
+       "p": "ich",
+       "f": "werde arbeiten"
+      },
+      {
+       "p": "du",
+       "f": "wirst arbeiten"
+      },
+      {
+       "p": "er/sie/es",
+       "f": "wird arbeiten"
+      },
+      {
+       "p": "wir",
+       "f": "werden arbeiten"
+      },
+      {
+       "p": "ihr",
+       "f": "werdet arbeiten"
+      },
+      {
+       "p": "sie/Sie",
+       "f": "werden arbeiten"
+      }
+     ]
+    },
+    {
+     "t": "Imperativ",
+     "rows": [
+      {
+       "p": "du",
+       "f": "arbeite"
+      },
+      {
+       "p": "ihr",
+       "f": "arbeitet"
+      },
+      {
+       "p": "Sie",
+       "f": "arbeiten Sie"
+      }
+     ]
+    },
+    {
+     "t": "Konjunktiv II",
+     "rows": [
+      {
+       "p": "ich",
+       "f": "würde arbeiten"
+      },
+      {
+       "p": "du",
+       "f": "würdest arbeiten"
+      },
+      {
+       "p": "er/sie/es",
+       "f": "würde arbeiten"
+      },
+      {
+       "p": "wir",
+       "f": "würden arbeiten"
+      },
+      {
+       "p": "ihr",
+       "f": "würdet arbeiten"
+      },
+      {
+       "p": "sie/Sie",
+       "f": "würden arbeiten"
+      }
+     ]
+    }
+   ]
+  },
+  "en": {
+   "inf": "to work",
+   "tenses": [
+    {
+     "t": "Präsens",
+     "rows": [
+      {
+       "p": "I",
+       "f": "work"
+      },
+      {
+       "p": "you",
+       "f": "work"
+      },
+      {
+       "p": "he/she/it",
+       "f": "works"
+      },
+      {
+       "p": "we",
+       "f": "work"
+      },
+      {
+       "p": "you",
+       "f": "work"
+      },
+      {
+       "p": "they",
+       "f": "work"
+      }
+     ]
+    },
+    {
+     "t": "Vergangenheit",
+     "rows": [
+      {
+       "p": "I",
+       "f": "worked"
+      },
+      {
+       "p": "you",
+       "f": "worked"
+      },
+      {
+       "p": "he/she/it",
+       "f": "worked"
+      },
+      {
+       "p": "we",
+       "f": "worked"
+      },
+      {
+       "p": "you",
+       "f": "worked"
+      },
+      {
+       "p": "they",
+       "f": "worked"
+      }
+     ]
+    },
+    {
+     "t": "Perfekt",
+     "rows": [
+      {
+       "p": "I",
+       "f": "have worked"
+      },
+      {
+       "p": "you",
+       "f": "have worked"
+      },
+      {
+       "p": "he/she/it",
+       "f": "has worked"
+      },
+      {
+       "p": "we",
+       "f": "have worked"
+      },
+      {
+       "p": "you",
+       "f": "have worked"
+      },
+      {
+       "p": "they",
+       "f": "have worked"
+      }
+     ]
+    },
+    {
+     "t": "Futur",
+     "rows": [
+      {
+       "p": "I",
+       "f": "will work"
+      },
+      {
+       "p": "you",
+       "f": "will work"
+      },
+      {
+       "p": "he/she/it",
+       "f": "will work"
+      },
+      {
+       "p": "we",
+       "f": "will work"
+      },
+      {
+       "p": "you",
+       "f": "will work"
+      },
+      {
+       "p": "they",
+       "f": "will work"
+      }
+     ]
+    },
+    {
+     "t": "Imperativ",
+     "rows": [
+      {
+       "p": "you",
+       "f": "work"
+      },
+      {
+       "p": "we",
+       "f": "let's work"
+      }
+     ]
+    },
+    {
+     "t": "Formen",
+     "rows": [
+      {
+       "p": "Grundform",
+       "f": "work"
+      },
+      {
+       "p": "3. Person",
+       "f": "works"
+      },
+      {
+       "p": "ing-Form",
+       "f": "working"
+      },
+      {
+       "p": "Vergangenheit",
+       "f": "worked"
+      },
+      {
+       "p": "Partizip",
+       "f": "worked"
+      }
+     ]
+    }
+   ]
+  },
+  "fr": {
+   "inf": "travailler",
+   "tenses": [
+    {
+     "t": "Présent",
+     "rows": [
+      {
+       "p": "je",
+       "f": "travaille"
+      },
+      {
+       "p": "tu",
+       "f": "travailles"
+      },
+      {
+       "p": "il/elle",
+       "f": "travaille"
+      },
+      {
+       "p": "nous",
+       "f": "travaillons"
+      },
+      {
+       "p": "vous",
+       "f": "travaillez"
+      },
+      {
+       "p": "ils/elles",
+       "f": "travaillent"
+      }
+     ]
+    },
+    {
+     "t": "Passé composé",
+     "rows": [
+      {
+       "p": "je",
+       "f": "ai travaillé"
+      },
+      {
+       "p": "tu",
+       "f": "as travaillé"
+      },
+      {
+       "p": "il/elle",
+       "f": "a travaillé"
+      },
+      {
+       "p": "nous",
+       "f": "avons travaillé"
+      },
+      {
+       "p": "vous",
+       "f": "avez travaillé"
+      },
+      {
+       "p": "ils/elles",
+       "f": "ont travaillé"
+      }
+     ]
+    },
+    {
+     "t": "Imparfait",
+     "rows": [
+      {
+       "p": "je",
+       "f": "travaillais"
+      },
+      {
+       "p": "tu",
+       "f": "travaillais"
+      },
+      {
+       "p": "il/elle",
+       "f": "travaillait"
+      },
+      {
+       "p": "nous",
+       "f": "travaillions"
+      },
+      {
+       "p": "vous",
+       "f": "travailliez"
+      },
+      {
+       "p": "ils/elles",
+       "f": "travaillaient"
+      }
+     ]
+    },
+    {
+     "t": "Futur simple",
+     "rows": [
+      {
+       "p": "je",
+       "f": "travaillerai"
+      },
+      {
+       "p": "tu",
+       "f": "travailleras"
+      },
+      {
+       "p": "il/elle",
+       "f": "travaillera"
+      },
+      {
+       "p": "nous",
+       "f": "travaillerons"
+      },
+      {
+       "p": "vous",
+       "f": "travaillerez"
+      },
+      {
+       "p": "ils/elles",
+       "f": "travailleront"
+      }
+     ]
+    },
+    {
+     "t": "Impératif",
+     "rows": [
+      {
+       "p": "tu",
+       "f": "travaille"
+      },
+      {
+       "p": "nous",
+       "f": "travaillons"
+      },
+      {
+       "p": "vous",
+       "f": "travaillez"
+      }
+     ]
+    },
+    {
+     "t": "Subjonctif présent",
+     "rows": [
+      {
+       "p": "que je",
+       "f": "travaille"
+      },
+      {
+       "p": "que tu",
+       "f": "travailles"
+      },
+      {
+       "p": "qu'il/elle",
+       "f": "travaille"
+      },
+      {
+       "p": "que nous",
+       "f": "travaillions"
+      },
+      {
+       "p": "que vous",
+       "f": "travailliez"
+      },
+      {
+       "p": "qu'ils/elles",
+       "f": "travaillent"
+      }
+     ]
+    }
+   ]
+  },
+  "pl": {
+   "inf": "pracować",
+   "aspect": "ipf",
+   "pair": "popracować",
+   "tenses": [
+    {
+     "t": "Präsens",
+     "rows": [
+      {
+       "p": "ja",
+       "f": "pracuję"
+      },
+      {
+       "p": "ty",
+       "f": "pracujesz"
+      },
+      {
+       "p": "on/ona/ono",
+       "f": "pracuje"
+      },
+      {
+       "p": "my",
+       "f": "pracujemy"
+      },
+      {
+       "p": "wy",
+       "f": "pracujecie"
+      },
+      {
+       "p": "oni/one",
+       "f": "pracują"
+      }
+     ]
+    },
+    {
+     "t": "Vergangenheit",
+     "rows": [
+      {
+       "p": "ja (m)",
+       "f": "pracowałem"
+      },
+      {
+       "p": "ja (f)",
+       "f": "pracowałam"
+      },
+      {
+       "p": "ty (m)",
+       "f": "pracowałeś"
+      },
+      {
+       "p": "ty (f)",
+       "f": "pracowałaś"
+      },
+      {
+       "p": "on",
+       "f": "pracował"
+      },
+      {
+       "p": "ona",
+       "f": "pracowała"
+      },
+      {
+       "p": "ono",
+       "f": "pracowało"
+      },
+      {
+       "p": "my (m-os.)",
+       "f": "pracowaliśmy"
+      },
+      {
+       "p": "my (nie-m-os.)",
+       "f": "pracowałyśmy"
+      },
+      {
+       "p": "wy (m-os.)",
+       "f": "pracowaliście"
+      },
+      {
+       "p": "wy (nie-m-os.)",
+       "f": "pracowałyście"
+      },
+      {
+       "p": "oni",
+       "f": "pracowali"
+      },
+      {
+       "p": "one",
+       "f": "pracowały"
+      }
+     ]
+    },
+    {
+     "t": "Futur (unvollendet)",
+     "rows": [
+      {
+       "p": "ja",
+       "f": "będę pracować"
+      },
+      {
+       "p": "ty",
+       "f": "będziesz pracować"
+      },
+      {
+       "p": "on/ona/ono",
+       "f": "będzie pracować"
+      },
+      {
+       "p": "my",
+       "f": "będziemy pracować"
+      },
+      {
+       "p": "wy",
+       "f": "będziecie pracować"
+      },
+      {
+       "p": "oni/one",
+       "f": "będą pracować"
+      }
+     ]
+    },
+    {
+     "t": "Futur (vollendet)",
+     "rows": [
+      {
+       "p": "ja",
+       "f": "popracuję"
+      },
+      {
+       "p": "ty",
+       "f": "popracujesz"
+      },
+      {
+       "p": "on/ona/ono",
+       "f": "popracuje"
+      },
+      {
+       "p": "my",
+       "f": "popracujemy"
+      },
+      {
+       "p": "wy",
+       "f": "popracujecie"
+      },
+      {
+       "p": "oni/one",
+       "f": "popracują"
+      }
+     ]
+    },
+    {
+     "t": "Imperativ",
+     "rows": [
+      {
+       "p": "ty",
+       "f": "pracuj"
+      },
+      {
+       "p": "my",
+       "f": "pracujmy"
+      },
+      {
+       "p": "wy",
+       "f": "pracujcie"
+      }
+     ]
+    }
+   ]
+  },
+  "ru": {
+   "inf": "рабо́тать",
+   "aspect": "ipf",
+   "pair": "порабо́тать",
+   "tenses": [
+    {
+     "t": "Präsens",
+     "rows": [
+      {
+       "p": "я",
+       "f": "рабо́таю"
+      },
+      {
+       "p": "ты",
+       "f": "рабо́таешь"
+      },
+      {
+       "p": "он/она́",
+       "f": "рабо́тает"
+      },
+      {
+       "p": "мы",
+       "f": "рабо́таем"
+      },
+      {
+       "p": "вы",
+       "f": "рабо́таете"
+      },
+      {
+       "p": "они́",
+       "f": "рабо́тают"
+      }
+     ]
+    },
+    {
+     "t": "Vergangenheit",
+     "rows": [
+      {
+       "p": "он",
+       "f": "рабо́тал"
+      },
+      {
+       "p": "она́",
+       "f": "рабо́тала"
+      },
+      {
+       "p": "оно́",
+       "f": "рабо́тало"
+      },
+      {
+       "p": "они́",
+       "f": "рабо́тали"
+      }
+     ]
+    },
+    {
+     "t": "Futur (unvollendet)",
+     "rows": [
+      {
+       "p": "я",
+       "f": "бу́ду рабо́тать"
+      },
+      {
+       "p": "ты",
+       "f": "бу́дешь рабо́тать"
+      },
+      {
+       "p": "он/она́",
+       "f": "бу́дет рабо́тать"
+      },
+      {
+       "p": "мы",
+       "f": "бу́дем рабо́тать"
+      },
+      {
+       "p": "вы",
+       "f": "бу́дете рабо́тать"
+      },
+      {
+       "p": "они́",
+       "f": "бу́дут рабо́тать"
+      }
+     ]
+    },
+    {
+     "t": "Futur (vollendet)",
+     "rows": [
+      {
+       "p": "я",
+       "f": "порабо́таю"
+      },
+      {
+       "p": "ты",
+       "f": "порабо́таешь"
+      },
+      {
+       "p": "он/она́",
+       "f": "порабо́тает"
+      },
+      {
+       "p": "мы",
+       "f": "порабо́таем"
+      },
+      {
+       "p": "вы",
+       "f": "порабо́таете"
+      },
+      {
+       "p": "они́",
+       "f": "порабо́тают"
+      }
+     ]
+    },
+    {
+     "t": "Imperativ",
+     "rows": [
+      {
+       "p": "ты",
+       "f": "рабо́тай"
+      },
+      {
+       "p": "вы",
+       "f": "рабо́тайте"
+      }
+     ]
+    }
+   ]
+  },
+  "ex": "She works at the career centre in Cologne.",
+  "exde": "Sie arbeitet im Karrierecenter in Köln."
+ },
+ "vb011": {
+  "de": {
+   "inf": "fragen",
+   "tenses": [
+    {
+     "t": "Präsens",
+     "rows": [
+      {
+       "p": "ich",
+       "f": "frage"
+      },
+      {
+       "p": "du",
+       "f": "fragst"
+      },
+      {
+       "p": "er/sie/es",
+       "f": "fragt"
+      },
+      {
+       "p": "wir",
+       "f": "fragen"
+      },
+      {
+       "p": "ihr",
+       "f": "fragt"
+      },
+      {
+       "p": "sie/Sie",
+       "f": "fragen"
+      }
+     ]
+    },
+    {
+     "t": "Präteritum",
+     "rows": [
+      {
+       "p": "ich",
+       "f": "fragte"
+      },
+      {
+       "p": "du",
+       "f": "fragtest"
+      },
+      {
+       "p": "er/sie/es",
+       "f": "fragte"
+      },
+      {
+       "p": "wir",
+       "f": "fragten"
+      },
+      {
+       "p": "ihr",
+       "f": "fragtet"
+      },
+      {
+       "p": "sie/Sie",
+       "f": "fragten"
+      }
+     ]
+    },
+    {
+     "t": "Perfekt",
+     "rows": [
+      {
+       "p": "ich",
+       "f": "habe gefragt"
+      },
+      {
+       "p": "du",
+       "f": "hast gefragt"
+      },
+      {
+       "p": "er/sie/es",
+       "f": "hat gefragt"
+      },
+      {
+       "p": "wir",
+       "f": "haben gefragt"
+      },
+      {
+       "p": "ihr",
+       "f": "habt gefragt"
+      },
+      {
+       "p": "sie/Sie",
+       "f": "haben gefragt"
+      }
+     ]
+    },
+    {
+     "t": "Futur I",
+     "rows": [
+      {
+       "p": "ich",
+       "f": "werde fragen"
+      },
+      {
+       "p": "du",
+       "f": "wirst fragen"
+      },
+      {
+       "p": "er/sie/es",
+       "f": "wird fragen"
+      },
+      {
+       "p": "wir",
+       "f": "werden fragen"
+      },
+      {
+       "p": "ihr",
+       "f": "werdet fragen"
+      },
+      {
+       "p": "sie/Sie",
+       "f": "werden fragen"
+      }
+     ]
+    },
+    {
+     "t": "Imperativ",
+     "rows": [
+      {
+       "p": "du",
+       "f": "frag"
+      },
+      {
+       "p": "ihr",
+       "f": "fragt"
+      },
+      {
+       "p": "Sie",
+       "f": "fragen Sie"
+      }
+     ]
+    },
+    {
+     "t": "Konjunktiv II",
+     "rows": [
+      {
+       "p": "ich",
+       "f": "würde fragen"
+      },
+      {
+       "p": "du",
+       "f": "würdest fragen"
+      },
+      {
+       "p": "er/sie/es",
+       "f": "würde fragen"
+      },
+      {
+       "p": "wir",
+       "f": "würden fragen"
+      },
+      {
+       "p": "ihr",
+       "f": "würdet fragen"
+      },
+      {
+       "p": "sie/Sie",
+       "f": "würden fragen"
+      }
+     ]
+    }
+   ]
+  },
+  "en": {
+   "inf": "to ask",
+   "tenses": [
+    {
+     "t": "Präsens",
+     "rows": [
+      {
+       "p": "I",
+       "f": "ask"
+      },
+      {
+       "p": "you",
+       "f": "ask"
+      },
+      {
+       "p": "he/she/it",
+       "f": "asks"
+      },
+      {
+       "p": "we",
+       "f": "ask"
+      },
+      {
+       "p": "you",
+       "f": "ask"
+      },
+      {
+       "p": "they",
+       "f": "ask"
+      }
+     ]
+    },
+    {
+     "t": "Vergangenheit",
+     "rows": [
+      {
+       "p": "I",
+       "f": "asked"
+      },
+      {
+       "p": "you",
+       "f": "asked"
+      },
+      {
+       "p": "he/she/it",
+       "f": "asked"
+      },
+      {
+       "p": "we",
+       "f": "asked"
+      },
+      {
+       "p": "you",
+       "f": "asked"
+      },
+      {
+       "p": "they",
+       "f": "asked"
+      }
+     ]
+    },
+    {
+     "t": "Perfekt",
+     "rows": [
+      {
+       "p": "I",
+       "f": "have asked"
+      },
+      {
+       "p": "you",
+       "f": "have asked"
+      },
+      {
+       "p": "he/she/it",
+       "f": "has asked"
+      },
+      {
+       "p": "we",
+       "f": "have asked"
+      },
+      {
+       "p": "you",
+       "f": "have asked"
+      },
+      {
+       "p": "they",
+       "f": "have asked"
+      }
+     ]
+    },
+    {
+     "t": "Futur",
+     "rows": [
+      {
+       "p": "I",
+       "f": "will ask"
+      },
+      {
+       "p": "you",
+       "f": "will ask"
+      },
+      {
+       "p": "he/she/it",
+       "f": "will ask"
+      },
+      {
+       "p": "we",
+       "f": "will ask"
+      },
+      {
+       "p": "you",
+       "f": "will ask"
+      },
+      {
+       "p": "they",
+       "f": "will ask"
+      }
+     ]
+    },
+    {
+     "t": "Imperativ",
+     "rows": [
+      {
+       "p": "you",
+       "f": "ask"
+      },
+      {
+       "p": "we",
+       "f": "let's ask"
+      }
+     ]
+    },
+    {
+     "t": "Formen",
+     "rows": [
+      {
+       "p": "Grundform",
+       "f": "ask"
+      },
+      {
+       "p": "3. Person",
+       "f": "asks"
+      },
+      {
+       "p": "ing-Form",
+       "f": "asking"
+      },
+      {
+       "p": "Vergangenheit",
+       "f": "asked"
+      },
+      {
+       "p": "Partizip",
+       "f": "asked"
+      }
+     ]
+    }
+   ]
+  },
+  "fr": {
+   "inf": "demander",
+   "tenses": [
+    {
+     "t": "Présent",
+     "rows": [
+      {
+       "p": "je",
+       "f": "demande"
+      },
+      {
+       "p": "tu",
+       "f": "demandes"
+      },
+      {
+       "p": "il/elle",
+       "f": "demande"
+      },
+      {
+       "p": "nous",
+       "f": "demandons"
+      },
+      {
+       "p": "vous",
+       "f": "demandez"
+      },
+      {
+       "p": "ils/elles",
+       "f": "demandent"
+      }
+     ]
+    },
+    {
+     "t": "Passé composé",
+     "rows": [
+      {
+       "p": "je",
+       "f": "ai demandé"
+      },
+      {
+       "p": "tu",
+       "f": "as demandé"
+      },
+      {
+       "p": "il/elle",
+       "f": "a demandé"
+      },
+      {
+       "p": "nous",
+       "f": "avons demandé"
+      },
+      {
+       "p": "vous",
+       "f": "avez demandé"
+      },
+      {
+       "p": "ils/elles",
+       "f": "ont demandé"
+      }
+     ]
+    },
+    {
+     "t": "Imparfait",
+     "rows": [
+      {
+       "p": "je",
+       "f": "demandais"
+      },
+      {
+       "p": "tu",
+       "f": "demandais"
+      },
+      {
+       "p": "il/elle",
+       "f": "demandait"
+      },
+      {
+       "p": "nous",
+       "f": "demandions"
+      },
+      {
+       "p": "vous",
+       "f": "demandiez"
+      },
+      {
+       "p": "ils/elles",
+       "f": "demandaient"
+      }
+     ]
+    },
+    {
+     "t": "Futur simple",
+     "rows": [
+      {
+       "p": "je",
+       "f": "demanderai"
+      },
+      {
+       "p": "tu",
+       "f": "demanderas"
+      },
+      {
+       "p": "il/elle",
+       "f": "demandera"
+      },
+      {
+       "p": "nous",
+       "f": "demanderons"
+      },
+      {
+       "p": "vous",
+       "f": "demanderez"
+      },
+      {
+       "p": "ils/elles",
+       "f": "demanderont"
+      }
+     ]
+    },
+    {
+     "t": "Impératif",
+     "rows": [
+      {
+       "p": "tu",
+       "f": "demande"
+      },
+      {
+       "p": "nous",
+       "f": "demandons"
+      },
+      {
+       "p": "vous",
+       "f": "demandez"
+      }
+     ]
+    },
+    {
+     "t": "Subjonctif présent",
+     "rows": [
+      {
+       "p": "que je",
+       "f": "demande"
+      },
+      {
+       "p": "que tu",
+       "f": "demandes"
+      },
+      {
+       "p": "qu'il/elle",
+       "f": "demande"
+      },
+      {
+       "p": "que nous",
+       "f": "demandions"
+      },
+      {
+       "p": "que vous",
+       "f": "demandiez"
+      },
+      {
+       "p": "qu'ils/elles",
+       "f": "demandent"
+      }
+     ]
+    }
+   ]
+  },
+  "pl": {
+   "inf": "pytać",
+   "aspect": "ipf",
+   "pair": "zapytać",
+   "tenses": [
+    {
+     "t": "Präsens",
+     "rows": [
+      {
+       "p": "ja",
+       "f": "pytam"
+      },
+      {
+       "p": "ty",
+       "f": "pytasz"
+      },
+      {
+       "p": "on/ona/ono",
+       "f": "pyta"
+      },
+      {
+       "p": "my",
+       "f": "pytamy"
+      },
+      {
+       "p": "wy",
+       "f": "pytacie"
+      },
+      {
+       "p": "oni/one",
+       "f": "pytają"
+      }
+     ]
+    },
+    {
+     "t": "Vergangenheit",
+     "rows": [
+      {
+       "p": "ja (m)",
+       "f": "pytałem"
+      },
+      {
+       "p": "ja (f)",
+       "f": "pytałam"
+      },
+      {
+       "p": "ty (m)",
+       "f": "pytałeś"
+      },
+      {
+       "p": "ty (f)",
+       "f": "pytałaś"
+      },
+      {
+       "p": "on",
+       "f": "pytał"
+      },
+      {
+       "p": "ona",
+       "f": "pytała"
+      },
+      {
+       "p": "ono",
+       "f": "pytało"
+      },
+      {
+       "p": "my (m-os.)",
+       "f": "pytaliśmy"
+      },
+      {
+       "p": "my (nie-m-os.)",
+       "f": "pytałyśmy"
+      },
+      {
+       "p": "wy (m-os.)",
+       "f": "pytaliście"
+      },
+      {
+       "p": "wy (nie-m-os.)",
+       "f": "pytałyście"
+      },
+      {
+       "p": "oni",
+       "f": "pytali"
+      },
+      {
+       "p": "one",
+       "f": "pytały"
+      }
+     ]
+    },
+    {
+     "t": "Futur (unvollendet)",
+     "rows": [
+      {
+       "p": "ja",
+       "f": "będę pytać"
+      },
+      {
+       "p": "ty",
+       "f": "będziesz pytać"
+      },
+      {
+       "p": "on/ona/ono",
+       "f": "będzie pytać"
+      },
+      {
+       "p": "my",
+       "f": "będziemy pytać"
+      },
+      {
+       "p": "wy",
+       "f": "będziecie pytać"
+      },
+      {
+       "p": "oni/one",
+       "f": "będą pytać"
+      }
+     ]
+    },
+    {
+     "t": "Futur (vollendet)",
+     "rows": [
+      {
+       "p": "ja",
+       "f": "zapytam"
+      },
+      {
+       "p": "ty",
+       "f": "zapytasz"
+      },
+      {
+       "p": "on/ona/ono",
+       "f": "zapyta"
+      },
+      {
+       "p": "my",
+       "f": "zapytamy"
+      },
+      {
+       "p": "wy",
+       "f": "zapytacie"
+      },
+      {
+       "p": "oni/one",
+       "f": "zapytają"
+      }
+     ]
+    },
+    {
+     "t": "Imperativ",
+     "rows": [
+      {
+       "p": "ty",
+       "f": "pytaj"
+      },
+      {
+       "p": "my",
+       "f": "pytajmy"
+      },
+      {
+       "p": "wy",
+       "f": "pytajcie"
+      }
+     ]
+    }
+   ]
+  },
+  "ru": {
+   "inf": "спра́шивать",
+   "aspect": "ipf",
+   "pair": "спроси́ть",
+   "tenses": [
+    {
+     "t": "Präsens",
+     "rows": [
+      {
+       "p": "я",
+       "f": "спра́шиваю"
+      },
+      {
+       "p": "ты",
+       "f": "спра́шиваешь"
+      },
+      {
+       "p": "он/она́",
+       "f": "спра́шивает"
+      },
+      {
+       "p": "мы",
+       "f": "спра́шиваем"
+      },
+      {
+       "p": "вы",
+       "f": "спра́шиваете"
+      },
+      {
+       "p": "они́",
+       "f": "спра́шивают"
+      }
+     ]
+    },
+    {
+     "t": "Vergangenheit",
+     "rows": [
+      {
+       "p": "он",
+       "f": "спра́шивал"
+      },
+      {
+       "p": "она́",
+       "f": "спра́шивала"
+      },
+      {
+       "p": "оно́",
+       "f": "спра́шивало"
+      },
+      {
+       "p": "они́",
+       "f": "спра́шивали"
+      }
+     ]
+    },
+    {
+     "t": "Futur (unvollendet)",
+     "rows": [
+      {
+       "p": "я",
+       "f": "бу́ду спра́шивать"
+      },
+      {
+       "p": "ты",
+       "f": "бу́дешь спра́шивать"
+      },
+      {
+       "p": "он/она́",
+       "f": "бу́дет спра́шивать"
+      },
+      {
+       "p": "мы",
+       "f": "бу́дем спра́шивать"
+      },
+      {
+       "p": "вы",
+       "f": "бу́дете спра́шивать"
+      },
+      {
+       "p": "они́",
+       "f": "бу́дут спра́шивать"
+      }
+     ]
+    },
+    {
+     "t": "Futur (vollendet)",
+     "rows": [
+      {
+       "p": "я",
+       "f": "спрошу́"
+      },
+      {
+       "p": "ты",
+       "f": "спро́сишь"
+      },
+      {
+       "p": "он/она́",
+       "f": "спро́сит"
+      },
+      {
+       "p": "мы",
+       "f": "спро́сим"
+      },
+      {
+       "p": "вы",
+       "f": "спро́сите"
+      },
+      {
+       "p": "они́",
+       "f": "спро́сят"
+      }
+     ]
+    },
+    {
+     "t": "Imperativ",
+     "rows": [
+      {
+       "p": "ты",
+       "f": "спра́шивай"
+      },
+      {
+       "p": "вы",
+       "f": "спра́шивайте"
+      }
+     ]
+    }
+   ]
+  },
+  "ex": "Applicants often ask about the training.",
+  "exde": "Bewerber fragen oft nach der Ausbildung."
+ }
+}

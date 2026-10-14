@@ -40,7 +40,7 @@ async function server() {
     await p.click('#welcomeGo');
     ok('Begrüßung nach „Los geht\'s“ weg', !(await p.isVisible('#welcome')));
     const stat = await p.textContent('#stat');
-    ok('Grundstock geladen (301 Wörter im Status)', /301/.test(stat), stat.trim().replace(/\s+/g,' ').slice(0,80));
+    ok('Grundstock geladen (361 Wörter im Status)', /361/.test(stat), stat.trim().replace(/\s+/g,' ').slice(0,80));
     await p.click('#start');
     ok('Lernfenster offen', await p.isVisible('#drill'));
     ok('Frage sichtbar', (await p.textContent('#qWord')).trim().length > 0);
@@ -84,11 +84,12 @@ async function server() {
     ok('Nur anschauen: Startknopf heißt „Durchsehen starten“', (await p.textContent('#start')).trim() === 'Durchsehen starten');
     await p.click('#start'); await p.waitForTimeout(200);
     ok('Nur anschauen: Lösung sofort sichtbar, keine Bewertung, „Weiter“', await p.isVisible('#ans') && !(await p.isVisible('#grades')) && !(await p.isVisible('#reveal')) && await p.isVisible('#next'));
-    ok('Nur anschauen: ganze Auswahl, Kennzeichnung „Durchsehen“', /Noch 301 von 301/.test(await p.textContent('#counter')) && (await p.textContent('#cardState')) === 'Durchsehen');
+    const total = +((await p.textContent('#counter')).match(/von (\d+)/) || [0, 0])[1];
+    ok('Nur anschauen: ganze Auswahl samt Formkarten, Kennzeichnung „Durchsehen“', total === 361 + 24 && (await p.textContent('#counter')) === 'Noch ' + total + ' von ' + total && (await p.textContent('#cardState')) === 'Durchsehen', await p.textContent('#counter'));
     await p.click('#next'); await p.waitForTimeout(100);
-    ok('Nur anschauen: „Weiter“ blättert', /Noch 300 von 301/.test(await p.textContent('#counter')) && await p.isVisible('#ans'));
+    ok('Nur anschauen: „Weiter“ blättert', (await p.textContent('#counter')) === 'Noch ' + (total - 1) + ' von ' + total && await p.isVisible('#ans'));
     await p.keyboard.press('Space'); await p.waitForTimeout(100);
-    ok('Nur anschauen: Leertaste blättert', /Noch 299 von 301/.test(await p.textContent('#counter')));
+    ok('Nur anschauen: Leertaste blättert', (await p.textContent('#counter')) === 'Noch ' + (total - 2) + ' von ' + total);
     await p.click('#stop'); await p.waitForTimeout(100);
     const dueAfter = JSON.stringify(await p.evaluate(STATES));
     ok('Nur anschauen: Lernstand unverändert', dueBefore === dueAfter);
@@ -137,7 +138,7 @@ async function server() {
     // Vorzeitigkeitsregel: Karte A hat EN in einem Tag, PL neu → Richtung DE→EN,PL, beides richtig
     await p.evaluate(aId => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const far = Date.now() + 200 * 864e5;
       d.items.forEach(i => { if (i.id !== aId) i.p = { en: { s: 6, d: far }, pl: { s: 6, d: far } }; else i.p = { en: { s: 0, d: Date.now() + 864e5 } }; });
-      d.cfg.to = ['en', 'pl']; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); }, cardA.id);
+      d.cfg.to = ['en', 'pl']; d.cfg.forms = false; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); }, cardA.id);
     await p.reload(); await p.waitForTimeout(400);
     await p.click('#start'); await p.waitForTimeout(200);
     const curA = await p.evaluate(aId => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.find(i => i.id === aId), cardA.id);
@@ -174,9 +175,17 @@ async function server() {
     const p = await ctx.newPage();
     const errs = []; p.on('pageerror', e => errs.push(e.message));
     // Nachgestellte API: füllt leere Felder aus den gelieferten Angaben, prüft Anfrageform
-    const requests = [];
+    const requests = [], formReqs = [];
     await p.route('https://api.anthropic.com/**', async route => {
       const body = JSON.parse(route.request().postData());
+      if (body.output_config.format.schema.properties.de) {
+        // Formentafel für ein Verb: kleinste gültige Antwort
+        formReqs.push(body);
+        const lang = { inf: 'x', aspect: '', pair: '', note: '', tenses: [{ t: 'Präsens', rows: [{ p: 'ich', f: 'x' }] }] };
+        const o = { de: lang, en: lang, fr: lang, pl: lang, ru: lang, ex: 'Ex.', exde: 'Bsp.' };
+        await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ stop_reason: 'end_turn', content: [{ type: 'text', text: JSON.stringify(o) }] }) });
+        return;
+      }
       requests.push(body);
       const list = JSON.parse(body.messages[0].content.slice(body.messages[0].content.indexOf('[')));
       const items = list.map(e => { const w = e.de || e.en || e.wort || 'x'; return { de: e.de || 'de:' + w, en: e.en || 'en:' + w, fr: 'fr:' + w, pl: 'pl:' + w, ru: 'ru:' + w, rulat: 'lat:' + w, ex: 'Ex ' + w + '.', exde: 'Bsp ' + w + '.', cat: e.cat || 'Test' }; });
@@ -192,7 +201,7 @@ async function server() {
     await p.click('#listGo'); await p.waitForTimeout(200);
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
     ok('Liste erneut: nichts doppelt angelegt', items.length === 3 && /0 Wörter/.test(await p.textContent('#listMsg')) && /3 schon vorhanden/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
-    ok('Nachübersetzen: 3 unvollständige Wörter gemeldet', /^3 Wörter ohne/.test((await p.textContent('#fillInfo')).trim()), (await p.textContent('#fillInfo')).trim());
+    ok('Nachübersetzen: 3 unvollständige Wörter und 58 Verben ohne Formen gemeldet', /^3 Wörter ohne.*58 Verben ohne Formen/.test((await p.textContent('#fillInfo')).trim()), (await p.textContent('#fillInfo')).trim());
     // Schlüssel hinterlegen, Liste in Englisch mit Übersetzung
     await p.fill('#apiKey', 'sk-ant-test'); await p.click('#keySave');
     await p.click('#listLang [data-l="en"]');
@@ -207,11 +216,13 @@ async function server() {
     ok('API-Anfrage: Modell, JSON-Schema, Schlüssel im Kopf', req && req.model === 'claude-opus-5-5' && req.output_config.format.type === 'json_schema' && req.output_config.format.schema.properties.items.items.required.includes('rulat') && req.max_tokens >= 4000, req && JSON.stringify([req.model, req.output_config && req.output_config.format.type]));
     // Nachübersetzen füllt die drei alten Wörter
     await p.click('#fillGo');
-    await p.waitForFunction(() => /ergänzt/.test(document.querySelector('#fillMsg').textContent), null, { timeout: 5000 }).catch(() => {});
+    await p.waitForFunction(() => /ergänzt|Verben mit Formen/.test(document.querySelector('#fillMsg').textContent), null, { timeout: 20000 }).catch(() => {});
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
     ok('Nachübersetzen: alte Wörter vervollständigt, eingegebene Übersetzung bleibt', items.every(i => i.fr && i.pl && i.ru && i.ex && i.exde) && items[0].en === 'apple' && items[1].en === 'en:die Birne', JSON.stringify(items.map(i => [i.de, i.en, i.fr])));
     ok('Nachübersetzen: nichts mehr offen', /vollständig übersetzt/.test(await p.textContent('#fillInfo')) && await p.$eval('#fillGo', b => b.disabled), (await p.textContent('#fillInfo')).trim());
-    ok('Zwei Aufrufe für zwei Übersetzungsrunden', requests.length === 2, 'Aufrufe: ' + requests.length);
+    ok('Zwei Aufrufe für zwei Übersetzungsrunden, 58 für Verbformen', requests.length === 2 && formReqs.length === 58 && formReqs[0].output_config.format.schema.required.includes('ru'), 'Aufrufe: ' + requests.length + ' / Formen: ' + formReqs.length);
+    const vf = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.forms).length);
+    ok('Verbformen am Wort gespeichert, Beispielsätze ergänzt', vf === 58 && await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.find(i => i.id === 'vb001').ex === 'Ex.'), 'mit Formen: ' + vf);
     // Liste aus dem Link
     await p.goto('about:blank'); await p.goto(URL + '#liste=' + encodeURIComponent('Urlaub – leave\nDienstreise')); await p.waitForTimeout(400);
     ok('Link: Liste im Feld, Ansicht „Neu“, Adresse bereinigt', (await p.inputValue('#listBox')) === 'Urlaub – leave\nDienstreise' && await p.$eval('#v-new', v => v.classList.contains('on')) && await p.evaluate(() => location.hash === '' && location.search === '') && /2 Zeilen aus dem Link/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
@@ -219,14 +230,70 @@ async function server() {
     await ctx.close();
   }
 
-  // 3. Start ohne Speicher
+  // 3. Formkarten: Stapel Verben, Richtung DE→EN, nur Formen fällig
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    await ctx.addInitScript(() => { try { localStorage.setItem('vokabeltrainer-v1-seen', '1'); } catch (e) {} });
+    const p = await ctx.newPage();
+    const errs = []; p.on('pageerror', e => errs.push(e.message));
+    await p.goto(URL); await p.waitForTimeout(400);
+    await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const far = Date.now() + 200 * 864e5;
+      d.items.forEach(i => { i.p = { en: { s: 6, d: far } }; }); d.cfg.from = 'de'; d.cfg.to = ['en']; d.cfg.mode = 'type';
+      localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); });
+    await p.reload(); await p.waitForTimeout(400);
+    await p.click('#deckPick [data-d="Verben"]'); await p.waitForTimeout(100);
+    ok('Stapel Verben: 60 Verben in der Auswahl, 12 neue Formkarten (2 Verben × 6 Tempora)', (await p.textContent('#cPool')) === '60' && (await p.textContent('#cNew')) === '12', 'pool=' + await p.textContent('#cPool') + ' neu=' + await p.textContent('#cNew'));
+    await p.click('#start'); await p.waitForTimeout(200);
+    const task = await p.innerHTML('#qTask');
+    ok('Formkarte: Infinitiv, Aufgabe „Tempus · Person“, Sprache EN, ein Feld', /^to (work|ask)/.test((await p.textContent('#qWord')).trim()) && await p.isVisible('#qTask') && /<b>[^<]+<\/b> · .+/.test(task) && (await p.textContent('#qLang')) === 'EN' && (await p.$$('#typeFields input')).length === 1 && (await p.textContent('#counter')) === 'Noch 12 von 12', task);
+    await p.fill('#typeFields input', 'zzz'); await p.click('#reveal'); await p.waitForTimeout(100);
+    const hit = await p.$eval('#ans .ftab tr.hit td:last-child', td => td.textContent);
+    const shown = await p.$eval('#ans .aword', a => a.textContent);
+    ok('Formkarte: Tafel mit markierter Zeile, Form als Lösung, „Nochmal“ vorgewählt, Melde-Knopf', await p.isVisible('#ans .ftab') && hit === shown && (await p.$$('#ans .ftab tr')).length >= 2 && (await p.$eval('#grades .g.pick', b => b.dataset.g)) === '0' && await p.isVisible('#repBtn'), hit + ' / ' + shown);
+    await p.click('#repBtn'); await p.waitForTimeout(100);
+    const rep1 = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).rep);
+    ok('Form melden: Eintrag mit Verb, Sprache, Tempus, Person, Form', rep1.length === 1 && rep1[0].lang === 'en' && rep1[0].f === hit && rep1[0].tense && rep1[0].p && (await p.textContent('#repBtn')) === 'Gemeldet', JSON.stringify(rep1));
+    await p.click('#n1'); await p.waitForTimeout(100);
+    let g = await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const out = []; d.items.forEach(i => Object.keys(i.g || {}).forEach(k => Object.keys(i.g[k]).forEach(t => out.push([i.id, k, +t, i.g[k][t].s])))); return out; });
+    ok('Formkarte „Gut“: Stand je Verb, Sprache, Tempus auf Stufe 0, Zähler weiter', g.length === 1 && g[0][1] === 'en' && g[0][3] === 0 && (await p.textContent('#counter')) === 'Noch 11 von 12', JSON.stringify(g));
+    // zweite Karte richtig: Lösung steht verborgen schon im DOM
+    const answer = await p.$eval('#ans .aword', a => a.textContent.trim());
+    await p.fill('#typeFields input', answer); await p.keyboard.press('Enter'); await p.waitForTimeout(100);
+    ok('Formkarte richtig: „Gut“ vorgewählt, Verdict grün', (await p.$eval('#grades .g.pick', b => b.dataset.g)) === '1' && /ok/.test(await p.$eval('#ans .verdict', v => v.className)));
+    await p.keyboard.press('Enter'); await p.waitForTimeout(100);
+    await p.click('#stop'); await p.waitForTimeout(200);
+    ok('Meldungen unter Daten gezählt', /1 gemeldete/.test(await p.textContent('#repInfo')), (await p.textContent('#repInfo')).trim());
+    // Fortschritts-Code trägt Grammatikstände (fünftes Feld)
+    await p.evaluate(() => { navigator.clipboard.writeText = () => Promise.reject(new Error('kein Zugriff')); });
+    await p.click('nav button[data-v="data"]'); await p.click('#codeCopy'); await p.waitForTimeout(200);
+    const code = await p.inputValue('#codeBox');
+    const f = code.split('|');
+    ok('Code VT2 mit Grammatikfeld: zwei Einträge index.e.tempus.stufe.tag', f.length === 5 && f[4].split(',').length === 2 && /^[0-9a-z]+\.e\.[0-9a-z]+\.0\.[0-9a-z]+$/.test(f[4].split(',')[0]), f[4]);
+    await p.click('#codeClose');
+    // Verbformen abschalten: nichts mehr fällig
+    await p.click('#modePick [data-m="forms"]'); await p.waitForTimeout(100);
+    await p.click('nav button[data-v="learn"]');
+    ok('„Verbformen mitlernen“ aus: Startknopf meldet nichts Fälliges', (await p.textContent('#start')).trim() === 'Heute nichts fällig' && (await p.textContent('#cNew')) === '0');
+    ok('Formkarten: keine Seitenfehler', errs.length === 0, errs.join('; '));
+    await ctx.close();
+    // Code in frischer Sitzung: Grammatikstände kommen an
+    const ctx2 = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    await ctx2.addInitScript(() => { try { localStorage.setItem('vokabeltrainer-v1-seen', '1'); } catch (e) {} });
+    const p2 = await ctx2.newPage(); await p2.goto(URL); await p2.waitForTimeout(400);
+    await p2.click('nav button[data-v="data"]'); await p2.click('#codeOpen'); await p2.fill('#codeBox', code); await p2.click('#codeApply'); await p2.waitForTimeout(200);
+    g = await p2.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const out = []; d.items.forEach(i => Object.keys(i.g || {}).forEach(k => Object.keys(i.g[k]).forEach(t => out.push([i.id, k, +t, i.g[k][t].s])))); return out; });
+    ok('Code eingesetzt: zwei Grammatikstände wiederhergestellt', g.length === 2 && g.every(x => x[1] === 'en' && x[3] === 0), JSON.stringify(g));
+    await ctx2.close();
+  }
+
+  // 4. Start ohne Speicher
   {
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
     await ctx.addInitScript(() => { Object.defineProperty(window, 'localStorage', { get() { throw new Error('gesperrt'); } }); });
     const p = await ctx.newPage();
     const errs = []; p.on('pageerror', e => errs.push(e.message));
     await p.goto(URL); await p.waitForTimeout(500);
-    ok('Ohne Speicher: App läuft, Grundstock da', /301/.test(await p.textContent('#stat')));
+    ok('Ohne Speicher: App läuft, Grundstock da', /361/.test(await p.textContent('#stat')));
     ok('Ohne Speicher: roter Balken mit Sichern/Laden', await p.isVisible('#savebar') && await p.isVisible('#sbCopy') && await p.isVisible('#sbLoad'));
     await p.click('#welcomeGo'); await p.waitForTimeout(100);
     await p.click('#start'); await p.click('#reveal'); await p.click('#n1'); await p.waitForTimeout(200);
@@ -254,18 +321,18 @@ async function server() {
     await ctx2.close();
   }
 
-  // 4. Leerer Speicherstand
+  // 5. Leerer Speicherstand
   {
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
     await ctx.addInitScript(() => { localStorage.setItem('vokabeltrainer-v1', JSON.stringify({ cfg: { newPerDay: 5 } })); localStorage.setItem('vokabeltrainer-v1-seen', '1'); });
     const p = await ctx.newPage();
     await p.goto(URL); await p.waitForTimeout(500);
-    ok('Leerer Stand: Grundstock wiederhergestellt', /301/.test(await p.textContent('#stat')));
+    ok('Leerer Stand: Grundstock wiederhergestellt', /361/.test(await p.textContent('#stat')));
     ok('Leerer Stand: Einstellung erhalten (5/Tag)', await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).cfg.newPerDay === 5));
     await ctx.close();
   }
 
-  // 5. Offline-Start nach erstem Besuch (Service Worker)
+  // 6. Offline-Start nach erstem Besuch (Service Worker)
   {
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
     const p = await ctx.newPage();
@@ -277,7 +344,7 @@ async function server() {
     await ctx.setOffline(true);
     const p3 = await ctx.newPage();
     let offlineOk = true;
-    try { await p3.goto(URL); await p3.waitForTimeout(500); offlineOk = /301/.test(await p3.textContent('#stat')); } catch (e) { offlineOk = false; out.push('   ' + e.message.split('\n')[0]); }
+    try { await p3.goto(URL); await p3.waitForTimeout(500); offlineOk = /361/.test(await p3.textContent('#stat')); } catch (e) { offlineOk = false; out.push('   ' + e.message.split('\n')[0]); }
     ok('Offline-Start liefert die App aus dem Cache', offlineOk);
     await ctx.close();
   }

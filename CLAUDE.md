@@ -19,6 +19,9 @@ src/template.html                   die App; Platzhalter __SEED__ für die Wört
 daten/vokabeln-personalgewinnung.csv  Quelle: Englisch;Deutsch;Kategorie;Beispielsatz
 daten/beispielsaetze-de.json        {id: deutscher Beispielsatz}
 daten/sprachen-fr-pl-ru.json        {id: {fr, pl, ru, rulat}}
+daten/verben.csv                    60 Verben in fünf Sprachen mit Aspektpaaren (Stapel Verben)
+daten/formen.json                   Formentafeln je Verb, erzeugt von formen.py; Platzhalter __FORMS__
+formen.py                           erzeugt und prüft die Formentafeln über die API (auf dem eigenen Rechner)
 index.html                          erzeugt — nicht von Hand bearbeiten
 sw.js                               Service Worker (Offline-Betrieb)
 manifest.webmanifest, icon.svg      Home-Bildschirm-Symbol
@@ -34,6 +37,8 @@ bearbeitet, verliert die Änderung beim nächsten `build.py`.
 ## Arbeitsablauf
 
 ```bash
+export ANTHROPIC_API_KEY=sk-ant-…  # nur für formen.py
+python3 formen.py                # fehlende Formentafeln erzeugen und prüfen, schreibt daten/formen.json
 python3 build.py                 # index.html neu erzeugen
 python3 -m http.server 8000      # lokal prüfen unter localhost:8000
 node test/pruefung.js            # Playwright-Prüfung (startet den Server bei Bedarf selbst)
@@ -61,6 +66,8 @@ Ein Wort ist ein Objekt; alle Wörter liegen in `data.items`.
 | `ex` | Beispielsatz in der Ausgangssprache (hier: englisch) |
 | `exde` | derselbe Satz auf Deutsch |
 | `p` | Lernstand je Zielsprache: `p.pl = {s, d, r}` mit `s` Stufe (Index in `LADDER`), `d` Fälligkeit in Millisekunden, `r:1` während des Wiederanlaufs nach „Nochmal“. Kein Eintrag = in dieser Sprache nie gelernt |
+| `g` | Lernstand der Formkarten: `g.ru[2] = {s, d, r}` je Sprache und Tempus-Index, gleiche Form wie `p` |
+| `forms` | Formentafeln am Wort, nur bei selbst angelegten Verben (Grundstock-Verben liegen in `FORMS`) |
 
 Die früheren Felder `step` und `due` (ein Stand je Wort) werden in `migrate()` beim
 Laden, beim JSON-Import und beim Einsetzen alter Codes in Stände für Deutsch **und**
@@ -68,8 +75,11 @@ Englisch übernommen und dann gelöscht, weil beide Richtungen gemischt geübt w
 `build.py` gibt sie nicht mehr aus.
 
 Daneben im Speicher: `cfg` (Tagespensum, Lernweise, Antwortmodus `mode`, Richtung
-`from`/`to`), `log` (neue Karten je Tag, Schlüssel `JJJJ-MM-TT` nach Ortszeit), `key`
-(optionaler API-Schlüssel).
+`from`/`to`, `forms` Verbformen mitlernen, `wl` Sprachen der Wörterliste), `log` (neue
+Karten je Tag, Schlüssel `JJJJ-MM-TT` nach Ortszeit), `key` (optionaler API-Schlüssel),
+`rep` (gemeldete Formen), `seedn` (Zahl der Grundstock-Einträge beim letzten Abgleich:
+kommen neue hinzu, etwa der Stapel Verben, trägt `load()` die fehlenden Ids einmalig
+nach, ohne gelöschte Wörter wiederzubeleben).
 
 `cfg.from` ist `mix` (Deutsch und Englisch gemischt, Vorgabe, mit `askAll` alle
 Sprachen als Frage) oder ein Sprachkürzel; `cfg.to` ist die Liste der Zielsprachen in
@@ -124,6 +134,48 @@ Aufdecken ein antippbares Urteil je Sprache (Nochmal, Gut, Leicht, vorgeschlagen
 dem Vergleich) mit einem Knopf **Übernehmen**; bei einer Zielsprache bleiben die drei
 Knöpfe, im Tippmodus ist der passende vorgewählt. Nicht gewählte Sprachen laufen klein
 in der Auflösung mit (`.more`).
+
+## Verben und Formkarten
+
+Der Stapel **Verben** enthält 60 kuratierte Verben (`daten/verben.csv`, zwei Drittel
+allgemein, ein Drittel Personalgewinnung), dieselben Begriffe in fünf Sprachen, bei
+Polnisch und Russisch als Aspektpaar „unvollendet / vollendet“ im Wortfeld selbst
+(`pracować / popracować`), damit `matches()` beide Formen als richtig wertet. Die
+Verben sind normale Wortkarten und zusätzlich Quelle für **Formkarten**.
+
+Formentafeln liegen in `daten/formen.json` je Verb und Sprache:
+`{inf, aspect, pair, note, tenses:[{t, rows:[{p, f}]}]}`. `p` ist die Person oder
+Beschriftung in der jeweiligen Sprache, `f` die Form ohne Pronomen. Die Tempora je
+Sprache sind fest (`TEMPORA` in `formen.py` und in `src/template.html`, beide gleich
+halten): DE Präsens, Präteritum, Perfekt, Futur I, Imperativ, Konjunktiv II; EN
+Präsens, Vergangenheit, Perfekt, Futur, Imperativ, Formen; FR Présent, Passé composé,
+Imparfait, Futur simple, Impératif, Subjonctif présent; PL und RU Präsens,
+Vergangenheit (nach Genus), Futur (unvollendet), Futur (vollendet), Imperativ.
+
+`formen.py` erzeugt die Tafeln über die API (Modell `claude-opus-5-5`, Antwort an ein
+JSON-Schema gebunden, nur Standardbibliothek, resumierbar) und macht einen zweiten
+Prüfdurchgang, in dem das Modell die eigenen Tafeln gegenliest (`_geprueft`). Die
+beiden Verben `arbeiten` und `fragen` sind von Hand geschrieben und dienen als Muster
+und Prüfdaten. Die Tafeln sind maschinell; die App sagt das unter *Daten → Meldungen*
+und bietet in jeder Formkarte **Form melden** (`data.rep`, kopierbar als JSON).
+
+**Formkarte.** Ein Eintrag der Warteschlange ist `{i}` für ein Wort oder `{i, k, t}`
+für Verb × Sprache × Tempus (`entries()`). Je Karte wird eine zufällige Zeile der
+Tafel gefragt: „*arbeiten* · Präsens · du“ (`#qTask`), Antwort eintippen oder
+aufdecken, die Auflösung zeigt die Form groß und darunter die ganze Tafel des Tempus
+mit markierter Zeile. Der Stand liegt in `i.g[k][t]`, dieselbe Leiter, dasselbe
+Pensum (eine Formkarte zählt eins), derselbe Code (`VT2`, fünftes Feld
+`<index>.<sprache>.<tempus>.<stufe>.<tag>`). Formkarten laufen nur mit, wenn der
+Stapel Verben in der Auswahl ist und `cfg.forms` an ist (Lernweise „Verbformen
+mitlernen“). Sie folgen der gewählten Richtung: Zielsprachen sind die Sprachen der
+Formkarten.
+
+**Eigene Verben.** `verbLike()` erkennt einen deutschen Infinitiv (kleingeschrieben,
+ein Wort, wahlweise „sich“) oder ohne Deutsch ein englisches „to …“. Beim Speichern
+unter *Neu* holt `fetchForms()` mit hinterlegtem Schlüssel die Tafel und legt sie am
+Wort ab (`i.forms`); *Nachübersetzen* holt sie für alle Verben ohne Tafel nach, auch
+für Grundstock-Verben, solange `formen.json` sie noch nicht enthält (`formsOf()` nimmt
+`i.forms` vor `FORMS`).
 
 ## Didaktische Festlegungen
 
@@ -283,8 +335,10 @@ und Sprache, Vorzeitigkeitsregel, Übernahme alter Speicherstände und `VT1`-Cod
 Listenimport mit Dubletten und
 nachgestellter API (`page.route` auf `api.anthropic.com`, prüft auch Modell und
 Schema der Anfrage), Nachübersetzen, Übernahme aus dem Link, Start ohne Speicher mit
-Sichern und Einsetzen des Fortschritts-Codes, Selbstheilung bei leerem Speicherstand
-und Offline-Start über den Service Worker. Jede Zeile der Ausgabe beginnt mit `OK` oder `FEHL`, der
+Sichern und Einsetzen des Fortschritts-Codes, Formkarten (Stapel Verben, Aufgabe,
+Tafel, Melden, Stand, Code mit Grammatikfeld, Schalter „Verbformen mitlernen“,
+Formen-Abruf über die Attrappe), Selbstheilung bei leerem Speicherstand und
+Offline-Start über den Service Worker. Jede Zeile der Ausgabe beginnt mit `OK` oder `FEHL`, der
 Exit-Code ist 1 bei Fehlschlägen. Neue Fälle dort ergänzen, nach demselben Muster:
 
 ```js
@@ -307,11 +361,11 @@ einsetzen.
 - Richtung Deutsch → Englisch strenger takten als umgekehrt; Produktion ist schwerer
   als Verstehen. Mit dem Stand je Zielsprache ist die Grundlage da, die Leiter ist
   noch für alle Richtungen gleich.
-- Abgestimmter Ausbau in Stufen: Stufe 2 Verben (kuratierte Liste von 60 Verben in
-  fünf Sprachen, Formen beim Bau über `formen.py` erzeugt, Karten „Form bilden“ mit
-  Tabelle in der Auflösung, Stand je Verb, Sprache und Tempus, Melde-Knopf), Stufe 3
+- Abgestimmter Ausbau in Stufen: Stufe 2 Verben ist gebaut, die Tafeln für 58 Verben
+  entstehen erst mit `python3 formen.py` auf dem Rechner des Nutzers. Stufe 3
   Substantive mit Kasus für Russisch, Polnisch, Deutsch, Stufe 4 Adjektive und
-  Pronomen. Alles im selben Stapel-, Leiter- und Code-System.
+  Pronomen. Alles im selben Stapel-, Leiter- und Code-System; Kasustafeln können
+  dasselbe Tafelformat `{t, rows:[{p, f}]}` nutzen.
 - Zweiter Stapel mit Alltagswortschatz, damit die App auch privat taugt.
 - FR/PL/RU von Muttersprachlern gegenlesen lassen.
 - Import weiterer CSV-Dateien als eigene Stapel ist bereits eingebaut

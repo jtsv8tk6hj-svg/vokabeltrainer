@@ -1,0 +1,61 @@
+id;de;en;fr;pl;ru;rulat;bereich
+vb001;sein;to be;être;być;быть;byt;allgemein
+vb002;haben;to have;avoir;mieć;име́ть;imét;allgemein
+vb003;werden;to become;devenir;stawać się / stać się;станови́ться / стать;stanowítsja / stat;allgemein
+vb004;können;can, to be able to;pouvoir;móc;мочь / смочь;motsch / smotsch;allgemein
+vb005;wollen;to want;vouloir;chcieć / zechcieć;хоте́ть / захоте́ть;chotét / sachotét;allgemein
+vb006;gehen;to go;aller;iść / pójść;идти́ / пойти́;idtí / pojtí;allgemein
+vb007;kommen;to come;venir;przychodzić / przyjść;приходи́ть / прийти́;prichodít / prijtí;allgemein
+vb008;machen;to do, to make;faire;robić / zrobić;де́лать / сде́лать;djélat / sdjélat;allgemein
+vb009;sagen;to say;dire;mówić / powiedzieć;говори́ть / сказа́ть;goworít / skasát;allgemein
+vb010;sprechen;to speak;parler;rozmawiać / porozmawiać;разгова́ривать / поговори́ть;rasgowáriwat / pogoworít;allgemein
+vb011;fragen;to ask;demander;pytać / zapytać;спра́шивать / спроси́ть;spráschiwat / sprossít;allgemein
+vb012;antworten;to answer;répondre;odpowiadać / odpowiedzieć;отвеча́ть / отве́тить;otwetschát / otwétit;allgemein
+vb013;wissen;to know;savoir;wiedzieć;знать;snat;allgemein
+vb014;sehen;to see;voir;widzieć / zobaczyć;ви́деть / уви́деть;wídet / uwídet;allgemein
+vb015;hören;to hear;entendre;słyszeć / usłyszeć;слы́шать / услы́шать;slýschat / uslýschat;allgemein
+vb016;lesen;to read;lire;czytać / przeczytać;чита́ть / прочита́ть;tschitát / protschitát;allgemein
+vb017;schreiben;to write;écrire;pisać / napisać;писа́ть / написа́ть;pissát / napissát;allgemein
+vb018;lernen;to learn;apprendre;uczyć się / nauczyć się;учи́ть / вы́учить;utschít / wýutschit;allgemein
+vb019;arbeiten;to work;travailler;pracować / popracować;рабо́тать / порабо́тать;rabótat / porabótat;allgemein
+vb020;essen;to eat;manger;jeść / zjeść;есть / съесть;jest / sjest;allgemein
+vb021;trinken;to drink;boire;pić / wypić;пить / вы́пить;pit / wýpit;allgemein
+vb022;schlafen;to sleep;dormir;spać / pospać;спать / поспа́ть;spat / pospát;allgemein
+vb023;kaufen;to buy;acheter;kupować / kupić;покупа́ть / купи́ть;pokupát / kupít;allgemein
+vb024;geben;to give;donner;dawać / dać;дава́ть / дать;dawát / dat;allgemein
+vb025;nehmen;to take;prendre;brać / wziąć;брать / взять;brat / wsjat;allgemein
+vb026;finden;to find;trouver;znajdować / znaleźć;находи́ть / найти́;nachodít / najtí;allgemein
+vb027;denken;to think;penser;myśleć / pomyśleć;ду́мать / поду́мать;dúmat / podúmat;allgemein
+vb028;helfen;to help;aider;pomagać / pomóc;помога́ть / помо́чь;pomogát / pomótsch;allgemein
+vb029;zeigen;to show;montrer;pokazywać / pokazać;пока́зывать / показа́ть;pokásywat / pokasát;allgemein
+vb030;bleiben;to stay;rester;zostawać / zostać;остава́ться / оста́ться;ostawátsja / ostátsja;allgemein
+vb031;spielen;to play;jouer;grać / zagrać;игра́ть / сыгра́ть;igrát / sygrát;allgemein
+vb032;brauchen;to need;avoir besoin de;potrzebować;нужда́ться;nuschdátsja;allgemein
+vb033;verstehen;to understand;comprendre;rozumieć / zrozumieć;понима́ть / поня́ть;ponimát / ponját;allgemein
+vb034;beginnen;to begin;commencer;zaczynać / zacząć;начина́ть / нача́ть;natschinát / natschát;allgemein
+vb035;warten;to wait;attendre;czekać / poczekać;ждать / подожда́ть;schdat / podoschdát;allgemein
+vb036;wohnen;to live;habiter;mieszkać;жить;schit;allgemein
+vb037;lieben;to love;aimer;kochać / pokochać;люби́ть / полюби́ть;ljubít / poljubít;allgemein
+vb038;bezahlen;to pay;payer;płacić / zapłacić;плати́ть / заплати́ть;platít / saplatít;allgemein
+vb039;öffnen;to open;ouvrir;otwierać / otworzyć;открыва́ть / откры́ть;otkrywát / otkrýt;allgemein
+vb040;suchen;to look for;chercher;szukać / poszukać;иска́ть / поиска́ть;iskát / poiskát;allgemein
+vb041;sich bewerben;to apply;postuler;aplikować / zaaplikować;подава́ть зая́вку / пода́ть зая́вку;podawát sajáwku / podát sajáwku;Personalgewinnung
+vb042;einstellen;to hire;embaucher;zatrudniać / zatrudnić;принима́ть на рабо́ту / приня́ть на рабо́ту;prinimát na rabótu / prinját na rabótu;Personalgewinnung
+vb043;beraten;to advise;conseiller;doradzać / doradzić;консульти́ровать / проконсульти́ровать;konsultírowat / prokonsultírowat;Personalgewinnung
+vb044;einladen;to invite;inviter;zapraszać / zaprosić;приглаша́ть / пригласи́ть;priglaschát / priglassít;Personalgewinnung
+vb045;informieren;to inform;informer;informować / poinformować;информи́ровать / проинформи́ровать;informírowat / proinformírowat;Personalgewinnung
+vb046;entscheiden;to decide;décider;decydować / zdecydować;реша́ть / реши́ть;reschát / reschít;Personalgewinnung
+vb047;prüfen;to check;vérifier;sprawdzać / sprawdzić;проверя́ть / прове́рить;prowerját / prowérit;Personalgewinnung
+vb048;unterschreiben;to sign;signer;podpisywać / podpisać;подпи́сывать / подписа́ть;podpíssywat / podpissát;Personalgewinnung
+vb049;planen;to plan;planifier;planować / zaplanować;плани́ровать / заплани́ровать;planírowat / saplanírowat;Personalgewinnung
+vb050;organisieren;to organise;organiser;organizować / zorganizować;организо́вывать / организова́ть;organisówywat / organisowát;Personalgewinnung
+vb051;sich vorstellen;to introduce oneself;se présenter;przedstawiać się / przedstawić się;представля́ться / предста́виться;predstawljátsja / predstáwitsja;Personalgewinnung
+vb052;erklären;to explain;expliquer;wyjaśniać / wyjaśnić;объясня́ть / объясни́ть;objasnját / objasnít;Personalgewinnung
+vb053;überzeugen;to convince;convaincre;przekonywać / przekonać;убежда́ть / убеди́ть;ubeschdát / ubedít;Personalgewinnung
+vb054;ausbilden;to train;former;szkolić / wyszkolić;обуча́ть / обучи́ть;obutschát / obutschít;Personalgewinnung
+vb055;führen;to lead;diriger;kierować;руководи́ть;rukowodít;Personalgewinnung
+vb056;gewinnen;to win;gagner;wygrywać / wygrać;выи́грывать / вы́играть;wyígrywat / wýigrat;Personalgewinnung
+vb057;empfehlen;to recommend;recommander;polecać / polecić;рекомендова́ть / порекомендова́ть;rekomendowát / porekomendowát;Personalgewinnung
+vb058;anrufen;to call;appeler;dzwonić / zadzwonić;звони́ть / позвони́ть;swonít / poswonít;Personalgewinnung
+vb059;teilnehmen;to take part;participer;uczestniczyć;уча́ствовать;utschástwowat;Personalgewinnung
+vb060;sich verpflichten;to commit oneself;s'engager;zobowiązywać się / zobowiązać się;обя́зываться / обяза́ться;objásywatsja / objasátsja;Personalgewinnung
