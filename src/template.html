@@ -105,6 +105,16 @@
   .tag.mini{font-size:9.5px; min-width:25px; padding:3px 5px; letter-spacing:.05em}
   .acat{font-size:11px; color:var(--faint); letter-spacing:.06em; text-transform:uppercase; margin-top:12px}
   .typed{width:100%; margin-top:16px; font-family:var(--serif); font-size:18px; text-align:center}
+  /* ein Eingabefeld je Zielsprache */
+  #typeFields{margin-top:14px}
+  .tfrow{display:flex; gap:9px; align-items:center; margin-top:8px}
+  .tfrow .typed{flex:1; margin-top:0; text-align:left; min-width:0}
+  .tline+.tline{border-top:1px solid var(--line); margin-top:10px; padding-top:12px}
+  .vsel{display:flex; gap:6px; margin-top:9px}
+  .vsel button{flex:1; border:1px solid var(--line); background:none; color:var(--dim); border-radius:8px;
+               padding:8px 4px; font-size:12.5px; font-weight:600}
+  .vsel button.on{background:var(--ink); color:#0e1013; border-color:var(--ink)}
+  .g.pick{border-color:var(--ink); box-shadow:inset 0 0 0 1px var(--ink)}
   .verdict{font-size:13px; font-weight:600; margin:10px 0 0}
   .ok{color:var(--fr)} .no{color:var(--en)}
   .dbtm{flex:0 0 auto; padding:10px 16px calc(12px + var(--safe-b)); border-top:1px solid var(--line)}
@@ -181,6 +191,12 @@
     <h2>Antwortmodus</h2>
     <div class="chips" id="answerPick"></div>
     <p class="hint" id="answerHint" style="margin-top:9px"></p>
+  </div>
+  <div class="panel">
+    <h2>Richtung</h2>
+    <div class="chips" id="fromPick"></div>
+    <div class="chips" id="toPick" style="margin-top:9px"></div>
+    <p class="hint" id="dirHint" style="margin-top:9px"></p>
   </div>
   <div class="panel">
     <h2>Auswahl</h2>
@@ -316,13 +332,13 @@
       <p class="translit" id="qLat"></p>
       <p class="sent" id="qSent"></p>
     </div>
-    <input class="typed" id="typed" hidden placeholder="Antwort eintippen" autocomplete="off"
-           autocapitalize="off" autocorrect="off" spellcheck="false">
+    <div id="typeFields" hidden></div>
     <div class="azone" id="ans" hidden></div>
   </div>
   <div class="dbtm">
     <button class="big" id="reveal">Aufdecken</button>
     <button class="big" id="next" hidden>Weiter</button>
+    <button class="big" id="apply" hidden>Übernehmen</button>
     <div class="grades" id="grades" hidden>
       <button class="g g1" data-g="0"><b>Nochmal</b><small id="n0"></small></button>
       <button class="g g2" data-g="1"><b>Gut</b><small id="n1"></small></button>
@@ -343,7 +359,7 @@
       <b>Gut</b> – saß, nächster Abstand.<br>
       <b>Leicht</b> – saß sofort, doppelter Sprung.</p>
       <p class="hint" style="margin-top:9px">Die Abstände wachsen mit: 1, 3, 7, 16, 35, 75, 150, 300 Tage. Wer täglich ein paar Minuten übt, behält den Stoff dauerhaft.</p>
-      <p class="hint" style="margin-top:9px">Der <b>Antwortmodus</b> auf der Lernseite bestimmt, wie du antwortest: überlegen und aufdecken, die Antwort eintippen, oder nur anschauen ohne Bewertung.</p>
+      <p class="hint" style="margin-top:9px">Der <b>Antwortmodus</b> auf der Lernseite bestimmt, wie du antwortest: überlegen und aufdecken, die Antwort eintippen, oder nur anschauen ohne Bewertung. Die <b>Richtung</b> legt fest, in welcher Sprache gefragt wird und welche Sprachen du antwortest – auch mehrere auf einmal. Jede Zielsprache hat ihren eigenen Lernstand.</p>
     </div>
     <div class="panel">
       <h2>Gut zu wissen</h2>
@@ -393,7 +409,7 @@ const SEED = __SEED__;
       if(raw) data=Object.assign(data,JSON.parse(raw));
       store=true;
     }catch(e){ store=false; }
-    if(!Array.isArray(data.items)||!data.items.length) data.items=SEED.map(s=>Object.assign({},s));
+    if(!Array.isArray(data.items)||!data.items.length) data.items=SEED.map(s=>migrate(Object.assign({},s)));
     if(store){ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){ store=false; } }
     if(!data.cfg) data.cfg={newPerDay:20};
     if(!MODES.some(([k])=>k===data.cfg.mode)) data.cfg.mode=data.cfg.typing?'type':'check';
@@ -401,7 +417,10 @@ const SEED = __SEED__;
     if(data.cfg.gap===undefined) data.cfg.gap=true;
     if(data.cfg.audio===undefined) data.cfg.audio=true;
     if(data.cfg.askAll===undefined) data.cfg.askAll=false;
+    if(data.cfg.from!=='mix'&&!LANGS.includes(data.cfg.from)) data.cfg.from='mix';
+    if(!Array.isArray(data.cfg.to)||!data.cfg.to.length) data.cfg.to=['en'];
     if(!data.log) data.log={};
+    data.items.forEach(migrate);
     // deutsche Beispielsätze in bestehende Bestände nachtragen
     const m={}; SEED.forEach(s=>{ if(s.exde) m[s.id]=s.exde; });
     data.items.forEach(i=>{ if(!i.exde&&m[i.id]) i.exde=m[i.id]; });
@@ -412,21 +431,56 @@ const SEED = __SEED__;
     catch(e){ store=false; render(); toast('Speicher gesperrt – bitte Sicherung speichern'); }
   }
 
+  /* Lernstand je Wort und Zielsprache: i.p[k]={s:Stufe, d:Fälligkeit, r:1 beim Wiederanlauf nach „Nochmal“} */
+  const LANGS=['de','en','fr','pl','ru'];
+  const LC={de:'d',en:'e',fr:'f',pl:'p',ru:'r'}, CL={d:'de',e:'en',f:'fr',p:'pl',r:'ru'};
+  const st=(i,k)=>(i.p&&i.p[k])||null;
+  const isDue=(i,k,t)=>{const s=st(i,k); return !!s&&s.d<=t;};
+  const isNew=(i,k)=>!st(i,k)&&!!i[k];
+  // alte Bestände: ein Stand je Wort wird zum Stand für Deutsch und Englisch
+  function migrate(i){
+    if(!i.p||typeof i.p!=='object') i.p={};
+    if(i.due){ const s={s:i.step||0,d:i.due}; ['de','en'].forEach(k=>{ if(i[k]&&!i.p[k]) i.p[k]=Object.assign({},s); }); }
+    delete i.step; delete i.due; return i;
+  }
+  // Richtungen einer Karte: {from, to:[…]}; bei „gemischt“ Deutsch und Englisch wechselseitig
+  function dirPairs(i){
+    if(data.cfg.from==='mix'){
+      const srcs=(data.cfg.askAll?LANGS:['de','en']).filter(k=>i[k]);
+      return srcs.map(k=>{ const c=(k==='de'?['en']:k==='en'?['de']:['de','en']).filter(x=>i[x]); return c.length?{from:k,to:[c[0]]}:null; }).filter(Boolean);
+    }
+    const from=data.cfg.from; if(!i[from]) return [];
+    const to=(data.cfg.to||[]).filter(k=>k!==from&&i[k]);
+    return to.length?[{from,to}]:[];
+  }
+  const cardLangs=i=>{ const s=new Set(); dirPairs(i).forEach(o=>o.to.forEach(k=>s.add(k))); return [...s]; };
   const decks=()=>['alle',...new Set(data.items.map(i=>i.deck||'Eigene'))];
   const cats =()=>['alle',...[...new Set(data.items.map(i=>i.cat).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de'))];
   const pool =()=>data.items.filter(i=>(deck==='alle'||(i.deck||'Eigene')===deck)&&(cat==='alle'||i.cat===cat));
   const newToday=()=>data.log[today()]||0;
   function counts(){
     const p=pool(), t=Date.now();
-    const fresh=p.filter(i=>!i.due), due=p.filter(i=>i.due&&i.due<=t);
-    return {pool:p.length, due:due.length, dueList:due, freshList:fresh,
-            newLeft:Math.max(0,Math.min(fresh.length,data.cfg.newPerDay-newToday()))};
+    const dueList=[], freshList=[]; let due=0, fresh=0;
+    p.forEach(i=>{
+      const ls=cardLangs(i); if(!ls.length) return;
+      const d=ls.filter(k=>isDue(i,k,t)).length, n=ls.filter(k=>isNew(i,k)).length;
+      if(d) dueList.push(i); else if(n) freshList.push(i);
+      due+=d; fresh+=n;
+    });
+    // Tagespensum zählt je Wort und Zielsprache; neue Karten bis zur Grenze mitnehmen
+    const budget=Math.max(0,data.cfg.newPerDay-newToday());
+    const take=[]; let used=0;
+    for(const i of freshList){ const n=cardLangs(i).filter(k=>isNew(i,k)).length; if(used+n>budget) continue; used+=n; take.push(i); }
+    return {pool:p.length, due, dueList, freshList, take, newLeft:Math.min(fresh,budget)};
   }
-  function idx(i,g){ return Math.min(i.due?(i.step||0)+(g===2?2:1):(g===2?1:0),LADDER.length-1); }
-  function plan(i,g){
-    if(!i.due) data.log[today()]=newToday()+1;
-    if(g===0){ i.step=0; i.due=Date.now()+6e5; }
-    else{ i.step=idx(i,g); i.due=Date.now()+LADDER[i.step]*DAY; }
+  // nächste Stufe: neu und Wiederanlauf starten bei 0 (Gut) bzw. 1 (Leicht)
+  function nextIdx(i,k,g){ const s=st(i,k); return Math.min(s&&!s.r?(s.s||0)+(g===2?2:1):(g===2?1:0),LADDER.length-1); }
+  function plan(i,k,g,t){
+    const s=st(i,k); i.p=i.p||{};
+    if(!s) data.log[today()]=newToday()+1;
+    if(g===0){ i.p[k]={s:0,d:t+6e5,r:1}; return; }
+    if(s&&!s.r&&s.d>t) return;                 // vorzeitig richtig zählt nicht
+    const n=nextIdx(i,k,g); i.p[k]={s:n,d:t+LADDER[n]*DAY};
   }
   /* Fortschritt als kurzer Code */
   const SIDX={}; SEED.forEach((s,n)=>SIDX[s.id]=n);
@@ -434,27 +488,30 @@ const SEED = __SEED__;
   function makeCode(){
     const parts=[], extra=[];
     data.items.forEach(i=>{
-      if(SIDX[i.id]!==undefined){ if(i.due) parts.push(b36(SIDX[i.id])+'.'+b36(i.step||0)+'.'+b36(i.due/864e5)); }
+      if(SIDX[i.id]!==undefined){ LANGS.forEach(k=>{ const s=st(i,k); if(s) parts.push(b36(SIDX[i.id])+'.'+LC[k]+'.'+b36(s.s||0)+'.'+b36(s.d/864e5)); }); }
       else extra.push(i);
     });
-    let c='VT1|'+parts.join(',')+'|'+b36(newToday());
+    let c='VT2|'+parts.join(',')+'|'+b36(newToday());
     if(extra.length) c+='|'+btoa(unescape(encodeURIComponent(JSON.stringify(extra))));
     return c;
   }
   function applyCode(txt){
     const c=(txt||'').trim();
-    if(c.indexOf('VT1|')!==0) throw new Error('kein gültiger Code');
+    const ver=c.indexOf('VT2|')===0?2:c.indexOf('VT1|')===0?1:0;
+    if(!ver) throw new Error('kein gültiger Code');
     const f=c.split('|');
     const byIdx={}; data.items.forEach(i=>{ if(SIDX[i.id]!==undefined) byIdx[SIDX[i.id]]=i; });
     let n=0;
     (f[1]||'').split(',').filter(Boolean).forEach(t=>{
-      const a=t.split('.'); const it=byIdx[parseInt(a[0],36)];
-      if(it){ it.step=parseInt(a[1],36)||0; it.due=parseInt(a[2],36)*864e5; n++; }
+      const a=t.split('.'); const it=byIdx[parseInt(a[0],36)]; if(!it) return;
+      it.p=it.p||{};
+      if(ver===2){ const k=CL[a[1]]; if(!k||!it[k]) return; it.p[k]={s:parseInt(a[2],36)||0,d:parseInt(a[3],36)*864e5}; n++; }
+      else{ const s={s:parseInt(a[1],36)||0,d:parseInt(a[2],36)*864e5}; ['de','en'].forEach(k=>{ if(it[k]) it.p[k]=Object.assign({},s); }); n++; }
     });
     if(f[3]){
       const ex=JSON.parse(decodeURIComponent(escape(atob(f[3]))));
       const known=new Set(data.items.map(i=>i.id));
-      ex.forEach(i=>{ if(i&&i.id&&!known.has(i.id)){ data.items.push(i); n++; } });
+      ex.forEach(i=>{ if(i&&i.id&&!known.has(i.id)){ data.items.push(migrate(i)); n++; } });
     }
     if(f[2]) data.log[today()]=parseInt(f[2],36)||0;
     return n;
@@ -531,89 +588,130 @@ const SEED = __SEED__;
     if(look){
       // Durchsehen: erst Fälliges und Neues, dann der Rest der Auswahl; nichts wird gewertet
       const first=c.dueList.concat(c.freshList), fs=new Set(first);
-      q=shuffle(first).concat(shuffle(pool().filter(i=>!fs.has(i))));
-      if(!q.length){ toast('Keine Wörter in dieser Auswahl'); return; }
+      q=shuffle(first).concat(shuffle(pool().filter(i=>!fs.has(i)&&cardLangs(i).length)));
+      if(!q.length){ toast('Keine Wörter für diese Richtung in der Auswahl'); return; }
     }else{
-      q=shuffle(c.dueList.concat(c.freshList.slice(0,c.newLeft)));
-      if(!q.length){ toast('Nichts fällig in dieser Auswahl'); return; }
+      q=shuffle(c.dueList.concat(c.take));
+      if(!q.length){ toast(c.freshList.length&&!c.newLeft?'Tagespensum erreicht':'Nichts fällig in dieser Auswahl'); return; }
     }
     ses={q,total:q.length,done:0,look};
     document.body.classList.add('drilling'); $('#drill').classList.add('on'); show();
   };
+  const sayBtn=(k,small)=>window.speechSynthesis?'<button class="say" data-say="'+k+'" aria-label="Vorlesen"'
+    +(small?' style="width:24px;height:24px;font-size:10px;margin-left:auto"':'')+'>&#9658;</button>':'';
+  const TAG=k=>'<span class="tag t-'+k+'">'+k.toUpperCase()+'</span>';
   function show(){
     if(!ses.q.length){ stop('Durchgang beendet'); return; }
-    const i=ses.q[0], have=L.filter(([k])=>i[k]);
-    let cand=have;
-    if(!data.cfg.askAll){ const core=have.filter(([k])=>k==='de'||k==='en'); if(core.length) cand=core; }
-    const from=cand[Math.floor(Math.random()*cand.length)];
-    ses.from=from[0];
+    const i=ses.q[0], t=Date.now();
+    // Richtung dieser Karte: bei „gemischt“ eine, deren Zielsprache fällig oder neu ist
+    const opts=dirPairs(i), live=opts.filter(o=>o.to.some(k=>isDue(i,k,t)||isNew(i,k)));
+    const from=live.length?live:opts, pick=from[Math.floor(Math.random()*from.length)];
+    ses.from=pick.from; ses.to=pick.to.slice(); ses.v=null;
+    const typing=data.cfg.mode==='type'&&!ses.look;
     $('#counter').textContent='Noch '+ses.q.length+' von '+ses.total;
-    $('#cardState').textContent=ses.look?'Durchsehen':(i.due?'Wiederholung':'neu');
+    $('#cardState').textContent=ses.look?'Durchsehen':(ses.to.some(k=>isDue(i,k,t))?'Wiederholung':'neu');
     $('#progFill').style.width=Math.round(ses.done/ses.total*100)+'%';
-    $('#qLang').className='tag t-'+from[0]; $('#qLang').textContent=from[1];
-    $('#qWord').textContent=i[from[0]];
-    $('#qLat').textContent=from[0]==='ru'?(i.rulat||''):'';
-    const qs=sentFor(i,from[0]);
-    $('#qSent').innerHTML=data.cfg.gap?gapSent(qs,i[from[0]]):esc(qs);
-    $('#qWord').innerHTML=esc(i[from[0]])
+    $('#qLang').className='tag t-'+ses.from; $('#qLang').textContent=ses.from.toUpperCase();
+    $('#qLat').textContent=ses.from==='ru'?(i.rulat||''):'';
+    const qs=sentFor(i,ses.from);
+    $('#qSent').innerHTML=data.cfg.gap?gapSent(qs,i[ses.from]):esc(qs);
+    $('#qWord').innerHTML=esc(i[ses.from])
       +(window.speechSynthesis?' <button class="say" id="sayQ" aria-label="Vorlesen">&#9658;</button>':'');
     const sq=$('#sayQ'); if(sq) sq.onclick=ev=>{ev.stopPropagation(); say(i[ses.from],ses.from);};
-    const other=have.filter(([k])=>k!==ses.from);
-    // Hauptlösung: das Gegenstück Deutsch/Englisch, die übrigen Sprachen klein darunter
-    const wish=ses.from==='de'?'en':'de';
-    const main=other.find(([k])=>k===wish)||other[0]||null;
-    ses.target=main?main[0]:null;
-    const rest=other.filter(o=>o!==main);
-    const mainSent=main?sentFor(i,main[0]):'';
-    $('#ans').innerHTML=(main?
-        '<div class="aline"><span class="tag t-'+main[0]+'">'+main[1]+'</span><span class="aword">'+esc(i[main[0]])+'</span>'
-        +(window.speechSynthesis?'<button class="say" data-say="'+main[0]+'" aria-label="Vorlesen">&#9658;</button>':'')+'</div>'
-        +(main[0]==='ru'&&i.rulat?'<div class="translit" style="text-align:left">'+esc(i.rulat)+'</div>':''):'')
-      +(mainSent?'<p class="asent">'+markSent(mainSent,i[main[0]])+'</p>':'')
+    // Auflösung: Zielsprachen groß, die übrigen Sprachen klein darunter
+    const rest=L.filter(([k])=>k!==ses.from&&!ses.to.includes(k)&&i[k]);
+    const sl=ses.to.find(k=>sentFor(i,k)), tSent=sl?sentFor(i,sl):'';
+    $('#ans').innerHTML=ses.to.map(k=>
+        '<div class="tline" data-k="'+k+'"><div class="aline">'+TAG(k)+'<span class="aword">'+esc(i[k])+'</span>'+sayBtn(k)+'</div>'
+        +(k==='ru'&&i.rulat?'<div class="translit" style="text-align:left">'+esc(i.rulat)+'</div>':'')
+        +'<p class="verdict" data-v="'+k+'"></p><div class="vsel" data-k="'+k+'" hidden></div></div>').join('')
+      +(tSent?'<p class="asent">'+markSent(tSent,i[sl])+'</p>':'')
       +(qs?'<p class="asent src">'+markSent(qs,i[ses.from])+'</p>':'')
       +(rest.length?'<div class="more">'+rest.map(([k,l])=>
           '<div class="mline"><span class="tag mini t-'+k+'">'+l+'</span><span class="mw">'+esc(i[k])+'</span>'
-          +(k==='ru'&&i.rulat?'<span class="mlat">'+esc(i.rulat)+'</span>':'')
-          +(window.speechSynthesis?'<button class="say" data-say="'+k+'" aria-label="Vorlesen" style="width:24px;height:24px;font-size:10px;margin-left:auto">&#9658;</button>':'')
-          +'</div>').join('')+'</div>':'')
-      +(i.cat?'<p class="acat">'+esc(i.cat)+'</p>':'')
-      +'<p class="verdict" id="verdict"></p>';
+          +(k==='ru'&&i.rulat?'<span class="mlat">'+esc(i.rulat)+'</span>':'')+sayBtn(k,true)+'</div>').join('')+'</div>':'')
+      +(i.cat?'<p class="acat">'+esc(i.cat)+'</p>':'');
     $('#ans').querySelectorAll('[data-say]').forEach(b=>b.onclick=ev=>{ev.stopPropagation(); say(i[b.dataset.say],b.dataset.say);});
-    $('#ans').hidden=true; $('#grades').hidden=true; $('#next').hidden=true; $('#reveal').hidden=false;
+    $('#ans').hidden=true; $('#grades').hidden=true; $('#next').hidden=true; $('#apply').hidden=true; $('#reveal').hidden=false;
     $('#dmid').classList.remove('rev'); $('#dmid').classList.toggle('look',!!ses.look); $('#dmid').scrollTop=0;
-    const ti=$('#typed'), typing=data.cfg.mode==='type';
-    ti.hidden=!typing; ti.value='';
+    // Eingabefelder: eines je Zielsprache
+    const tf=$('#typeFields');
+    tf.hidden=!typing;
+    tf.innerHTML=typing?ses.to.map(k=>'<div class="tfrow">'+TAG(k)
+      +'<input class="typed" data-k="'+k+'" lang="'+k+'" placeholder="'+NAME[k]+(k==='ru'?' oder Umschrift':'')
+      +'" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"></div>').join(''):'';
     $('#reveal').textContent=typing?'Prüfen':'Aufdecken';
-    [0,1,2].forEach(g=>$('#n'+g).textContent=g===0?'10 Min':dtxt(LADDER[idx(i,g)]));
+    $('#grades').querySelectorAll('.g').forEach(b=>b.classList.remove('pick'));
+    gradeLabels(i,t);
     if(ses.look) reveal();
   }
-  function reveal(){
-    const i=ses.q[0], ti=$('#typed');
-    $('#dmid').classList.add('rev');
-    $('#ans').hidden=false; $('#reveal').hidden=true;
-    $('#grades').hidden=!!ses.look; $('#next').hidden=!ses.look;
-    if(data.cfg.mode==='type'&&ses.target){
-      const v=$('#verdict');
-      if(ti.value.trim()){
-        const ok=matches(ti.value,i[ses.target]);
-        v.className='verdict '+(ok?'ok':'no');
-        v.textContent=ok?'Richtig geschrieben.':'Eingetippt: '+ti.value.trim();
+  // Beschriftung der drei Knöpfe: bei einer Zielsprache der tatsächliche Abstand
+  function gradeLabels(i,t){
+    [0,1,2].forEach(g=>{
+      let txt='10 Min';
+      if(g>0){
+        if(ses.to.length>1) txt=g===1?'eine Stufe':'zwei Stufen';
+        else{ const k=ses.to[0], s=st(i,k); txt=(s&&!s.r&&s.d>t)?'unverändert':dtxt(LADDER[nextIdx(i,k,g)]); }
       }
-      ti.hidden=true;
+      $('#n'+g).textContent=txt;
+    });
+  }
+  const VSEL=[[0,'Nochmal'],[1,'Gut'],[2,'Leicht']];
+  function reveal(){
+    const i=ses.q[0], typing=data.cfg.mode==='type'&&!ses.look, multi=ses.to.length>1;
+    $('#dmid').classList.add('rev');
+    $('#ans').hidden=false; $('#reveal').hidden=true; $('#typeFields').hidden=true;
+    if(typing){
+      // Vergleich je Zielsprache; bei Russisch gilt auch die Umschrift
+      ses.v={};
+      ses.to.forEach(k=>{
+        const inp=$('#typeFields input[data-k="'+k+'"]'), val=inp?inp.value.trim():'';
+        const ok=!!val&&(matches(val,i[k])||(k==='ru'&&matches(val,i.rulat)));
+        ses.v[k]=ok?1:0;
+        const v=$('#ans [data-v="'+k+'"]');
+        v.className='verdict '+(ok?'ok':'no');
+        v.textContent=ok?'Richtig geschrieben.':(val?'Eingetippt: '+val:'Nichts eingetippt.');
+      });
     }
-    if(data.cfg.audio&&ses.target) say(i[ses.target],ses.target);
+    if(ses.look) $('#next').hidden=false;
+    else if(typing&&multi){
+      // Urteil je Sprache, antippbar, ein Knopf Übernehmen
+      ses.to.forEach(k=>{ const el=$('#ans .vsel[data-k="'+k+'"]'); el.hidden=false;
+        el.innerHTML=VSEL.map(([g,l])=>'<button data-g="'+g+'"'+(g===ses.v[k]?' class="on"':'')+'>'+l+'</button>').join(''); });
+      $('#apply').hidden=false;
+    }else{
+      $('#grades').hidden=false;
+      if(typing) $('#grades .g[data-g="'+ses.v[ses.to[0]]+'"]').classList.add('pick');
+    }
+    if(data.cfg.audio) say(i[ses.to[0]],ses.to[0]);
     $('#dmid').scrollTop=0;
   }
   $('#reveal').onclick=reveal;
-  $('#typed').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); if($('#grades').hidden) reveal(); }});
+  $('#typeFields').addEventListener('keydown',e=>{
+    if(e.key!=='Enter') return; e.preventDefault();
+    const inputs=[...$('#typeFields').querySelectorAll('input')], n=inputs.indexOf(e.target);
+    if(n>=0&&n<inputs.length-1) inputs[n+1].focus(); else if(!$('#reveal').hidden) reveal();
+  });
+  $('#ans').addEventListener('click',e=>{
+    const b=e.target.closest('.vsel button'); if(!b||!ses||!ses.v) return;
+    ses.v[b.parentNode.dataset.k]=+b.dataset.g;
+    b.parentNode.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));
+  });
   $('#grades').onclick=e=>{const b=e.target.closest('.g'); if(b) answer(+b.dataset.g);};
+  $('#apply').onclick=()=>{ if(ses&&ses.v&&!$('#apply').hidden) finish(ses.v); };
   // Durchsehen: weiterblättern ohne Wertung
   function next(){ if(!ses||!ses.look) return; ses.q.shift(); ses.done++; show(); }
   $('#next').onclick=next;
+  // eine Wertung für alle gezeigten Zielsprachen (Aufdecken-Modus oder eine Zielsprache)
   function answer(g){
     if(!ses||ses.look||$('#grades').hidden) return;
-    const i=ses.q.shift(); plan(i,g);
-    if(g===0) ses.q.push(i); else ses.done++;
+    const v={}; ses.to.forEach(k=>v[k]=g); finish(v);
+  }
+  function finish(v){
+    const i=ses.q.shift(), t=Date.now();
+    let again=false;
+    Object.keys(v).forEach(k=>{ plan(i,k,v[k],t); if(v[k]===0) again=true; });
+    if(again) ses.q.push(i); else ses.done++;
     if(!store){ unsaved++; savebar(); }
     save(); show();
   }
@@ -626,12 +724,14 @@ const SEED = __SEED__;
   $('#stop').onclick=()=>stop();
   document.addEventListener('keydown',e=>{
     if(!ses||e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
-    if(ses.look){ if(e.code==='Space'||e.key==='Enter'){ e.preventDefault(); next(); } if(e.key==='Escape') stop(); return; }
-    if(e.code==='Space'){ e.preventDefault(); if($('#grades').hidden) reveal(); return; }
+    if(e.key==='Escape'){ stop(); return; }
+    if(ses.look){ if(e.code==='Space'||e.key==='Enter'){ e.preventDefault(); next(); } return; }
+    if(!$('#reveal').hidden){ if(e.code==='Space'||e.key==='Enter'){ e.preventDefault(); reveal(); } return; }
+    if(!$('#apply').hidden){ if(e.key==='Enter') $('#apply').click(); return; }
     if(e.key==='1') answer(0);
-    if(e.key==='2'||e.key==='Enter') answer(1);
+    if(e.key==='2') answer(1);
     if(e.key==='3') answer(2);
-    if(e.key==='Escape') stop();
+    if(e.key==='Enter'){ const p=$('#grades .g.pick'); answer(p?+p.dataset.g:1); }
   });
 
   /* Anzeige */
@@ -649,9 +749,9 @@ const SEED = __SEED__;
     $('#codeInfo').textContent=store
       ? 'Auf diesem Gerät wird automatisch gespeichert – der Code ist nur zum Umziehen auf ein anderes Gerät nötig.'
       : 'Dieses Gerät speichert nichts. Sichere den Code nach jeder Lernrunde, sonst ist der Fortschritt weg.';
-    $('#statBlock').textContent=data.items.length+' Wörter · '+data.items.filter(i=>i.due).length
-      +' begonnen · '+data.items.filter(i=>i.step>=4).length+' sitzen fest · heute '+newToday()+' neue';
-    modeChips(); answerChips();
+    $('#statBlock').textContent=data.items.length+' Wörter · '+data.items.filter(i=>LANGS.some(k=>st(i,k))).length
+      +' begonnen · '+data.items.filter(i=>LANGS.some(k=>(st(i,k)||{}).s>=4)).length+' sitzen fest · heute '+newToday()+' neue';
+    modeChips(); answerChips(); dirChips();
     const miss=missing().length;
     $('#fillInfo').textContent=miss?miss+' Wörter ohne vollständige Übersetzung oder Beispielsatz.':'Alle Wörter sind vollständig übersetzt.';
     $('#fillGo').disabled=!miss;
@@ -663,6 +763,29 @@ const SEED = __SEED__;
     $('#start').textContent=data.cfg.mode==='look'?'Durchsehen starten':'Lernen starten';
   }
   $('#answerPick').onclick=e=>{const k=e.target.dataset.a; if(k){ data.cfg.mode=k; save(); answerChips(); }};
+  function dirChips(){
+    const from=data.cfg.from, to=data.cfg.to;
+    $('#fromPick').innerHTML=[['mix','Deutsch und Englisch gemischt']].concat(L.map(([k])=>[k,'Von '+NAME[k]]))
+      .map(([k,l])=>'<button class="chipbtn'+(from===k?' on':'')+'" data-f="'+k+'">'+l+'</button>').join('');
+    const tp=$('#toPick'); tp.hidden=from==='mix';
+    tp.innerHTML=L.filter(([k])=>k!==from).map(([k])=>'<button class="chipbtn'+(to.includes(k)?' on':'')+'" data-t="'+k+'">Nach '+NAME[k]+'</button>').join('');
+    $('#dirHint').textContent=from==='mix'
+      ? 'Die App fragt abwechselnd auf Deutsch und Englisch, gesucht ist die jeweils andere Sprache.'
+      : 'Von '+NAME[from]+' nach '+to.map(k=>NAME[k]).join(', ')+'.'+(to.length>1?' Ein Feld je Zielsprache, jede mit eigenem Lernstand.':'');
+  }
+  $('#fromPick').onclick=e=>{
+    const k=e.target.dataset.f; if(!k) return;
+    data.cfg.from=k; data.cfg.to=data.cfg.to.filter(x=>x!==k);
+    if(!data.cfg.to.length) data.cfg.to=[k==='de'?'en':'de'];
+    save(); render();
+  };
+  $('#toPick').onclick=e=>{
+    const k=e.target.dataset.t; if(!k) return;
+    const to=data.cfg.to;
+    if(to.includes(k)){ if(to.length===1){ toast('Mindestens eine Zielsprache'); return; } data.cfg.to=to.filter(x=>x!==k); }
+    else data.cfg.to=LANGS.filter(x=>x===k||to.includes(x));
+    save(); render();
+  };
   $('#deckPick').onclick=e=>{const d=e.target.dataset.d; if(d){deck=d; render();}};
   $('#catPick').onclick=e=>{const k=e.target.dataset.c; if(k){cat=k; render();}};
 
@@ -673,7 +796,8 @@ const SEED = __SEED__;
       &&(!q||L.some(([k])=>(i[k]||'').toLowerCase().includes(q))||(i.ex||'').toLowerCase().includes(q)));
     $('#list').innerHTML=list.slice(0,300).map(i=>{
       const extra=L.filter(([k])=>k!=='en'&&i[k]).map(([k,l])=>l+' '+esc(i[k])).join(' · ');
-      const due=!i.due?'neu':(i.due<=Date.now()?'fällig':'in '+dtxt(Math.ceil((i.due-Date.now())/DAY)));
+      const t=Date.now(), due=LANGS.filter(k=>st(i,k)).map(k=>{ const s=st(i,k);
+        return k.toUpperCase()+' '+(s.d<=t?'fällig':'in '+dtxt(Math.max(1,Math.ceil((s.d-t)/DAY)))); }).join(' · ')||'neu';
       return '<div class="row"><div class="rmain"><div class="rword">'+esc(i.en||i.de)+'</div>'
         +'<div class="rsub">'+extra+'</div><div class="rsub">'+esc(i.cat||'')+' · '+due+'</div></div>'
         +'<div class="rbtns"><button data-e="'+i.id+'">ändern</button><button data-x="'+i.id+'">löschen</button></div></div>';
@@ -705,7 +829,7 @@ const SEED = __SEED__;
   }
   $('#fClear').onclick=()=>{ edit=null; fillForm({}); $('#tWord').value=''; $('#fMsg').textContent=''; };
   $('#fSave').onclick=()=>{
-    const o=edit||{id:'u'+Date.now(),step:0,due:0};
+    const o=edit||{id:'u'+Date.now(),p:{}};
     L.forEach(([k])=>o[k]=$('#f-'+k).value.trim());
     o.rulat=$('#f-rulat').value.trim(); o.cat=$('#fCat').value.trim();
     o.deck=$('#fDeck').value.trim()||'Eigene'; o.ex=$('#fEx').value.trim(); o.exde=$('#fExDe').value.trim();
@@ -806,7 +930,7 @@ const SEED = __SEED__;
     words.forEach((w,n)=>{
       if(known[listLang].has(norm(w.a))||(w.b&&known[other].has(norm(w.b)))){ skipped++; return; }
       known[listLang].add(norm(w.a)); if(w.b) known[other].add(norm(w.b));
-      const o={id:'u'+Date.now()+'-'+n,de:'',en:'',fr:'',pl:'',ru:'',rulat:'',cat:'',ex:'',exde:'',deck:deckN,step:0,due:0};
+      const o={id:'u'+Date.now()+'-'+n,de:'',en:'',fr:'',pl:'',ru:'',rulat:'',cat:'',ex:'',exde:'',deck:deckN,p:{}};
       o[listLang]=w.a; o[other]=w.b; fresh.push(o);
     });
     data.items.push(...fresh); save(); fillSelects(); render();
@@ -859,7 +983,7 @@ const SEED = __SEED__;
         const txt=r.result;
         if(f.name.toLowerCase().endsWith('.json')){
           const inc=JSON.parse(txt), items=inc.items||inc, known=new Set(data.items.map(i=>i.id));
-          let n=0; items.forEach(i=>{ if(i&&i.id&&!known.has(i.id)){ data.items.push(i); n++; } });
+          let n=0; items.forEach(i=>{ if(i&&i.id&&!known.has(i.id)){ data.items.push(migrate(i)); n++; } });
           if(inc.cfg) data.cfg=Object.assign(data.cfg,inc.cfg);
           toast(n+' Wörter ergänzt');
         }else{
@@ -868,7 +992,7 @@ const SEED = __SEED__;
             const c=line.split(';').map(x=>x.replace(/^"|"$/g,'').trim());
             if(!c[0]&&!c[1]) return;
             data.items.push({id:'c'+Date.now()+'-'+(n++),en:c[0]||'',de:c[1]||'',cat:c[2]||'',ex:c[3]||'',
-              exde:c[8]||'',deck:f.name.replace(/\.[^.]+$/,''),step:0,due:0});
+              exde:c[8]||'',deck:f.name.replace(/\.[^.]+$/,''),p:{}});
           });
           toast(n+' Wörter angelegt');
         }
@@ -900,13 +1024,13 @@ const SEED = __SEED__;
   $('#cfgSave').onclick=()=>{ data.cfg.newPerDay=Math.max(0,+$('#cfgNew').value||0); save(); render(); toast('Übernommen'); };
   $('#seedBtn').onclick=()=>{
     const known=new Set(data.items.map(i=>i.id)); let n=0;
-    SEED.forEach(s=>{ if(!known.has(s.id)){ data.items.push(Object.assign({},s)); n++; } });
+    SEED.forEach(s=>{ if(!known.has(s.id)){ data.items.push(migrate(Object.assign({},s))); n++; } });
     save(); fillSelects(); render(); toast(n?n+' Wörter nachgeladen':'Grundstock vollständig');
   };
   $('#resetBtn').onclick=()=>{
     if(!confirm('Alle Fälligkeiten zurücksetzen? Die Wörter bleiben erhalten.')) return;
-    data.items.forEach(i=>{i.step=0;i.due=0;}); data.log={};
-    if(!data.items.length) data.items=SEED.map(s=>Object.assign({},s));
+    data.items.forEach(i=>{i.p={};}); data.log={};
+    if(!data.items.length) data.items=SEED.map(s=>migrate(Object.assign({},s)));
     save(); fillSelects(); render(); toast('Zurückgesetzt');
   };
 

@@ -11,6 +11,9 @@ const path = require('path');
 const PORT = 8000, URL = `http://localhost:${PORT}/`;
 const out = [];
 const ok = (name, cond, extra='') => out.push(`${cond ? 'OK  ' : 'FEHL'} ${name}${extra ? ' — ' + extra : ''}`);
+// Lernstand aus dem Speicher: [{id, lang, s, d, r}] über alle Wörter
+const STATES = `(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const out = [];
+  d.items.forEach(i => Object.keys(i.p || {}).forEach(k => out.push({ id: i.id, k, s: i.p[k].s, d: i.p[k].d, r: i.p[k].r || 0 }))); return out; })()`;
 
 const erreichbar = () => new Promise(r => { const q = http.get(URL, res => { res.resume(); r(res.statusCode === 200); }); q.on('error', () => r(false)); });
 async function server() {
@@ -60,19 +63,22 @@ async function server() {
     await p.click('#n1');
     await p.waitForTimeout(200);
     ok('Nächste Karte wieder verdeckt', !(await p.isVisible('#grades')) && await p.isVisible('#reveal'));
-    const saved = await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const l = d.items.filter(i => i.due); return { n: l.length, step: l[0] && l[0].step, log: d.log }; });
-    ok('Bewertung gespeichert (1 Karte fällig, Stufe 0→1 Tag)', saved.n === 1 && saved.step === 0, JSON.stringify(saved));
-    // Nochmal → in 10 Minuten
+    let states = await p.evaluate(STATES);
+    const log0 = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).log);
+    ok('Bewertung gespeichert: ein Stand, Zielsprache DE oder EN, Stufe 0, 1 Tag', states.length === 1 && /^(de|en)$/.test(states[0].k) && states[0].s === 0 && Math.abs(states[0].d - Date.now() - 864e5) < 6e4 && Object.values(log0)[0] === 1, JSON.stringify(states));
+    const cardA = states[0];
+    // Nochmal → in 10 Minuten, Wiederanlauf markiert
     await p.click('#reveal'); await p.click('#n0'); await p.waitForTimeout(200);
-    const again = await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); return d.items.filter(i => i.due && i.due - Date.now() < 7e5 && i.due > Date.now()).length; });
-    ok('„Nochmal“ setzt Wiedervorlage auf ~10 Minuten', again === 1);
+    states = await p.evaluate(STATES);
+    const rel = states.filter(x => x.r);
+    ok('„Nochmal“ setzt Wiedervorlage auf ~10 Minuten', rel.length === 1 && rel[0].d - Date.now() < 7e5 && rel[0].d > Date.now(), JSON.stringify(states));
     await p.click('#stop'); await p.waitForTimeout(200);
     ok('Lernfenster geschlossen', !(await p.isVisible('#drill')));
 
     // Antwortmodus: drei Chips, Vorgabe „Überlegen und aufdecken“
     const chips = await p.$$eval('#answerPick .chipbtn', b => b.map(x => [x.dataset.a, x.classList.contains('on')]));
     ok('Antwortmodus: drei Chips, Vorgabe check', chips.length === 3 && chips[0][0] === 'check' && chips[0][1] && !chips[1][1] && !chips[2][1], JSON.stringify(chips));
-    const dueBefore = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.due).length);
+    const dueBefore = JSON.stringify(await p.evaluate(STATES));
     // Nur anschauen
     await p.click('#answerPick [data-a="look"]');
     ok('Nur anschauen: Startknopf heißt „Durchsehen starten“', (await p.textContent('#start')).trim() === 'Durchsehen starten');
@@ -84,18 +90,74 @@ async function server() {
     await p.keyboard.press('Space'); await p.waitForTimeout(100);
     ok('Nur anschauen: Leertaste blättert', /Noch 299 von 301/.test(await p.textContent('#counter')));
     await p.click('#stop'); await p.waitForTimeout(100);
-    const dueAfter = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.due).length);
-    ok('Nur anschauen: Lernstand unverändert', dueBefore === dueAfter, dueBefore + ' → ' + dueAfter);
+    const dueAfter = JSON.stringify(await p.evaluate(STATES));
+    ok('Nur anschauen: Lernstand unverändert', dueBefore === dueAfter);
     // Antwort eintippen
     await p.click('#answerPick [data-a="type"]');
     await p.click('#start'); await p.waitForTimeout(200);
-    ok('Eintippen: Eingabefeld sichtbar, Knopf heißt „Prüfen“', await p.isVisible('#typed') && (await p.textContent('#reveal')).trim() === 'Prüfen' && !(await p.isVisible('#ans')));
-    await p.fill('#typed', 'xyzxyz'); await p.click('#reveal'); await p.waitForTimeout(100);
-    const verdict = await p.$eval('#verdict', v => [v.className, v.textContent]);
-    ok('Eintippen: falsche Antwort wird als falsch gemeldet, Bewertung offen', /no/.test(verdict[0]) && /Eingetippt/.test(verdict[1]) && await p.isVisible('#grades'), verdict.join(' / '));
+    ok('Eintippen: ein Eingabefeld sichtbar, Knopf heißt „Prüfen“', (await p.$$('#typeFields input:visible')).length === 1 && (await p.textContent('#reveal')).trim() === 'Prüfen' && !(await p.isVisible('#ans')));
+    await p.fill('#typeFields input', 'xyzxyz'); await p.click('#reveal'); await p.waitForTimeout(100);
+    const verdict = await p.$eval('#ans .verdict', v => [v.className, v.textContent]);
+    const picked = await p.$eval('#grades .g.pick', b => b.dataset.g).catch(() => null);
+    ok('Eintippen: falsche Antwort gemeldet, „Nochmal“ vorgewählt, Bewertung offen', /no/.test(verdict[0]) && /Eingetippt/.test(verdict[1]) && await p.isVisible('#grades') && picked === '0', verdict.join(' / ') + ' / vorgewählt: ' + picked);
     await p.click('#stop'); await p.waitForTimeout(100);
     await p.click('#answerPick [data-a="check"]');
     ok('Antwortmodus gespeichert', await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).cfg.mode === 'check'));
+
+    // Richtung: Vorgabe gemischt, feste Richtung mit zwei Zielsprachen und Eintippen
+    const fromChips = await p.$$eval('#fromPick .chipbtn', b => b.map(x => [x.dataset.f, x.classList.contains('on')]));
+    ok('Richtung: sechs Chips, Vorgabe gemischt, Zielsprachen verborgen', fromChips.length === 6 && fromChips[0][0] === 'mix' && fromChips[0][1] && !(await p.isVisible('#toPick')), JSON.stringify(fromChips));
+    await p.click('#fromPick [data-f="de"]');
+    ok('Richtung: von Deutsch, Vorgabe nach Englisch, Zielsprachen sichtbar', await p.isVisible('#toPick') && await p.evaluate(() => { const c = JSON.parse(localStorage.getItem('vokabeltrainer-v1')).cfg; return c.from === 'de' && c.to.join() === 'en'; }));
+    await p.click('#toPick [data-t="pl"]'); await p.click('#toPick [data-t="ru"]'); await p.click('#toPick [data-t="en"]');
+    const cfgTo = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).cfg.to.join());
+    ok('Richtung: nach Polnisch und Russisch, Englisch abgewählt', cfgTo === 'pl,ru' && /Polnisch, Russisch/.test(await p.textContent('#dirHint')), cfgTo);
+    await p.click('#toPick [data-t="pl"]'); await p.click('#toPick [data-t="ru"]');
+    ok('Richtung: letzte Zielsprache lässt sich nicht abwählen', (await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).cfg.to.join())) === 'ru');
+    await p.click('#toPick [data-t="pl"]');
+    await p.click('#answerPick [data-a="type"]');
+    await p.click('#start'); await p.waitForTimeout(200);
+    const fields = await p.$$eval('#typeFields input', b => b.map(x => x.dataset.k));
+    ok('Zwei Zielsprachen: zwei Felder PL und RU, Frage auf Deutsch', fields.join() === 'pl,ru' && (await p.textContent('#qLang')) === 'DE', fields.join());
+    // richtige polnische Antwort aus dem Speicher holen, russische falsch lassen
+    const cur = await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const w = document.querySelector('#qWord').firstChild.textContent.trim(); return d.items.find(i => i.de === w); });
+    await p.fill('#typeFields input[data-k="pl"]', cur.pl); await p.fill('#typeFields input[data-k="ru"]', 'falsch');
+    await p.keyboard.press('Enter'); await p.waitForTimeout(100);
+    ok('Zwei Zielsprachen: Enter im letzten Feld deckt auf, Urteile je Sprache, Übernehmen statt Knöpfe', await p.isVisible('#ans') && await p.isVisible('#apply') && !(await p.isVisible('#grades')) && (await p.$$('#ans .vsel:visible')).length === 2);
+    const vs = await p.$$eval('#ans .vsel', v => v.map(x => [x.dataset.k, [...x.querySelectorAll('button')].find(b => b.classList.contains('on')).dataset.g]));
+    ok('Zwei Zielsprachen: PL als Gut, RU als Nochmal vorgeschlagen', JSON.stringify(vs) === '[["pl","1"],["ru","0"]]', JSON.stringify(vs));
+    await p.click('#ans .vsel[data-k="pl"] button[data-g="2"]');
+    await p.click('#apply'); await p.waitForTimeout(200);
+    states = await p.evaluate(STATES);
+    const spl = states.find(x => x.id === cur.id && x.k === 'pl'), sru = states.find(x => x.id === cur.id && x.k === 'ru');
+    ok('Zwei Zielsprachen: PL auf Leicht umgestellt (Stufe 1, 3 Tage), RU Nochmal (10 Min), Karte kommt wieder', spl && spl.s === 1 && Math.abs(spl.d - Date.now() - 3 * 864e5) < 6e4 && sru && sru.r === 1 && /Noch \d+ von/.test(await p.textContent('#counter')), JSON.stringify([spl, sru]));
+    await p.click('#stop'); await p.waitForTimeout(100);
+    ok('Pensum zählt je Wort und Zielsprache', (await p.textContent('#cNew')) === '16', 'cNew=' + await p.textContent('#cNew'));
+
+    // Vorzeitigkeitsregel: Karte A hat EN in einem Tag, PL neu → Richtung DE→EN,PL, beides richtig
+    await p.evaluate(aId => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const far = Date.now() + 200 * 864e5;
+      d.items.forEach(i => { if (i.id !== aId) i.p = { en: { s: 6, d: far }, pl: { s: 6, d: far } }; else i.p = { en: { s: 0, d: Date.now() + 864e5 } }; });
+      d.cfg.to = ['en', 'pl']; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); }, cardA.id);
+    await p.reload(); await p.waitForTimeout(400);
+    await p.click('#start'); await p.waitForTimeout(200);
+    const curA = await p.evaluate(aId => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.find(i => i.id === aId), cardA.id);
+    ok('Vorzeitig: Karte mit neuer Zielsprache erscheint, Kennzeichnung neu', (await p.textContent('#qWord')).includes(curA.de) && (await p.textContent('#cardState')) === 'neu');
+    await p.fill('#typeFields input[data-k="en"]', curA.en); await p.fill('#typeFields input[data-k="pl"]', curA.pl);
+    await p.click('#reveal'); await p.click('#apply'); await p.waitForTimeout(200);
+    states = await p.evaluate(STATES);
+    const aEn = states.find(x => x.id === cardA.id && x.k === 'en'), aPl = states.find(x => x.id === cardA.id && x.k === 'pl');
+    ok('Vorzeitig richtig zählt nicht: EN unverändert, PL neu auf Stufe 0', aEn && aEn.s === 0 && Math.abs(aEn.d - Date.now() - 864e5) < 6e4 && aPl && aPl.s === 0, JSON.stringify([aEn, aPl]));
+    ok('Einzige Karte: Runde endet von selbst', !(await p.isVisible('#drill')));
+    // Alte Sicherung: step/due werden beim Laden in Stände für DE und EN übernommen
+    await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); d.items.forEach(i => { delete i.p; }); d.items[5].step = 3; d.items[5].due = Date.now() + 5 * 864e5; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); });
+    await p.reload(); await p.waitForTimeout(400);
+    states = await p.evaluate(STATES);
+    ok('Alter Speicherstand übernommen: Stufe 3 für DE und EN, step/due entfernt', states.length === 2 && states.every(x => x.s === 3) && states.map(x => x.k).sort().join() === 'de,en' && await p.evaluate(() => !('due' in JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items[5])), JSON.stringify(states));
+    // Alter Code VT1 bleibt lesbar
+    await p.click('nav button[data-v="data"]'); await p.click('#codeOpen'); await p.fill('#codeBox', 'VT1|d.2.fzz,e.0.g01|2'); await p.click('#codeApply'); await p.waitForTimeout(200);
+    states = await p.evaluate(STATES);
+    ok('Alter Code VT1 übernommen: je Wort Stände für DE und EN', states.length === 6 && states.filter(x => x.s === 2).length === 2, JSON.stringify(states.map(x => [x.id, x.k, x.s])));
+    await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); d.cfg.from = 'mix'; d.cfg.mode = 'check'; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); });
     // Zweiter Start ohne Begrüßung
     await p.reload(); await p.waitForTimeout(400);
     ok('Begrüßung beim zweiten Start nicht mehr', !(await p.isVisible('#welcome')));
@@ -173,7 +235,7 @@ async function server() {
     await p.evaluate(() => { navigator.clipboard.writeText = () => Promise.reject(new Error('kein Zugriff')); });
     await p.click('#sbCopy'); await p.waitForTimeout(300);
     const code = await p.inputValue('#codeBox');
-    ok('Ohne Speicher: „Sichern“ zeigt Code (VT1|…)', await p.isVisible('#codeWrap') && /^VT1\|/.test(code), code.slice(0, 50));
+    ok('Ohne Speicher: „Sichern“ zeigt Code (VT2|…)', await p.isVisible('#codeWrap') && /^VT2\|[0-9a-z]+\.[de]\.[0-9a-z]+\.[0-9a-z]+,/.test(code), code.slice(0, 50));
     ok('Ohne Speicher: keine Seitenfehler', errs.length === 0, errs.join('; '));
     await ctx.close();
 
@@ -185,8 +247,9 @@ async function server() {
     ok('„Fortschritt einsetzen“ öffnet leeres Feld', await p2.isVisible('#codeApply') && (await p2.inputValue('#codeBox')) === '');
     await p2.fill('#codeBox', code);
     await p2.click('#codeApply'); await p2.waitForTimeout(300);
-    const after = await p2.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); return { due: d.items.filter(i => i.due).length, steps: d.items.filter(i => i.due).map(i => i.step).sort(), log: d.log }; });
-    ok('Code in frischer Sitzung übernommen (2 Karten, Stufen 0 und 1, 2 neue heute)', after.due === 2 && after.steps.join() === '0,1' && Object.values(after.log)[0] === 2, JSON.stringify(after));
+    const after = await p2.evaluate(STATES);
+    const log2 = await p2.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).log);
+    ok('Code in frischer Sitzung übernommen (2 Stände, Stufen 0 und 1, 2 neue heute)', after.length === 2 && after.map(x => x.s).sort().join() === '0,1' && Object.values(log2)[0] === 2, JSON.stringify(after));
     await ctx2.close();
   }
 

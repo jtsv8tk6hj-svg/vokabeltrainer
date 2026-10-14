@@ -83,9 +83,7 @@ def vokabeln():
             "cat": kategorie,
             "ex": beispiel,                      # Beispielsatz englisch
             "exde": saetze.get(kennung, ""),     # derselbe Satz deutsch
-            "deck": STAPEL,
-            "step": 0,                           # Stufe auf der Wiederholungsleiter
-            "due": 0,                            # 0 = noch nie gelernt
+            "deck": STAPEL,                      # Lernstand je Zielsprache legt die App unter "p" an
         })
     return eintraege
 

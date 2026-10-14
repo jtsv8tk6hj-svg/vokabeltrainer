@@ -60,11 +60,21 @@ Ein Wort ist ein Objekt; alle Wörter liegen in `data.items`.
 | `deck` | Stapel; Grundstock = `Personalgewinnung`, eigene = `Eigene` |
 | `ex` | Beispielsatz in der Ausgangssprache (hier: englisch) |
 | `exde` | derselbe Satz auf Deutsch |
-| `step` | Stufe auf der Wiederholungsleiter (Index in `LADDER`) |
-| `due` | Fälligkeit als Zeitstempel in Millisekunden; `0` = noch nie gelernt |
+| `p` | Lernstand je Zielsprache: `p.pl = {s, d, r}` mit `s` Stufe (Index in `LADDER`), `d` Fälligkeit in Millisekunden, `r:1` während des Wiederanlaufs nach „Nochmal“. Kein Eintrag = in dieser Sprache nie gelernt |
 
-Daneben im Speicher: `cfg` (Tagespensum, Lernweise, Antwortmodus `mode`), `log` (neue
-Karten je Tag, Schlüssel `JJJJ-MM-TT` nach Ortszeit), `key` (optionaler API-Schlüssel).
+Die früheren Felder `step` und `due` (ein Stand je Wort) werden in `migrate()` beim
+Laden, beim JSON-Import und beim Einsetzen alter Codes in Stände für Deutsch **und**
+Englisch übernommen und dann gelöscht, weil beide Richtungen gemischt geübt wurden.
+`build.py` gibt sie nicht mehr aus.
+
+Daneben im Speicher: `cfg` (Tagespensum, Lernweise, Antwortmodus `mode`, Richtung
+`from`/`to`), `log` (neue Karten je Tag, Schlüssel `JJJJ-MM-TT` nach Ortszeit), `key`
+(optionaler API-Schlüssel).
+
+`cfg.from` ist `mix` (Deutsch und Englisch gemischt, Vorgabe, mit `askAll` alle
+Sprachen als Frage) oder ein Sprachkürzel; `cfg.to` ist die Liste der Zielsprachen in
+fester Reihenfolge `de en fr pl ru`, nie leer. Bei `mix` ist das Ziel je Karte das
+Gegenstück (Deutsch ↔ Englisch, andere Fragesprachen nach Deutsch).
 
 `cfg.mode` ist einer von `check` (überlegen und aufdecken, Vorgabe), `type` (Antwort
 eintippen) oder `look` (nur anschauen). Das frühere Feld `cfg.typing` wird in `load()`
@@ -87,7 +97,14 @@ LADDER = [1, 3, 7, 16, 35, 75, 150, 300]   // Tage
 - **Leicht** → zwei Stufen weiter.
 
 Auf jedem Knopf steht der tatsächlich resultierende Abstand. Eine neue Karte
-startet bei Stufe 0 (Gut → 1 Tag) bzw. Stufe 1 (Leicht → 3 Tage).
+startet bei Stufe 0 (Gut → 1 Tag) bzw. Stufe 1 (Leicht → 3 Tage). Der Wiederanlauf
+nach „Nochmal“ zählt wie neu: Gut führt wieder zu Stufe 0.
+
+**Vorzeitigkeitsregel.** Eine Karte erscheint, sobald eine ihrer Zielsprachen fällig
+oder neu ist; die übrigen gewählten Zielsprachen werden mit abgefragt. Ist eine
+davon noch nicht fällig, bringt eine richtige Antwort sie nicht voran, eine falsche
+setzt sie zurück (`plan()`). Sonst rutschte eine Sprache durch bloßes Mitlaufen in
+lange Abstände.
 
 Bewusst gewählt gegen SM-2: nachvollziehbar, leicht zu erklären, in der Praxis
 gleichwertig. Eine frühere Fassung hatte den vollen Anki-Algorithmus mit
@@ -98,10 +115,15 @@ stehen zusammen, es gibt nur **Weiter**, `step` und `due` bleiben unberührt, di
 läuft über die ganze Auswahl (Fälliges und Neues zuerst, dann der Rest). Der
 Startknopf heißt dann „Durchsehen starten“.
 
-**Eine Karte je Wort**, nicht eine je Sprachrichtung. Die Abfragesprache wechselt
-zufällig; das vervierfacht nicht die Wiederholungsmenge. Standardmäßig wird nur aus
-Deutsch und Englisch abgefragt (`cfg.askAll` schaltet FR/PL/RU dazu), die übrigen
-Sprachen laufen als Mitnahmeeffekt in der Auflösung mit.
+**Eine Karte je Wort, ein Stand je Zielsprache.** Die Karte ist das Wort; der
+Lernstand liegt je Zielsprache in `p`, weil Produktion in eine Sprache eine eigene
+Fertigkeit ist. Das Tagespensum zählt je Wort und Zielsprache. Die Richtung wählt der
+Nutzer auf der Lernseite: gemischt (Vorgabe, wie bisher) oder fest „von X nach Y, Z“.
+Bei mehreren Zielsprachen bekommt die Karte ein Eingabefeld je Sprache und nach dem
+Aufdecken ein antippbares Urteil je Sprache (Nochmal, Gut, Leicht, vorgeschlagen aus
+dem Vergleich) mit einem Knopf **Übernehmen**; bei einer Zielsprache bleiben die drei
+Knöpfe, im Tippmodus ist der passende vorgewählt. Nicht gewählte Sprachen laufen klein
+in der Auflösung mit (`.more`).
 
 ## Didaktische Festlegungen
 
@@ -125,7 +147,7 @@ gesetzt und sollten nicht aus Bequemlichkeit zurückgedreht werden:
    falsch. Bei Verben steht das Aspektpaar.
 6. **Antwortmodus** (`cfg.mode`, Chips auf der Lernseite). `check` ist der Regelfall.
    `type` vergleicht die Eingabe über `matches()` mit Normalisierung (Artikel, Akzente,
-   Klammerzusätze). `look` zeigt Frage und Lösung zusammen und bewertet nicht — das
+   Klammerzusätze, Betonungszeichen); bei Russisch gilt auch die Umschrift `rulat`. `look` zeigt Frage und Lösung zusammen und bewertet nicht — das
    ist die ausdrücklich gewünschte Ausnahme von Punkt 1 und darf nicht zur Vorgabe
    werden.
 
@@ -201,8 +223,10 @@ Ortszeit.
   Windows und Android funktioniert die Einzeldatei weiterhin.
 - Ohne Browser-Speicher (private Fenster, manche Vorschauen) erscheint ein roter
   Balken mit **Sichern** und **Laden**: ein kurzer Code im Format
-  `VT1|<index>.<stufe>.<tag>,…|<neue heute>|<eigene Wörter base64>` trägt den
-  Lernstand über die Zwischenablage. Rund 11 Zeichen je gelerntem Wort.
+  `VT2|<index>.<sprache>.<stufe>.<tag>,…|<neue heute>|<eigene Wörter base64>` trägt
+  den Lernstand über die Zwischenablage, ein Eintrag je Wort und Zielsprache, Sprache
+  als Buchstabe `d e f p r`. Alte `VT1`-Codes bleiben lesbar und werden wie der alte
+  Speicherstand auf Deutsch und Englisch übernommen.
 - Der Lernstand hängt an Gerät und Browser. Kein Abgleich zwischen Geräten.
 - Die automatische Übersetzung (Einzelwort, Liste, Nachübersetzen) braucht einen
   eigenen API-Schlüssel (unter *Neu* zu hinterlegen, bleibt lokal) und Internet. Der
@@ -220,7 +244,10 @@ iPhone-Format. Voraussetzung ist ein global installiertes `playwright` samt Chro
 (`npm i -g playwright && npx playwright install chromium`); liegt es nicht im
 Modulpfad, hilft `NODE_PATH=$(npm root -g)`. Abgedeckt sind: Begrüßung nur beim
 ersten Start, Verbergen und Aufdecken, Lage und Beschriftung der Bewertungsknöpfe,
-Speichern der Bewertung, die drei Antwortmodi, Listenimport mit Dubletten und
+Speichern der Bewertung je Zielsprache, Wiederanlauf nach „Nochmal“, die drei
+Antwortmodi, Richtungswahl, zwei Zielsprachen mit Urteil je Sprache, Pensum je Wort
+und Sprache, Vorzeitigkeitsregel, Übernahme alter Speicherstände und `VT1`-Codes,
+Listenimport mit Dubletten und
 nachgestellter API (`page.route` auf `api.anthropic.com`, prüft auch Modell und
 Schema der Anfrage), Nachübersetzen, Übernahme aus dem Link, Start ohne Speicher mit
 Sichern und Einsetzen des Fortschritts-Codes, Selbstheilung bei leerem Speicherstand
@@ -245,7 +272,13 @@ einsetzen.
 - Abgleich zwischen Geräten — bisher bewusst nicht gebaut, weil jede Lösung ein Konto
   oder einen Server verlangt.
 - Richtung Deutsch → Englisch strenger takten als umgekehrt; Produktion ist schwerer
-  als Verstehen. Vom Didaktiker empfohlen, noch nicht umgesetzt.
+  als Verstehen. Mit dem Stand je Zielsprache ist die Grundlage da, die Leiter ist
+  noch für alle Richtungen gleich.
+- Abgestimmter Ausbau in Stufen: Stufe 2 Verben (kuratierte Liste von 60 Verben in
+  fünf Sprachen, Formen beim Bau über `formen.py` erzeugt, Karten „Form bilden“ mit
+  Tabelle in der Auflösung, Stand je Verb, Sprache und Tempus, Melde-Knopf), Stufe 3
+  Substantive mit Kasus für Russisch, Polnisch, Deutsch, Stufe 4 Adjektive und
+  Pronomen. Alles im selben Stapel-, Leiter- und Code-System.
 - Zweiter Stapel mit Alltagswortschatz, damit die App auch privat taugt.
 - FR/PL/RU von Muttersprachlern gegenlesen lassen.
 - Import weiterer CSV-Dateien als eigene Stapel ist bereits eingebaut

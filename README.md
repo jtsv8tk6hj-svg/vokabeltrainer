@@ -42,6 +42,17 @@ Auf der Lernseite lässt sich wählen, wie geantwortet wird:
 | Antwort eintippen | Antwort schreiben, die App vergleicht und zeigt das Ergebnis. Streng, gut für die Sprache, die man aktiv sprechen will. |
 | Nur anschauen | Begriff und Lösung stehen gleich zusammen, ein Knopf **Weiter**. Zum Durchsehen der Auswahl, verändert den Lernstand nicht. |
 
+### Richtung
+
+Vorgabe ist „Deutsch und Englisch gemischt“: die App fragt abwechselnd in beiden
+Sprachen, gesucht ist die jeweils andere. Wer eine feste Richtung will, wählt „Von
+Deutsch“ und eine oder mehrere Zielsprachen, etwa Polnisch und Russisch. Dann steht
+auf der Karte ein Eingabefeld je Zielsprache, nach dem Aufdecken ein Urteil je Sprache
+(vorgeschlagen aus dem Vergleich, antippbar) und ein Knopf **Übernehmen**.
+
+Jedes Wort hat je Zielsprache einen eigenen Lernstand. Wer Polnisch übt, verändert
+damit nichts am Stand für Englisch. Das Tagespensum zählt je Wort und Zielsprache.
+
 ## Was drin ist
 
 301 Fachbegriffe der Personalgewinnung der Bundeswehr, in elf Kategorien von Recht
