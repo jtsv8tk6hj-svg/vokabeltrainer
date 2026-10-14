@@ -2076,5 +2076,724 @@
   },
   "ex": "The work starts at eight.",
   "exde": "Die Arbeit beginnt um acht."
+ },
+ "aj001": {
+  "de": {
+   "inf": "groß",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "Umlaut in Komparativ und Superlativ",
+   "tenses": [
+    {
+     "t": "Komparation",
+     "rows": [
+      {
+       "p": "Positiv",
+       "f": "groß"
+      },
+      {
+       "p": "Komparativ",
+       "f": "größer"
+      },
+      {
+       "p": "Superlativ",
+       "f": "am größten"
+      }
+     ]
+    },
+    {
+     "t": "Mit bestimmtem Artikel",
+     "rows": [
+      {
+       "p": "Nominativ m",
+       "f": "der große"
+      },
+      {
+       "p": "Nominativ f",
+       "f": "die große"
+      },
+      {
+       "p": "Nominativ n",
+       "f": "das große"
+      },
+      {
+       "p": "Nominativ Pl",
+       "f": "die großen"
+      },
+      {
+       "p": "Akkusativ m",
+       "f": "den großen"
+      },
+      {
+       "p": "Akkusativ f",
+       "f": "die große"
+      },
+      {
+       "p": "Akkusativ n",
+       "f": "das große"
+      },
+      {
+       "p": "Akkusativ Pl",
+       "f": "die großen"
+      },
+      {
+       "p": "Dativ m",
+       "f": "dem großen"
+      },
+      {
+       "p": "Dativ f",
+       "f": "der großen"
+      },
+      {
+       "p": "Dativ n",
+       "f": "dem großen"
+      },
+      {
+       "p": "Dativ Pl",
+       "f": "den großen"
+      },
+      {
+       "p": "Genitiv m",
+       "f": "des großen"
+      },
+      {
+       "p": "Genitiv f",
+       "f": "der großen"
+      },
+      {
+       "p": "Genitiv n",
+       "f": "des großen"
+      },
+      {
+       "p": "Genitiv Pl",
+       "f": "der großen"
+      }
+     ]
+    },
+    {
+     "t": "Ohne Artikel",
+     "rows": [
+      {
+       "p": "Nominativ m",
+       "f": "großer"
+      },
+      {
+       "p": "Nominativ f",
+       "f": "große"
+      },
+      {
+       "p": "Nominativ n",
+       "f": "großes"
+      },
+      {
+       "p": "Nominativ Pl",
+       "f": "große"
+      },
+      {
+       "p": "Akkusativ m",
+       "f": "großen"
+      },
+      {
+       "p": "Akkusativ f",
+       "f": "große"
+      },
+      {
+       "p": "Akkusativ n",
+       "f": "großes"
+      },
+      {
+       "p": "Akkusativ Pl",
+       "f": "große"
+      },
+      {
+       "p": "Dativ m",
+       "f": "großem"
+      },
+      {
+       "p": "Dativ f",
+       "f": "großer"
+      },
+      {
+       "p": "Dativ n",
+       "f": "großem"
+      },
+      {
+       "p": "Dativ Pl",
+       "f": "großen"
+      },
+      {
+       "p": "Genitiv m",
+       "f": "großen"
+      },
+      {
+       "p": "Genitiv f",
+       "f": "großer"
+      },
+      {
+       "p": "Genitiv n",
+       "f": "großen"
+      },
+      {
+       "p": "Genitiv Pl",
+       "f": "großer"
+      }
+     ]
+    }
+   ]
+  },
+  "en": {
+   "inf": "big",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "Konsonant wird verdoppelt",
+   "tenses": [
+    {
+     "t": "Komparation",
+     "rows": [
+      {
+       "p": "Positiv",
+       "f": "big"
+      },
+      {
+       "p": "Komparativ",
+       "f": "bigger"
+      },
+      {
+       "p": "Superlativ",
+       "f": "biggest"
+      }
+     ]
+    }
+   ]
+  },
+  "fr": {
+   "inf": "grand",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Formen",
+     "rows": [
+      {
+       "p": "m Singular",
+       "f": "grand"
+      },
+      {
+       "p": "f Singular",
+       "f": "grande"
+      },
+      {
+       "p": "m Plural",
+       "f": "grands"
+      },
+      {
+       "p": "f Plural",
+       "f": "grandes"
+      }
+     ]
+    },
+    {
+     "t": "Komparation",
+     "rows": [
+      {
+       "p": "Positiv",
+       "f": "grand"
+      },
+      {
+       "p": "Komparativ",
+       "f": "plus grand"
+      },
+      {
+       "p": "Superlativ",
+       "f": "le plus grand"
+      }
+     ]
+    }
+   ]
+  },
+  "pl": {
+   "inf": "duży",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "Komparation unregelmäßig (większy); Akkusativ m: belebt dużego, unbelebt duży",
+   "tenses": [
+    {
+     "t": "Komparation",
+     "rows": [
+      {
+       "p": "Positiv",
+       "f": "duży"
+      },
+      {
+       "p": "Komparativ",
+       "f": "większy"
+      },
+      {
+       "p": "Superlativ",
+       "f": "największy"
+      }
+     ]
+    },
+    {
+     "t": "Singular",
+     "rows": [
+      {
+       "p": "Nominativ m",
+       "f": "duży"
+      },
+      {
+       "p": "Nominativ f",
+       "f": "duża"
+      },
+      {
+       "p": "Nominativ n",
+       "f": "duże"
+      },
+      {
+       "p": "Genitiv m",
+       "f": "dużego"
+      },
+      {
+       "p": "Genitiv f",
+       "f": "dużej"
+      },
+      {
+       "p": "Genitiv n",
+       "f": "dużego"
+      },
+      {
+       "p": "Dativ m",
+       "f": "dużemu"
+      },
+      {
+       "p": "Dativ f",
+       "f": "dużej"
+      },
+      {
+       "p": "Dativ n",
+       "f": "dużemu"
+      },
+      {
+       "p": "Akkusativ m",
+       "f": "dużego / duży"
+      },
+      {
+       "p": "Akkusativ f",
+       "f": "dużą"
+      },
+      {
+       "p": "Akkusativ n",
+       "f": "duże"
+      },
+      {
+       "p": "Instrumental m",
+       "f": "dużym"
+      },
+      {
+       "p": "Instrumental f",
+       "f": "dużą"
+      },
+      {
+       "p": "Instrumental n",
+       "f": "dużym"
+      },
+      {
+       "p": "Lokativ m",
+       "f": "dużym"
+      },
+      {
+       "p": "Lokativ f",
+       "f": "dużej"
+      },
+      {
+       "p": "Lokativ n",
+       "f": "dużym"
+      },
+      {
+       "p": "Vokativ m",
+       "f": "duży"
+      },
+      {
+       "p": "Vokativ f",
+       "f": "duża"
+      },
+      {
+       "p": "Vokativ n",
+       "f": "duże"
+      }
+     ]
+    },
+    {
+     "t": "Plural",
+     "rows": [
+      {
+       "p": "Nominativ m-os.",
+       "f": "duzi"
+      },
+      {
+       "p": "Nominativ nie-m-os.",
+       "f": "duże"
+      },
+      {
+       "p": "Genitiv m-os.",
+       "f": "dużych"
+      },
+      {
+       "p": "Genitiv nie-m-os.",
+       "f": "dużych"
+      },
+      {
+       "p": "Dativ m-os.",
+       "f": "dużym"
+      },
+      {
+       "p": "Dativ nie-m-os.",
+       "f": "dużym"
+      },
+      {
+       "p": "Akkusativ m-os.",
+       "f": "dużych"
+      },
+      {
+       "p": "Akkusativ nie-m-os.",
+       "f": "duże"
+      },
+      {
+       "p": "Instrumental m-os.",
+       "f": "dużymi"
+      },
+      {
+       "p": "Instrumental nie-m-os.",
+       "f": "dużymi"
+      },
+      {
+       "p": "Lokativ m-os.",
+       "f": "dużych"
+      },
+      {
+       "p": "Lokativ nie-m-os.",
+       "f": "dużych"
+      },
+      {
+       "p": "Vokativ m-os.",
+       "f": "duzi"
+      },
+      {
+       "p": "Vokativ nie-m-os.",
+       "f": "duże"
+      }
+     ]
+    }
+   ]
+  },
+  "ru": {
+   "inf": "большо́й",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "Komparativ бо́льше unregelmäßig; Akkusativ m und Plural: belebt wie Genitiv",
+   "tenses": [
+    {
+     "t": "Komparation",
+     "rows": [
+      {
+       "p": "Positiv",
+       "f": "большо́й"
+      },
+      {
+       "p": "Komparativ",
+       "f": "бо́льше"
+      },
+      {
+       "p": "Superlativ",
+       "f": "са́мый большо́й"
+      }
+     ]
+    },
+    {
+     "t": "Singular",
+     "rows": [
+      {
+       "p": "Nominativ m",
+       "f": "большо́й"
+      },
+      {
+       "p": "Nominativ f",
+       "f": "больша́я"
+      },
+      {
+       "p": "Nominativ n",
+       "f": "большо́е"
+      },
+      {
+       "p": "Genitiv m",
+       "f": "большо́го"
+      },
+      {
+       "p": "Genitiv f",
+       "f": "большо́й"
+      },
+      {
+       "p": "Genitiv n",
+       "f": "большо́го"
+      },
+      {
+       "p": "Dativ m",
+       "f": "большо́му"
+      },
+      {
+       "p": "Dativ f",
+       "f": "большо́й"
+      },
+      {
+       "p": "Dativ n",
+       "f": "большо́му"
+      },
+      {
+       "p": "Akkusativ m",
+       "f": "большо́й / большо́го"
+      },
+      {
+       "p": "Akkusativ f",
+       "f": "большу́ю"
+      },
+      {
+       "p": "Akkusativ n",
+       "f": "большо́е"
+      },
+      {
+       "p": "Instrumental m",
+       "f": "больши́м"
+      },
+      {
+       "p": "Instrumental f",
+       "f": "большо́й"
+      },
+      {
+       "p": "Instrumental n",
+       "f": "больши́м"
+      },
+      {
+       "p": "Präpositiv m",
+       "f": "большо́м"
+      },
+      {
+       "p": "Präpositiv f",
+       "f": "большо́й"
+      },
+      {
+       "p": "Präpositiv n",
+       "f": "большо́м"
+      }
+     ]
+    },
+    {
+     "t": "Plural",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "больши́е"
+      },
+      {
+       "p": "Genitiv",
+       "f": "больши́х"
+      },
+      {
+       "p": "Dativ",
+       "f": "больши́м"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "больши́е / больши́х"
+      },
+      {
+       "p": "Instrumental",
+       "f": "больши́ми"
+      },
+      {
+       "p": "Präpositiv",
+       "f": "больши́х"
+      }
+     ]
+    }
+   ]
+  },
+  "ex": "The new office is big and bright.",
+  "exde": "Das neue Büro ist groß und hell."
+ },
+ "pn001": {
+  "de": {
+   "inf": "ich",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Fälle",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "ich"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "mich"
+      },
+      {
+       "p": "Dativ",
+       "f": "mir"
+      },
+      {
+       "p": "Genitiv",
+       "f": "meiner"
+      }
+     ]
+    }
+   ]
+  },
+  "en": {
+   "inf": "I",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Formen",
+     "rows": [
+      {
+       "p": "Subjekt",
+       "f": "I"
+      },
+      {
+       "p": "Objekt",
+       "f": "me"
+      },
+      {
+       "p": "Possessiv (begleitend)",
+       "f": "my"
+      },
+      {
+       "p": "Possessiv (allein)",
+       "f": "mine"
+      }
+     ]
+    }
+   ]
+  },
+  "fr": {
+   "inf": "je",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "je wird vor Vokal zu j'",
+   "tenses": [
+    {
+     "t": "Formen",
+     "rows": [
+      {
+       "p": "Subjekt",
+       "f": "je"
+      },
+      {
+       "p": "betont",
+       "f": "moi"
+      },
+      {
+       "p": "direktes Objekt",
+       "f": "me"
+      },
+      {
+       "p": "indirektes Objekt",
+       "f": "me"
+      }
+     ]
+    }
+   ]
+  },
+  "pl": {
+   "inf": "ja",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "Dativ: mnie betont, mi unbetont",
+   "tenses": [
+    {
+     "t": "Fälle",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "ja"
+      },
+      {
+       "p": "Genitiv",
+       "f": "mnie"
+      },
+      {
+       "p": "Dativ",
+       "f": "mnie / mi"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "mnie"
+      },
+      {
+       "p": "Instrumental",
+       "f": "mną"
+      },
+      {
+       "p": "Lokativ",
+       "f": "mnie"
+      }
+     ]
+    }
+   ]
+  },
+  "ru": {
+   "inf": "я",
+   "aspect": "",
+   "pair": "",
+   "gender": "",
+   "note": "",
+   "tenses": [
+    {
+     "t": "Fälle",
+     "rows": [
+      {
+       "p": "Nominativ",
+       "f": "я"
+      },
+      {
+       "p": "Genitiv",
+       "f": "меня́"
+      },
+      {
+       "p": "Dativ",
+       "f": "мне"
+      },
+      {
+       "p": "Akkusativ",
+       "f": "меня́"
+      },
+      {
+       "p": "Instrumental",
+       "f": "мной"
+      },
+      {
+       "p": "Präpositiv",
+       "f": "обо мне"
+      }
+     ]
+    }
+   ]
+  },
+  "ex": "I work in Cologne.",
+  "exde": "Ich arbeite in Köln."
  }
 }

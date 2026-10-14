@@ -21,6 +21,8 @@ daten/beispielsaetze-de.json        {id: deutscher Beispielsatz}
 daten/sprachen-fr-pl-ru.json        {id: {fr, pl, ru, rulat}}
 daten/verben.csv                    60 Verben in fünf Sprachen mit Aspektpaaren (Stapel Verben)
 daten/substantive.csv               60 Substantive in fünf Sprachen mit Artikel (Stapel Substantive)
+daten/adjektive.csv                 40 Adjektive (Stapel Adjektive)
+daten/pronomen.csv                  11 Pronomen (Stapel Pronomen)
 daten/formen.json                   Formentafeln je Wort (Konjugation, Deklination), erzeugt von formen.py; Platzhalter __FORMS__
 formen.py                           erzeugt und prüft die Formentafeln über die API (auf dem eigenen Rechner)
 index.html                          erzeugt — nicht von Hand bearbeiten
@@ -136,7 +138,7 @@ dem Vergleich) mit einem Knopf **Übernehmen**; bei einer Zielsprache bleiben di
 Knöpfe, im Tippmodus ist der passende vorgewählt. Nicht gewählte Sprachen laufen klein
 in der Auflösung mit (`.more`).
 
-## Verben, Substantive und Formkarten
+## Verben, Substantive, Adjektive, Pronomen und Formkarten
 
 Der Stapel **Verben** enthält 60 kuratierte Verben (`daten/verben.csv`, zwei Drittel
 allgemein, ein Drittel Personalgewinnung), dieselben Begriffe in fünf Sprachen, bei
@@ -176,6 +178,19 @@ und nutzt je eigenen Systemtext (`SYSTEM`, `SYSTEM_SUBST`) und Tafelsatz (`TEMPO
 einzeln angelegtes Wort mit deutschem Artikel, Merkmal `tbl`; Listenimporte bekommen
 bewusst keine Kasustafeln, sonst löste jede Notiz mit Artikeln hundert Anfragen aus). `das Haus` und `die Arbeit` sind von Hand
 geschrieben.
+
+**Adjektive und Pronomen** (`daten/adjektive.csv`, `daten/pronomen.csv`, Kennungen
+`aj`, `pn`) nutzen dasselbe Format. Adjektive: DE Komparation, Mit bestimmtem Artikel
+(16 Zeilen Fall × Genus), Ohne Artikel (16); EN Komparation; FR Formen (m/f, Sg/Pl)
+und Komparation; PL Komparation, Singular (21 Zeilen Fall × Genus), Plural (14, m-os.
+und nie-m-os.); RU Komparation, Singular (18), Plural (6). Pronomen: eine Tafel
+„Fälle“ je Sprache (DE vier, PL sechs, RU sechs), EN und FR „Formen“ (Subjekt, Objekt
+bzw. betont). Die Zeilenbeschriftungen tragen den Fall vorn („Dativ f“), deshalb
+greifen die Fragewörter aus `CASES` nicht automatisch; sie erscheinen nur bei genauem
+Treffer auf den Fallnamen, also bei Substantiven und Pronomen. `groß` und `ich` sind
+von Hand geschrieben. Wortartenwahl in `formen.py` über `ARTEN` nach Kennung, in der
+App über `adjLike()`/`pronLike()` nur nach Kennung: eigene Adjektive und Pronomen
+bekommen keine automatischen Tafeln.
 
 **Formkarte.** Ein Eintrag der Warteschlange ist `{i}` für ein Wort oder `{i, k, t}`
 für Wort × Sprache × Tafel (`entries()`), bei Substantiven also Singular oder Plural. Je Karte wird eine zufällige Zeile der
@@ -356,7 +371,7 @@ Schema der Anfrage), Nachübersetzen, Übernahme aus dem Link, Start ohne Speich
 Sichern und Einsetzen des Fortschritts-Codes, Formkarten (Stapel Verben, Aufgabe,
 Tafel, Melden, Stand, Code mit Grammatikfeld, Schalter „Formen mitlernen“,
 Formen-Abruf über die Attrappe), Kasuskarten (Stapel Substantive, Genus, sechs
-russische Fälle), Selbstheilung bei leerem Speicherstand und
+russische Fälle, Fragewörter), Adjektiv- und Pronomenkarten, Selbstheilung bei leerem Speicherstand und
 Offline-Start über den Service Worker. Jede Zeile der Ausgabe beginnt mit `OK` oder `FEHL`, der
 Exit-Code ist 1 bei Fehlschlägen. Neue Fälle dort ergänzen, nach demselben Muster:
 
@@ -380,10 +395,11 @@ einsetzen.
 - Richtung Deutsch → Englisch strenger takten als umgekehrt; Produktion ist schwerer
   als Verstehen. Mit dem Stand je Zielsprache ist die Grundlage da, die Leiter ist
   noch für alle Richtungen gleich.
-- Abgestimmter Ausbau in Stufen: Stufe 2 Verben und Stufe 3 Substantive sind gebaut;
-  die Tafeln für 116 Wörter entstehen erst mit `python3 formen.py` auf dem Rechner des
-  Nutzers. Stufe 4 Adjektive und Pronomen folgt im selben Tafelformat
-  `{t, rows:[{p, f}]}` (Adjektive: Gruppen je Genus und Numerus, Komparation).
+- Der abgestimmte Ausbau (Richtungen, Verben, Substantive, Adjektive, Pronomen) ist
+  gebaut. Die Tafeln für 165 Wörter entstehen erst mit `python3 formen.py` auf dem
+  Rechner des Nutzers; bis dahin tragen nur sechs Wörter Tafeln.
+- Adjektive: Fragewörter je Fall auch in Zeilen wie „Dativ f“ anzeigen (Präfixtreffer
+  in `caseInfo()`), sobald die Tafeln da sind und sich zeigt, dass es hilft.
 - Zweiter Stapel mit Alltagswortschatz, damit die App auch privat taugt.
 - FR/PL/RU von Muttersprachlern gegenlesen lassen.
 - Import weiterer CSV-Dateien als eigene Stapel ist bereits eingebaut

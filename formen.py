@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Erzeugt die Formentafeln fuer daten/verben.csv (Konjugation) und daten/substantive.csv
-(Deklination) und schreibt sie nach daten/formen.json.
+"""Erzeugt die Formentafeln fuer daten/verben.csv (Konjugation), daten/substantive.csv
+(Deklination), daten/adjektive.csv (Komparation, Deklination) und daten/pronomen.csv
+(Faelle) und schreibt sie nach daten/formen.json.
 
 Aufruf auf dem eigenen Rechner (braucht einen API-Schluessel von Anthropic):
 
     export ANTHROPIC_API_KEY=sk-ant-...
     python3 formen.py              # fehlende Woerter erzeugen, dann pruefen
-    python3 formen.py --nur sb001  # nur ein Wort (vb… Verb, sb… Substantiv)
+    python3 formen.py --nur sb001  # nur ein Wort (vb… Verb, sb… Substantiv, aj… Adjektiv, pn… Pronomen)
     python3 formen.py --pruefen    # nur den Pruefdurchgang fuer alle Woerter
     python3 formen.py --neu vb019  # ein Wort neu erzeugen, auch wenn es schon da ist
 
@@ -31,6 +32,8 @@ import urllib.request
 WURZEL = pathlib.Path(__file__).parent
 VERBEN = WURZEL / "daten" / "verben.csv"
 SUBSTANTIVE = WURZEL / "daten" / "substantive.csv"
+ADJEKTIVE = WURZEL / "daten" / "adjektive.csv"
+PRONOMEN = WURZEL / "daten" / "pronomen.csv"
 ZIEL = WURZEL / "daten" / "formen.json"
 MODELL = "claude-opus-5-5"
 URL = "https://api.anthropic.com/v1/messages"
@@ -53,6 +56,31 @@ FAELLE = {
     "fr": "Singular, Plural (jeweils mit bestimmtem Artikel le/la/l'/les)",
     "pl": "Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Lokativ, Vokativ",
     "ru": "Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Präpositiv",
+}
+
+ADJ = {
+    "de": ["Komparation", "Mit bestimmtem Artikel", "Ohne Artikel"], "en": ["Komparation"],
+    "fr": ["Formen", "Komparation"], "pl": ["Komparation", "Singular", "Plural"], "ru": ["Komparation", "Singular", "Plural"],
+}
+ADJ_ZEILEN = {
+    "de": "Komparation: Positiv, Komparativ, Superlativ (am …sten). Mit bestimmtem Artikel und Ohne Artikel: je 16 Zeilen "
+          "Nominativ m, f, n, Pl; Akkusativ m, f, n, Pl; Dativ m, f, n, Pl; Genitiv m, f, n, Pl (mit Artikel: der große …)",
+    "en": "Komparation: Positiv, Komparativ, Superlativ",
+    "fr": "Formen: m Singular, f Singular, m Plural, f Plural. Komparation: Positiv, Komparativ (plus …), Superlativ (le plus …)",
+    "pl": "Komparation: Positiv, Komparativ, Superlativ. Singular: 21 Zeilen, je Fall (Nominativ, Genitiv, Dativ, Akkusativ, "
+          "Instrumental, Lokativ, Vokativ) die Genera m, f, n; Akkusativ m als 'belebt / unbelebt'. Plural: 14 Zeilen, je Fall "
+          "m-os. und nie-m-os.",
+    "ru": "Komparation: Positiv, Komparativ (einfache Form), Superlativ (са́мый …). Singular: 18 Zeilen, je Fall (Nominativ, "
+          "Genitiv, Dativ, Akkusativ, Instrumental, Präpositiv) die Genera m, f, n; Akkusativ m als 'unbelebt / belebt'. "
+          "Plural: 6 Zeilen je Fall, Akkusativ als 'unbelebt / belebt'",
+}
+PRON = {"de": ["Fälle"], "en": ["Formen"], "fr": ["Formen"], "pl": ["Fälle"], "ru": ["Fälle"]}
+PRON_ZEILEN = {
+    "de": "Fälle: Nominativ, Akkusativ, Dativ, Genitiv",
+    "en": "Formen: Subjekt, Objekt, Possessiv (begleitend), Possessiv (allein)",
+    "fr": "Formen: Subjekt, betont, direktes Objekt, indirektes Objekt",
+    "pl": "Fälle: Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Lokativ (betonte / unbetonte Form mit Schrägstrich)",
+    "ru": "Fälle: Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Präpositiv (mit Präposition, z. B. обо мне)",
 }
 
 ZEILE = {"type": "object", "properties": {"p": {"type": "string"}, "f": {"type": "string"}},
@@ -107,6 +135,29 @@ SYSTEM_SUBST = (
     "Keine Erklärungen, nur das JSON."
 )
 
+SYSTEM_ADJ = (
+    "Du bist ein Grammatikwörterbuch für Adjektive in Deutsch, Englisch, Französisch, Polnisch und Russisch. "
+    "Du lieferst vollständige, korrekte Tafeln. Regeln:\n"
+    "- Je Sprache genau die vorgegebenen Tafeln (t) in der vorgegebenen Reihenfolge mit exakt den vorgegebenen Namen; "
+    "die Zeilen p exakt wie vorgegeben, in dieser Reihenfolge, f die Form.\n"
+    "- Russisch mit Betonungszeichen (U+0301) außer bei ё und Einsilbern. Fehlt eine Form (etwa keine Komparation), Zeile mit f leer "
+    "und Hinweis in note.\n"
+    "- gender, aspect und pair leer. note: Unregelmäßigkeiten (Umlaut, Suppletion, Konsonantenwechsel), sonst leer.\n"
+    "- ex: ein kurzer englischer Beispielsatz mit dem Adjektiv, exde: derselbe Satz auf Deutsch.\n"
+    "Keine Erklärungen, nur das JSON."
+)
+
+SYSTEM_PRON = (
+    "Du bist ein Grammatikwörterbuch für Pronomen in Deutsch, Englisch, Französisch, Polnisch und Russisch. "
+    "Du lieferst vollständige, korrekte Formentafeln. Regeln:\n"
+    "- Je Sprache genau die vorgegebene Tafel (t) mit exakt dem vorgegebenen Namen; die Zeilen p exakt wie vorgegeben, "
+    "in dieser Reihenfolge, f die Form. Hat ein Pronomen mehrere Formen je Zeile (ona: ją / nią), beide mit Schrägstrich.\n"
+    "- Russisch mit Betonungszeichen (U+0301) außer bei ё und Einsilbern; nach Präposition die n-Formen (у него́) in Klammern ergänzen.\n"
+    "- gender, aspect und pair leer. note: Besonderheiten, sonst leer.\n"
+    "- ex: ein kurzer englischer Beispielsatz mit dem Pronomen, exde: derselbe Satz auf Deutsch.\n"
+    "Keine Erklärungen, nur das JSON."
+)
+
 PRUEF = (
     "Du prüfst Konjugationstabellen auf Fehler: falsche Endungen, falsches Hilfsverb, fehlende oder falsche Betonungszeichen "
     "im Russischen, falsche Genusformen im Polnischen, vertauschte Aspekte, falsche Personenzuordnung. "
@@ -141,27 +192,39 @@ def anfrage(system, text, schluessel):
     return json.loads(text)
 
 
+ARTEN = {
+    "vb": ("Verb", TEMPORA, None, None),
+    "sb": ("Substantiv", KASUS, FAELLE, None),
+    "aj": ("Adjektiv", ADJ, ADJ_ZEILEN, None),
+    "pn": ("Pronomen", PRON, PRON_ZEILEN, None),
+}
+
+
 def art(v):
-    return "subst" if v["id"].startswith("sb") else "verb"
+    return v["id"][:2]
 
 
 def tafeln(v):
-    return KASUS if art(v) == "subst" else TEMPORA
+    return ARTEN[art(v)][1]
+
+
+def system(v):
+    return {"vb": SYSTEM, "sb": SYSTEM_SUBST, "aj": SYSTEM_ADJ, "pn": SYSTEM_PRON}[art(v)]
 
 
 def vorgabe(v):
-    subst = art(v) == "subst"
-    zeilen = ["%s: %s (id %s)" % ("Substantiv" if subst else "Verb", v["de"], v["id"]),
+    name, tf, zeilen_je, _ = ARTEN[art(v)]
+    zeilen = ["%s: %s (id %s)" % (name, v["de"], v["id"]),
               "Deutsch: %s | Englisch: %s | Französisch: %s | Polnisch: %s | Russisch: %s"
               % (v["de"], v["en"], v["fr"], v["pl"], v["ru"])]
-    if subst:
-        zeilen.append("Tafeln je Sprache, Zeilen in dieser Reihenfolge:")
-        for k, ts in KASUS.items():
-            zeilen.append("  %s: %s – Zeilen: %s" % (k, ", ".join(ts), FAELLE[k]))
-    else:
+    if art(v) == "vb":
         zeilen.append("Bei Polnisch und Russisch steht 'unvollendet / vollendet'. Tempora je Sprache:")
-        for k, ts in TEMPORA.items():
+        for k, ts in tf.items():
             zeilen.append("  %s: %s" % (k, ", ".join(ts)))
+    else:
+        zeilen.append("Tafeln je Sprache, Zeilen in dieser Reihenfolge:")
+        for k, ts in tf.items():
+            zeilen.append("  %s: %s – Zeilen: %s" % (k, ", ".join(ts), zeilen_je[k]))
     return "\n".join(zeilen)
 
 
@@ -190,7 +253,7 @@ def main():
     nur_pruefen = "--pruefen" in args
 
     verben = []
-    for datei in (VERBEN, SUBSTANTIVE):
+    for datei in (VERBEN, SUBSTANTIVE, ADJEKTIVE, PRONOMEN):
         if datei.exists():
             with datei.open(encoding="utf-8") as fh:
                 verben += list(csv.DictReader(fh, delimiter=";"))
@@ -205,7 +268,7 @@ def main():
             if v["id"] in formen and neu != v["id"]:
                 continue
             print("Erzeuge", v["id"], v["de"])
-            f = anfrage(SYSTEM_SUBST if art(v) == "subst" else SYSTEM, vorgabe(v), schluessel)
+            f = anfrage(system(v), vorgabe(v), schluessel)
             for fe in pruefen_struktur(f, v):
                 print("  Hinweis:", fe)
             formen[v["id"]] = f

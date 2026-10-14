@@ -450,7 +450,7 @@
       Unter <b>Daten</b> kannst du eine Sicherung speichern, eigene Wortlisten einlesen und die Lernweise umstellen
       (Lückensatz, Antwort eintippen, Aussprache, weitere Abfragesprachen).</p>
       <p class="hint" style="margin-top:9px">Unter <b>Neu</b> legst du eigene Wörter an – einzeln oder als ganze Liste aus Apple Notizen. Mit eigenem API-Schlüssel übersetzt die App alles in fünf Sprachen, samt Beispielsätzen.</p>
-      <p class="hint" style="margin-top:9px">Die Stapel <b>Verben</b> und <b>Substantive</b> üben zusätzlich Formen: „<i>arbeiten</i> · Präsens · du“ oder „<i>дом</i> · Plural · Genitiv“. Die Auflösung zeigt die ganze Tafel. Jede Tafel hat ihren eigenen Lernstand.</p>
+      <p class="hint" style="margin-top:9px">Die Stapel <b>Verben</b>, <b>Substantive</b>, <b>Adjektive</b> und <b>Pronomen</b> üben zusätzlich Formen: „<i>arbeiten</i> · Präsens · du“, „<i>дом</i> · Plural · Genitiv“, „<i>duży</i> · Komparation · Superlativ“. Die Auflösung zeigt die ganze Tafel, bei Fällen mit Fragewörtern. Jede Tafel hat ihren eigenen Lernstand.</p>
     </div>
     <button class="btn main wide" id="welcomeGo" style="min-height:54px">Los geht's</button>
     <p class="hint" style="text-align:center;margin-top:12px">Diese Übersicht findest du jederzeit unter „Daten".</p>
@@ -928,7 +928,7 @@ const FORMS = __FORMS__;
     modeChips(); answerChips(); dirChips(); wLangChips();
     const miss=missing().length, mv=verbsMissing().length;
     $('#fillInfo').textContent=(miss?miss+' Wörter ohne vollständige Übersetzung oder Beispielsatz':'Alle Wörter sind vollständig übersetzt')
-      +(mv?', '+mv+' Verben oder Substantive ohne Formentafel.':'.');
+      +(mv?', '+mv+' Wörter ohne Formentafel.':'.');
     $('#fillGo').disabled=!(miss||mv);
     $('#repInfo').textContent=data.rep.length?data.rep.length+' gemeldete Formen, zuletzt '+data.rep[data.rep.length-1].inf+' ('+data.rep[data.rep.length-1].tense+').':'Keine Meldungen.';
     $('#repCopy').disabled=!data.rep.length; $('#repClear').disabled=!data.rep.length;
@@ -1091,7 +1091,8 @@ const FORMS = __FORMS__;
   // sonst würde jede eingelesene Notiz mit Artikeln hundert Anfragen auslösen
   const nounForm=i=>/^(der|die|das)\s\p{Lu}\p{L}*$/u.test(i.de||'');
   const nounLike=i=>/^sb\d/.test(i.id||'')||(!!i.tbl&&nounForm(i));
-  const tableLike=i=>verbLike(i)||nounLike(i);
+  const adjLike=i=>/^aj\d/.test(i.id||''), pronLike=i=>/^pn\d/.test(i.id||'');
+  const tableLike=i=>verbLike(i)||nounLike(i)||adjLike(i)||pronLike(i);
   const verbsMissing=()=>data.items.filter(i=>tableLike(i)&&!formsOf(i));
   // unvollständige Wörter; Verben und Substantive ohne Tafel bekommen Beispielsätze mit den Formen, deshalb hier nicht doppelt
   const missing=()=>data.items.filter(i=>!(i.de&&i.en&&i.fr&&i.pl&&i.ru&&i.ex&&i.exde)&&!(tableLike(i)&&!formsOf(i)));
@@ -1118,15 +1119,29 @@ const FORMS = __FORMS__;
     +'Polnisch: Vergangenheit mit allen Genera (ja (m), ja (f), ty (m), ty (f), on, ona, ono, my (m-os.), my (nie-m-os.), wy (m-os.), wy (nie-m-os.), oni, one), Futur (unvollendet) mit będę + Infinitiv, Futur (vollendet) mit dem vollendeten Partner oder leer. '
     +'Russisch: alle Formen mit Betonungszeichen (U+0301) außer bei ё und Einsilbern, Vergangenheit он/она́/оно́/они́, Futur (unvollendet) mit бу́ду + Infinitiv, Futur (vollendet) mit dem vollendeten Partner oder leer, Imperativ ты/вы. '
     +'aspect und pair nur bei Polnisch und Russisch (ipf und vollendeter Partner), sonst leer. note: knapper Hinweis auf Unregelmäßigkeiten oder leer. ex: kurzer englischer Beispielsatz, exde: derselbe auf Deutsch. Nur das JSON.';
+  // Adjektive und Pronomen: Tafelsätze wie in formen.py
+  const ADJ={de:['Komparation','Mit bestimmtem Artikel','Ohne Artikel'],en:['Komparation'],fr:['Formen','Komparation'],pl:['Komparation','Singular','Plural'],ru:['Komparation','Singular','Plural']};
+  const ADJ_ZEILEN={de:'Komparation: Positiv, Komparativ, Superlativ (am …sten). Mit bestimmtem Artikel und Ohne Artikel: je 16 Zeilen Nominativ m, f, n, Pl; Akkusativ m, f, n, Pl; Dativ m, f, n, Pl; Genitiv m, f, n, Pl',
+    en:'Komparation: Positiv, Komparativ, Superlativ',fr:'Formen: m Singular, f Singular, m Plural, f Plural. Komparation: Positiv, Komparativ, Superlativ',
+    pl:'Komparation: Positiv, Komparativ, Superlativ. Singular: 21 Zeilen, je Fall (Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Lokativ, Vokativ) die Genera m, f, n. Plural: 14 Zeilen, je Fall m-os. und nie-m-os.',
+    ru:'Komparation: Positiv, Komparativ, Superlativ. Singular: 18 Zeilen, je Fall (Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Präpositiv) die Genera m, f, n. Plural: 6 Zeilen je Fall'};
+  const PRON={de:['Fälle'],en:['Formen'],fr:['Formen'],pl:['Fälle'],ru:['Fälle']};
+  const PRON_ZEILEN={de:'Fälle: Nominativ, Akkusativ, Dativ, Genitiv',en:'Formen: Subjekt, Objekt, Possessiv (begleitend), Possessiv (allein)',fr:'Formen: Subjekt, betont, direktes Objekt, indirektes Objekt',
+    pl:'Fälle: Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Lokativ',ru:'Fälle: Nominativ, Genitiv, Dativ, Akkusativ, Instrumental, Präpositiv'};
+  const ADJ_SYSTEM='Du bist ein Grammatikwörterbuch für Adjektive in Deutsch, Englisch, Französisch, Polnisch und Russisch und lieferst vollständige, korrekte Tafeln. Je Sprache genau die vorgegebenen Tafeln (t) in der vorgegebenen Reihenfolge mit exakt den vorgegebenen Namen; Zeilen p exakt wie vorgegeben, f die Form. Russisch mit Betonungszeichen (U+0301). Fehlende Formen mit leerem f und Hinweis in note. gender, aspect, pair leer. ex: kurzer englischer Beispielsatz, exde: derselbe auf Deutsch. Nur das JSON.';
+  const PRON_SYSTEM='Du bist ein Grammatikwörterbuch für Pronomen in Deutsch, Englisch, Französisch, Polnisch und Russisch und lieferst vollständige, korrekte Formentafeln. Je Sprache genau die vorgegebene Tafel (t) mit exakt dem vorgegebenen Namen; Zeilen p exakt wie vorgegeben, f die Form, mehrere Formen mit Schrägstrich. Russisch mit Betonungszeichen (U+0301). gender, aspect, pair leer. ex: kurzer englischer Beispielsatz, exde: derselbe auf Deutsch. Nur das JSON.';
   async function fetchForms(i){
-    const noun=nounLike(i)&&!verbLike(i);
-    const text=(noun?'Substantiv: ':'Verb: ')+(i.de||i.en)+'\nDeutsch: '+(i.de||'?')+' | Englisch: '+(i.en||'?')+' | Französisch: '+(i.fr||'?')+' | Polnisch: '+(i.pl||'?')+' | Russisch: '+(i.ru||'?')
-      +'\nFehlende Sprachen selbst ergänzen. '+(noun
-        ?'Tafeln je Sprache, Zeilen in dieser Reihenfolge:\n'+LANGS.map(k=>'  '+k+': '+KASUS[k].join(', ')+' – Zeilen: '+FAELLE[k]).join('\n')
+    const art=adjLike(i)?'adj':pronLike(i)?'pron':(nounLike(i)&&!verbLike(i))?'noun':'verb';
+    const name={adj:'Adjektiv',pron:'Pronomen',noun:'Substantiv',verb:'Verb'}[art];
+    const sets={adj:[ADJ,ADJ_ZEILEN],pron:[PRON,PRON_ZEILEN],noun:[KASUS,FAELLE]}[art];
+    const text=name+': '+(i.de||i.en)+'\nDeutsch: '+(i.de||'?')+' | Englisch: '+(i.en||'?')+' | Französisch: '+(i.fr||'?')+' | Polnisch: '+(i.pl||'?')+' | Russisch: '+(i.ru||'?')
+      +'\nFehlende Sprachen selbst ergänzen. '+(sets
+        ?'Tafeln je Sprache, Zeilen in dieser Reihenfolge:\n'+LANGS.map(k=>'  '+k+': '+sets[0][k].join(', ')+' – Zeilen: '+sets[1][k]).join('\n')
         :'Tempora je Sprache:\n'+LANGS.map(k=>'  '+k+': '+TEMPORA[k].join(', ')).join('\n'));
+    const sysText={adj:ADJ_SYSTEM,pron:PRON_SYSTEM,noun:NOUN_SYSTEM,verb:FORM_SYSTEM}[art];
     const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
       headers:{'Content-Type':'application/json','x-api-key':data.key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-opus-5-5',max_tokens:16000,system:noun?NOUN_SYSTEM:FORM_SYSTEM,
+      body:JSON.stringify({model:'claude-opus-5-5',max_tokens:16000,system:sysText,
         output_config:{format:{type:'json_schema',schema:FORM_SCHEMA}},messages:[{role:'user',content:text}]})});
     if(!r.ok) throw new Error('Server '+r.status);
     const j=await r.json();
@@ -1266,7 +1281,7 @@ const FORMS = __FORMS__;
     r.readAsText(f,'utf-8');
   };
   function modeChips(){
-    const opts=[['gap','Lückensatz'],['audio','Aussprache beim Aufdecken'],['askAll','Auch aus FR, PL, RU abfragen'],['forms','Formen mitlernen (Verben, Substantive)']];
+    const opts=[['gap','Lückensatz'],['audio','Aussprache beim Aufdecken'],['askAll','Auch aus FR, PL, RU abfragen'],['forms','Formentafeln mitlernen']];
     $('#modePick').innerHTML=opts.map(([k,l])=>chip(!!data.cfg[k],'data-m="'+k+'"',l)).join('');
   }
   $('#modePick').addEventListener('click',e=>{

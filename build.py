@@ -20,6 +20,8 @@ SAETZE_DE = WURZEL / "daten" / "beispielsaetze-de.json"
 SPRACHEN = WURZEL / "daten" / "sprachen-fr-pl-ru.json"
 VERBEN = WURZEL / "daten" / "verben.csv"
 SUBSTANTIVE = WURZEL / "daten" / "substantive.csv"
+ADJEKTIVE = WURZEL / "daten" / "adjektive.csv"
+PRONOMEN = WURZEL / "daten" / "pronomen.csv"
 FORMEN = WURZEL / "daten" / "formen.json"
 VORLAGE = WURZEL / "src" / "template.html"
 ZIEL = WURZEL / "index.html"
@@ -27,6 +29,8 @@ ZIEL = WURZEL / "index.html"
 STAPEL = "Personalgewinnung"
 STAPEL_VERBEN = "Verben"
 STAPEL_SUBSTANTIVE = "Substantive"
+STAPEL_ADJEKTIVE = "Adjektive"
+STAPEL_PRONOMEN = "Pronomen"
 
 # Als data:-URI eingebettet, damit iOS beim Ablegen auf dem Home-Bildschirm
 # sofort ein Symbol hat, ohne eine zweite Datei zu laden.
@@ -94,10 +98,11 @@ def vokabeln():
 
 
 def verben():
-    """Die kuratierten Verben und Substantive als Woerter ihrer Stapel; die Formen kommen getrennt."""
+    """Die kuratierten Verben, Substantive, Adjektive und Pronomen als Woerter ihrer Stapel; die Formen kommen getrennt."""
     formen = json.loads(FORMEN.read_text(encoding="utf-8")) if FORMEN.exists() else {}
     eintraege = []
-    for datei, stapel, wortart in ((VERBEN, STAPEL_VERBEN, "Verb"), (SUBSTANTIVE, STAPEL_SUBSTANTIVE, "Substantiv")):
+    for datei, stapel, wortart in ((VERBEN, STAPEL_VERBEN, "Verb"), (SUBSTANTIVE, STAPEL_SUBSTANTIVE, "Substantiv"),
+                                   (ADJEKTIVE, STAPEL_ADJEKTIVE, "Adjektiv"), (PRONOMEN, STAPEL_PRONOMEN, "Pronomen")):
         if not datei.exists():
             continue
         with datei.open(encoding="utf-8") as f:
@@ -142,7 +147,7 @@ def main():
 
     ohne_satz = sum(1 for d in daten if not d["exde"])
     ohne_sprachen = sum(1 for d in daten if not (d["fr"] and d["pl"] and d["ru"]))
-    print("index.html geschrieben: %d Woerter (davon %d Verben und Substantive, %d mit Formen), %d Bytes"
+    print("index.html geschrieben: %d Woerter (davon %d mit Tafeln vorgesehen, %d mit Formen), %d Bytes"
           % (len(daten), len(verb_eintraege), len(tafeln), len(seite)))
     if len(tafeln) < len(verb_eintraege):
         print("  Hinweis: Formen fehlen fuer %d Woerter - python3 formen.py mit API-Schluessel ausfuehren"
