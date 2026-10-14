@@ -566,7 +566,8 @@ const FORMS = {"vb019":{"de":{"inf":"arbeiten","tenses":[{"t":"Präsens","rows":
     ru:{Nominativ:['имени́тельный','кто? что?'],Genitiv:['роди́тельный','кого́? чего́?'],Dativ:['да́тельный','кому́? чему́?'],
         Akkusativ:['вини́тельный','кого́? что?'],Instrumental:['твори́тельный','кем? чем?'],Präpositiv:['предло́жный','о ком? о чём?']},
     de:{Nominativ:['1. Fall','wer? was?'],Genitiv:['2. Fall','wessen?'],Dativ:['3. Fall','wem?'],Akkusativ:['4. Fall','wen? was?']}};
-  const caseInfo=(k,p)=>(CASES[k]&&CASES[k][p])||null;
+  // trifft auch Zeilen wie „Dativ f“ oder „Akkusativ Pl“ bei Adjektiven: der Fall steht vorn
+  const caseInfo=(k,p)=>{ const m=(p||'').match(/^\p{L}+/u); return (m&&CASES[k]&&CASES[k][m[0]])||null; };
   const caseQ=(k,p)=>{ const c=caseInfo(k,p); return c?' <span class="qq">'+esc(c[1])+'</span>':''; };
   const gst=(i,k,t)=>(i.g&&i.g[k]&&i.g[k][t])||null;
   // Einträge einer Karte: das Wort (wenn eine Zielsprache da ist) und je Zielsprache und Tempus eine Formkarte

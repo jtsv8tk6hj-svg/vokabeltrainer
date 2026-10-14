@@ -333,7 +333,8 @@ async function server() {
     ok('Adjektivkarte: duży, Aufgabe aus Komparation oder Kasus mit Genus', /^duży/.test((await p.textContent('#qWord')).trim()) && /<b>(Komparation|Singular|Plural)<\/b> · /.test(task), task);
     await p.click('#reveal'); await p.waitForTimeout(100);
     const n = (await p.$$('#ans .ftab tr')).length;
-    ok('Adjektivkarte: Tafel vollständig (3, 21 oder 14 Zeilen)', [3, 21, 14].includes(n) && (await p.$$('#ans .ftab tr.hit')).length === 1, 'Zeilen: ' + n);
+    const qs = (await p.$$('#ans .ftab tr td:first-child small')).length;
+    ok('Adjektivkarte: Tafel vollständig (3, 21 oder 14 Zeilen), Fragewörter bei Kasuszeilen wie „Dativ f“', [3, 21, 14].includes(n) && (await p.$$('#ans .ftab tr.hit')).length === 1 && qs === (n === 3 ? 0 : n), 'Zeilen: ' + n + ', mit Frage: ' + qs);
     await p.click('#n1'); await p.waitForTimeout(100); await p.click('#stop'); await p.waitForTimeout(100);
     await p.click('#deckPick [data-d="Pronomen"]'); await p.waitForTimeout(100);
     ok('Stapel Pronomen: 11 Wörter, 1 neue Tafelkarte (ich: Fälle)', (await p.textContent('#cPool')) === '11' && (await p.textContent('#cNew')) === '1');

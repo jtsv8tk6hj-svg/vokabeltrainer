@@ -185,9 +185,9 @@ geschrieben.
 und Komparation; PL Komparation, Singular (21 Zeilen Fall × Genus), Plural (14, m-os.
 und nie-m-os.); RU Komparation, Singular (18), Plural (6). Pronomen: eine Tafel
 „Fälle“ je Sprache (DE vier, PL sechs, RU sechs), EN und FR „Formen“ (Subjekt, Objekt
-bzw. betont). Die Zeilenbeschriftungen tragen den Fall vorn („Dativ f“), deshalb
-greifen die Fragewörter aus `CASES` nicht automatisch; sie erscheinen nur bei genauem
-Treffer auf den Fallnamen, also bei Substantiven und Pronomen. `groß` und `ich` sind
+bzw. betont). Die Zeilenbeschriftungen tragen den Fall vorn („Dativ f“); `caseInfo()`
+liest das erste Wort, deshalb erscheinen die Fragewörter aus `CASES` auch in diesen
+Zeilen. `groß` und `ich` sind
 von Hand geschrieben. Wortartenwahl in `formen.py` über `ARTEN` nach Kennung, in der
 App über `adjLike()`/`pronLike()` nur nach Kennung: eigene Adjektive und Pronomen
 bekommen keine automatischen Tafeln.
@@ -398,8 +398,6 @@ einsetzen.
 - Der abgestimmte Ausbau (Richtungen, Verben, Substantive, Adjektive, Pronomen) ist
   gebaut. Die Tafeln für 165 Wörter entstehen erst mit `python3 formen.py` auf dem
   Rechner des Nutzers; bis dahin tragen nur sechs Wörter Tafeln.
-- Adjektive: Fragewörter je Fall auch in Zeilen wie „Dativ f“ anzeigen (Präfixtreffer
-  in `caseInfo()`), sobald die Tafeln da sind und sich zeigt, dass es hilft.
 - Zweiter Stapel mit Alltagswortschatz, damit die App auch privat taugt.
 - FR/PL/RU von Muttersprachlern gegenlesen lassen.
 - Import weiterer CSV-Dateien als eigene Stapel ist bereits eingebaut
