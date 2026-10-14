@@ -457,3 +457,28 @@ ku455;die Schürze;apron;Küche und Hygiene
 ku456;die Lebensmittelvergiftung;food poisoning;Küche und Hygiene
 ku457;das Küchenpapier;kitchen roll;Küche und Hygiene
 ku458;die Frischhaltefolie;cling film;Küche und Hygiene
+ku459;der Berliner;doughnut;Süßes und Desserts
+ku460;die Teekanne;teapot;Kochgeschirr und Besteck
+ku461;schlagen;to whip;Zubereiten (Verben)
+ku462;ziehen lassen;to leave to infuse;Garmethoden
+ku463;gratinieren;to brown under the grill;Garmethoden
+ku464;flambieren;to flambé;Garmethoden
+ku465;das Wasserbad;bain-marie;Garmethoden
+ku466;goldbraun;golden brown;Garmethoden
+ku467;das Aroma;the aroma;Geschmack und Beschaffenheit
+ku468;säuerlich;slightly sour;Geschmack und Beschaffenheit
+ku469;die Tafel;bar;Maße und Mengen
+ku470;gestrichen;level;Maße und Mengen
+ku471;der Großeinkauf;big shop;Einkaufen und Vorrat
+ku472;der Bioladen;organic shop;Einkaufen und Vorrat
+ku473;ausverkauft;sold out;Einkaufen und Vorrat
+ku474;Zahlen, bitte!;Could we have the bill, please?;Im Restaurant
+ku475;die Bedienung;the service;Im Restaurant
+ku476;Hat es geschmeckt?;Did you enjoy your meal?;Im Restaurant
+ku477;Ist hier noch frei?;Is this seat free?;Im Restaurant
+ku478;zum Mitnehmen;to take away;Im Restaurant
+ku479;der Gang;the course;Im Restaurant
+ku480;mit Karte zahlen;to pay by card;Im Restaurant
+ku481;das belegte Brötchen;filled roll;Mahlzeiten und Gerichte
+ku482;zu Abend essen;to have dinner;Mahlzeiten und Gerichte
+ku483;der Appetit;appetite;Mahlzeiten und Gerichte

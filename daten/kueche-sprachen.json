@@ -3662,5 +3662,205 @@
   "rulat": "pischtschewája pljónka",
   "ex": "Cover the bowl with cling film.",
   "exde": "Deck die Schüssel mit Frischhaltefolie ab."
+ },
+ "ku459": {
+  "fr": "le beignet",
+  "pl": "pączek",
+  "ru": "по́нчик",
+  "rulat": "póntschik",
+  "ex": "I bought a doughnut at the bakery.",
+  "exde": "Ich habe beim Bäcker einen Berliner gekauft."
+ },
+ "ku460": {
+  "fr": "la théière",
+  "pl": "dzbanek do herbaty",
+  "ru": "зава́рочный ча́йник",
+  "rulat": "sawárotschnyj tschájnik",
+  "ex": "The teapot is on the table.",
+  "exde": "Die Teekanne steht auf dem Tisch."
+ },
+ "ku461": {
+  "fr": "fouetter",
+  "pl": "ubijać",
+  "ru": "взбива́ть",
+  "rulat": "wsbiwát",
+  "ex": "Whip the cream until stiff.",
+  "exde": "Schlag die Sahne steif."
+ },
+ "ku462": {
+  "fr": "laisser infuser",
+  "pl": "zostawić do zaparzenia",
+  "ru": "дать насто́яться",
+  "rulat": "dat nastójatsja",
+  "ex": "Leave the tea to infuse for five minutes.",
+  "exde": "Lass den Tee fünf Minuten ziehen."
+ },
+ "ku463": {
+  "fr": "gratiner",
+  "pl": "zapiekać",
+  "ru": "запека́ть",
+  "rulat": "sapekát",
+  "ex": "Brown the casserole under the grill for ten minutes.",
+  "exde": "Gratiniere den Auflauf zehn Minuten lang."
+ },
+ "ku464": {
+  "fr": "flamber",
+  "pl": "flambirować",
+  "ru": "фламби́ровать",
+  "rulat": "flambírowat",
+  "ex": "The waiter will flambé the dessert at the table.",
+  "exde": "Der Kellner wird das Dessert am Tisch flambieren."
+ },
+ "ku465": {
+  "fr": "le bain-marie",
+  "pl": "kąpiel wodna",
+  "ru": "водяна́я ба́ня",
+  "rulat": "wodjanája bánja",
+  "ex": "Melt the chocolate in a bain-marie.",
+  "exde": "Schmilz die Schokolade im Wasserbad."
+ },
+ "ku466": {
+  "fr": "doré",
+  "pl": "złocisty",
+  "ru": "золоти́стый",
+  "rulat": "solotístyj",
+  "ex": "Fry the onions until golden brown.",
+  "exde": "Brate die Zwiebeln goldbraun."
+ },
+ "ku467": {
+  "fr": "l'arôme",
+  "pl": "aromat",
+  "ru": "арома́т",
+  "rulat": "aromát",
+  "ex": "I love the aroma of fresh coffee.",
+  "exde": "Ich liebe das Aroma von frischem Kaffee."
+ },
+ "ku468": {
+  "fr": "acidulé",
+  "pl": "kwaskowaty",
+  "ru": "кислова́тый",
+  "rulat": "kislowátyj",
+  "ex": "These apples taste slightly sour.",
+  "exde": "Diese Äpfel schmecken säuerlich."
+ },
+ "ku469": {
+  "fr": "la tablette",
+  "pl": "tabliczka",
+  "ru": "пли́тка",
+  "rulat": "plítka",
+  "ex": "She ate a whole bar of chocolate.",
+  "exde": "Sie hat eine ganze Tafel Schokolade gegessen."
+ },
+ "ku470": {
+  "fr": "rase",
+  "pl": "płaski",
+  "ru": "без ве́рха",
+  "rulat": "bes wércha",
+  "ex": "Add one level teaspoon of salt.",
+  "exde": "Gib einen gestrichenen Teelöffel Salz dazu."
+ },
+ "ku471": {
+  "fr": "les grosses courses",
+  "pl": "duże zakupy",
+  "ru": "больша́я заку́пка",
+  "rulat": "bolschája sakúpka",
+  "ex": "We do a big shop every Saturday.",
+  "exde": "Wir machen jeden Samstag einen Großeinkauf."
+ },
+ "ku472": {
+  "fr": "le magasin bio",
+  "pl": "sklep ekologiczny",
+  "ru": "магази́н экопроду́ктов",
+  "rulat": "magasín ekoprodúktow",
+  "ex": "I buy my vegetables at the organic shop.",
+  "exde": "Ich kaufe mein Gemüse im Bioladen."
+ },
+ "ku473": {
+  "fr": "épuisé",
+  "pl": "wyprzedany",
+  "ru": "распро́дан",
+  "rulat": "raspródan",
+  "ex": "The bread is sold out.",
+  "exde": "Das Brot ist ausverkauft."
+ },
+ "ku474": {
+  "fr": "L'addition, s'il vous plaît !",
+  "pl": "Poproszę rachunek!",
+  "ru": "Счёт, пожа́луйста!",
+  "rulat": "Schtschjot, poschálujsta!",
+  "ex": "Could we have the bill, please? We're in a hurry.",
+  "exde": "Zahlen, bitte! Wir haben es eilig."
+ },
+ "ku475": {
+  "fr": "le service",
+  "pl": "obsługa",
+  "ru": "обслу́живание",
+  "rulat": "obslúshiwanije",
+  "ex": "The service in this restaurant is excellent.",
+  "exde": "Die Bedienung in diesem Restaurant ist ausgezeichnet."
+ },
+ "ku476": {
+  "fr": "Ça vous a plu ?",
+  "pl": "Smakowało?",
+  "ru": "Вам понра́вилось?",
+  "rulat": "Wam ponráwilos?",
+  "ex": "The waiter asked, \"Did you enjoy your meal?\"",
+  "exde": "Der Kellner fragte: „Hat es geschmeckt?“"
+ },
+ "ku477": {
+  "fr": "Cette place est libre ?",
+  "pl": "Czy to miejsce jest wolne?",
+  "ru": "Здесь свобо́дно?",
+  "rulat": "Sdes swobódno?",
+  "ex": "Excuse me, is this seat free?",
+  "exde": "Entschuldigung, ist hier noch frei?"
+ },
+ "ku478": {
+  "fr": "à emporter",
+  "pl": "na wynos",
+  "ru": "с собо́й",
+  "rulat": "s sobój",
+  "ex": "I'd like a coffee to take away.",
+  "exde": "Ich hätte gern einen Kaffee zum Mitnehmen."
+ },
+ "ku479": {
+  "fr": "le plat",
+  "pl": "danie",
+  "ru": "блю́до",
+  "rulat": "bljúdo",
+  "ex": "The second course was fish.",
+  "exde": "Der zweite Gang war Fisch."
+ },
+ "ku480": {
+  "fr": "payer par carte",
+  "pl": "płacić kartą",
+  "ru": "плати́ть ка́ртой",
+  "rulat": "platítj kártoj",
+  "ex": "Can I pay by card?",
+  "exde": "Kann ich mit Karte zahlen?"
+ },
+ "ku481": {
+  "fr": "le petit pain garni",
+  "pl": "kanapka",
+  "ru": "бутербро́д",
+  "rulat": "buterbrót",
+  "ex": "I bought a filled roll for lunch.",
+  "exde": "Ich habe mir ein belegtes Brötchen zum Mittagessen gekauft."
+ },
+ "ku482": {
+  "fr": "dîner",
+  "pl": "jeść kolację",
+  "ru": "у́жинать",
+  "rulat": "úshinatj",
+  "ex": "We have dinner at seven.",
+  "exde": "Wir essen um sieben zu Abend."
+ },
+ "ku483": {
+  "fr": "l'appétit",
+  "pl": "apetyt",
+  "ru": "аппети́т",
+  "rulat": "appetít",
+  "ex": "I have no appetite today.",
+  "exde": "Ich habe heute keinen Appetit."
  }
 }

@@ -196,7 +196,7 @@ async function server() {
         // Thema aufbereiten: n Einträge zum Thema, einer davon schon vorhanden (Apfel)
         topicReqs.push(body);
         const n = +body.messages[0].content.match(/Anzahl: (\d+)/)[1], topic = body.messages[0].content.match(/^Thema: (.*)/)[1];
-        const items = Array.from({ length: n }, (_, k) => ({ de: k === 0 ? 'Mango' : 'Wort' + k, en: k === 0 ? 'mango' : 'word' + k, fr: 'fr' + k, pl: 'pl' + k, ru: 'ru' + k, rulat: 'lat' + k, ex: 'Ex ' + k + '.', exde: 'Bsp ' + k + '.', cat: topic }));
+        const items = Array.from({ length: n }, (_, k) => ({ de: k === 0 ? 'Zahnrad' : 'Wort' + k, en: k === 0 ? 'cogwheel' : 'word' + k, fr: 'fr' + k, pl: 'pl' + k, ru: 'ru' + k, rulat: 'lat' + k, ex: 'Ex ' + k + '.', exde: 'Bsp ' + k + '.', cat: topic }));
         await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ stop_reason: 'end_turn', content: [{ type: 'text', text: JSON.stringify({ items }) }] }) });
         return;
       }
@@ -215,10 +215,10 @@ async function server() {
     });
     await p.goto(URL); await p.waitForTimeout(400);
     await p.click('nav button[data-v="new"]');
-    await p.fill('#listBox', '# Dienst\n- Mango – mango\ndie Birne\n3. Kirsche: cherry\n\n');
+    await p.fill('#listBox', '# Dienst\n- Zahnrad – cogwheel\ndie Steckdose\n3. Schraubenzieher: screwdriver\n\n');
     await p.click('#listGo'); await p.waitForTimeout(200);
     let items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
-    ok('Liste ohne Schlüssel: 3 Wörter im Stapel aus der Überschrift', items.length === 3 && items[0].de === 'Mango' && items[0].en === 'mango' && items[1].de === 'die Birne' && items[1].en === '' && items[2].en === 'cherry', JSON.stringify(items.map(i => [i.de, i.en])));
+    ok('Liste ohne Schlüssel: 3 Wörter im Stapel aus der Überschrift', items.length === 3 && items[0].de === 'Zahnrad' && items[0].en === 'cogwheel' && items[1].de === 'die Steckdose' && items[1].en === '' && items[2].en === 'screwdriver', JSON.stringify(items.map(i => [i.de, i.en])));
     ok('Liste ohne Schlüssel: Hinweis auf Schlüssel', /3 Wörter im Stapel „Dienst"/.test(await p.textContent('#listMsg')) && /Schlüssel/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
     await p.click('#listGo'); await p.waitForTimeout(200);
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
@@ -240,7 +240,7 @@ async function server() {
     await p.click('#fillGo');
     await p.waitForFunction(() => /ergänzt|Formentafeln/.test(document.querySelector('#fillMsg').textContent), null, { timeout: 60000 }).catch(() => {});
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
-    ok('Nachübersetzen: alte Wörter vervollständigt, eingegebene Übersetzung bleibt', items.every(i => i.fr && i.pl && i.ru && i.ex && i.exde) && items[0].en === 'mango' && items[1].en === 'en:die Birne', JSON.stringify(items.map(i => [i.de, i.en, i.fr])));
+    ok('Nachübersetzen: alte Wörter vervollständigt, eingegebene Übersetzung bleibt', items.every(i => i.fr && i.pl && i.ru && i.ex && i.exde) && items[0].en === 'cogwheel' && items[1].en === 'en:die Steckdose', JSON.stringify(items.map(i => [i.de, i.en, i.fr])));
     ok('Nachübersetzen: nichts mehr offen', /vollständig übersetzt/.test(await p.textContent('#fillInfo')) && await p.$eval('#fillGo', b => b.disabled), (await p.textContent('#fillInfo')).trim());
     ok('Zwei Aufrufe für zwei Übersetzungsrunden, keine für Formentafeln (Grundstock vollständig)', requests.length === 2 && formReqs.length === 0, 'Aufrufe: ' + requests.length + ' / Formen: ' + formReqs.length);
     // Formentafel für ein eigenes Verb beim Anlegen unter „Neu“
@@ -251,7 +251,7 @@ async function server() {
     await p.fill('#topicName', 'Beim Arzt'); await p.fill('#topicN', '8'); await p.fill('#topicDeck', 'Themen'); await p.click('#topicGo');
     await p.waitForFunction(() => /angelegt/.test(document.querySelector('#topicMsg').textContent), null, { timeout: 10000 }).catch(() => {});
     const th = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Themen'));
-    ok('Thema aufbereiten: 7 neue Wörter im Stapel „Themen“ mit Thema als Kategorie, Dublette „Mango“ übersprungen', topicReqs.length === 1 && th.length === 7 && th.every(i => i.cat === 'Beim Arzt' && i.ru && i.exde) && /7 Wörter.*1 schon vorhanden/.test(await p.textContent('#topicMsg')) && topicReqs[0].system.length > 100, (await p.textContent('#topicMsg')).trim());
+    ok('Thema aufbereiten: 7 neue Wörter im Stapel „Themen“ mit Thema als Kategorie, Dublette „Zahnrad“ übersprungen', topicReqs.length === 1 && th.length === 7 && th.every(i => i.cat === 'Beim Arzt' && i.ru && i.exde) && /7 Wörter.*1 schon vorhanden/.test(await p.textContent('#topicMsg')) && topicReqs[0].system.length > 100, (await p.textContent('#topicMsg')).trim());
     await p.click('nav button[data-v="learn"]'); await p.click('#deckPick [data-d="Themen"]'); await p.waitForTimeout(100);
     ok('Thema abrufen: Stapel „Themen“ zeigt das Thema als Kategorie', (await p.$$eval('#catPick .chipbtn', b => b.map(x => x.textContent))).join() === 'Alle Kategorien,Beim Arzt' && (await p.textContent('#cPool')) === '7');
     await p.click('nav button[data-v="new"]');
