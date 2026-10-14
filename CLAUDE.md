@@ -23,6 +23,7 @@ index.html                          erzeugt — nicht von Hand bearbeiten
 sw.js                               Service Worker (Offline-Betrieb)
 manifest.webmanifest, icon.svg      Home-Bildschirm-Symbol
 .nojekyll                           verhindert Jekyll-Verarbeitung auf GitHub Pages
+kurzbefehl.html                     Anleitung für den Apple-Kurzbefehl (statisch, von Hand gepflegt)
 test/pruefung.js                    Playwright-Prüfung der App (siehe „Prüfen")
 ```
 
@@ -142,7 +143,10 @@ Drei Zugänge zum selben Feld: Einfügen von Hand, `navigator.clipboard.readText
 das `#liste=…` oder `?liste=…` aus der Adresse übernimmt, die Adresse per
 `history.replaceState` bereinigt und zur Ansicht *Neu* wechselt. Letzteres ist für
 Kurzbefehle gedacht; auf dem iPhone landet es in Safari, nicht im Home-Bildschirm-
-Symbol (getrennter Speicher), siehe README.
+Symbol (getrennter Speicher). Die Anleitung zum Nachbauen der Kurzbefehle liegt als
+eigene Seite `kurzbefehl.html` neben der App, mit denselben Farben, ohne Skript; sie
+wird vom Service Worker mit vorgehalten und ist aus dem Hinweis unter *Liste
+übernehmen* verlinkt. Empfohlene erste Zeile der Notiz: `Stapel: Vokabeln`.
 
 Die Übersetzung läuft über eine gemeinsame Funktion `translate(list)` für Einzelwort,
 Liste und *Nachübersetzen*: direkter `fetch` auf `api.anthropic.com/v1/messages` mit

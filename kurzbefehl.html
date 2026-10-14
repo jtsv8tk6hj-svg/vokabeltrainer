@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1013">
+<title>Kurzbefehl: Notiz in den Vokabeltrainer</title>
+<style>
+  :root{ --bg:#0e1013; --card:#181b21; --raise:#20242b; --line:#2b3038; --ink:#eceef1; --dim:#a2aab4; --faint:#727b86; --fr:#5ecfa4;
+         --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+         --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:15px; line-height:1.55;
+       padding:calc(18px + env(safe-area-inset-top,0px)) 16px calc(40px + env(safe-area-inset-bottom,0px))}
+  main{max-width:640px; margin:0 auto}
+  h1{font-family:var(--serif); font-size:24px; font-weight:600; margin:0 0 6px}
+  h2{font-size:16px; font-weight:600; margin:0 0 10px}
+  .lead{color:var(--dim); margin:0 0 18px}
+  .panel{background:var(--card); border:1px solid var(--line); border-radius:13px; padding:16px; margin-bottom:14px}
+  ol,ul{margin:0; padding-left:22px}
+  li{margin-bottom:9px}
+  li:last-child{margin-bottom:0}
+  b{font-weight:600}
+  code{font-family:ui-monospace,Menlo,monospace; font-size:13px; background:var(--raise); padding:2px 6px; border-radius:5px; white-space:nowrap}
+  pre{background:var(--raise); border:1px solid var(--line); border-radius:9px; padding:10px 12px; overflow:auto; margin:8px 0 0; font-size:13px}
+  .act{display:inline-block; border:1px solid var(--line); border-radius:7px; padding:1px 8px; color:var(--ink); background:var(--raise); font-weight:600; font-size:13.5px}
+  .hint{font-size:13px; color:var(--faint)}
+  .ok{border-left:4px solid var(--fr)}
+  a{color:#7aa7ff}
+  table{width:100%; border-collapse:collapse; font-size:14px}
+  td{padding:7px 6px; border-top:1px solid var(--line); vertical-align:top}
+  td:first-child{color:var(--dim); white-space:nowrap; padding-right:12px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Kurzbefehl: Notiz in den Vokabeltrainer</h1>
+  <p class="lead">Eine Notiz in Apple Notizen führen, ein Tipp auf den Kurzbefehl, Liste in der App übernehmen. Zwei Varianten, je nachdem, ob die App als Symbol auf dem Home-Bildschirm oder in Safari läuft.</p>
+
+  <section class="panel">
+    <h2>1. Notiz vorbereiten</h2>
+    <ol>
+      <li>In <b>Apple Notizen</b> eine neue Notiz anlegen.</li>
+      <li>Erste Zeile, also der Titel: <code>Stapel: Vokabeln</code>. Diese Zeile liest die App als Stapelnamen und legt sie nicht als Wort an.</li>
+      <li>Darunter eine Zeile je Wort, wahlweise mit Übersetzung. Aufzählungspunkte stören nicht.
+        <pre>Stapel: Vokabeln
+Bewerbung – application
+die Laufbahn
+Eignungstest: aptitude test</pre></li>
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>2. Variante A: Kurzbefehl kopiert die Notiz</h2>
+    <p class="hint" style="margin:0 0 10px">Passt zum Home-Bildschirm-Symbol der App. Der Kurzbefehl legt den Text in die Zwischenablage, die App holt ihn von dort.</p>
+    <ol>
+      <li><b>Kurzbefehle</b> öffnen, oben rechts <span class="act">+</span>, den Kurzbefehl <code>Vokabeln übernehmen</code> nennen.</li>
+      <li>Aktion <span class="act">Notizen suchen</span> hinzufügen. Im Filter: <b>Name</b> · <b>enthält</b> · <code>Vokabeln</code>. Unten <b>Limit</b> einschalten und auf <b>1</b> setzen.</li>
+      <li>Aktion <span class="act">Details der Notiz abrufen</span> hinzufügen, als Detail <b>Text</b> wählen. Die Eingabe ist automatisch die gefundene Notiz. Wird „Text“ nicht angeboten, heißt der Eintrag <b>Inhalt</b>.</li>
+      <li>Aktion <span class="act">In Zwischenablage kopieren</span> hinzufügen. Die Eingabe ist automatisch der Text aus Schritt 3.</li>
+      <li>Wahlweise <span class="act">Mitteilung anzeigen</span> mit dem Text <code>Liste kopiert, jetzt in der App einfügen</code>.</li>
+      <li><b>Fertig</b> tippen. Über das Teilen-Symbol des Kurzbefehls <b>Zum Home-Bildschirm</b> wählen, damit er neben der App liegt.</li>
+    </ol>
+    <p class="hint" style="margin:12px 0 0"><b>Nutzung:</b> Kurzbefehl antippen, App öffnen, <i>Neu → Liste übernehmen → Aus Zwischenablage einfügen</i>, Stapel prüfen, <b>Übernehmen</b>. Beim ersten Mal fragt iOS, ob die App die Zwischenablage lesen darf.</p>
+  </section>
+
+  <section class="panel">
+    <h2>3. Variante B: Kurzbefehl öffnet die App mit der Liste</h2>
+    <p class="hint" style="margin:0 0 10px">Für die Nutzung in Safari. Die Liste steht nach dem Öffnen sofort im Feld.</p>
+    <ol>
+      <li>Schritte 1 bis 3 wie in Variante A.</li>
+      <li>Aktion <span class="act">URL-codieren</span> hinzufügen. Eingabe ist der Text aus Schritt 3, Modus <b>Codieren</b>.</li>
+      <li>Aktion <span class="act">URL</span> hinzufügen und eintragen:
+        <pre>https://jtsv8tk6hj-svg.github.io/vokabeltrainer/#liste=</pre>
+        Direkt dahinter, ohne Leerzeichen, die Variable <b>URL-codierter Text</b> aus dem vorigen Schritt einsetzen. Dazu in das Feld tippen und die Variable über die Leiste oberhalb der Tastatur wählen.</li>
+      <li>Aktion <span class="act">URLs öffnen</span> hinzufügen.</li>
+      <li><b>Fertig</b> tippen und ebenfalls auf den Home-Bildschirm legen.</li>
+    </ol>
+    <p class="hint" style="margin:12px 0 0"><b>Nutzung:</b> Kurzbefehl antippen. Safari öffnet die App auf der Seite <i>Neu</i>, die Liste steht im Feld, nur noch <b>Übernehmen</b>.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Welche Variante passt</h2>
+    <table>
+      <tr><td>App als Symbol</td><td>Variante A. Das Home-Bildschirm-Symbol hat auf dem iPhone einen eigenen Speicher, getrennt von Safari. Variante B würde die Wörter im Safari-Bestand anlegen.</td></tr>
+      <tr><td>App in Safari</td><td>Variante B, das spart einen Schritt.</td></tr>
+    </table>
+  </section>
+
+  <section class="panel ok">
+    <h2>Prüfen nach dem Bau</h2>
+    <ul>
+      <li>Kurzbefehl einmal ausführen. Bei Variante A fragt iOS beim ersten Lauf nach dem Zugriff auf Notizen, einmal <b>Erlauben</b> reicht.</li>
+      <li>In der App nach dem Übernehmen unter <i>Wörter</i> den Stapel „Vokabeln“ wählen. Die Meldung unter dem Feld nennt die Zahl der angelegten und der übersprungenen Wörter.</li>
+      <li>Erscheint „Keine Zeilen gefunden“, hat Schritt 3 keinen Text geliefert. Dann dort das Detail wechseln oder statt Schritt 3 die Aktion <span class="act">Text aus Eingabe abrufen</span> verwenden.</li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Übersetzung mitlaufen lassen</h2>
+    <p class="hint" style="margin:0">Ist unter <i>Neu</i> der API-Schlüssel hinterlegt, ergänzt die App nach dem Übernehmen alle fünf Sprachen und die Beispielsätze von selbst. Ohne Schlüssel bleiben die Wörter mit den eingegebenen Angaben stehen, <b>Nachübersetzen</b> auf derselben Seite holt die Felder später nach. Die Notiz darf wachsen: beim nächsten Durchlauf legt die App nur neue Zeilen an, Vorhandenes wird übersprungen.</p>
+  </section>
+
+  <p class="hint" style="text-align:center; margin-top:20px"><a href="./">Zurück zur App</a></p>
+</main>
+</body>
+</html>

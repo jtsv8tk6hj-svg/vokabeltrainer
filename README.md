@@ -65,15 +65,16 @@ Drei Wege von der Notiz in die App:
 
 1. **Kopieren.** Text der Notiz markieren, kopieren, in der App *Aus Zwischenablage
    einfügen* wählen.
-2. **Kurzbefehl in die Zwischenablage.** In der Kurzbefehle-App: *Notizen suchen* mit
-   Filter „Name ist Vokabeln“, Limit 1 → *Details der Notiz abrufen*, Detail „Text“ →
-   *In Zwischenablage kopieren*. Den Kurzbefehl auf den Home-Bildschirm legen, danach
-   die App öffnen und einfügen.
-3. **Kurzbefehl öffnet die App mit der Liste.** Wie 2, aber statt Kopieren: *URL-codieren*
-   → *URL* `https://jtsv8tk6hj-svg.github.io/vokabeltrainer/#liste=` gefolgt vom
-   codierten Text → *URL öffnen*. Die Liste steht dann sofort im Feld. Das öffnet
-   Safari; das Home-Bildschirm-Symbol auf dem iPhone hat einen eigenen Speicher und
-   sieht die Liste nicht. Wer die App als Symbol nutzt, nimmt Weg 1 oder 2.
+2. **Kurzbefehl in die Zwischenablage.** Ein Tipp legt den Notiztext in die
+   Zwischenablage, danach die App öffnen und einfügen. Passt zum Home-Bildschirm-Symbol.
+3. **Kurzbefehl öffnet die App mit der Liste** über die Adresse `…/#liste=`. Nur für die
+   Nutzung in Safari, weil das Home-Bildschirm-Symbol einen eigenen Speicher hat.
+
+Die Anleitung zum Nachbauen beider Kurzbefehle, Schritt für Schritt, steht unter
+**https://jtsv8tk6hj-svg.github.io/vokabeltrainer/kurzbefehl.html** und ist aus der
+App heraus verlinkt (*Neu → Liste übernehmen → Aus einer Notiz auf dem iPhone*).
+Die Notiz beginnt am besten mit der Zeile `Stapel: Vokabeln`, dann wird der Titel
+nicht als Wort angelegt.
 
 ## Weiterentwickeln
 
