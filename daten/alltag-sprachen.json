@@ -638,5 +638,1285 @@
   "rulat": "fkúsnyj",
   "ex": "The cake is delicious.",
   "exde": "Der Kuchen ist lecker."
+ },
+ "al081": {
+  "fr": "le magasin",
+  "pl": "sklep",
+  "ru": "магази́н",
+  "rulat": "magasín",
+  "ex": "The shop on the corner sells fresh bread.",
+  "exde": "Der Laden an der Ecke verkauft frisches Brot."
+ },
+ "al082": {
+  "fr": "le supermarché",
+  "pl": "supermarket",
+  "ru": "суперма́ркет",
+  "rulat": "supermárket",
+  "ex": "I buy milk at the supermarket.",
+  "exde": "Ich kaufe Milch im Supermarkt."
+ },
+ "al083": {
+  "fr": "le marché",
+  "pl": "targ",
+  "ru": "ры́нок",
+  "rulat": "rýnok",
+  "ex": "We buy vegetables at the market on Saturday.",
+  "exde": "Am Samstag kaufen wir Gemüse auf dem Markt."
+ },
+ "al084": {
+  "fr": "le prix",
+  "pl": "cena",
+  "ru": "цена́",
+  "rulat": "zená",
+  "ex": "The price is too high.",
+  "exde": "Der Preis ist zu hoch."
+ },
+ "al085": {
+  "fr": "l'euro",
+  "pl": "euro",
+  "ru": "е́вро",
+  "rulat": "jéwro",
+  "ex": "The coffee costs two euros.",
+  "exde": "Der Kaffee kostet zwei Euro."
+ },
+ "al086": {
+  "fr": "la caisse",
+  "pl": "kasa",
+  "ru": "ка́сса",
+  "rulat": "kássa",
+  "ex": "Please pay at the checkout.",
+  "exde": "Bitte zahlen Sie an der Kasse."
+ },
+ "al087": {
+  "fr": "le ticket de caisse",
+  "pl": "paragon",
+  "ru": "чек",
+  "rulat": "tschek",
+  "ex": "Can I have a receipt, please?",
+  "exde": "Kann ich bitte eine Quittung haben?"
+ },
+ "al088": {
+  "fr": "le sac",
+  "pl": "torba",
+  "ru": "су́мка",
+  "rulat": "súmka",
+  "ex": "My bag is full of groceries.",
+  "exde": "Meine Tasche ist voller Lebensmittel."
+ },
+ "al089": {
+  "fr": "le cadeau",
+  "pl": "prezent",
+  "ru": "пода́рок",
+  "rulat": "podárok",
+  "ex": "This present is for my sister.",
+  "exde": "Dieses Geschenk ist für meine Schwester."
+ },
+ "al090": {
+  "fr": "les vêtements",
+  "pl": "ubrania",
+  "ru": "оде́жда",
+  "rulat": "odéschda",
+  "ex": "I need new clothes for winter.",
+  "exde": "Ich brauche neue Kleidung für den Winter."
+ },
+ "al091": {
+  "fr": "les chaussures",
+  "pl": "buty",
+  "ru": "о́бувь",
+  "rulat": "óbuwj",
+  "ex": "These shoes are too small.",
+  "exde": "Diese Schuhe sind zu klein."
+ },
+ "al092": {
+  "fr": "la veste",
+  "pl": "kurtka",
+  "ru": "ку́ртка",
+  "rulat": "kúrtka",
+  "ex": "Take a jacket, it's cold.",
+  "exde": "Nimm eine Jacke mit, es ist kalt."
+ },
+ "al093": {
+  "fr": "la chemise",
+  "pl": "koszula",
+  "ru": "руба́шка",
+  "rulat": "rubáschka",
+  "ex": "He is wearing a white shirt.",
+  "exde": "Er trägt ein weißes Hemd."
+ },
+ "al094": {
+  "fr": "le pantalon",
+  "pl": "spodnie",
+  "ru": "брю́ки",
+  "rulat": "brjúki",
+  "ex": "These trousers are too long.",
+  "exde": "Diese Hose ist zu lang."
+ },
+ "al095": {
+  "fr": "la taille",
+  "pl": "rozmiar",
+  "ru": "разме́р",
+  "rulat": "rasmér",
+  "ex": "Do you have this in a bigger size?",
+  "exde": "Haben Sie das in einer größeren Größe?"
+ },
+ "al096": {
+  "fr": "la couleur",
+  "pl": "kolor",
+  "ru": "цвет",
+  "rulat": "zwet",
+  "ex": "What colour is your car?",
+  "exde": "Welche Farbe hat dein Auto?"
+ },
+ "al097": {
+  "fr": "ouvert",
+  "pl": "otwarte",
+  "ru": "откры́то",
+  "rulat": "otkrýto",
+  "ex": "The shop is open until eight.",
+  "exde": "Der Laden ist bis acht Uhr geöffnet."
+ },
+ "al098": {
+  "fr": "fermé",
+  "pl": "zamknięte",
+  "ru": "закры́то",
+  "rulat": "sakrýto",
+  "ex": "The bank is closed on Sunday.",
+  "exde": "Die Bank ist am Sonntag geschlossen."
+ },
+ "al099": {
+  "fr": "Combien ça coûte ?",
+  "pl": "Ile to kosztuje?",
+  "ru": "Ско́лько э́то сто́ит?",
+  "rulat": "Skólko éto stóit?",
+  "ex": "Excuse me, how much is this?",
+  "exde": "Entschuldigung, wie viel kostet das?"
+ },
+ "al100": {
+  "fr": "Je voudrais …",
+  "pl": "Poproszę …",
+  "ru": "Я бы хоте́л …",
+  "rulat": "Ja by chotél …",
+  "ex": "I would like a kilo of apples, please.",
+  "exde": "Ich hätte gern ein Kilo Äpfel, bitte."
+ },
+ "al101": {
+  "fr": "la gare",
+  "pl": "dworzec",
+  "ru": "вокза́л",
+  "rulat": "woksál",
+  "ex": "The railway station is near the city centre.",
+  "exde": "Der Bahnhof ist in der Nähe des Stadtzentrums."
+ },
+ "al102": {
+  "fr": "l'aéroport",
+  "pl": "lotnisko",
+  "ru": "аэропо́рт",
+  "rulat": "aeropórt",
+  "ex": "We arrived at the airport two hours early.",
+  "exde": "Wir sind zwei Stunden früher am Flughafen angekommen."
+ },
+ "al103": {
+  "fr": "l'avion",
+  "pl": "samolot",
+  "ru": "самолёт",
+  "rulat": "samoljót",
+  "ex": "The aeroplane lands at noon.",
+  "exde": "Das Flugzeug landet am Mittag."
+ },
+ "al104": {
+  "fr": "le bus",
+  "pl": "autobus",
+  "ru": "авто́бус",
+  "rulat": "aftóbus",
+  "ex": "The bus is late again.",
+  "exde": "Der Bus hat wieder Verspätung."
+ },
+ "al105": {
+  "fr": "l'arrêt",
+  "pl": "przystanek",
+  "ru": "остано́вка",
+  "rulat": "astanówka",
+  "ex": "Wait for me at the stop.",
+  "exde": "Warte an der Haltestelle auf mich."
+ },
+ "al106": {
+  "fr": "le billet",
+  "pl": "bilet",
+  "ru": "биле́т",
+  "rulat": "biljét",
+  "ex": "I need a ticket to Berlin.",
+  "exde": "Ich brauche eine Fahrkarte nach Berlin."
+ },
+ "al107": {
+  "fr": "le départ",
+  "pl": "odjazd",
+  "ru": "отправле́ние",
+  "rulat": "atprawlénije",
+  "ex": "Departure is at eight o'clock.",
+  "exde": "Die Abfahrt ist um acht Uhr."
+ },
+ "al108": {
+  "fr": "l'arrivée",
+  "pl": "przyjazd",
+  "ru": "прибы́тие",
+  "rulat": "pribýtije",
+  "ex": "The arrival of the train is at ten.",
+  "exde": "Die Ankunft des Zuges ist um zehn."
+ },
+ "al109": {
+  "fr": "le retard",
+  "pl": "opóźnienie",
+  "ru": "опозда́ние",
+  "rulat": "apasdánije",
+  "ex": "There is a delay of twenty minutes.",
+  "exde": "Es gibt eine Verspätung von zwanzig Minuten."
+ },
+ "al110": {
+  "fr": "la direction",
+  "pl": "kierunek",
+  "ru": "направле́ние",
+  "rulat": "naprawlénije",
+  "ex": "Is this the right direction to the museum?",
+  "exde": "Ist das die richtige Richtung zum Museum?"
+ },
+ "al111": {
+  "fr": "à gauche",
+  "pl": "w lewo",
+  "ru": "нале́во",
+  "rulat": "naléwa",
+  "ex": "Turn left at the corner.",
+  "exde": "Biegen Sie an der Ecke links ab."
+ },
+ "al112": {
+  "fr": "à droite",
+  "pl": "w prawo",
+  "ru": "напра́во",
+  "rulat": "napráwa",
+  "ex": "Turn right after the bridge.",
+  "exde": "Biegen Sie nach der Brücke rechts ab."
+ },
+ "al113": {
+  "fr": "tout droit",
+  "pl": "prosto",
+  "ru": "пря́мо",
+  "rulat": "prjáma",
+  "ex": "Go straight ahead for two hundred metres.",
+  "exde": "Gehen Sie zweihundert Meter geradeaus."
+ },
+ "al114": {
+  "fr": "la carte",
+  "pl": "mapa",
+  "ru": "ка́рта",
+  "rulat": "kárta",
+  "ex": "Can you show me on the map?",
+  "exde": "Können Sie es mir auf der Landkarte zeigen?"
+ },
+ "al115": {
+  "fr": "l'hôtel",
+  "pl": "hotel",
+  "ru": "гости́ница",
+  "rulat": "gastíniza",
+  "ex": "Our hotel is by the sea.",
+  "exde": "Unser Hotel liegt am Meer."
+ },
+ "al116": {
+  "fr": "la chambre",
+  "pl": "pokój",
+  "ru": "ко́мната",
+  "rulat": "kómnata",
+  "ex": "I would like a room with a view.",
+  "exde": "Ich hätte gern ein Zimmer mit Aussicht."
+ },
+ "al117": {
+  "fr": "la clé",
+  "pl": "klucz",
+  "ru": "ключ",
+  "rulat": "kljutsch",
+  "ex": "I left the key at reception.",
+  "exde": "Ich habe den Schlüssel an der Rezeption gelassen."
+ },
+ "al118": {
+  "fr": "le voyage",
+  "pl": "podróż",
+  "ru": "пое́здка",
+  "rulat": "pajéstka",
+  "ex": "The journey takes six hours.",
+  "exde": "Die Reise dauert sechs Stunden."
+ },
+ "al119": {
+  "fr": "les vacances",
+  "pl": "urlop",
+  "ru": "о́тпуск",
+  "rulat": "ótpusk",
+  "ex": "We are going on holiday in July.",
+  "exde": "Wir fahren im Juli in den Urlaub."
+ },
+ "al120": {
+  "fr": "les bagages",
+  "pl": "bagaż",
+  "ru": "бага́ж",
+  "rulat": "bagásch",
+  "ex": "My luggage is still at the airport.",
+  "exde": "Mein Gepäck ist noch am Flughafen."
+ },
+ "al121": {
+  "fr": "l'appartement",
+  "pl": "mieszkanie",
+  "ru": "кварти́ра",
+  "rulat": "kwartíra",
+  "ex": "We live in a small flat.",
+  "exde": "Wir wohnen in einer kleinen Wohnung."
+ },
+ "al122": {
+  "fr": "la cuisine",
+  "pl": "kuchnia",
+  "ru": "ку́хня",
+  "rulat": "kúchnja",
+  "ex": "The kitchen is very bright.",
+  "exde": "Die Küche ist sehr hell."
+ },
+ "al123": {
+  "fr": "la salle de bains",
+  "pl": "łazienka",
+  "ru": "ва́нная",
+  "rulat": "wánnaja",
+  "ex": "The bathroom is next to the bedroom.",
+  "exde": "Das Bad ist neben dem Schlafzimmer."
+ },
+ "al124": {
+  "fr": "la chambre",
+  "pl": "sypialnia",
+  "ru": "спа́льня",
+  "rulat": "spálnja",
+  "ex": "Our bedroom faces the garden.",
+  "exde": "Unser Schlafzimmer liegt zum Garten hin."
+ },
+ "al125": {
+  "fr": "le salon",
+  "pl": "salon",
+  "ru": "гости́ная",
+  "rulat": "gostínaja",
+  "ex": "We watch TV in the living room.",
+  "exde": "Wir sehen im Wohnzimmer fern."
+ },
+ "al126": {
+  "fr": "le lit",
+  "pl": "łóżko",
+  "ru": "крова́ть",
+  "rulat": "krowátj",
+  "ex": "I go to bed at ten.",
+  "exde": "Ich gehe um zehn ins Bett."
+ },
+ "al127": {
+  "fr": "l'armoire",
+  "pl": "szafa",
+  "ru": "шкаф",
+  "rulat": "schkaf",
+  "ex": "My clothes are in the wardrobe.",
+  "exde": "Meine Kleider sind im Schrank."
+ },
+ "al128": {
+  "fr": "la lampe",
+  "pl": "lampa",
+  "ru": "ла́мпа",
+  "rulat": "lámpa",
+  "ex": "Please turn on the lamp.",
+  "exde": "Mach bitte die Lampe an."
+ },
+ "al129": {
+  "fr": "la cuisinière",
+  "pl": "kuchenka",
+  "ru": "плита́",
+  "rulat": "plitá",
+  "ex": "The soup is on the cooker.",
+  "exde": "Die Suppe steht auf dem Herd."
+ },
+ "al130": {
+  "fr": "le réfrigérateur",
+  "pl": "lodówka",
+  "ru": "холоди́льник",
+  "rulat": "cholodílnik",
+  "ex": "The milk is in the fridge.",
+  "exde": "Die Milch ist im Kühlschrank."
+ },
+ "al131": {
+  "fr": "la machine à laver",
+  "pl": "pralka",
+  "ru": "стира́льная маши́на",
+  "rulat": "stirálnaja maschína",
+  "ex": "The washing machine is broken.",
+  "exde": "Die Waschmaschine ist kaputt."
+ },
+ "al132": {
+  "fr": "la douche",
+  "pl": "prysznic",
+  "ru": "душ",
+  "rulat": "dusch",
+  "ex": "I take a shower every morning.",
+  "exde": "Ich gehe jeden Morgen unter die Dusche."
+ },
+ "al133": {
+  "fr": "le balcon",
+  "pl": "balkon",
+  "ru": "балко́н",
+  "rulat": "balkón",
+  "ex": "We have breakfast on the balcony.",
+  "exde": "Wir frühstücken auf dem Balkon."
+ },
+ "al134": {
+  "fr": "le jardin",
+  "pl": "ogród",
+  "ru": "сад",
+  "rulat": "sad",
+  "ex": "The children are playing in the garden.",
+  "exde": "Die Kinder spielen im Garten."
+ },
+ "al135": {
+  "fr": "le loyer",
+  "pl": "czynsz",
+  "ru": "аре́ндная пла́та",
+  "rulat": "aréndnaja pláta",
+  "ex": "The rent is due on the first of the month.",
+  "exde": "Die Miete ist am Ersten des Monats fällig."
+ },
+ "al136": {
+  "fr": "le propriétaire",
+  "pl": "wynajmujący",
+  "ru": "арендода́тель",
+  "rulat": "arendodátelj",
+  "ex": "I called the landlord about the heating.",
+  "exde": "Ich habe den Vermieter wegen der Heizung angerufen."
+ },
+ "al137": {
+  "fr": "l'escalier",
+  "pl": "schody",
+  "ru": "ле́стница",
+  "rulat": "ljéstniza",
+  "ex": "Take the stairs to the third floor.",
+  "exde": "Nimm die Treppe in den dritten Stock."
+ },
+ "al138": {
+  "fr": "l'ascenseur",
+  "pl": "winda",
+  "ru": "лифт",
+  "rulat": "lift",
+  "ex": "The lift is out of order.",
+  "exde": "Der Aufzug ist außer Betrieb."
+ },
+ "al139": {
+  "fr": "les ordures",
+  "pl": "śmieci",
+  "ru": "му́сор",
+  "rulat": "mússor",
+  "ex": "Can you take out the rubbish?",
+  "exde": "Kannst du den Müll rausbringen?"
+ },
+ "al140": {
+  "fr": "le chauffage",
+  "pl": "ogrzewanie",
+  "ru": "отопле́ние",
+  "rulat": "otopljénije",
+  "ex": "The heating doesn't work.",
+  "exde": "Die Heizung funktioniert nicht."
+ },
+ "al141": {
+  "fr": "le médecin",
+  "pl": "lekarz",
+  "ru": "врач",
+  "rulat": "wratsch",
+  "ex": "I have an appointment with the doctor tomorrow.",
+  "exde": "Ich habe morgen einen Termin beim Arzt."
+ },
+ "al142": {
+  "fr": "l'hôpital",
+  "pl": "szpital",
+  "ru": "больни́ца",
+  "rulat": "bolníza",
+  "ex": "She works at the hospital.",
+  "exde": "Sie arbeitet im Krankenhaus."
+ },
+ "al143": {
+  "fr": "la pharmacie",
+  "pl": "apteka",
+  "ru": "апте́ка",
+  "rulat": "aptéka",
+  "ex": "The pharmacy closes at eight.",
+  "exde": "Die Apotheke schließt um acht."
+ },
+ "al144": {
+  "fr": "le comprimé",
+  "pl": "tabletka",
+  "ru": "табле́тка",
+  "rulat": "tablétka",
+  "ex": "Take one tablet after dinner.",
+  "exde": "Nimm nach dem Abendessen eine Tablette."
+ },
+ "al145": {
+  "fr": "la douleur",
+  "pl": "ból",
+  "ru": "боль",
+  "rulat": "bol",
+  "ex": "The pain is getting worse.",
+  "exde": "Der Schmerz wird schlimmer."
+ },
+ "al146": {
+  "fr": "le rhume",
+  "pl": "przeziębienie",
+  "ru": "просту́да",
+  "rulat": "prostúda",
+  "ex": "I have a bad cold.",
+  "exde": "Ich habe eine schlimme Erkältung."
+ },
+ "al147": {
+  "fr": "la fièvre",
+  "pl": "gorączka",
+  "ru": "температу́ра",
+  "rulat": "temperatúra",
+  "ex": "The child has a high fever.",
+  "exde": "Das Kind hat hohes Fieber."
+ },
+ "al148": {
+  "fr": "la toux",
+  "pl": "kaszel",
+  "ru": "ка́шель",
+  "rulat": "káschel",
+  "ex": "My cough won't go away.",
+  "exde": "Mein Husten geht nicht weg."
+ },
+ "al149": {
+  "fr": "la dent",
+  "pl": "ząb",
+  "ru": "зуб",
+  "rulat": "sub",
+  "ex": "My tooth hurts.",
+  "exde": "Mir tut der Zahn weh."
+ },
+ "al150": {
+  "fr": "le dos",
+  "pl": "plecy",
+  "ru": "спина́",
+  "rulat": "spiná",
+  "ex": "My back hurts after work.",
+  "exde": "Nach der Arbeit tut mir der Rücken weh."
+ },
+ "al151": {
+  "fr": "le ventre",
+  "pl": "brzuch",
+  "ru": "живо́т",
+  "rulat": "schiwót",
+  "ex": "My belly is full.",
+  "exde": "Mein Bauch ist voll."
+ },
+ "al152": {
+  "fr": "la jambe",
+  "pl": "noga",
+  "ru": "нога́",
+  "rulat": "nogá",
+  "ex": "He broke his leg skiing.",
+  "exde": "Er hat sich beim Skifahren das Bein gebrochen."
+ },
+ "al153": {
+  "fr": "le bras",
+  "pl": "ręka",
+  "ru": "рука́",
+  "rulat": "ruká",
+  "ex": "He raised his arm.",
+  "exde": "Er hob den Arm."
+ },
+ "al154": {
+  "fr": "le pied",
+  "pl": "stopa",
+  "ru": "ступня́",
+  "rulat": "stupnjá",
+  "ex": "My foot is cold.",
+  "exde": "Mein Fuß ist kalt."
+ },
+ "al155": {
+  "fr": "le cœur",
+  "pl": "serce",
+  "ru": "се́рдце",
+  "rulat": "sérdze",
+  "ex": "His heart beats fast.",
+  "exde": "Sein Herz schlägt schnell."
+ },
+ "al156": {
+  "fr": "fatigué",
+  "pl": "zmęczony",
+  "ru": "уста́лый",
+  "rulat": "ustályj",
+  "ex": "I am very tired today.",
+  "exde": "Ich bin heute sehr müde."
+ },
+ "al157": {
+  "fr": "malade",
+  "pl": "chory",
+  "ru": "больно́й",
+  "rulat": "bolnój",
+  "ex": "He is ill and stays at home.",
+  "exde": "Er ist krank und bleibt zu Hause."
+ },
+ "al158": {
+  "fr": "en bonne santé",
+  "pl": "zdrowy",
+  "ru": "здоро́вый",
+  "rulat": "sdorówyj",
+  "ex": "My grandfather is still very healthy.",
+  "exde": "Mein Opa ist noch sehr gesund."
+ },
+ "al159": {
+  "fr": "l'assurance",
+  "pl": "ubezpieczenie",
+  "ru": "страхо́вка",
+  "rulat": "strachówka",
+  "ex": "My insurance pays for the treatment.",
+  "exde": "Meine Versicherung bezahlt die Behandlung."
+ },
+ "al160": {
+  "fr": "l'allergie",
+  "pl": "alergia",
+  "ru": "аллерги́я",
+  "rulat": "allergíja",
+  "ex": "I have an allergy to nuts.",
+  "exde": "Ich habe eine Allergie gegen Nüsse."
+ },
+ "al161": {
+  "fr": "le bureau",
+  "pl": "biuro",
+  "ru": "о́фис",
+  "rulat": "ófis",
+  "ex": "She works in an office in the city centre.",
+  "exde": "Sie arbeitet in einem Büro im Stadtzentrum."
+ },
+ "al162": {
+  "fr": "le patron",
+  "pl": "szef",
+  "ru": "нача́льник",
+  "rulat": "natschálnik",
+  "ex": "My boss is on vacation this week.",
+  "exde": "Mein Chef ist diese Woche im Urlaub."
+ },
+ "al163": {
+  "fr": "le client",
+  "pl": "klient",
+  "ru": "клие́нт",
+  "rulat": "kliént",
+  "ex": "The customer wants to speak to the manager.",
+  "exde": "Der Kunde möchte mit dem Geschäftsführer sprechen."
+ },
+ "al164": {
+  "fr": "la réunion",
+  "pl": "spotkanie",
+  "ru": "совеща́ние",
+  "rulat": "sowestschánije",
+  "ex": "The meeting starts at ten o'clock.",
+  "exde": "Die Besprechung beginnt um zehn Uhr."
+ },
+ "al165": {
+  "fr": "le courriel",
+  "pl": "e-mail",
+  "ru": "электро́нное письмо́",
+  "rulat": "elektrónnoje pismó",
+  "ex": "I will send you an email tomorrow.",
+  "exde": "Ich schicke dir morgen eine E-Mail."
+ },
+ "al166": {
+  "fr": "l'appel téléphonique",
+  "pl": "rozmowa telefoniczna",
+  "ru": "звоно́к",
+  "rulat": "swonók",
+  "ex": "I'm waiting for an important phone call.",
+  "exde": "Ich warte auf einen wichtigen Anruf."
+ },
+ "al167": {
+  "fr": "l'ordinateur",
+  "pl": "komputer",
+  "ru": "компью́тер",
+  "rulat": "kompjúter",
+  "ex": "My computer is very slow today.",
+  "exde": "Mein Computer ist heute sehr langsam."
+ },
+ "al168": {
+  "fr": "l'imprimante",
+  "pl": "drukarka",
+  "ru": "при́нтер",
+  "rulat": "prínter",
+  "ex": "The printer is out of paper.",
+  "exde": "Der Drucker hat kein Papier mehr."
+ },
+ "al169": {
+  "fr": "la pause",
+  "pl": "przerwa",
+  "ru": "переры́в",
+  "rulat": "pererýw",
+  "ex": "Let's take a short break.",
+  "exde": "Lass uns eine kurze Pause machen."
+ },
+ "al170": {
+  "fr": "la fin de la journée de travail",
+  "pl": "koniec dnia pracy",
+  "ru": "коне́ц рабо́чего дня",
+  "rulat": "konéz rabótschewo dnja",
+  "ex": "After the end of the working day, I go to the gym.",
+  "exde": "Nach Feierabend gehe ich ins Fitnessstudio."
+ },
+ "al171": {
+  "fr": "les heures supplémentaires",
+  "pl": "nadgodziny",
+  "ru": "сверхуро́чные",
+  "rulat": "swerchurótschnyje",
+  "ex": "I worked overtime again yesterday.",
+  "exde": "Ich habe gestern wieder Überstunden gemacht."
+ },
+ "al172": {
+  "fr": "le salaire",
+  "pl": "pensja",
+  "ru": "зарпла́та",
+  "rulat": "sarpláta",
+  "ex": "Her salary is paid at the end of the month.",
+  "exde": "Ihr Gehalt wird am Ende des Monats gezahlt."
+ },
+ "al173": {
+  "fr": "la tâche",
+  "pl": "zadanie",
+  "ru": "зада́ча",
+  "rulat": "sadátscha",
+  "ex": "This task is not easy.",
+  "exde": "Diese Aufgabe ist nicht einfach."
+ },
+ "al174": {
+  "fr": "le projet",
+  "pl": "projekt",
+  "ru": "прое́кт",
+  "rulat": "projékt",
+  "ex": "We are starting a new project next week.",
+  "exde": "Wir beginnen nächste Woche ein neues Projekt."
+ },
+ "al175": {
+  "fr": "la date limite",
+  "pl": "termin",
+  "ru": "срок",
+  "rulat": "srok",
+  "ex": "The deadline is next Friday.",
+  "exde": "Die Frist endet nächsten Freitag."
+ },
+ "al176": {
+  "fr": "le calendrier",
+  "pl": "kalendarz",
+  "ru": "календа́рь",
+  "rulat": "kalendár",
+  "ex": "I wrote the appointment in my calendar.",
+  "exde": "Ich habe den Termin in meinen Kalender geschrieben."
+ },
+ "al177": {
+  "fr": "les documents",
+  "pl": "dokumenty",
+  "ru": "докуме́нты",
+  "rulat": "dokuménty",
+  "ex": "Please bring all your documents to the meeting.",
+  "exde": "Bitte bringen Sie alle Ihre Unterlagen zur Besprechung mit."
+ },
+ "al178": {
+  "fr": "le formulaire",
+  "pl": "formularz",
+  "ru": "бланк",
+  "rulat": "blank",
+  "ex": "Please fill out this form.",
+  "exde": "Bitte füllen Sie dieses Formular aus."
+ },
+ "al179": {
+  "fr": "le téléphone",
+  "pl": "telefon",
+  "ru": "телефо́н",
+  "rulat": "telefón",
+  "ex": "The telephone is ringing.",
+  "exde": "Das Telefon klingelt."
+ },
+ "al180": {
+  "fr": "la carte de visite",
+  "pl": "wizytówka",
+  "ru": "визи́тка",
+  "rulat": "wisítka",
+  "ex": "May I give you my business card?",
+  "exde": "Darf ich Ihnen meine Visitenkarte geben?"
+ },
+ "al181": {
+  "fr": "le temps",
+  "pl": "pogoda",
+  "ru": "пого́да",
+  "rulat": "pagóda",
+  "ex": "The weather is nice today.",
+  "exde": "Das Wetter ist heute schön."
+ },
+ "al182": {
+  "fr": "le soleil",
+  "pl": "słońce",
+  "ru": "со́лнце",
+  "rulat": "sónze",
+  "ex": "The sun is shining.",
+  "exde": "Die Sonne scheint."
+ },
+ "al183": {
+  "fr": "la pluie",
+  "pl": "deszcz",
+  "ru": "дождь",
+  "rulat": "doschd",
+  "ex": "We stayed inside because of the rain.",
+  "exde": "Wegen des Regens sind wir drinnen geblieben."
+ },
+ "al184": {
+  "fr": "la neige",
+  "pl": "śnieg",
+  "ru": "снег",
+  "rulat": "snjeg",
+  "ex": "The children are playing in the snow.",
+  "exde": "Die Kinder spielen im Schnee."
+ },
+ "al185": {
+  "fr": "le vent",
+  "pl": "wiatr",
+  "ru": "ве́тер",
+  "rulat": "wjéter",
+  "ex": "The wind is very strong today.",
+  "exde": "Der Wind ist heute sehr stark."
+ },
+ "al186": {
+  "fr": "le nuage",
+  "pl": "chmura",
+  "ru": "о́блако",
+  "rulat": "óblako",
+  "ex": "There isn't a single cloud in the sky.",
+  "exde": "Am Himmel ist keine einzige Wolke."
+ },
+ "al187": {
+  "fr": "le ciel",
+  "pl": "niebo",
+  "ru": "не́бо",
+  "rulat": "njébo",
+  "ex": "The sky is blue.",
+  "exde": "Der Himmel ist blau."
+ },
+ "al188": {
+  "fr": "la tempête",
+  "pl": "burza",
+  "ru": "бу́ря",
+  "rulat": "búrja",
+  "ex": "The storm lasted all night.",
+  "exde": "Der Sturm dauerte die ganze Nacht."
+ },
+ "al189": {
+  "fr": "l'orage",
+  "pl": "burza z piorunami",
+  "ru": "гроза́",
+  "rulat": "grasá",
+  "ex": "We got caught in a thunderstorm.",
+  "exde": "Wir sind in ein Gewitter geraten."
+ },
+ "al190": {
+  "fr": "le degré",
+  "pl": "stopień",
+  "ru": "гра́дус",
+  "rulat": "grádus",
+  "ex": "It is twenty degrees outside.",
+  "exde": "Draußen sind es zwanzig Grad."
+ },
+ "al191": {
+  "fr": "l'arbre",
+  "pl": "drzewo",
+  "ru": "де́рево",
+  "rulat": "djérewo",
+  "ex": "There is a big tree in our garden.",
+  "exde": "In unserem Garten steht ein großer Baum."
+ },
+ "al192": {
+  "fr": "la fleur",
+  "pl": "kwiat",
+  "ru": "цвето́к",
+  "rulat": "zwjetók",
+  "ex": "She gave me a flower.",
+  "exde": "Sie hat mir eine Blume geschenkt."
+ },
+ "al193": {
+  "fr": "la forêt",
+  "pl": "las",
+  "ru": "лес",
+  "rulat": "ljes",
+  "ex": "We went for a walk in the forest.",
+  "exde": "Wir sind im Wald spazieren gegangen."
+ },
+ "al194": {
+  "fr": "la rivière",
+  "pl": "rzeka",
+  "ru": "река́",
+  "rulat": "rjeká",
+  "ex": "The river flows through the city.",
+  "exde": "Der Fluss fließt durch die Stadt."
+ },
+ "al195": {
+  "fr": "le lac",
+  "pl": "jezioro",
+  "ru": "о́зеро",
+  "rulat": "ósero",
+  "ex": "We swam in the lake.",
+  "exde": "Wir sind im See geschwommen."
+ },
+ "al196": {
+  "fr": "la mer",
+  "pl": "morze",
+  "ru": "мо́ре",
+  "rulat": "mórje",
+  "ex": "I love swimming in the sea.",
+  "exde": "Ich schwimme sehr gern im Meer."
+ },
+ "al197": {
+  "fr": "la montagne",
+  "pl": "góra",
+  "ru": "гора́",
+  "rulat": "gará",
+  "ex": "We climbed the mountain.",
+  "exde": "Wir sind auf den Berg gestiegen."
+ },
+ "al198": {
+  "fr": "la plage",
+  "pl": "plaża",
+  "ru": "пляж",
+  "rulat": "pljasch",
+  "ex": "Let's go to the beach.",
+  "exde": "Lass uns an den Strand gehen."
+ },
+ "al199": {
+  "fr": "le chien",
+  "pl": "pies",
+  "ru": "соба́ка",
+  "rulat": "sabáka",
+  "ex": "Our dog likes to play.",
+  "exde": "Unser Hund spielt gern."
+ },
+ "al200": {
+  "fr": "le chat",
+  "pl": "kot",
+  "ru": "ко́шка",
+  "rulat": "kóschka",
+  "ex": "The cat is sleeping on the sofa.",
+  "exde": "Die Katze schläft auf dem Sofa."
+ },
+ "al201": {
+  "fr": "le temps libre",
+  "pl": "czas wolny",
+  "ru": "свобо́дное вре́мя",
+  "rulat": "swobódnoje wrémja",
+  "ex": "I spend my free time reading.",
+  "exde": "Ich verbringe meine Freizeit mit Lesen."
+ },
+ "al202": {
+  "fr": "le passe-temps",
+  "pl": "hobby",
+  "ru": "хо́бби",
+  "rulat": "chóbbi",
+  "ex": "My favourite hobby is painting.",
+  "exde": "Mein liebstes Hobby ist Malen."
+ },
+ "al203": {
+  "fr": "le sport",
+  "pl": "sport",
+  "ru": "спорт",
+  "rulat": "sport",
+  "ex": "Sport keeps you healthy.",
+  "exde": "Sport hält gesund."
+ },
+ "al204": {
+  "fr": "le football",
+  "pl": "piłka nożna",
+  "ru": "футбо́л",
+  "rulat": "futból",
+  "ex": "We play football every Saturday.",
+  "exde": "Wir spielen jeden Samstag Fußball."
+ },
+ "al205": {
+  "fr": "la natation",
+  "pl": "pływanie",
+  "ru": "пла́вание",
+  "rulat": "pláwanije",
+  "ex": "Swimming is good exercise.",
+  "exde": "Schwimmen ist ein gutes Training."
+ },
+ "al206": {
+  "fr": "la course à pied",
+  "pl": "bieganie",
+  "ru": "бег",
+  "rulat": "beg",
+  "ex": "Running in the morning wakes me up.",
+  "exde": "Das Laufen am Morgen macht mich wach."
+ },
+ "al207": {
+  "fr": "le vélo",
+  "pl": "rower",
+  "ru": "велосипе́д",
+  "rulat": "welossipéd",
+  "ex": "I ride my bicycle to work.",
+  "exde": "Ich fahre mit dem Fahrrad zur Arbeit."
+ },
+ "al208": {
+  "fr": "la promenade",
+  "pl": "spacer",
+  "ru": "прогу́лка",
+  "rulat": "progúlka",
+  "ex": "Let's go for a walk in the park.",
+  "exde": "Lass uns einen Spaziergang im Park machen."
+ },
+ "al209": {
+  "fr": "le cinéma",
+  "pl": "kino",
+  "ru": "кино́",
+  "rulat": "kinó",
+  "ex": "We are going to the cinema tonight.",
+  "exde": "Wir gehen heute Abend ins Kino."
+ },
+ "al210": {
+  "fr": "le film",
+  "pl": "film",
+  "ru": "фильм",
+  "rulat": "film",
+  "ex": "The film was very exciting.",
+  "exde": "Der Film war sehr spannend."
+ },
+ "al211": {
+  "fr": "la musique",
+  "pl": "muzyka",
+  "ru": "му́зыка",
+  "rulat": "músyka",
+  "ex": "She listens to music all day.",
+  "exde": "Sie hört den ganzen Tag Musik."
+ },
+ "al212": {
+  "fr": "la chanson",
+  "pl": "piosenka",
+  "ru": "пе́сня",
+  "rulat": "pésnja",
+  "ex": "This song is my favourite.",
+  "exde": "Dieses Lied ist mein Lieblingslied."
+ },
+ "al213": {
+  "fr": "le concert",
+  "pl": "koncert",
+  "ru": "конце́рт",
+  "rulat": "konzért",
+  "ex": "The concert starts at eight.",
+  "exde": "Das Konzert beginnt um acht."
+ },
+ "al214": {
+  "fr": "le théâtre",
+  "pl": "teatr",
+  "ru": "теа́тр",
+  "rulat": "teátr",
+  "ex": "We bought tickets for the theatre.",
+  "exde": "Wir haben Karten fürs Theater gekauft."
+ },
+ "al215": {
+  "fr": "le musée",
+  "pl": "muzeum",
+  "ru": "музе́й",
+  "rulat": "muséj",
+  "ex": "The museum is closed on Mondays.",
+  "exde": "Das Museum ist montags geschlossen."
+ },
+ "al216": {
+  "fr": "la fête",
+  "pl": "impreza",
+  "ru": "вечери́нка",
+  "rulat": "wetscherínka",
+  "ex": "Are you coming to my party?",
+  "exde": "Kommst du zu meiner Party?"
+ },
+ "al217": {
+  "fr": "le jeu",
+  "pl": "gra",
+  "ru": "игра́",
+  "rulat": "igrá",
+  "ex": "The game lasted two hours.",
+  "exde": "Das Spiel dauerte zwei Stunden."
+ },
+ "al218": {
+  "fr": "l'équipe",
+  "pl": "drużyna",
+  "ru": "кома́нда",
+  "rulat": "kománda",
+  "ex": "Our team won the match.",
+  "exde": "Unsere Mannschaft hat das Spiel gewonnen."
+ },
+ "al219": {
+  "fr": "l'entraînement",
+  "pl": "trening",
+  "ru": "трениро́вка",
+  "rulat": "trenirówka",
+  "ex": "The training session starts at six.",
+  "exde": "Das Training beginnt um sechs."
+ },
+ "al220": {
+  "fr": "la victoire",
+  "pl": "zwycięstwo",
+  "ru": "побе́да",
+  "rulat": "pobéda",
+  "ex": "The fans celebrated the victory.",
+  "exde": "Die Fans feierten den Sieg."
+ },
+ "al221": {
+  "fr": "le téléphone portable",
+  "pl": "komórka",
+  "ru": "моби́льный телефо́н",
+  "rulat": "mobílnyj telefón",
+  "ex": "My mobile phone is on the table.",
+  "exde": "Mein Handy liegt auf dem Tisch."
+ },
+ "al222": {
+  "fr": "le message",
+  "pl": "wiadomość",
+  "ru": "сообще́ние",
+  "rulat": "soobschtschénije",
+  "ex": "I sent you a message.",
+  "exde": "Ich habe dir eine Nachricht geschickt."
+ },
+ "al223": {
+  "fr": "le numéro de téléphone",
+  "pl": "numer telefonu",
+  "ru": "но́мер телефо́на",
+  "rulat": "nómer telefóna",
+  "ex": "Can you give me your phone number?",
+  "exde": "Kannst du mir deine Telefonnummer geben?"
+ },
+ "al224": {
+  "fr": "l'adresse",
+  "pl": "adres",
+  "ru": "а́дрес",
+  "rulat": "ádres",
+  "ex": "What is your address?",
+  "exde": "Wie ist deine Adresse?"
+ },
+ "al225": {
+  "fr": "la lettre",
+  "pl": "list",
+  "ru": "письмо́",
+  "rulat": "pismó",
+  "ex": "I am writing a letter to my grandmother.",
+  "exde": "Ich schreibe einen Brief an meine Oma."
+ },
+ "al226": {
+  "fr": "la poste",
+  "pl": "poczta",
+  "ru": "по́чта",
+  "rulat": "pótschta",
+  "ex": "The post office closes at six.",
+  "exde": "Die Post schließt um sechs."
+ },
+ "al227": {
+  "fr": "l'internet",
+  "pl": "internet",
+  "ru": "интерне́т",
+  "rulat": "internét",
+  "ex": "The internet is very slow today.",
+  "exde": "Das Internet ist heute sehr langsam."
+ },
+ "al228": {
+  "fr": "le mot de passe",
+  "pl": "hasło",
+  "ru": "паро́ль",
+  "rulat": "paról",
+  "ex": "I forgot my password.",
+  "exde": "Ich habe mein Passwort vergessen."
+ },
+ "al229": {
+  "fr": "le rendez-vous",
+  "pl": "spotkanie",
+  "ru": "встре́ча",
+  "rulat": "wstrétscha",
+  "ex": "Tonight I have an appointment with friends at the cinema.",
+  "exde": "Heute Abend habe ich eine Verabredung mit Freunden im Kino."
+ },
+ "al230": {
+  "fr": "l'aide",
+  "pl": "pomoc",
+  "ru": "по́мощь",
+  "rulat": "pómoschtsch",
+  "ex": "Thank you for your help.",
+  "exde": "Danke für deine Hilfe."
+ },
+ "al231": {
+  "fr": "le problème",
+  "pl": "problem",
+  "ru": "пробле́ма",
+  "rulat": "probléma",
+  "ex": "We have a small problem.",
+  "exde": "Wir haben ein kleines Problem."
+ },
+ "al232": {
+  "fr": "la solution",
+  "pl": "rozwiązanie",
+  "ru": "реше́ние",
+  "rulat": "reschénije",
+  "ex": "We found a good solution.",
+  "exde": "Wir haben eine gute Lösung gefunden."
+ },
+ "al233": {
+  "fr": "l'idée",
+  "pl": "pomysł",
+  "ru": "иде́я",
+  "rulat": "idéja",
+  "ex": "That is a great idea!",
+  "exde": "Das ist eine tolle Idee!"
+ },
+ "al234": {
+  "fr": "l'opinion",
+  "pl": "opinia",
+  "ru": "мне́ние",
+  "rulat": "mnénije",
+  "ex": "What is your opinion?",
+  "exde": "Was ist deine Meinung?"
+ },
+ "al235": {
+  "fr": "le journal",
+  "pl": "gazeta",
+  "ru": "газе́та",
+  "rulat": "gaséta",
+  "ex": "My father reads the newspaper every morning.",
+  "exde": "Mein Vater liest jeden Morgen die Zeitung."
+ },
+ "al236": {
+  "fr": "les informations",
+  "pl": "wiadomości",
+  "ru": "но́вости",
+  "rulat": "nówosti",
+  "ex": "We watch the news at eight.",
+  "exde": "Wir sehen um acht die Nachrichten."
+ },
+ "al237": {
+  "fr": "la carte d'identité",
+  "pl": "dowód osobisty",
+  "ru": "удостовере́ние ли́чности",
+  "rulat": "udostowerénije lítschnosti",
+  "ex": "Please show me your identity card.",
+  "exde": "Bitte zeigen Sie mir Ihren Ausweis."
+ },
+ "al238": {
+  "fr": "le permis de conduire",
+  "pl": "prawo jazdy",
+  "ru": "води́тельские права́",
+  "rulat": "wodítelskije prawá",
+  "ex": "She got her driving licence last year.",
+  "exde": "Sie hat letztes Jahr ihren Führerschein gemacht."
+ },
+ "al239": {
+  "fr": "la police",
+  "pl": "policja",
+  "ru": "поли́ция",
+  "rulat": "polízija",
+  "ex": "Call the police!",
+  "exde": "Ruf die Polizei!"
+ },
+ "al240": {
+  "fr": "l'urgence",
+  "pl": "nagły wypadek",
+  "ru": "э́кстренный слу́чай",
+  "rulat": "ékstrennyj slútschaj",
+  "ex": "In an emergency, dial 112.",
+  "exde": "Im Notfall wähle die 112."
  }
 }
