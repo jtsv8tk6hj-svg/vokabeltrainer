@@ -40,7 +40,7 @@ async function server() {
     await p.click('#welcomeGo');
     ok('Begrüßung nach „Los geht\'s“ weg', !(await p.isVisible('#welcome')));
     const stat = await p.textContent('#stat');
-    ok('Grundstock geladen (472 Wörter im Status)', /472/.test(stat), stat.trim().replace(/\s+/g,' ').slice(0,80));
+    ok('Grundstock geladen (712 Wörter im Status)', /712/.test(stat), stat.trim().replace(/\s+/g,' ').slice(0,80));
     await p.click('#start');
     ok('Lernfenster offen', await p.isVisible('#drill'));
     ok('Frage sichtbar', (await p.textContent('#qWord')).trim().length > 0);
@@ -85,7 +85,7 @@ async function server() {
     await p.click('#start'); await p.waitForTimeout(200);
     ok('Nur anschauen: Lösung sofort sichtbar, keine Bewertung, „Weiter“', await p.isVisible('#ans') && !(await p.isVisible('#grades')) && !(await p.isVisible('#reveal')) && await p.isVisible('#next'));
     const total = +((await p.textContent('#counter')).match(/von (\d+)/) || [0, 0])[1];
-    ok('Nur anschauen: ganze Auswahl samt Form- und Kasuskarten, Kennzeichnung „Durchsehen“', total === 472 + 1082 && (await p.textContent('#counter')) === 'Noch ' + total + ' von ' + total && (await p.textContent('#cardState')) === 'Durchsehen', await p.textContent('#counter'));
+    ok('Nur anschauen: ganze Auswahl samt Form- und Kasuskarten, Kennzeichnung „Durchsehen“', total === 712 + 1082 && (await p.textContent('#counter')) === 'Noch ' + total + ' von ' + total && (await p.textContent('#cardState')) === 'Durchsehen', await p.textContent('#counter'));
     await p.click('#next'); await p.waitForTimeout(100);
     ok('Nur anschauen: „Weiter“ blättert', (await p.textContent('#counter')) === 'Noch ' + (total - 1) + ' von ' + total && await p.isVisible('#ans'));
     await p.keyboard.press('Space'); await p.waitForTimeout(100);
@@ -105,6 +105,16 @@ async function server() {
     await p.click('#answerPick [data-a="check"]');
     ok('Antwortmodus gespeichert', await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).cfg.mode === 'check'));
 
+    // Themen (Kategorien) folgen dem gewählten Stapel
+    const catsAll = (await p.$$('#catPick .chipbtn')).length;
+    await p.click('#deckPick [data-d="Alltag"]'); await p.waitForTimeout(100);
+    const catsAlltag = await p.$$eval('#catPick .chipbtn', b => b.map(x => x.textContent));
+    await p.click('#catPick [data-c="Wohnen"]'); await p.waitForTimeout(100);
+    const poolWohnen = await p.textContent('#cPool');
+    await p.click('#deckPick [data-d="Personalgewinnung"]'); await p.waitForTimeout(100);
+    const catsPg = await p.$$eval('#catPick .chipbtn', b => b.map(x => x.textContent));
+    ok('Themen je Stapel: Alltag zeigt seine zwölf Themen, Personalgewinnung seine elf, Stapelwechsel setzt das Thema zurück', catsAll > 13 && catsAlltag.length === 13 && catsAlltag.includes('Wohnen') && poolWohnen === '20' && catsPg.length === 12 && !catsPg.includes('Wohnen') && (await p.$eval('#catPick .chipbtn.on', b => b.textContent)) === 'Alle Kategorien', 'alle=' + catsAll + ' alltag=' + catsAlltag.length + ' wohnen=' + poolWohnen + ' pg=' + catsPg.length);
+    await p.click('#deckPick [data-d="alle"]'); await p.waitForTimeout(100);
     // Richtung: Vorgabe gemischt, feste Richtung mit zwei Zielsprachen und Eintippen
     const fromChips = await p.$$eval('#fromPick .chipbtn', b => b.map(x => [x.dataset.f, x.classList.contains('on')]));
     ok('Richtung: sechs Chips, Vorgabe gemischt, Zielsprachen verborgen', fromChips.length === 6 && fromChips[0][0] === 'mix' && fromChips[0][1] && !(await p.isVisible('#toPick')), JSON.stringify(fromChips));
@@ -121,7 +131,7 @@ async function server() {
     const fields = await p.$$eval('#typeFields input', b => b.map(x => x.dataset.k));
     ok('Zwei Zielsprachen: zwei Felder PL und RU, Frage auf Deutsch', fields.join() === 'pl,ru' && (await p.textContent('#qLang')) === 'DE', fields.join());
     // richtige polnische Antwort aus dem Speicher holen, russische falsch lassen
-    const cur = await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const w = document.querySelector('#qWord').firstChild.textContent.trim(); return d.items.find(i => i.de === w); });
+    const cur = await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const w = document.querySelector('#qWord').firstChild.textContent.trim(); return d.items.find(i => i.de === w && i.pl && i.ru); });
     await p.fill('#typeFields input[data-k="pl"]', cur.pl); await p.fill('#typeFields input[data-k="ru"]', 'falsch');
     await p.keyboard.press('Enter'); await p.waitForTimeout(100);
     ok('Zwei Zielsprachen: Enter im letzten Feld deckt auf, Urteile je Sprache, Übernehmen statt Knöpfe', await p.isVisible('#ans') && await p.isVisible('#apply') && !(await p.isVisible('#grades')) && (await p.$$('#ans .vsel:visible')).length === 2);
@@ -175,9 +185,17 @@ async function server() {
     const p = await ctx.newPage();
     const errs = []; p.on('pageerror', e => errs.push(e.message));
     // Nachgestellte API: füllt leere Felder aus den gelieferten Angaben, prüft Anfrageform
-    const requests = [], formReqs = [];
+    const requests = [], formReqs = [], topicReqs = [];
     await p.route('https://api.anthropic.com/**', async route => {
       const body = JSON.parse(route.request().postData());
+      if (/^Thema: /.test(body.messages[0].content)) {
+        // Thema aufbereiten: n Einträge zum Thema, einer davon schon vorhanden (Apfel)
+        topicReqs.push(body);
+        const n = +body.messages[0].content.match(/Anzahl: (\d+)/)[1], topic = body.messages[0].content.match(/^Thema: (.*)/)[1];
+        const items = Array.from({ length: n }, (_, k) => ({ de: k === 0 ? 'Mango' : 'Wort' + k, en: k === 0 ? 'mango' : 'word' + k, fr: 'fr' + k, pl: 'pl' + k, ru: 'ru' + k, rulat: 'lat' + k, ex: 'Ex ' + k + '.', exde: 'Bsp ' + k + '.', cat: topic }));
+        await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ stop_reason: 'end_turn', content: [{ type: 'text', text: JSON.stringify({ items }) }] }) });
+        return;
+      }
       if (body.output_config.format.schema.properties.de) {
         // Formentafel für ein Verb: kleinste gültige Antwort
         formReqs.push(body);
@@ -193,10 +211,10 @@ async function server() {
     });
     await p.goto(URL); await p.waitForTimeout(400);
     await p.click('nav button[data-v="new"]');
-    await p.fill('#listBox', '# Dienst\n- Apfel – apple\ndie Birne\n3. Kirsche: cherry\n\n');
+    await p.fill('#listBox', '# Dienst\n- Mango – mango\ndie Birne\n3. Kirsche: cherry\n\n');
     await p.click('#listGo'); await p.waitForTimeout(200);
     let items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
-    ok('Liste ohne Schlüssel: 3 Wörter im Stapel aus der Überschrift', items.length === 3 && items[0].de === 'Apfel' && items[0].en === 'apple' && items[1].de === 'die Birne' && items[1].en === '' && items[2].en === 'cherry', JSON.stringify(items.map(i => [i.de, i.en])));
+    ok('Liste ohne Schlüssel: 3 Wörter im Stapel aus der Überschrift', items.length === 3 && items[0].de === 'Mango' && items[0].en === 'mango' && items[1].de === 'die Birne' && items[1].en === '' && items[2].en === 'cherry', JSON.stringify(items.map(i => [i.de, i.en])));
     ok('Liste ohne Schlüssel: Hinweis auf Schlüssel', /3 Wörter im Stapel „Dienst"/.test(await p.textContent('#listMsg')) && /Schlüssel/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
     await p.click('#listGo'); await p.waitForTimeout(200);
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
@@ -218,13 +236,21 @@ async function server() {
     await p.click('#fillGo');
     await p.waitForFunction(() => /ergänzt|Formentafeln/.test(document.querySelector('#fillMsg').textContent), null, { timeout: 60000 }).catch(() => {});
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
-    ok('Nachübersetzen: alte Wörter vervollständigt, eingegebene Übersetzung bleibt', items.every(i => i.fr && i.pl && i.ru && i.ex && i.exde) && items[0].en === 'apple' && items[1].en === 'en:die Birne', JSON.stringify(items.map(i => [i.de, i.en, i.fr])));
+    ok('Nachübersetzen: alte Wörter vervollständigt, eingegebene Übersetzung bleibt', items.every(i => i.fr && i.pl && i.ru && i.ex && i.exde) && items[0].en === 'mango' && items[1].en === 'en:die Birne', JSON.stringify(items.map(i => [i.de, i.en, i.fr])));
     ok('Nachübersetzen: nichts mehr offen', /vollständig übersetzt/.test(await p.textContent('#fillInfo')) && await p.$eval('#fillGo', b => b.disabled), (await p.textContent('#fillInfo')).trim());
     ok('Zwei Aufrufe für zwei Übersetzungsrunden, keine für Formentafeln (Grundstock vollständig)', requests.length === 2 && formReqs.length === 0, 'Aufrufe: ' + requests.length + ' / Formen: ' + formReqs.length);
     // Formentafel für ein eigenes Verb beim Anlegen unter „Neu“
     await p.click('nav button[data-v="new"]'); await p.fill('#f-de', 'tanzen'); await p.fill('#f-en', 'to dance'); await p.click('#fSave');
     await p.waitForFunction(() => /Formentafel ergänzt/.test(document.querySelector('#fMsg').textContent), null, { timeout: 10000 }).catch(() => {});
     const own = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.find(i => i.de === 'tanzen'));
+    // Thema aufbereiten
+    await p.fill('#topicName', 'Beim Arzt'); await p.fill('#topicN', '8'); await p.fill('#topicDeck', 'Themen'); await p.click('#topicGo');
+    await p.waitForFunction(() => /angelegt/.test(document.querySelector('#topicMsg').textContent), null, { timeout: 10000 }).catch(() => {});
+    const th = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Themen'));
+    ok('Thema aufbereiten: 7 neue Wörter im Stapel „Themen“ mit Thema als Kategorie, Dublette „Mango“ übersprungen', topicReqs.length === 1 && th.length === 7 && th.every(i => i.cat === 'Beim Arzt' && i.ru && i.exde) && /7 Wörter.*1 schon vorhanden/.test(await p.textContent('#topicMsg')) && topicReqs[0].system.length > 100, (await p.textContent('#topicMsg')).trim());
+    await p.click('nav button[data-v="learn"]'); await p.click('#deckPick [data-d="Themen"]'); await p.waitForTimeout(100);
+    ok('Thema abrufen: Stapel „Themen“ zeigt das Thema als Kategorie', (await p.$$eval('#catPick .chipbtn', b => b.map(x => x.textContent))).join() === 'Alle Kategorien,Beim Arzt' && (await p.textContent('#cPool')) === '7');
+    await p.click('nav button[data-v="new"]');
     ok('Eigenes Verb: Tafel über die API geholt und am Wort gespeichert', formReqs.length === 1 && own && own.forms && own.forms.ru && own.ex === 'Ex.' && formReqs[0].output_config.format.schema.required.includes('ru'), JSON.stringify(own && Object.keys(own.forms || {})));
     // Liste aus dem Link
     await p.goto('about:blank'); await p.goto(URL + '#liste=' + encodeURIComponent('Urlaub – leave\nDienstreise')); await p.waitForTimeout(400);
@@ -358,7 +384,7 @@ async function server() {
     const p = await ctx.newPage();
     const errs = []; p.on('pageerror', e => errs.push(e.message));
     await p.goto(URL); await p.waitForTimeout(500);
-    ok('Ohne Speicher: App läuft, Grundstock da', /472/.test(await p.textContent('#stat')));
+    ok('Ohne Speicher: App läuft, Grundstock da', /712/.test(await p.textContent('#stat')));
     ok('Ohne Speicher: roter Balken mit Sichern/Laden', await p.isVisible('#savebar') && await p.isVisible('#sbCopy') && await p.isVisible('#sbLoad'));
     await p.click('#welcomeGo'); await p.waitForTimeout(100);
     await p.click('#start'); await p.click('#reveal'); await p.click('#n1'); await p.waitForTimeout(200);
@@ -392,7 +418,7 @@ async function server() {
     await ctx.addInitScript(() => { localStorage.setItem('vokabeltrainer-v1', JSON.stringify({ cfg: { newPerDay: 5 } })); localStorage.setItem('vokabeltrainer-v1-seen', '1'); });
     const p = await ctx.newPage();
     await p.goto(URL); await p.waitForTimeout(500);
-    ok('Leerer Stand: Grundstock wiederhergestellt', /472/.test(await p.textContent('#stat')));
+    ok('Leerer Stand: Grundstock wiederhergestellt', /712/.test(await p.textContent('#stat')));
     ok('Leerer Stand: Einstellung erhalten (5/Tag)', await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).cfg.newPerDay === 5));
     await ctx.close();
   }
@@ -409,7 +435,7 @@ async function server() {
     await ctx.setOffline(true);
     const p3 = await ctx.newPage();
     let offlineOk = true;
-    try { await p3.goto(URL); await p3.waitForTimeout(500); offlineOk = /472/.test(await p3.textContent('#stat')); } catch (e) { offlineOk = false; out.push('   ' + e.message.split('\n')[0]); }
+    try { await p3.goto(URL); await p3.waitForTimeout(500); offlineOk = /712/.test(await p3.textContent('#stat')); } catch (e) { offlineOk = false; out.push('   ' + e.message.split('\n')[0]); }
     ok('Offline-Start liefert die App aus dem Cache', offlineOk);
     await ctx.close();
   }

@@ -23,6 +23,9 @@ daten/verben.csv                    60 Verben in fünf Sprachen mit Aspektpaaren
 daten/substantive.csv               60 Substantive in fünf Sprachen mit Artikel (Stapel Substantive)
 daten/adjektive.csv                 40 Adjektive (Stapel Adjektive)
 daten/pronomen.csv                  11 Pronomen (Stapel Pronomen)
+daten/alltag.csv                    240 Alltagswörter in zwölf Themen: id;de;en;thema (Stapel Alltag)
+daten/alltag-sprachen.json          {id: {fr, pl, ru, rulat, ex, exde}} zu alltag.csv, erzeugt von woerter.py
+woerter.py                          ergänzt FR, PL, RU, Umschrift und Beispielsätze für eine Wortliste über die API
 daten/formen.json                   Formentafeln je Wort (Konjugation, Deklination), erzeugt von formen.py; Platzhalter __FORMS__
 formen.py                           erzeugt und prüft die Formentafeln über die API (auf dem eigenen Rechner)
 index.html                          erzeugt — nicht von Hand bearbeiten
@@ -42,6 +45,7 @@ bearbeitet, verliert die Änderung beim nächsten `build.py`.
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-…  # nur für formen.py
 python3 formen.py                # fehlende Formentafeln erzeugen und prüfen, schreibt daten/formen.json
+python3 woerter.py               # fehlende Sprachen für daten/alltag.csv ergänzen, schreibt daten/alltag-sprachen.json
 python3 build.py                 # index.html neu erzeugen
 python3 -m http.server 8000      # lokal prüfen unter localhost:8000
 node test/pruefung.js            # Playwright-Prüfung (startet den Server bei Bedarf selbst)
@@ -210,6 +214,33 @@ Wort ab (`i.forms`); *Nachübersetzen* holt sie für alle Verben ohne Tafel nach
 für Grundstock-Verben, solange `formen.json` sie noch nicht enthält (`formsOf()` nimmt
 `i.forms` vor `FORMS`).
 
+## Alltag und Themen
+
+Der Stapel **Alltag** (`daten/alltag.csv`, 240 Wörter) ist nach zwölf **Themen**
+gegliedert: Begrüßung und Höflichkeit, Zahlen und Zeit, Familie und Menschen, Essen
+und Trinken, Einkaufen und Geld, Unterwegs, Wohnen, Körper und Gesundheit, Arbeit
+und Büro, Wetter und Natur, Freizeit und Sport, Kommunikation und Alltag. Das Thema
+ist die Kategorie (`cat`) des Wortes; die Kategorie-Chips auf der Lernseite zeigen
+nur die Kategorien des gewählten Stapels (`cats()` filtert nach `deck`), und ein
+Stapelwechsel setzt eine nicht mehr vorhandene Kategorie auf „alle“ zurück. So lässt
+sich ein Thema gezielt abrufen: Stapel wählen, Thema wählen, starten.
+
+Die CSV führt nur `id;de;en;thema`, von Hand kuratiert und ohne Überschneidung mit
+dem Stapel Substantive. `woerter.py` ergänzt FR, PL, RU, Umschrift und beide
+Beispielsätze über die API (Blöcke von 20, dasselbe Schema und derselbe Systemtext
+wie `translate()` in der App, resumierbar) nach `daten/alltag-sprachen.json`;
+`build.py` führt beides zusammen. Das Skript nimmt auch andere Listen entgegen
+(`python3 woerter.py daten/x.csv daten/x-sprachen.json`), weitere kuratierte Stapel
+entstehen also nach demselben Muster.
+
+**Thema aufbereiten** (*Neu → Thema aufbereiten*) stellt mit dem Schlüssel des Nutzers
+den Wortschatz zu einem frei genannten Thema zusammen (`fetchTopic()`, Systemtext
+`TOPIC_SYSTEM`, dasselbe `ENTRY_SCHEMA` wie die Übersetzung, 5 bis 60 Wörter,
+Vorgabe 20). Die Wörter landen mit dem Thema als Kategorie im angegebenen Stapel
+(Vorgabe „Themen“), Dubletten gegen den ganzen Bestand werden je Sprache über
+`norm()` übersprungen, Kennung `t<Zeitstempel>-<n>`. Danach ist das Thema unter
+„Lernen“ als Kategorie wählbar.
+
 ## Didaktische Festlegungen
 
 Diese sind nicht beliebig — sie wurden mit fremdsprachendidaktischer Begründung so
@@ -371,7 +402,8 @@ Schema der Anfrage), Nachübersetzen, Übernahme aus dem Link, Start ohne Speich
 Sichern und Einsetzen des Fortschritts-Codes, Formkarten (Stapel Verben, Aufgabe,
 Tafel, Melden, Stand, Code mit Grammatikfeld, Schalter „Formen mitlernen“,
 Formen-Abruf über die Attrappe), Kasuskarten (Stapel Substantive, Genus, sechs
-russische Fälle, Fragewörter), Adjektiv- und Pronomenkarten, Selbstheilung bei leerem Speicherstand und
+russische Fälle, Fragewörter), Adjektiv- und Pronomenkarten, Themen je Stapel,
+„Thema aufbereiten“ mit Dubletten über die Attrappe, Selbstheilung bei leerem Speicherstand und
 Offline-Start über den Service Worker. Jede Zeile der Ausgabe beginnt mit `OK` oder `FEHL`, der
 Exit-Code ist 1 bei Fehlschlägen. Neue Fälle dort ergänzen, nach demselben Muster:
 
@@ -402,7 +434,6 @@ einsetzen.
   Speicher der Nutzer. Meldungen aus der App (*Daten → Meldungen*) sind der Weg,
   zweifelhafte Formen einzusammeln und mit `python3 formen.py --neu <id>` neu zu
   erzeugen.
-- Zweiter Stapel mit Alltagswortschatz, damit die App auch privat taugt.
 - FR/PL/RU von Muttersprachlern gegenlesen lassen.
 - Import weiterer CSV-Dateien als eigene Stapel ist bereits eingebaut
   (*Daten → Datei einlesen*), Format `Englisch;Deutsch;Kategorie;Beispielsatz`.

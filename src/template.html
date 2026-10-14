@@ -331,6 +331,17 @@
     </details>
   </div>
   <div class="panel">
+    <h2>Thema aufbereiten</h2>
+    <p class="lead">Ein Thema nennen, etwa „Beim Arzt“ oder „Im Restaurant“, und die App stellt den Wortschatz dazu in allen fünf Sprachen zusammen, mit Beispielsätzen. Braucht den Schlüssel unten. Das Thema erscheint danach als Kategorie in der Auswahl.</p>
+    <div class="field"><label for="topicName">Thema</label><input id="topicName" placeholder="Beim Arzt"></div>
+    <div class="flex" style="margin-bottom:12px">
+      <span class="hint">Wörter</span><input id="topicN" type="number" min="5" max="60" value="20" style="width:80px" aria-label="Anzahl der Wörter">
+      <span class="hint">Stapel</span><input id="topicDeck" value="Themen" style="width:140px" aria-label="Stapel">
+    </div>
+    <button class="btn main" id="topicGo">Zusammenstellen</button>
+    <p class="hint" id="topicMsg" style="margin-top:10px"></p>
+  </div>
+  <div class="panel">
     <h2>Fehlende Übersetzungen</h2>
     <p class="lead" id="fillInfo"></p>
     <button class="btn wide" id="fillGo">Nachübersetzen</button>
@@ -434,7 +445,7 @@
      padding:calc(26px + env(safe-area-inset-top,0px)) 18px calc(26px + var(--safe-b))">
   <div style="max-width:520px;margin:0 auto">
     <h2 id="welcomeTitle" style="font-family:var(--serif);font-size:27px;font-weight:600;margin:0 0 6px">Vokabeltrainer</h2>
-    <p class="lead">301 Fachbegriffe der Personalgewinnung in fünf Sprachen, mit Beispielsätzen und Karteikartensystem. Läuft vollständig ohne Internet.</p>
+    <p class="lead">Fachbegriffe der Personalgewinnung, Alltagswortschatz nach Themen und Grammatiktafeln in fünf Sprachen, mit Beispielsätzen und Karteikartensystem. Läuft vollständig ohne Internet.</p>
     <div class="panel">
       <h2>So lernst du</h2>
       <p class="hint">Du siehst einen Begriff und den Beispielsatz mit Lücke. Antwort überlegen, dann <b>Aufdecken</b>. Anschließend selbst bewerten:</p>
@@ -449,7 +460,7 @@
       <p class="hint">Der Lernstand bleibt auf diesem Gerät, in diesem Browser – nutze also immer dasselbe.
       Unter <b>Daten</b> kannst du eine Sicherung speichern, eigene Wortlisten einlesen und die Lernweise umstellen
       (Lückensatz, Antwort eintippen, Aussprache, weitere Abfragesprachen).</p>
-      <p class="hint" style="margin-top:9px">Unter <b>Neu</b> legst du eigene Wörter an – einzeln oder als ganze Liste aus Apple Notizen. Mit eigenem API-Schlüssel übersetzt die App alles in fünf Sprachen, samt Beispielsätzen.</p>
+      <p class="hint" style="margin-top:9px">Unter <b>Neu</b> legst du eigene Wörter an – einzeln, als Liste aus Apple Notizen oder als ganzes <b>Thema</b> („Beim Arzt“), das die App mit eigenem API-Schlüssel in fünf Sprachen zusammenstellt. Der Stapel <b>Alltag</b> bringt 240 Wörter in zwölf Themen mit; Themen wählst du unter „Lernen“ als Kategorie.</p>
       <p class="hint" style="margin-top:9px">Die Stapel <b>Verben</b>, <b>Substantive</b>, <b>Adjektive</b> und <b>Pronomen</b> üben zusätzlich Formen: „<i>arbeiten</i> · Präsens · du“, „<i>дом</i> · Plural · Genitiv“, „<i>duży</i> · Komparation · Superlativ“. Die Auflösung zeigt die ganze Tafel, bei Fällen mit Fragewörtern. Jede Tafel hat ihren eigenen Lernstand.</p>
     </div>
     <button class="btn main wide" id="welcomeGo" style="min-height:54px">Los geht's</button>
@@ -576,7 +587,8 @@ const FORMS = __FORMS__;
     const ls=cardLangs(e.i); return {due:ls.filter(k=>isDue(e.i,k,t)).length, fresh:ls.filter(k=>isNew(e.i,k)).length};
   }
   const decks=()=>['alle',...new Set(data.items.map(i=>i.deck||'Eigene'))];
-  const cats =()=>['alle',...[...new Set(data.items.map(i=>i.cat).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de'))];
+  // Kategorien (Themen) nur aus dem gewählten Stapel, sonst mischen sich die Themen aller Stapel
+  const cats =()=>['alle',...[...new Set(data.items.filter(i=>deck==='alle'||(i.deck||'Eigene')===deck).map(i=>i.cat).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de'))];
   const pool =()=>data.items.filter(i=>(deck==='alle'||(i.deck||'Eigene')===deck)&&(cat==='alle'||i.cat===cat));
   const newToday=()=>data.log[today()]||0;
   function counts(){
@@ -969,8 +981,8 @@ const FORMS = __FORMS__;
     else data.cfg.to=LANGS.filter(x=>x===k||to.includes(x));
     save(); render();
   };
-  $('#deckPick').onclick=e=>{const d=e.target.dataset.d; if(d){deck=d; render();}};
-  $('#catPick').onclick=e=>{const k=e.target.dataset.c; if(k){cat=k; render();}};
+  $('#deckPick').onclick=e=>{const b=e.target.closest('[data-d]'), d=b&&b.dataset.d; if(d){deck=d; if(!cats().includes(cat)) cat='alle'; render();}};
+  $('#catPick').onclick=e=>{const b=e.target.closest('[data-c]'), k=b&&b.dataset.c; if(k){cat=k; render();}};
 
   function words(){
     const q=$('#search').value.trim().toLowerCase();
@@ -1227,6 +1239,46 @@ const FORMS = __FORMS__;
       $('#fillMsg').textContent=(todo.length?todo.length+' Wörter ergänzt':'')+(todo.length&&n?', ':'')+(n?n+' Formentafeln':'')+'.'; toast('Ergänzt');
     }catch(e){ $('#fillMsg').textContent='Abgebrochen ('+e.message+'). Erneut versuchen, der Stand bleibt erhalten.'; }
     finally{ fillSelects(); render(); }
+  };
+  /* Thema aufbereiten: Wortschatz zu einem Thema über die API zusammenstellen, Dubletten gegen den Bestand überspringen */
+  const TOPIC_SYSTEM='Du bist ein fünfsprachiges Wörterbuch (Deutsch, Englisch, Französisch, Polnisch, Russisch) und stellst Alltagswortschatz zu einem Thema zusammen: '
+    +'die nützlichsten Wörter und festen Wendungen, die man dazu wirklich braucht, keine Randbegriffe, keine Wiederholungen. Regeln wie im Wörterbuch: '
+    +'deutsche Substantive mit Artikel, französische mit le/la/les, Verben in der Grundform; "ru" kyrillisch mit Betonungszeichen (U+0301), "rulat" deutsche Umschrift mit Betonungsakzent; '
+    +'"ex" kurzer natürlicher Beispielsatz auf Englisch, "exde" derselbe Satz auf Deutsch; "cat" exakt das vorgegebene Thema. Genau die verlangte Anzahl, nur das JSON.';
+  async function fetchTopic(topic,n){
+    const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':data.key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-opus-5-5',max_tokens:16000,system:TOPIC_SYSTEM,
+        output_config:{format:{type:'json_schema',schema:{type:'object',properties:{items:{type:'array',items:ENTRY_SCHEMA}},required:['items'],additionalProperties:false}}},
+        messages:[{role:'user',content:'Thema: '+topic+'\nAnzahl: '+n+' Einträge'}]})});
+    if(!r.ok) throw new Error('Server '+r.status);
+    const j=await r.json();
+    if(j.stop_reason==='refusal') throw new Error('Anfrage abgelehnt');
+    const t=j.content.filter(b=>b.type==='text').map(b=>b.text).join('');
+    const o=JSON.parse(t.slice(t.indexOf('{'),t.lastIndexOf('}')+1));
+    return (o.items||[]).filter(x=>x&&(x.de||x.en));
+  }
+  $('#topicGo').onclick=async()=>{
+    const topic=$('#topicName').value.trim(), n=Math.max(5,Math.min(60,+$('#topicN').value||20)), deckN=$('#topicDeck').value.trim()||'Themen';
+    if(!topic){ $('#topicMsg').textContent='Bitte ein Thema eintragen.'; return; }
+    if(!data.key){ $('#topicMsg').textContent='Kein Schlüssel hinterlegt – unten eintragen.'; return; }
+    $('#topicGo').disabled=true; $('#topicMsg').textContent='Stelle Wortschatz zu „'+topic+'“ zusammen …';
+    try{
+      const got=await fetchTopic(topic,n);
+      const known={de:new Set(),en:new Set()};
+      data.items.forEach(i=>{ if(i.de) known.de.add(norm(i.de)); if(i.en) known.en.add(norm(i.en)); });
+      let added=0, skipped=0;
+      got.forEach((x,k)=>{
+        if((x.de&&known.de.has(norm(x.de)))||(x.en&&known.en.has(norm(x.en)))){ skipped++; return; }
+        if(x.de) known.de.add(norm(x.de)); if(x.en) known.en.add(norm(x.en));
+        data.items.push({id:'t'+Date.now()+'-'+k,de:x.de||'',en:x.en||'',fr:x.fr||'',pl:x.pl||'',ru:x.ru||'',rulat:x.rulat||'',cat:topic,deck:deckN,ex:x.ex||'',exde:x.exde||'',p:{}});
+        added++;
+      });
+      save(); fillSelects(); render();
+      $('#topicMsg').textContent=added+' Wörter zum Thema „'+topic+'“ im Stapel „'+deckN+'“ angelegt'+(skipped?', '+skipped+' schon vorhanden':'')+'. Unter „Lernen“ den Stapel und das Thema wählen.';
+      toast(added+' Wörter angelegt'); $('#topicName').value='';
+    }catch(e){ $('#topicMsg').textContent='Fehlgeschlagen ('+e.message+'). Erneut versuchen.'; }
+    finally{ $('#topicGo').disabled=false; }
   };
   $('#repCopy').onclick=async()=>{
     const txt=JSON.stringify(data.rep,null,1);

@@ -1,0 +1,642 @@
+{
+ "al001": {
+  "fr": "bonjour",
+  "pl": "dzień dobry",
+  "ru": "До́брое у́тро",
+  "rulat": "Dóbroje útro",
+  "ex": "Good morning, how did you sleep?",
+  "exde": "Guten Morgen, wie hast du geschlafen?"
+ },
+ "al002": {
+  "fr": "bonjour",
+  "pl": "dzień dobry",
+  "ru": "До́брый день",
+  "rulat": "Dóbryj den",
+  "ex": "Good day, may I help you?",
+  "exde": "Guten Tag, kann ich Ihnen helfen?"
+ },
+ "al003": {
+  "fr": "bonsoir",
+  "pl": "dobry wieczór",
+  "ru": "До́брый ве́чер",
+  "rulat": "Dóbryj wétscher",
+  "ex": "Good evening, ladies and gentlemen.",
+  "exde": "Guten Abend, meine Damen und Herren."
+ },
+ "al004": {
+  "fr": "bonne nuit",
+  "pl": "dobranoc",
+  "ru": "Споко́йной но́чи",
+  "rulat": "Spokójnoj nótschi",
+  "ex": "Good night, sleep well!",
+  "exde": "Gute Nacht, schlaf gut!"
+ },
+ "al005": {
+  "fr": "salut",
+  "pl": "cześć",
+  "ru": "Приве́т",
+  "rulat": "Priwét",
+  "ex": "Hello, my name is Anna.",
+  "exde": "Hallo, ich heiße Anna."
+ },
+ "al006": {
+  "fr": "salut",
+  "pl": "cześć",
+  "ru": "Пока́",
+  "rulat": "Poká",
+  "ex": "Bye, see you tomorrow!",
+  "exde": "Tschüss, bis morgen!"
+ },
+ "al007": {
+  "fr": "au revoir",
+  "pl": "do widzenia",
+  "ru": "До свида́ния",
+  "rulat": "Do swidánija",
+  "ex": "Goodbye and thank you for your visit.",
+  "exde": "Auf Wiedersehen und danke für Ihren Besuch."
+ },
+ "al008": {
+  "fr": "s'il vous plaît",
+  "pl": "proszę",
+  "ru": "Пожа́луйста",
+  "rulat": "Poschálujsta",
+  "ex": "A coffee, please.",
+  "exde": "Einen Kaffee, bitte."
+ },
+ "al009": {
+  "fr": "merci",
+  "pl": "dziękuję",
+  "ru": "Спаси́бо",
+  "rulat": "Spassíbo",
+  "ex": "Thank you for your help.",
+  "exde": "Danke für deine Hilfe."
+ },
+ "al010": {
+  "fr": "merci beaucoup",
+  "pl": "dziękuję bardzo",
+  "ru": "Большо́е спаси́бо",
+  "rulat": "Bolschóje spassíbo",
+  "ex": "Thank you very much for the flowers.",
+  "exde": "Vielen Dank für die Blumen."
+ },
+ "al011": {
+  "fr": "excusez-moi",
+  "pl": "przepraszam",
+  "ru": "Извини́те",
+  "rulat": "Iswiníte",
+  "ex": "Excuse me, where is the station?",
+  "exde": "Entschuldigung, wo ist der Bahnhof?"
+ },
+ "al012": {
+  "fr": "je suis désolé",
+  "pl": "przykro mi",
+  "ru": "Мне жаль",
+  "rulat": "Mnje schal",
+  "ex": "I am sorry that I am late.",
+  "exde": "Es tut mir leid, dass ich zu spät bin."
+ },
+ "al013": {
+  "fr": "Comment vas-tu ?",
+  "pl": "Jak się masz?",
+  "ru": "Как дела́?",
+  "rulat": "Kak delá?",
+  "ex": "Hi Tom, how are you?",
+  "exde": "Hallo Tom, wie geht es dir?"
+ },
+ "al014": {
+  "fr": "Je vais bien",
+  "pl": "Mam się dobrze",
+  "ru": "У меня́ всё хорошо́",
+  "rulat": "U menjá wsjo choroschó",
+  "ex": "Thanks, I am fine.",
+  "exde": "Danke, mir geht es gut."
+ },
+ "al015": {
+  "fr": "bienvenue",
+  "pl": "witamy",
+  "ru": "Добро́ пожа́ловать",
+  "rulat": "Dobró poschálowat",
+  "ex": "Welcome to our home!",
+  "exde": "Willkommen in unserem Zuhause!"
+ },
+ "al016": {
+  "fr": "meilleurs vœux",
+  "pl": "wszystkiego dobrego",
+  "ru": "Всего́ хоро́шего",
+  "rulat": "Wsewó choróschewo",
+  "ex": "All the best for your new job!",
+  "exde": "Alles Gute für deinen neuen Job!"
+ },
+ "al017": {
+  "fr": "félicitations",
+  "pl": "gratulacje",
+  "ru": "Поздравля́ю",
+  "rulat": "Posdrawljáju",
+  "ex": "Congratulations on your birthday!",
+  "exde": "Herzlichen Glückwunsch zum Geburtstag!"
+ },
+ "al018": {
+  "fr": "de rien",
+  "pl": "nie ma za co",
+  "ru": "Не́ за что",
+  "rulat": "Njé sa schto",
+  "ex": "You are welcome, it was no trouble.",
+  "exde": "Gern geschehen, das war kein Problem."
+ },
+ "al019": {
+  "fr": "à bientôt",
+  "pl": "do zobaczenia",
+  "ru": "До ско́рого",
+  "rulat": "Do skórowo",
+  "ex": "See you soon, take care!",
+  "exde": "Bis bald, pass auf dich auf!"
+ },
+ "al020": {
+  "fr": "bon week-end",
+  "pl": "miłego weekendu",
+  "ru": "Хоро́ших выходны́х",
+  "rulat": "Choróschich wychodných",
+  "ex": "Have a nice weekend, see you on Monday!",
+  "exde": "Schönes Wochenende, bis Montag!"
+ },
+ "al021": {
+  "fr": "un",
+  "pl": "jeden",
+  "ru": "оди́н",
+  "rulat": "adín",
+  "ex": "Count from one to ten.",
+  "exde": "Zähl von eins bis zehn."
+ },
+ "al022": {
+  "fr": "deux",
+  "pl": "dwa",
+  "ru": "два",
+  "rulat": "dwa",
+  "ex": "We have two children.",
+  "exde": "Wir haben zwei Kinder."
+ },
+ "al023": {
+  "fr": "trois",
+  "pl": "trzy",
+  "ru": "три",
+  "rulat": "tri",
+  "ex": "I bought three apples.",
+  "exde": "Ich habe drei Äpfel gekauft."
+ },
+ "al024": {
+  "fr": "dix",
+  "pl": "dziesięć",
+  "ru": "де́сять",
+  "rulat": "déssjat",
+  "ex": "The film starts at ten.",
+  "exde": "Der Film beginnt um zehn."
+ },
+ "al025": {
+  "fr": "cent",
+  "pl": "sto",
+  "ru": "сто",
+  "rulat": "sto",
+  "ex": "This book has a hundred pages.",
+  "exde": "Dieses Buch hat hundert Seiten."
+ },
+ "al026": {
+  "fr": "mille",
+  "pl": "tysiąc",
+  "ru": "ты́сяча",
+  "rulat": "týssjatscha",
+  "ex": "A thousand people came to the concert.",
+  "exde": "Tausend Menschen kamen zum Konzert."
+ },
+ "al027": {
+  "fr": "l'horloge",
+  "pl": "zegar",
+  "ru": "часы́",
+  "rulat": "tschassý",
+  "ex": "The clock on the wall is slow.",
+  "exde": "Die Uhr an der Wand geht nach."
+ },
+ "al028": {
+  "fr": "l'heure",
+  "pl": "godzina",
+  "ru": "час",
+  "rulat": "tschas",
+  "ex": "The trip takes one hour.",
+  "exde": "Die Fahrt dauert eine Stunde."
+ },
+ "al029": {
+  "fr": "la minute",
+  "pl": "minuta",
+  "ru": "мину́та",
+  "rulat": "minúta",
+  "ex": "Wait a minute, please.",
+  "exde": "Warte bitte eine Minute."
+ },
+ "al030": {
+  "fr": "aujourd'hui",
+  "pl": "dzisiaj",
+  "ru": "сего́дня",
+  "rulat": "ssewódnja",
+  "ex": "Today is my birthday.",
+  "exde": "Heute ist mein Geburtstag."
+ },
+ "al031": {
+  "fr": "demain",
+  "pl": "jutro",
+  "ru": "за́втра",
+  "rulat": "sáwtra",
+  "ex": "See you tomorrow!",
+  "exde": "Bis morgen!"
+ },
+ "al032": {
+  "fr": "hier",
+  "pl": "wczoraj",
+  "ru": "вчера́",
+  "rulat": "wtscherá",
+  "ex": "I was at the cinema yesterday.",
+  "exde": "Ich war gestern im Kino."
+ },
+ "al033": {
+  "fr": "maintenant",
+  "pl": "teraz",
+  "ru": "сейча́с",
+  "rulat": "ssejtschás",
+  "ex": "I have to go now.",
+  "exde": "Ich muss jetzt gehen."
+ },
+ "al034": {
+  "fr": "plus tard",
+  "pl": "później",
+  "ru": "по́зже",
+  "rulat": "pósche",
+  "ex": "I'll call you later.",
+  "exde": "Ich rufe dich später an."
+ },
+ "al035": {
+  "fr": "le lundi",
+  "pl": "poniedziałek",
+  "ru": "понеде́льник",
+  "rulat": "ponedélnik",
+  "ex": "The shop is closed on Monday.",
+  "exde": "Am Montag ist der Laden geschlossen."
+ },
+ "al036": {
+  "fr": "le vendredi",
+  "pl": "piątek",
+  "ru": "пя́тница",
+  "rulat": "pjátniza",
+  "ex": "On Friday we're going to the cinema.",
+  "exde": "Am Freitag gehen wir ins Kino."
+ },
+ "al037": {
+  "fr": "le week-end",
+  "pl": "weekend",
+  "ru": "выходны́е",
+  "rulat": "wychodnýje",
+  "ex": "What are you doing at the weekend?",
+  "exde": "Was machst du am Wochenende?"
+ },
+ "al038": {
+  "fr": "le mois",
+  "pl": "miesiąc",
+  "ru": "ме́сяц",
+  "rulat": "méssjaz",
+  "ex": "My holiday lasts one month.",
+  "exde": "Mein Urlaub dauert einen Monat."
+ },
+ "al039": {
+  "fr": "l'été",
+  "pl": "lato",
+  "ru": "ле́то",
+  "rulat": "léto",
+  "ex": "In summer we go to the sea.",
+  "exde": "Im Sommer fahren wir ans Meer."
+ },
+ "al040": {
+  "fr": "l'hiver",
+  "pl": "zima",
+  "ru": "зима́",
+  "rulat": "simá",
+  "ex": "The winter here is very cold.",
+  "exde": "Der Winter ist hier sehr kalt."
+ },
+ "al041": {
+  "fr": "les parents",
+  "pl": "rodzice",
+  "ru": "роди́тели",
+  "rulat": "rodíteli",
+  "ex": "My parents live in Berlin.",
+  "exde": "Meine Eltern wohnen in Berlin."
+ },
+ "al042": {
+  "fr": "le frère",
+  "pl": "brat",
+  "ru": "брат",
+  "rulat": "brat",
+  "ex": "My brother is older than me.",
+  "exde": "Mein Bruder ist älter als ich."
+ },
+ "al043": {
+  "fr": "la sœur",
+  "pl": "siostra",
+  "ru": "сестра́",
+  "rulat": "sestrá",
+  "ex": "My sister plays the piano.",
+  "exde": "Meine Schwester spielt Klavier."
+ },
+ "al044": {
+  "fr": "le fils",
+  "pl": "syn",
+  "ru": "сын",
+  "rulat": "syn",
+  "ex": "Their son goes to school.",
+  "exde": "Ihr Sohn geht zur Schule."
+ },
+ "al045": {
+  "fr": "la fille",
+  "pl": "córka",
+  "ru": "дочь",
+  "rulat": "dotsch",
+  "ex": "She has a daughter and two sons.",
+  "exde": "Sie hat eine Tochter und zwei Söhne."
+ },
+ "al046": {
+  "fr": "la grand-mère",
+  "pl": "babcia",
+  "ru": "ба́бушка",
+  "rulat": "bábuschka",
+  "ex": "My grandmother bakes delicious cakes.",
+  "exde": "Meine Großmutter backt leckere Kuchen."
+ },
+ "al047": {
+  "fr": "le grand-père",
+  "pl": "dziadek",
+  "ru": "де́душка",
+  "rulat": "djéduschka",
+  "ex": "My grandfather tells good stories.",
+  "exde": "Mein Großvater erzählt gute Geschichten."
+ },
+ "al048": {
+  "fr": "le mari",
+  "pl": "mąż",
+  "ru": "муж",
+  "rulat": "musch",
+  "ex": "Her husband works in a hospital.",
+  "exde": "Ihr Ehemann arbeitet in einem Krankenhaus."
+ },
+ "al049": {
+  "fr": "la femme",
+  "pl": "żona",
+  "ru": "жена́",
+  "rulat": "schená",
+  "ex": "His wife is a teacher.",
+  "exde": "Seine Ehefrau ist Lehrerin."
+ },
+ "al050": {
+  "fr": "le voisin",
+  "pl": "sąsiad",
+  "ru": "сосе́д",
+  "rulat": "sosjéd",
+  "ex": "Our neighbour has a big dog.",
+  "exde": "Unser Nachbar hat einen großen Hund."
+ },
+ "al051": {
+  "fr": "le collègue",
+  "pl": "kolega",
+  "ru": "колле́га",
+  "rulat": "kolléga",
+  "ex": "My colleague helps me with the project.",
+  "exde": "Mein Kollege hilft mir bei dem Projekt."
+ },
+ "al052": {
+  "fr": "le garçon",
+  "pl": "chłopiec",
+  "ru": "ма́льчик",
+  "rulat": "máltschik",
+  "ex": "The boy is playing football.",
+  "exde": "Der Junge spielt Fußball."
+ },
+ "al053": {
+  "fr": "la fille",
+  "pl": "dziewczynka",
+  "ru": "де́вочка",
+  "rulat": "déwotschka",
+  "ex": "The girl is reading a book.",
+  "exde": "Das Mädchen liest ein Buch."
+ },
+ "al054": {
+  "fr": "l'être humain",
+  "pl": "człowiek",
+  "ru": "челове́к",
+  "rulat": "tschelowék",
+  "ex": "Every human being needs water.",
+  "exde": "Jeder Mensch braucht Wasser."
+ },
+ "al055": {
+  "fr": "les gens",
+  "pl": "ludzie",
+  "ru": "лю́ди",
+  "rulat": "ljúdi",
+  "ex": "Many people were at the concert.",
+  "exde": "Viele Leute waren beim Konzert."
+ },
+ "al056": {
+  "fr": "le nom",
+  "pl": "imię",
+  "ru": "и́мя",
+  "rulat": "ímja",
+  "ex": "What is your name?",
+  "exde": "Wie ist dein Name?"
+ },
+ "al057": {
+  "fr": "l'anniversaire",
+  "pl": "urodziny",
+  "ru": "день рожде́ния",
+  "rulat": "den roschdénija",
+  "ex": "Today is my birthday.",
+  "exde": "Heute ist mein Geburtstag."
+ },
+ "al058": {
+  "fr": "le mariage",
+  "pl": "ślub",
+  "ru": "сва́дьба",
+  "rulat": "swádba",
+  "ex": "The wedding is in June.",
+  "exde": "Die Hochzeit ist im Juni."
+ },
+ "al059": {
+  "fr": "l'invité",
+  "pl": "gość",
+  "ru": "гость",
+  "rulat": "gost",
+  "ex": "We are expecting a guest tonight.",
+  "exde": "Wir erwarten heute Abend einen Gast."
+ },
+ "al060": {
+  "fr": "le bébé",
+  "pl": "niemowlę",
+  "ru": "младе́нец",
+  "rulat": "mladjénez",
+  "ex": "The baby is sleeping.",
+  "exde": "Das Baby schläft."
+ },
+ "al061": {
+  "fr": "le petit-déjeuner",
+  "pl": "śniadanie",
+  "ru": "за́втрак",
+  "rulat": "sáwtrak",
+  "ex": "Breakfast is ready at seven.",
+  "exde": "Das Frühstück ist um sieben fertig."
+ },
+ "al062": {
+  "fr": "le déjeuner",
+  "pl": "obiad",
+  "ru": "обе́д",
+  "rulat": "abjét",
+  "ex": "Lunch is at twelve o'clock.",
+  "exde": "Das Mittagessen gibt es um zwölf Uhr."
+ },
+ "al063": {
+  "fr": "le dîner",
+  "pl": "kolacja",
+  "ru": "у́жин",
+  "rulat": "úschin",
+  "ex": "Dinner is on the table.",
+  "exde": "Das Abendessen steht auf dem Tisch."
+ },
+ "al064": {
+  "fr": "le café",
+  "pl": "kawa",
+  "ru": "ко́фе",
+  "rulat": "kófe",
+  "ex": "I drink coffee every morning.",
+  "exde": "Ich trinke jeden Morgen Kaffee."
+ },
+ "al065": {
+  "fr": "le thé",
+  "pl": "herbata",
+  "ru": "чай",
+  "rulat": "tschaj",
+  "ex": "Would you like some tea?",
+  "exde": "Möchtest du Tee?"
+ },
+ "al066": {
+  "fr": "le lait",
+  "pl": "mleko",
+  "ru": "молоко́",
+  "rulat": "malakó",
+  "ex": "The milk is in the fridge.",
+  "exde": "Die Milch ist im Kühlschrank."
+ },
+ "al067": {
+  "fr": "la pomme",
+  "pl": "jabłko",
+  "ru": "я́блоко",
+  "rulat": "jábloka",
+  "ex": "She eats an apple every day.",
+  "exde": "Sie isst jeden Tag einen Apfel."
+ },
+ "al068": {
+  "fr": "les légumes",
+  "pl": "warzywa",
+  "ru": "о́вощи",
+  "rulat": "ówaschtschi",
+  "ex": "Vegetables are healthy.",
+  "exde": "Gemüse ist gesund."
+ },
+ "al069": {
+  "fr": "les fruits",
+  "pl": "owoce",
+  "ru": "фру́кты",
+  "rulat": "frúkty",
+  "ex": "I buy fruit at the market.",
+  "exde": "Ich kaufe Obst auf dem Markt."
+ },
+ "al070": {
+  "fr": "la viande",
+  "pl": "mięso",
+  "ru": "мя́со",
+  "rulat": "mjássa",
+  "ex": "He doesn't eat meat.",
+  "exde": "Er isst kein Fleisch."
+ },
+ "al071": {
+  "fr": "le poisson",
+  "pl": "ryba",
+  "ru": "ры́ба",
+  "rulat": "rýba",
+  "ex": "We are having fish today.",
+  "exde": "Heute gibt es Fisch."
+ },
+ "al072": {
+  "fr": "le fromage",
+  "pl": "ser",
+  "ru": "сыр",
+  "rulat": "ssyr",
+  "ex": "This cheese comes from France.",
+  "exde": "Dieser Käse kommt aus Frankreich."
+ },
+ "al073": {
+  "fr": "l'œuf",
+  "pl": "jajko",
+  "ru": "яйцо́",
+  "rulat": "jaizó",
+  "ex": "I'd like a boiled egg.",
+  "exde": "Ich hätte gern ein gekochtes Ei."
+ },
+ "al074": {
+  "fr": "la soupe",
+  "pl": "zupa",
+  "ru": "суп",
+  "rulat": "ssup",
+  "ex": "The soup is very hot.",
+  "exde": "Die Suppe ist sehr heiß."
+ },
+ "al075": {
+  "fr": "le sucre",
+  "pl": "cukier",
+  "ru": "са́хар",
+  "rulat": "ssáchar",
+  "ex": "Do you take sugar in your coffee?",
+  "exde": "Nimmst du Zucker in den Kaffee?"
+ },
+ "al076": {
+  "fr": "le sel",
+  "pl": "sól",
+  "ru": "соль",
+  "rulat": "ssol",
+  "ex": "Please pass me the salt.",
+  "exde": "Gib mir bitte das Salz."
+ },
+ "al077": {
+  "fr": "le restaurant",
+  "pl": "restauracja",
+  "ru": "рестора́н",
+  "rulat": "restarán",
+  "ex": "Let's go to a restaurant tonight.",
+  "exde": "Lass uns heute Abend in ein Restaurant gehen."
+ },
+ "al078": {
+  "fr": "la carte",
+  "pl": "karta dań",
+  "ru": "меню́",
+  "rulat": "menjú",
+  "ex": "Could we see the menu, please?",
+  "exde": "Könnten wir bitte die Speisekarte sehen?"
+ },
+ "al079": {
+  "fr": "l'addition",
+  "pl": "rachunek",
+  "ru": "счёт",
+  "rulat": "schtschjot",
+  "ex": "The bill, please.",
+  "exde": "Die Rechnung, bitte."
+ },
+ "al080": {
+  "fr": "délicieux",
+  "pl": "pyszny",
+  "ru": "вку́сный",
+  "rulat": "fkúsnyj",
+  "ex": "The cake is delicious.",
+  "exde": "Der Kuchen ist lecker."
+ }
+}

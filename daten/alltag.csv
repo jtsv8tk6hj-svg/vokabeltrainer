@@ -1,0 +1,241 @@
+id;de;en;thema
+al001;Guten Morgen;good morning;Begrüßung und Höflichkeit
+al002;Guten Tag;good day;Begrüßung und Höflichkeit
+al003;Guten Abend;good evening;Begrüßung und Höflichkeit
+al004;Gute Nacht;good night;Begrüßung und Höflichkeit
+al005;Hallo;hello;Begrüßung und Höflichkeit
+al006;Tschüss;bye;Begrüßung und Höflichkeit
+al007;Auf Wiedersehen;goodbye;Begrüßung und Höflichkeit
+al008;Bitte;please;Begrüßung und Höflichkeit
+al009;Danke;thank you;Begrüßung und Höflichkeit
+al010;Vielen Dank;thank you very much;Begrüßung und Höflichkeit
+al011;Entschuldigung;excuse me;Begrüßung und Höflichkeit
+al012;Es tut mir leid;I am sorry;Begrüßung und Höflichkeit
+al013;Wie geht es dir?;How are you?;Begrüßung und Höflichkeit
+al014;Mir geht es gut;I am fine;Begrüßung und Höflichkeit
+al015;Willkommen;welcome;Begrüßung und Höflichkeit
+al016;Alles Gute;all the best;Begrüßung und Höflichkeit
+al017;Herzlichen Glückwunsch;congratulations;Begrüßung und Höflichkeit
+al018;Gern geschehen;you are welcome;Begrüßung und Höflichkeit
+al019;Bis bald;see you soon;Begrüßung und Höflichkeit
+al020;Schönes Wochenende;have a nice weekend;Begrüßung und Höflichkeit
+al021;eins;one;Zahlen und Zeit
+al022;zwei;two;Zahlen und Zeit
+al023;drei;three;Zahlen und Zeit
+al024;zehn;ten;Zahlen und Zeit
+al025;hundert;hundred;Zahlen und Zeit
+al026;tausend;thousand;Zahlen und Zeit
+al027;die Uhr;clock;Zahlen und Zeit
+al028;die Stunde;hour;Zahlen und Zeit
+al029;die Minute;minute;Zahlen und Zeit
+al030;heute;today;Zahlen und Zeit
+al031;morgen;tomorrow;Zahlen und Zeit
+al032;gestern;yesterday;Zahlen und Zeit
+al033;jetzt;now;Zahlen und Zeit
+al034;später;later;Zahlen und Zeit
+al035;der Montag;Monday;Zahlen und Zeit
+al036;der Freitag;Friday;Zahlen und Zeit
+al037;das Wochenende;weekend;Zahlen und Zeit
+al038;der Monat;month;Zahlen und Zeit
+al039;der Sommer;summer;Zahlen und Zeit
+al040;der Winter;winter;Zahlen und Zeit
+al041;die Eltern;parents;Familie und Menschen
+al042;der Bruder;brother;Familie und Menschen
+al043;die Schwester;sister;Familie und Menschen
+al044;der Sohn;son;Familie und Menschen
+al045;die Tochter;daughter;Familie und Menschen
+al046;die Großmutter;grandmother;Familie und Menschen
+al047;der Großvater;grandfather;Familie und Menschen
+al048;der Ehemann;husband;Familie und Menschen
+al049;die Ehefrau;wife;Familie und Menschen
+al050;der Nachbar;neighbour;Familie und Menschen
+al051;der Kollege;colleague;Familie und Menschen
+al052;der Junge;boy;Familie und Menschen
+al053;das Mädchen;girl;Familie und Menschen
+al054;der Mensch;human being;Familie und Menschen
+al055;die Leute;people;Familie und Menschen
+al056;der Name;name;Familie und Menschen
+al057;der Geburtstag;birthday;Familie und Menschen
+al058;die Hochzeit;wedding;Familie und Menschen
+al059;der Gast;guest;Familie und Menschen
+al060;das Baby;baby;Familie und Menschen
+al061;das Frühstück;breakfast;Essen und Trinken
+al062;das Mittagessen;lunch;Essen und Trinken
+al063;das Abendessen;dinner;Essen und Trinken
+al064;der Kaffee;coffee;Essen und Trinken
+al065;der Tee;tea;Essen und Trinken
+al066;die Milch;milk;Essen und Trinken
+al067;der Apfel;apple;Essen und Trinken
+al068;das Gemüse;vegetables;Essen und Trinken
+al069;das Obst;fruit;Essen und Trinken
+al070;das Fleisch;meat;Essen und Trinken
+al071;der Fisch;fish;Essen und Trinken
+al072;der Käse;cheese;Essen und Trinken
+al073;das Ei;egg;Essen und Trinken
+al074;die Suppe;soup;Essen und Trinken
+al075;der Zucker;sugar;Essen und Trinken
+al076;das Salz;salt;Essen und Trinken
+al077;das Restaurant;restaurant;Essen und Trinken
+al078;die Speisekarte;menu;Essen und Trinken
+al079;die Rechnung;bill;Essen und Trinken
+al080;lecker;delicious;Essen und Trinken
+al081;der Laden;shop;Einkaufen und Geld
+al082;der Supermarkt;supermarket;Einkaufen und Geld
+al083;der Markt;market;Einkaufen und Geld
+al084;der Preis;price;Einkaufen und Geld
+al085;der Euro;euro;Einkaufen und Geld
+al086;die Kasse;checkout;Einkaufen und Geld
+al087;die Quittung;receipt;Einkaufen und Geld
+al088;die Tasche;bag;Einkaufen und Geld
+al089;das Geschenk;present;Einkaufen und Geld
+al090;die Kleidung;clothes;Einkaufen und Geld
+al091;die Schuhe;shoes;Einkaufen und Geld
+al092;die Jacke;jacket;Einkaufen und Geld
+al093;das Hemd;shirt;Einkaufen und Geld
+al094;die Hose;trousers;Einkaufen und Geld
+al095;die Größe;size;Einkaufen und Geld
+al096;die Farbe;colour;Einkaufen und Geld
+al097;geöffnet;open;Einkaufen und Geld
+al098;geschlossen;closed;Einkaufen und Geld
+al099;Wie viel kostet das?;How much is this?;Einkaufen und Geld
+al100;Ich hätte gern …;I would like …;Einkaufen und Geld
+al101;der Bahnhof;railway station;Unterwegs
+al102;der Flughafen;airport;Unterwegs
+al103;das Flugzeug;aeroplane;Unterwegs
+al104;der Bus;bus;Unterwegs
+al105;die Haltestelle;stop;Unterwegs
+al106;die Fahrkarte;ticket;Unterwegs
+al107;die Abfahrt;departure;Unterwegs
+al108;die Ankunft;arrival;Unterwegs
+al109;die Verspätung;delay;Unterwegs
+al110;die Richtung;direction;Unterwegs
+al111;links;left;Unterwegs
+al112;rechts;right;Unterwegs
+al113;geradeaus;straight ahead;Unterwegs
+al114;die Landkarte;map;Unterwegs
+al115;das Hotel;hotel;Unterwegs
+al116;das Zimmer;room;Unterwegs
+al117;der Schlüssel;key;Unterwegs
+al118;die Reise;journey;Unterwegs
+al119;der Urlaub;holiday;Unterwegs
+al120;das Gepäck;luggage;Unterwegs
+al121;die Wohnung;flat;Wohnen
+al122;die Küche;kitchen;Wohnen
+al123;das Bad;bathroom;Wohnen
+al124;das Schlafzimmer;bedroom;Wohnen
+al125;das Wohnzimmer;living room;Wohnen
+al126;das Bett;bed;Wohnen
+al127;der Schrank;wardrobe;Wohnen
+al128;die Lampe;lamp;Wohnen
+al129;der Herd;cooker;Wohnen
+al130;der Kühlschrank;fridge;Wohnen
+al131;die Waschmaschine;washing machine;Wohnen
+al132;die Dusche;shower;Wohnen
+al133;der Balkon;balcony;Wohnen
+al134;der Garten;garden;Wohnen
+al135;die Miete;rent;Wohnen
+al136;der Vermieter;landlord;Wohnen
+al137;die Treppe;stairs;Wohnen
+al138;der Aufzug;lift;Wohnen
+al139;der Müll;rubbish;Wohnen
+al140;die Heizung;heating;Wohnen
+al141;der Arzt;doctor;Körper und Gesundheit
+al142;das Krankenhaus;hospital;Körper und Gesundheit
+al143;die Apotheke;pharmacy;Körper und Gesundheit
+al144;die Tablette;tablet;Körper und Gesundheit
+al145;der Schmerz;pain;Körper und Gesundheit
+al146;die Erkältung;cold;Körper und Gesundheit
+al147;das Fieber;fever;Körper und Gesundheit
+al148;der Husten;cough;Körper und Gesundheit
+al149;der Zahn;tooth;Körper und Gesundheit
+al150;der Rücken;back;Körper und Gesundheit
+al151;der Bauch;belly;Körper und Gesundheit
+al152;das Bein;leg;Körper und Gesundheit
+al153;der Arm;arm;Körper und Gesundheit
+al154;der Fuß;foot;Körper und Gesundheit
+al155;das Herz;heart;Körper und Gesundheit
+al156;müde;tired;Körper und Gesundheit
+al157;krank;ill;Körper und Gesundheit
+al158;gesund;healthy;Körper und Gesundheit
+al159;die Versicherung;insurance;Körper und Gesundheit
+al160;die Allergie;allergy;Körper und Gesundheit
+al161;das Büro;office;Arbeit und Büro
+al162;der Chef;boss;Arbeit und Büro
+al163;der Kunde;customer;Arbeit und Büro
+al164;die Besprechung;meeting;Arbeit und Büro
+al165;die E-Mail;email;Arbeit und Büro
+al166;der Anruf;phone call;Arbeit und Büro
+al167;der Computer;computer;Arbeit und Büro
+al168;der Drucker;printer;Arbeit und Büro
+al169;die Pause;break;Arbeit und Büro
+al170;der Feierabend;end of the working day;Arbeit und Büro
+al171;die Überstunden;overtime;Arbeit und Büro
+al172;das Gehalt;salary;Arbeit und Büro
+al173;die Aufgabe;task;Arbeit und Büro
+al174;das Projekt;project;Arbeit und Büro
+al175;die Frist;deadline;Arbeit und Büro
+al176;der Kalender;calendar;Arbeit und Büro
+al177;die Unterlagen;documents;Arbeit und Büro
+al178;das Formular;form;Arbeit und Büro
+al179;das Telefon;telephone;Arbeit und Büro
+al180;die Visitenkarte;business card;Arbeit und Büro
+al181;das Wetter;weather;Wetter und Natur
+al182;die Sonne;sun;Wetter und Natur
+al183;der Regen;rain;Wetter und Natur
+al184;der Schnee;snow;Wetter und Natur
+al185;der Wind;wind;Wetter und Natur
+al186;die Wolke;cloud;Wetter und Natur
+al187;der Himmel;sky;Wetter und Natur
+al188;der Sturm;storm;Wetter und Natur
+al189;das Gewitter;thunderstorm;Wetter und Natur
+al190;der Grad;degree;Wetter und Natur
+al191;der Baum;tree;Wetter und Natur
+al192;die Blume;flower;Wetter und Natur
+al193;der Wald;forest;Wetter und Natur
+al194;der Fluss;river;Wetter und Natur
+al195;der See;lake;Wetter und Natur
+al196;das Meer;sea;Wetter und Natur
+al197;der Berg;mountain;Wetter und Natur
+al198;der Strand;beach;Wetter und Natur
+al199;der Hund;dog;Wetter und Natur
+al200;die Katze;cat;Wetter und Natur
+al201;die Freizeit;free time;Freizeit und Sport
+al202;das Hobby;hobby;Freizeit und Sport
+al203;der Sport;sport;Freizeit und Sport
+al204;der Fußball;football;Freizeit und Sport
+al205;das Schwimmen;swimming;Freizeit und Sport
+al206;das Laufen;running;Freizeit und Sport
+al207;das Fahrrad;bicycle;Freizeit und Sport
+al208;der Spaziergang;walk;Freizeit und Sport
+al209;das Kino;cinema;Freizeit und Sport
+al210;der Film;film;Freizeit und Sport
+al211;die Musik;music;Freizeit und Sport
+al212;das Lied;song;Freizeit und Sport
+al213;das Konzert;concert;Freizeit und Sport
+al214;das Theater;theatre;Freizeit und Sport
+al215;das Museum;museum;Freizeit und Sport
+al216;die Party;party;Freizeit und Sport
+al217;das Spiel;game;Freizeit und Sport
+al218;die Mannschaft;team;Freizeit und Sport
+al219;das Training;training session;Freizeit und Sport
+al220;der Sieg;victory;Freizeit und Sport
+al221;das Handy;mobile phone;Kommunikation und Alltag
+al222;die Nachricht;message;Kommunikation und Alltag
+al223;die Telefonnummer;phone number;Kommunikation und Alltag
+al224;die Adresse;address;Kommunikation und Alltag
+al225;der Brief;letter;Kommunikation und Alltag
+al226;die Post;post office;Kommunikation und Alltag
+al227;das Internet;internet;Kommunikation und Alltag
+al228;das Passwort;password;Kommunikation und Alltag
+al229;die Verabredung;appointment with friends;Kommunikation und Alltag
+al230;die Hilfe;help;Kommunikation und Alltag
+al231;das Problem;problem;Kommunikation und Alltag
+al232;die Lösung;solution;Kommunikation und Alltag
+al233;die Idee;idea;Kommunikation und Alltag
+al234;die Meinung;opinion;Kommunikation und Alltag
+al235;die Zeitung;newspaper;Kommunikation und Alltag
+al236;die Nachrichten;news;Kommunikation und Alltag
+al237;der Ausweis;identity card;Kommunikation und Alltag
+al238;der Führerschein;driving licence;Kommunikation und Alltag
+al239;die Polizei;police;Kommunikation und Alltag
+al240;der Notfall;emergency;Kommunikation und Alltag
