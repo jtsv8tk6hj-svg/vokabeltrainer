@@ -798,5 +798,2405 @@
   "rulat": "Astaróschna, dwéri sakrywájutsja!",
   "ex": "The driver called out: 'Mind the doors!'",
   "exde": "Der Fahrer rief: „Zurückbleiben, bitte!“"
+ },
+ "re101": {
+  "fr": "la voiture de location",
+  "pl": "wynajęty samochód",
+  "ru": "арендо́ванная маши́на",
+  "rulat": "arendówannaja maschína",
+  "ex": "We picked up the hire car at the airport.",
+  "exde": "Wir haben den Mietwagen am Flughafen abgeholt."
+ },
+ "re102": {
+  "fr": "la société de location de voitures",
+  "pl": "wypożyczalnia samochodów",
+  "ru": "прока́т автомоби́лей",
+  "rulat": "prokát awtomobílej",
+  "ex": "The car hire company is next to the station.",
+  "exde": "Die Autovermietung ist neben dem Bahnhof."
+ },
+ "re103": {
+  "fr": "la caution",
+  "pl": "kaucja",
+  "ru": "зало́г",
+  "rulat": "salóg",
+  "ex": "You have to pay a deposit of 300 euros.",
+  "exde": "Sie müssen eine Kaution von 300 Euro zahlen."
+ },
+ "re104": {
+  "fr": "l'assurance tous risques",
+  "pl": "ubezpieczenie autocasco",
+  "ru": "по́лное ка́ско",
+  "rulat": "pólnoje kásko",
+  "ex": "I'd like comprehensive insurance, please.",
+  "exde": "Ich hätte gern eine Vollkaskoversicherung, bitte."
+ },
+ "re105": {
+  "fr": "la franchise",
+  "pl": "udział własny",
+  "ru": "франши́за",
+  "rulat": "franschísa",
+  "ex": "The excess is 500 euros.",
+  "exde": "Die Selbstbeteiligung beträgt 500 Euro."
+ },
+ "re106": {
+  "fr": "le contrat de location",
+  "pl": "umowa najmu",
+  "ru": "догово́р аре́нды",
+  "rulat": "dogowór aréndy",
+  "ex": "Please sign the rental agreement here.",
+  "exde": "Bitte unterschreiben Sie den Mietvertrag hier."
+ },
+ "re107": {
+  "fr": "faire le plein",
+  "pl": "zatankować do pełna",
+  "ru": "запра́вить по́лный бак",
+  "rulat": "saprávit pólnyj bak",
+  "ex": "Please fill up the car before returning it.",
+  "exde": "Bitte tanken Sie das Auto vor der Rückgabe voll."
+ },
+ "re108": {
+  "fr": "la station-service",
+  "pl": "stacja benzynowa",
+  "ru": "запра́вка",
+  "rulat": "sapráwka",
+  "ex": "Is there a petrol station nearby?",
+  "exde": "Gibt es hier in der Nähe eine Tankstelle?"
+ },
+ "re109": {
+  "fr": "l'essence",
+  "pl": "benzyna",
+  "ru": "бензи́н",
+  "rulat": "bensín",
+  "ex": "The car runs on petrol.",
+  "exde": "Das Auto fährt mit Benzin."
+ },
+ "re110": {
+  "fr": "le gazole",
+  "pl": "olej napędowy",
+  "ru": "ди́зель",
+  "rulat": "dísel",
+  "ex": "Does this car take diesel?",
+  "exde": "Tankt dieses Auto Diesel?"
+ },
+ "re111": {
+  "fr": "la boîte manuelle",
+  "pl": "manualna skrzynia biegów",
+  "ru": "механи́ческая коро́бка переда́ч",
+  "rulat": "mechanítscheskaja koróbka peredátsch",
+  "ex": "I can only drive a car with manual transmission.",
+  "exde": "Ich kann nur ein Auto mit Schaltgetriebe fahren."
+ },
+ "re112": {
+  "fr": "la boîte automatique",
+  "pl": "automatyczna skrzynia biegów",
+  "ru": "автомати́ческая коро́бка переда́ч",
+  "rulat": "awtomatítscheskaja koróbka peredátsch",
+  "ex": "I'd prefer a car with an automatic.",
+  "exde": "Ich hätte lieber ein Auto mit Automatik."
+ },
+ "re113": {
+  "fr": "l'autoroute",
+  "pl": "autostrada",
+  "ru": "автомагистра́ль",
+  "rulat": "awtomagistrál",
+  "ex": "Take the motorway towards Munich.",
+  "exde": "Nehmen Sie die Autobahn Richtung München."
+ },
+ "re114": {
+  "fr": "le péage",
+  "pl": "opłata drogowa",
+  "ru": "пла́та за прое́зд",
+  "rulat": "pláta sa projésd",
+  "ex": "Do we have to pay a toll on this road?",
+  "exde": "Müssen wir auf dieser Straße Maut zahlen?"
+ },
+ "re115": {
+  "fr": "la vignette autoroutière",
+  "pl": "winieta",
+  "ru": "винье́тка",
+  "rulat": "winjétka",
+  "ex": "You need a motorway sticker in Austria.",
+  "exde": "In Österreich braucht man eine Vignette."
+ },
+ "re116": {
+  "fr": "la déviation",
+  "pl": "objazd",
+  "ru": "объе́зд",
+  "rulat": "objésd",
+  "ex": "There is a diversion because of roadworks.",
+  "exde": "Wegen Bauarbeiten gibt es eine Umleitung."
+ },
+ "re117": {
+  "fr": "le bouchon",
+  "pl": "korek",
+  "ru": "про́бка",
+  "rulat": "próbka",
+  "ex": "We were stuck in a traffic jam for two hours.",
+  "exde": "Wir standen zwei Stunden im Stau."
+ },
+ "re118": {
+  "fr": "la limitation de vitesse",
+  "pl": "ograniczenie prędkości",
+  "ru": "ограниче́ние ско́рости",
+  "rulat": "ogranitschénije skórosti",
+  "ex": "The speed limit here is 50 km/h.",
+  "exde": "Die Geschwindigkeitsbegrenzung liegt hier bei 50 km/h."
+ },
+ "re119": {
+  "fr": "le radar",
+  "pl": "fotoradar",
+  "ru": "ка́мера контро́ля ско́рости",
+  "rulat": "kámera kontrólja skórosti",
+  "ex": "Slow down, there's a speed camera ahead.",
+  "exde": "Fahr langsamer, da vorne ist ein Blitzer."
+ },
+ "re120": {
+  "fr": "la contravention",
+  "pl": "mandat za parkowanie",
+  "ru": "штраф за парко́вку",
+  "rulat": "schtraf sa parkówku",
+  "ex": "I got a parking ticket in front of the hotel.",
+  "exde": "Ich habe vor dem Hotel einen Strafzettel bekommen."
+ },
+ "re121": {
+  "fr": "se garer",
+  "pl": "parkować",
+  "ru": "паркова́ться",
+  "rulat": "parkowáttsja",
+  "ex": "You can park here.",
+  "exde": "Hier kannst du parken."
+ },
+ "re122": {
+  "fr": "le parking",
+  "pl": "parking",
+  "ru": "парко́вка",
+  "rulat": "parkówka",
+  "ex": "The car park is full.",
+  "exde": "Der Parkplatz ist voll."
+ },
+ "re123": {
+  "fr": "le parking à étages",
+  "pl": "parking wielopoziomowy",
+  "ru": "многоэта́жная парко́вка",
+  "rulat": "mnogoetáshnaja parkówka",
+  "ex": "We left the car in the multi-storey car park.",
+  "exde": "Wir haben das Auto im Parkhaus gelassen."
+ },
+ "re124": {
+  "fr": "les feux de circulation",
+  "pl": "sygnalizacja świetlna",
+  "ru": "светофо́р",
+  "rulat": "swetofór",
+  "ex": "Turn left at the traffic lights.",
+  "exde": "Bieg an der Ampel links ab."
+ },
+ "re125": {
+  "fr": "le rond-point",
+  "pl": "rondo",
+  "ru": "кругово́е движе́ние",
+  "rulat": "krugowóje dwishénije",
+  "ex": "Take the second exit at the roundabout.",
+  "exde": "Nimm am Kreisverkehr die zweite Ausfahrt."
+ },
+ "re126": {
+  "fr": "le carrefour",
+  "pl": "skrzyżowanie",
+  "ru": "перекрёсток",
+  "rulat": "perekrjóstok",
+  "ex": "Stop at the junction.",
+  "exde": "Halte an der Kreuzung."
+ },
+ "re127": {
+  "fr": "le passage piéton",
+  "pl": "przejście dla pieszych",
+  "ru": "пешехо́дный перехо́д",
+  "rulat": "peschechódny perechód",
+  "ex": "Cross the road at the zebra crossing.",
+  "exde": "Überquere die Straße am Zebrastreifen."
+ },
+ "re128": {
+  "fr": "la priorité",
+  "pl": "pierwszeństwo przejazdu",
+  "ru": "преиму́щество",
+  "rulat": "preimúschtschestwo",
+  "ex": "The car on the right has the right of way.",
+  "exde": "Das Auto von rechts hat Vorfahrt."
+ },
+ "re129": {
+  "fr": "céder le passage",
+  "pl": "ustąpić pierwszeństwa",
+  "ru": "уступи́ть доро́гу",
+  "rulat": "ustupít dorógu",
+  "ex": "You have to give way here.",
+  "exde": "Hier musst du die Vorfahrt beachten."
+ },
+ "re130": {
+  "fr": "le panneau de signalisation",
+  "pl": "znak drogowy",
+  "ru": "доро́жный знак",
+  "rulat": "doróshny snak",
+  "ex": "I didn't see the road sign.",
+  "exde": "Ich habe das Verkehrsschild nicht gesehen."
+ },
+ "re131": {
+  "fr": "la route de campagne",
+  "pl": "droga wiejska",
+  "ru": "загоро́дная доро́га",
+  "rulat": "sagoródnaja doróga",
+  "ex": "We drove along a quiet country road.",
+  "exde": "Wir fuhren eine ruhige Landstraße entlang."
+ },
+ "re132": {
+  "fr": "la rue à sens unique",
+  "pl": "ulica jednokierunkowa",
+  "ru": "у́лица с односторо́нним движе́нием",
+  "rulat": "úliza s odnostorónnim dwishénijem",
+  "ex": "This is a one-way street.",
+  "exde": "Das ist eine Einbahnstraße."
+ },
+ "re133": {
+  "fr": "le trottoir",
+  "pl": "chodnik",
+  "ru": "тротуа́р",
+  "rulat": "trotuár",
+  "ex": "Don't park on the pavement.",
+  "exde": "Park nicht auf dem Bürgersteig."
+ },
+ "re134": {
+  "fr": "la piste cyclable",
+  "pl": "ścieżka rowerowa",
+  "ru": "велодоро́жка",
+  "rulat": "welodoróshka",
+  "ex": "Please stay on the cycle path.",
+  "exde": "Bitte bleib auf dem Radweg."
+ },
+ "re135": {
+  "fr": "la chaussée",
+  "pl": "jezdnia",
+  "ru": "прое́зжая часть",
+  "rulat": "projéshschaja tschast",
+  "ex": "The carriageway is wet.",
+  "exde": "Die Fahrbahn ist nass."
+ },
+ "re136": {
+  "fr": "la voie",
+  "pl": "pas ruchu",
+  "ru": "полоса́",
+  "rulat": "polossá",
+  "ex": "Stay in the right lane.",
+  "exde": "Bleib auf dem rechten Fahrstreifen."
+ },
+ "re137": {
+  "fr": "doubler",
+  "pl": "wyprzedzać",
+  "ru": "обгоня́ть",
+  "rulat": "obgonját",
+  "ex": "Don't overtake on a bend.",
+  "exde": "Überhol nicht in einer Kurve."
+ },
+ "re138": {
+  "fr": "tourner",
+  "pl": "skręcać",
+  "ru": "повора́чивать",
+  "rulat": "poworátschiwat",
+  "ex": "Turn right after the bridge.",
+  "exde": "Bieg nach der Brücke rechts ab."
+ },
+ "re139": {
+  "fr": "mettre le clignotant",
+  "pl": "włączać kierunkowskaz",
+  "ru": "включа́ть поворо́тник",
+  "rulat": "wkljutschát poworótnik",
+  "ex": "Always indicate before you turn.",
+  "exde": "Blink immer, bevor du abbiegst."
+ },
+ "re140": {
+  "fr": "freiner",
+  "pl": "hamować",
+  "ru": "тормози́ть",
+  "rulat": "tormosít",
+  "ex": "Brake gently on ice.",
+  "exde": "Brems auf Eis vorsichtig."
+ },
+ "re141": {
+  "fr": "s'arrêter",
+  "pl": "zatrzymać się",
+  "ru": "останови́ться",
+  "rulat": "astanawítsja",
+  "ex": "You must stop at the red light.",
+  "exde": "Du musst an der roten Ampel anhalten."
+ },
+ "re142": {
+  "fr": "le piéton",
+  "pl": "pieszy",
+  "ru": "пешехо́д",
+  "rulat": "pjeschechód",
+  "ex": "The pedestrian is crossing the street.",
+  "exde": "Der Fußgänger überquert die Straße."
+ },
+ "re143": {
+  "fr": "le cycliste",
+  "pl": "rowerzysta",
+  "ru": "велосипеди́ст",
+  "rulat": "welossipedíst",
+  "ex": "The cyclist is riding in the bike lane.",
+  "exde": "Der Radfahrer fährt auf dem Radweg."
+ },
+ "re144": {
+  "fr": "l'accident",
+  "pl": "wypadek",
+  "ru": "ава́рия",
+  "rulat": "awárija",
+  "ex": "There was an accident on the motorway.",
+  "exde": "Auf der Autobahn gab es einen Unfall."
+ },
+ "re145": {
+  "fr": "les travaux",
+  "pl": "roboty drogowe",
+  "ru": "доро́жные рабо́ты",
+  "rulat": "daróschnyje rabóty",
+  "ex": "There are roadworks on the main road.",
+  "exde": "Auf der Hauptstraße ist eine Baustelle."
+ },
+ "re146": {
+  "fr": "la bretelle d'accès",
+  "pl": "wjazd na autostradę",
+  "ru": "въезд на автомагистра́ль",
+  "rulat": "wjesd na awtamagistrál",
+  "ex": "Take the slip road onto the motorway.",
+  "exde": "Nimm die Auffahrt auf die Autobahn."
+ },
+ "re147": {
+  "fr": "l'interdiction de s'arrêter",
+  "pl": "zakaz zatrzymywania się",
+  "ru": "остано́вка запрещена́",
+  "rulat": "astanówka saprjeschtschená",
+  "ex": "You can't park here, it's a no stopping zone.",
+  "exde": "Hier kannst du nicht parken, hier ist Halteverbot."
+ },
+ "re148": {
+  "fr": "l'interdiction de dépasser",
+  "pl": "zakaz wyprzedzania",
+  "ru": "обго́н запрещён",
+  "rulat": "abgón saprjeschtschjón",
+  "ex": "There is no overtaking on this stretch of road.",
+  "exde": "Auf diesem Streckenabschnitt gilt Überholverbot."
+ },
+ "re149": {
+  "fr": "rouler trop vite",
+  "pl": "jechać za szybko",
+  "ru": "превыша́ть ско́рость",
+  "rulat": "prewyschát skórost",
+  "ex": "He was fined for speeding.",
+  "exde": "Er bekam ein Bußgeld, weil er zu schnell gefahren ist."
+ },
+ "re150": {
+  "fr": "le contrôle routier",
+  "pl": "kontrola drogowa",
+  "ru": "доро́жная прове́рка",
+  "rulat": "daróschnaja prowérka",
+  "ex": "The police stopped us for a traffic check.",
+  "exde": "Die Polizei hielt uns zu einer Verkehrskontrolle an."
+ },
+ "re151": {
+  "fr": "sans plomb",
+  "pl": "bezołowiowy",
+  "ru": "неэтили́рованный",
+  "rulat": "neetilírowannyj",
+  "ex": "I always fill up with unleaded petrol.",
+  "exde": "Ich tanke immer bleifreies Benzin."
+ },
+ "re152": {
+  "fr": "la pompe à essence",
+  "pl": "dystrybutor paliwa",
+  "ru": "топливоразда́точная коло́нка",
+  "rulat": "topliwarasdátotschnaja kalónka",
+  "ex": "Drive up to petrol pump number three.",
+  "exde": "Fahr an Zapfsäule Nummer drei."
+ },
+ "re153": {
+  "fr": "le pistolet",
+  "pl": "pistolet dystrybutora",
+  "ru": "то́пливный пистоле́т",
+  "rulat": "tópliwnyj pistolét",
+  "ex": "Put the pump nozzle back after refuelling.",
+  "exde": "Häng den Zapfhahn nach dem Tanken wieder ein."
+ },
+ "re154": {
+  "fr": "le bouchon de réservoir",
+  "pl": "korek wlewu paliwa",
+  "ru": "кры́шка бензоба́ка",
+  "rulat": "krýschka bensabáka",
+  "ex": "Don't forget to close the fuel cap.",
+  "exde": "Vergiss nicht, den Tankdeckel zu schließen."
+ },
+ "re155": {
+  "fr": "la jauge de carburant",
+  "pl": "wskaźnik paliwa",
+  "ru": "указа́тель у́ровня то́плива",
+  "rulat": "ukasátel úrownja tópliwa",
+  "ex": "The fuel gauge shows the tank is almost empty.",
+  "exde": "Die Tankanzeige zeigt, dass der Tank fast leer ist."
+ },
+ "re156": {
+  "fr": "le prix au litre",
+  "pl": "cena za litr",
+  "ru": "цена́ за литр",
+  "rulat": "zená sa litr",
+  "ex": "The price per litre has gone up again.",
+  "exde": "Der Literpreis ist wieder gestiegen."
+ },
+ "re157": {
+  "fr": "le prix du carburant",
+  "pl": "cena paliwa",
+  "ru": "цена́ на бензи́н",
+  "rulat": "zená na bensín",
+  "ex": "The fuel price is very high this summer.",
+  "exde": "Der Spritpreis ist diesen Sommer sehr hoch."
+ },
+ "re158": {
+  "fr": "la borne de recharge",
+  "pl": "stacja ładowania",
+  "ru": "заря́дная ста́нция",
+  "rulat": "sarjádnaja stánzija",
+  "ex": "Is there a charging point near the hotel?",
+  "exde": "Gibt es eine Ladesäule in der Nähe des Hotels?"
+ },
+ "re159": {
+  "fr": "recharger",
+  "pl": "ładować",
+  "ru": "заряжа́ть",
+  "rulat": "sarjaschát",
+  "ex": "I need to charge my electric car overnight.",
+  "exde": "Ich muss mein Elektroauto über Nacht aufladen."
+ },
+ "re160": {
+  "fr": "la pression des pneus",
+  "pl": "ciśnienie w oponach",
+  "ru": "давле́ние в ши́нах",
+  "rulat": "dawlénije w schínach",
+  "ex": "Check the tyre pressure before a long trip.",
+  "exde": "Prüf den Reifendruck vor einer langen Fahrt."
+ },
+ "re161": {
+  "fr": "vérifier le niveau d'huile",
+  "pl": "sprawdzić poziom oleju",
+  "ru": "прове́рить у́ровень ма́сла",
+  "rulat": "prowérit úrowen másla",
+  "ex": "Could you check the oil, please?",
+  "exde": "Könnten Sie bitte den Ölstand prüfen?"
+ },
+ "re162": {
+  "fr": "la station de lavage",
+  "pl": "myjnia samochodowa",
+  "ru": "автомо́йка",
+  "rulat": "awtomóika",
+  "ex": "Let's take the car to the car wash.",
+  "exde": "Lass uns mit dem Auto in die Waschanlage fahren."
+ },
+ "re163": {
+  "fr": "le ticket de stationnement",
+  "pl": "bilet parkingowy",
+  "ru": "парко́вочный тало́н",
+  "rulat": "parkówotschny talón",
+  "ex": "Put the pay-and-display ticket behind the windscreen.",
+  "exde": "Leg den Parkschein hinter die Windschutzscheibe."
+ },
+ "re164": {
+  "fr": "le distributeur de tickets de stationnement",
+  "pl": "parkomat",
+  "ru": "парко́мат",
+  "rulat": "parkómat",
+  "ex": "The parking ticket machine only takes coins.",
+  "exde": "Der Parkscheinautomat nimmt nur Münzen."
+ },
+ "re165": {
+  "fr": "le parcmètre",
+  "pl": "parkometr",
+  "ru": "парко́вочный счётчик",
+  "rulat": "parkówotschny schtschjótschik",
+  "ex": "The parking meter has expired.",
+  "exde": "Die Parkuhr ist abgelaufen."
+ },
+ "re166": {
+  "fr": "le disque de stationnement",
+  "pl": "tarcza parkingowa",
+  "ru": "парко́вочный диск",
+  "rulat": "parkówotschny disk",
+  "ex": "Don't forget to set the parking disc.",
+  "exde": "Vergiss nicht, die Parkscheibe einzustellen."
+ },
+ "re167": {
+  "fr": "les frais de stationnement",
+  "pl": "opłata parkingowa",
+  "ru": "пла́та за парко́вку",
+  "rulat": "pláta sa parkówku",
+  "ex": "The parking fee is two euros an hour.",
+  "exde": "Die Parkgebühr beträgt zwei Euro pro Stunde."
+ },
+ "re168": {
+  "fr": "la place de stationnement",
+  "pl": "miejsce parkingowe",
+  "ru": "парко́вочное ме́сто",
+  "rulat": "parkówotschnoje mésto",
+  "ex": "I finally found a parking space.",
+  "exde": "Ich habe endlich eine Parklücke gefunden."
+ },
+ "re169": {
+  "fr": "sortir d'une place de stationnement",
+  "pl": "wyjechać z miejsca parkingowego",
+  "ru": "вы́ехать с парко́вки",
+  "rulat": "wýjechat s parkówki",
+  "ex": "Be careful when you pull out of the parking space.",
+  "exde": "Sei vorsichtig, wenn du ausparkst."
+ },
+ "re170": {
+  "fr": "se garer en marche arrière",
+  "pl": "parkować tyłem",
+  "ru": "паркова́ться за́дним хо́дом",
+  "rulat": "parkowátsja sádnim chódom",
+  "ex": "She can reverse into a space easily.",
+  "exde": "Sie kann problemlos rückwärts einparken."
+ },
+ "re171": {
+  "fr": "le stationnement interdit",
+  "pl": "zakaz parkowania",
+  "ru": "запре́т на парко́вку",
+  "rulat": "saprét na parkówku",
+  "ex": "There's no parking in front of the hospital.",
+  "exde": "Vor dem Krankenhaus ist Parkverbot."
+ },
+ "re172": {
+  "fr": "remorquer",
+  "pl": "odholować",
+  "ru": "эвакуи́ровать",
+  "rulat": "ewakuírowat",
+  "ex": "They will tow away your car if you park here.",
+  "exde": "Sie werden dein Auto abschleppen, wenn du hier parkst."
+ },
+ "re173": {
+  "fr": "le parking souterrain",
+  "pl": "parking podziemny",
+  "ru": "подзе́мный парки́нг",
+  "rulat": "podsémny parkíng",
+  "ex": "We parked in the underground car park.",
+  "exde": "Wir haben in der Tiefgarage geparkt."
+ },
+ "re174": {
+  "fr": "la place de stationnement pour handicapés",
+  "pl": "miejsce parkingowe dla niepełnosprawnych",
+  "ru": "парко́вка для инвали́дов",
+  "rulat": "parkówka dlja inwalídow",
+  "ex": "You can't park in a disabled parking space.",
+  "exde": "Du darfst nicht auf einem Behindertenparkplatz parken."
+ },
+ "re175": {
+  "fr": "la carte de stationnement résidentiel",
+  "pl": "karta parkingowa mieszkańca",
+  "ru": "парко́вочное разреше́ние для жи́телей",
+  "rulat": "parkówotschnoje rasreschénije dlja shítelei",
+  "ex": "You need a residents' parking permit on this street.",
+  "exde": "In dieser Straße braucht man einen Anwohnerparkausweis."
+ },
+ "re176": {
+  "fr": "faire du vélo",
+  "pl": "jeździć na rowerze",
+  "ru": "е́здить на велосипе́де",
+  "rulat": "jésdit na welosipéde",
+  "ex": "I love to ride a bike in summer.",
+  "exde": "Ich fahre im Sommer gern Fahrrad."
+ },
+ "re177": {
+  "fr": "aller à pied",
+  "pl": "iść pieszo",
+  "ru": "идти́ пешко́м",
+  "rulat": "idtí peschkóm",
+  "ex": "We usually walk to school.",
+  "exde": "Wir gehen meistens zu Fuß zur Schule."
+ },
+ "re178": {
+  "fr": "le casque",
+  "pl": "kask",
+  "ru": "шлем",
+  "rulat": "schlem",
+  "ex": "Always wear a helmet when you cycle.",
+  "exde": "Trag beim Radfahren immer einen Helm."
+ },
+ "re179": {
+  "fr": "la sonnette",
+  "pl": "dzwonek",
+  "ru": "звоно́к",
+  "rulat": "swonók",
+  "ex": "The bell on my bike is broken.",
+  "exde": "Die Klingel an meinem Fahrrad ist kaputt."
+ },
+ "re180": {
+  "fr": "la selle",
+  "pl": "siodełko",
+  "ru": "седло́",
+  "rulat": "sedló",
+  "ex": "The saddle is too high for me.",
+  "exde": "Der Sattel ist mir zu hoch."
+ },
+ "re181": {
+  "fr": "le guidon",
+  "pl": "kierownica",
+  "ru": "руль",
+  "rulat": "rul",
+  "ex": "Hold the handlebars with both hands.",
+  "exde": "Halte den Lenker mit beiden Händen fest."
+ },
+ "re182": {
+  "fr": "la pédale",
+  "pl": "pedał",
+  "ru": "педа́ль",
+  "rulat": "pedál",
+  "ex": "My foot slipped off the pedal.",
+  "exde": "Mein Fuß ist vom Pedal abgerutscht."
+ },
+ "re183": {
+  "fr": "la chaîne",
+  "pl": "łańcuch",
+  "ru": "цепь",
+  "rulat": "zep",
+  "ex": "The chain needs some oil.",
+  "exde": "Die Kette braucht etwas Öl."
+ },
+ "re184": {
+  "fr": "le dérailleur",
+  "pl": "przerzutka",
+  "ru": "переключа́тель скоросте́й",
+  "rulat": "perekljutschátel skorostéj",
+  "ex": "My bike has 21 gears.",
+  "exde": "Mein Fahrrad hat eine Gangschaltung mit 21 Gängen."
+ },
+ "re185": {
+  "fr": "le pneu",
+  "pl": "opona",
+  "ru": "ши́на",
+  "rulat": "schína",
+  "ex": "The front tyre is a bit soft.",
+  "exde": "Der vordere Reifen ist etwas weich."
+ },
+ "re186": {
+  "fr": "la crevaison",
+  "pl": "przebita opona",
+  "ru": "проко́л ши́ны",
+  "rulat": "prokól schíny",
+  "ex": "I got a flat tyre on the way to work.",
+  "exde": "Ich hatte auf dem Weg zur Arbeit einen Platten."
+ },
+ "re187": {
+  "fr": "la pompe à vélo",
+  "pl": "pompka rowerowa",
+  "ru": "велосипе́дный насо́с",
+  "rulat": "welossipédnyj nassós",
+  "ex": "Can I borrow your bicycle pump?",
+  "exde": "Kann ich mir deine Luftpumpe leihen?"
+ },
+ "re188": {
+  "fr": "l'antivol",
+  "pl": "zapięcie rowerowe",
+  "ru": "велосипе́дный замо́к",
+  "rulat": "welossipédnyj samók",
+  "ex": "I forgot my bike lock at home.",
+  "exde": "Ich habe mein Fahrradschloss zu Hause vergessen."
+ },
+ "re189": {
+  "fr": "fermer à clé",
+  "pl": "zamykać",
+  "ru": "запира́ть",
+  "rulat": "sapirát",
+  "ex": "Always lock your bike at the station.",
+  "exde": "Schließ dein Fahrrad am Bahnhof immer ab."
+ },
+ "re190": {
+  "fr": "le support à vélos",
+  "pl": "stojak na rowery",
+  "ru": "велопарко́вка",
+  "rulat": "weloparkówka",
+  "ex": "There is a bike rack in front of the school.",
+  "exde": "Vor der Schule gibt es einen Fahrradständer."
+ },
+ "re191": {
+  "fr": "la lumière",
+  "pl": "światło",
+  "ru": "фа́ра",
+  "rulat": "fára",
+  "ex": "Turn on your light when it gets dark.",
+  "exde": "Mach dein Licht an, wenn es dunkel wird."
+ },
+ "re192": {
+  "fr": "le catadioptre",
+  "pl": "odblask",
+  "ru": "катафо́т",
+  "rulat": "katafót",
+  "ex": "Every bike needs a red reflector at the back.",
+  "exde": "Jedes Fahrrad braucht hinten einen roten Rückstrahler."
+ },
+ "re193": {
+  "fr": "le vélo électrique",
+  "pl": "rower elektryczny",
+  "ru": "электровелосипе́д",
+  "rulat": "elektrowelossipéd",
+  "ex": "My grandmother rides an e-bike.",
+  "exde": "Meine Oma fährt ein E-Bike."
+ },
+ "re194": {
+  "fr": "la location de vélos",
+  "pl": "wypożyczalnia rowerów",
+  "ru": "прока́т велосипе́дов",
+  "rulat": "prokát welossipédow",
+  "ex": "The bike hire is next to the station.",
+  "exde": "Der Fahrradverleih ist neben dem Bahnhof."
+ },
+ "re195": {
+  "fr": "le feu pour piétons",
+  "pl": "sygnalizacja dla pieszych",
+  "ru": "пешехо́дный светофо́р",
+  "rulat": "peschechódnyj swetofór",
+  "ex": "Wait until the pedestrian lights turn green.",
+  "exde": "Warte, bis die Fußgängerampel grün wird."
+ },
+ "re196": {
+  "fr": "la zone piétonne",
+  "pl": "strefa dla pieszych",
+  "ru": "пешехо́дная зо́на",
+  "rulat": "peschechódnaja sóna",
+  "ex": "We went shopping in the pedestrian zone.",
+  "exde": "Wir waren in der Fußgängerzone einkaufen."
+ },
+ "re197": {
+  "fr": "traverser la rue",
+  "pl": "przejść przez ulicę",
+  "ru": "переходи́ть у́лицу",
+  "rulat": "perechodít úlizu",
+  "ex": "Look left and right before you cross the road.",
+  "exde": "Schau nach links und rechts, bevor du die Straße überquerst."
+ },
+ "re198": {
+  "fr": "se promener",
+  "pl": "iść na spacer",
+  "ru": "гуля́ть",
+  "rulat": "gulját",
+  "ex": "We go for a walk every Sunday.",
+  "exde": "Wir gehen jeden Sonntag spazieren."
+ },
+ "re199": {
+  "fr": "faire de la randonnée",
+  "pl": "wędrować",
+  "ru": "ходи́ть в похо́ды",
+  "rulat": "chodít w pochódy",
+  "ex": "We like to hike in the mountains.",
+  "exde": "Wir wandern gern in den Bergen."
+ },
+ "re200": {
+  "fr": "le sentier de randonnée",
+  "pl": "szlak turystyczny",
+  "ru": "пешехо́дная тропа́",
+  "rulat": "peschechódnaja tropá",
+  "ex": "This footpath leads to the lake.",
+  "exde": "Dieser Wanderweg führt zum See."
+ },
+ "re201": {
+  "fr": "le navire",
+  "pl": "statek",
+  "ru": "кора́бль",
+  "rulat": "karábl",
+  "ex": "The ship leaves at noon.",
+  "exde": "Das Schiff fährt mittags ab."
+ },
+ "re202": {
+  "fr": "le ferry",
+  "pl": "prom",
+  "ru": "паро́м",
+  "rulat": "paróm",
+  "ex": "We took the ferry to the island.",
+  "exde": "Wir haben die Fähre zur Insel genommen."
+ },
+ "re203": {
+  "fr": "le port",
+  "pl": "port",
+  "ru": "порт",
+  "rulat": "port",
+  "ex": "The harbour is full of boats.",
+  "exde": "Der Hafen ist voller Boote."
+ },
+ "re204": {
+  "fr": "le bateau",
+  "pl": "łódź",
+  "ru": "ло́дка",
+  "rulat": "lódka",
+  "ex": "We rented a boat for the day.",
+  "exde": "Wir haben für einen Tag ein Boot gemietet."
+ },
+ "re205": {
+  "fr": "le pont",
+  "pl": "pokład",
+  "ru": "па́луба",
+  "rulat": "páluba",
+  "ex": "Let's go up on deck.",
+  "exde": "Lass uns an Deck gehen."
+ },
+ "re206": {
+  "fr": "la cabine",
+  "pl": "kabina",
+  "ru": "каю́та",
+  "rulat": "kajúta",
+  "ex": "Our cabin has a small window.",
+  "exde": "Unsere Kabine hat ein kleines Fenster."
+ },
+ "re207": {
+  "fr": "le capitaine",
+  "pl": "kapitan",
+  "ru": "капита́н",
+  "rulat": "kapitán",
+  "ex": "The captain welcomed the passengers.",
+  "exde": "Der Kapitän begrüßte die Passagiere."
+ },
+ "re208": {
+  "fr": "la croisière",
+  "pl": "rejs wycieczkowy",
+  "ru": "круи́з",
+  "rulat": "kruís",
+  "ex": "They went on a cruise in the Mediterranean.",
+  "exde": "Sie machten eine Kreuzfahrt im Mittelmeer."
+ },
+ "re209": {
+  "fr": "la traversée",
+  "pl": "przeprawa",
+  "ru": "перепра́ва",
+  "rulat": "perepráwa",
+  "ex": "The crossing takes two hours.",
+  "exde": "Die Überfahrt dauert zwei Stunden."
+ },
+ "re210": {
+  "fr": "l'embarcadère",
+  "pl": "przystań",
+  "ru": "при́стань",
+  "rulat": "prístan",
+  "ex": "The ferry is waiting at the landing stage.",
+  "exde": "Die Fähre wartet am Anleger."
+ },
+ "re211": {
+  "fr": "monter à bord",
+  "pl": "wejść na pokład",
+  "ru": "подня́ться на борт",
+  "rulat": "podnjátsja na bort",
+  "ex": "We can board the ship at nine.",
+  "exde": "Wir können um neun Uhr an Bord gehen."
+ },
+ "re212": {
+  "fr": "débarquer",
+  "pl": "zejść na ląd",
+  "ru": "сойти́ на бе́рег",
+  "rulat": "ssojtí na béreg",
+  "ex": "The passengers disembark at the next port.",
+  "exde": "Die Passagiere gehen im nächsten Hafen von Bord."
+ },
+ "re213": {
+  "fr": "larguer les amarres",
+  "pl": "odbijać od brzegu",
+  "ru": "отча́ливать",
+  "rulat": "atscháliwat",
+  "ex": "The ferry casts off in ten minutes.",
+  "exde": "Die Fähre legt in zehn Minuten ab."
+ },
+ "re214": {
+  "fr": "accoster",
+  "pl": "przybijać do brzegu",
+  "ru": "прича́ливать",
+  "rulat": "pritscháliwat",
+  "ex": "The ship will dock at noon.",
+  "exde": "Das Schiff wird mittags anlegen."
+ },
+ "re215": {
+  "fr": "qui a le mal de mer",
+  "pl": "cierpiący na chorobę morską",
+  "ru": "страда́ющий морско́й боле́знью",
+  "rulat": "stradájuschtschij marskój bolésnju",
+  "ex": "I always get seasick on boats.",
+  "exde": "Auf Booten werde ich immer seekrank."
+ },
+ "re216": {
+  "fr": "le mal de mer",
+  "pl": "choroba morska",
+  "ru": "морска́я боле́знь",
+  "rulat": "marskája bolésn",
+  "ex": "These tablets help against seasickness.",
+  "exde": "Diese Tabletten helfen gegen Seekrankheit."
+ },
+ "re217": {
+  "fr": "le canot de sauvetage",
+  "pl": "szalupa ratunkowa",
+  "ru": "спаса́тельная шлю́пка",
+  "rulat": "spassátelnaja schljúpka",
+  "ex": "Every ship must carry lifeboats.",
+  "exde": "Jedes Schiff muss Rettungsboote haben."
+ },
+ "re218": {
+  "fr": "la bouée de sauvetage",
+  "pl": "koło ratunkowe",
+  "ru": "спаса́тельный круг",
+  "rulat": "spassátelnyj kruk",
+  "ex": "Throw him the lifebuoy!",
+  "exde": "Wirf ihm den Rettungsring zu!"
+ },
+ "re219": {
+  "fr": "la houle",
+  "pl": "falowanie morza",
+  "ru": "волне́ние на мо́ре",
+  "rulat": "walnénije na móre",
+  "ex": "The swell was very strong today.",
+  "exde": "Der Seegang war heute sehr stark."
+ },
+ "re220": {
+  "fr": "la vague",
+  "pl": "fala",
+  "ru": "волна́",
+  "rulat": "walná",
+  "ex": "A big wave hit the boat.",
+  "exde": "Eine große Welle traf das Boot."
+ },
+ "re221": {
+  "fr": "le pont garage",
+  "pl": "pokład samochodowy",
+  "ru": "автомоби́льная па́луба",
+  "rulat": "awtomobílnaja páluba",
+  "ex": "We left our car on the car deck.",
+  "exde": "Wir haben unser Auto auf dem Autodeck gelassen."
+ },
+ "re222": {
+  "fr": "le port de ferries",
+  "pl": "port promowy",
+  "ru": "паро́мный порт",
+  "rulat": "parómny port",
+  "ex": "The ferry port is near the city centre.",
+  "exde": "Der Fährhafen liegt in der Nähe des Stadtzentrums."
+ },
+ "re223": {
+  "fr": "le bastingage",
+  "pl": "reling",
+  "ru": "по́ручни",
+  "rulat": "pórutschni",
+  "ex": "Hold on to the railing.",
+  "exde": "Halt dich an der Reling fest."
+ },
+ "re224": {
+  "fr": "la proue",
+  "pl": "dziób",
+  "ru": "нос",
+  "rulat": "nos",
+  "ex": "We stood at the bow of the ship.",
+  "exde": "Wir standen am Bug des Schiffes."
+ },
+ "re225": {
+  "fr": "la poupe",
+  "pl": "rufa",
+  "ru": "корма́",
+  "rulat": "kormá",
+  "ex": "The restaurant is at the stern.",
+  "exde": "Das Restaurant ist am Heck."
+ },
+ "re226": {
+  "fr": "la chambre simple",
+  "pl": "pokój jednoosobowy",
+  "ru": "одноме́стный но́мер",
+  "rulat": "odnoméstny nómer",
+  "ex": "I'd like a single room for two nights.",
+  "exde": "Ich hätte gern ein Einzelzimmer für zwei Nächte."
+ },
+ "re227": {
+  "fr": "la chambre double",
+  "pl": "pokój dwuosobowy",
+  "ru": "двухме́стный но́мер",
+  "rulat": "dwuchméstny nómer",
+  "ex": "The double room has a view of the sea.",
+  "exde": "Das Doppelzimmer hat Blick aufs Meer."
+ },
+ "re228": {
+  "fr": "la réception",
+  "pl": "recepcja",
+  "ru": "сто́йка регистра́ции",
+  "rulat": "stójka registrázii",
+  "ex": "Please leave your key at the reception.",
+  "exde": "Bitte geben Sie Ihren Schlüssel an der Rezeption ab."
+ },
+ "re229": {
+  "fr": "la réservation",
+  "pl": "rezerwacja",
+  "ru": "брони́рование",
+  "rulat": "bronírowanije",
+  "ex": "I have a reservation under the name Müller.",
+  "exde": "Ich habe eine Reservierung auf den Namen Müller."
+ },
+ "re230": {
+  "fr": "quitter l'hôtel",
+  "pl": "wymeldować się",
+  "ru": "выселя́ться",
+  "rulat": "wysseljátsja",
+  "ex": "We have to check out by eleven.",
+  "exde": "Wir müssen bis elf Uhr auschecken."
+ },
+ "re231": {
+  "fr": "la clé de la chambre",
+  "pl": "klucz do pokoju",
+  "ru": "ключ от но́мера",
+  "rulat": "kljutsch ot nómera",
+  "ex": "I lost my room key.",
+  "exde": "Ich habe meinen Zimmerschlüssel verloren."
+ },
+ "re232": {
+  "fr": "la carte-clé",
+  "pl": "karta-klucz",
+  "ru": "ключ-ка́рта",
+  "rulat": "kljutsch-kárta",
+  "ex": "My key card doesn't work.",
+  "exde": "Meine Schlüsselkarte funktioniert nicht."
+ },
+ "re233": {
+  "fr": "la demi-pension",
+  "pl": "niepełne wyżywienie",
+  "ru": "полупансио́н",
+  "rulat": "polupansión",
+  "ex": "We booked a hotel with half board.",
+  "exde": "Wir haben ein Hotel mit Halbpension gebucht."
+ },
+ "re234": {
+  "fr": "la pension complète",
+  "pl": "pełne wyżywienie",
+  "ru": "по́лный пансио́н",
+  "rulat": "pólny pansión",
+  "ex": "Full board includes three meals a day.",
+  "exde": "Die Vollpension umfasst drei Mahlzeiten am Tag."
+ },
+ "re235": {
+  "fr": "la nuitée",
+  "pl": "nocleg",
+  "ru": "ночёвка",
+  "rulat": "notschjówka",
+  "ex": "An overnight stay costs ninety euros.",
+  "exde": "Eine Übernachtung kostet neunzig Euro."
+ },
+ "re236": {
+  "fr": "le service en chambre",
+  "pl": "obsługa pokoju",
+  "ru": "обслу́живание в но́мерах",
+  "rulat": "obslúschiwanije w nómerach",
+  "ex": "Let's order breakfast from room service.",
+  "exde": "Lass uns Frühstück beim Zimmerservice bestellen."
+ },
+ "re237": {
+  "fr": "la serviette",
+  "pl": "ręcznik",
+  "ru": "полоте́нце",
+  "rulat": "polotjénze",
+  "ex": "Could we have an extra towel, please?",
+  "exde": "Könnten wir bitte ein zusätzliches Handtuch bekommen?"
+ },
+ "re238": {
+  "fr": "le minibar",
+  "pl": "minibarek",
+  "ru": "мини-ба́р",
+  "rulat": "mini-bár",
+  "ex": "The drinks in the minibar are expensive.",
+  "exde": "Die Getränke in der Minibar sind teuer."
+ },
+ "re239": {
+  "fr": "le bagagiste",
+  "pl": "bagażowy",
+  "ru": "носи́льщик",
+  "rulat": "nossílschtschik",
+  "ex": "The porter carried our suitcases upstairs.",
+  "exde": "Der Gepäckträger hat unsere Koffer nach oben getragen."
+ },
+ "re240": {
+  "fr": "le hall d'entrée",
+  "pl": "hol",
+  "ru": "вестибю́ль",
+  "rulat": "westibjúl",
+  "ex": "Let's meet in the lobby at eight.",
+  "exde": "Treffen wir uns um acht in der Empfangshalle."
+ },
+ "re241": {
+  "fr": "complet",
+  "pl": "całkowicie zarezerwowany",
+  "ru": "по́лностью заброни́рован",
+  "rulat": "pólnostju sabronírowan",
+  "ex": "The hotel is fully booked this weekend.",
+  "exde": "Das Hotel ist dieses Wochenende ausgebucht."
+ },
+ "re242": {
+  "fr": "réserver une chambre",
+  "pl": "zarezerwować pokój",
+  "ru": "заброни́ровать но́мер",
+  "rulat": "sabronírowat nómer",
+  "ex": "I want to book a room for two nights.",
+  "exde": "Ich möchte ein Zimmer für zwei Nächte buchen."
+ },
+ "re243": {
+  "fr": "l'annulation",
+  "pl": "anulowanie",
+  "ru": "отме́на брони́",
+  "rulat": "otména broní",
+  "ex": "The cancellation is free until Friday.",
+  "exde": "Die Stornierung ist bis Freitag kostenlos."
+ },
+ "re244": {
+  "fr": "le réveil téléphonique",
+  "pl": "budzenie telefoniczne",
+  "ru": "звоно́к-буди́льник",
+  "rulat": "swonók-budílnik",
+  "ex": "Could I have a wake-up call at seven?",
+  "exde": "Könnte ich um sieben einen Weckruf bekommen?"
+ },
+ "re245": {
+  "fr": "la climatisation",
+  "pl": "klimatyzacja",
+  "ru": "кондиционе́р",
+  "rulat": "kondizionér",
+  "ex": "The air conditioning in our room doesn't work.",
+  "exde": "Die Klimaanlage in unserem Zimmer funktioniert nicht."
+ },
+ "re246": {
+  "fr": "la femme de chambre",
+  "pl": "pokojówka",
+  "ru": "горни́чная",
+  "rulat": "gornítschnaja",
+  "ex": "The chambermaid cleans the room every morning.",
+  "exde": "Das Zimmermädchen putzt das Zimmer jeden Morgen."
+ },
+ "re247": {
+  "fr": "le panneau « Ne pas déranger »",
+  "pl": "zawieszka „Nie przeszkadzać”",
+  "ru": "табли́чка «Не беспоко́ить»",
+  "rulat": "tablítschka «ne bespokóit»",
+  "ex": "I hung the do-not-disturb sign on the door.",
+  "exde": "Ich habe das Bitte-nicht-stören-Schild an die Tür gehängt."
+ },
+ "re248": {
+  "fr": "le coffre-fort",
+  "pl": "sejf",
+  "ru": "сейф",
+  "rulat": "sejf",
+  "ex": "Put your passport in the safe.",
+  "exde": "Leg deinen Pass in den Safe."
+ },
+ "re249": {
+  "fr": "les draps",
+  "pl": "pościel",
+  "ru": "посте́льное бельё",
+  "rulat": "postélnoje beljó",
+  "ex": "The bed linen is changed every day.",
+  "exde": "Die Bettwäsche wird jeden Tag gewechselt."
+ },
+ "re250": {
+  "fr": "l'oreiller",
+  "pl": "poduszka",
+  "ru": "поду́шка",
+  "rulat": "podúschka",
+  "ex": "Could I have an extra pillow, please?",
+  "exde": "Könnte ich bitte ein zusätzliches Kopfkissen haben?"
+ },
+ "re251": {
+  "fr": "la maison d'hôtes",
+  "pl": "pensjonat",
+  "ru": "гостево́й дом",
+  "rulat": "gostewój dom",
+  "ex": "We stayed in a small guesthouse by the sea.",
+  "exde": "Wir haben in einer kleinen Pension am Meer übernachtet."
+ },
+ "re252": {
+  "fr": "l'auberge de jeunesse",
+  "pl": "schronisko młodzieżowe",
+  "ru": "молодёжный хо́стел",
+  "rulat": "molodjóschny chóstel",
+  "ex": "The youth hostel is cheap and central.",
+  "exde": "Die Jugendherberge ist günstig und zentral."
+ },
+ "re253": {
+  "fr": "l'appartement de vacances",
+  "pl": "mieszkanie wakacyjne",
+  "ru": "апартаме́нты",
+  "rulat": "apartaménty",
+  "ex": "We rented a holiday flat in Italy.",
+  "exde": "Wir haben eine Ferienwohnung in Italien gemietet."
+ },
+ "re254": {
+  "fr": "réserver",
+  "pl": "rezerwować",
+  "ru": "брони́ровать",
+  "rulat": "bronírowat",
+  "ex": "You should book early in summer.",
+  "exde": "Im Sommer solltest du früh buchen."
+ },
+ "re255": {
+  "fr": "annuler",
+  "pl": "anulować",
+  "ru": "отменя́ть",
+  "rulat": "otmenját",
+  "ex": "I had to cancel my reservation.",
+  "exde": "Ich musste meine Reservierung stornieren."
+ },
+ "re256": {
+  "fr": "petit-déjeuner compris",
+  "pl": "śniadanie wliczone w cenę",
+  "ru": "за́втрак включён",
+  "rulat": "sáwtrak wkljutschón",
+  "ex": "The price is 80 euros, breakfast included.",
+  "exde": "Der Preis beträgt 80 Euro, Frühstück inklusive."
+ },
+ "re257": {
+  "fr": "le camping",
+  "pl": "kemping",
+  "ru": "ке́мпинг",
+  "rulat": "kémping",
+  "ex": "The campsite is right next to the lake.",
+  "exde": "Der Campingplatz liegt direkt am See."
+ },
+ "re258": {
+  "fr": "la confirmation de réservation",
+  "pl": "potwierdzenie rezerwacji",
+  "ru": "подтвержде́ние брони́рования",
+  "rulat": "podtwerschdénije bronírowanija",
+  "ex": "I received the booking confirmation by email.",
+  "exde": "Ich habe die Buchungsbestätigung per E-Mail bekommen."
+ },
+ "re259": {
+  "fr": "chambres disponibles",
+  "pl": "wolne pokoje",
+  "ru": "есть свобо́дные номера́",
+  "rulat": "jest swobódnyje nomerá",
+  "ex": "The sign outside says 'vacancies'.",
+  "exde": "Auf dem Schild draußen steht 'Zimmer frei'."
+ },
+ "re260": {
+  "fr": "la basse saison",
+  "pl": "niski sezon",
+  "ru": "ни́зкий сезо́н",
+  "rulat": "nískij sesón",
+  "ex": "Hotels are much cheaper in the low season.",
+  "exde": "In der Nebensaison sind Hotels viel günstiger."
+ },
+ "re261": {
+  "fr": "la haute saison",
+  "pl": "sezon wysoki",
+  "ru": "высо́кий сезо́н",
+  "rulat": "wyssókij sjesón",
+  "ex": "Prices are higher in high season.",
+  "exde": "In der Hauptsaison sind die Preise höher."
+ },
+ "re262": {
+  "fr": "le supplément",
+  "pl": "dopłata",
+  "ru": "допла́та",
+  "rulat": "dapláta",
+  "ex": "There is a surcharge for a single room.",
+  "exde": "Für ein Einzelzimmer gibt es einen Aufpreis."
+ },
+ "re263": {
+  "fr": "la taxe de séjour",
+  "pl": "opłata klimatyczna",
+  "ru": "туристи́ческий сбор",
+  "rulat": "turistítscheskij sbor",
+  "ex": "The tourist tax is paid at the hotel.",
+  "exde": "Die Kurtaxe wird im Hotel bezahlt."
+ },
+ "re264": {
+  "fr": "le logement",
+  "pl": "zakwaterowanie",
+  "ru": "жильё",
+  "rulat": "schiljó",
+  "ex": "We are still looking for accommodation.",
+  "exde": "Wir suchen noch eine Unterkunft."
+ },
+ "re265": {
+  "fr": "l'hôte",
+  "pl": "gospodarz",
+  "ru": "хозя́ин",
+  "rulat": "chasjáin",
+  "ex": "Our host gave us the keys.",
+  "exde": "Unser Gastgeber gab uns die Schlüssel."
+ },
+ "re266": {
+  "fr": "la consigne",
+  "pl": "przechowalnia bagażu",
+  "ru": "ка́мера хране́ния",
+  "rulat": "kámera chranénija",
+  "ex": "We left our bags at the left-luggage office.",
+  "exde": "Wir haben unsere Taschen bei der Gepäckaufbewahrung gelassen."
+ },
+ "re267": {
+  "fr": "la chambre avec vue sur la mer",
+  "pl": "pokój z widokiem na morze",
+  "ru": "но́мер с ви́дом на мо́ре",
+  "rulat": "nómer s wídam na mórje",
+  "ex": "I'd like a room with a sea view, please.",
+  "exde": "Ich hätte gern ein Zimmer mit Meerblick, bitte."
+ },
+ "re268": {
+  "fr": "le lit d'appoint",
+  "pl": "dostawka",
+  "ru": "дополни́тельная крова́ть",
+  "rulat": "dapalnítelnaja krawát",
+  "ex": "Can we get an extra bed for our son?",
+  "exde": "Können wir ein Zustellbett für unseren Sohn bekommen?"
+ },
+ "re269": {
+  "fr": "l'avis",
+  "pl": "opinia",
+  "ru": "о́тзыв",
+  "rulat": "ótsyw",
+  "ex": "I always read a review before booking.",
+  "exde": "Ich lese vor dem Buchen immer eine Bewertung."
+ },
+ "re270": {
+  "fr": "les frais d'annulation",
+  "pl": "opłata za anulowanie",
+  "ru": "штраф за отме́ну",
+  "rulat": "schtraf sa atménu",
+  "ex": "Is there a cancellation fee?",
+  "exde": "Gibt es eine Stornogebühr?"
+ },
+ "re271": {
+  "fr": "les frais de ménage",
+  "pl": "opłata za sprzątanie końcowe",
+  "ru": "пла́та за убо́рку",
+  "rulat": "pláta sa ubórku",
+  "ex": "The final cleaning fee is 50 euros.",
+  "exde": "Die Endreinigung kostet 50 Euro."
+ },
+ "re272": {
+  "fr": "les indications",
+  "pl": "wskazówki dojazdu",
+  "ru": "описа́ние доро́ги",
+  "rulat": "apissánije darógi",
+  "ex": "Can you give me directions to the station?",
+  "exde": "Können Sie mir eine Wegbeschreibung zum Bahnhof geben?"
+ },
+ "re273": {
+  "fr": "tourner à gauche",
+  "pl": "skręcić w lewo",
+  "ru": "поверну́ть нале́во",
+  "rulat": "pawernút naléwa",
+  "ex": "Turn left at the traffic lights.",
+  "exde": "Biegen Sie an der Ampel links ab."
+ },
+ "re274": {
+  "fr": "tourner à droite",
+  "pl": "skręcić w prawo",
+  "ru": "поверну́ть напра́во",
+  "rulat": "pawernút naprá wa",
+  "ex": "Turn right after the bridge.",
+  "exde": "Biegen Sie nach der Brücke rechts ab."
+ },
+ "re275": {
+  "fr": "aller tout droit",
+  "pl": "iść prosto",
+  "ru": "идти́ пря́мо",
+  "rulat": "idtí prjáma",
+  "ex": "Go straight on for two hundred metres.",
+  "exde": "Gehen Sie zweihundert Meter geradeaus."
+ },
+ "re276": {
+  "fr": "le coin",
+  "pl": "róg",
+  "ru": "у́гол",
+  "rulat": "úgal",
+  "ex": "The bakery is just around the corner.",
+  "exde": "Die Bäckerei ist gleich um die Ecke."
+ },
+ "re277": {
+  "fr": "le plan de la ville",
+  "pl": "plan miasta",
+  "ru": "ка́рта го́рода",
+  "rulat": "kárta górada",
+  "ex": "I bought a city map at the kiosk.",
+  "exde": "Ich habe am Kiosk einen Stadtplan gekauft."
+ },
+ "re278": {
+  "fr": "la carte",
+  "pl": "mapa",
+  "ru": "ка́рта",
+  "rulat": "kárta",
+  "ex": "Can you show me on the map?",
+  "exde": "Können Sie es mir auf der Karte zeigen?"
+ },
+ "re279": {
+  "fr": "se perdre",
+  "pl": "zgubić się",
+  "ru": "заблуди́ться",
+  "rulat": "sabludíttsa",
+  "ex": "We got lost in the old town.",
+  "exde": "Wir haben uns in der Altstadt verlaufen."
+ },
+ "re280": {
+  "fr": "demander son chemin",
+  "pl": "zapytać o drogę",
+  "ru": "спроси́ть доро́гу",
+  "rulat": "sprassít darógu",
+  "ex": "If you're unsure, ask for directions.",
+  "exde": "Wenn du unsicher bist, frag nach dem Weg."
+ },
+ "re281": {
+  "fr": "à proximité",
+  "pl": "w pobliżu",
+  "ru": "побли́зости",
+  "rulat": "poblísosti",
+  "ex": "Is there a pharmacy nearby?",
+  "exde": "Gibt es eine Apotheke in der Nähe?"
+ },
+ "re282": {
+  "fr": "loin",
+  "pl": "daleko",
+  "ru": "далеко́",
+  "rulat": "dalekó",
+  "ex": "The station is far away from here.",
+  "exde": "Der Bahnhof ist weit entfernt von hier."
+ },
+ "re283": {
+  "fr": "en face de",
+  "pl": "naprzeciwko",
+  "ru": "напро́тив",
+  "rulat": "naprótiw",
+  "ex": "The bank is opposite the church.",
+  "exde": "Die Bank ist gegenüber der Kirche."
+ },
+ "re284": {
+  "fr": "à côté de",
+  "pl": "obok",
+  "ru": "ря́дом с",
+  "rulat": "rjádom s",
+  "ex": "The café is next to the museum.",
+  "exde": "Das Café ist neben dem Museum."
+ },
+ "re285": {
+  "fr": "derrière",
+  "pl": "za",
+  "ru": "за",
+  "rulat": "sa",
+  "ex": "The car park is behind the hotel.",
+  "exde": "Der Parkplatz ist hinter dem Hotel."
+ },
+ "re286": {
+  "fr": "le nord",
+  "pl": "północ",
+  "ru": "се́вер",
+  "rulat": "séwer",
+  "ex": "The village is in the north.",
+  "exde": "Das Dorf liegt im Norden."
+ },
+ "re287": {
+  "fr": "le sud",
+  "pl": "południe",
+  "ru": "юг",
+  "rulat": "jug",
+  "ex": "The wind comes from the south.",
+  "exde": "Der Wind kommt aus dem Süden."
+ },
+ "re288": {
+  "fr": "l'est",
+  "pl": "wschód",
+  "ru": "восто́к",
+  "rulat": "wostók",
+  "ex": "The sun rises in the east.",
+  "exde": "Die Sonne geht im Osten auf."
+ },
+ "re289": {
+  "fr": "l'ouest",
+  "pl": "zachód",
+  "ru": "за́пад",
+  "rulat": "sápad",
+  "ex": "The sun sets in the west.",
+  "exde": "Die Sonne geht im Westen unter."
+ },
+ "re290": {
+  "fr": "la boussole",
+  "pl": "kompas",
+  "ru": "ко́мпас",
+  "rulat": "kómpas",
+  "ex": "We found our way with a compass.",
+  "exde": "Wir haben den Weg mit einem Kompass gefunden."
+ },
+ "re291": {
+  "fr": "le GPS",
+  "pl": "nawigacja",
+  "ru": "навига́тор",
+  "rulat": "nawigátor",
+  "ex": "The satnav shows the fastest route.",
+  "exde": "Das Navigationsgerät zeigt die schnellste Route."
+ },
+ "re292": {
+  "fr": "le panneau indicateur",
+  "pl": "drogowskaz",
+  "ru": "указа́тель",
+  "rulat": "ukasátel",
+  "ex": "Follow the signpost to the castle.",
+  "exde": "Folge dem Wegweiser zur Burg."
+ },
+ "re293": {
+  "fr": "faire demi-tour",
+  "pl": "zawrócić",
+  "ru": "поверну́ть наза́д",
+  "rulat": "powernút nasád",
+  "ex": "We had to turn back because of the storm.",
+  "exde": "Wir mussten wegen des Sturms umkehren."
+ },
+ "re294": {
+  "fr": "l'embranchement",
+  "pl": "skręt",
+  "ru": "поворо́т",
+  "rulat": "poworót",
+  "ex": "Take the second turning on the left.",
+  "exde": "Nimm die zweite Abzweigung links."
+ },
+ "re295": {
+  "fr": "la rue transversale",
+  "pl": "przecznica",
+  "ru": "переу́лок",
+  "rulat": "pereúlok",
+  "ex": "The shop is in a side street.",
+  "exde": "Der Laden ist in einer Querstraße."
+ },
+ "re296": {
+  "fr": "la rue principale",
+  "pl": "główna ulica",
+  "ru": "гла́вная у́лица",
+  "rulat": "gláwnaja úliza",
+  "ex": "The bus stop is on the main road.",
+  "exde": "Die Bushaltestelle ist an der Hauptstraße."
+ },
+ "re297": {
+  "fr": "le site touristique",
+  "pl": "zabytek",
+  "ru": "достопримеча́тельность",
+  "rulat": "dostoprimetschátelnost",
+  "ex": "The cathedral is the city's most famous sight.",
+  "exde": "Der Dom ist die berühmteste Sehenswürdigkeit der Stadt."
+ },
+ "re298": {
+  "fr": "la visite guidée de la ville",
+  "pl": "zwiedzanie miasta z przewodnikiem",
+  "ru": "экску́рсия по го́роду",
+  "rulat": "ekskúrsija po górodu",
+  "ex": "We booked a guided city tour for Saturday.",
+  "exde": "Wir haben für Samstag eine Stadtführung gebucht."
+ },
+ "re299": {
+  "fr": "la visite à pied de la ville",
+  "pl": "spacer po mieście",
+  "ru": "пешехо́дная экску́рсия по го́роду",
+  "rulat": "peschechódnaja ekskúrsija po górodu",
+  "ex": "The walking tour of the city starts at ten.",
+  "exde": "Der Stadtrundgang beginnt um zehn."
+ },
+ "re300": {
+  "fr": "le tour de ville en bus",
+  "pl": "wycieczka autokarowa po mieście",
+  "ru": "авто́бусная экску́рсия по го́роду",
+  "rulat": "awtóbusnaja ekskúrsija po górodu",
+  "ex": "We took a city sightseeing tour by bus.",
+  "exde": "Wir haben eine Stadtrundfahrt mit dem Bus gemacht."
+ },
+ "re301": {
+  "fr": "le guide",
+  "pl": "przewodnik",
+  "ru": "путеводи́тель / гид",
+  "rulat": "putewodítel / gid",
+  "ex": "Our guidebook recommends this café.",
+  "exde": "Unser Reiseführer empfiehlt dieses Café."
+ },
+ "re302": {
+  "fr": "la visite guidée",
+  "pl": "zwiedzanie z przewodnikiem",
+  "ru": "экску́рсия",
+  "rulat": "ekskúrsija",
+  "ex": "The guided tour starts at ten o'clock.",
+  "exde": "Die Führung beginnt um zehn Uhr."
+ },
+ "re303": {
+  "fr": "visiter",
+  "pl": "zwiedzać",
+  "ru": "осма́тривать",
+  "rulat": "osmátriwat",
+  "ex": "We want to visit the castle tomorrow.",
+  "exde": "Wir wollen morgen das Schloss besichtigen."
+ },
+ "re304": {
+  "fr": "l'exposition",
+  "pl": "wystawa",
+  "ru": "вы́ставка",
+  "rulat": "wýstawka",
+  "ex": "The exhibition is open until Sunday.",
+  "exde": "Die Ausstellung ist bis Sonntag geöffnet."
+ },
+ "re305": {
+  "fr": "l'église",
+  "pl": "kościół",
+  "ru": "це́рковь",
+  "rulat": "zérkow",
+  "ex": "The church is in the centre of the village.",
+  "exde": "Die Kirche steht in der Mitte des Dorfes."
+ },
+ "re306": {
+  "fr": "la cathédrale",
+  "pl": "katedra",
+  "ru": "собо́р",
+  "rulat": "sobór",
+  "ex": "The cathedral has two tall towers.",
+  "exde": "Der Dom hat zwei hohe Türme."
+ },
+ "re307": {
+  "fr": "le château",
+  "pl": "zamek / pałac",
+  "ru": "за́мок / дворе́ц",
+  "rulat": "sámok / dworéz",
+  "ex": "The palace has a beautiful garden.",
+  "exde": "Das Schloss hat einen schönen Garten."
+ },
+ "re308": {
+  "fr": "le château fort",
+  "pl": "zamek / twierdza",
+  "ru": "кре́пость",
+  "rulat": "krépost",
+  "ex": "The castle stands on a hill.",
+  "exde": "Die Burg steht auf einem Hügel."
+ },
+ "re309": {
+  "fr": "le monument",
+  "pl": "pomnik",
+  "ru": "па́мятник",
+  "rulat": "pámjatnik",
+  "ex": "We met in front of the monument.",
+  "exde": "Wir haben uns vor dem Denkmal getroffen."
+ },
+ "re310": {
+  "fr": "l'hôtel de ville / la mairie",
+  "pl": "ratusz",
+  "ru": "ра́туша",
+  "rulat": "rátuscha",
+  "ex": "The town hall is on the market square.",
+  "exde": "Das Rathaus steht am Marktplatz."
+ },
+ "re311": {
+  "fr": "la vieille ville",
+  "pl": "stare miasto",
+  "ru": "ста́рый го́род",
+  "rulat": "stáryj górod",
+  "ex": "Let's walk through the old town.",
+  "exde": "Lass uns durch die Altstadt spazieren."
+ },
+ "re312": {
+  "fr": "la place du marché",
+  "pl": "rynek",
+  "ru": "ры́ночная пло́щадь",
+  "rulat": "rýnotschnaja plóschtschad",
+  "ex": "There is a café on the market square.",
+  "exde": "Am Marktplatz gibt es ein Café."
+ },
+ "re313": {
+  "fr": "le point de vue",
+  "pl": "punkt widokowy",
+  "ru": "смотрова́я площа́дка",
+  "rulat": "smotrowája ploschtschádka",
+  "ex": "From the viewpoint you can see the whole city.",
+  "exde": "Vom Aussichtspunkt sieht man die ganze Stadt."
+ },
+ "re314": {
+  "fr": "la tour",
+  "pl": "wieża",
+  "ru": "ба́шня",
+  "rulat": "báschnja",
+  "ex": "We climbed the tower.",
+  "exde": "Wir sind auf den Turm gestiegen."
+ },
+ "re315": {
+  "fr": "la fontaine",
+  "pl": "fontanna",
+  "ru": "фонта́н",
+  "rulat": "fontán",
+  "ex": "The children are playing by the fountain.",
+  "exde": "Die Kinder spielen am Brunnen."
+ },
+ "re316": {
+  "fr": "le pont",
+  "pl": "most",
+  "ru": "мост",
+  "rulat": "most",
+  "ex": "The bridge crosses the river.",
+  "exde": "Die Brücke führt über den Fluss."
+ },
+ "re317": {
+  "fr": "l'office de tourisme",
+  "pl": "informacja turystyczna",
+  "ru": "туристи́ческий информацио́нный центр",
+  "rulat": "turistítscheskij informaziónnyj zentr",
+  "ex": "You can get a free map at the tourist information office.",
+  "exde": "In der Touristeninformation bekommt man einen kostenlosen Stadtplan."
+ },
+ "re318": {
+  "fr": "l'entrée",
+  "pl": "wstęp",
+  "ru": "вход",
+  "rulat": "wchod",
+  "ex": "Admission is free on Sundays.",
+  "exde": "Sonntags ist der Eintritt frei."
+ },
+ "re319": {
+  "fr": "le billet d'entrée",
+  "pl": "bilet wstępu",
+  "ru": "входно́й биле́т",
+  "rulat": "wchodnój bilét",
+  "ex": "I bought two admission tickets online.",
+  "exde": "Ich habe zwei Eintrittskarten online gekauft."
+ },
+ "re320": {
+  "fr": "les horaires d'ouverture",
+  "pl": "godziny otwarcia",
+  "ru": "часы́ рабо́ты",
+  "rulat": "tschassý rabóty",
+  "ex": "What are the museum's opening hours?",
+  "exde": "Wie sind die Öffnungszeiten des Museums?"
+ },
+ "re321": {
+  "fr": "l'audioguide",
+  "pl": "audioprzewodnik",
+  "ru": "аудиоги́д",
+  "rulat": "audiogíd",
+  "ex": "You can rent an audio guide at the entrance.",
+  "exde": "Am Eingang kann man einen Audioguide ausleihen."
+ },
+ "re322": {
+  "fr": "la frontière",
+  "pl": "granica",
+  "ru": "грани́ца",
+  "rulat": "graníza",
+  "ex": "We crossed the border at night.",
+  "exde": "Wir haben die Grenze nachts überquert."
+ },
+ "re323": {
+  "fr": "la carte d'identité",
+  "pl": "dowód osobisty",
+  "ru": "удостовере́ние ли́чности",
+  "rulat": "udostowerénije lítschnosti",
+  "ex": "Please show your identity card.",
+  "exde": "Bitte zeigen Sie Ihren Personalausweis."
+ },
+ "re324": {
+  "fr": "le visa",
+  "pl": "wiza",
+  "ru": "ви́за",
+  "rulat": "wísa",
+  "ex": "Do I need a visa for Russia?",
+  "exde": "Brauche ich ein Visum für Russland?"
+ },
+ "re325": {
+  "fr": "le contrôle aux frontières",
+  "pl": "kontrola graniczna",
+  "ru": "пограни́чный контро́ль",
+  "rulat": "pogranítschnyj kontról",
+  "ex": "The border control took an hour.",
+  "exde": "Die Grenzkontrolle dauerte eine Stunde."
+ },
+ "re326": {
+  "fr": "le douanier",
+  "pl": "celnik",
+  "ru": "тамо́женник",
+  "rulat": "tamóschennik",
+  "ex": "The customs officer opened my suitcase.",
+  "exde": "Der Zollbeamte öffnete meinen Koffer."
+ },
+ "re327": {
+  "fr": "la déclaration de douane",
+  "pl": "deklaracja celna",
+  "ru": "тамо́женная деклара́ция",
+  "rulat": "tamóschennaja deklarázija",
+  "ex": "Please fill out the customs declaration.",
+  "exde": "Bitte füllen Sie die Zollerklärung aus."
+ },
+ "re328": {
+  "fr": "hors taxes",
+  "pl": "bezcłowy",
+  "ru": "беспо́шлинный",
+  "rulat": "bespóschlinnyj",
+  "ex": "Cigarettes are duty-free up to a certain amount.",
+  "exde": "Zigaretten sind bis zu einer bestimmten Menge zollfrei."
+ },
+ "re329": {
+  "fr": "avoir quelque chose à déclarer",
+  "pl": "mieć coś do oclenia",
+  "ru": "есть что деклари́ровать",
+  "rulat": "jest schto deklarírowat",
+  "ex": "Do you have anything to declare?",
+  "exde": "Haben Sie etwas zu verzollen?"
+ },
+ "re330": {
+  "fr": "dédouaner",
+  "pl": "oclić",
+  "ru": "опла́чивать по́шлину",
+  "rulat": "oplátschiwat póschlinu",
+  "ex": "You have to pay duty on these cigarettes.",
+  "exde": "Sie müssen diese Zigaretten verzollen."
+ },
+ "re331": {
+  "fr": "le poste-frontière",
+  "pl": "przejście graniczne",
+  "ru": "пограни́чный перехо́д",
+  "rulat": "pogranítschnyj perechód",
+  "ex": "The border crossing is closed at night.",
+  "exde": "Der Grenzübergang ist nachts geschlossen."
+ },
+ "re332": {
+  "fr": "l'entrée",
+  "pl": "wjazd",
+  "ru": "въезд",
+  "rulat": "wjesd",
+  "ex": "Entry is only possible with a valid passport.",
+  "exde": "Die Einreise ist nur mit gültigem Reisepass möglich."
+ },
+ "re333": {
+  "fr": "entrer dans un pays",
+  "pl": "wjechać do kraju",
+  "ru": "въезжа́ть в страну́",
+  "rulat": "wjeschát w stranú",
+  "ex": "We entered the country by train.",
+  "exde": "Wir sind mit dem Zug eingereist."
+ },
+ "re334": {
+  "fr": "quitter un pays",
+  "pl": "wyjechać z kraju",
+  "ru": "выезжа́ть из страны́",
+  "rulat": "wyjeschát is straný",
+  "ex": "You must leave the country before your visa expires.",
+  "exde": "Sie müssen ausreisen, bevor Ihr Visum abläuft."
+ },
+ "re335": {
+  "fr": "valide",
+  "pl": "ważny",
+  "ru": "действи́тельный",
+  "rulat": "dejstwítelnyj",
+  "ex": "My passport is valid for another year.",
+  "exde": "Mein Pass ist noch ein Jahr gültig."
+ },
+ "re336": {
+  "fr": "la date d'expiration",
+  "pl": "data ważności",
+  "ru": "срок де́йствия",
+  "rulat": "srok déjstwija",
+  "ex": "Check the expiry date on your passport.",
+  "exde": "Prüfen Sie das Ablaufdatum Ihres Passes."
+ },
+ "re337": {
+  "fr": "la nationalité",
+  "pl": "obywatelstwo",
+  "ru": "гражда́нство",
+  "rulat": "graschdánstwo",
+  "ex": "What is your nationality?",
+  "exde": "Welche Staatsangehörigkeit haben Sie?"
+ },
+ "re338": {
+  "fr": "le séjour",
+  "pl": "pobyt",
+  "ru": "пребыва́ние",
+  "rulat": "prebywánije",
+  "ex": "How long is your stay?",
+  "exde": "Wie lange dauert Ihr Aufenthalt?"
+ },
+ "re339": {
+  "fr": "le permis de séjour",
+  "pl": "zezwolenie na pobyt",
+  "ru": "вид на жи́тельство",
+  "rulat": "wid na schítelstwo",
+  "ex": "She applied for a residence permit.",
+  "exde": "Sie hat eine Aufenthaltsgenehmigung beantragt."
+ },
+ "re340": {
+  "fr": "la fiche de débarquement",
+  "pl": "karta wjazdu",
+  "ru": "миграцио́нная ка́рта",
+  "rulat": "migraziónnaja kárta",
+  "ex": "Please fill in the landing card on the plane.",
+  "exde": "Bitte füllen Sie das Einreiseformular im Flugzeug aus."
+ },
+ "re341": {
+  "fr": "le tampon",
+  "pl": "pieczątka",
+  "ru": "печа́ть",
+  "rulat": "petschát'",
+  "ex": "The officer put a stamp in my passport.",
+  "exde": "Der Beamte drückte einen Stempel in meinen Pass."
+ },
+ "re342": {
+  "fr": "fouiller",
+  "pl": "przeszukać",
+  "ru": "обыска́ть",
+  "rulat": "obyskát'",
+  "ex": "The customs officers searched my suitcase.",
+  "exde": "Die Zollbeamten durchsuchten meinen Koffer."
+ },
+ "re343": {
+  "fr": "la franchise douanière",
+  "pl": "limit bezcłowy",
+  "ru": "беспо́шлинная но́рма",
+  "rulat": "bespóschlinnaja nórma",
+  "ex": "Two bottles of wine are within the duty-free allowance.",
+  "exde": "Zwei Flaschen Wein liegen innerhalb der Freimenge."
+ },
+ "re344": {
+  "fr": "confisquer",
+  "pl": "skonfiskować",
+  "ru": "конфискова́ть",
+  "rulat": "konfiskowát'",
+  "ex": "Customs confiscated the fake watches.",
+  "exde": "Der Zoll beschlagnahmte die gefälschten Uhren."
+ },
+ "re345": {
+  "fr": "passer en contrebande",
+  "pl": "przemycać",
+  "ru": "провози́ть контраба́ндой",
+  "rulat": "prowosít' kontrabándoj",
+  "ex": "He tried to smuggle cigarettes across the border.",
+  "exde": "Er versuchte, Zigaretten über die Grenze zu schmuggeln."
+ },
+ "re346": {
+  "fr": "les réglementations d'importation",
+  "pl": "przepisy importowe",
+  "ru": "пра́вила вво́за",
+  "rulat": "práwila wwósa",
+  "ex": "Check the import regulations before you travel.",
+  "exde": "Informiere dich vor der Reise über die Einfuhrbestimmungen."
+ },
+ "re347": {
+  "fr": "le sac à dos",
+  "pl": "plecak",
+  "ru": "рюкза́к",
+  "rulat": "rjuksák",
+  "ex": "I only take a rucksack on short trips.",
+  "exde": "Auf kurze Reisen nehme ich nur einen Rucksack mit."
+ },
+ "re348": {
+  "fr": "le sac de voyage",
+  "pl": "torba podróżna",
+  "ru": "доро́жная су́мка",
+  "rulat": "doróschnaja súmka",
+  "ex": "My holdall is too heavy.",
+  "exde": "Meine Reisetasche ist zu schwer."
+ },
+ "re349": {
+  "fr": "le bagage",
+  "pl": "sztuka bagażu",
+  "ru": "ме́сто багажа́",
+  "rulat": "mésto bagaschá",
+  "ex": "You may bring one piece of luggage.",
+  "exde": "Sie dürfen ein Gepäckstück mitnehmen."
+ },
+ "re350": {
+  "fr": "faire ses bagages",
+  "pl": "pakować",
+  "ru": "упако́вывать",
+  "rulat": "upakówywat'",
+  "ex": "I still have to pack my suitcase.",
+  "exde": "Ich muss noch meinen Koffer packen."
+ },
+ "re351": {
+  "fr": "défaire ses bagages",
+  "pl": "rozpakować",
+  "ru": "распако́вывать",
+  "rulat": "raspakówywat'",
+  "ex": "We unpacked as soon as we arrived at the hotel.",
+  "exde": "Wir packten aus, sobald wir im Hotel ankamen."
+ },
+ "re352": {
+  "fr": "la liste de bagages",
+  "pl": "lista rzeczy do spakowania",
+  "ru": "спи́сок веще́й",
+  "rulat": "spíssok weschtschéj",
+  "ex": "I made a packing list for the trip.",
+  "exde": "Ich habe eine Packliste für die Reise gemacht."
+ },
+ "re353": {
+  "fr": "la trousse de toilette",
+  "pl": "kosmetyczka",
+  "ru": "несессе́р",
+  "rulat": "nessessér",
+  "ex": "Don't forget your toiletry bag!",
+  "exde": "Vergiss deinen Kulturbeutel nicht!"
+ },
+ "re354": {
+  "fr": "les documents de voyage",
+  "pl": "dokumenty podróżne",
+  "ru": "доро́жные докуме́нты",
+  "rulat": "doróschnyje dokuménty",
+  "ex": "Keep your travel documents in your hand luggage.",
+  "exde": "Bewahre deine Reiseunterlagen im Handgepäck auf."
+ },
+ "re355": {
+  "fr": "l'excédent de bagages",
+  "pl": "nadbagaż",
+  "ru": "переве́с багажа́",
+  "rulat": "perewés bagaschá",
+  "ex": "I had to pay for excess baggage.",
+  "exde": "Ich musste für Übergepäck bezahlen."
+ },
+ "re356": {
+  "fr": "la franchise de bagages",
+  "pl": "limit bagażu",
+  "ru": "но́рма багажа́",
+  "rulat": "nórma bagaschá",
+  "ex": "The baggage allowance is 23 kilos.",
+  "exde": "Die Freigepäckmenge beträgt 23 Kilo."
+ },
+ "re357": {
+  "fr": "enregistrer ses bagages",
+  "pl": "nadać bagaż",
+  "ru": "сдать бага́ж",
+  "rulat": "sdat' bagásch",
+  "ex": "We need to check in our luggage two hours before departure.",
+  "exde": "Wir müssen unser Gepäck zwei Stunden vor Abflug aufgeben."
+ },
+ "re358": {
+  "fr": "le tapis à bagages",
+  "pl": "taśma bagażowa",
+  "ru": "бага́жная ле́нта",
+  "rulat": "bagáschnaja lénta",
+  "ex": "My suitcase was the last one on the baggage carousel.",
+  "exde": "Mein Koffer war der letzte auf dem Gepäckband."
+ },
+ "re359": {
+  "fr": "le chariot à bagages",
+  "pl": "wózek bagażowy",
+  "ru": "бага́жная теле́жка",
+  "rulat": "bagáschnaja teléschka",
+  "ex": "Let's get a luggage trolley for the suitcases.",
+  "exde": "Holen wir einen Gepäckwagen für die Koffer."
+ },
+ "re360": {
+  "fr": "le cadenas de valise",
+  "pl": "kłódka do walizki",
+  "ru": "замо́к для чемода́на",
+  "rulat": "samók dlja tschemodána",
+  "ex": "I forgot the code of my luggage lock.",
+  "exde": "Ich habe den Code meines Kofferschlosses vergessen."
+ },
+ "re361": {
+  "fr": "l'étiquette à bagage",
+  "pl": "zawieszka na bagaż",
+  "ru": "бага́жная би́рка",
+  "rulat": "bagáschnaja bírka",
+  "ex": "I wrote my address on the luggage tag.",
+  "exde": "Ich habe meine Adresse auf den Kofferanhänger geschrieben."
+ },
+ "re362": {
+  "fr": "fragile",
+  "pl": "kruchy",
+  "ru": "хру́пкий",
+  "rulat": "chrúpkij",
+  "ex": "Be careful, this box is fragile.",
+  "exde": "Vorsicht, dieser Karton ist zerbrechlich."
+ },
+ "re363": {
+  "fr": "peser",
+  "pl": "ważyć",
+  "ru": "взве́шивать",
+  "rulat": "wswéschiwat",
+  "ex": "They weigh every suitcase at check-in.",
+  "exde": "Sie wiegen jeden Koffer beim Check-in."
+ },
+ "re364": {
+  "fr": "l'assurance voyage",
+  "pl": "ubezpieczenie podróżne",
+  "ru": "туристи́ческая страхо́вка",
+  "rulat": "turistítscheskaja strachówka",
+  "ex": "Don't forget to buy travel insurance.",
+  "exde": "Vergiss nicht, eine Reiseversicherung abzuschließen."
+ },
+ "re365": {
+  "fr": "la trousse de secours",
+  "pl": "apteczka podróżna",
+  "ru": "доро́жная апте́чка",
+  "rulat": "doróschnaja aptétschka",
+  "ex": "Pack the travel first-aid kit in your hand luggage.",
+  "exde": "Pack die Reiseapotheke ins Handgepäck."
+ },
+ "re366": {
+  "fr": "l'adaptateur de voyage",
+  "pl": "adapter podróżny",
+  "ru": "доро́жный ада́птер",
+  "rulat": "doróschnyj adápter",
+  "ex": "In England you need a travel adaptor.",
+  "exde": "In England brauchst du einen Reiseadapter."
+ },
+ "re367": {
+  "fr": "le chargeur",
+  "pl": "ładowarka",
+  "ru": "заря́дное устро́йство",
+  "rulat": "sarjádnoje ustróistwo",
+  "ex": "I left my charger at the hotel.",
+  "exde": "Ich habe mein Ladegerät im Hotel vergessen."
+ },
+ "re368": {
+  "fr": "la crème solaire",
+  "pl": "krem z filtrem",
+  "ru": "солнцезащи́тный крем",
+  "rulat": "sonzesaschtschítnyj krem",
+  "ex": "Put on some sun cream before you go out.",
+  "exde": "Trag Sonnencreme auf, bevor du rausgehst."
+ },
+ "re369": {
+  "fr": "la destination",
+  "pl": "cel podróży",
+  "ru": "пункт назначе́ния",
+  "rulat": "punkt nasnatschénija",
+  "ex": "Our destination is a small island in Greece.",
+  "exde": "Unser Reiseziel ist eine kleine Insel in Griechenland."
+ },
+ "re370": {
+  "fr": "la vaccination",
+  "pl": "szczepienie",
+  "ru": "приви́вка",
+  "rulat": "priwíwka",
+  "ex": "Do I need a vaccination for this country?",
+  "exde": "Brauche ich für dieses Land eine Impfung?"
+ },
+ "re371": {
+  "fr": "changer de l'argent",
+  "pl": "wymieniać pieniądze",
+  "ru": "меня́ть де́ньги",
+  "rulat": "menját déngi",
+  "ex": "Where can I change money?",
+  "exde": "Wo kann ich Geld wechseln?"
+ },
+ "re372": {
+  "fr": "la côte",
+  "pl": "wybrzeże",
+  "ru": "побере́жье",
+  "rulat": "poberéschje",
+  "ex": "We drove along the coast.",
+  "exde": "Wir sind die Küste entlanggefahren."
+ },
+ "re373": {
+  "fr": "le sable",
+  "pl": "piasek",
+  "ru": "песо́к",
+  "rulat": "pessók",
+  "ex": "The sand is very hot today.",
+  "exde": "Der Sand ist heute sehr heiß."
+ },
+ "re374": {
+  "fr": "la marée basse",
+  "pl": "odpływ",
+  "ru": "отли́в",
+  "rulat": "otlíw",
+  "ex": "At low tide you can walk to the island.",
+  "exde": "Bei Ebbe kann man zur Insel laufen."
+ },
+ "re375": {
+  "fr": "la marée haute",
+  "pl": "przypływ",
+  "ru": "прили́в",
+  "rulat": "prilíw",
+  "ex": "The beach disappears at high tide.",
+  "exde": "Bei Flut verschwindet der Strand."
+ },
+ "re376": {
+  "fr": "le transat",
+  "pl": "leżak",
+  "ru": "шезло́нг",
+  "rulat": "schesslóng",
+  "ex": "He fell asleep in the deckchair.",
+  "exde": "Er ist im Liegestuhl eingeschlafen."
+ },
+ "re377": {
+  "fr": "le parasol",
+  "pl": "parasol plażowy",
+  "ru": "пля́жный зо́нтик",
+  "rulat": "pljáschnyj sóntik",
+  "ex": "Let's sit under the beach umbrella.",
+  "exde": "Setzen wir uns unter den Sonnenschirm."
+ },
+ "re378": {
+  "fr": "le coup de soleil",
+  "pl": "oparzenie słoneczne",
+  "ru": "со́лнечный ожо́г",
+  "rulat": "sólnetschnyj oschók",
+  "ex": "I got a bad sunburn on the first day.",
+  "exde": "Ich habe mir am ersten Tag einen schlimmen Sonnenbrand geholt."
+ },
+ "re379": {
+  "fr": "bronzer",
+  "pl": "opalać się",
+  "ru": "загора́ть",
+  "rulat": "sagorát",
+  "ex": "We sunbathed on the beach all afternoon.",
+  "exde": "Wir haben uns den ganzen Nachmittag am Strand gesonnt."
+ },
+ "re380": {
+  "fr": "le maillot de bain",
+  "pl": "kostium kąpielowy",
+  "ru": "купа́льник",
+  "rulat": "kupálnik",
+  "ex": "She bought a new swimsuit for the holiday.",
+  "exde": "Sie hat sich einen neuen Badeanzug für den Urlaub gekauft."
+ },
+ "re381": {
+  "fr": "le maillot de bain",
+  "pl": "kąpielówki",
+  "ru": "пла́вки",
+  "rulat": "pláwki",
+  "ex": "I forgot my swimming trunks at the hotel.",
+  "exde": "Ich habe meine Badehose im Hotel vergessen."
+ },
+ "re382": {
+  "fr": "le maître-nageur",
+  "pl": "ratownik",
+  "ru": "спаса́тель",
+  "rulat": "spassátel",
+  "ex": "The lifeguard is watching the swimmers.",
+  "exde": "Der Rettungsschwimmer beobachtet die Schwimmer."
+ },
+ "re383": {
+  "fr": "le courant",
+  "pl": "prąd",
+  "ru": "тече́ние",
+  "rulat": "tetschénije",
+  "ex": "The current is very strong here.",
+  "exde": "Die Strömung ist hier sehr stark."
+ },
+ "re384": {
+  "fr": "plonger",
+  "pl": "nurkować",
+  "ru": "ныря́ть",
+  "rulat": "nyrját",
+  "ex": "We want to dive near the reef.",
+  "exde": "Wir wollen in der Nähe des Riffs tauchen."
+ },
+ "re385": {
+  "fr": "faire de la plongée avec tuba",
+  "pl": "nurkować z rurką",
+  "ru": "пла́вать с ма́ской",
+  "rulat": "pláwat s máskoj",
+  "ex": "The children love to snorkel in the bay.",
+  "exde": "Die Kinder lieben es, in der Bucht zu schnorcheln."
+ },
+ "re386": {
+  "fr": "l'île",
+  "pl": "wyspa",
+  "ru": "о́стров",
+  "rulat": "óstrow",
+  "ex": "We took a boat to the island.",
+  "exde": "Wir sind mit dem Boot zur Insel gefahren."
+ },
+ "re387": {
+  "fr": "le sommet",
+  "pl": "szczyt",
+  "ru": "верши́на",
+  "rulat": "werschína",
+  "ex": "We reached the summit at noon.",
+  "exde": "Wir haben den Gipfel am Mittag erreicht."
+ },
+ "re388": {
+  "fr": "la vallée",
+  "pl": "dolina",
+  "ru": "доли́на",
+  "rulat": "dolína",
+  "ex": "The village lies in a green valley.",
+  "exde": "Das Dorf liegt in einem grünen Tal."
+ },
+ "re389": {
+  "fr": "le refuge",
+  "pl": "schronisko",
+  "ru": "го́рная хи́жина",
+  "rulat": "górnaja chíschina",
+  "ex": "We spent the night in a mountain hut.",
+  "exde": "Wir haben in einer Hütte übernachtet."
+ },
+ "re390": {
+  "fr": "le téléphérique",
+  "pl": "kolejka linowa",
+  "ru": "кана́тная доро́га",
+  "rulat": "kanátnaja doróga",
+  "ex": "We took the cable car to the top.",
+  "exde": "Wir sind mit der Seilbahn nach oben gefahren."
+ },
+ "re391": {
+  "fr": "le télésiège",
+  "pl": "wyciąg krzesełkowy",
+  "ru": "кре́сельный подъёмник",
+  "rulat": "kréselnyj podjómnik",
+  "ex": "The chairlift opens at nine.",
+  "exde": "Der Sessellift öffnet um neun."
+ },
+ "re392": {
+  "fr": "grimper",
+  "pl": "wspinać się",
+  "ru": "ла́зить",
+  "rulat": "lásit",
+  "ex": "My brother likes to climb on rocks.",
+  "exde": "Mein Bruder klettert gern auf Felsen."
+ },
+ "re393": {
+  "fr": "les chaussures de randonnée",
+  "pl": "buty trekkingowe",
+  "ru": "тре́ккинговые боти́нки",
+  "rulat": "trékkingowyje botínki",
+  "ex": "Don't forget your hiking boots.",
+  "exde": "Vergiss deine Wanderschuhe nicht."
+ },
+ "re394": {
+  "fr": "la vue",
+  "pl": "widok",
+  "ru": "вид",
+  "rulat": "wid",
+  "ex": "The view from the terrace is amazing.",
+  "exde": "Die Aussicht von der Terrasse ist fantastisch."
+ },
+ "re395": {
+  "fr": "raide",
+  "pl": "stromy",
+  "ru": "круто́й",
+  "rulat": "krutój",
+  "ex": "The path is very steep.",
+  "exde": "Der Weg ist sehr steil."
+ },
+ "re396": {
+  "fr": "faire du ski",
+  "pl": "jeździć na nartach",
+  "ru": "ката́ться на лы́жах",
+  "rulat": "katátsja na lýschach",
+  "ex": "We go to the Alps to ski every winter.",
+  "exde": "Wir fahren jeden Winter in die Alpen, um Ski zu fahren."
+ },
+ "re397": {
+  "fr": "l'argent liquide",
+  "pl": "gotówka",
+  "ru": "нали́чные",
+  "rulat": "nalítschnyje",
+  "ex": "Do you have any cash on you?",
+  "exde": "Hast du Bargeld dabei?"
+ },
+ "re398": {
+  "fr": "la monnaie",
+  "pl": "drobne",
+  "ru": "ме́лочь",
+  "rulat": "mélotsch",
+  "ex": "I have no change for the bus.",
+  "exde": "Ich habe kein Kleingeld für den Bus."
+ },
+ "re399": {
+  "fr": "la pièce",
+  "pl": "moneta",
+  "ru": "моне́та",
+  "rulat": "monéta",
+  "ex": "He put a coin in the machine.",
+  "exde": "Er hat eine Münze in den Automaten geworfen."
+ },
+ "re400": {
+  "fr": "le billet",
+  "pl": "banknot",
+  "ru": "банкно́та",
+  "rulat": "banknóta",
+  "ex": "Can you change this banknote?",
+  "exde": "Können Sie diesen Geldschein wechseln?"
  }
 }

@@ -1,0 +1,2402 @@
+{
+ "au001": {
+  "fr": "la carrosserie",
+  "pl": "karoseria",
+  "ru": "ку́зов",
+  "rulat": "kúsow",
+  "ex": "The bodywork of the car is badly scratched.",
+  "exde": "Die Karosserie des Autos ist stark zerkratzt."
+ },
+ "au002": {
+  "fr": "le capot",
+  "pl": "maska",
+  "ru": "капо́т",
+  "rulat": "kapót",
+  "ex": "He opened the bonnet to check the oil.",
+  "exde": "Er öffnete die Motorhaube, um das Öl zu prüfen."
+ },
+ "au003": {
+  "fr": "le coffre",
+  "pl": "bagażnik",
+  "ru": "бага́жник",
+  "rulat": "bagáschnik",
+  "ex": "Put the suitcases in the boot.",
+  "exde": "Leg die Koffer in den Kofferraum."
+ },
+ "au004": {
+  "fr": "le couvercle du coffre",
+  "pl": "pokrywa bagażnika",
+  "ru": "кры́шка бага́жника",
+  "rulat": "krýschka bagáschnika",
+  "ex": "The boot lid won't close properly.",
+  "exde": "Der Kofferraumdeckel schließt nicht richtig."
+ },
+ "au005": {
+  "fr": "le pare-chocs",
+  "pl": "zderzak",
+  "ru": "ба́мпер",
+  "rulat": "bámper",
+  "ex": "The rear bumper was damaged in the accident.",
+  "exde": "Die hintere Stoßstange wurde beim Unfall beschädigt."
+ },
+ "au006": {
+  "fr": "l'aile",
+  "pl": "błotnik",
+  "ru": "крыло́",
+  "rulat": "kryló",
+  "ex": "There is a scratch on the left wing.",
+  "exde": "Am linken Kotflügel ist ein Kratzer."
+ },
+ "au007": {
+  "fr": "le pare-brise",
+  "pl": "szyba przednia",
+  "ru": "лобово́е стекло́",
+  "rulat": "lobowóje stekló",
+  "ex": "The windscreen is cracked.",
+  "exde": "Die Windschutzscheibe hat einen Sprung."
+ },
+ "au008": {
+  "fr": "l'essuie-glace",
+  "pl": "wycieraczka",
+  "ru": "дво́рник",
+  "rulat": "dwórnik",
+  "ex": "The windscreen wipers need replacing.",
+  "exde": "Die Scheibenwischer müssen ersetzt werden."
+ },
+ "au009": {
+  "fr": "le rétroviseur extérieur",
+  "pl": "lusterko boczne",
+  "ru": "боково́е зе́ркало",
+  "rulat": "bokowóje sérkalo",
+  "ex": "Someone broke my wing mirror.",
+  "exde": "Jemand hat meinen Außenspiegel abgebrochen."
+ },
+ "au010": {
+  "fr": "la poignée de porte",
+  "pl": "klamka",
+  "ru": "дверна́я ру́чка",
+  "rulat": "dwernája rútschka",
+  "ex": "The door handle is frozen.",
+  "exde": "Der Türgriff ist eingefroren."
+ },
+ "au011": {
+  "fr": "le toit",
+  "pl": "dach",
+  "ru": "кры́ша",
+  "rulat": "krýscha",
+  "ex": "We tied the bikes to the roof of the car.",
+  "exde": "Wir haben die Fahrräder auf dem Dach des Autos festgebunden."
+ },
+ "au012": {
+  "fr": "le toit ouvrant",
+  "pl": "szyberdach",
+  "ru": "люк",
+  "rulat": "ljuk",
+  "ex": "Open the sunroof, it's hot.",
+  "exde": "Mach das Schiebedach auf, es ist heiß."
+ },
+ "au013": {
+  "fr": "le phare",
+  "pl": "reflektor",
+  "ru": "фа́ра",
+  "rulat": "fára",
+  "ex": "One of the headlights isn't working.",
+  "exde": "Einer der Scheinwerfer funktioniert nicht."
+ },
+ "au014": {
+  "fr": "le feu arrière",
+  "pl": "światło tylne",
+  "ru": "за́дний фона́рь",
+  "rulat": "sádni fonár",
+  "ex": "Your rear light is broken.",
+  "exde": "Dein Rücklicht ist kaputt."
+ },
+ "au015": {
+  "fr": "le clignotant",
+  "pl": "kierunkowskaz",
+  "ru": "поворо́тник",
+  "rulat": "poworótnik",
+  "ex": "Don't forget to use your indicator.",
+  "exde": "Vergiss nicht, den Blinker zu setzen."
+ },
+ "au016": {
+  "fr": "la plaque d'immatriculation",
+  "pl": "tablica rejestracyjna",
+  "ru": "номерно́й знак",
+  "rulat": "nomernói snak",
+  "ex": "I couldn't read the number plate.",
+  "exde": "Ich konnte das Nummernschild nicht lesen."
+ },
+ "au017": {
+  "fr": "la calandre",
+  "pl": "atrapa chłodnicy",
+  "ru": "решётка радиа́тора",
+  "rulat": "reschjótka radiátora",
+  "ex": "The new model has a larger radiator grille.",
+  "exde": "Das neue Modell hat einen größeren Kühlergrill."
+ },
+ "au018": {
+  "fr": "la lunette arrière",
+  "pl": "tylna szyba",
+  "ru": "за́днее стекло́",
+  "rulat": "sádneje stekló",
+  "ex": "The rear window is covered in snow.",
+  "exde": "Die Heckscheibe ist mit Schnee bedeckt."
+ },
+ "au019": {
+  "fr": "la vitre latérale",
+  "pl": "szyba boczna",
+  "ru": "боково́е стекло́",
+  "rulat": "bokowóje stekló",
+  "ex": "The thief smashed the side window.",
+  "exde": "Der Dieb hat die Seitenscheibe eingeschlagen."
+ },
+ "au020": {
+  "fr": "la bosse",
+  "pl": "wgniecenie",
+  "ru": "вмя́тина",
+  "rulat": "wmjátina",
+  "ex": "There's a dent in the door.",
+  "exde": "In der Tür ist eine Delle."
+ },
+ "au021": {
+  "fr": "la rayure",
+  "pl": "rysa",
+  "ru": "цара́пина",
+  "rulat": "zarápina",
+  "ex": "There is a scratch on the door.",
+  "exde": "An der Tür ist ein Kratzer."
+ },
+ "au022": {
+  "fr": "la rouille",
+  "pl": "rdza",
+  "ru": "ржа́вчина",
+  "rulat": "rsháwtschina",
+  "ex": "The old car is covered in rust.",
+  "exde": "Das alte Auto ist voller Rost."
+ },
+ "au023": {
+  "fr": "la peinture",
+  "pl": "lakier",
+  "ru": "кра́ска",
+  "rulat": "kráska",
+  "ex": "The paintwork is still shiny.",
+  "exde": "Der Lack glänzt noch."
+ },
+ "au024": {
+  "fr": "la jante",
+  "pl": "felga",
+  "ru": "колёсный диск",
+  "rulat": "koljósny disk",
+  "ex": "I bought new wheel rims for my car.",
+  "exde": "Ich habe neue Felgen für mein Auto gekauft."
+ },
+ "au025": {
+  "fr": "l'enjoliveur",
+  "pl": "kołpak",
+  "ru": "колпа́к",
+  "rulat": "kalpák",
+  "ex": "We lost a hubcap on the motorway.",
+  "exde": "Wir haben auf der Autobahn eine Radkappe verloren."
+ },
+ "au026": {
+  "fr": "le volant",
+  "pl": "kierownica",
+  "ru": "руль",
+  "rulat": "rul",
+  "ex": "Keep both hands on the steering wheel.",
+  "exde": "Halte beide Hände am Lenkrad."
+ },
+ "au027": {
+  "fr": "le tableau de bord",
+  "pl": "deska rozdzielcza",
+  "ru": "прибо́рная пане́ль",
+  "rulat": "pribórnaja panél",
+  "ex": "A warning light came on on the dashboard.",
+  "exde": "Am Armaturenbrett ging eine Warnleuchte an."
+ },
+ "au028": {
+  "fr": "le compteur de vitesse",
+  "pl": "prędkościomierz",
+  "ru": "спидо́метр",
+  "rulat": "spidómetr",
+  "ex": "The speedometer shows 50 km/h.",
+  "exde": "Der Tacho zeigt 50 km/h."
+ },
+ "au029": {
+  "fr": "le compte-tours",
+  "pl": "obrotomierz",
+  "ru": "тахо́метр",
+  "rulat": "tachómetr",
+  "ex": "Watch the rev counter when you change gear.",
+  "exde": "Achte beim Schalten auf den Drehzahlmesser."
+ },
+ "au030": {
+  "fr": "la pédale d'accélérateur",
+  "pl": "pedał gazu",
+  "ru": "педа́ль га́за",
+  "rulat": "pedál gása",
+  "ex": "Press the accelerator gently.",
+  "exde": "Tritt das Gaspedal sanft."
+ },
+ "au031": {
+  "fr": "la pédale de frein",
+  "pl": "pedał hamulca",
+  "ru": "педа́ль то́рмоза",
+  "rulat": "pedál tórmosa",
+  "ex": "The brake pedal feels soft.",
+  "exde": "Das Bremspedal fühlt sich weich an."
+ },
+ "au032": {
+  "fr": "la pédale d'embrayage",
+  "pl": "pedał sprzęgła",
+  "ru": "педа́ль сцепле́ния",
+  "rulat": "pedál szeplénija",
+  "ex": "Push the clutch pedal all the way down.",
+  "exde": "Tritt das Kupplungspedal ganz durch."
+ },
+ "au033": {
+  "fr": "le levier de vitesse",
+  "pl": "dźwignia zmiany biegów",
+  "ru": "рыча́г переключе́ния переда́ч",
+  "rulat": "rytschág perekljutschénija peredátsch",
+  "ex": "Put the gear lever in neutral.",
+  "exde": "Stell den Schalthebel in den Leerlauf."
+ },
+ "au034": {
+  "fr": "le frein à main",
+  "pl": "hamulec ręczny",
+  "ru": "ручно́й то́рмоз",
+  "rulat": "rutschnój tórmos",
+  "ex": "Don't forget to pull the handbrake.",
+  "exde": "Vergiss nicht, die Handbremse anzuziehen."
+ },
+ "au035": {
+  "fr": "le siège conducteur",
+  "pl": "fotel kierowcy",
+  "ru": "води́тельское сиде́нье",
+  "rulat": "wodítelskoje sidénje",
+  "ex": "Can you adjust the driver's seat?",
+  "exde": "Kannst du den Fahrersitz verstellen?"
+ },
+ "au036": {
+  "fr": "le siège passager",
+  "pl": "fotel pasażera",
+  "ru": "пассажи́рское сиде́нье",
+  "rulat": "passashírskoje sidénje",
+  "ex": "My bag is on the passenger seat.",
+  "exde": "Meine Tasche liegt auf dem Beifahrersitz."
+ },
+ "au037": {
+  "fr": "la banquette arrière",
+  "pl": "tylna kanapa",
+  "ru": "за́днее сиде́нье",
+  "rulat": "sádneje sidénje",
+  "ex": "The children are sitting on the back seat.",
+  "exde": "Die Kinder sitzen auf der Rückbank."
+ },
+ "au038": {
+  "fr": "l'appui-tête",
+  "pl": "zagłówek",
+  "ru": "подголо́вник",
+  "rulat": "podgolównik",
+  "ex": "Adjust the headrest to the right height.",
+  "exde": "Stell die Kopfstütze auf die richtige Höhe ein."
+ },
+ "au039": {
+  "fr": "le rétroviseur",
+  "pl": "lusterko wsteczne",
+  "ru": "зе́ркало за́днего ви́да",
+  "rulat": "sérkalo sádnewo wída",
+  "ex": "Look in the rear-view mirror before you brake.",
+  "exde": "Schau vor dem Bremsen in den Rückspiegel."
+ },
+ "au040": {
+  "fr": "le pare-soleil",
+  "pl": "osłona przeciwsłoneczna",
+  "ru": "солнцезащи́тный козырёк",
+  "rulat": "sonzesaschtschítny kosyrjók",
+  "ex": "Pull down the sun visor, the sun is blinding.",
+  "exde": "Klapp die Sonnenblende runter, die Sonne blendet."
+ },
+ "au041": {
+  "fr": "la boîte à gants",
+  "pl": "schowek",
+  "ru": "бардачо́к",
+  "rulat": "bardatschók",
+  "ex": "The map is in the glove compartment.",
+  "exde": "Die Karte ist im Handschuhfach."
+ },
+ "au042": {
+  "fr": "la console centrale",
+  "pl": "konsola środkowa",
+  "ru": "центра́льная ко́нсоль",
+  "rulat": "zentrálnaja kónsol",
+  "ex": "My phone is on the centre console.",
+  "exde": "Mein Handy liegt auf der Mittelkonsole."
+ },
+ "au043": {
+  "fr": "le klaxon",
+  "pl": "klakson",
+  "ru": "гудо́к",
+  "rulat": "gudók",
+  "ex": "He pressed the horn twice.",
+  "exde": "Er drückte zweimal auf die Hupe."
+ },
+ "au044": {
+  "fr": "les sièges chauffants",
+  "pl": "podgrzewane fotele",
+  "ru": "подогре́в сиде́ний",
+  "rulat": "podogréw sidénij",
+  "ex": "In winter I love the heated seats.",
+  "exde": "Im Winter liebe ich die Sitzheizung."
+ },
+ "au045": {
+  "fr": "l'autoradio",
+  "pl": "radio samochodowe",
+  "ru": "автомагнито́ла",
+  "rulat": "awtomagnitóla",
+  "ex": "Turn on the car radio, please.",
+  "exde": "Mach bitte das Autoradio an."
+ },
+ "au046": {
+  "fr": "la clé de contact",
+  "pl": "kluczyk do stacyjki",
+  "ru": "ключ зажига́ния",
+  "rulat": "kljutsch saschigánija",
+  "ex": "I can't find the ignition key.",
+  "exde": "Ich finde den Zündschlüssel nicht."
+ },
+ "au047": {
+  "fr": "les feux de détresse",
+  "pl": "światła awaryjne",
+  "ru": "авари́йная сигнализа́ция",
+  "rulat": "awaríjnaja signalisázija",
+  "ex": "Switch on the hazard warning lights after an accident.",
+  "exde": "Schalte nach einem Unfall die Warnblinkanlage ein."
+ },
+ "au048": {
+  "fr": "le voyant",
+  "pl": "kontrolka",
+  "ru": "контро́льная ла́мпа",
+  "rulat": "kontrólnaja lámpa",
+  "ex": "A warning light came on on the dashboard.",
+  "exde": "Auf dem Armaturenbrett ging eine Kontrollleuchte an."
+ },
+ "au049": {
+  "fr": "le compteur kilométrique",
+  "pl": "licznik kilometrów",
+  "ru": "одо́метр",
+  "rulat": "odómetr",
+  "ex": "The mileometer shows 80,000 kilometres.",
+  "exde": "Der Kilometerzähler zeigt 80.000 Kilometer."
+ },
+ "au050": {
+  "fr": "le régulateur de vitesse",
+  "pl": "tempomat",
+  "ru": "кру́из-контро́ль",
+  "rulat": "krúis-kontról",
+  "ex": "I use cruise control on the motorway.",
+  "exde": "Auf der Autobahn benutze ich den Tempomat."
+ },
+ "au051": {
+  "fr": "le moteur",
+  "pl": "silnik",
+  "ru": "дви́гатель",
+  "rulat": "dwígatel",
+  "ex": "The engine won't start.",
+  "exde": "Der Motor springt nicht an."
+ },
+ "au052": {
+  "fr": "la boîte de vitesses",
+  "pl": "skrzynia biegów",
+  "ru": "коро́бка переда́ч",
+  "rulat": "koróbka peredátsch",
+  "ex": "The gearbox makes a strange noise.",
+  "exde": "Das Getriebe macht ein seltsames Geräusch."
+ },
+ "au053": {
+  "fr": "la transmission",
+  "pl": "napęd",
+  "ru": "при́вод",
+  "rulat": "príwod",
+  "ex": "This car has an electric drive.",
+  "exde": "Dieses Auto hat einen elektrischen Antrieb."
+ },
+ "au054": {
+  "fr": "l'embrayage",
+  "pl": "sprzęgło",
+  "ru": "сцепле́ние",
+  "rulat": "szeplénije",
+  "ex": "Press the clutch before changing gear.",
+  "exde": "Tritt die Kupplung, bevor du schaltest."
+ },
+ "au055": {
+  "fr": "le cylindre",
+  "pl": "cylinder",
+  "ru": "цили́ндр",
+  "rulat": "zilíndr",
+  "ex": "The engine has four cylinders.",
+  "exde": "Der Motor hat vier Zylinder."
+ },
+ "au056": {
+  "fr": "le piston",
+  "pl": "tłok",
+  "ru": "по́ршень",
+  "rulat": "pórschen",
+  "ex": "The piston moves up and down.",
+  "exde": "Der Kolben bewegt sich auf und ab."
+ },
+ "au057": {
+  "fr": "la bougie d'allumage",
+  "pl": "świeca zapłonowa",
+  "ru": "свеча́ зажига́ния",
+  "rulat": "swetschá saschigánija",
+  "ex": "The mechanic replaced the spark plugs.",
+  "exde": "Der Mechaniker hat die Zündkerzen ausgetauscht."
+ },
+ "au058": {
+  "fr": "le vilebrequin",
+  "pl": "wał korbowy",
+  "ru": "коле́нчатый вал",
+  "rulat": "koléntschatyj wal",
+  "ex": "The crankshaft is broken.",
+  "exde": "Die Kurbelwelle ist gebrochen."
+ },
+ "au059": {
+  "fr": "l'arbre à cames",
+  "pl": "wałek rozrządu",
+  "ru": "распредели́тельный вал",
+  "rulat": "raspredelítelnyj wal",
+  "ex": "The camshaft controls the valves.",
+  "exde": "Die Nockenwelle steuert die Ventile."
+ },
+ "au060": {
+  "fr": "la courroie de distribution",
+  "pl": "pasek rozrządu",
+  "ru": "реме́нь ГРМ",
+  "rulat": "remén ge-er-ém",
+  "ex": "The timing belt should be changed every 100,000 kilometres.",
+  "exde": "Der Zahnriemen sollte alle 100.000 Kilometer gewechselt werden."
+ },
+ "au061": {
+  "fr": "la courroie de ventilateur",
+  "pl": "pasek klinowy",
+  "ru": "клиново́й реме́нь",
+  "rulat": "klinowój remén",
+  "ex": "The fan belt is squeaking.",
+  "exde": "Der Keilriemen quietscht."
+ },
+ "au062": {
+  "fr": "l'alternateur",
+  "pl": "alternator",
+  "ru": "генера́тор",
+  "rulat": "generátor",
+  "ex": "The alternator charges the battery.",
+  "exde": "Die Lichtmaschine lädt die Batterie."
+ },
+ "au063": {
+  "fr": "le démarreur",
+  "pl": "rozrusznik",
+  "ru": "ста́ртер",
+  "rulat": "stárter",
+  "ex": "The starter motor won't turn.",
+  "exde": "Der Anlasser dreht nicht."
+ },
+ "au064": {
+  "fr": "la batterie",
+  "pl": "akumulator",
+  "ru": "аккумуля́тор",
+  "rulat": "akkumuljátor",
+  "ex": "The battery is dead.",
+  "exde": "Die Batterie ist leer."
+ },
+ "au065": {
+  "fr": "le radiateur",
+  "pl": "chłodnica",
+  "ru": "радиа́тор",
+  "rulat": "radiátor",
+  "ex": "The radiator is leaking.",
+  "exde": "Der Kühler ist undicht."
+ },
+ "au066": {
+  "fr": "le liquide de refroidissement",
+  "pl": "płyn chłodniczy",
+  "ru": "охлажда́ющая жи́дкость",
+  "rulat": "ochlashdájuschtschaja shídkost",
+  "ex": "Please check the coolant level.",
+  "exde": "Bitte prüf den Stand des Kühlmittels."
+ },
+ "au067": {
+  "fr": "l'huile moteur",
+  "pl": "olej silnikowy",
+  "ru": "мото́рное ма́сло",
+  "rulat": "motórnoje másslo",
+  "ex": "The car needs engine oil.",
+  "exde": "Das Auto braucht Motoröl."
+ },
+ "au068": {
+  "fr": "la vidange",
+  "pl": "wymiana oleju",
+  "ru": "заме́на ма́сла",
+  "rulat": "saména másla",
+  "ex": "My car is due for an oil change.",
+  "exde": "Mein Auto braucht einen Ölwechsel."
+ },
+ "au069": {
+  "fr": "le filtre à huile",
+  "pl": "filtr oleju",
+  "ru": "ма́сляный фильтр",
+  "rulat": "másljanyj filtr",
+  "ex": "Please replace the oil filter too.",
+  "exde": "Bitte wechsle auch den Ölfilter."
+ },
+ "au070": {
+  "fr": "le filtre à air",
+  "pl": "filtr powietrza",
+  "ru": "возду́шный фильтр",
+  "rulat": "wosdúschnyj filtr",
+  "ex": "The air filter is dirty.",
+  "exde": "Der Luftfilter ist schmutzig."
+ },
+ "au071": {
+  "fr": "le réservoir",
+  "pl": "zbiornik paliwa",
+  "ru": "топли́вный бак",
+  "rulat": "toplíwnyj bak",
+  "ex": "The fuel tank is almost empty.",
+  "exde": "Der Tank ist fast leer."
+ },
+ "au072": {
+  "fr": "la pompe d'injection",
+  "pl": "pompa wtryskowa",
+  "ru": "топли́вный насо́с высо́кого давле́ния",
+  "rulat": "toplíwnyj nassós wyssókowo dawlénija",
+  "ex": "The injection pump is broken.",
+  "exde": "Die Einspritzpumpe ist kaputt."
+ },
+ "au073": {
+  "fr": "le pot d'échappement",
+  "pl": "wydech",
+  "ru": "выхлопна́я труба́",
+  "rulat": "wychlopnája trubá",
+  "ex": "The exhaust is very loud.",
+  "exde": "Der Auspuff ist sehr laut."
+ },
+ "au074": {
+  "fr": "le pot catalytique",
+  "pl": "katalizator",
+  "ru": "катализа́тор",
+  "rulat": "katalisátor",
+  "ex": "The catalytic converter reduces emissions.",
+  "exde": "Der Katalysator reduziert die Abgase."
+ },
+ "au075": {
+  "fr": "le turbocompresseur",
+  "pl": "turbosprężarka",
+  "ru": "турбокомпре́ссор",
+  "rulat": "turbokompréssor",
+  "ex": "The engine has a turbocharger.",
+  "exde": "Der Motor hat einen Turbolader."
+ },
+ "au076": {
+  "fr": "le frein",
+  "pl": "hamulec",
+  "ru": "то́рмоз",
+  "rulat": "tórmos",
+  "ex": "Press the brake gently.",
+  "exde": "Tritt sanft auf die Bremse."
+ },
+ "au077": {
+  "fr": "le disque de frein",
+  "pl": "tarcza hamulcowa",
+  "ru": "тормозно́й диск",
+  "rulat": "tormosnój disk",
+  "ex": "The brake disc is worn.",
+  "exde": "Die Bremsscheibe ist abgenutzt."
+ },
+ "au078": {
+  "fr": "la plaquette de frein",
+  "pl": "klocek hamulcowy",
+  "ru": "тормозна́я коло́дка",
+  "rulat": "tormosnája kolódka",
+  "ex": "I need a new brake pad.",
+  "exde": "Ich brauche einen neuen Bremsbelag."
+ },
+ "au079": {
+  "fr": "le liquide de frein",
+  "pl": "płyn hamulcowy",
+  "ru": "тормозна́я жи́дкость",
+  "rulat": "tormosnája shídkost",
+  "ex": "The brake fluid level is low.",
+  "exde": "Der Stand der Bremsflüssigkeit ist niedrig."
+ },
+ "au080": {
+  "fr": "le tambour de frein",
+  "pl": "bęben hamulcowy",
+  "ru": "тормозно́й бараба́н",
+  "rulat": "tormosnój barabán",
+  "ex": "The mechanic checked the brake drum.",
+  "exde": "Der Mechaniker hat die Bremstrommel geprüft."
+ },
+ "au081": {
+  "fr": "l'étrier de frein",
+  "pl": "zacisk hamulcowy",
+  "ru": "тормозно́й суппо́рт",
+  "rulat": "tormosnój suppórt",
+  "ex": "The mechanic replaced the front brake calliper.",
+  "exde": "Der Mechaniker hat den vorderen Bremssattel ausgetauscht."
+ },
+ "au082": {
+  "fr": "la conduite de frein",
+  "pl": "przewód hamulcowy",
+  "ru": "тормозна́я тру́бка",
+  "rulat": "tormosnája trúbka",
+  "ex": "The brake line is leaking.",
+  "exde": "Die Bremsleitung ist undicht."
+ },
+ "au083": {
+  "fr": "le servofrein",
+  "pl": "serwo hamulcowe",
+  "ru": "усили́тель тормозо́в",
+  "rulat": "ussilítel tormosów",
+  "ex": "The brake servo makes braking easier.",
+  "exde": "Der Bremskraftverstärker erleichtert das Bremsen."
+ },
+ "au084": {
+  "fr": "le système antiblocage des roues (ABS)",
+  "pl": "układ przeciwblokujący (ABS)",
+  "ru": "антиблокиро́вочная систе́ма (АБС)",
+  "rulat": "antiblokirówotschnaja sistéma (ABS)",
+  "ex": "Modern cars have an anti-lock braking system (ABS).",
+  "exde": "Moderne Autos haben ein Antiblockiersystem (ABS)."
+ },
+ "au085": {
+  "fr": "la distance de freinage",
+  "pl": "droga hamowania",
+  "ru": "тормозно́й путь",
+  "rulat": "tormosnój put",
+  "ex": "The braking distance is longer on wet roads.",
+  "exde": "Auf nassen Straßen ist der Bremsweg länger."
+ },
+ "au086": {
+  "fr": "le freinage d'urgence",
+  "pl": "hamowanie awaryjne",
+  "ru": "э́кстренное торможе́ние",
+  "rulat": "ékstrennoje tormoschénije",
+  "ex": "The driver had to make an emergency stop.",
+  "exde": "Der Fahrer musste eine Vollbremsung machen."
+ },
+ "au087": {
+  "fr": "la direction",
+  "pl": "układ kierowniczy",
+  "ru": "рулево́е управле́ние",
+  "rulat": "rulewóje uprawlénije",
+  "ex": "The steering feels very light.",
+  "exde": "Die Lenkung fühlt sich sehr leicht an."
+ },
+ "au088": {
+  "fr": "la direction assistée",
+  "pl": "wspomaganie kierownicy",
+  "ru": "гидроусили́тель руля́",
+  "rulat": "gidroussilítel ruljá",
+  "ex": "My old car has no power steering.",
+  "exde": "Mein altes Auto hat keine Servolenkung."
+ },
+ "au089": {
+  "fr": "diriger",
+  "pl": "kierować",
+  "ru": "рули́ть",
+  "rulat": "rulít",
+  "ex": "It is hard to steer on ice.",
+  "exde": "Auf Eis ist es schwer zu lenken."
+ },
+ "au090": {
+  "fr": "la biellette de direction",
+  "pl": "drążek kierowniczy",
+  "ru": "рулева́я тя́га",
+  "rulat": "rulewája tjága",
+  "ex": "The track rod was bent after the accident.",
+  "exde": "Die Spurstange war nach dem Unfall verbogen."
+ },
+ "au091": {
+  "fr": "la crémaillère de direction",
+  "pl": "przekładnia kierownicza",
+  "ru": "рулева́я ре́йка",
+  "rulat": "rulewája réjka",
+  "ex": "The steering rack needs to be replaced.",
+  "exde": "Das Lenkgetriebe muss ersetzt werden."
+ },
+ "au092": {
+  "fr": "le réglage du parallélisme",
+  "pl": "ustawienie geometrii kół",
+  "ru": "разва́л-схожде́ние",
+  "rulat": "raswál-s-choschdénije",
+  "ex": "After getting new tyres, I had a wheel alignment done.",
+  "exde": "Nach den neuen Reifen habe ich eine Achsvermessung machen lassen."
+ },
+ "au093": {
+  "fr": "le parallélisme",
+  "pl": "zbieżność",
+  "ru": "схожде́ние",
+  "rulat": "s-choschdénije",
+  "ex": "The tracking is out, so the tyres wear unevenly.",
+  "exde": "Die Spur ist verstellt, deshalb nutzen sich die Reifen ungleichmäßig ab."
+ },
+ "au094": {
+  "fr": "la suspension",
+  "pl": "zawieszenie",
+  "ru": "подве́ска",
+  "rulat": "podwéska",
+  "ex": "The suspension makes a strange noise.",
+  "exde": "Das Fahrwerk macht ein seltsames Geräusch."
+ },
+ "au095": {
+  "fr": "l'amortisseur",
+  "pl": "amortyzator",
+  "ru": "амортиза́тор",
+  "rulat": "amortisátor",
+  "ex": "One shock absorber is worn out.",
+  "exde": "Ein Stoßdämpfer ist verschlissen."
+ },
+ "au096": {
+  "fr": "le ressort",
+  "pl": "sprężyna",
+  "ru": "пружи́на",
+  "rulat": "pruschína",
+  "ex": "The rear spring is broken.",
+  "exde": "Die hintere Feder ist gebrochen."
+ },
+ "au097": {
+  "fr": "l'essieu",
+  "pl": "oś",
+  "ru": "ось",
+  "rulat": "os",
+  "ex": "The front axle carries most of the weight.",
+  "exde": "Die vordere Achse trägt das meiste Gewicht."
+ },
+ "au098": {
+  "fr": "le roulement de roue",
+  "pl": "łożysko koła",
+  "ru": "ступи́чный подши́пник",
+  "rulat": "stupítschnyj podschípnik",
+  "ex": "A humming noise can mean a bad wheel bearing.",
+  "exde": "Ein Brummgeräusch kann auf ein defektes Radlager hindeuten."
+ },
+ "au099": {
+  "fr": "le triangle de suspension",
+  "pl": "wahacz",
+  "ru": "рыча́г подве́ски",
+  "rulat": "rytschág podwéski",
+  "ex": "The bushings on the wishbone are worn.",
+  "exde": "Die Buchsen am Querlenker sind abgenutzt."
+ },
+ "au100": {
+  "fr": "la barre stabilisatrice",
+  "pl": "stabilizator",
+  "ru": "стабилиза́тор",
+  "rulat": "stabilisátor",
+  "ex": "The anti-roll bar reduces body roll in corners.",
+  "exde": "Der Stabilisator verringert die Seitenneigung in Kurven."
+ },
+ "au101": {
+  "fr": "la roue",
+  "pl": "koło",
+  "ru": "колесо́",
+  "rulat": "kolessó",
+  "ex": "The left wheel is wobbling.",
+  "exde": "Das linke Rad wackelt."
+ },
+ "au102": {
+  "fr": "la bande de roulement",
+  "pl": "bieżnik",
+  "ru": "проте́ктор",
+  "rulat": "protéktor",
+  "ex": "The tread on this tyre is worn.",
+  "exde": "Das Profil dieses Reifens ist abgefahren."
+ },
+ "au103": {
+  "fr": "la profondeur des sculptures",
+  "pl": "głębokość bieżnika",
+  "ru": "глубина́ проте́ктора",
+  "rulat": "glubiná protéktora",
+  "ex": "The tread depth must be at least 1.6 millimetres.",
+  "exde": "Die Profiltiefe muss mindestens 1,6 Millimeter betragen."
+ },
+ "au104": {
+  "fr": "le pneu hiver",
+  "pl": "opona zimowa",
+  "ru": "зи́мняя ши́на",
+  "rulat": "símnjaja schína",
+  "ex": "We put on winter tyres in October.",
+  "exde": "Wir ziehen im Oktober die Winterreifen auf."
+ },
+ "au105": {
+  "fr": "le pneu été",
+  "pl": "opona letnia",
+  "ru": "ле́тняя ши́на",
+  "rulat": "ljétnjaja schína",
+  "ex": "Summer tyres are not suitable for snow.",
+  "exde": "Sommerreifen sind für Schnee nicht geeignet."
+ },
+ "au106": {
+  "fr": "le pneu quatre saisons",
+  "pl": "opona całoroczna",
+  "ru": "всесезо́нная ши́на",
+  "rulat": "wsessesónnaja schína",
+  "ex": "All-season tyres save you the tyre change.",
+  "exde": "Ganzjahresreifen ersparen dir den Reifenwechsel."
+ },
+ "au107": {
+  "fr": "le changement de pneus",
+  "pl": "wymiana opon",
+  "ru": "заме́на шин",
+  "rulat": "saména schin",
+  "ex": "I booked a tyre change at the garage.",
+  "exde": "Ich habe einen Reifenwechsel in der Werkstatt gebucht."
+ },
+ "au108": {
+  "fr": "la roue de secours",
+  "pl": "koło zapasowe",
+  "ru": "запа́сное колесо́",
+  "rulat": "sapásnoje kolessó",
+  "ex": "The spare wheel is under the boot floor.",
+  "exde": "Das Ersatzrad liegt unter dem Kofferraumboden."
+ },
+ "au109": {
+  "fr": "le cric",
+  "pl": "podnośnik",
+  "ru": "домкра́т",
+  "rulat": "domkrát",
+  "ex": "Place the jack under the car.",
+  "exde": "Setz den Wagenheber unter das Auto."
+ },
+ "au110": {
+  "fr": "l'écrou de roue",
+  "pl": "nakrętka koła",
+  "ru": "колёсная га́йка",
+  "rulat": "koljóssnaja gájka",
+  "ex": "Loosen the wheel nuts before lifting the car.",
+  "exde": "Löse die Radmuttern, bevor du das Auto anhebst."
+ },
+ "au111": {
+  "fr": "le boulon de roue",
+  "pl": "śruba koła",
+  "ru": "колёсный болт",
+  "rulat": "koljóssnyj bolt",
+  "ex": "One wheel bolt is missing.",
+  "exde": "Eine Radschraube fehlt."
+ },
+ "au112": {
+  "fr": "le passage de roue",
+  "pl": "nadkole",
+  "ru": "колёсная ни́ша",
+  "rulat": "koljóssnaja níscha",
+  "ex": "There is mud in the wheel arch.",
+  "exde": "Im Radkasten ist Schlamm."
+ },
+ "au113": {
+  "fr": "la valve",
+  "pl": "wentyl",
+  "ru": "ни́ппель",
+  "rulat": "níppel",
+  "ex": "The valve is leaking air.",
+  "exde": "Das Ventil verliert Luft."
+ },
+ "au114": {
+  "fr": "gonfler",
+  "pl": "pompować",
+  "ru": "накача́ть",
+  "rulat": "nakatschát",
+  "ex": "I need to inflate the tyres.",
+  "exde": "Ich muss die Reifen aufpumpen."
+ },
+ "au115": {
+  "fr": "le kit anti-crevaison",
+  "pl": "zestaw naprawczy do opon",
+  "ru": "ремкомпле́кт для шин",
+  "rulat": "remkompljékt dlja schin",
+  "ex": "The car has a tyre repair kit instead of a spare wheel.",
+  "exde": "Das Auto hat ein Reifenpannenset statt eines Ersatzrads."
+ },
+ "au116": {
+  "fr": "la crevaison",
+  "pl": "przebicie opony",
+  "ru": "проко́л ши́ны",
+  "rulat": "prokól schíny",
+  "ex": "We had a puncture on the motorway.",
+  "exde": "Wir hatten eine Reifenpanne auf der Autobahn."
+ },
+ "au117": {
+  "fr": "équilibrer",
+  "pl": "wyważać",
+  "ru": "баланси́ровать",
+  "rulat": "balanssírowat",
+  "ex": "The new tyres must be balanced.",
+  "exde": "Die neuen Reifen müssen ausgewuchtet werden."
+ },
+ "au118": {
+  "fr": "la chaîne à neige",
+  "pl": "łańcuch śniegowy",
+  "ru": "цепь противоскольже́ния",
+  "rulat": "zep protiwoskolschénija",
+  "ex": "Snow chains are required on this pass.",
+  "exde": "Auf diesem Pass sind Schneeketten Pflicht."
+ },
+ "au119": {
+  "fr": "le pneu clouté",
+  "pl": "opona z kolcami",
+  "ru": "шипо́ванная ши́на",
+  "rulat": "schipówannaja schína",
+  "ex": "Studded tyres are banned in Germany.",
+  "exde": "Spikereifen sind in Deutschland verboten."
+ },
+ "au120": {
+  "fr": "le flanc du pneu",
+  "pl": "bok opony",
+  "ru": "бокови́на ши́ны",
+  "rulat": "bokowína schíny",
+  "ex": "The sidewall has a crack.",
+  "exde": "Die Reifenflanke hat einen Riss."
+ },
+ "au121": {
+  "fr": "l'usure des pneus",
+  "pl": "zużycie opon",
+  "ru": "изно́с шин",
+  "rulat": "isnós schin",
+  "ex": "Uneven tyre wear can mean the wheels need aligning.",
+  "exde": "Ungleichmäßiger Reifenverschleiß kann bedeuten, dass die Räder ausgerichtet werden müssen."
+ },
+ "au122": {
+  "fr": "usé",
+  "pl": "zużyty",
+  "ru": "изно́шенный",
+  "rulat": "isnóschennyj",
+  "ex": "The front tyres are worn and need replacing.",
+  "exde": "Die Vorderreifen sind abgefahren und müssen ersetzt werden."
+ },
+ "au123": {
+  "fr": "le changement de roue",
+  "pl": "wymiana koła",
+  "ru": "заме́на колеса́",
+  "rulat": "samjéna kolessá",
+  "ex": "A wheel change takes about fifteen minutes.",
+  "exde": "Ein Radwechsel dauert etwa fünfzehn Minuten."
+ },
+ "au124": {
+  "fr": "la clé dynamométrique",
+  "pl": "klucz dynamometryczny",
+  "ru": "динамометри́ческий ключ",
+  "rulat": "dinamometrítscheskij kljutsch",
+  "ex": "Tighten the wheel nuts with a torque wrench.",
+  "exde": "Zieh die Radmuttern mit einem Drehmomentschlüssel an."
+ },
+ "au125": {
+  "fr": "la roue de secours galette",
+  "pl": "koło dojazdowe",
+  "ru": "дока́тка",
+  "rulat": "dokátka",
+  "ex": "Don't drive faster than 80 km/h on the space-saver spare wheel.",
+  "exde": "Fahr mit dem Notrad nicht schneller als 80 km/h."
+ },
+ "au126": {
+  "fr": "les câbles de démarrage",
+  "pl": "kable rozruchowe",
+  "ru": "провода́ для прикури́вания",
+  "rulat": "prowodá dlja prikuríwanija",
+  "ex": "Do you have jump leads in your car?",
+  "exde": "Hast du ein Starthilfekabel im Auto?"
+ },
+ "au127": {
+  "fr": "le fusible",
+  "pl": "bezpiecznik",
+  "ru": "предохрани́тель",
+  "rulat": "predochranítel",
+  "ex": "The radio stopped working because a fuse blew.",
+  "exde": "Das Radio funktioniert nicht mehr, weil eine Sicherung durchgebrannt ist."
+ },
+ "au128": {
+  "fr": "la boîte à fusibles",
+  "pl": "skrzynka bezpieczników",
+  "ru": "блок предохрани́телей",
+  "rulat": "blok predochranítelej",
+  "ex": "The fuse box is under the dashboard.",
+  "exde": "Der Sicherungskasten ist unter dem Armaturenbrett."
+ },
+ "au129": {
+  "fr": "les feux de croisement",
+  "pl": "światła mijania",
+  "ru": "бли́жний свет",
+  "rulat": "blíschnij swet",
+  "ex": "Switch on your dipped headlights in the tunnel.",
+  "exde": "Schalte im Tunnel das Abblendlicht ein."
+ },
+ "au130": {
+  "fr": "les feux de route",
+  "pl": "światła drogowe",
+  "ru": "да́льний свет",
+  "rulat": "dálnij swet",
+  "ex": "Turn off your full beam when a car comes towards you.",
+  "exde": "Schalte das Fernlicht aus, wenn dir ein Auto entgegenkommt."
+ },
+ "au131": {
+  "fr": "les feux de position",
+  "pl": "światła pozycyjne",
+  "ru": "габари́тные огни́",
+  "rulat": "gabarítnyje ogní",
+  "ex": "I left the sidelights on all night.",
+  "exde": "Ich habe die ganze Nacht das Standlicht angelassen."
+ },
+ "au132": {
+  "fr": "les feux de jour",
+  "pl": "światła do jazdy dziennej",
+  "ru": "дневны́е ходовы́е огни́",
+  "rulat": "dnewnýje chodowýje ogní",
+  "ex": "Most new cars have daytime running lights.",
+  "exde": "Die meisten neuen Autos haben Tagfahrlicht."
+ },
+ "au133": {
+  "fr": "le phare antibrouillard",
+  "pl": "przedni reflektor przeciwmgielny",
+  "ru": "противотума́нная фа́ра",
+  "rulat": "protiwotumánnaja fára",
+  "ex": "One front fog light isn't working.",
+  "exde": "Ein Nebelscheinwerfer funktioniert nicht."
+ },
+ "au134": {
+  "fr": "le feu antibrouillard arrière",
+  "pl": "tylne światło przeciwmgielne",
+  "ru": "за́дний противотума́нный фона́рь",
+  "rulat": "sádnij protiwotumánnyj fonár",
+  "ex": "Only use the rear fog light when visibility is poor.",
+  "exde": "Benutze die Nebelschlussleuchte nur bei schlechter Sicht."
+ },
+ "au135": {
+  "fr": "le feu stop",
+  "pl": "światło stopu",
+  "ru": "стоп-сигна́л",
+  "rulat": "stop-signál",
+  "ex": "Your left brake light is broken.",
+  "exde": "Dein linkes Bremslicht ist kaputt."
+ },
+ "au136": {
+  "fr": "le feu de recul",
+  "pl": "światło cofania",
+  "ru": "фона́рь за́днего хо́да",
+  "rulat": "fonár sádnewo chóda",
+  "ex": "The reversing light comes on when you select reverse.",
+  "exde": "Das Rückfahrlicht geht an, wenn man den Rückwärtsgang einlegt."
+ },
+ "au137": {
+  "fr": "l'éclairage de plaque",
+  "pl": "oświetlenie tablicy rejestracyjnej",
+  "ru": "подсве́тка номерно́го зна́ка",
+  "rulat": "podswétka nomernówo snáka",
+  "ex": "The number plate light must work at night.",
+  "exde": "Die Kennzeichenbeleuchtung muss nachts funktionieren."
+ },
+ "au138": {
+  "fr": "le plafonnier",
+  "pl": "oświetlenie wnętrza",
+  "ru": "освеще́ние сало́на",
+  "rulat": "oswestschénije salóna",
+  "ex": "The interior light comes on when you open the door.",
+  "exde": "Die Innenbeleuchtung geht an, wenn man die Tür öffnet."
+ },
+ "au139": {
+  "fr": "l'ampoule",
+  "pl": "żarówka",
+  "ru": "ла́мпочка",
+  "rulat": "lámpotschka",
+  "ex": "I need to replace a bulb in the headlight.",
+  "exde": "Ich muss eine Glühbirne im Scheinwerfer wechseln."
+ },
+ "au140": {
+  "fr": "la LED",
+  "pl": "dioda LED",
+  "ru": "светодио́д",
+  "rulat": "swetodiód",
+  "ex": "An LED uses less energy than a normal bulb.",
+  "exde": "Eine LED verbraucht weniger Energie als eine normale Glühbirne."
+ },
+ "au141": {
+  "fr": "le câble",
+  "pl": "kabel",
+  "ru": "ка́бель",
+  "rulat": "kábel",
+  "ex": "The cable is too short.",
+  "exde": "Das Kabel ist zu kurz."
+ },
+ "au142": {
+  "fr": "le faisceau de câbles",
+  "pl": "wiązka przewodów",
+  "ru": "жгут проводо́в",
+  "rulat": "schgut prowodów",
+  "ex": "The mechanic replaced the wiring harness.",
+  "exde": "Der Mechaniker hat den Kabelbaum ersetzt."
+ },
+ "au143": {
+  "fr": "la tension",
+  "pl": "napięcie",
+  "ru": "напряже́ние",
+  "rulat": "naprjaschénije",
+  "ex": "The battery voltage is too low.",
+  "exde": "Die Spannung der Batterie ist zu niedrig."
+ },
+ "au144": {
+  "fr": "le court-circuit",
+  "pl": "zwarcie",
+  "ru": "коро́ткое замыка́ние",
+  "rulat": "korótkoje samykánije",
+  "ex": "A short circuit blew the fuse.",
+  "exde": "Ein Kurzschluss hat die Sicherung durchbrennen lassen."
+ },
+ "au145": {
+  "fr": "la borne positive",
+  "pl": "biegun dodatni",
+  "ru": "положи́тельная кле́мма",
+  "rulat": "poloschítelnaja klémma",
+  "ex": "Connect the red cable to the positive terminal.",
+  "exde": "Schließe das rote Kabel an den Pluspol an."
+ },
+ "au146": {
+  "fr": "la borne négative",
+  "pl": "biegun ujemny",
+  "ru": "отрица́тельная кле́мма",
+  "rulat": "otrizátelnaja klémma",
+  "ex": "Disconnect the negative terminal first.",
+  "exde": "Klemme zuerst den Minuspol ab."
+ },
+ "au147": {
+  "fr": "la masse",
+  "pl": "masa",
+  "ru": "ма́сса",
+  "rulat": "mássa",
+  "ex": "The cable must be connected to earth.",
+  "exde": "Das Kabel muss mit der Masse verbunden werden."
+ },
+ "au148": {
+  "fr": "le calculateur",
+  "pl": "sterownik",
+  "ru": "блок управле́ния",
+  "rulat": "blok uprawlénija",
+  "ex": "The control unit has to be reprogrammed.",
+  "exde": "Das Steuergerät muss neu programmiert werden."
+ },
+ "au149": {
+  "fr": "le capteur",
+  "pl": "czujnik",
+  "ru": "да́тчик",
+  "rulat": "dáttschik",
+  "ex": "The sensor is dirty.",
+  "exde": "Der Sensor ist verschmutzt."
+ },
+ "au150": {
+  "fr": "l'allumage",
+  "pl": "zapłon",
+  "ru": "зажига́ние",
+  "rulat": "saschigánije",
+  "ex": "Turn off the ignition.",
+  "exde": "Schalte die Zündung aus."
+ },
+ "au151": {
+  "fr": "l'assistant de maintien de voie",
+  "pl": "asystent pasa ruchu",
+  "ru": "систе́ма удержа́ния в полосе́",
+  "rulat": "sistéma uderschánija w polossé",
+  "ex": "The lane-keeping assist gently steers the car back.",
+  "exde": "Der Spurhalteassistent lenkt das Auto sanft zurück."
+ },
+ "au152": {
+  "fr": "le freinage d'urgence automatique",
+  "pl": "asystent hamowania awaryjnego",
+  "ru": "систе́ма э́кстренного торможе́ния",
+  "rulat": "sistéma ékstrennowo tormoschénija",
+  "ex": "Autonomous emergency braking prevented an accident.",
+  "exde": "Der Notbremsassistent hat einen Unfall verhindert."
+ },
+ "au153": {
+  "fr": "le régulateur de vitesse adaptatif",
+  "pl": "aktywny tempomat",
+  "ru": "адапти́вный круи́з-контро́ль",
+  "rulat": "adaptíwnyj kruís-kontról",
+  "ex": "I use adaptive cruise control on the motorway.",
+  "exde": "Auf der Autobahn nutze ich den Abstandsregeltempomat."
+ },
+ "au154": {
+  "fr": "le détecteur d'angle mort",
+  "pl": "asystent martwego pola",
+  "ru": "систе́ма контро́ля слепы́х зон",
+  "rulat": "sistéma kontrólja slepých son",
+  "ex": "The blind-spot monitor warned me about the motorbike.",
+  "exde": "Der Totwinkelassistent hat mich vor dem Motorrad gewarnt."
+ },
+ "au155": {
+  "fr": "les capteurs de stationnement",
+  "pl": "czujniki parkowania",
+  "ru": "па́рктроник",
+  "rulat": "párktronik",
+  "ex": "The parking sensors beep when I get too close.",
+  "exde": "Die Einparkhilfe piept, wenn ich zu nah komme."
+ },
+ "au156": {
+  "fr": "l'assistant de stationnement",
+  "pl": "asystent parkowania",
+  "ru": "систе́ма автомати́ческой парко́вки",
+  "rulat": "sistéma awtomatítscheskoj parkówki",
+  "ex": "The park assist parks the car by itself.",
+  "exde": "Der Parkassistent parkt das Auto von selbst ein."
+ },
+ "au157": {
+  "fr": "la caméra de recul",
+  "pl": "kamera cofania",
+  "ru": "ка́мера за́днего ви́да",
+  "rulat": "kámera sádnewo wída",
+  "ex": "The reversing camera shows the area behind the car.",
+  "exde": "Die Rückfahrkamera zeigt den Bereich hinter dem Auto."
+ },
+ "au158": {
+  "fr": "le contrôle électronique de stabilité",
+  "pl": "elektroniczny układ stabilizacji toru jazdy",
+  "ru": "электро́нная систе́ма стабилиза́ции",
+  "rulat": "elektrónnaja sistéma stabilisázii",
+  "ex": "Electronic stability control helps on icy roads.",
+  "exde": "Das elektronische Stabilitätsprogramm hilft auf vereisten Straßen."
+ },
+ "au159": {
+  "fr": "l'antipatinage",
+  "pl": "kontrola trakcji",
+  "ru": "противобуксо́вочная систе́ма",
+  "rulat": "protiwobuksówotschnaja sistéma",
+  "ex": "The traction control stops the wheels from spinning.",
+  "exde": "Die Antriebsschlupfregelung verhindert das Durchdrehen der Räder."
+ },
+ "au160": {
+  "fr": "l'aide au démarrage en côte",
+  "pl": "asystent ruszania pod górę",
+  "ru": "систе́ма по́мощи при ста́рте на подъёме",
+  "rulat": "sistéma pómoschtschi pri stárte na podjóme",
+  "ex": "Hill start assist stops the car from rolling back.",
+  "exde": "Der Berganfahrassistent verhindert, dass das Auto zurückrollt."
+ },
+ "au161": {
+  "fr": "la reconnaissance des panneaux de signalisation",
+  "pl": "rozpoznawanie znaków drogowych",
+  "ru": "распознава́ние доро́жных зна́ков",
+  "rulat": "raspoznawánije doróschnych snákow",
+  "ex": "Our new car has traffic sign recognition.",
+  "exde": "Unser neues Auto hat eine Verkehrszeichenerkennung."
+ },
+ "au162": {
+  "fr": "le détecteur de fatigue",
+  "pl": "system wykrywania zmęczenia kierowcy",
+  "ru": "систе́ма контро́ля уста́лости води́теля",
+  "rulat": "sistéma kontrólja ustálosti wodítelja",
+  "ex": "The driver drowsiness alert told me to take a break.",
+  "exde": "Der Müdigkeitswarner hat mir geraten, eine Pause zu machen."
+ },
+ "au163": {
+  "fr": "l'assistant feux de route",
+  "pl": "asystent świateł drogowych",
+  "ru": "ассисте́нт да́льнего све́та",
+  "rulat": "assistént dálnego swéta",
+  "ex": "The high-beam assist dims the lights automatically.",
+  "exde": "Der Fernlichtassistent blendet automatisch ab."
+ },
+ "au164": {
+  "fr": "le capteur de pluie",
+  "pl": "czujnik deszczu",
+  "ru": "да́тчик дождя́",
+  "rulat": "dáttschik doschdjá",
+  "ex": "The rain sensor switches on the wipers.",
+  "exde": "Der Regensensor schaltet die Scheibenwischer ein."
+ },
+ "au165": {
+  "fr": "le système de surveillance de la pression des pneus",
+  "pl": "system kontroli ciśnienia w oponach",
+  "ru": "систе́ма контро́ля давле́ния в ши́нах",
+  "rulat": "sistéma kontrólja dawlénija w schínach",
+  "ex": "The tyre pressure monitoring system is showing a warning.",
+  "exde": "Das Reifendruckkontrollsystem zeigt eine Warnung an."
+ },
+ "au166": {
+  "fr": "l'affichage tête haute",
+  "pl": "wyświetlacz przezierny",
+  "ru": "проекцио́нный диспле́й",
+  "rulat": "projekziónnyj displéj",
+  "ex": "The head-up display shows the speed on the windscreen.",
+  "exde": "Das Head-up-Display zeigt die Geschwindigkeit auf der Windschutzscheibe an."
+ },
+ "au167": {
+  "fr": "le relais",
+  "pl": "przekaźnik",
+  "ru": "реле́",
+  "rulat": "relé",
+  "ex": "The relay for the horn is broken.",
+  "exde": "Das Relais für die Hupe ist kaputt."
+ },
+ "au168": {
+  "fr": "l'outil de diagnostic",
+  "pl": "urządzenie diagnostyczne",
+  "ru": "диагности́ческий прибо́р",
+  "rulat": "diagnostítscheskij pribór",
+  "ex": "The mechanic connected the diagnostic tool.",
+  "exde": "Der Mechaniker hat das Diagnosegerät angeschlossen."
+ },
+ "au169": {
+  "fr": "le code d'erreur",
+  "pl": "kod błędu",
+  "ru": "код оши́бки",
+  "rulat": "kod oschíbki",
+  "ex": "The fault code points to a faulty sensor.",
+  "exde": "Der Fehlercode weist auf einen defekten Sensor hin."
+ },
+ "au170": {
+  "fr": "lire la mémoire des défauts",
+  "pl": "odczytać pamięć błędów",
+  "ru": "счита́ть па́мять оши́бок",
+  "rulat": "schtschitát pámjat oschíbok",
+  "ex": "The workshop needs to read the fault memory.",
+  "exde": "Die Werkstatt muss den Fehlerspeicher auslesen."
+ },
+ "au171": {
+  "fr": "l'électronique de bord",
+  "pl": "elektronika pokładowa",
+  "ru": "бортова́я электро́ника",
+  "rulat": "bortowája elektrónika",
+  "ex": "The on-board electronics are very sensitive.",
+  "exde": "Die Bordelektronik ist sehr empfindlich."
+ },
+ "au172": {
+  "fr": "l'ordinateur de bord",
+  "pl": "komputer pokładowy",
+  "ru": "бортово́й компью́тер",
+  "rulat": "bortowój kompjúter",
+  "ex": "The trip computer shows the average fuel consumption.",
+  "exde": "Der Bordcomputer zeigt den Durchschnittsverbrauch an."
+ },
+ "au173": {
+  "fr": "le kit mains libres",
+  "pl": "zestaw głośnomówiący",
+  "ru": "устро́йство гро́мкой свя́зи",
+  "rulat": "ustróistwo grómkoj swjási",
+  "ex": "I use the hands-free kit to make calls while driving.",
+  "exde": "Beim Fahren telefoniere ich über die Freisprecheinrichtung."
+ },
+ "au174": {
+  "fr": "le système d'infodivertissement",
+  "pl": "system multimedialny",
+  "ru": "мультимеди́йная систе́ма",
+  "rulat": "multimedíjnaja sistéma",
+  "ex": "The infotainment system has a large touchscreen.",
+  "exde": "Das Infotainmentsystem hat einen großen Touchscreen."
+ },
+ "au175": {
+  "fr": "le verrouillage centralisé",
+  "pl": "zamek centralny",
+  "ru": "центра́льный замо́к",
+  "rulat": "zentrálnyj samók",
+  "ex": "The central locking doesn't work anymore.",
+  "exde": "Die Zentralverriegelung funktioniert nicht mehr."
+ },
+ "au176": {
+  "fr": "la voiture électrique",
+  "pl": "samochód elektryczny",
+  "ru": "электромоби́ль",
+  "rulat": "elektromobíl",
+  "ex": "We bought an electric car last year.",
+  "exde": "Wir haben letztes Jahr ein Elektroauto gekauft."
+ },
+ "au177": {
+  "fr": "la borne de recharge",
+  "pl": "stacja ładowania",
+  "ru": "заря́дная ста́нция",
+  "rulat": "sarjádnaja stánzija",
+  "ex": "Is there a charging station nearby?",
+  "exde": "Gibt es hier in der Nähe eine Ladestation?"
+ },
+ "au178": {
+  "fr": "le câble de recharge",
+  "pl": "kabel do ładowania",
+  "ru": "заря́дный ка́бель",
+  "rulat": "sarjádnyj kábel",
+  "ex": "I left the charging cable at home.",
+  "exde": "Ich habe das Ladekabel zu Hause vergessen."
+ },
+ "au179": {
+  "fr": "la fiche",
+  "pl": "wtyczka",
+  "ru": "ште́кер",
+  "rulat": "schtéker",
+  "ex": "The plug doesn't fit into this socket.",
+  "exde": "Der Stecker passt nicht in diese Steckdose."
+ },
+ "au180": {
+  "fr": "la prise de courant",
+  "pl": "gniazdko",
+  "ru": "розе́тка",
+  "rulat": "rosétka",
+  "ex": "You can charge the car from a normal socket.",
+  "exde": "Man kann das Auto an einer normalen Steckdose laden."
+ },
+ "au181": {
+  "fr": "la borne de recharge murale",
+  "pl": "ładowarka ścienna (wallbox)",
+  "ru": "дома́шняя заря́дная ста́нция",
+  "rulat": "domáschnjaja sarjádnaja stánzija",
+  "ex": "We installed a home charger in the garage.",
+  "exde": "Wir haben eine Wallbox in der Garage installiert."
+ },
+ "au182": {
+  "fr": "la batterie de traction",
+  "pl": "akumulator trakcyjny",
+  "ru": "тяго́вая батаре́я",
+  "rulat": "tjagówaja bataréja",
+  "ex": "The traction battery has an eight-year warranty.",
+  "exde": "Die Antriebsbatterie hat acht Jahre Garantie."
+ },
+ "au183": {
+  "fr": "l'autonomie (f)",
+  "pl": "zasięg",
+  "ru": "запа́с хо́да",
+  "rulat": "sapás chóda",
+  "ex": "This car has a range of 400 kilometres.",
+  "exde": "Dieses Auto hat eine Reichweite von 400 Kilometern."
+ },
+ "au184": {
+  "fr": "l'anxiété d'autonomie (f)",
+  "pl": "lęk przed brakiem zasięgu",
+  "ru": "трево́га из-за запа́са хо́да",
+  "rulat": "trewóga is-sa sapása chóda",
+  "ex": "Many new drivers suffer from range anxiety.",
+  "exde": "Viele neue Fahrer leiden unter Reichweitenangst."
+ },
+ "au185": {
+  "fr": "le temps de recharge",
+  "pl": "czas ładowania",
+  "ru": "вре́мя заря́дки",
+  "rulat": "wrémja sarjádki",
+  "ex": "The charging time is about eight hours.",
+  "exde": "Die Ladezeit beträgt etwa acht Stunden."
+ },
+ "au186": {
+  "fr": "la puissance de recharge",
+  "pl": "moc ładowania",
+  "ru": "мо́щность заря́дки",
+  "rulat": "móschtschnost sarjádki",
+  "ex": "The maximum charging power is 150 kilowatts.",
+  "exde": "Die maximale Ladeleistung beträgt 150 Kilowatt."
+ },
+ "au187": {
+  "fr": "la recharge rapide",
+  "pl": "szybkie ładowanie",
+  "ru": "бы́страя заря́дка",
+  "rulat": "býstraja sarjádka",
+  "ex": "Rapid charging takes only thirty minutes.",
+  "exde": "Das Schnellladen dauert nur dreißig Minuten."
+ },
+ "au188": {
+  "fr": "la borne de recharge rapide",
+  "pl": "szybka ładowarka",
+  "ru": "ста́нция бы́строй заря́дки",
+  "rulat": "stánzija býstroj sarjádki",
+  "ex": "There is a rapid charger at the next service station.",
+  "exde": "An der nächsten Raststätte gibt es einen Schnelllader."
+ },
+ "au189": {
+  "fr": "le courant continu",
+  "pl": "prąd stały",
+  "ru": "постоя́нный ток",
+  "rulat": "postojánnyj tok",
+  "ex": "Rapid chargers use direct current.",
+  "exde": "Schnelllader nutzen Gleichstrom."
+ },
+ "au190": {
+  "fr": "le courant alternatif",
+  "pl": "prąd przemienny",
+  "ru": "переме́нный ток",
+  "rulat": "pereménnyj tok",
+  "ex": "The home charger works with alternating current.",
+  "exde": "Die Wallbox arbeitet mit Wechselstrom."
+ },
+ "au191": {
+  "fr": "le kilowattheure",
+  "pl": "kilowatogodzina",
+  "ru": "килова́тт-час",
+  "rulat": "kilowátt-tschas",
+  "ex": "One kilowatt-hour costs thirty cents.",
+  "exde": "Eine Kilowattstunde kostet dreißig Cent."
+ },
+ "au192": {
+  "fr": "le niveau de charge",
+  "pl": "poziom naładowania",
+  "ru": "у́ровень заря́да",
+  "rulat": "úrowen sarjáda",
+  "ex": "The state of charge is shown on the display.",
+  "exde": "Der Ladestand wird auf dem Display angezeigt."
+ },
+ "au193": {
+  "fr": "le moteur électrique",
+  "pl": "silnik elektryczny",
+  "ru": "электродви́гатель",
+  "rulat": "elektrodwígatel",
+  "ex": "The electric motor is very quiet.",
+  "exde": "Der Elektromotor ist sehr leise."
+ },
+ "au194": {
+  "fr": "le véhicule hybride",
+  "pl": "pojazd hybrydowy",
+  "ru": "гибри́дный автомоби́ль",
+  "rulat": "gibrídnyj awtomobíl",
+  "ex": "A hybrid vehicle uses less fuel.",
+  "exde": "Ein Hybridfahrzeug verbraucht weniger Kraftstoff."
+ },
+ "au195": {
+  "fr": "l'hybride rechargeable (m)",
+  "pl": "hybryda plug-in",
+  "ru": "подключа́емый гибри́д",
+  "rulat": "podkljutscháemyj gibríd",
+  "ex": "My plug-in hybrid can drive fifty kilometres on electricity.",
+  "exde": "Mein Plug-in-Hybrid kann fünfzig Kilometer elektrisch fahren."
+ },
+ "au196": {
+  "fr": "le freinage régénératif",
+  "pl": "rekuperacja",
+  "ru": "рекупера́ция",
+  "rulat": "rekuperázija",
+  "ex": "Regenerative braking recharges the battery.",
+  "exde": "Die Rekuperation lädt die Batterie wieder auf."
+ },
+ "au197": {
+  "fr": "la consommation électrique",
+  "pl": "zużycie energii elektrycznej",
+  "ru": "расхо́д электроэне́ргии",
+  "rulat": "raschód elektroenérgii",
+  "ex": "The electricity consumption rises in winter.",
+  "exde": "Der Stromverbrauch steigt im Winter."
+ },
+ "au198": {
+  "fr": "la carte de recharge",
+  "pl": "karta ładowania",
+  "ru": "заря́дная ка́рта",
+  "rulat": "sarjádnaja kárta",
+  "ex": "I pay with my charging card.",
+  "exde": "Ich bezahle mit meiner Ladekarte."
+ },
+ "au199": {
+  "fr": "le tarif de recharge",
+  "pl": "taryfa ładowania",
+  "ru": "тари́ф на заря́дку",
+  "rulat": "taríf na sarjádku",
+  "ex": "This charging tariff is cheaper at night.",
+  "exde": "Dieser Ladetarif ist nachts günstiger."
+ },
+ "au200": {
+  "fr": "la prise de recharge",
+  "pl": "gniazdo ładowania",
+  "ru": "заря́дный разъём",
+  "rulat": "sarjádnyj rasjóm",
+  "ex": "The charging port is behind the front flap.",
+  "exde": "Der Ladeanschluss ist hinter der vorderen Klappe."
+ },
+ "au201": {
+  "fr": "le liquide lave-glace",
+  "pl": "płyn do spryskiwaczy",
+  "ru": "омыва́ющая жи́дкость",
+  "rulat": "omywájuschtschaja shídkost",
+  "ex": "I need to top up the screenwash before the trip.",
+  "exde": "Ich muss vor der Fahrt Wischwasser nachfüllen."
+ },
+ "au202": {
+  "fr": "l'antigel",
+  "pl": "płyn niezamarzający",
+  "ru": "антифри́з",
+  "rulat": "antifrís",
+  "ex": "Add antifreeze before the winter starts.",
+  "exde": "Füll Frostschutzmittel nach, bevor der Winter beginnt."
+ },
+ "au203": {
+  "fr": "l'huile de boîte de vitesses",
+  "pl": "olej przekładniowy",
+  "ru": "трансмиссио́нное ма́сло",
+  "rulat": "transmissiónnoje máslo",
+  "ex": "The mechanic changed the gearbox oil.",
+  "exde": "Der Mechaniker hat das Getriebeöl gewechselt."
+ },
+ "au204": {
+  "fr": "le fluide frigorigène",
+  "pl": "czynnik chłodniczy",
+  "ru": "хладаге́нт",
+  "rulat": "chladagént",
+  "ex": "The air conditioning needs new refrigerant.",
+  "exde": "Die Klimaanlage braucht neues Kältemittel."
+ },
+ "au205": {
+  "fr": "l'entretien",
+  "pl": "konserwacja",
+  "ru": "техни́ческое обслу́живание",
+  "rulat": "tjechnítscheskoje obslúshiwanije",
+  "ex": "Regular maintenance keeps the car reliable.",
+  "exde": "Regelmäßige Wartung hält das Auto zuverlässig."
+ },
+ "au206": {
+  "fr": "le niveau d'huile",
+  "pl": "poziom oleju",
+  "ru": "у́ровень ма́сла",
+  "rulat": "úrowen másla",
+  "ex": "Check the oil level once a month.",
+  "exde": "Prüf den Ölstand einmal im Monat."
+ },
+ "au207": {
+  "fr": "la jauge d'huile",
+  "pl": "bagnet",
+  "ru": "щуп",
+  "rulat": "schtschup",
+  "ex": "Pull out the dipstick and wipe it clean.",
+  "exde": "Zieh den Ölmessstab heraus und wisch ihn sauber."
+ },
+ "au208": {
+  "fr": "le niveau de liquide de refroidissement",
+  "pl": "poziom płynu chłodniczego",
+  "ru": "у́ровень охлажда́ющей жи́дкости",
+  "rulat": "úrowen ochlashdájuschtschej shídkosti",
+  "ex": "The coolant level is too low.",
+  "exde": "Der Kühlmittelstand ist zu niedrig."
+ },
+ "au209": {
+  "fr": "le vase d'expansion",
+  "pl": "zbiornik wyrównawczy",
+  "ru": "расши́рительный бачо́к",
+  "rulat": "raschíritelnyj batschók",
+  "ex": "Never open the expansion tank when the engine is hot.",
+  "exde": "Öffne nie den Ausgleichsbehälter, wenn der Motor heiß ist."
+ },
+ "au210": {
+  "fr": "le carter d'huile",
+  "pl": "miska olejowa",
+  "ru": "ма́сляный поддо́н",
+  "rulat": "másljanyj poddón",
+  "ex": "A stone damaged the sump.",
+  "exde": "Ein Stein hat die Ölwanne beschädigt."
+ },
+ "au211": {
+  "fr": "le bouchon de vidange",
+  "pl": "korek spustowy",
+  "ru": "сливна́я про́бка",
+  "rulat": "sliwnája próbka",
+  "ex": "Tighten the drain plug after the oil change.",
+  "exde": "Zieh die Ablassschraube nach dem Ölwechsel fest."
+ },
+ "au212": {
+  "fr": "le filtre d'habitacle",
+  "pl": "filtr kabinowy",
+  "ru": "сало́нный фильтр",
+  "rulat": "salónnyj filtr",
+  "ex": "A dirty cabin filter can cause bad smells.",
+  "exde": "Ein verschmutzter Innenraumfilter kann schlechte Gerüche verursachen."
+ },
+ "au213": {
+  "fr": "le filtre à carburant",
+  "pl": "filtr paliwa",
+  "ru": "топли́вный фильтр",
+  "rulat": "toplíwnyj filtr",
+  "ex": "The fuel filter should be replaced soon.",
+  "exde": "Der Kraftstofffilter sollte bald ersetzt werden."
+ },
+ "au214": {
+  "fr": "la révision",
+  "pl": "przegląd",
+  "ru": "пла́новое техобслу́живание",
+  "rulat": "plánowoje tjechobslúshiwanije",
+  "ex": "My car is due for a service next week.",
+  "exde": "Mein Auto muss nächste Woche zur Inspektion."
+ },
+ "au215": {
+  "fr": "le carnet d'entretien",
+  "pl": "książka serwisowa",
+  "ru": "серви́сная кни́жка",
+  "rulat": "serwísnaja kníshka",
+  "ex": "All services are recorded in the service book.",
+  "exde": "Alle Inspektionen sind im Serviceheft eingetragen."
+ },
+ "au216": {
+  "fr": "l'intervalle d'entretien",
+  "pl": "interwał serwisowy",
+  "ru": "межсерви́сный интерва́л",
+  "rulat": "meshserwísnyj interwál",
+  "ex": "The service interval is 15,000 kilometres.",
+  "exde": "Das Wartungsintervall beträgt 15.000 Kilometer."
+ },
+ "au217": {
+  "fr": "le contrôle technique",
+  "pl": "badanie techniczne",
+  "ru": "техосмо́тр",
+  "rulat": "tjechosmótr",
+  "ex": "My car passed the MOT test.",
+  "exde": "Mein Auto hat die Hauptuntersuchung bestanden."
+ },
+ "au218": {
+  "fr": "la pièce d'usure",
+  "pl": "część eksploatacyjna",
+  "ru": "изна́шиваемая дета́ль",
+  "rulat": "isnáschiwajemaja detál",
+  "ex": "Brake pads are a typical wearing part.",
+  "exde": "Bremsbeläge sind ein typisches Verschleißteil."
+ },
+ "au219": {
+  "fr": "la fuite",
+  "pl": "wyciek",
+  "ru": "уте́чка",
+  "rulat": "utjétschka",
+  "ex": "There is an oil leak under the car.",
+  "exde": "Unter dem Auto ist ein Ölleck."
+ },
+ "au220": {
+  "fr": "non étanche",
+  "pl": "nieszczelny",
+  "ru": "негермети́чный",
+  "rulat": "njegjermetítschnyj",
+  "ex": "The radiator hose is leaking.",
+  "exde": "Der Kühlerschlauch ist undicht."
+ },
+ "au221": {
+  "fr": "faire l'appoint",
+  "pl": "dolać",
+  "ru": "доли́ть",
+  "rulat": "dolít",
+  "ex": "Please top up the oil before the trip.",
+  "exde": "Bitte füll vor der Fahrt das Öl nach."
+ },
+ "au222": {
+  "fr": "changer",
+  "pl": "wymienić",
+  "ru": "замени́ть",
+  "rulat": "samenít",
+  "ex": "We need to change the oil every year.",
+  "exde": "Wir müssen jedes Jahr das Öl wechseln."
+ },
+ "au223": {
+  "fr": "la viscosité",
+  "pl": "lepkość",
+  "ru": "вя́зкость",
+  "rulat": "wjáskost",
+  "ex": "Check the viscosity of the oil.",
+  "exde": "Prüf die Viskosität des Öls."
+ },
+ "au224": {
+  "fr": "l'entonnoir",
+  "pl": "lejek",
+  "ru": "воро́нка",
+  "rulat": "worónka",
+  "ex": "Use a funnel to pour in the coolant.",
+  "exde": "Benutz einen Trichter, um das Kühlmittel einzufüllen."
+ },
+ "au225": {
+  "fr": "l'outil",
+  "pl": "narzędzie",
+  "ru": "инструме́нт",
+  "rulat": "instrumént",
+  "ex": "I keep my tools in the garage.",
+  "exde": "Ich bewahre mein Werkzeug in der Garage auf."
+ },
+ "au226": {
+  "fr": "la clé plate",
+  "pl": "klucz płaski",
+  "ru": "га́ечный ключ",
+  "rulat": "gájetschnyj kljutsch",
+  "ex": "Pass me the spanner, please.",
+  "exde": "Gib mir bitte den Schraubenschlüssel."
+ },
+ "au227": {
+  "fr": "le tournevis",
+  "pl": "śrubokręt",
+  "ru": "отвёртка",
+  "rulat": "otwjórtka",
+  "ex": "I need a smaller screwdriver.",
+  "exde": "Ich brauche einen kleineren Schraubendreher."
+ },
+ "au228": {
+  "fr": "la pince",
+  "pl": "szczypce",
+  "ru": "плоскогу́бцы",
+  "rulat": "ploskogúbzy",
+  "ex": "Hold the wire with the pliers.",
+  "exde": "Halte den Draht mit der Zange fest."
+ },
+ "au229": {
+  "fr": "le marteau",
+  "pl": "młotek",
+  "ru": "молото́к",
+  "rulat": "molotók",
+  "ex": "He hit the nail with a hammer.",
+  "exde": "Er schlug den Nagel mit dem Hammer ein."
+ },
+ "au230": {
+  "fr": "le cliquet",
+  "pl": "grzechotka",
+  "ru": "трещо́тка",
+  "rulat": "treschtschótka",
+  "ex": "A ratchet makes the job much faster.",
+  "exde": "Mit einer Ratsche geht die Arbeit viel schneller."
+ },
+ "au231": {
+  "fr": "la clé démonte-roue",
+  "pl": "klucz do kół",
+  "ru": "балло́нный ключ",
+  "rulat": "ballónnyj kljutsch",
+  "ex": "The wheel brace is in the boot.",
+  "exde": "Der Radmutternschlüssel liegt im Kofferraum."
+ },
+ "au232": {
+  "fr": "le pont élévateur",
+  "pl": "podnośnik samochodowy",
+  "ru": "автоподъёмник",
+  "rulat": "awtopodjómnik",
+  "ex": "The car is up on the vehicle lift.",
+  "exde": "Das Auto steht auf der Hebebühne."
+ },
+ "au233": {
+  "fr": "la vis",
+  "pl": "śruba",
+  "ru": "винт",
+  "rulat": "wint",
+  "ex": "This screw is loose.",
+  "exde": "Diese Schraube ist locker."
+ },
+ "au234": {
+  "fr": "la rondelle",
+  "pl": "podkładka",
+  "ru": "ша́йба",
+  "rulat": "schájba",
+  "ex": "Put a washer under the nut.",
+  "exde": "Leg eine Unterlegscheibe unter die Mutter."
+ },
+ "au235": {
+  "fr": "la clé Allen",
+  "pl": "klucz imbusowy",
+  "ru": "шестигра́нник",
+  "rulat": "schestigránnik",
+  "ex": "You need an Allen key to assemble the shelf.",
+  "exde": "Du brauchst einen Inbusschlüssel, um das Regal aufzubauen."
+ },
+ "au236": {
+  "fr": "le mécanicien",
+  "pl": "mechanik",
+  "ru": "меха́ник",
+  "rulat": "mechánik",
+  "ex": "The mechanic found the problem quickly.",
+  "exde": "Der Mechaniker hat das Problem schnell gefunden."
+ },
+ "au237": {
+  "fr": "le devis",
+  "pl": "kosztorys",
+  "ru": "сме́та",
+  "rulat": "sméta",
+  "ex": "Can you give me a quote for the repair?",
+  "exde": "Können Sie mir einen Kostenvoranschlag für die Reparatur machen?"
+ },
+ "au238": {
+  "fr": "la réparation",
+  "pl": "naprawa",
+  "ru": "ремо́нт",
+  "rulat": "remónt",
+  "ex": "The repair will take two days.",
+  "exde": "Die Reparatur dauert zwei Tage."
+ },
+ "au239": {
+  "fr": "la pièce de rechange",
+  "pl": "część zamienna",
+  "ru": "запча́сть",
+  "rulat": "saptschást",
+  "ex": "The spare part arrives tomorrow.",
+  "exde": "Das Ersatzteil kommt morgen."
+ },
+ "au240": {
+  "fr": "serrer",
+  "pl": "dokręcić",
+  "ru": "затяну́ть",
+  "rulat": "satjanút",
+  "ex": "Don't forget to tighten the screws.",
+  "exde": "Vergiss nicht, die Schrauben festzuziehen."
+ },
+ "au241": {
+  "fr": "desserrer",
+  "pl": "poluzować",
+  "ru": "ослабля́ть",
+  "rulat": "oslabljátj",
+  "ex": "Loosen the wheel nuts before you lift the car.",
+  "exde": "Lös die Radmuttern, bevor du das Auto anhebst."
+ },
+ "au242": {
+  "fr": "remplacer",
+  "pl": "wymieniać",
+  "ru": "заменя́ть",
+  "rulat": "samenjátj",
+  "ex": "The mechanic had to replace the brake pads.",
+  "exde": "Der Mechaniker musste die Bremsbeläge austauschen."
+ },
+ "au243": {
+  "fr": "la mémoire des défauts",
+  "pl": "pamięć błędów",
+  "ru": "па́мять оши́бок",
+  "rulat": "pámjatj oschíbok",
+  "ex": "The fault memory showed an engine error.",
+  "exde": "Der Fehlerspeicher zeigte einen Motorfehler."
+ },
+ "au244": {
+  "fr": "l'établi",
+  "pl": "stół warsztatowy",
+  "ru": "верста́к",
+  "rulat": "werschták",
+  "ex": "The tools are on the workbench.",
+  "exde": "Das Werkzeug liegt auf der Werkbank."
+ },
+ "au245": {
+  "fr": "la fosse de visite",
+  "pl": "kanał warsztatowy",
+  "ru": "смотрова́я я́ма",
+  "rulat": "smotrowája jáma",
+  "ex": "The car is standing over the inspection pit.",
+  "exde": "Das Auto steht über der Montagegrube."
+ },
+ "au246": {
+  "fr": "le compresseur",
+  "pl": "kompresor",
+  "ru": "компре́ссор",
+  "rulat": "kompréssor",
+  "ex": "We use the compressor to inflate the tyres.",
+  "exde": "Wir benutzen den Kompressor, um die Reifen aufzupumpen."
+ },
+ "au247": {
+  "fr": "le lubrifiant",
+  "pl": "smar",
+  "ru": "сма́зка",
+  "rulat": "smáska",
+  "ex": "Put some lubricant on the hinge.",
+  "exde": "Gib etwas Schmiermittel auf das Scharnier."
+ },
+ "au248": {
+  "fr": "le rendez-vous au garage",
+  "pl": "wizyta w warsztacie",
+  "ru": "за́пись в автосе́рвис",
+  "rulat": "sápiss w awtossérwiss",
+  "ex": "I have a garage appointment on Monday.",
+  "exde": "Ich habe am Montag einen Werkstatttermin."
+ },
+ "au249": {
+  "fr": "le véhicule de remplacement",
+  "pl": "samochód zastępczy",
+  "ru": "подме́нный автомоби́ль",
+  "rulat": "podménnyj awtomobílj",
+  "ex": "The garage gave me a courtesy car.",
+  "exde": "Die Werkstatt hat mir ein Ersatzfahrzeug gegeben."
+ },
+ "au250": {
+  "fr": "tomber en panne",
+  "pl": "zepsuć się",
+  "ru": "слома́ться",
+  "rulat": "slomátsja",
+  "ex": "Our car broke down on the motorway.",
+  "exde": "Unser Auto ist auf der Autobahn liegen geblieben."
+ },
+ "au251": {
+  "fr": "démarrer",
+  "pl": "zapalić",
+  "ru": "заводи́ться",
+  "rulat": "sawodítsja",
+  "ex": "The engine won't start in the cold.",
+  "exde": "Der Motor springt bei Kälte nicht an."
+ },
+ "au252": {
+  "fr": "surchauffer",
+  "pl": "przegrzewać się",
+  "ru": "перегрева́ться",
+  "rulat": "peregrewátsja",
+  "ex": "The engine overheated in the traffic jam.",
+  "exde": "Der Motor ist im Stau überhitzt."
+ },
+ "au253": {
+  "fr": "rapiécer",
+  "pl": "łatać",
+  "ru": "лата́ть",
+  "rulat": "latátj",
+  "ex": "He patched the bicycle tyre.",
+  "exde": "Er hat den Fahrradreifen geflickt."
+ },
+ "au254": {
+  "fr": "caler",
+  "pl": "zgasić silnik",
+  "ru": "загло́хнуть",
+  "rulat": "saglóchnutj",
+  "ex": "I stalled the car at the traffic lights.",
+  "exde": "Ich habe das Auto an der Ampel abgewürgt."
+ },
+ "au255": {
+  "fr": "grincer",
+  "pl": "piszczeć",
+  "ru": "скрипе́ть",
+  "rulat": "skripétj",
+  "ex": "The brakes squeak when I stop.",
+  "exde": "Die Bremsen quietschen, wenn ich anhalte."
+ },
+ "au256": {
+  "fr": "cliqueter",
+  "pl": "stukać",
+  "ru": "дребезжа́ть",
+  "rulat": "drebeschschátj",
+  "ex": "Something is rattling under the car.",
+  "exde": "Unter dem Auto klappert etwas."
+ },
+ "au257": {
+  "fr": "brouter",
+  "pl": "szarpać",
+  "ru": "дёргаться",
+  "rulat": "djórgatsja",
+  "ex": "The car judders when I accelerate.",
+  "exde": "Das Auto ruckelt, wenn ich beschleunige."
+ },
+ "au258": {
+  "fr": "diagnostiquer",
+  "pl": "diagnozować",
+  "ru": "диагности́ровать",
+  "rulat": "diagnostírowatj",
+  "ex": "The mechanic diagnosed the problem quickly.",
+  "exde": "Der Mechaniker hat das Problem schnell diagnostiziert."
+ },
+ "au259": {
+  "fr": "lire (la mémoire des défauts)",
+  "pl": "odczytać",
+  "ru": "счи́тывать",
+  "rulat": "schtschítywatj",
+  "ex": "The garage read out the fault memory.",
+  "exde": "Die Werkstatt hat den Fehlerspeicher ausgelesen."
+ },
+ "au260": {
+  "fr": "faire démarrer avec des câbles",
+  "pl": "odpalić na kable",
+  "ru": "прикури́ть",
+  "rulat": "prikurítj",
+  "ex": "A neighbour helped me jump-start my car.",
+  "exde": "Ein Nachbar hat mir geholfen, mein Auto zu überbrücken."
+ },
+ "au261": {
+  "fr": "démarrer en poussant",
+  "pl": "zapalić na pych",
+  "ru": "заводи́ть с толкача́",
+  "rulat": "sawodítj s tolkatschá",
+  "ex": "We had to push-start the car this morning.",
+  "exde": "Wir mussten das Auto heute Morgen anschieben."
+ },
+ "au262": {
+  "fr": "lubrifier",
+  "pl": "smarować",
+  "ru": "сма́зывать",
+  "rulat": "smásywatj",
+  "ex": "You should lubricate the chain regularly.",
+  "exde": "Du solltest die Kette regelmäßig schmieren."
+ },
+ "au263": {
+  "fr": "souder",
+  "pl": "spawać",
+  "ru": "сва́ривать",
+  "rulat": "swáriwatj",
+  "ex": "The mechanic has to weld the exhaust.",
+  "exde": "Der Mechaniker muss den Auspuff schweißen."
+ },
+ "au264": {
+  "fr": "repeindre",
+  "pl": "lakierować",
+  "ru": "перекра́шивать",
+  "rulat": "perekráschiwatj",
+  "ex": "We need to respray the door.",
+  "exde": "Wir müssen die Tür lackieren."
+ },
+ "au265": {
+  "fr": "débosseler",
+  "pl": "wyklepać",
+  "ru": "выправля́ть вмя́тину",
+  "rulat": "wyprawljátj wmjátinu",
+  "ex": "The workshop can knock out a dent in an hour.",
+  "exde": "Die Werkstatt kann eine Delle in einer Stunde ausbeulen."
+ },
+ "au266": {
+  "fr": "démonter",
+  "pl": "wymontować",
+  "ru": "снима́ть",
+  "rulat": "snimátj",
+  "ex": "He had to remove the engine.",
+  "exde": "Er musste den Motor ausbauen."
+ },
+ "au267": {
+  "fr": "installer",
+  "pl": "zamontować",
+  "ru": "устана́вливать",
+  "rulat": "ustanáwliwatj",
+  "ex": "They will fit a new battery.",
+  "exde": "Sie werden eine neue Batterie einbauen."
+ },
+ "au268": {
+  "fr": "griller",
+  "pl": "przepalić się",
+  "ru": "перегора́ть",
+  "rulat": "peregorátj",
+  "ex": "The fuse might blow again.",
+  "exde": "Die Sicherung könnte wieder durchbrennen."
+ },
+ "au269": {
+  "fr": "éclater",
+  "pl": "pęknąć",
+  "ru": "ло́пнуть",
+  "rulat": "lópnutj",
+  "ex": "A tyre can burst at high speed.",
+  "exde": "Ein Reifen kann bei hoher Geschwindigkeit platzen."
+ },
+ "au270": {
+  "fr": "sécuriser (les lieux)",
+  "pl": "zabezpieczyć (miejsce)",
+  "ru": "обезопа́сить ме́сто",
+  "rulat": "obessopássitj mésto",
+  "ex": "First you must secure the scene with a warning triangle.",
+  "exde": "Zuerst musst du die Unfallstelle mit einem Warndreieck absichern."
+ },
+ "au271": {
+  "fr": "le contrat de vente",
+  "pl": "umowa kupna-sprzedaży",
+  "ru": "догово́р ку́пли-прода́жи",
+  "rulat": "dogowór kúpli-prodáschi",
+  "ex": "Read the purchase contract carefully.",
+  "exde": "Lies den Kaufvertrag sorgfältig."
+ },
+ "au272": {
+  "fr": "la voiture d'occasion",
+  "pl": "samochód używany",
+  "ru": "поде́ржанный автомоби́ль",
+  "rulat": "podérschannyj awtomobíl",
+  "ex": "We bought a used car.",
+  "exde": "Wir haben einen Gebrauchtwagen gekauft."
+ },
+ "au273": {
+  "fr": "la voiture neuve",
+  "pl": "nowy samochód",
+  "ru": "но́вый автомоби́ль",
+  "rulat": "nówyj awtomobíl",
+  "ex": "A new car loses value quickly.",
+  "exde": "Ein Neuwagen verliert schnell an Wert."
+ },
+ "au274": {
+  "fr": "le concessionnaire automobile",
+  "pl": "dealer samochodowy",
+  "ru": "автоди́лер",
+  "rulat": "awtodíler",
+  "ex": "The car dealer offered us a discount.",
+  "exde": "Der Autohändler hat uns einen Rabatt angeboten."
+ },
+ "au275": {
+  "fr": "l'essai",
+  "pl": "jazda próbna",
+  "ru": "тест-дра́йв",
+  "rulat": "test-dráiw",
+  "ex": "Can I take it for a test drive?",
+  "exde": "Kann ich eine Probefahrt machen?"
+ },
+ "au276": {
+  "fr": "le kilométrage",
+  "pl": "przebieg",
+  "ru": "пробе́г",
+  "rulat": "probég",
+  "ex": "The mileage is quite low.",
+  "exde": "Der Kilometerstand ist ziemlich niedrig."
+ },
+ "au277": {
+  "fr": "l'acompte",
+  "pl": "zaliczka",
+  "ru": "предопла́та",
+  "rulat": "predopláta",
+  "ex": "We paid a deposit of 1,000 euros.",
+  "exde": "Wir haben eine Anzahlung von 1.000 Euro geleistet."
+ },
+ "au278": {
+  "fr": "le financement",
+  "pl": "finansowanie",
+  "ru": "финанси́рование",
+  "rulat": "finanssírowanije",
+  "ex": "The dealer also offers finance.",
+  "exde": "Der Händler bietet auch eine Finanzierung an."
+ },
+ "au279": {
+  "fr": "le leasing",
+  "pl": "leasing",
+  "ru": "ли́зинг",
+  "rulat": "lísing",
+  "ex": "Leasing is popular with companies.",
+  "exde": "Leasing ist bei Firmen beliebt."
+ },
+ "au280": {
+  "fr": "la reprise",
+  "pl": "rozliczenie starego auta w cenie nowego",
+  "ru": "трейд-и́н",
+  "rulat": "trejd-ín",
+  "ex": "The dealer offers a part exchange for my old car.",
+  "exde": "Der Händler bietet eine Inzahlungnahme meines alten Autos an."
+ },
+ "au281": {
+  "fr": "le titre de propriété du véhicule",
+  "pl": "karta pojazdu",
+  "ru": "па́спорт тра́нспортного сре́дства",
+  "rulat": "pásport tránsportnowo srédstwa",
+  "ex": "The vehicle logbook proves who owns the car.",
+  "exde": "Der Fahrzeugbrief beweist, wem das Auto gehört."
+ },
+ "au282": {
+  "fr": "la carte grise",
+  "pl": "dowód rejestracyjny",
+  "ru": "свиде́тельство о регистра́ции",
+  "rulat": "swidételstwo o registrázii",
+  "ex": "Always carry the vehicle registration certificate with you.",
+  "exde": "Hab den Fahrzeugschein immer dabei."
+ },
+ "au283": {
+  "fr": "immatriculer",
+  "pl": "zarejestrować",
+  "ru": "зарегистри́ровать",
+  "rulat": "saregistrírowat",
+  "ex": "I need to register my new car.",
+  "exde": "Ich muss mein neues Auto anmelden."
+ },
+ "au284": {
+  "fr": "retirer de la circulation",
+  "pl": "wyrejestrować",
+  "ru": "снять с учёта",
+  "rulat": "snjat s utschóta",
+  "ex": "We deregistered the old car last week.",
+  "exde": "Wir haben das alte Auto letzte Woche abgemeldet."
+ },
+ "au285": {
+  "fr": "le bureau des immatriculations",
+  "pl": "wydział komunikacji",
+  "ru": "регистрацио́нное отделе́ние",
+  "rulat": "registraziónnoje otdelénije",
+  "ex": "The vehicle registration office opens at eight.",
+  "exde": "Die Zulassungsstelle öffnet um acht."
+ },
+ "au286": {
+  "fr": "la taxe sur les véhicules",
+  "pl": "podatek od pojazdów",
+  "ru": "тра́нспортный нало́г",
+  "rulat": "tránsportnyj nalók",
+  "ex": "The vehicle tax is paid once a year.",
+  "exde": "Die Kfz-Steuer wird einmal im Jahr bezahlt."
+ },
+ "au287": {
+  "fr": "l'assurance auto",
+  "pl": "ubezpieczenie samochodu",
+  "ru": "автострахова́ние",
+  "rulat": "awtostrachowánije",
+  "ex": "My car insurance has gone up again.",
+  "exde": "Meine Kfz-Versicherung ist schon wieder teurer geworden."
+ },
+ "au288": {
+  "fr": "l'assurance responsabilité civile",
+  "pl": "ubezpieczenie OC",
+  "ru": "ОСА́ГО",
+  "rulat": "osága",
+  "ex": "Third-party insurance is compulsory in Germany.",
+  "exde": "Die Haftpflichtversicherung ist in Deutschland Pflicht."
+ },
+ "au289": {
+  "fr": "l'assurance tous risques",
+  "pl": "autocasco (AC)",
+  "ru": "КА́СКО",
+  "rulat": "kásko",
+  "ex": "For a new car, fully comprehensive insurance makes sense.",
+  "exde": "Für ein neues Auto lohnt sich die Vollkasko."
+ },
+ "au290": {
+  "fr": "l'assurance tiers étendue",
+  "pl": "częściowe autocasco",
+  "ru": "части́чное КА́СКО",
+  "rulat": "tschastítschnoje kásko",
+  "ex": "Third party, fire and theft insurance also covers broken glass.",
+  "exde": "Die Teilkasko deckt auch Glasschäden ab."
+ },
+ "au291": {
+  "fr": "le bonus",
+  "pl": "zniżka za bezszkodową jazdę",
+  "ru": "ски́дка за безава́рийную езду́",
+  "rulat": "skídka sa besawárijnuju jesdú",
+  "ex": "After ten years, I have a big no-claims bonus.",
+  "exde": "Nach zehn Jahren habe ich einen hohen Schadenfreiheitsrabatt."
+ },
+ "au292": {
+  "fr": "la prime d'assurance",
+  "pl": "składka ubezpieczeniowa",
+  "ru": "страхово́й взнос",
+  "rulat": "strachowój wsnos",
+  "ex": "The insurance premium is due in January.",
+  "exde": "Der Versicherungsbeitrag ist im Januar fällig."
+ },
+ "au293": {
+  "fr": "la police d'assurance",
+  "pl": "polisa ubezpieczeniowa",
+  "ru": "страхово́й по́лис",
+  "rulat": "strachowój pólis",
+  "ex": "Keep the insurance policy in a safe place.",
+  "exde": "Bewahre die Police an einem sicheren Ort auf."
+ },
+ "au294": {
+  "fr": "déclarer un sinistre",
+  "pl": "zgłosić szkodę",
+  "ru": "заяви́ть о страхово́м слу́чае",
+  "rulat": "sajawít o strachowóm slútschaje",
+  "ex": "I called the insurer to make a claim.",
+  "exde": "Ich habe die Versicherung angerufen, um einen Schaden zu melden."
+ },
+ "au295": {
+  "fr": "le constat amiable",
+  "pl": "protokół powypadkowy",
+  "ru": "протоко́л о ДТП",
+  "rulat": "protokól o de-te-pé",
+  "ex": "Both drivers signed the accident report.",
+  "exde": "Beide Fahrer haben den Unfallbericht unterschrieben."
+ },
+ "au296": {
+  "fr": "l'huile usagée",
+  "pl": "zużyty olej",
+  "ru": "отрабо́танное ма́сло",
+  "rulat": "otrabótannoje máslo",
+  "ex": "Take the used oil to a recycling centre.",
+  "exde": "Bring das Altöl zum Wertstoffhof."
+ },
+ "au297": {
+  "fr": "lâcher",
+  "pl": "zawieść",
+  "ru": "отказа́ть",
+  "rulat": "otkasát",
+  "ex": "The brakes failed on the hill.",
+  "exde": "Die Bremsen haben am Berg versagt."
+ },
+ "au298": {
+  "fr": "vérifier",
+  "pl": "sprawdzić",
+  "ru": "прове́рить",
+  "rulat": "prowérit",
+  "ex": "Please check the tyre pressure.",
+  "exde": "Bitte überprüfen Sie den Reifendruck."
+ },
+ "au299": {
+  "fr": "s'allumer",
+  "pl": "zapalić się",
+  "ru": "загоре́ться",
+  "rulat": "sagorétsja",
+  "ex": "A warning light lit up on the dashboard.",
+  "exde": "Auf dem Armaturenbrett leuchtete eine Warnleuchte auf."
+ },
+ "au300": {
+  "fr": "mettre sur cric",
+  "pl": "podnieść na lewarku",
+  "ru": "подня́ть домкра́том",
+  "rulat": "podnját domkrátom",
+  "ex": "We need to jack up the car to change the wheel.",
+  "exde": "Wir müssen das Auto aufbocken, um das Rad zu wechseln."
+ }
+}
