@@ -149,6 +149,38 @@ async function server() {
     await p.click('#stop'); await p.waitForTimeout(100);
     ok('Pensum zählt je Wort und Zielsprache', (await p.textContent('#cNew')) === '16', 'cNew=' + await p.textContent('#cNew'));
 
+    // Tagespensum erreicht: Weitermachen in Schritten des Pensums, Zuschlag gilt nur heute
+    const logHeute = await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const k = Object.keys(d.log)[0]; d.cfg.newPerDay = d.log[k]; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); return d.log[k]; });
+    await p.reload(); await p.waitForTimeout(400);
+    ok('Pensum erreicht: Startknopf meldet es, Knopf „Weiter lernen“ mit Schritt 5 sichtbar', (await p.textContent('#start')).trim() === 'Tagespensum erreicht' && await p.isVisible('#more') && (await p.textContent('#more')) === 'Weiter lernen: 5 neue Karten dazu' && (await p.textContent('#cNew')) === '0', (await p.textContent('#start')) + ' / ' + (await p.textContent('#more')));
+    await p.click('#more'); await p.waitForTimeout(200);
+    const moreState = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).more);
+    ok('Weiter lernen: Runde startet sofort, Zuschlag 5 für heute gespeichert', await p.isVisible('#drill') && (await p.textContent('#counter')).startsWith('Noch ') && moreState && moreState.n === 5 && moreState.d === await p.evaluate(() => { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }), JSON.stringify(moreState));
+    await p.click('#stop'); await p.waitForTimeout(100);
+    ok('Weiter lernen: Pensum um 5 erhöht, Startknopf wieder aktiv', (await p.textContent('#cNew')) === '5' && (await p.textContent('#start')).trim() === 'Lernen starten' && !(await p.isVisible('#more')), 'cNew=' + await p.textContent('#cNew'));
+    await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); d.more = { d: '2000-01-01', n: 5 }; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); });
+    await p.reload(); await p.waitForTimeout(400);
+    ok('Zuschlag eines anderen Tages zählt nicht', (await p.textContent('#cNew')) === '0' && await p.isVisible('#more'));
+    await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); d.cfg.newPerDay = 20; delete d.more; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); });
+    await p.reload(); await p.waitForTimeout(400);
+    ok('Pensum zurück auf 20', (await p.textContent('#cNew')) === String(20 - logHeute), 'cNew=' + await p.textContent('#cNew'));
+
+    // Fortschrittsübersicht: je Stapel und Thema, Sprache wählbar, Stapel aufklappbar
+    const fromVorher = await p.evaluate(() => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const t = Date.now() + 9e8, f = d.cfg.from;
+      d.items.forEach(i => { i.p = {}; if (i.deck === 'Küche' && i.cat === 'Obst') i.p = { en: { s: 5, d: t }, pl: { s: 1, d: t } }; });
+      d.cfg.from = 'mix'; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); return f; });
+    await p.reload(); await p.waitForTimeout(400);
+    const prog = async sel => (await p.$$eval(sel, r => r.map(x => [...x.querySelectorAll('span')].map(s => s.textContent.trim()).filter(Boolean).join(' '))));
+    ok('Fortschritt: Zeile je Stapel, Gesamtzeile, Summe in DE, EN', (await prog('#progList button.prow')).length === 7 && /^Alle Stapel.*\d+ %$/.test((await prog('#progAll .prow'))[0]) && /^25 sicher · 0 im Lernen · \d+ neu · 2424 Karten in DE, EN$/.test(await p.textContent('#progSum')), await p.textContent('#progSum'));
+    await p.click('#progList [data-pd="Küche"]'); await p.waitForTimeout(100);
+    const sub = await prog('#progList .prow.sub');
+    ok('Fortschritt: Stapel Küche aufgeklappt, 20 Themen, Obst 50 % (EN sicher, DE neu)', sub.length === 20 && sub.includes('Obst 50 %') && (await p.getAttribute('#progList [data-pd="Küche"]', 'aria-expanded')) === 'true', JSON.stringify(sub.filter(x => /Obst/.test(x))));
+    await p.click('#progPick [data-p="pl"]'); await p.waitForTimeout(100);
+    ok('Fortschritt: Sprache Polnisch gewählt, Obst 0 % sicher, 25 im Lernen', /^0 sicher · 25 im Lernen · \d+ neu · \d+ Karten in PL$/.test(await p.textContent('#progSum')) && (await prog('#progList .prow.sub')).includes('Obst 0 %') && (await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).cfg.prog)) === 'pl', await p.textContent('#progSum'));
+    await p.click('#progPick [data-p="auto"]'); await p.click('#progList [data-pd="Küche"]'); await p.waitForTimeout(100);
+    ok('Fortschritt: Stapel wieder zugeklappt', (await prog('#progList .prow.sub')).length === 0);
+    await p.evaluate(f => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); d.cfg.from = f; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); }, fromVorher);
+
     // Vorzeitigkeitsregel: Karte A hat EN in einem Tag, PL neu → Richtung DE→EN,PL, beides richtig
     await p.evaluate(aId => { const d = JSON.parse(localStorage.getItem('vokabeltrainer-v1')); const far = Date.now() + 200 * 864e5;
       d.items.forEach(i => { if (i.id !== aId) i.p = { en: { s: 6, d: far }, pl: { s: 6, d: far } }; else i.p = { en: { s: 0, d: Date.now() + 864e5 } }; });

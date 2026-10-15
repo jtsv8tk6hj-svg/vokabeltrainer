@@ -86,7 +86,7 @@ Englisch übernommen und dann gelöscht, weil beide Richtungen gemischt geübt w
 Daneben im Speicher: `cfg` (Tagespensum, Lernweise, Antwortmodus `mode`, Richtung
 `from`/`to`, `forms` Verbformen mitlernen, `wl` Sprachen der Wörterliste), `log` (neue
 Karten je Tag, Schlüssel `JJJJ-MM-TT` nach Ortszeit), `key` (optionaler API-Schlüssel),
-`rep` (gemeldete Formen), `seedn` (Zahl der Grundstock-Einträge beim letzten Abgleich:
+`rep` (gemeldete Formen), `more` (Zuschlag zum Tagespensum `{d, n}`, gilt nur am Tag `d`), `seedn` (Zahl der Grundstock-Einträge beim letzten Abgleich:
 kommen neue hinzu, etwa der Stapel Verben, trägt `load()` die fehlenden Ids einmalig
 nach, ohne gelöschte Wörter wiederzubeleben).
 
@@ -118,6 +118,15 @@ LADDER = [1, 3, 7, 16, 35, 75, 150, 300]   // Tage
 Auf jedem Knopf steht der tatsächlich resultierende Abstand. Eine neue Karte
 startet bei Stufe 0 (Gut → 1 Tag) bzw. Stufe 1 (Leicht → 3 Tage). Der Wiederanlauf
 nach „Nochmal“ zählt wie neu: Gut führt wieder zu Stufe 0.
+
+**Tagespensum und Weitermachen.** Das Pensum (`cfg.newPerDay`, Vorgabe 20) begrenzt
+neue Karten je Tag; Wiederholungen sind nie begrenzt. Ist es erreicht und liegt in der
+Auswahl noch Neues, meldet der Startknopf „Tagespensum erreicht“ und darunter erscheint
+**Weiter lernen: N neue Karten dazu** mit dem Hinweis, dass die Wiederholungen der
+nächsten Tage dann mehr werden. Ein Tipp erhöht `data.more = {d: heute, n}` um einen
+Schritt (das Pensum, mindestens 5, höchstens das noch vorhandene Neue) und startet
+sofort eine Runde; der Zuschlag gilt nur für diesen Tag, `counts()` rechnet
+`newPerDay + extra() - newToday()`. Endet eine Runde am Pensum, sagt der Toast das.
 
 **Vorzeitigkeitsregel.** Eine Karte erscheint, sobald eine ihrer Zielsprachen fällig
 oder neu ist; die übrigen gewählten Zielsprachen werden mit abgefragt. Ist eine
@@ -257,6 +266,22 @@ Vorgabe 20). Die Wörter landen mit dem Thema als Kategorie im angegebenen Stape
 `norm()` übersprungen, Kennung `t<Zeitstempel>-<n>`. Danach ist das Thema unter
 „Lernen“ als Kategorie wählbar.
 
+## Fortschrittsübersicht
+
+Die Lernseite endet mit dem Panel **Fortschritt** (`progress()`): eine Zeile je Stapel,
+antippbar, dann eine Zeile je Thema darunter (`progOpen`, nicht gespeichert). Jede
+Zeile trägt einen Balken aus drei Anteilen und die Zahl in Prozent: **sicher** (Stufe
+≥ 4, also Abstand 35 Tage oder mehr, nicht im Wiederanlauf), **im Lernen** (begonnen,
+noch darunter), **neu** (nie gelernt). Gezählt wird je Wort und Sprache, ohne
+Formkarten; Wörter ohne Eintrag in der Sprache zählen nicht. Die Chips wählen die
+Sprache: „Lernrichtung“ (`cfg.prog = 'auto'`, bei `mix` Deutsch und Englisch, sonst
+`cfg.to`) oder eine einzelne. Farben über die Tokens `--ok` und `--mid`, neu bleibt
+`--line`. Die Zeilen tragen `aria-label` mit Namen und Prozent, die Balken sind
+`aria-hidden`.
+
+Ein dezenter Hinweis „Vokabeltrainer von CJL“ steht am Ende der Begrüßung und am Ende
+der Seite *Daten*.
+
 ## Didaktische Festlegungen
 
 Diese sind nicht beliebig — sie wurden mit fremdsprachendidaktischer Begründung so
@@ -366,10 +391,12 @@ Bewertungsknöpfe waren immer sichtbar, das Lernverfahren damit wertlos. Abgesic
 durch `[hidden]{display:none !important}` ganz oben im Stylesheet — diese Zeile nicht
 entfernen.
 
-**2. Spezifität bei Knöpfen.** `#app button{color:…}` ist stärker als `.primary{…}`
-und hat die dunkle Schrift auf hellen Knöpfen überschrieben: weiß auf weiß. Deshalb
-sind die Knopfregeln als `#app .primary` geschrieben. Bei neuen Knöpfen gleich stark
-schreiben.
+**2. Spezifität bei Knöpfen.** Eine Regel `#app button{color:…}` war stärker als
+`.primary{…}` und hat die dunkle Schrift auf hellen Knöpfen überschrieben: weiß auf
+weiß. Heute gibt es kein `#app` mehr; das globale `button{color:var(--ink)}` ist schwach,
+Knopfregeln stehen als `.btn`, `.chipbtn`, `button.prow` usw. Eine Regel mit `#app`
+davor trifft nichts (so blieben die Stapelzeilen der Fortschrittsübersicht erst graue
+Standardknöpfe). Bei neuen Knöpfen Selektor und Stärke an den vorhandenen ausrichten.
 
 **3. Leerer Speicherstand.** Lag unter dem Schlüssel ein Objekt ohne `items`, lud die
 App brav nichts und zeigte „0 Wörter". Behoben durch Selbstheilung in `load()`: ist
@@ -411,7 +438,8 @@ Modulpfad, hilft `NODE_PATH=$(npm root -g)`. Abgedeckt sind: Begrüßung nur bei
 ersten Start, Verbergen und Aufdecken, Lage und Beschriftung der Bewertungsknöpfe,
 Speichern der Bewertung je Zielsprache, Wiederanlauf nach „Nochmal“, die drei
 Antwortmodi, Richtungswahl, zwei Zielsprachen mit Urteil je Sprache, Pensum je Wort
-und Sprache, Vorzeitigkeitsregel, Übernahme alter Speicherstände und `VT1`-Codes,
+und Sprache, Weitermachen über das Pensum hinaus, Fortschrittsübersicht je Stapel,
+Thema und Sprache, Vorzeitigkeitsregel, Übernahme alter Speicherstände und `VT1`-Codes,
 Listenimport mit Dubletten und
 nachgestellter API (`page.route` auf `api.anthropic.com`, prüft auch Modell und
 Schema der Anfrage), Nachübersetzen, Übernahme aus dem Link, Start ohne Speicher mit

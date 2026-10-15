@@ -52,6 +52,12 @@ auf der Karte ein Eingabefeld je Zielsprache, nach dem Aufdecken ein Urteil je S
 
 Jedes Wort hat je Zielsprache einen eigenen Lernstand. Wer Polnisch übt, verändert
 damit nichts am Stand für Englisch. Das Tagespensum zählt je Wort und Zielsprache.
+Ist es erreicht, bietet die Lernseite **Weiter lernen** an: ein Tipp gibt für heute
+weitere neue Karten frei, in Schritten des Pensums. Wiederholungen sind nie begrenzt.
+
+Am Ende der Lernseite zeigt **Fortschritt**, wie sicher der Wortschatz sitzt: je Stapel
+und, nach Antippen, je Thema ein Balken aus sicher (Abstand 35 Tage und mehr), im Lernen
+und neu, wahlweise für die Lernrichtung oder eine einzelne Sprache.
 
 ## Erscheinungsbild
 

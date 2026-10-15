@@ -20,6 +20,7 @@
     --de:#7aa7ff; --en:#f2836f; --fr:#5ecfa4; --pl:#e8b45c; --ru:#bb96ee;
     --ontag:#0e1013; --warn-bg:#2a1c1c; --warn-line:#55302e; --warn-ink:#f6d5cf;
     --safe-bg:#182520; --safe-line:#2d4a3c; --safe-ink:#bfe3d2;
+    --ok:#5ecfa4; --mid:#e8b45c;
     color-scheme:dark;
     --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
     --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -32,6 +33,7 @@
       --de:#9dbcff; --en:#f7a08f; --fr:#8adbbb; --pl:#efc77c; --ru:#cdb1f3;
       --warn-bg:#fbe9e5; --warn-line:#e7b9b0; --warn-ink:#6b2a22;
       --safe-bg:#e4f3ea; --safe-line:#b7d9c5; --safe-ink:#1f4a35;
+      --ok:#3fa97c; --mid:#d9a23a;
       color-scheme:light;
     }
   }
@@ -114,6 +116,20 @@
   .rl .rlat{font-size:12px; color:var(--faint); font-style:italic}
   .rmeta{font-size:12px; color:var(--faint); margin-top:7px}
 
+  /* Fortschritt: eine Zeile je Stapel oder Thema, Balken sicher / im Lernen / neu */
+  .prow{display:flex; align-items:center; gap:10px; min-height:40px; padding:3px 0; border-top:1px solid var(--line); font-size:13.5px}
+  .prow.all{border-top:0; font-weight:600}
+  .prow .pn{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .prow .pb{display:flex; width:96px; height:8px; border-radius:4px; background:var(--line); overflow:hidden; flex:none}
+  .prow .pb i{display:block; height:100%}
+  .prow .pb .f{background:var(--ok)} .prow .pb .l{background:var(--mid)}
+  .prow .pp{width:44px; text-align:right; font-variant-numeric:tabular-nums; color:var(--dim); flex:none}
+  .prow.sub{padding-left:16px; font-size:13px; color:var(--dim); border-top:1px dashed var(--line)}
+  button.prow{width:100%; background:none; border:0; border-top:1px solid var(--line); border-radius:0; color:var(--ink); text-align:left; font-size:13.5px; padding:3px 0}
+  button.prow .pn::before{content:'\25B8\00a0'; color:var(--faint)} button.prow[aria-expanded=true] .pn::before{content:'\25BE\00a0'}
+  .plegend{display:flex; gap:12px; font-size:12px; color:var(--faint); margin:6px 0 2px}
+  .plegend i{display:inline-block; width:10px; height:10px; border-radius:3px; vertical-align:-1px; margin-right:4px; background:var(--line)}
+  .plegend .f i{background:var(--ok)} .plegend .l i{background:var(--mid)}
   .counts{display:flex; gap:10px; margin-bottom:14px}
   .cbox{flex:1; background:var(--card); border:1px solid var(--line); border-radius:13px; padding:16px 6px; text-align:center}
   .cbox b{display:block; font-family:var(--serif); font-size:30px; font-weight:600; line-height:1}
@@ -262,6 +278,8 @@
     <div class="cbox"><b id="cPool">0</b><span>in der Auswahl</span></div>
   </div>
   <button class="btn main wide" id="start" style="min-height:56px">Lernen starten</button>
+  <button class="btn wide" id="more" hidden style="margin-top:9px">Weiter lernen</button>
+  <p class="hint" id="moreHint" hidden style="margin-top:7px">Das Tagespensum ist erreicht. Weitermachen geht trotzdem; die Wiederholungen der nächsten Tage werden dann mehr.</p>
   <div class="panel" style="margin-top:16px">
     <h2>Richtung</h2>
     <div class="chiprow"><span class="lbl">Von</span><div class="chips" id="fromPick" role="group" aria-label="Fragesprache"></div></div>
@@ -277,6 +295,15 @@
     <h2>Auswahl</h2>
     <div class="chips" id="deckPick"></div>
     <div class="chips" id="catPick" style="margin-top:9px"></div>
+  </div>
+  <div class="panel" id="progPanel">
+    <h2>Fortschritt</h2>
+    <div class="chips" id="progPick" role="group" aria-label="Sprache der Übersicht"></div>
+    <div class="plegend"><span class="f"><i></i>sicher</span><span class="l"><i></i>im Lernen</span><span><i></i>neu</span></div>
+    <div id="progAll"></div>
+    <p class="hint" id="progSum"></p>
+    <div id="progList"></div>
+    <p class="hint" style="margin-top:9px">Sicher heißt: Abstand von mindestens 35 Tagen erreicht. Gezählt wird je Wort und Sprache, ohne Formkarten. Stapel antippen zeigt die Themen.</p>
   </div>
 </section>
 
@@ -411,6 +438,7 @@
     <button class="btn wide" id="seedBtn">Grundstock nachladen</button>
     <button class="btn wide" id="resetBtn">Lernfortschritt zurücksetzen</button>
   </div>
+  <p class="hint" style="text-align:center;margin:6px 0 10px">Vokabeltrainer von CJL</p>
 </section>
 
 </div>
@@ -468,6 +496,7 @@
     </div>
     <button class="btn main wide" id="welcomeGo" style="min-height:54px">Los geht's</button>
     <p class="hint" style="text-align:center;margin-top:12px">Diese Übersicht findest du jederzeit unter „Daten".</p>
+    <p class="hint" style="text-align:center;margin-top:18px">Ein Vokabeltrainer von CJL</p>
   </div>
 </div>
 <div id="codeWrap" hidden>
@@ -599,6 +628,8 @@ const FORMS = {"vb019":{"de":{"inf":"arbeiten","aspect":"","pair":"","gender":""
   const cats =()=>['alle',...[...new Set(data.items.filter(i=>deck==='alle'||(i.deck||'Eigene')===deck).map(i=>i.cat).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de'))];
   const pool =()=>data.items.filter(i=>(deck==='alle'||(i.deck||'Eigene')===deck)&&(cat==='alle'||i.cat===cat));
   const newToday=()=>data.log[today()]||0;
+  // Zuschlag zum Tagespensum, gilt nur für den Tag, an dem er gewählt wurde („Weiter lernen“)
+  const extra=()=>data.more&&data.more.d===today()?data.more.n||0:0;
   function counts(){
     const p=pool(), t=Date.now();
     const dueList=[], freshList=[]; let due=0, fresh=0;
@@ -608,7 +639,7 @@ const FORMS = {"vb019":{"de":{"inf":"arbeiten","aspect":"","pair":"","gender":""
       due+=s.due; fresh+=s.fresh;
     }));
     // Tagespensum zählt je Wort und Zielsprache bzw. je Formkarte; neue Karten bis zur Grenze mitnehmen
-    const budget=Math.max(0,data.cfg.newPerDay-newToday());
+    const budget=Math.max(0,data.cfg.newPerDay+extra()-newToday());
     const take=[]; let used=0;
     for(const e of freshList){ const n=eState(e,t).fresh; if(used+n>budget) continue; used+=n; take.push(e); }
     return {pool:p.length, due, dueList, freshList, take, newLeft:Math.min(fresh,budget)};
@@ -772,7 +803,7 @@ const FORMS = {"vb019":{"de":{"inf":"arbeiten","aspect":"","pair":"","gender":""
     $('#reveal').textContent=typing?'Prüfen':'Aufdecken';
   }
   function show(){
-    if(!ses.q.length){ stop('Durchgang beendet'); return; }
+    if(!ses.q.length){ const c=counts(); stop(!ses.look&&c.freshList.length&&!c.newLeft&&!c.due?'Durchgang beendet, Tagespensum erreicht':'Durchgang beendet'); return; }
     const e=ses.q[0], t=Date.now();
     if(isForm(e)) return showForm(e,t);
     const i=e.i;
@@ -946,7 +977,7 @@ const FORMS = {"vb019":{"de":{"inf":"arbeiten","aspect":"","pair":"","gender":""
       : 'Dieses Gerät speichert nichts. Sichere den Code nach jeder Lernrunde, sonst ist der Fortschritt weg.';
     $('#statBlock').textContent=data.items.length+' Wörter · '+data.items.filter(i=>LANGS.some(k=>st(i,k))).length
       +' begonnen · '+data.items.filter(i=>LANGS.some(k=>(st(i,k)||{}).s>=4)).length+' sitzen fest · heute '+newToday()+' neue';
-    modeChips(); answerChips(); dirChips(); wLangChips();
+    modeChips(); answerChips(); dirChips(); wLangChips(); progress();
     const miss=missing().length, mv=verbsMissing().length;
     $('#fillInfo').textContent=(miss?miss+' Wörter ohne vollständige Übersetzung oder Beispielsatz':'Alle Wörter sind vollständig übersetzt')
       +(mv?', '+mv+' Wörter ohne Formentafel.':'.');
@@ -964,7 +995,41 @@ const FORMS = {"vb019":{"de":{"inf":"arbeiten","aspect":"","pair":"","gender":""
     const b=$('#start');
     b.textContent=look?'Durchsehen starten':nothing?(c.freshList.length?'Tagespensum erreicht':'Heute nichts fällig'):'Lernen starten';
     b.classList.toggle('done',nothing);
+    // Pensum erreicht, aber noch Neues in der Auswahl: Weitermachen anbieten, in Schritten des Tagespensums
+    const spent=!look&&c.freshList.length&&!c.newLeft, step=Math.min(Math.max(5,data.cfg.newPerDay),c.freshList.reduce((n,e)=>n+eState(e,Date.now()).fresh,0));
+    $('#more').hidden=!spent; $('#moreHint').hidden=!spent;
+    $('#more').textContent='Weiter lernen: '+step+' neue Karten dazu'; $('#more').dataset.n=step;
   }
+  $('#more').onclick=()=>{ data.more={d:today(),n:extra()+(+$('#more').dataset.n||0)}; save(); render(); $('#start').click(); };
+  /* Fortschritt je Stapel und Thema: sicher (Stufe ≥ 4, also 35 Tage), im Lernen, neu; je Wort und Sprache */
+  const progOpen=new Set();
+  const progLangs=()=>data.cfg.prog&&data.cfg.prog!=='auto'?[data.cfg.prog]:(data.cfg.from==='mix'?['de','en']:data.cfg.to);
+  function tally(items,langs){
+    const r={n:0,l:0,f:0};
+    items.forEach(i=>langs.forEach(k=>{ if(!i[k]) return; const s=st(i,k); if(!s) r.n++; else if(s.s>=4&&!s.r) r.f++; else r.l++; }));
+    r.t=r.n+r.l+r.f; return r;
+  }
+  const pct=r=>r.t?Math.round(r.f/r.t*100):0;
+  const prow=(name,r,cls,attr)=>{
+    const tag=attr?'button':'div', w=x=>r.t?(x/r.t*100).toFixed(1):0;
+    return '<'+tag+' class="prow'+(cls?' '+cls:'')+'" '+(attr||'')+' aria-label="'+esc(name)+': '+pct(r)+' Prozent sicher"><span class="pn">'+esc(name)+'</span>'
+      +'<span class="pb" aria-hidden="true"><i class="f" style="width:'+w(r.f)+'%"></i><i class="l" style="width:'+w(r.l)+'%"></i></span><span class="pp">'+pct(r)+' %</span></'+tag+'>';
+  };
+  function progress(){
+    const langs=progLangs(), cur=data.cfg.prog||'auto';
+    $('#progPick').innerHTML=chip(cur==='auto','data-p="auto"','Lernrichtung')+L.map(([k])=>lchip(k,cur===k,'data-p="'+k+'"')).join('');
+    const all=tally(data.items,langs);
+    $('#progAll').innerHTML=prow('Alle Stapel',all,'all');
+    $('#progSum').textContent=all.f+' sicher · '+all.l+' im Lernen · '+all.n+' neu · '+all.t+' Karten in '+langs.map(k=>k.toUpperCase()).join(', ');
+    $('#progList').innerHTML=decks().slice(1).map(d=>{
+      const items=data.items.filter(i=>(i.deck||'Eigene')===d), r=tally(items,langs), open=progOpen.has(d);
+      const cats=[...new Set(items.map(i=>i.cat).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de'));
+      return prow(d,r,'','data-pd="'+esc(d)+'" aria-expanded="'+open+'"')
+        +(open?cats.map(c=>prow(c,tally(items.filter(i=>i.cat===c),langs),'sub')).join(''):'');
+    }).join('');
+  }
+  $('#progPick').onclick=e=>{ const b=e.target.closest('[data-p]'); if(b){ data.cfg.prog=b.dataset.p; save(); progress(); } };
+  $('#progList').onclick=e=>{ const b=e.target.closest('[data-pd]'); if(b){ const d=b.dataset.pd; progOpen.has(d)?progOpen.delete(d):progOpen.add(d); progress(); } };
   $('#answerPick').onclick=e=>{const b=e.target.closest('[data-a]'), k=b&&b.dataset.a; if(k){ data.cfg.mode=k; save(); answerChips(); }};
   function dirChips(){
     const from=data.cfg.from, to=data.cfg.to;
@@ -1371,7 +1436,7 @@ const FORMS = {"vb019":{"de":{"inf":"arbeiten","aspect":"","pair":"","gender":""
   };
   $('#resetBtn').onclick=()=>{
     if(!confirm('Alle Fälligkeiten zurücksetzen? Die Wörter bleiben erhalten.')) return;
-    data.items.forEach(i=>{i.p={}; delete i.g;}); data.log={};
+    data.items.forEach(i=>{i.p={}; delete i.g;}); data.log={}; delete data.more;
     if(!data.items.length) data.items=SEED.map(s=>migrate(Object.assign({},s)));
     save(); fillSelects(); render(); toast('Zurückgesetzt');
   };
