@@ -1,0 +1,802 @@
+{
+ "re001": {
+  "fr": "le vol",
+  "pl": "lot",
+  "ru": "рейс",
+  "rulat": "rejs",
+  "ex": "Our flight leaves at eight.",
+  "exde": "Unser Flug geht um acht."
+ },
+ "re002": {
+  "fr": "le passeport",
+  "pl": "paszport",
+  "ru": "па́спорт",
+  "rulat": "páspart",
+  "ex": "Don't forget your passport.",
+  "exde": "Vergiss deinen Reisepass nicht."
+ },
+ "re003": {
+  "fr": "la carte d'embarquement",
+  "pl": "karta pokładowa",
+  "ru": "поса́дочный тало́н",
+  "rulat": "possádotschnyj talón",
+  "ex": "Please show your boarding pass at the gate.",
+  "exde": "Bitte zeigen Sie Ihre Bordkarte am Gate."
+ },
+ "re004": {
+  "fr": "le bagage à main",
+  "pl": "bagaż podręczny",
+  "ru": "ручна́я кладь",
+  "rulat": "rutschnája klad",
+  "ex": "My hand luggage is too heavy.",
+  "exde": "Mein Handgepäck ist zu schwer."
+ },
+ "re005": {
+  "fr": "la valise",
+  "pl": "walizka",
+  "ru": "чемода́н",
+  "rulat": "tschemadán",
+  "ex": "My suitcase is blue.",
+  "exde": "Mein Koffer ist blau."
+ },
+ "re006": {
+  "fr": "le comptoir d'enregistrement",
+  "pl": "stanowisko odprawy",
+  "ru": "сто́йка регистра́ции",
+  "rulat": "stójka registrázii",
+  "ex": "The check-in desk opens at six.",
+  "exde": "Der Check-in-Schalter öffnet um sechs."
+ },
+ "re007": {
+  "fr": "s'enregistrer",
+  "pl": "odprawić się",
+  "ru": "зарегистри́роваться",
+  "rulat": "saregistrírowatsja",
+  "ex": "We need to check in early.",
+  "exde": "Wir müssen früh einchecken."
+ },
+ "re008": {
+  "fr": "la porte d'embarquement",
+  "pl": "wyjście",
+  "ru": "вы́ход на поса́дку",
+  "rulat": "wýchad na possádku",
+  "ex": "Our flight leaves from gate 12.",
+  "exde": "Unser Flug geht von Gate 12."
+ },
+ "re009": {
+  "fr": "le départ",
+  "pl": "odlot",
+  "ru": "вы́лет",
+  "rulat": "wýlet",
+  "ex": "The departure is at ten.",
+  "exde": "Der Abflug ist um zehn."
+ },
+ "re010": {
+  "fr": "retardé",
+  "pl": "opóźniony",
+  "ru": "заде́ржанный",
+  "rulat": "sadjérshannyj",
+  "ex": "The flight is delayed.",
+  "exde": "Der Flug ist verspätet."
+ },
+ "re011": {
+  "fr": "annulé",
+  "pl": "odwołany",
+  "ru": "отменён",
+  "rulat": "atmenjón",
+  "ex": "My flight was cancelled.",
+  "exde": "Mein Flug wurde annulliert."
+ },
+ "re012": {
+  "fr": "le contrôle de sécurité",
+  "pl": "kontrola bezpieczeństwa",
+  "ru": "досмо́тр",
+  "rulat": "dasmótr",
+  "ex": "The security check took an hour.",
+  "exde": "Die Sicherheitskontrolle hat eine Stunde gedauert."
+ },
+ "re013": {
+  "fr": "le contrôle des passeports",
+  "pl": "kontrola paszportowa",
+  "ru": "па́спортный контро́ль",
+  "rulat": "páspartnyj kantról",
+  "ex": "There was a long queue at passport control.",
+  "exde": "An der Passkontrolle gab es eine lange Schlange."
+ },
+ "re014": {
+  "fr": "la douane",
+  "pl": "odprawa celna",
+  "ru": "тамо́жня",
+  "rulat": "tamóshnja",
+  "ex": "We went through customs quickly.",
+  "exde": "Wir sind schnell durch den Zoll gegangen."
+ },
+ "re015": {
+  "fr": "le retrait des bagages",
+  "pl": "odbiór bagażu",
+  "ru": "вы́дача багажа́",
+  "rulat": "wýdatscha bagashá",
+  "ex": "Meet me at baggage reclaim.",
+  "exde": "Wir treffen uns an der Gepäckausgabe."
+ },
+ "re016": {
+  "fr": "le terminal",
+  "pl": "terminal",
+  "ru": "термина́л",
+  "rulat": "terminál",
+  "ex": "The terminal is very big.",
+  "exde": "Das Terminal ist sehr groß."
+ },
+ "re017": {
+  "fr": "le vol de correspondance",
+  "pl": "lot przesiadkowy",
+  "ru": "стыко́вочный рейс",
+  "rulat": "stykówotschnyj rejs",
+  "ex": "I missed my connecting flight.",
+  "exde": "Ich habe meinen Anschlussflug verpasst."
+ },
+ "re018": {
+  "fr": "changer d'avion",
+  "pl": "przesiadać się",
+  "ru": "переса́живаться",
+  "rulat": "peressáshiwatsja",
+  "ex": "We have to change planes in Frankfurt.",
+  "exde": "Wir müssen in Frankfurt umsteigen."
+ },
+ "re019": {
+  "fr": "partir",
+  "pl": "odlatywać",
+  "ru": "вылета́ть",
+  "rulat": "wyletát",
+  "ex": "The plane departs at noon.",
+  "exde": "Das Flugzeug fliegt mittags ab."
+ },
+ "re020": {
+  "fr": "atterrir",
+  "pl": "lądować",
+  "ru": "приземля́ться",
+  "rulat": "prisemljátsja",
+  "ex": "We will land in Berlin in an hour.",
+  "exde": "Wir landen in einer Stunde in Berlin."
+ },
+ "re021": {
+  "fr": "décoller",
+  "pl": "startować",
+  "ru": "взлета́ть",
+  "rulat": "wsljetát",
+  "ex": "The plane will take off in ten minutes.",
+  "exde": "Das Flugzeug wird in zehn Minuten starten."
+ },
+ "re022": {
+  "fr": "l'embarquement",
+  "pl": "boarding",
+  "ru": "поса́дка",
+  "rulat": "possádka",
+  "ex": "Boarding starts at nine o'clock at gate 12.",
+  "exde": "Das Boarding beginnt um neun Uhr an Gate 12."
+ },
+ "re023": {
+  "fr": "la place côté hublot",
+  "pl": "miejsce przy oknie",
+  "ru": "ме́сто у окна́",
+  "rulat": "mjésto u okná",
+  "ex": "I'd like a window seat, please.",
+  "exde": "Ich hätte gern einen Fensterplatz, bitte."
+ },
+ "re024": {
+  "fr": "la place côté couloir",
+  "pl": "miejsce przy przejściu",
+  "ru": "ме́сто у прохо́да",
+  "rulat": "mjésto u prochóda",
+  "ex": "He always books an aisle seat.",
+  "exde": "Er bucht immer einen Gangplatz."
+ },
+ "re025": {
+  "fr": "la compagnie aérienne",
+  "pl": "linia lotnicza",
+  "ru": "авиакомпа́ния",
+  "rulat": "awiakompánija",
+  "ex": "Which airline are you flying with?",
+  "exde": "Mit welcher Fluggesellschaft fliegst du?"
+ },
+ "re026": {
+  "fr": "le pilote",
+  "pl": "pilot",
+  "ru": "пило́т",
+  "rulat": "pilót",
+  "ex": "The pilot welcomed the passengers.",
+  "exde": "Der Pilot begrüßte die Passagiere."
+ },
+ "re027": {
+  "fr": "le steward",
+  "pl": "steward",
+  "ru": "бортпроводни́к",
+  "rulat": "bortprawodník",
+  "ex": "The flight attendant brought me a glass of water.",
+  "exde": "Der Flugbegleiter brachte mir ein Glas Wasser."
+ },
+ "re028": {
+  "fr": "l'équipage",
+  "pl": "załoga",
+  "ru": "экипа́ж",
+  "rulat": "ekipásch",
+  "ex": "The crew was very friendly.",
+  "exde": "Die Besatzung war sehr freundlich."
+ },
+ "re029": {
+  "fr": "la ceinture de sécurité",
+  "pl": "pas bezpieczeństwa",
+  "ru": "реме́нь безопа́сности",
+  "rulat": "rjemén besopásnosti",
+  "ex": "Please keep your seat belt on.",
+  "exde": "Bitte lassen Sie den Sicherheitsgurt angelegt."
+ },
+ "re030": {
+  "fr": "attacher sa ceinture",
+  "pl": "zapiąć pasy",
+  "ru": "пристегну́ться",
+  "rulat": "pristegnúzza",
+  "ex": "Please fasten your seat belt before take-off.",
+  "exde": "Bitte schnallen Sie sich vor dem Start an."
+ },
+ "re031": {
+  "fr": "la rangée",
+  "pl": "rząd",
+  "ru": "ряд",
+  "rulat": "rjad",
+  "ex": "We are sitting in row 14.",
+  "exde": "Wir sitzen in Sitzreihe 14."
+ },
+ "re032": {
+  "fr": "le siège",
+  "pl": "miejsce",
+  "ru": "ме́сто",
+  "rulat": "mjésto",
+  "ex": "Is this seat free?",
+  "exde": "Ist dieser Sitzplatz frei?"
+ },
+ "re033": {
+  "fr": "le siège du milieu",
+  "pl": "środkowe miejsce",
+  "ru": "ме́сто посереди́не",
+  "rulat": "mjésto posserjedínje",
+  "ex": "Nobody likes the middle seat.",
+  "exde": "Niemand mag den Mittelplatz."
+ },
+ "re034": {
+  "fr": "le compartiment à bagages",
+  "pl": "schowek na bagaż",
+  "ru": "по́лка для багажа́",
+  "rulat": "pólka dlja bagaschá",
+  "ex": "Put your bag in the overhead locker.",
+  "exde": "Leg deine Tasche ins Gepäckfach."
+ },
+ "re035": {
+  "fr": "le gilet de sauvetage",
+  "pl": "kamizelka ratunkowa",
+  "ru": "спаса́тельный жиле́т",
+  "rulat": "spassátelny schilét",
+  "ex": "Your life jacket is under your seat.",
+  "exde": "Ihre Schwimmweste befindet sich unter Ihrem Sitz."
+ },
+ "re036": {
+  "fr": "le masque à oxygène",
+  "pl": "maska tlenowa",
+  "ru": "кислоро́дная ма́ска",
+  "rulat": "kissloródnaja máska",
+  "ex": "The oxygen mask will drop down automatically.",
+  "exde": "Die Sauerstoffmaske fällt automatisch herab."
+ },
+ "re037": {
+  "fr": "la sortie de secours",
+  "pl": "wyjście awaryjne",
+  "ru": "авари́йный вы́ход",
+  "rulat": "awaríjny wýchod",
+  "ex": "Please note the nearest emergency exit.",
+  "exde": "Bitte beachten Sie den nächstgelegenen Notausgang."
+ },
+ "re038": {
+  "fr": "les turbulences",
+  "pl": "turbulencje",
+  "ru": "турбуле́нтность",
+  "rulat": "turbuléntnost",
+  "ex": "We are experiencing some turbulence.",
+  "exde": "Wir haben gerade einige Turbulenzen."
+ },
+ "re039": {
+  "fr": "les toilettes",
+  "pl": "toaleta",
+  "ru": "туале́т",
+  "rulat": "tualét",
+  "ex": "The toilet is at the back of the plane.",
+  "exde": "Die Toilette ist hinten im Flugzeug."
+ },
+ "re040": {
+  "fr": "le dossier",
+  "pl": "oparcie",
+  "ru": "спи́нка кре́сла",
+  "rulat": "spínka krjéssla",
+  "ex": "Please return your seat back to the upright position.",
+  "exde": "Bitte stellen Sie Ihre Rückenlehne senkrecht."
+ },
+ "re041": {
+  "fr": "la tablette",
+  "pl": "stolik",
+  "ru": "откидно́й сто́лик",
+  "rulat": "otkidnój stólik",
+  "ex": "Please fold up your tray table.",
+  "exde": "Bitte klappen Sie Ihren Klapptisch hoch."
+ },
+ "re042": {
+  "fr": "le sac à vomi",
+  "pl": "torebka na wymioty",
+  "ru": "гигиени́ческий паке́т",
+  "rulat": "gigijenítscheskij pakét",
+  "ex": "There is a sick bag in the seat pocket.",
+  "exde": "In der Sitztasche ist eine Spucktüte."
+ },
+ "re043": {
+  "fr": "le repas à bord",
+  "pl": "posiłek na pokładzie",
+  "ru": "бортово́е пита́ние",
+  "rulat": "bortowóje pitánije",
+  "ex": "The in-flight meal was surprisingly good.",
+  "exde": "Die Bordverpflegung war überraschend gut."
+ },
+ "re044": {
+  "fr": "le mode avion",
+  "pl": "tryb samolotowy",
+  "ru": "режи́м полёта",
+  "rulat": "reschím poljóta",
+  "ex": "Please switch your phone to flight mode.",
+  "exde": "Bitte schalten Sie Ihr Handy in den Flugmodus."
+ },
+ "re045": {
+  "fr": "la piste d'atterrissage",
+  "pl": "pas startowy",
+  "ru": "взлётно-поса́дочная полоса́",
+  "rulat": "wsljótno-possádotschnaja polossá",
+  "ex": "The plane is taxiing to the runway.",
+  "exde": "Das Flugzeug rollt zur Landebahn."
+ },
+ "re046": {
+  "fr": "l'atterrissage",
+  "pl": "lądowanie",
+  "ru": "поса́дка",
+  "rulat": "possádka",
+  "ex": "The landing was very smooth.",
+  "exde": "Die Landung war sehr sanft."
+ },
+ "re047": {
+  "fr": "l'altitude",
+  "pl": "wysokość lotu",
+  "ru": "высота́ полёта",
+  "rulat": "wyssotá poljóta",
+  "ex": "We are now flying at an altitude of ten thousand metres.",
+  "exde": "Wir fliegen jetzt in einer Flughöhe von zehntausend Metern."
+ },
+ "re048": {
+  "fr": "le décalage horaire",
+  "pl": "jet lag",
+  "ru": "джетла́г",
+  "rulat": "dschetlág",
+  "ex": "I always have jet lag after flying to America.",
+  "exde": "Nach einem Flug nach Amerika habe ich immer Jetlag."
+ },
+ "re049": {
+  "fr": "l'escale",
+  "pl": "międzylądowanie",
+  "ru": "промежу́точная поса́дка",
+  "rulat": "promeschútotschnaja possádka",
+  "ex": "Our flight has a stopover in Dubai.",
+  "exde": "Unser Flug hat eine Zwischenlandung in Dubai."
+ },
+ "re050": {
+  "fr": "le vol direct",
+  "pl": "lot bezpośredni",
+  "ru": "прямо́й рейс",
+  "rulat": "prjamój rejs",
+  "ex": "Is there a direct flight to Rome?",
+  "exde": "Gibt es einen Direktflug nach Rom?"
+ },
+ "re051": {
+  "fr": "la voie",
+  "pl": "tor",
+  "ru": "путь",
+  "rulat": "put'",
+  "ex": "The train leaves from track 5.",
+  "exde": "Der Zug fährt von Gleis 5 ab."
+ },
+ "re052": {
+  "fr": "le quai",
+  "pl": "peron",
+  "ru": "платфо́рма",
+  "rulat": "platfórma",
+  "ex": "We waited on the platform for twenty minutes.",
+  "exde": "Wir haben zwanzig Minuten auf dem Bahnsteig gewartet."
+ },
+ "re053": {
+  "fr": "le distributeur de billets",
+  "pl": "automat biletowy",
+  "ru": "биле́тный автома́т",
+  "rulat": "bilétnyj awtomát",
+  "ex": "You can buy a ticket at the ticket machine.",
+  "exde": "Am Fahrkartenautomaten kannst du eine Fahrkarte kaufen."
+ },
+ "re054": {
+  "fr": "l'horaire",
+  "pl": "rozkład jazdy",
+  "ru": "расписа́ние",
+  "rulat": "rasspissánije",
+  "ex": "Let's check the timetable.",
+  "exde": "Lass uns auf den Fahrplan schauen."
+ },
+ "re055": {
+  "fr": "arriver",
+  "pl": "przyjeżdżać",
+  "ru": "прибыва́ть",
+  "rulat": "pribywát'",
+  "ex": "The train arrives at eight o'clock.",
+  "exde": "Der Zug kommt um acht Uhr an."
+ },
+ "re056": {
+  "fr": "la correspondance",
+  "pl": "połączenie",
+  "ru": "переса́дка",
+  "rulat": "peressádka",
+  "ex": "I missed my connection in Frankfurt.",
+  "exde": "Ich habe meinen Anschluss in Frankfurt verpasst."
+ },
+ "re057": {
+  "fr": "monter",
+  "pl": "wsiadać",
+  "ru": "сади́ться",
+  "rulat": "ssadíttsa",
+  "ex": "Please get on the train quickly.",
+  "exde": "Bitte steigen Sie schnell in den Zug ein."
+ },
+ "re058": {
+  "fr": "descendre",
+  "pl": "wysiadać",
+  "ru": "выходи́ть",
+  "rulat": "wychodít'",
+  "ex": "We need to get off at the next stop.",
+  "exde": "Wir müssen an der nächsten Haltestelle aussteigen."
+ },
+ "re059": {
+  "fr": "le contrôleur",
+  "pl": "konduktor",
+  "ru": "контролёр",
+  "rulat": "kontroljór",
+  "ex": "The ticket inspector asked to see my ticket.",
+  "exde": "Der Schaffner wollte meine Fahrkarte sehen."
+ },
+ "re060": {
+  "fr": "la réservation de place",
+  "pl": "rezerwacja miejsca",
+  "ru": "брони́рование ме́ста",
+  "rulat": "bronírowanije mésta",
+  "ex": "Do I need a seat reservation for this train?",
+  "exde": "Brauche ich für diesen Zug eine Platzreservierung?"
+ },
+ "re061": {
+  "fr": "la voiture",
+  "pl": "wagon",
+  "ru": "ваго́н",
+  "rulat": "wagón",
+  "ex": "Our seats are in the third carriage.",
+  "exde": "Unsere Plätze sind im dritten Wagen."
+ },
+ "re062": {
+  "fr": "le compartiment",
+  "pl": "przedział",
+  "ru": "купе́",
+  "rulat": "kupé",
+  "ex": "The compartment was completely full.",
+  "exde": "Das Abteil war völlig voll."
+ },
+ "re063": {
+  "fr": "la voiture-restaurant",
+  "pl": "wagon restauracyjny",
+  "ru": "ваго́н-рестора́н",
+  "rulat": "wagón-restorán",
+  "ex": "Let's have lunch in the dining car.",
+  "exde": "Lass uns im Speisewagen zu Mittag essen."
+ },
+ "re064": {
+  "fr": "le billet aller-retour",
+  "pl": "bilet w obie strony",
+  "ru": "биле́т туда́ и обра́тно",
+  "rulat": "biljét tudá i obrátno",
+  "ex": "A return ticket to Hamburg, please.",
+  "exde": "Eine Hin- und Rückfahrkarte nach Hamburg, bitte."
+ },
+ "re065": {
+  "fr": "le billet aller simple",
+  "pl": "bilet w jedną stronę",
+  "ru": "биле́т в оди́н коне́ц",
+  "rulat": "biljét w odín konéz",
+  "ex": "I only need a single ticket.",
+  "exde": "Ich brauche nur eine einfache Fahrkarte."
+ },
+ "re066": {
+  "fr": "la réduction",
+  "pl": "zniżka",
+  "ru": "ски́дка",
+  "rulat": "skídka",
+  "ex": "Students get a discount.",
+  "exde": "Studenten bekommen eine Ermäßigung."
+ },
+ "re067": {
+  "fr": "le train régional",
+  "pl": "pociąg regionalny",
+  "ru": "региона́льный по́езд",
+  "rulat": "regionálnyj pójesd",
+  "ex": "The regional train stops at every station.",
+  "exde": "Der Regionalzug hält an jedem Bahnhof."
+ },
+ "re068": {
+  "fr": "la gare centrale",
+  "pl": "dworzec główny",
+  "ru": "центра́льный вокза́л",
+  "rulat": "zentrálnyj woksál",
+  "ex": "Let's meet at the main station.",
+  "exde": "Treffen wir uns am Hauptbahnhof."
+ },
+ "re069": {
+  "fr": "le métro",
+  "pl": "metro",
+  "ru": "метро́",
+  "rulat": "metró",
+  "ex": "I take the underground to work.",
+  "exde": "Ich fahre mit der U-Bahn zur Arbeit."
+ },
+ "re070": {
+  "fr": "le train de banlieue",
+  "pl": "kolej podmiejska",
+  "ru": "электри́чка",
+  "rulat": "elektrítschka",
+  "ex": "The suburban train runs every ten minutes.",
+  "exde": "Die S-Bahn fährt alle zehn Minuten."
+ },
+ "re071": {
+  "fr": "l'annonce",
+  "pl": "komunikat",
+  "ru": "объявле́ние",
+  "rulat": "objawlénije",
+  "ex": "Did you hear the announcement?",
+  "exde": "Hast du die Durchsage gehört?"
+ },
+ "re072": {
+  "fr": "être annulé",
+  "pl": "zostać odwołanym",
+  "ru": "отменя́ться",
+  "rulat": "otmenjátsja",
+  "ex": "The train to Berlin has been cancelled.",
+  "exde": "Der Zug nach Berlin ist ausgefallen."
+ },
+ "re073": {
+  "fr": "composter",
+  "pl": "skasować",
+  "ru": "компости́ровать",
+  "rulat": "kompostírowat",
+  "ex": "Don't forget to validate your ticket.",
+  "exde": "Vergiss nicht, deine Fahrkarte zu entwerten."
+ },
+ "re074": {
+  "fr": "le passager",
+  "pl": "pasażer",
+  "ru": "пассажи́р",
+  "rulat": "passaschír",
+  "ex": "All passengers must leave the train.",
+  "exde": "Alle Fahrgäste müssen den Zug verlassen."
+ },
+ "re075": {
+  "fr": "le bus de substitution",
+  "pl": "zastępcza komunikacja autobusowa",
+  "ru": "замени́тельный авто́бус",
+  "rulat": "samenítelnyj awtóbus",
+  "ex": "Due to construction work, there is a rail replacement bus service.",
+  "exde": "Wegen Bauarbeiten gibt es Schienenersatzverkehr."
+ },
+ "re076": {
+  "fr": "le tramway",
+  "pl": "tramwaj",
+  "ru": "трамва́й",
+  "rulat": "tramwáj",
+  "ex": "The tram is very crowded today.",
+  "exde": "Die Straßenbahn ist heute sehr voll."
+ },
+ "re077": {
+  "fr": "l'arrêt de bus",
+  "pl": "przystanek autobusowy",
+  "ru": "автобу́сная остано́вка",
+  "rulat": "awtóbusnaja ostanówka",
+  "ex": "I'm waiting at the bus stop.",
+  "exde": "Ich warte an der Bushaltestelle."
+ },
+ "re078": {
+  "fr": "la station de métro",
+  "pl": "stacja metra",
+  "ru": "ста́нция метро́",
+  "rulat": "stánzija metró",
+  "ex": "The nearest Underground station is around the corner.",
+  "exde": "Die nächste U-Bahn-Station ist um die Ecke."
+ },
+ "re079": {
+  "fr": "la ligne",
+  "pl": "linia",
+  "ru": "ли́ния",
+  "rulat": "línija",
+  "ex": "Take line 5 to the city centre.",
+  "exde": "Nimm die Linie 5 ins Stadtzentrum."
+ },
+ "re080": {
+  "fr": "le terminus",
+  "pl": "przystanek końcowy",
+  "ru": "коне́чная остано́вка",
+  "rulat": "konétschnaja ostanówka",
+  "ex": "We get off at the terminus.",
+  "exde": "Wir steigen an der Endstation aus."
+ },
+ "re081": {
+  "fr": "le chauffeur de bus",
+  "pl": "kierowca autobusu",
+  "ru": "води́тель авто́буса",
+  "rulat": "wodítel awtóbussa",
+  "ex": "The bus driver said good morning to everyone.",
+  "exde": "Der Busfahrer sagte allen guten Morgen."
+ },
+ "re082": {
+  "fr": "l'abonnement mensuel",
+  "pl": "bilet miesięczny",
+  "ru": "проездно́й на ме́сяц",
+  "rulat": "projesdnój na mjéssjaz",
+  "ex": "My monthly pass expires on Friday.",
+  "exde": "Meine Monatskarte läuft am Freitag ab."
+ },
+ "re083": {
+  "fr": "le ticket journée",
+  "pl": "bilet dobowy",
+  "ru": "биле́т на день",
+  "rulat": "biljét na den",
+  "ex": "A day ticket is cheaper for tourists.",
+  "exde": "Eine Tageskarte ist für Touristen günstiger."
+ },
+ "re084": {
+  "fr": "l'abonnement hebdomadaire",
+  "pl": "bilet tygodniowy",
+  "ru": "проездно́й на неде́лю",
+  "rulat": "projesdnój na nedélju",
+  "ex": "We bought a weekly pass for our holiday.",
+  "exde": "Wir haben für unseren Urlaub eine Wochenkarte gekauft."
+ },
+ "re085": {
+  "fr": "le ticket",
+  "pl": "bilet",
+  "ru": "биле́т",
+  "rulat": "biljét",
+  "ex": "Please validate your ticket.",
+  "exde": "Bitte entwerten Sie Ihren Fahrschein."
+ },
+ "re086": {
+  "fr": "le prix du trajet",
+  "pl": "cena biletu",
+  "ru": "сто́имость прое́зда",
+  "rulat": "stóimost projésda",
+  "ex": "The fare has gone up again.",
+  "exde": "Der Fahrpreis ist wieder gestiegen."
+ },
+ "re087": {
+  "fr": "la zone tarifaire",
+  "pl": "strefa biletowa",
+  "ru": "тари́фная зо́на",
+  "rulat": "tarífnaja sóna",
+  "ex": "The airport is in a different fare zone.",
+  "exde": "Der Flughafen liegt in einer anderen Tarifzone."
+ },
+ "re088": {
+  "fr": "frauder",
+  "pl": "jeździć na gapę",
+  "ru": "е́здить за́йцем",
+  "rulat": "jésdit sájzem",
+  "ex": "He got a fine for dodging the fare.",
+  "exde": "Er bekam eine Strafe, weil er schwarzgefahren ist."
+ },
+ "re089": {
+  "fr": "le bouton d'arrêt",
+  "pl": "przycisk „stop”",
+  "ru": "кно́пка остано́вки",
+  "rulat": "knópka astanófki",
+  "ex": "Press the stop button before your stop.",
+  "exde": "Drück den Halteknopf vor deiner Haltestelle."
+ },
+ "re090": {
+  "fr": "la poignée de maintien",
+  "pl": "uchwyt",
+  "ru": "по́ручень",
+  "rulat": "pórutschen",
+  "ex": "Hold on to the grab handle when the bus starts.",
+  "exde": "Halt dich am Haltegriff fest, wenn der Bus losfährt."
+ },
+ "re091": {
+  "fr": "la place debout",
+  "pl": "miejsce stojące",
+  "ru": "стоя́чее ме́сто",
+  "rulat": "stojátscheje mésto",
+  "ex": "There was only standing room on the tram.",
+  "exde": "In der Straßenbahn gab es nur noch Stehplätze."
+ },
+ "re092": {
+  "fr": "les heures de pointe",
+  "pl": "godziny szczytu",
+  "ru": "час пик",
+  "rulat": "tschas pik",
+  "ex": "The buses are full during rush hour.",
+  "exde": "Im Berufsverkehr sind die Busse voll."
+ },
+ "re093": {
+  "fr": "bondé",
+  "pl": "zatłoczony",
+  "ru": "перепо́лненный",
+  "rulat": "perepólnenny",
+  "ex": "The underground was overcrowded this morning.",
+  "exde": "Die U-Bahn war heute Morgen überfüllt."
+ },
+ "re094": {
+  "fr": "l'escalator",
+  "pl": "schody ruchome",
+  "ru": "эскала́тор",
+  "rulat": "eskalátor",
+  "ex": "Stand on the right on the escalator.",
+  "exde": "Steh auf der Rolltreppe rechts."
+ },
+ "re095": {
+  "fr": "la sortie",
+  "pl": "wyjście",
+  "ru": "вы́ход",
+  "rulat": "wýchod",
+  "ex": "Where is the exit?",
+  "exde": "Wo ist der Ausgang?"
+ },
+ "re096": {
+  "fr": "le bus de nuit",
+  "pl": "autobus nocny",
+  "ru": "ночно́й авто́бус",
+  "rulat": "natschnój awtóbus",
+  "ex": "I took the night bus home.",
+  "exde": "Ich bin mit dem Nachtbus nach Hause gefahren."
+ },
+ "re097": {
+  "fr": "la fréquence",
+  "pl": "częstotliwość kursowania",
+  "ru": "интерва́л движе́ния",
+  "rulat": "interwál dwischénija",
+  "ex": "The service frequency is better on weekdays.",
+  "exde": "Unter der Woche ist der Takt besser."
+ },
+ "re098": {
+  "fr": "les transports en commun",
+  "pl": "komunikacja miejska",
+  "ru": "обще́ственный тра́нспорт",
+  "rulat": "obschtschéstwenny tránsport",
+  "ex": "I always use public transport.",
+  "exde": "Ich nutze immer die öffentlichen Verkehrsmittel."
+ },
+ "re099": {
+  "fr": "rater le bus",
+  "pl": "spóźnić się na autobus",
+  "ru": "опозда́ть на авто́бус",
+  "rulat": "apasdát na awtóbus",
+  "ex": "Hurry, or we'll miss the bus!",
+  "exde": "Beeil dich, sonst verpassen wir den Bus!"
+ },
+ "re100": {
+  "fr": "Attention à la fermeture des portes !",
+  "pl": "Proszę odsunąć się od drzwi!",
+  "ru": "Осторо́жно, две́ри закрыва́ются!",
+  "rulat": "Astaróschna, dwéri sakrywájutsja!",
+  "ex": "The driver called out: 'Mind the doors!'",
+  "exde": "Der Fahrer rief: „Zurückbleiben, bitte!“"
+ }
+}
