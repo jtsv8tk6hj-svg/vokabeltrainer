@@ -3198,5 +3198,805 @@
   "rulat": "banknóta",
   "ex": "Can you change this banknote?",
   "exde": "Können Sie diesen Geldschein wechseln?"
+ },
+ "re401": {
+  "fr": "la monnaie",
+  "pl": "waluta",
+  "ru": "валю́та",
+  "rulat": "waljúta",
+  "ex": "What currency do they use in Poland?",
+  "exde": "Welche Währung benutzt man in Polen?"
+ },
+ "re402": {
+  "fr": "le taux de change",
+  "pl": "kurs wymiany",
+  "ru": "курс обме́на",
+  "rulat": "kurs obména",
+  "ex": "The exchange rate is good today.",
+  "exde": "Der Wechselkurs ist heute gut."
+ },
+ "re403": {
+  "fr": "le bureau de change",
+  "pl": "kantor",
+  "ru": "обме́нный пункт",
+  "rulat": "obménnyj punkt",
+  "ex": "Is there a bureau de change near here?",
+  "exde": "Gibt es hier in der Nähe eine Wechselstube?"
+ },
+ "re404": {
+  "fr": "changer",
+  "pl": "wymienić",
+  "ru": "обменя́ть",
+  "rulat": "obmenjátj",
+  "ex": "I want to exchange euros for dollars.",
+  "exde": "Ich möchte Euro in Dollar umtauschen."
+ },
+ "re405": {
+  "fr": "les frais",
+  "pl": "opłata",
+  "ru": "сбор",
+  "rulat": "sbor",
+  "ex": "Is there a fee for this?",
+  "exde": "Gibt es dafür eine Gebühr?"
+ },
+ "re406": {
+  "fr": "la commission",
+  "pl": "prowizja",
+  "ru": "коми́ссия",
+  "rulat": "komíssija",
+  "ex": "The bank charges a commission.",
+  "exde": "Die Bank verlangt eine Provision."
+ },
+ "re407": {
+  "fr": "le distributeur de billets",
+  "pl": "bankomat",
+  "ru": "банкома́т",
+  "rulat": "bankomát",
+  "ex": "Where is the nearest cash machine?",
+  "exde": "Wo ist der nächste Geldautomat?"
+ },
+ "re408": {
+  "fr": "retirer de l'argent",
+  "pl": "wypłacić pieniądze",
+  "ru": "снять де́ньги",
+  "rulat": "snjatj djénjgi",
+  "ex": "I need to withdraw money.",
+  "exde": "Ich muss Geld abheben."
+ },
+ "re409": {
+  "fr": "la carte de crédit",
+  "pl": "karta kredytowa",
+  "ru": "креди́тная ка́рта",
+  "rulat": "kredítnaja kárta",
+  "ex": "Can I pay by credit card?",
+  "exde": "Kann ich mit Kreditkarte bezahlen?"
+ },
+ "re410": {
+  "fr": "la carte bancaire",
+  "pl": "karta debetowa",
+  "ru": "ба́нковская ка́рта",
+  "rulat": "bánkowskaja kárta",
+  "ex": "My debit card doesn't work.",
+  "exde": "Meine Bankkarte funktioniert nicht."
+ },
+ "re411": {
+  "fr": "le code PIN",
+  "pl": "kod PIN",
+  "ru": "пин-ко́д",
+  "rulat": "pin-kód",
+  "ex": "Please enter your PIN.",
+  "exde": "Bitte geben Sie Ihre PIN ein."
+ },
+ "re412": {
+  "fr": "payer sans contact",
+  "pl": "płacić zbliżeniowo",
+  "ru": "плати́ть бесконта́ктно",
+  "rulat": "platítj beskontáktno",
+  "ex": "Can I pay contactless here?",
+  "exde": "Kann ich hier kontaktlos bezahlen?"
+ },
+ "re413": {
+  "fr": "payer en espèces",
+  "pl": "płacić gotówką",
+  "ru": "плати́ть нали́чными",
+  "rulat": "platítj nalítschnymi",
+  "ex": "I prefer to pay in cash.",
+  "exde": "Ich bezahle lieber bar."
+ },
+ "re414": {
+  "fr": "laisser un pourboire",
+  "pl": "dać napiwek",
+  "ru": "оста́вить чаевы́е",
+  "rulat": "ostáwitj tschajewýje",
+  "ex": "Do people tip in restaurants here?",
+  "exde": "Gibt man hier in Restaurants Trinkgeld?"
+ },
+ "re415": {
+  "fr": "compris dans le prix",
+  "pl": "wliczone w cenę",
+  "ru": "включено́ в сто́имость",
+  "rulat": "wkljutschenó w stóimostj",
+  "ex": "Breakfast is included in the price.",
+  "exde": "Das Frühstück ist im Preis inbegriffen."
+ },
+ "re416": {
+  "fr": "le montant",
+  "pl": "kwota",
+  "ru": "су́мма",
+  "rulat": "súmma",
+  "ex": "Please check the amount.",
+  "exde": "Bitte prüfen Sie den Betrag."
+ },
+ "re417": {
+  "fr": "la banque",
+  "pl": "bank",
+  "ru": "банк",
+  "rulat": "bank",
+  "ex": "The bank is closed on Sunday.",
+  "exde": "Die Bank ist am Sonntag geschlossen."
+ },
+ "re418": {
+  "fr": "le chèque de voyage",
+  "pl": "czek podróżny",
+  "ru": "доро́жный чек",
+  "rulat": "doróshnyj tschek",
+  "ex": "Few shops accept a traveller's cheque today.",
+  "exde": "Heute nehmen nur wenige Geschäfte einen Reisescheck an."
+ },
+ "re419": {
+  "fr": "l'appel d'urgence",
+  "pl": "połączenie alarmowe",
+  "ru": "э́кстренный вы́зов",
+  "rulat": "ékstrennyj wýsow",
+  "ex": "She made an emergency call.",
+  "exde": "Sie hat einen Notruf abgesetzt."
+ },
+ "re420": {
+  "fr": "le numéro d'urgence",
+  "pl": "numer alarmowy",
+  "ru": "но́мер экстренного вы́зова",
+  "rulat": "nómer ékstrennowo wýsowa",
+  "ex": "The emergency number in Europe is 112.",
+  "exde": "Die Notrufnummer in Europa ist 112."
+ },
+ "re421": {
+  "fr": "l'ambulance",
+  "pl": "karetka pogotowia",
+  "ru": "ско́рая по́мощь",
+  "rulat": "skóraja pómoschtsch",
+  "ex": "Call an ambulance, please!",
+  "exde": "Rufen Sie bitte einen Krankenwagen!"
+ },
+ "re422": {
+  "fr": "les pompiers",
+  "pl": "straż pożarna",
+  "ru": "пожа́рная кома́нда",
+  "rulat": "poschárnaja kománda",
+  "ex": "The fire brigade arrived quickly.",
+  "exde": "Die Feuerwehr kam schnell."
+ },
+ "re423": {
+  "fr": "les urgences",
+  "pl": "szpitalny oddział ratunkowy (SOR)",
+  "ru": "приёмный поко́й",
+  "rulat": "prijómnyj pokói",
+  "ex": "We took him to A&E.",
+  "exde": "Wir haben ihn in die Notaufnahme gebracht."
+ },
+ "re424": {
+  "fr": "appeler à l'aide",
+  "pl": "wołać o pomoc",
+  "ru": "звать на по́мощь",
+  "rulat": "swat na pómoschtsch",
+  "ex": "She started to call for help.",
+  "exde": "Sie fing an, um Hilfe zu rufen."
+ },
+ "re425": {
+  "fr": "blessé",
+  "pl": "ranny",
+  "ru": "ра́неный",
+  "rulat": "ránenyj",
+  "ex": "Two people were injured in the accident.",
+  "exde": "Zwei Menschen wurden bei dem Unfall verletzt."
+ },
+ "re426": {
+  "fr": "la blessure",
+  "pl": "uraz",
+  "ru": "тра́вма",
+  "rulat": "tráwma",
+  "ex": "The injury is not serious.",
+  "exde": "Die Verletzung ist nicht schwer."
+ },
+ "re427": {
+  "fr": "inconscient",
+  "pl": "nieprzytomny",
+  "ru": "без созна́ния",
+  "rulat": "bes sosnánija",
+  "ex": "The driver is unconscious.",
+  "exde": "Der Fahrer ist bewusstlos."
+ },
+ "re428": {
+  "fr": "les premiers secours",
+  "pl": "pierwsza pomoc",
+  "ru": "пе́рвая по́мощь",
+  "rulat": "pérwaja pómoschtsch",
+  "ex": "Do you know first aid?",
+  "exde": "Kannst du Erste Hilfe?"
+ },
+ "re429": {
+  "fr": "la trousse de secours",
+  "pl": "apteczka",
+  "ru": "апте́чка",
+  "rulat": "aptétschka",
+  "ex": "The first-aid kit is in the boot.",
+  "exde": "Der Verbandskasten ist im Kofferraum."
+ },
+ "re430": {
+  "fr": "la panne",
+  "pl": "awaria",
+  "ru": "поло́мка",
+  "rulat": "polómka",
+  "ex": "We had a breakdown on the motorway.",
+  "exde": "Wir hatten eine Panne auf der Autobahn."
+ },
+ "re431": {
+  "fr": "le service de dépannage",
+  "pl": "pomoc drogowa",
+  "ru": "техни́ческая по́мощь",
+  "rulat": "technítscheskaja pómoschtsch",
+  "ex": "I called the breakdown service.",
+  "exde": "Ich habe den Pannendienst angerufen."
+ },
+ "re432": {
+  "fr": "la dépanneuse",
+  "pl": "laweta",
+  "ru": "эвакуа́тор",
+  "rulat": "ewakuátor",
+  "ex": "The tow truck is on its way.",
+  "exde": "Der Abschleppwagen ist unterwegs."
+ },
+ "re433": {
+  "fr": "le triangle de signalisation",
+  "pl": "trójkąt ostrzegawczy",
+  "ru": "знак авари́йной остано́вки",
+  "rulat": "snak awaríjnoj ostanówki",
+  "ex": "Put the warning triangle behind the car.",
+  "exde": "Stell das Warndreieck hinter das Auto."
+ },
+ "re434": {
+  "fr": "le gilet de sécurité",
+  "pl": "kamizelka odblaskowa",
+  "ru": "светоотража́ющий жиле́т",
+  "rulat": "swetootraschájuschtschij schilét",
+  "ex": "Put on your high-visibility vest.",
+  "exde": "Zieh deine Warnweste an."
+ },
+ "re435": {
+  "fr": "le garage",
+  "pl": "warsztat samochodowy",
+  "ru": "автомастерска́я",
+  "rulat": "awtomasterskája",
+  "ex": "The car is at the garage.",
+  "exde": "Das Auto ist in der Werkstatt."
+ },
+ "re436": {
+  "fr": "le vol",
+  "pl": "kradzież",
+  "ru": "кра́жа",
+  "rulat": "kráscha",
+  "ex": "I want to report a theft.",
+  "exde": "Ich möchte einen Diebstahl melden."
+ },
+ "re437": {
+  "fr": "se faire voler",
+  "pl": "zostać okradzionym",
+  "ru": "быть обворо́ванным",
+  "rulat": "byt obworówannym",
+  "ex": "I was robbed on the train.",
+  "exde": "Ich wurde im Zug bestohlen."
+ },
+ "re438": {
+  "fr": "porter plainte",
+  "pl": "zgłosić sprawę na policję",
+  "ru": "заяви́ть в поли́цию",
+  "rulat": "sajawít w políziju",
+  "ex": "You should report it to the police.",
+  "exde": "Du solltest Anzeige erstatten."
+ },
+ "re439": {
+  "fr": "le commissariat",
+  "pl": "posterunek policji",
+  "ru": "полице́йский уча́сток",
+  "rulat": "polizéjskij utschástok",
+  "ex": "Where is the nearest police station?",
+  "exde": "Wo ist die nächste Polizeiwache?"
+ },
+ "re440": {
+  "fr": "perdre",
+  "pl": "zgubić",
+  "ru": "потеря́ть",
+  "rulat": "poterját",
+  "ex": "I have lost my passport.",
+  "exde": "Ich habe meinen Pass verloren."
+ },
+ "re441": {
+  "fr": "le bureau des objets trouvés",
+  "pl": "biuro rzeczy znalezionych",
+  "ru": "бюро́ нахо́док",
+  "rulat": "bjuró nachódok",
+  "ex": "I asked at the lost property office about my umbrella.",
+  "exde": "Ich habe im Fundbüro nach meinem Regenschirm gefragt."
+ },
+ "re442": {
+  "fr": "l'ambassade",
+  "pl": "ambasada",
+  "ru": "посо́льство",
+  "rulat": "possólstwo",
+  "ex": "We went to the embassy to get a new passport.",
+  "exde": "Wir sind zur Botschaft gegangen, um einen neuen Pass zu bekommen."
+ },
+ "re443": {
+  "fr": "faire opposition sur sa carte",
+  "pl": "zablokować kartę",
+  "ru": "заблоки́ровать ка́рту",
+  "rulat": "sablokírowat kártu",
+  "ex": "I had to have my card cancelled after my wallet was stolen.",
+  "exde": "Nachdem mein Geldbeutel gestohlen wurde, musste ich die Karte sperren lassen."
+ },
+ "re444": {
+  "fr": "voyager",
+  "pl": "podróżować",
+  "ru": "путеше́ствовать",
+  "rulat": "putjeschéstwowat",
+  "ex": "We love to travel in summer.",
+  "exde": "Wir reisen im Sommer sehr gern."
+ },
+ "re445": {
+  "fr": "aller chercher",
+  "pl": "odebrać",
+  "ru": "забира́ть",
+  "rulat": "sabirát",
+  "ex": "Can you pick me up at the station?",
+  "exde": "Kannst du mich am Bahnhof abholen?"
+ },
+ "re446": {
+  "fr": "emmener en voiture",
+  "pl": "podwieźć",
+  "ru": "подвезти́",
+  "rulat": "podwjestí",
+  "ex": "Could you give me a lift to the city centre?",
+  "exde": "Kannst du mich bis ins Stadtzentrum mitnehmen?"
+ },
+ "re447": {
+  "fr": "rater",
+  "pl": "spóźnić się (na)",
+  "ru": "опозда́ть (на)",
+  "rulat": "opasdát (na)",
+  "ex": "Hurry up, or we'll miss the train!",
+  "exde": "Beeil dich, sonst verpassen wir den Zug!"
+ },
+ "re448": {
+  "fr": "attraper",
+  "pl": "zdążyć (na)",
+  "ru": "успе́ть (на)",
+  "rulat": "uspét (na)",
+  "ex": "We just managed to catch the last bus.",
+  "exde": "Wir haben den letzten Bus gerade noch erreicht."
+ },
+ "re449": {
+  "fr": "faire de l'auto-stop",
+  "pl": "jeździć autostopem",
+  "ru": "е́хать автосто́пом",
+  "rulat": "jéchat awtostópom",
+  "ex": "As students we used to hitchhike across Europe.",
+  "exde": "Als Studenten sind wir quer durch Europa getrampt."
+ },
+ "re450": {
+  "fr": "louer",
+  "pl": "wynająć",
+  "ru": "взять напрока́т",
+  "rulat": "wsjat naprokát",
+  "ex": "We want to hire a car for the weekend.",
+  "exde": "Wir wollen für das Wochenende ein Auto mieten."
+ },
+ "re451": {
+  "fr": "se renseigner",
+  "pl": "dowiadywać się",
+  "ru": "справля́ться",
+  "rulat": "sprawljátsja",
+  "ex": "I'll enquire about the train times.",
+  "exde": "Ich werde mich nach den Zugzeiten erkundigen."
+ },
+ "re452": {
+  "fr": "partir",
+  "pl": "wyruszyć",
+  "ru": "отправля́ться",
+  "rulat": "otprawljátsja",
+  "ex": "We set off early in the morning.",
+  "exde": "Wir sind früh am Morgen losgefahren."
+ },
+ "re453": {
+  "fr": "prendre l'avion",
+  "pl": "lecieć",
+  "ru": "лете́ть",
+  "rulat": "ljetjét",
+  "ex": "We fly to Rome tomorrow.",
+  "exde": "Wir fliegen morgen nach Rom."
+ },
+ "re454": {
+  "fr": "traverser",
+  "pl": "przejść przez",
+  "ru": "переходи́ть",
+  "rulat": "perechodít",
+  "ex": "Be careful when you cross the street.",
+  "exde": "Pass auf, wenn du die Straße überquerst."
+ },
+ "re455": {
+  "fr": "explorer",
+  "pl": "zwiedzać",
+  "ru": "иссле́довать",
+  "rulat": "issljédowat",
+  "ex": "Let's explore the old town today.",
+  "exde": "Lass uns heute die Altstadt erkunden."
+ },
+ "re456": {
+  "fr": "Bon voyage !",
+  "pl": "Szczęśliwej podróży!",
+  "ru": "Счастли́вого пути́!",
+  "rulat": "Schtschastlíwowo putí!",
+  "ex": "Have a good trip! Call us when you arrive.",
+  "exde": "Gute Reise! Ruf uns an, wenn du ankommst."
+ },
+ "re457": {
+  "fr": "Comment s'est passé le voyage ?",
+  "pl": "Jak minęła podróż?",
+  "ru": "Как прошла́ пое́здка?",
+  "rulat": "Kak proschlá pojéstka?",
+  "ex": "Welcome back! How was your journey?",
+  "exde": "Willkommen zurück! Wie war die Reise?"
+ },
+ "re458": {
+  "fr": "D'où venez-vous ?",
+  "pl": "Skąd Pan/Pani pochodzi?",
+  "ru": "Отку́да вы?",
+  "rulat": "Otkúda wy?",
+  "ex": "Nice to meet you. Where are you from?",
+  "exde": "Freut mich. Woher kommen Sie?"
+ },
+ "re459": {
+  "fr": "Je viens de …",
+  "pl": "Jestem z …",
+  "ru": "Я из …",
+  "rulat": "Ja is …",
+  "ex": "I'm from Hamburg, but I live in Berlin.",
+  "exde": "Ich komme aus Hamburg, aber ich wohne in Berlin."
+ },
+ "re460": {
+  "fr": "C'est la première fois que vous venez ici ?",
+  "pl": "Czy jest Pan/Pani tu pierwszy raz?",
+  "ru": "Вы здесь впервы́е?",
+  "rulat": "Wy sdjes wperwýje?",
+  "ex": "Is this your first time here? You should see the cathedral.",
+  "exde": "Sind Sie zum ersten Mal hier? Sie sollten sich den Dom ansehen."
+ },
+ "re461": {
+  "fr": "Je suis juste de passage.",
+  "pl": "Jestem tu tylko przejazdem.",
+  "ru": "Я здесь прое́здом.",
+  "rulat": "Ja sdes projésdom.",
+  "ex": "We're not staying long, I'm just passing through.",
+  "exde": "Wir bleiben nicht lange, ich bin auf der Durchreise."
+ },
+ "re462": {
+  "fr": "Je suis en vacances ici.",
+  "pl": "Jestem tu na wakacjach.",
+  "ru": "Я здесь в о́тпуске.",
+  "rulat": "Ja sdes w ótpuske.",
+  "ex": "I'm on holiday here for two weeks.",
+  "exde": "Ich mache hier zwei Wochen Urlaub."
+ },
+ "re463": {
+  "fr": "Je suis ici pour affaires.",
+  "pl": "Jestem tu służbowo.",
+  "ru": "Я здесь по дела́м.",
+  "rulat": "Ja sdes po delám.",
+  "ex": "No, I'm here on business, not for sightseeing.",
+  "exde": "Nein, ich bin geschäftlich hier, nicht zum Sightseeing."
+ },
+ "re464": {
+  "fr": "Bonnes vacances !",
+  "pl": "Udanego urlopu!",
+  "ru": "Хоро́шего о́тдыха!",
+  "rulat": "Choróschewo ótdycha!",
+  "ex": "Have a nice holiday and send us a postcard!",
+  "exde": "Schönen Urlaub und schick uns eine Postkarte!"
+ },
+ "re465": {
+  "fr": "Combien de temps restez-vous ?",
+  "pl": "Jak długo Pan/Pani zostanie?",
+  "ru": "Как до́лго вы здесь пробу́дете?",
+  "rulat": "Kak dólgo wy sdes probúdete?",
+  "ex": "How long are you staying in Berlin?",
+  "exde": "Wie lange bleiben Sie in Berlin?"
+ },
+ "re466": {
+  "fr": "Pouvez-vous me recommander quelque chose ?",
+  "pl": "Czy może mi Pan/Pani coś polecić?",
+  "ru": "Вы мо́жете мне что́-нибудь посове́товать?",
+  "rulat": "Wy móschete mne schtó-nibud possowétowat?",
+  "ex": "I'm new in town. Can you recommend something?",
+  "exde": "Ich bin neu in der Stadt. Können Sie mir etwas empfehlen?"
+ },
+ "re467": {
+  "fr": "Cette place est-elle libre ?",
+  "pl": "Czy to miejsce jest wolne?",
+  "ru": "Э́то ме́сто свобо́дно?",
+  "rulat": "Éto méssto swobódno?",
+  "ex": "Excuse me, is this seat free?",
+  "exde": "Entschuldigung, ist dieser Platz frei?"
+ },
+ "re468": {
+  "fr": "Excusez-moi, comment aller à la gare ?",
+  "pl": "Przepraszam, jak dojść na dworzec?",
+  "ru": "Извини́те, как пройти́ к вокза́лу?",
+  "rulat": "Iswiníte, kak projtí k woksálu?",
+  "ex": "Excuse me, how do I get to the station from here?",
+  "exde": "Entschuldigung, wie komme ich von hier zum Bahnhof?"
+ },
+ "re469": {
+  "fr": "Je suis perdu(e).",
+  "pl": "Zgubiłem (zgubiłam) się.",
+  "ru": "Я заблуди́лся (заблуди́лась).",
+  "rulat": "Ja sabludílsja (sabludílas).",
+  "ex": "Can you help me? I'm lost.",
+  "exde": "Können Sie mir helfen? Ich habe mich verlaufen."
+ },
+ "re470": {
+  "fr": "Pourriez-vous répéter, s'il vous plaît ?",
+  "pl": "Czy może Pan/Pani powtórzyć?",
+  "ru": "Повтори́те, пожа́луйста.",
+  "rulat": "Powtoríte, poschálujsta.",
+  "ex": "Sorry, could you repeat that, please?",
+  "exde": "Entschuldigung, können Sie das bitte wiederholen?"
+ },
+ "re471": {
+  "fr": "Parlez-vous anglais ?",
+  "pl": "Czy mówi Pan/Pani po angielsku?",
+  "ru": "Вы говори́те по-англи́йски?",
+  "rulat": "Wy goworíte po-anglíjski?",
+  "ex": "Excuse me, do you speak English?",
+  "exde": "Entschuldigung, sprechen Sie Englisch?"
+ },
+ "re472": {
+  "fr": "Combien ça coûte ?",
+  "pl": "Ile to kosztuje?",
+  "ru": "Ско́лько э́то сто́ит?",
+  "rulat": "Skólko éto stóit?",
+  "ex": "I like this bag. How much is it?",
+  "exde": "Mir gefällt diese Tasche. Was kostet das?"
+ },
+ "re473": {
+  "fr": "Où est le distributeur le plus proche ?",
+  "pl": "Gdzie jest najbliższy bankomat?",
+  "ru": "Где ближа́йший банкома́т?",
+  "rulat": "Gde blischájschij bankomát?",
+  "ex": "Where is the nearest cashpoint? I need some cash.",
+  "exde": "Wo ist der nächste Geldautomat? Ich brauche Bargeld."
+ },
+ "re474": {
+  "fr": "J'ai réservé.",
+  "pl": "Mam rezerwację.",
+  "ru": "У меня́ бронь.",
+  "rulat": "U menjá bron.",
+  "ex": "Good evening, I have a reservation under the name Miller.",
+  "exde": "Guten Abend, ich habe auf den Namen Miller reserviert."
+ },
+ "re475": {
+  "fr": "Le petit-déjeuner est-il compris ?",
+  "pl": "Czy śniadanie jest wliczone w cenę?",
+  "ru": "За́втрак включён?",
+  "rulat": "Sáwtrak wkljutschjón?",
+  "ex": "Is breakfast included in the price?",
+  "exde": "Ist das Frühstück im Preis inbegriffen?"
+ },
+ "re476": {
+  "fr": "Avez-vous quelque chose de moins cher ?",
+  "pl": "Czy ma Pan/Pani coś tańszego?",
+  "ru": "У вас есть что́-нибудь подеше́вле?",
+  "rulat": "U wass jest schtó-nibud podeschéwle?",
+  "ex": "That's too expensive. Do you have anything cheaper?",
+  "exde": "Das ist zu teuer. Haben Sie etwas Günstigeres?"
+ },
+ "re477": {
+  "fr": "Il fait un temps magnifique.",
+  "pl": "Pogoda jest wspaniała.",
+  "ru": "Пого́да чуде́сная.",
+  "rulat": "Pogóda tschudéssnaja.",
+  "ex": "The weather is lovely, let's go to the beach.",
+  "exde": "Das Wetter ist herrlich, lass uns an den Strand gehen."
+ },
+ "re478": {
+  "fr": "Êtes-vous déjà allé(e) à … ?",
+  "pl": "Czy był Pan / była Pani kiedyś w …?",
+  "ru": "Вы когда́-нибудь бы́ли в …?",
+  "rulat": "Wy kogdá-nibud býli w …?",
+  "ex": "Have you ever been to Italy?",
+  "exde": "Waren Sie schon einmal in Italien?"
+ },
+ "re479": {
+  "fr": "Qu'est-ce qu'on peut faire ici ?",
+  "pl": "Co można tu robić?",
+  "ru": "Чем здесь мо́жно заня́ться?",
+  "rulat": "Tschem sdes móschno sanjátsja?",
+  "ex": "We have a free day. What is there to do here?",
+  "exde": "Wir haben einen freien Tag. Was kann man hier unternehmen?"
+ },
+ "re480": {
+  "fr": "Amuse-toi bien !",
+  "pl": "Miłej zabawy!",
+  "ru": "Прия́тно провести́ вре́мя!",
+  "rulat": "Prijátno prowestí wrémja!",
+  "ex": "Have fun at the concert tonight!",
+  "exde": "Viel Spaß heute Abend beim Konzert!"
+ },
+ "re481": {
+  "fr": "la salle de bains commune",
+  "pl": "wspólna łazienka",
+  "ru": "о́бщая ва́нная",
+  "rulat": "óbschtschaja wánnaja",
+  "ex": "The room has a shared bathroom.",
+  "exde": "Das Zimmer hat ein Gemeinschaftsbad."
+ },
+ "re482": {
+  "fr": "la disponibilité",
+  "pl": "dostępność",
+  "ru": "нали́чие мест",
+  "rulat": "nalítschije mest",
+  "ex": "Please check the availability for next weekend.",
+  "exde": "Bitte prüfen Sie die Verfügbarkeit für nächstes Wochenende."
+ },
+ "re483": {
+  "fr": "l'annulation gratuite",
+  "pl": "bezpłatne anulowanie",
+  "ru": "беспла́тная отме́на",
+  "rulat": "besplátnaja otména",
+  "ex": "This hotel offers free cancellation.",
+  "exde": "Dieses Hotel bietet kostenlose Stornierung."
+ },
+ "re484": {
+  "fr": "l'arrivée",
+  "pl": "przyjazd",
+  "ru": "зае́зд",
+  "rulat": "sajésd",
+  "ex": "Our arrival is on Friday.",
+  "exde": "Unsere Anreise ist am Freitag."
+ },
+ "re485": {
+  "fr": "payer séparément",
+  "pl": "płacić osobno",
+  "ru": "плати́ть разде́льно",
+  "rulat": "platít rasdélno",
+  "ex": "Can we pay separately?",
+  "exde": "Können wir getrennt bezahlen?"
+ },
+ "re486": {
+  "fr": "le porte-monnaie",
+  "pl": "portfel",
+  "ru": "кошелёк",
+  "rulat": "koscheljók",
+  "ex": "I left my purse in the taxi.",
+  "exde": "Ich habe mein Portemonnaie im Taxi liegen lassen."
+ },
+ "re487": {
+  "fr": "L'addition, s'il vous plaît.",
+  "pl": "Poproszę rachunek.",
+  "ru": "Счёт, пожа́луйста.",
+  "rulat": "Schtschjot, poschálujsta.",
+  "ex": "Excuse me, could I have the bill, please?",
+  "exde": "Entschuldigung, kann ich bitte zahlen?"
+ },
+ "re488": {
+  "fr": "passer la nuit",
+  "pl": "nocować",
+  "ru": "ночева́ть",
+  "rulat": "notschewát",
+  "ex": "We will stay overnight in Lyon.",
+  "exde": "Wir werden in Lyon übernachten."
+ },
+ "re489": {
+  "fr": "être en retard",
+  "pl": "spóźniać się",
+  "ru": "опа́здывать",
+  "rulat": "opásdywat",
+  "ex": "The train is delayed by ten minutes.",
+  "exde": "Der Zug verspätet sich um zehn Minuten."
+ },
+ "re490": {
+  "fr": "modifier une réservation",
+  "pl": "przebukować",
+  "ru": "переброни́ровать",
+  "rulat": "perebronírowat",
+  "ex": "I need to rebook my flight.",
+  "exde": "Ich muss meinen Flug umbuchen."
+ },
+ "re491": {
+  "fr": "partir en voyage",
+  "pl": "wyjechać",
+  "ru": "уе́хать",
+  "rulat": "ujéchat",
+  "ex": "We are going away on a trip next week.",
+  "exde": "Wir verreisen nächste Woche."
+ },
+ "re492": {
+  "fr": "se tromper de chemin",
+  "pl": "zabłądzić",
+  "ru": "заблуди́ться",
+  "rulat": "sabludítsja",
+  "ex": "We took a wrong turn in the city center.",
+  "exde": "Wir haben uns in der Innenstadt verfahren."
+ },
+ "re493": {
+  "fr": "camper",
+  "pl": "biwakować",
+  "ru": "жить в пала́тке",
+  "rulat": "shit w palátke",
+  "ex": "We camped by the lake.",
+  "exde": "Wir haben am See gezeltet."
+ },
+ "re494": {
+  "fr": "traverser",
+  "pl": "przejechać przez",
+  "ru": "прое́хать че́рез",
+  "rulat": "projéchat tschéres",
+  "ex": "We drove through the village without stopping.",
+  "exde": "Wir sind durch das Dorf durchgefahren, ohne anzuhalten."
+ },
+ "re495": {
+  "fr": "continuer sa route",
+  "pl": "jechać dalej",
+  "ru": "е́хать да́льше",
+  "rulat": "jéchat dálsche",
+  "ex": "After a short break, we drove on.",
+  "exde": "Nach einer kurzen Pause sind wir weitergefahren."
+ },
+ "re496": {
+  "fr": "rentrer",
+  "pl": "jechać z powrotem",
+  "ru": "е́хать обра́тно",
+  "rulat": "jéchat obrátno",
+  "ex": "We drove back home in the evening.",
+  "exde": "Am Abend sind wir nach Hause zurückgefahren."
+ },
+ "re497": {
+  "fr": "passer devant",
+  "pl": "przejeżdżać obok",
+  "ru": "проезжа́ть ми́мо",
+  "rulat": "projeshát mímo",
+  "ex": "We drove past the old castle.",
+  "exde": "Wir sind an der alten Burg vorbeigefahren."
+ },
+ "re498": {
+  "fr": "partir",
+  "pl": "wyjeżdżać",
+  "ru": "уезжа́ть",
+  "rulat": "ujeshát",
+  "ex": "The guests leave tomorrow morning.",
+  "exde": "Die Gäste reisen morgen früh ab."
+ },
+ "re499": {
+  "fr": "revenir",
+  "pl": "wrócić",
+  "ru": "верну́ться",
+  "rulat": "wernútsja",
+  "ex": "She returned from Italy yesterday.",
+  "exde": "Sie ist gestern aus Italien zurückgekehrt."
+ },
+ "re500": {
+  "fr": "faire la navette",
+  "pl": "dojeżdżać do pracy",
+  "ru": "е́здить на рабо́ту",
+  "rulat": "jésdit na rabótu",
+  "ex": "He commutes to work by train every day.",
+  "exde": "Er pendelt jeden Tag mit dem Zug zur Arbeit."
  }
 }

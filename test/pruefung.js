@@ -254,10 +254,10 @@ async function server() {
     });
     await p.goto(URL); await p.waitForTimeout(400);
     await p.click('nav button[data-v="new"]');
-    await p.fill('#listBox', '# Dienst\n- Zahnrad – cogwheel\ndie Steckdose\n3. Schraubenzieher: screwdriver\n\n');
+    await p.fill('#listBox', '# Dienst\n- Zahnrad – cogwheel\ndie Dachrinne\n3. Schneeschaufel: snow shovel\n\n');
     await p.click('#listGo'); await p.waitForTimeout(200);
     let items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
-    ok('Liste ohne Schlüssel: 3 Wörter im Stapel aus der Überschrift', items.length === 3 && items[0].de === 'Zahnrad' && items[0].en === 'cogwheel' && items[1].de === 'die Steckdose' && items[1].en === '' && items[2].en === 'screwdriver', JSON.stringify(items.map(i => [i.de, i.en])));
+    ok('Liste ohne Schlüssel: 3 Wörter im Stapel aus der Überschrift', items.length === 3 && items[0].de === 'Zahnrad' && items[0].en === 'cogwheel' && items[1].de === 'die Dachrinne' && items[1].en === '' && items[2].en === 'snow shovel', JSON.stringify(items.map(i => [i.de, i.en])));
     ok('Liste ohne Schlüssel: Hinweis auf Schlüssel', /3 Wörter im Stapel „Dienst"/.test(await p.textContent('#listMsg')) && /Schlüssel/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
     await p.click('#listGo'); await p.waitForTimeout(200);
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
@@ -279,7 +279,7 @@ async function server() {
     await p.click('#fillGo');
     await p.waitForFunction(() => /ergänzt|Formentafeln/.test(document.querySelector('#fillMsg').textContent), null, { timeout: 60000 }).catch(() => {});
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Dienst'));
-    ok('Nachübersetzen: alte Wörter vervollständigt, eingegebene Übersetzung bleibt', items.every(i => i.fr && i.pl && i.ru && i.ex && i.exde) && items[0].en === 'cogwheel' && items[1].en === 'en:die Steckdose', JSON.stringify(items.map(i => [i.de, i.en, i.fr])));
+    ok('Nachübersetzen: alte Wörter vervollständigt, eingegebene Übersetzung bleibt', items.every(i => i.fr && i.pl && i.ru && i.ex && i.exde) && items[0].en === 'cogwheel' && items[1].en === 'en:die Dachrinne', JSON.stringify(items.map(i => [i.de, i.en, i.fr])));
     ok('Nachübersetzen: nichts mehr offen', /vollständig übersetzt/.test(await p.textContent('#fillInfo')) && await p.$eval('#fillGo', b => b.disabled), (await p.textContent('#fillInfo')).trim());
     ok('Zwei Aufrufe für zwei Übersetzungsrunden, keine für Formentafeln (Grundstock vollständig)', requests.length === 2 && formReqs.length === 0, 'Aufrufe: ' + requests.length + ' / Formen: ' + formReqs.length);
     // Formentafel für ein eigenes Verb beim Anlegen unter „Neu“

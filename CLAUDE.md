@@ -486,7 +486,7 @@ einsetzen.
 - Der abgestimmte Ausbau (Richtungen, Verben, Substantive, Adjektive, Pronomen) ist
   gebaut; alle 171 Tafelwörter sind erzeugt und gegengeprüft (16.147 Zeilen, Lauf vom
   14.10.2026, elf Tafeln im Prüfdurchgang korrigiert, alle polnisch oder russisch).
-  `index.html` ist damit rund 1 MB groß; die Tafeln liegen in `FORMS`, nicht im
+  `index.html` ist damit rund 1,4 MB groß; die Tafeln liegen in `FORMS`, nicht im
   Speicher der Nutzer. Meldungen aus der App (*Daten → Meldungen*) sind der Weg,
   zweifelhafte Formen einzusammeln und mit `python3 formen.py --neu <id>` neu zu
   erzeugen.
