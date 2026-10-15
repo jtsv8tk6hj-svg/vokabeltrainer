@@ -25,6 +25,8 @@ daten/adjektive.csv                 40 Adjektive (Stapel Adjektive)
 daten/pronomen.csv                  11 Pronomen (Stapel Pronomen)
 daten/alltag.csv                    240 Alltagswörter in zwölf Themen: id;de;en;thema (Stapel Alltag)
 daten/kueche.csv                    500 Begriffe zu Lebensmitteln, Küche und Kochen in zwanzig Themen (Stapel Küche)
+daten/reisen.csv                    500 Begriffe zu Reisen und Verkehr in zwanzig Themen (Stapel Reisen)
+daten/auto.csv                      300 Begriffe zu Auto, Autoteilen und Werkstatt in zwölf Themen (Stapel Auto)
 daten/*-sprachen.json               {id: {fr, pl, ru, rulat, ex, exde}} zur jeweiligen CSV, erzeugt von woerter.py
 liste.py                            stellt eine kuratierte de/en-Liste zu einem Gebiet über die API zusammen (Plan in PLAENE)
 woerter.py                          ergänzt FR, PL, RU, Umschrift und Beispielsätze für eine Wortliste über die API
@@ -222,24 +224,34 @@ Formkarten.
 ein Wort, wahlweise „sich“) oder ohne Deutsch ein englisches „to …“. Eine Tafel bekommt
 ein Verb aber nur mit Grundstock-Kennung `vb` oder einzeln unter *Neu* angelegt
 (Merkmal `tbl`, `verbLike()`), wie bei den Substantiven: Listenimporte und die
-Themenstapel Alltag und Küche enthalten Dutzende Verben (kochen, backen …), die sonst
+Themenstapel (Küche, Reisen, Auto) enthalten Dutzende Verben (kochen, backen …), die sonst
 bei *Nachübersetzen* je eine Anfrage auslösten. Beim Speichern unter *Neu* holt
 `fetchForms()` mit hinterlegtem Schlüssel die Tafel und legt sie am Wort ab
 (`i.forms`); *Nachübersetzen* holt sie für alle Tafelwörter ohne Tafel nach, auch für
 Grundstock-Verben, solange `formen.json` sie noch nicht enthält (`formsOf()` nimmt
 `i.forms` vor `FORMS`).
 
-## Alltag, Küche und Themen
+## Alltag, Küche, Reisen, Auto und Themen
 
 Kuratierte Themenstapel stehen in `build.py` unter `THEMENSTAPEL` (Stapelname, CSV,
 Sprachen-JSON). Der Stapel **Küche** (`daten/kueche.csv`, 500 Begriffe, Kennung `ku`)
 deckt Lebensmittel, Küche und Kochen in zwanzig Themen ab, von Obst und Gemüse über
-Küchengeräte und Garmethoden bis zum Restaurant; die de/en-Liste hat `liste.py`
-über die API zusammengestellt (je Thema die nützlichsten Wörter, Ausschlussliste
-gegen alle vorhandenen Stapel und die schon erzeugten Themen, Normalisierung wie in
-der App), die übrigen Sprachen `woerter.py`. Weitere Gebiete: Plan in `PLAENE`
-ergänzen, `python3 liste.py <gebiet>`, dann `woerter.py`, dann den Stapel in
-`THEMENSTAPEL` eintragen.
+Küchengeräte und Garmethoden bis zum Restaurant. **Reisen** (`daten/reisen.csv`, 500,
+Kennung `re`) deckt Reisen und Verkehr in zwanzig Themen ab, vom Flughafen über Bahn,
+Mietwagen, Verkehrsregeln, Tanken und Parken, Hotel und Wegbeschreibung bis zu Notfall
+und Smalltalk. **Auto** (`daten/auto.csv`, 300, Kennung `au`) deckt Auto, Autoteile und
+Werkstatt in zwölf Themen ab: Karosserie, Innenraum, Motor und Antrieb, Bremsen und
+Fahrwerk, Räder, Elektrik, Assistenzsysteme, Elektroauto, Wartung, Werkzeug, Panne
+(Verben), Kauf und Papiere; das Fahren selbst liegt bewusst bei Reisen, die Technik bei
+Auto. Die de/en-Listen hat `liste.py` über die API zusammengestellt (je Thema die
+nützlichsten Wörter, Gebietsbeschreibung aus `PLAENE`, Ausschlussliste gegen alle
+vorhandenen CSVs in `daten/` außer der eigenen und gegen die schon erzeugten Themen,
+Normalisierung wie in der App; `--auffuellen` füllt unterbesetzte Themen nach, die
+letzten Lücken wurden von Hand mit derselben Prüfung geschlossen), die übrigen
+Sprachen `woerter.py`. Englische Einträge stehen ohne führendes „the“. Weitere
+Gebiete: Plan in `PLAENE` ergänzen, `python3 liste.py <gebiet>`, dann `woerter.py`,
+dann den Stapel in `THEMENSTAPEL` eintragen und die Zahlen in `test/pruefung.js`
+anpassen (Gesamtzahl, Stapelzeilen der Fortschrittsübersicht).
 
 Der Stapel **Alltag** (`daten/alltag.csv`, 240 Wörter) ist nach zwölf **Themen**
 gegliedert: Begrüßung und Höflichkeit, Zahlen und Zeit, Familie und Menschen, Essen

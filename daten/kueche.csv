@@ -381,27 +381,27 @@ ku379;das Dutzend;dozen;Maße und Mengen
 ku380;der Tropfen;drop;Maße und Mengen
 ku381;die Handvoll;handful;Maße und Mengen
 ku382;das Päckchen;sachet;Maße und Mengen
-ku383;der Einkaufswagen;the trolley;Einkaufen und Vorrat
-ku384;der Einkaufskorb;the shopping basket;Einkaufen und Vorrat
-ku385;der Einkaufszettel;the shopping list;Einkaufen und Vorrat
-ku386;der Kassenbon;the receipt;Einkaufen und Vorrat
-ku387;das Sonderangebot;the special offer;Einkaufen und Vorrat
-ku388;das Haltbarkeitsdatum;the best-before date;Einkaufen und Vorrat
-ku389;der Vorrat;the supply;Einkaufen und Vorrat
-ku390;die Vorratskammer;the larder;Einkaufen und Vorrat
-ku391;die Konserve;the tinned food;Einkaufen und Vorrat
+ku383;der Einkaufswagen;trolley;Einkaufen und Vorrat
+ku384;der Einkaufskorb;shopping basket;Einkaufen und Vorrat
+ku385;der Einkaufszettel;shopping list;Einkaufen und Vorrat
+ku386;der Kassenbon;receipt;Einkaufen und Vorrat
+ku387;das Sonderangebot;special offer;Einkaufen und Vorrat
+ku388;das Haltbarkeitsdatum;best-before date;Einkaufen und Vorrat
+ku389;der Vorrat;supply;Einkaufen und Vorrat
+ku390;die Vorratskammer;larder;Einkaufen und Vorrat
+ku391;die Konserve;tinned food;Einkaufen und Vorrat
 ku392;tiefgekühlt;frozen;Einkaufen und Vorrat
-ku393;die Tiefkühltruhe;the chest freezer;Einkaufen und Vorrat
+ku393;die Tiefkühltruhe;chest freezer;Einkaufen und Vorrat
 ku394;haltbar;non-perishable;Einkaufen und Vorrat
 ku395;verderblich;perishable;Einkaufen und Vorrat
 ku396;abgelaufen;out of date;Einkaufen und Vorrat
 ku397;einkaufen;to do the shopping;Einkaufen und Vorrat
 ku398;vorrätig;in stock;Einkaufen und Vorrat
-ku399;der Wochenmarkt;the weekly market;Einkaufen und Vorrat
-ku400;die Tüte;the bag;Einkaufen und Vorrat
-ku401;das Pfand;the deposit;Einkaufen und Vorrat
+ku399;der Wochenmarkt;weekly market;Einkaufen und Vorrat
+ku400;die Tüte;bag;Einkaufen und Vorrat
+ku401;das Pfand;deposit;Einkaufen und Vorrat
 ku402;lagern;to store;Einkaufen und Vorrat
-ku403;das Regal;the shelf;Einkaufen und Vorrat
+ku403;das Regal;shelf;Einkaufen und Vorrat
 ku404;das Trinkgeld;tip;Im Restaurant
 ku405;der Kellner;waiter;Im Restaurant
 ku406;die Kellnerin;waitress;Im Restaurant
@@ -465,7 +465,7 @@ ku463;gratinieren;to brown under the grill;Garmethoden
 ku464;flambieren;to flambé;Garmethoden
 ku465;das Wasserbad;bain-marie;Garmethoden
 ku466;goldbraun;golden brown;Garmethoden
-ku467;das Aroma;the aroma;Geschmack und Beschaffenheit
+ku467;das Aroma;aroma;Geschmack und Beschaffenheit
 ku468;säuerlich;slightly sour;Geschmack und Beschaffenheit
 ku469;die Tafel;bar;Maße und Mengen
 ku470;gestrichen;level;Maße und Mengen
@@ -473,20 +473,20 @@ ku471;der Großeinkauf;big shop;Einkaufen und Vorrat
 ku472;der Bioladen;organic shop;Einkaufen und Vorrat
 ku473;ausverkauft;sold out;Einkaufen und Vorrat
 ku474;Zahlen, bitte!;Could we have the bill, please?;Im Restaurant
-ku475;die Bedienung;the service;Im Restaurant
+ku475;die Bedienung;service;Im Restaurant
 ku476;Hat es geschmeckt?;Did you enjoy your meal?;Im Restaurant
 ku477;Ist hier noch frei?;Is this seat free?;Im Restaurant
 ku478;zum Mitnehmen;to take away;Im Restaurant
-ku479;der Gang;the course;Im Restaurant
+ku479;der Gang;course;Im Restaurant
 ku480;mit Karte zahlen;to pay by card;Im Restaurant
 ku481;das belegte Brötchen;filled roll;Mahlzeiten und Gerichte
 ku482;zu Abend essen;to have dinner;Mahlzeiten und Gerichte
 ku483;der Appetit;appetite;Mahlzeiten und Gerichte
 ku484;halb durch;medium;Garmethoden
-ku485;die Tiefkühlkost;the frozen food;Einkaufen und Vorrat
-ku486;der Tisch für zwei;the table for two;Im Restaurant
+ku485;die Tiefkühlkost;frozen food;Einkaufen und Vorrat
+ku486;der Tisch für zwei;table for two;Im Restaurant
 ku487;die Hausmannskost;home cooking;Mahlzeiten und Gerichte
-ku488;der Schmortopf;the casserole dish;Garmethoden
+ku488;der Schmortopf;casserole dish;Garmethoden
 ku489;das Abendbrot;supper (cold evening meal);Mahlzeiten und Gerichte
 ku490;der Auflauf;bake, casserole;Mahlzeiten und Gerichte
 ku491;das Fertiggericht;ready meal;Mahlzeiten und Gerichte

@@ -1,0 +1,501 @@
+id;de;en;thema
+re001;der Flug;flight;Am Flughafen
+re002;der Reisepass;passport;Am Flughafen
+re003;die Bordkarte;boarding pass;Am Flughafen
+re004;das Handgepäck;hand luggage;Am Flughafen
+re005;der Koffer;suitcase;Am Flughafen
+re006;der Check-in-Schalter;check-in desk;Am Flughafen
+re007;einchecken;to check in;Am Flughafen
+re008;das Gate;gate;Am Flughafen
+re009;der Abflug;departure;Am Flughafen
+re010;verspätet;delayed;Am Flughafen
+re011;annulliert;cancelled;Am Flughafen
+re012;die Sicherheitskontrolle;security check;Am Flughafen
+re013;die Passkontrolle;passport control;Am Flughafen
+re014;der Zoll;customs;Am Flughafen
+re015;die Gepäckausgabe;baggage reclaim;Am Flughafen
+re016;das Terminal;terminal;Am Flughafen
+re017;der Anschlussflug;connecting flight;Am Flughafen
+re018;umsteigen;to change planes;Am Flughafen
+re019;abfliegen;to depart;Am Flughafen
+re020;landen;to land;Am Flughafen
+re021;starten;to take off;Am Flughafen
+re022;das Boarding;boarding;Am Flughafen
+re023;der Fensterplatz;window seat;Am Flughafen
+re024;der Gangplatz;aisle seat;Am Flughafen
+re025;die Fluggesellschaft;airline;Am Flughafen
+re026;der Pilot;pilot;Im Flugzeug
+re027;der Flugbegleiter;flight attendant;Im Flugzeug
+re028;die Besatzung;crew;Im Flugzeug
+re029;der Sicherheitsgurt;seat belt;Im Flugzeug
+re030;sich anschnallen;to fasten one's seat belt;Im Flugzeug
+re031;die Sitzreihe;row;Im Flugzeug
+re032;der Sitzplatz;seat;Im Flugzeug
+re033;der Mittelplatz;middle seat;Im Flugzeug
+re034;das Gepäckfach;overhead locker;Im Flugzeug
+re035;die Schwimmweste;life jacket;Im Flugzeug
+re036;die Sauerstoffmaske;oxygen mask;Im Flugzeug
+re037;der Notausgang;emergency exit;Im Flugzeug
+re038;die Turbulenzen;turbulence;Im Flugzeug
+re039;die Toilette;toilet;Im Flugzeug
+re040;die Rückenlehne;seat back;Im Flugzeug
+re041;der Klapptisch;tray table;Im Flugzeug
+re042;die Spucktüte;sick bag;Im Flugzeug
+re043;die Bordverpflegung;in-flight meal;Im Flugzeug
+re044;der Flugmodus;flight mode;Im Flugzeug
+re045;die Landebahn;runway;Im Flugzeug
+re046;die Landung;landing;Im Flugzeug
+re047;die Flughöhe;altitude;Im Flugzeug
+re048;der Jetlag;jet lag;Im Flugzeug
+re049;die Zwischenlandung;stopover;Im Flugzeug
+re050;der Direktflug;direct flight;Im Flugzeug
+re051;das Gleis;track;Bahn und Bahnhof
+re052;der Bahnsteig;platform;Bahn und Bahnhof
+re053;der Fahrkartenautomat;ticket machine;Bahn und Bahnhof
+re054;der Fahrplan;timetable;Bahn und Bahnhof
+re055;ankommen;to arrive;Bahn und Bahnhof
+re056;der Anschluss;connection;Bahn und Bahnhof
+re057;einsteigen;to get on;Bahn und Bahnhof
+re058;aussteigen;to get off;Bahn und Bahnhof
+re059;der Schaffner;ticket inspector;Bahn und Bahnhof
+re060;die Platzreservierung;seat reservation;Bahn und Bahnhof
+re061;der Wagen;carriage;Bahn und Bahnhof
+re062;das Abteil;compartment;Bahn und Bahnhof
+re063;der Speisewagen;dining car;Bahn und Bahnhof
+re064;die Hin- und Rückfahrkarte;return ticket;Bahn und Bahnhof
+re065;die einfache Fahrkarte;single ticket;Bahn und Bahnhof
+re066;die Ermäßigung;discount;Bahn und Bahnhof
+re067;der Regionalzug;regional train;Bahn und Bahnhof
+re068;der Hauptbahnhof;main station;Bahn und Bahnhof
+re069;die U-Bahn;underground;Bahn und Bahnhof
+re070;die S-Bahn;suburban train;Bahn und Bahnhof
+re071;die Durchsage;announcement;Bahn und Bahnhof
+re072;ausfallen;to be cancelled;Bahn und Bahnhof
+re073;entwerten;to validate;Bahn und Bahnhof
+re074;der Fahrgast;passenger;Bahn und Bahnhof
+re075;der Schienenersatzverkehr;rail replacement bus service;Bahn und Bahnhof
+re076;die Straßenbahn;tram;Bus, Straßenbahn und U-Bahn
+re077;die Bushaltestelle;bus stop;Bus, Straßenbahn und U-Bahn
+re078;die U-Bahn-Station;Underground station;Bus, Straßenbahn und U-Bahn
+re079;die Linie;line;Bus, Straßenbahn und U-Bahn
+re080;die Endstation;terminus;Bus, Straßenbahn und U-Bahn
+re081;der Busfahrer;bus driver;Bus, Straßenbahn und U-Bahn
+re082;die Monatskarte;monthly pass;Bus, Straßenbahn und U-Bahn
+re083;die Tageskarte;day ticket;Bus, Straßenbahn und U-Bahn
+re084;die Wochenkarte;weekly pass;Bus, Straßenbahn und U-Bahn
+re085;der Fahrschein;ticket;Bus, Straßenbahn und U-Bahn
+re086;der Fahrpreis;fare;Bus, Straßenbahn und U-Bahn
+re087;die Tarifzone;fare zone;Bus, Straßenbahn und U-Bahn
+re088;schwarzfahren;to dodge the fare;Bus, Straßenbahn und U-Bahn
+re089;der Halteknopf;stop button;Bus, Straßenbahn und U-Bahn
+re090;der Haltegriff;grab handle;Bus, Straßenbahn und U-Bahn
+re091;der Stehplatz;standing room;Bus, Straßenbahn und U-Bahn
+re092;der Berufsverkehr;rush hour;Bus, Straßenbahn und U-Bahn
+re093;überfüllt;overcrowded;Bus, Straßenbahn und U-Bahn
+re094;die Rolltreppe;escalator;Bus, Straßenbahn und U-Bahn
+re095;der Ausgang;exit;Bus, Straßenbahn und U-Bahn
+re096;der Nachtbus;night bus;Bus, Straßenbahn und U-Bahn
+re097;der Takt;service frequency;Bus, Straßenbahn und U-Bahn
+re098;die öffentlichen Verkehrsmittel;public transport;Bus, Straßenbahn und U-Bahn
+re099;den Bus verpassen;to miss the bus;Bus, Straßenbahn und U-Bahn
+re100;Zurückbleiben, bitte!;Mind the doors!;Bus, Straßenbahn und U-Bahn
+re101;der Mietwagen;hire car;Mietwagen und Autofahren
+re102;die Autovermietung;car hire company;Mietwagen und Autofahren
+re103;die Kaution;deposit;Mietwagen und Autofahren
+re104;die Vollkaskoversicherung;comprehensive insurance;Mietwagen und Autofahren
+re105;die Selbstbeteiligung;excess;Mietwagen und Autofahren
+re106;der Mietvertrag;rental agreement;Mietwagen und Autofahren
+re107;volltanken;to fill up;Mietwagen und Autofahren
+re108;die Tankstelle;petrol station;Mietwagen und Autofahren
+re109;das Benzin;petrol;Mietwagen und Autofahren
+re110;der Diesel;diesel;Mietwagen und Autofahren
+re111;das Schaltgetriebe;manual transmission;Mietwagen und Autofahren
+re112;die Automatik;automatic;Mietwagen und Autofahren
+re113;die Autobahn;motorway;Mietwagen und Autofahren
+re114;die Maut;toll;Mietwagen und Autofahren
+re115;die Vignette;motorway sticker;Mietwagen und Autofahren
+re116;die Umleitung;diversion;Mietwagen und Autofahren
+re117;der Stau;traffic jam;Mietwagen und Autofahren
+re118;die Geschwindigkeitsbegrenzung;speed limit;Mietwagen und Autofahren
+re119;der Blitzer;speed camera;Mietwagen und Autofahren
+re120;der Strafzettel;parking ticket;Mietwagen und Autofahren
+re121;parken;to park;Mietwagen und Autofahren
+re122;der Parkplatz;car park;Mietwagen und Autofahren
+re123;das Parkhaus;multi-storey car park;Mietwagen und Autofahren
+re124;die Ampel;traffic lights;Mietwagen und Autofahren
+re125;der Kreisverkehr;roundabout;Mietwagen und Autofahren
+re126;die Kreuzung;junction;Verkehrsregeln und Straße
+re127;der Zebrastreifen;zebra crossing;Verkehrsregeln und Straße
+re128;die Vorfahrt;right of way;Verkehrsregeln und Straße
+re129;die Vorfahrt beachten;to give way;Verkehrsregeln und Straße
+re130;das Verkehrsschild;road sign;Verkehrsregeln und Straße
+re131;die Landstraße;country road;Verkehrsregeln und Straße
+re132;die Einbahnstraße;one-way street;Verkehrsregeln und Straße
+re133;der Bürgersteig;pavement;Verkehrsregeln und Straße
+re134;der Radweg;cycle path;Verkehrsregeln und Straße
+re135;die Fahrbahn;carriageway;Verkehrsregeln und Straße
+re136;der Fahrstreifen;lane;Verkehrsregeln und Straße
+re137;überholen;to overtake;Verkehrsregeln und Straße
+re138;abbiegen;to turn;Verkehrsregeln und Straße
+re139;blinken;to indicate;Verkehrsregeln und Straße
+re140;bremsen;to brake;Verkehrsregeln und Straße
+re141;anhalten;to stop;Verkehrsregeln und Straße
+re142;der Fußgänger;pedestrian;Verkehrsregeln und Straße
+re143;der Radfahrer;cyclist;Verkehrsregeln und Straße
+re144;der Unfall;accident;Verkehrsregeln und Straße
+re145;die Baustelle;roadworks;Verkehrsregeln und Straße
+re146;die Auffahrt;slip road;Verkehrsregeln und Straße
+re147;das Halteverbot;no stopping;Verkehrsregeln und Straße
+re148;das Überholverbot;no overtaking;Verkehrsregeln und Straße
+re149;zu schnell fahren;to speed;Verkehrsregeln und Straße
+re150;die Verkehrskontrolle;traffic check;Verkehrsregeln und Straße
+re151;bleifrei;unleaded;Tanken und Parken
+re152;die Zapfsäule;petrol pump;Tanken und Parken
+re153;der Zapfhahn;pump nozzle;Tanken und Parken
+re154;der Tankdeckel;fuel cap;Tanken und Parken
+re155;die Tankanzeige;fuel gauge;Tanken und Parken
+re156;der Literpreis;price per litre;Tanken und Parken
+re157;der Spritpreis;fuel price;Tanken und Parken
+re158;die Ladesäule;charging point;Tanken und Parken
+re159;aufladen;to charge;Tanken und Parken
+re160;der Reifendruck;tyre pressure;Tanken und Parken
+re161;den Ölstand prüfen;to check the oil;Tanken und Parken
+re162;die Waschanlage;car wash;Tanken und Parken
+re163;der Parkschein;pay-and-display ticket;Tanken und Parken
+re164;der Parkscheinautomat;parking ticket machine;Tanken und Parken
+re165;die Parkuhr;parking meter;Tanken und Parken
+re166;die Parkscheibe;parking disc;Tanken und Parken
+re167;die Parkgebühr;parking fee;Tanken und Parken
+re168;die Parklücke;parking space;Tanken und Parken
+re169;ausparken;to pull out of a parking space;Tanken und Parken
+re170;rückwärts einparken;to reverse into a space;Tanken und Parken
+re171;das Parkverbot;no parking;Tanken und Parken
+re172;abschleppen;to tow away;Tanken und Parken
+re173;die Tiefgarage;underground car park;Tanken und Parken
+re174;der Behindertenparkplatz;disabled parking space;Tanken und Parken
+re175;der Anwohnerparkausweis;residents' parking permit;Tanken und Parken
+re176;Fahrrad fahren;to ride a bike;Fahrrad und zu Fuß
+re177;zu Fuß gehen;to walk;Fahrrad und zu Fuß
+re178;der Helm;helmet;Fahrrad und zu Fuß
+re179;die Klingel;bell;Fahrrad und zu Fuß
+re180;der Sattel;saddle;Fahrrad und zu Fuß
+re181;der Lenker;handlebars;Fahrrad und zu Fuß
+re182;das Pedal;pedal;Fahrrad und zu Fuß
+re183;die Kette;chain;Fahrrad und zu Fuß
+re184;die Gangschaltung;gears;Fahrrad und zu Fuß
+re185;der Reifen;tyre;Fahrrad und zu Fuß
+re186;der Platten;flat tyre;Fahrrad und zu Fuß
+re187;die Luftpumpe;bicycle pump;Fahrrad und zu Fuß
+re188;das Fahrradschloss;bike lock;Fahrrad und zu Fuß
+re189;abschließen;to lock;Fahrrad und zu Fuß
+re190;der Fahrradständer;bike rack;Fahrrad und zu Fuß
+re191;das Licht;light;Fahrrad und zu Fuß
+re192;der Rückstrahler;reflector;Fahrrad und zu Fuß
+re193;das E-Bike;e-bike;Fahrrad und zu Fuß
+re194;der Fahrradverleih;bike hire;Fahrrad und zu Fuß
+re195;die Fußgängerampel;pedestrian lights;Fahrrad und zu Fuß
+re196;die Fußgängerzone;pedestrian zone;Fahrrad und zu Fuß
+re197;die Straße überqueren;to cross the road;Fahrrad und zu Fuß
+re198;spazieren gehen;to go for a walk;Fahrrad und zu Fuß
+re199;wandern;to hike;Fahrrad und zu Fuß
+re200;der Wanderweg;footpath;Fahrrad und zu Fuß
+re201;das Schiff;ship;Schiff und Fähre
+re202;die Fähre;ferry;Schiff und Fähre
+re203;der Hafen;harbour;Schiff und Fähre
+re204;das Boot;boat;Schiff und Fähre
+re205;das Deck;deck;Schiff und Fähre
+re206;die Kabine;cabin;Schiff und Fähre
+re207;der Kapitän;captain;Schiff und Fähre
+re208;die Kreuzfahrt;cruise;Schiff und Fähre
+re209;die Überfahrt;crossing;Schiff und Fähre
+re210;der Anleger;landing stage;Schiff und Fähre
+re211;an Bord gehen;to board;Schiff und Fähre
+re212;von Bord gehen;to disembark;Schiff und Fähre
+re213;ablegen;to cast off;Schiff und Fähre
+re214;anlegen;to dock;Schiff und Fähre
+re215;seekrank;seasick;Schiff und Fähre
+re216;die Seekrankheit;seasickness;Schiff und Fähre
+re217;das Rettungsboot;lifeboat;Schiff und Fähre
+re218;der Rettungsring;lifebuoy;Schiff und Fähre
+re219;der Seegang;swell;Schiff und Fähre
+re220;die Welle;wave;Schiff und Fähre
+re221;das Autodeck;car deck;Schiff und Fähre
+re222;der Fährhafen;ferry port;Schiff und Fähre
+re223;die Reling;railing;Schiff und Fähre
+re224;der Bug;bow;Schiff und Fähre
+re225;das Heck;stern;Schiff und Fähre
+re226;das Einzelzimmer;single room;Im Hotel
+re227;das Doppelzimmer;double room;Im Hotel
+re228;die Rezeption;reception;Im Hotel
+re229;die Reservierung;reservation;Im Hotel
+re230;auschecken;to check out;Im Hotel
+re231;der Zimmerschlüssel;room key;Im Hotel
+re232;die Schlüsselkarte;key card;Im Hotel
+re233;die Halbpension;half board;Im Hotel
+re234;die Vollpension;full board;Im Hotel
+re235;die Übernachtung;overnight stay;Im Hotel
+re236;der Zimmerservice;room service;Im Hotel
+re237;das Handtuch;towel;Im Hotel
+re238;die Minibar;minibar;Im Hotel
+re239;der Gepäckträger;porter;Im Hotel
+re240;die Empfangshalle;lobby;Im Hotel
+re241;ausgebucht;fully booked;Im Hotel
+re242;ein Zimmer buchen;to book a room;Im Hotel
+re243;die Stornierung;cancellation;Im Hotel
+re244;der Weckruf;wake-up call;Im Hotel
+re245;die Klimaanlage;air conditioning;Im Hotel
+re246;das Zimmermädchen;chambermaid;Im Hotel
+re247;das Bitte-nicht-stören-Schild;do-not-disturb sign;Im Hotel
+re248;der Safe;safe;Im Hotel
+re249;die Bettwäsche;bed linen;Im Hotel
+re250;das Kopfkissen;pillow;Im Hotel
+re251;die Pension;guesthouse;Unterkunft und Buchung
+re252;die Jugendherberge;youth hostel;Unterkunft und Buchung
+re253;die Ferienwohnung;holiday flat;Unterkunft und Buchung
+re254;buchen;to book;Unterkunft und Buchung
+re255;stornieren;to cancel;Unterkunft und Buchung
+re256;Frühstück inklusive;breakfast included;Unterkunft und Buchung
+re257;der Campingplatz;campsite;Unterkunft und Buchung
+re258;die Buchungsbestätigung;booking confirmation;Unterkunft und Buchung
+re259;Zimmer frei;vacancies;Unterkunft und Buchung
+re260;die Nebensaison;low season;Unterkunft und Buchung
+re261;die Hauptsaison;high season;Unterkunft und Buchung
+re262;der Aufpreis;surcharge;Unterkunft und Buchung
+re263;die Kurtaxe;tourist tax;Unterkunft und Buchung
+re264;die Unterkunft;accommodation;Unterkunft und Buchung
+re265;der Gastgeber;host;Unterkunft und Buchung
+re266;die Gepäckaufbewahrung;left-luggage office;Unterkunft und Buchung
+re267;das Zimmer mit Meerblick;room with a sea view;Unterkunft und Buchung
+re268;das Zustellbett;extra bed;Unterkunft und Buchung
+re269;die Bewertung;review;Unterkunft und Buchung
+re270;die Stornogebühr;cancellation fee;Unterkunft und Buchung
+re271;die Endreinigung;final cleaning fee;Unterkunft und Buchung
+re272;die Wegbeschreibung;directions;Orientierung und Wegbeschreibung
+re273;links abbiegen;to turn left;Orientierung und Wegbeschreibung
+re274;rechts abbiegen;to turn right;Orientierung und Wegbeschreibung
+re275;geradeaus gehen;to go straight on;Orientierung und Wegbeschreibung
+re276;die Ecke;corner;Orientierung und Wegbeschreibung
+re277;der Stadtplan;city map;Orientierung und Wegbeschreibung
+re278;die Karte;map;Orientierung und Wegbeschreibung
+re279;sich verlaufen;to get lost (on foot);Orientierung und Wegbeschreibung
+re280;nach dem Weg fragen;to ask for directions;Orientierung und Wegbeschreibung
+re281;in der Nähe;nearby;Orientierung und Wegbeschreibung
+re282;weit entfernt;far away;Orientierung und Wegbeschreibung
+re283;gegenüber;opposite;Orientierung und Wegbeschreibung
+re284;neben;next to;Orientierung und Wegbeschreibung
+re285;hinter;behind;Orientierung und Wegbeschreibung
+re286;der Norden;north;Orientierung und Wegbeschreibung
+re287;der Süden;south;Orientierung und Wegbeschreibung
+re288;der Osten;east;Orientierung und Wegbeschreibung
+re289;der Westen;west;Orientierung und Wegbeschreibung
+re290;der Kompass;compass;Orientierung und Wegbeschreibung
+re291;das Navigationsgerät;satnav;Orientierung und Wegbeschreibung
+re292;der Wegweiser;signpost;Orientierung und Wegbeschreibung
+re293;umkehren;to turn back;Orientierung und Wegbeschreibung
+re294;die Abzweigung;turning;Orientierung und Wegbeschreibung
+re295;die Querstraße;side street;Orientierung und Wegbeschreibung
+re296;die Hauptstraße;main road;Orientierung und Wegbeschreibung
+re297;die Sehenswürdigkeit;sight / tourist attraction;Sehenswürdigkeiten und Stadtbesichtigung
+re298;die Stadtführung;guided city tour;Sehenswürdigkeiten und Stadtbesichtigung
+re299;der Stadtrundgang;walking tour of the city;Sehenswürdigkeiten und Stadtbesichtigung
+re300;die Stadtrundfahrt;city sightseeing tour;Sehenswürdigkeiten und Stadtbesichtigung
+re301;der Reiseführer;guidebook / tour guide;Sehenswürdigkeiten und Stadtbesichtigung
+re302;die Führung;guided tour;Sehenswürdigkeiten und Stadtbesichtigung
+re303;besichtigen;to visit / to tour;Sehenswürdigkeiten und Stadtbesichtigung
+re304;die Ausstellung;exhibition;Sehenswürdigkeiten und Stadtbesichtigung
+re305;die Kirche;church;Sehenswürdigkeiten und Stadtbesichtigung
+re306;der Dom;cathedral;Sehenswürdigkeiten und Stadtbesichtigung
+re307;das Schloss;palace / castle;Sehenswürdigkeiten und Stadtbesichtigung
+re308;die Burg;castle / fortress;Sehenswürdigkeiten und Stadtbesichtigung
+re309;das Denkmal;monument / memorial;Sehenswürdigkeiten und Stadtbesichtigung
+re310;das Rathaus;town hall;Sehenswürdigkeiten und Stadtbesichtigung
+re311;die Altstadt;old town;Sehenswürdigkeiten und Stadtbesichtigung
+re312;der Marktplatz;market square;Sehenswürdigkeiten und Stadtbesichtigung
+re313;der Aussichtspunkt;viewpoint;Sehenswürdigkeiten und Stadtbesichtigung
+re314;der Turm;tower;Sehenswürdigkeiten und Stadtbesichtigung
+re315;der Brunnen;fountain;Sehenswürdigkeiten und Stadtbesichtigung
+re316;die Brücke;bridge;Sehenswürdigkeiten und Stadtbesichtigung
+re317;die Touristeninformation;tourist information office;Sehenswürdigkeiten und Stadtbesichtigung
+re318;der Eintritt;admission;Sehenswürdigkeiten und Stadtbesichtigung
+re319;die Eintrittskarte;admission ticket;Sehenswürdigkeiten und Stadtbesichtigung
+re320;die Öffnungszeiten;opening hours;Sehenswürdigkeiten und Stadtbesichtigung
+re321;der Audioguide;audio guide;Sehenswürdigkeiten und Stadtbesichtigung
+re322;die Grenze;border;Grenze, Pass und Zoll
+re323;der Personalausweis;identity card;Grenze, Pass und Zoll
+re324;das Visum;visa;Grenze, Pass und Zoll
+re325;die Grenzkontrolle;border control;Grenze, Pass und Zoll
+re326;der Zollbeamte;customs officer;Grenze, Pass und Zoll
+re327;die Zollerklärung;customs declaration;Grenze, Pass und Zoll
+re328;zollfrei;duty-free;Grenze, Pass und Zoll
+re329;etwas zu verzollen haben;to have something to declare;Grenze, Pass und Zoll
+re330;verzollen;to pay duty on;Grenze, Pass und Zoll
+re331;der Grenzübergang;border crossing;Grenze, Pass und Zoll
+re332;die Einreise;entry;Grenze, Pass und Zoll
+re333;einreisen;to enter a country;Grenze, Pass und Zoll
+re334;ausreisen;to leave a country;Grenze, Pass und Zoll
+re335;gültig;valid;Grenze, Pass und Zoll
+re336;das Ablaufdatum;expiry date;Grenze, Pass und Zoll
+re337;die Staatsangehörigkeit;nationality;Grenze, Pass und Zoll
+re338;der Aufenthalt;stay;Grenze, Pass und Zoll
+re339;die Aufenthaltsgenehmigung;residence permit;Grenze, Pass und Zoll
+re340;das Einreiseformular;landing card;Grenze, Pass und Zoll
+re341;der Stempel;stamp;Grenze, Pass und Zoll
+re342;durchsuchen;to search;Grenze, Pass und Zoll
+re343;die Freimenge;duty-free allowance;Grenze, Pass und Zoll
+re344;beschlagnahmen;to confiscate;Grenze, Pass und Zoll
+re345;schmuggeln;to smuggle;Grenze, Pass und Zoll
+re346;die Einfuhrbestimmungen;import regulations;Grenze, Pass und Zoll
+re347;der Rucksack;rucksack;Gepäck und Reisevorbereitung
+re348;die Reisetasche;holdall;Gepäck und Reisevorbereitung
+re349;das Gepäckstück;piece of luggage;Gepäck und Reisevorbereitung
+re350;packen;to pack;Gepäck und Reisevorbereitung
+re351;auspacken;to unpack;Gepäck und Reisevorbereitung
+re352;die Packliste;packing list;Gepäck und Reisevorbereitung
+re353;der Kulturbeutel;toiletry bag;Gepäck und Reisevorbereitung
+re354;die Reiseunterlagen;travel documents;Gepäck und Reisevorbereitung
+re355;das Übergepäck;excess baggage;Gepäck und Reisevorbereitung
+re356;die Freigepäckmenge;baggage allowance;Gepäck und Reisevorbereitung
+re357;das Gepäck aufgeben;to check in one's luggage;Gepäck und Reisevorbereitung
+re358;das Gepäckband;baggage carousel;Gepäck und Reisevorbereitung
+re359;der Gepäckwagen;luggage trolley;Gepäck und Reisevorbereitung
+re360;das Kofferschloss;luggage lock;Gepäck und Reisevorbereitung
+re361;der Kofferanhänger;luggage tag;Gepäck und Reisevorbereitung
+re362;zerbrechlich;fragile;Gepäck und Reisevorbereitung
+re363;wiegen;to weigh;Gepäck und Reisevorbereitung
+re364;die Reiseversicherung;travel insurance;Gepäck und Reisevorbereitung
+re365;die Reiseapotheke;travel first-aid kit;Gepäck und Reisevorbereitung
+re366;der Reiseadapter;travel adaptor;Gepäck und Reisevorbereitung
+re367;das Ladegerät;charger;Gepäck und Reisevorbereitung
+re368;die Sonnencreme;sun cream;Gepäck und Reisevorbereitung
+re369;das Reiseziel;destination;Gepäck und Reisevorbereitung
+re370;die Impfung;vaccination;Gepäck und Reisevorbereitung
+re371;Geld wechseln;to change money;Gepäck und Reisevorbereitung
+re372;die Küste;coast;Urlaub am Meer und in den Bergen
+re373;der Sand;sand;Urlaub am Meer und in den Bergen
+re374;die Ebbe;low tide;Urlaub am Meer und in den Bergen
+re375;die Flut;high tide;Urlaub am Meer und in den Bergen
+re376;der Liegestuhl;deckchair;Urlaub am Meer und in den Bergen
+re377;der Sonnenschirm;beach umbrella;Urlaub am Meer und in den Bergen
+re378;der Sonnenbrand;sunburn;Urlaub am Meer und in den Bergen
+re379;sich sonnen;to sunbathe;Urlaub am Meer und in den Bergen
+re380;der Badeanzug;swimsuit;Urlaub am Meer und in den Bergen
+re381;die Badehose;swimming trunks;Urlaub am Meer und in den Bergen
+re382;der Rettungsschwimmer;lifeguard;Urlaub am Meer und in den Bergen
+re383;die Strömung;current;Urlaub am Meer und in den Bergen
+re384;tauchen;to dive;Urlaub am Meer und in den Bergen
+re385;schnorcheln;to snorkel;Urlaub am Meer und in den Bergen
+re386;die Insel;island;Urlaub am Meer und in den Bergen
+re387;der Gipfel;summit;Urlaub am Meer und in den Bergen
+re388;das Tal;valley;Urlaub am Meer und in den Bergen
+re389;die Hütte;mountain hut;Urlaub am Meer und in den Bergen
+re390;die Seilbahn;cable car;Urlaub am Meer und in den Bergen
+re391;der Sessellift;chairlift;Urlaub am Meer und in den Bergen
+re392;klettern;to climb;Urlaub am Meer und in den Bergen
+re393;die Wanderschuhe;hiking boots;Urlaub am Meer und in den Bergen
+re394;die Aussicht;view;Urlaub am Meer und in den Bergen
+re395;steil;steep;Urlaub am Meer und in den Bergen
+re396;Ski fahren;to ski;Urlaub am Meer und in den Bergen
+re397;das Bargeld;cash;Geld, Wechseln und Trinkgeld
+re398;das Kleingeld;change;Geld, Wechseln und Trinkgeld
+re399;die Münze;coin;Geld, Wechseln und Trinkgeld
+re400;der Geldschein;banknote;Geld, Wechseln und Trinkgeld
+re401;die Währung;currency;Geld, Wechseln und Trinkgeld
+re402;der Wechselkurs;exchange rate;Geld, Wechseln und Trinkgeld
+re403;die Wechselstube;bureau de change;Geld, Wechseln und Trinkgeld
+re404;umtauschen;to exchange;Geld, Wechseln und Trinkgeld
+re405;die Gebühr;fee;Geld, Wechseln und Trinkgeld
+re406;die Provision;commission;Geld, Wechseln und Trinkgeld
+re407;der Geldautomat;cash machine;Geld, Wechseln und Trinkgeld
+re408;Geld abheben;to withdraw money;Geld, Wechseln und Trinkgeld
+re409;die Kreditkarte;credit card;Geld, Wechseln und Trinkgeld
+re410;die Bankkarte;debit card;Geld, Wechseln und Trinkgeld
+re411;die PIN;PIN;Geld, Wechseln und Trinkgeld
+re412;kontaktlos bezahlen;to pay contactless;Geld, Wechseln und Trinkgeld
+re413;bar bezahlen;to pay in cash;Geld, Wechseln und Trinkgeld
+re414;Trinkgeld geben;to tip;Geld, Wechseln und Trinkgeld
+re415;im Preis inbegriffen;included in the price;Geld, Wechseln und Trinkgeld
+re416;der Betrag;amount;Geld, Wechseln und Trinkgeld
+re417;die Bank;bank;Geld, Wechseln und Trinkgeld
+re418;der Reisescheck;traveller's cheque;Geld, Wechseln und Trinkgeld
+re419;der Notruf;emergency call;Notfall und Hilfe unterwegs
+re420;die Notrufnummer;emergency number;Notfall und Hilfe unterwegs
+re421;der Krankenwagen;ambulance;Notfall und Hilfe unterwegs
+re422;die Feuerwehr;fire brigade;Notfall und Hilfe unterwegs
+re423;die Notaufnahme;accident and emergency (A&E);Notfall und Hilfe unterwegs
+re424;um Hilfe rufen;to call for help;Notfall und Hilfe unterwegs
+re425;verletzt;injured;Notfall und Hilfe unterwegs
+re426;die Verletzung;injury;Notfall und Hilfe unterwegs
+re427;bewusstlos;unconscious;Notfall und Hilfe unterwegs
+re428;die Erste Hilfe;first aid;Notfall und Hilfe unterwegs
+re429;der Verbandskasten;first-aid kit;Notfall und Hilfe unterwegs
+re430;die Panne;breakdown;Notfall und Hilfe unterwegs
+re431;der Pannendienst;breakdown service;Notfall und Hilfe unterwegs
+re432;der Abschleppwagen;tow truck;Notfall und Hilfe unterwegs
+re433;das Warndreieck;warning triangle;Notfall und Hilfe unterwegs
+re434;die Warnweste;high-visibility vest;Notfall und Hilfe unterwegs
+re435;die Werkstatt;garage;Notfall und Hilfe unterwegs
+re436;der Diebstahl;theft;Notfall und Hilfe unterwegs
+re437;bestohlen werden;to be robbed;Notfall und Hilfe unterwegs
+re438;Anzeige erstatten;to report to the police;Notfall und Hilfe unterwegs
+re439;die Polizeiwache;police station;Notfall und Hilfe unterwegs
+re440;verlieren;to lose;Notfall und Hilfe unterwegs
+re441;das Fundbüro;lost property office;Notfall und Hilfe unterwegs
+re442;die Botschaft;embassy;Notfall und Hilfe unterwegs
+re443;die Karte sperren lassen;to have one's card cancelled;Notfall und Hilfe unterwegs
+re444;reisen;to travel;Unterwegs (Verben)
+re445;abholen;to pick up;Unterwegs (Verben)
+re446;mitnehmen;to give someone a lift;Unterwegs (Verben)
+re447;verpassen;to miss;Unterwegs (Verben)
+re448;erreichen;to catch;Unterwegs (Verben)
+re449;trampen;to hitchhike;Unterwegs (Verben)
+re450;mieten;to hire;Unterwegs (Verben)
+re451;sich erkundigen;to enquire;Unterwegs (Verben)
+re452;losfahren;to set off;Unterwegs (Verben)
+re453;fliegen;to fly;Unterwegs (Verben)
+re454;überqueren;to cross;Unterwegs (Verben)
+re455;erkunden;to explore;Unterwegs (Verben)
+re456;Gute Reise!;Have a good trip!;Reisen (Wendungen und Smalltalk)
+re457;Wie war die Reise?;How was your journey?;Reisen (Wendungen und Smalltalk)
+re458;Woher kommen Sie?;Where are you from?;Reisen (Wendungen und Smalltalk)
+re459;Ich komme aus …;I'm from …;Reisen (Wendungen und Smalltalk)
+re460;Sind Sie zum ersten Mal hier?;Is this your first time here?;Reisen (Wendungen und Smalltalk)
+re461;Ich bin auf der Durchreise.;I'm just passing through.;Reisen (Wendungen und Smalltalk)
+re462;Ich mache hier Urlaub.;I'm on holiday here.;Reisen (Wendungen und Smalltalk)
+re463;Ich bin geschäftlich hier.;I'm here on business.;Reisen (Wendungen und Smalltalk)
+re464;Schönen Urlaub!;Have a nice holiday!;Reisen (Wendungen und Smalltalk)
+re465;Wie lange bleiben Sie?;How long are you staying?;Reisen (Wendungen und Smalltalk)
+re466;Können Sie mir etwas empfehlen?;Can you recommend something?;Reisen (Wendungen und Smalltalk)
+re467;Ist dieser Platz frei?;Is this seat free?;Reisen (Wendungen und Smalltalk)
+re468;Entschuldigung, wie komme ich zum Bahnhof?;Excuse me, how do I get to the station?;Reisen (Wendungen und Smalltalk)
+re469;Ich habe mich verlaufen.;I'm lost.;Reisen (Wendungen und Smalltalk)
+re470;Können Sie das bitte wiederholen?;Could you repeat that, please?;Reisen (Wendungen und Smalltalk)
+re471;Sprechen Sie Englisch?;Do you speak English?;Reisen (Wendungen und Smalltalk)
+re472;Was kostet das?;How much is it?;Reisen (Wendungen und Smalltalk)
+re473;Wo ist der nächste Geldautomat?;Where is the nearest cashpoint?;Reisen (Wendungen und Smalltalk)
+re474;Ich habe reserviert.;I have a reservation.;Reisen (Wendungen und Smalltalk)
+re475;Ist das Frühstück inbegriffen?;Is breakfast included?;Reisen (Wendungen und Smalltalk)
+re476;Haben Sie etwas Günstigeres?;Do you have anything cheaper?;Reisen (Wendungen und Smalltalk)
+re477;Das Wetter ist herrlich.;weather is lovely.;Reisen (Wendungen und Smalltalk)
+re478;Waren Sie schon einmal in …?;Have you ever been to …?;Reisen (Wendungen und Smalltalk)
+re479;Was kann man hier unternehmen?;What is there to do here?;Reisen (Wendungen und Smalltalk)
+re480;Viel Spaß!;Have fun!;Reisen (Wendungen und Smalltalk)
+re481;das Gemeinschaftsbad;shared bathroom;Unterkunft und Buchung
+re482;die Verfügbarkeit;availability;Unterkunft und Buchung
+re483;kostenlose Stornierung;free cancellation;Unterkunft und Buchung
+re484;die Anreise;arrival;Unterkunft und Buchung
+re485;getrennt bezahlen;to pay separately;Geld, Wechseln und Trinkgeld
+re486;das Portemonnaie;purse;Geld, Wechseln und Trinkgeld
+re487;Kann ich bitte zahlen?;Could I have the bill, please?;Geld, Wechseln und Trinkgeld
+re488;übernachten;to stay overnight;Unterwegs (Verben)
+re489;sich verspäten;to be delayed;Unterwegs (Verben)
+re490;umbuchen;to rebook;Unterwegs (Verben)
+re491;verreisen;to go away on a trip;Unterwegs (Verben)
+re492;sich verfahren;to take a wrong turn;Unterwegs (Verben)
+re493;zelten;to camp;Unterwegs (Verben)
+re494;durchfahren;to drive through;Unterwegs (Verben)
+re495;weiterfahren;to drive on;Unterwegs (Verben)
+re496;zurückfahren;to drive back;Unterwegs (Verben)
+re497;vorbeifahren;to drive past;Unterwegs (Verben)
+re498;abreisen;to leave on a journey;Unterwegs (Verben)
+re499;zurückkehren;to return;Unterwegs (Verben)
+re500;pendeln;to commute;Unterwegs (Verben)

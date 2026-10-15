@@ -26,6 +26,8 @@ PRONOMEN = WURZEL / "daten" / "pronomen.csv"
 THEMENSTAPEL = [
     ("Alltag", WURZEL / "daten" / "alltag.csv", WURZEL / "daten" / "alltag-sprachen.json"),
     ("Küche", WURZEL / "daten" / "kueche.csv", WURZEL / "daten" / "kueche-sprachen.json"),
+    ("Reisen", WURZEL / "daten" / "reisen.csv", WURZEL / "daten" / "reisen-sprachen.json"),
+    ("Auto", WURZEL / "daten" / "auto.csv", WURZEL / "daten" / "auto-sprachen.json"),
 ]
 FORMEN = WURZEL / "daten" / "formen.json"
 VORLAGE = WURZEL / "src" / "template.html"

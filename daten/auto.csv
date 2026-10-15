@@ -1,0 +1,301 @@
+id;de;en;thema
+au001;die Karosserie;bodywork;Karosserie und Außen
+au002;die Motorhaube;bonnet;Karosserie und Außen
+au003;der Kofferraum;boot;Karosserie und Außen
+au004;der Kofferraumdeckel;boot lid;Karosserie und Außen
+au005;die Stoßstange;bumper;Karosserie und Außen
+au006;der Kotflügel;wing;Karosserie und Außen
+au007;die Windschutzscheibe;windscreen;Karosserie und Außen
+au008;der Scheibenwischer;windscreen wiper;Karosserie und Außen
+au009;der Außenspiegel;wing mirror;Karosserie und Außen
+au010;der Türgriff;door handle;Karosserie und Außen
+au011;das Dach;roof;Karosserie und Außen
+au012;das Schiebedach;sunroof;Karosserie und Außen
+au013;der Scheinwerfer;headlight;Karosserie und Außen
+au014;das Rücklicht;rear light;Karosserie und Außen
+au015;der Blinker;indicator;Karosserie und Außen
+au016;das Nummernschild;number plate;Karosserie und Außen
+au017;der Kühlergrill;radiator grille;Karosserie und Außen
+au018;die Heckscheibe;rear window;Karosserie und Außen
+au019;die Seitenscheibe;side window;Karosserie und Außen
+au020;die Delle;dent;Karosserie und Außen
+au021;der Kratzer;scratch;Karosserie und Außen
+au022;der Rost;rust;Karosserie und Außen
+au023;der Lack;paintwork;Karosserie und Außen
+au024;die Felge;wheel rim;Karosserie und Außen
+au025;die Radkappe;hubcap;Karosserie und Außen
+au026;das Lenkrad;steering wheel;Innenraum und Bedienelemente
+au027;das Armaturenbrett;dashboard;Innenraum und Bedienelemente
+au028;der Tacho;speedometer;Innenraum und Bedienelemente
+au029;der Drehzahlmesser;rev counter;Innenraum und Bedienelemente
+au030;das Gaspedal;accelerator;Innenraum und Bedienelemente
+au031;das Bremspedal;brake pedal;Innenraum und Bedienelemente
+au032;das Kupplungspedal;clutch pedal;Innenraum und Bedienelemente
+au033;der Schalthebel;gear lever;Innenraum und Bedienelemente
+au034;die Handbremse;handbrake;Innenraum und Bedienelemente
+au035;der Fahrersitz;driver's seat;Innenraum und Bedienelemente
+au036;der Beifahrersitz;passenger seat;Innenraum und Bedienelemente
+au037;die Rückbank;back seat;Innenraum und Bedienelemente
+au038;die Kopfstütze;headrest;Innenraum und Bedienelemente
+au039;der Rückspiegel;rear-view mirror;Innenraum und Bedienelemente
+au040;die Sonnenblende;sun visor;Innenraum und Bedienelemente
+au041;das Handschuhfach;glove compartment;Innenraum und Bedienelemente
+au042;die Mittelkonsole;centre console;Innenraum und Bedienelemente
+au043;die Hupe;horn;Innenraum und Bedienelemente
+au044;die Sitzheizung;heated seats;Innenraum und Bedienelemente
+au045;das Autoradio;car radio;Innenraum und Bedienelemente
+au046;der Zündschlüssel;ignition key;Innenraum und Bedienelemente
+au047;die Warnblinkanlage;hazard warning lights;Innenraum und Bedienelemente
+au048;die Kontrollleuchte;warning light;Innenraum und Bedienelemente
+au049;der Kilometerzähler;mileometer;Innenraum und Bedienelemente
+au050;der Tempomat;cruise control;Innenraum und Bedienelemente
+au051;der Motor;engine;Motor, Getriebe und Antrieb
+au052;das Getriebe;gearbox;Motor, Getriebe und Antrieb
+au053;der Antrieb;drive;Motor, Getriebe und Antrieb
+au054;die Kupplung;clutch;Motor, Getriebe und Antrieb
+au055;der Zylinder;cylinder;Motor, Getriebe und Antrieb
+au056;der Kolben;piston;Motor, Getriebe und Antrieb
+au057;die Zündkerze;spark plug;Motor, Getriebe und Antrieb
+au058;die Kurbelwelle;crankshaft;Motor, Getriebe und Antrieb
+au059;die Nockenwelle;camshaft;Motor, Getriebe und Antrieb
+au060;der Zahnriemen;timing belt;Motor, Getriebe und Antrieb
+au061;der Keilriemen;fan belt;Motor, Getriebe und Antrieb
+au062;die Lichtmaschine;alternator;Motor, Getriebe und Antrieb
+au063;der Anlasser;starter motor;Motor, Getriebe und Antrieb
+au064;die Batterie;battery;Motor, Getriebe und Antrieb
+au065;der Kühler;radiator;Motor, Getriebe und Antrieb
+au066;das Kühlmittel;coolant;Motor, Getriebe und Antrieb
+au067;das Motoröl;engine oil;Motor, Getriebe und Antrieb
+au068;der Ölwechsel;oil change;Motor, Getriebe und Antrieb
+au069;der Ölfilter;oil filter;Motor, Getriebe und Antrieb
+au070;der Luftfilter;air filter;Motor, Getriebe und Antrieb
+au071;der Tank;fuel tank;Motor, Getriebe und Antrieb
+au072;die Einspritzpumpe;injection pump;Motor, Getriebe und Antrieb
+au073;der Auspuff;exhaust;Motor, Getriebe und Antrieb
+au074;der Katalysator;catalytic converter;Motor, Getriebe und Antrieb
+au075;der Turbolader;turbocharger;Motor, Getriebe und Antrieb
+au076;die Bremse;brake;Bremsen, Lenkung und Fahrwerk
+au077;die Bremsscheibe;brake disc;Bremsen, Lenkung und Fahrwerk
+au078;der Bremsbelag;brake pad;Bremsen, Lenkung und Fahrwerk
+au079;die Bremsflüssigkeit;brake fluid;Bremsen, Lenkung und Fahrwerk
+au080;die Bremstrommel;brake drum;Bremsen, Lenkung und Fahrwerk
+au081;der Bremssattel;brake calliper;Bremsen, Lenkung und Fahrwerk
+au082;die Bremsleitung;brake line;Bremsen, Lenkung und Fahrwerk
+au083;der Bremskraftverstärker;brake servo;Bremsen, Lenkung und Fahrwerk
+au084;das Antiblockiersystem (ABS);anti-lock braking system (ABS);Bremsen, Lenkung und Fahrwerk
+au085;der Bremsweg;braking distance;Bremsen, Lenkung und Fahrwerk
+au086;die Vollbremsung;emergency stop;Bremsen, Lenkung und Fahrwerk
+au087;die Lenkung;steering;Bremsen, Lenkung und Fahrwerk
+au088;die Servolenkung;power steering;Bremsen, Lenkung und Fahrwerk
+au089;lenken;to steer;Bremsen, Lenkung und Fahrwerk
+au090;die Spurstange;track rod;Bremsen, Lenkung und Fahrwerk
+au091;das Lenkgetriebe;steering rack;Bremsen, Lenkung und Fahrwerk
+au092;die Achsvermessung;wheel alignment;Bremsen, Lenkung und Fahrwerk
+au093;die Spur;tracking;Bremsen, Lenkung und Fahrwerk
+au094;das Fahrwerk;suspension;Bremsen, Lenkung und Fahrwerk
+au095;der Stoßdämpfer;shock absorber;Bremsen, Lenkung und Fahrwerk
+au096;die Feder;spring;Bremsen, Lenkung und Fahrwerk
+au097;die Achse;axle;Bremsen, Lenkung und Fahrwerk
+au098;das Radlager;wheel bearing;Bremsen, Lenkung und Fahrwerk
+au099;der Querlenker;wishbone;Bremsen, Lenkung und Fahrwerk
+au100;der Stabilisator;anti-roll bar;Bremsen, Lenkung und Fahrwerk
+au101;das Rad;wheel;Räder und Reifen
+au102;das Profil;tread;Räder und Reifen
+au103;die Profiltiefe;tread depth;Räder und Reifen
+au104;der Winterreifen;winter tyre;Räder und Reifen
+au105;der Sommerreifen;summer tyre;Räder und Reifen
+au106;der Ganzjahresreifen;all-season tyre;Räder und Reifen
+au107;der Reifenwechsel;tyre change;Räder und Reifen
+au108;das Ersatzrad;spare wheel;Räder und Reifen
+au109;der Wagenheber;jack;Räder und Reifen
+au110;die Radmutter;wheel nut;Räder und Reifen
+au111;die Radschraube;wheel bolt;Räder und Reifen
+au112;der Radkasten;wheel arch;Räder und Reifen
+au113;das Ventil;valve;Räder und Reifen
+au114;aufpumpen;to inflate;Räder und Reifen
+au115;das Reifenpannenset;tyre repair kit;Räder und Reifen
+au116;die Reifenpanne;puncture;Räder und Reifen
+au117;auswuchten;to balance;Räder und Reifen
+au118;die Schneekette;snow chain;Räder und Reifen
+au119;der Spikereifen;studded tyre;Räder und Reifen
+au120;die Reifenflanke;sidewall;Räder und Reifen
+au121;der Reifenverschleiß;tyre wear;Räder und Reifen
+au122;abgefahren;worn;Räder und Reifen
+au123;der Radwechsel;wheel change;Räder und Reifen
+au124;der Drehmomentschlüssel;torque wrench;Räder und Reifen
+au125;das Notrad;space-saver spare wheel;Räder und Reifen
+au126;das Starthilfekabel;jump leads;Elektrik und Beleuchtung
+au127;die Sicherung;fuse;Elektrik und Beleuchtung
+au128;der Sicherungskasten;fuse box;Elektrik und Beleuchtung
+au129;das Abblendlicht;dipped headlights;Elektrik und Beleuchtung
+au130;das Fernlicht;full beam;Elektrik und Beleuchtung
+au131;das Standlicht;sidelights;Elektrik und Beleuchtung
+au132;das Tagfahrlicht;daytime running lights;Elektrik und Beleuchtung
+au133;der Nebelscheinwerfer;front fog light;Elektrik und Beleuchtung
+au134;die Nebelschlussleuchte;rear fog light;Elektrik und Beleuchtung
+au135;das Bremslicht;brake light;Elektrik und Beleuchtung
+au136;das Rückfahrlicht;reversing light;Elektrik und Beleuchtung
+au137;die Kennzeichenbeleuchtung;number plate light;Elektrik und Beleuchtung
+au138;die Innenbeleuchtung;interior light;Elektrik und Beleuchtung
+au139;die Glühbirne;bulb;Elektrik und Beleuchtung
+au140;die LED;LED;Elektrik und Beleuchtung
+au141;das Kabel;cable;Elektrik und Beleuchtung
+au142;der Kabelbaum;wiring harness;Elektrik und Beleuchtung
+au143;die Spannung;voltage;Elektrik und Beleuchtung
+au144;der Kurzschluss;short circuit;Elektrik und Beleuchtung
+au145;der Pluspol;positive terminal;Elektrik und Beleuchtung
+au146;der Minuspol;negative terminal;Elektrik und Beleuchtung
+au147;die Masse;earth;Elektrik und Beleuchtung
+au148;das Steuergerät;control unit;Elektrik und Beleuchtung
+au149;der Sensor;sensor;Elektrik und Beleuchtung
+au150;die Zündung;ignition;Elektrik und Beleuchtung
+au151;der Spurhalteassistent;lane-keeping assist;Elektronik und Assistenzsysteme
+au152;der Notbremsassistent;autonomous emergency braking;Elektronik und Assistenzsysteme
+au153;der Abstandsregeltempomat;adaptive cruise control;Elektronik und Assistenzsysteme
+au154;der Totwinkelassistent;blind-spot monitor;Elektronik und Assistenzsysteme
+au155;die Einparkhilfe;parking sensors;Elektronik und Assistenzsysteme
+au156;der Parkassistent;park assist;Elektronik und Assistenzsysteme
+au157;die Rückfahrkamera;reversing camera;Elektronik und Assistenzsysteme
+au158;das elektronische Stabilitätsprogramm;electronic stability control;Elektronik und Assistenzsysteme
+au159;die Antriebsschlupfregelung;traction control;Elektronik und Assistenzsysteme
+au160;der Berganfahrassistent;hill start assist;Elektronik und Assistenzsysteme
+au161;die Verkehrszeichenerkennung;traffic sign recognition;Elektronik und Assistenzsysteme
+au162;der Müdigkeitswarner;driver drowsiness alert;Elektronik und Assistenzsysteme
+au163;der Fernlichtassistent;high-beam assist;Elektronik und Assistenzsysteme
+au164;der Regensensor;rain sensor;Elektronik und Assistenzsysteme
+au165;das Reifendruckkontrollsystem;tyre pressure monitoring system;Elektronik und Assistenzsysteme
+au166;das Head-up-Display;head-up display;Elektronik und Assistenzsysteme
+au167;das Relais;relay;Elektronik und Assistenzsysteme
+au168;das Diagnosegerät;diagnostic tool;Elektronik und Assistenzsysteme
+au169;der Fehlercode;fault code;Elektronik und Assistenzsysteme
+au170;den Fehlerspeicher auslesen;to read the fault memory;Elektronik und Assistenzsysteme
+au171;die Bordelektronik;on-board electronics;Elektronik und Assistenzsysteme
+au172;der Bordcomputer;trip computer;Elektronik und Assistenzsysteme
+au173;die Freisprecheinrichtung;hands-free kit;Elektronik und Assistenzsysteme
+au174;das Infotainmentsystem;infotainment system;Elektronik und Assistenzsysteme
+au175;die Zentralverriegelung;central locking;Elektronik und Assistenzsysteme
+au176;das Elektroauto;electric car;Elektroauto und Laden
+au177;die Ladestation;charging station;Elektroauto und Laden
+au178;das Ladekabel;charging cable;Elektroauto und Laden
+au179;der Stecker;plug;Elektroauto und Laden
+au180;die Steckdose;socket;Elektroauto und Laden
+au181;die Wallbox;home charger;Elektroauto und Laden
+au182;die Antriebsbatterie;traction battery;Elektroauto und Laden
+au183;die Reichweite;range;Elektroauto und Laden
+au184;die Reichweitenangst;range anxiety;Elektroauto und Laden
+au185;die Ladezeit;charging time;Elektroauto und Laden
+au186;die Ladeleistung;charging power;Elektroauto und Laden
+au187;das Schnellladen;rapid charging;Elektroauto und Laden
+au188;der Schnelllader;rapid charger;Elektroauto und Laden
+au189;der Gleichstrom;direct current;Elektroauto und Laden
+au190;der Wechselstrom;alternating current;Elektroauto und Laden
+au191;die Kilowattstunde;kilowatt-hour;Elektroauto und Laden
+au192;der Ladestand;state of charge;Elektroauto und Laden
+au193;der Elektromotor;electric motor;Elektroauto und Laden
+au194;das Hybridfahrzeug;hybrid vehicle;Elektroauto und Laden
+au195;der Plug-in-Hybrid;plug-in hybrid;Elektroauto und Laden
+au196;die Rekuperation;regenerative braking;Elektroauto und Laden
+au197;der Stromverbrauch;electricity consumption;Elektroauto und Laden
+au198;die Ladekarte;charging card;Elektroauto und Laden
+au199;der Ladetarif;charging tariff;Elektroauto und Laden
+au200;der Ladeanschluss;charging port;Elektroauto und Laden
+au201;das Wischwasser;screenwash;Flüssigkeiten und Wartung
+au202;das Frostschutzmittel;antifreeze;Flüssigkeiten und Wartung
+au203;das Getriebeöl;gearbox oil;Flüssigkeiten und Wartung
+au204;das Kältemittel;refrigerant;Flüssigkeiten und Wartung
+au205;die Wartung;maintenance;Flüssigkeiten und Wartung
+au206;der Ölstand;oil level;Flüssigkeiten und Wartung
+au207;der Ölmessstab;dipstick;Flüssigkeiten und Wartung
+au208;der Kühlmittelstand;coolant level;Flüssigkeiten und Wartung
+au209;der Ausgleichsbehälter;expansion tank;Flüssigkeiten und Wartung
+au210;die Ölwanne;sump;Flüssigkeiten und Wartung
+au211;die Ablassschraube;drain plug;Flüssigkeiten und Wartung
+au212;der Innenraumfilter;cabin filter;Flüssigkeiten und Wartung
+au213;der Kraftstofffilter;fuel filter;Flüssigkeiten und Wartung
+au214;die Inspektion;service;Flüssigkeiten und Wartung
+au215;das Serviceheft;service book;Flüssigkeiten und Wartung
+au216;das Wartungsintervall;service interval;Flüssigkeiten und Wartung
+au217;die Hauptuntersuchung;MOT test;Flüssigkeiten und Wartung
+au218;das Verschleißteil;wearing part;Flüssigkeiten und Wartung
+au219;das Leck;leak;Flüssigkeiten und Wartung
+au220;undicht;leaking;Flüssigkeiten und Wartung
+au221;nachfüllen;to top up;Flüssigkeiten und Wartung
+au222;wechseln;to change;Flüssigkeiten und Wartung
+au223;die Viskosität;viscosity;Flüssigkeiten und Wartung
+au224;der Trichter;funnel;Flüssigkeiten und Wartung
+au225;das Werkzeug;tool;Werkstatt und Werkzeug
+au226;der Schraubenschlüssel;spanner;Werkstatt und Werkzeug
+au227;der Schraubendreher;screwdriver;Werkstatt und Werkzeug
+au228;die Zange;pliers;Werkstatt und Werkzeug
+au229;der Hammer;hammer;Werkstatt und Werkzeug
+au230;die Ratsche;ratchet;Werkstatt und Werkzeug
+au231;der Radmutternschlüssel;wheel brace;Werkstatt und Werkzeug
+au232;die Hebebühne;vehicle lift;Werkstatt und Werkzeug
+au233;die Schraube;screw;Werkstatt und Werkzeug
+au234;die Unterlegscheibe;washer;Werkstatt und Werkzeug
+au235;der Inbusschlüssel;Allen key;Werkstatt und Werkzeug
+au236;der Mechaniker;mechanic;Werkstatt und Werkzeug
+au237;der Kostenvoranschlag;quote;Werkstatt und Werkzeug
+au238;die Reparatur;repair;Werkstatt und Werkzeug
+au239;das Ersatzteil;spare part;Werkstatt und Werkzeug
+au240;festziehen;to tighten;Werkstatt und Werkzeug
+au241;lösen;to loosen;Werkstatt und Werkzeug
+au242;austauschen;to replace;Werkstatt und Werkzeug
+au243;der Fehlerspeicher;fault memory;Werkstatt und Werkzeug
+au244;die Werkbank;workbench;Werkstatt und Werkzeug
+au245;die Montagegrube;inspection pit;Werkstatt und Werkzeug
+au246;der Kompressor;compressor;Werkstatt und Werkzeug
+au247;das Schmiermittel;lubricant;Werkstatt und Werkzeug
+au248;der Werkstatttermin;garage appointment;Werkstatt und Werkzeug
+au249;das Ersatzfahrzeug;courtesy car;Werkstatt und Werkzeug
+au250;liegen bleiben;to break down;Panne und Reparatur (Verben)
+au251;anspringen;to start (engine);Panne und Reparatur (Verben)
+au252;überhitzen;to overheat;Panne und Reparatur (Verben)
+au253;flicken;to patch;Panne und Reparatur (Verben)
+au254;abwürgen;to stall;Panne und Reparatur (Verben)
+au255;quietschen;to squeak;Panne und Reparatur (Verben)
+au256;klappern;to rattle;Panne und Reparatur (Verben)
+au257;ruckeln;to judder;Panne und Reparatur (Verben)
+au258;diagnostizieren;to diagnose;Panne und Reparatur (Verben)
+au259;auslesen;to read out (fault memory);Panne und Reparatur (Verben)
+au260;überbrücken;to jump-start;Panne und Reparatur (Verben)
+au261;anschieben;to push-start;Panne und Reparatur (Verben)
+au262;schmieren;to lubricate;Panne und Reparatur (Verben)
+au263;schweißen;to weld;Panne und Reparatur (Verben)
+au264;lackieren;to respray;Panne und Reparatur (Verben)
+au265;ausbeulen;to knock out a dent;Panne und Reparatur (Verben)
+au266;ausbauen;to remove;Panne und Reparatur (Verben)
+au267;einbauen;to fit;Panne und Reparatur (Verben)
+au268;durchbrennen;to blow (fuse);Panne und Reparatur (Verben)
+au269;platzen;to burst;Panne und Reparatur (Verben)
+au270;absichern;to secure (the scene);Panne und Reparatur (Verben)
+au271;der Kaufvertrag;purchase contract;Kauf, Papiere und Versicherung
+au272;der Gebrauchtwagen;used car;Kauf, Papiere und Versicherung
+au273;der Neuwagen;new car;Kauf, Papiere und Versicherung
+au274;der Autohändler;car dealer;Kauf, Papiere und Versicherung
+au275;die Probefahrt;test drive;Kauf, Papiere und Versicherung
+au276;der Kilometerstand;mileage;Kauf, Papiere und Versicherung
+au277;die Anzahlung;deposit;Kauf, Papiere und Versicherung
+au278;die Finanzierung;finance;Kauf, Papiere und Versicherung
+au279;das Leasing;leasing;Kauf, Papiere und Versicherung
+au280;die Inzahlungnahme;part exchange;Kauf, Papiere und Versicherung
+au281;der Fahrzeugbrief;vehicle logbook;Kauf, Papiere und Versicherung
+au282;der Fahrzeugschein;vehicle registration certificate;Kauf, Papiere und Versicherung
+au283;anmelden;to register;Kauf, Papiere und Versicherung
+au284;abmelden;to deregister;Kauf, Papiere und Versicherung
+au285;die Zulassungsstelle;vehicle registration office;Kauf, Papiere und Versicherung
+au286;die Kfz-Steuer;vehicle tax;Kauf, Papiere und Versicherung
+au287;die Kfz-Versicherung;car insurance;Kauf, Papiere und Versicherung
+au288;die Haftpflichtversicherung;third-party insurance;Kauf, Papiere und Versicherung
+au289;die Vollkasko;fully comprehensive insurance;Kauf, Papiere und Versicherung
+au290;die Teilkasko;third party, fire and theft insurance;Kauf, Papiere und Versicherung
+au291;der Schadenfreiheitsrabatt;no-claims bonus;Kauf, Papiere und Versicherung
+au292;der Versicherungsbeitrag;insurance premium;Kauf, Papiere und Versicherung
+au293;die Police;insurance policy;Kauf, Papiere und Versicherung
+au294;einen Schaden melden;to make a claim;Kauf, Papiere und Versicherung
+au295;der Unfallbericht;accident report;Kauf, Papiere und Versicherung
+au296;das Altöl;used oil;Flüssigkeiten und Wartung
+au297;versagen;to fail;Panne und Reparatur (Verben)
+au298;überprüfen;to check;Panne und Reparatur (Verben)
+au299;aufleuchten;to light up;Panne und Reparatur (Verben)
+au300;aufbocken;to jack up;Panne und Reparatur (Verben)
