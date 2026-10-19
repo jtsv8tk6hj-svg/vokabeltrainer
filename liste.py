@@ -49,6 +49,15 @@ PLAENE = {
         "Elektronik und Assistenzsysteme", "Elektroauto und Laden", "Flüssigkeiten und Wartung",
         "Werkstatt und Werkzeug", "Panne und Reparatur (Verben)", "Kauf, Papiere und Versicherung",
     ]),
+    "beruf": ("be", "daten/beruf.csv", 25, "Beruf, Arbeitswelt und Büro", [
+        "Berufe und Tätigkeiten", "Bewerbung und Lebenslauf", "Vorstellungsgespräch",
+        "Arbeitsvertrag und Gehalt", "Arbeitszeit und Urlaub", "Im Büro (Räume und Einrichtung)",
+        "Büromaterial und Geräte", "Computer und Software", "E-Mail und Schriftverkehr",
+        "Telefon und Videokonferenz", "Besprechungen und Termine", "Projekte und Aufgaben",
+        "Kolleginnen, Kollegen und Vorgesetzte", "Führung und Personal", "Ausbildung und Weiterbildung",
+        "Kündigung und Jobwechsel", "Buchhaltung und Rechnungen", "Kunden und Vertrieb",
+        "Arbeiten (Verben)", "Redewendungen im Büro",
+    ]),
 }
 
 SCHEMA = {"type": "object", "properties": {"items": {"type": "array", "items": {

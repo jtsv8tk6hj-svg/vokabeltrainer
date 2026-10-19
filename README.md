@@ -71,18 +71,21 @@ Russisch.
 
 301 Fachbegriffe der Personalgewinnung der Bundeswehr in elf Kategorien, 240
 Alltagswörter in zwölf Themen, 500 Begriffe rund um Lebensmittel, Küche und Kochen,
-500 zu Reisen und Verkehr, 300 zu Auto und Autoteilen, dazu Verben, Substantive,
+500 zu Reisen und Verkehr, 300 zu Auto und Autoteilen, 500 zu Beruf und Büro, dazu
+Verben, Substantive,
 Adjektive und Pronomen mit Formentafeln. Eigene Wörter lassen sich unter *Neu* anlegen,
 weitere Listen unter *Daten* als CSV einlesen.
 
-## Alltag, Küche, Reisen, Auto und Themen
+## Alltag, Küche, Reisen, Auto, Beruf und Themen
 
 Der Stapel **Alltag** bringt 240 Wörter und Wendungen in zwölf Themen mit, von
 „Begrüßung und Höflichkeit“ über „Unterwegs“ bis „Körper und Gesundheit“, der Stapel
 **Küche** 500 Begriffe zu Lebensmitteln, Küche und Kochen in zwanzig Themen, von Obst
 und Gemüse über Küchengeräte und Garmethoden bis zum Restaurant, **Reisen** 500
 Begriffe zu Reisen und Verkehr (Flughafen, Bahn, Mietwagen, Verkehrsregeln, Hotel,
-Wegbeschreibung, Notfall), **Auto** 300 Begriffe zu Autoteilen, Technik und Werkstatt.
+Wegbeschreibung, Notfall), **Auto** 300 Begriffe zu Autoteilen, Technik und Werkstatt,
+**Beruf** 500 Begriffe zu Beruf, Arbeitswelt und Büro (Bewerbung, Vertrag, Büro,
+E-Mail, Besprechungen, Projekte, Führung, Kündigung, Buchhaltung, Kunden).
 Unter *Lernen* den Stapel wählen, dann das Thema, dann starten. Die Themen eines Stapels erscheinen als
 Kategorien.
 
