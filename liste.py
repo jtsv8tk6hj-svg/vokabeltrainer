@@ -58,6 +58,14 @@ PLAENE = {
         "Kündigung und Jobwechsel", "Buchhaltung und Rechnungen", "Kunden und Vertrieb",
         "Arbeiten (Verben)", "Redewendungen im Büro",
     ]),
+    "gesundheit": ("ge", "daten/gesundheit.csv", 25, "Gesundheit, Arzt, Krankenhaus und Apotheke", [
+        "Körperteile", "Innere Organe", "Beschwerden und Symptome", "Krankheiten", "Verletzungen und Unfälle",
+        "Beim Hausarzt", "Fachärzte und Fachgebiete", "Untersuchung und Diagnose", "Im Krankenhaus",
+        "Operation und Narkose", "In der Apotheke", "Medikamente und Einnahme", "Zahnarzt",
+        "Augen, Ohren und Haut", "Schwangerschaft und Kinderarzt", "Psyche und Seele",
+        "Vorsorge und gesundes Leben", "Krankenversicherung und Krankschreibung", "Pflege und Notfall",
+        "Behandeln (Verben)",
+    ]),
 }
 
 SCHEMA = {"type": "object", "properties": {"items": {"type": "array", "items": {

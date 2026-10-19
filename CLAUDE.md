@@ -28,6 +28,7 @@ daten/kueche.csv                    500 Begriffe zu Lebensmitteln, Küche und Ko
 daten/reisen.csv                    500 Begriffe zu Reisen und Verkehr in zwanzig Themen (Stapel Reisen)
 daten/auto.csv                      300 Begriffe zu Auto, Autoteilen und Werkstatt in zwölf Themen (Stapel Auto)
 daten/beruf.csv                     500 Begriffe zu Beruf, Arbeitswelt und Büro in zwanzig Themen (Stapel Beruf)
+daten/gesundheit.csv                500 Begriffe zu Gesundheit, Arzt, Krankenhaus und Apotheke in zwanzig Themen (Stapel Gesundheit)
 daten/*-sprachen.json               {id: {fr, pl, ru, rulat, ex, exde}} zur jeweiligen CSV, erzeugt von woerter.py
 liste.py                            stellt eine kuratierte de/en-Liste zu einem Gebiet über die API zusammen (Plan in PLAENE)
 woerter.py                          ergänzt FR, PL, RU, Umschrift und Beispielsätze für eine Wortliste über die API
@@ -225,14 +226,14 @@ Formkarten.
 ein Wort, wahlweise „sich“) oder ohne Deutsch ein englisches „to …“. Eine Tafel bekommt
 ein Verb aber nur mit Grundstock-Kennung `vb` oder einzeln unter *Neu* angelegt
 (Merkmal `tbl`, `verbLike()`), wie bei den Substantiven: Listenimporte und die
-Themenstapel (Küche, Reisen, Auto, Beruf) enthalten Dutzende Verben (kochen, backen …), die sonst
+Themenstapel (Küche, Reisen, Auto, Beruf, Gesundheit) enthalten Dutzende Verben (kochen, backen …), die sonst
 bei *Nachübersetzen* je eine Anfrage auslösten. Beim Speichern unter *Neu* holt
 `fetchForms()` mit hinterlegtem Schlüssel die Tafel und legt sie am Wort ab
 (`i.forms`); *Nachübersetzen* holt sie für alle Tafelwörter ohne Tafel nach, auch für
 Grundstock-Verben, solange `formen.json` sie noch nicht enthält (`formsOf()` nimmt
 `i.forms` vor `FORMS`).
 
-## Alltag, Küche, Reisen, Auto, Beruf und Themen
+## Alltag, Küche, Reisen, Auto, Beruf, Gesundheit und Themen
 
 Kuratierte Themenstapel stehen in `build.py` unter `THEMENSTAPEL` (Stapelname, CSV,
 Sprachen-JSON). Der Stapel **Küche** (`daten/kueche.csv`, 500 Begriffe, Kennung `ku`)
@@ -249,7 +250,12 @@ in zwanzig Themen ab: Berufe, Bewerbung, Vorstellungsgespräch, Vertrag und Geha
 Arbeitszeit, Büro und Material, Computer, E-Mail, Telefon, Besprechungen, Projekte,
 Kollegen und Führung, Weiterbildung, Kündigung, Buchhaltung, Kunden, Verben und
 Redewendungen; die Fachbegriffe der Personalgewinnung bleiben im Grundstock und sind
-hier ausgeschlossen. Die de/en-Listen hat `liste.py` über die API zusammengestellt (je Thema die
+hier ausgeschlossen. **Gesundheit** (`daten/gesundheit.csv`, 500, Kennung `ge`) deckt
+Gesundheit, Arzt, Krankenhaus und Apotheke in zwanzig Themen ab: Körperteile, Organe,
+Symptome, Krankheiten, Verletzungen, Hausarzt, Fachärzte, Untersuchung, Krankenhaus,
+Operation, Apotheke, Medikamente, Zahnarzt, Augen und Haut, Schwangerschaft und
+Kinderarzt, Psyche, Vorsorge, Versicherung und Krankschreibung, Pflege und Notfall,
+Verben; das Alltagsthema „Körper und Gesundheit“ ist ausgeschlossen. Die de/en-Listen hat `liste.py` über die API zusammengestellt (je Thema die
 nützlichsten Wörter, Gebietsbeschreibung aus `PLAENE`, Ausschlussliste gegen alle
 vorhandenen CSVs in `daten/` außer der eigenen und gegen die schon erzeugten Themen,
 Normalisierung wie in der App; `--auffuellen` füllt unterbesetzte Themen nach, die
@@ -492,7 +498,7 @@ einsetzen.
 - Der abgestimmte Ausbau (Richtungen, Verben, Substantive, Adjektive, Pronomen) ist
   gebaut; alle 171 Tafelwörter sind erzeugt und gegengeprüft (16.147 Zeilen, Lauf vom
   14.10.2026, elf Tafeln im Prüfdurchgang korrigiert, alle polnisch oder russisch).
-  `index.html` ist damit rund 1,6 MB groß; die Tafeln liegen in `FORMS`, nicht im
+  `index.html` ist damit rund 1,8 MB groß; die Tafeln liegen in `FORMS`, nicht im
   Speicher der Nutzer. Meldungen aus der App (*Daten → Meldungen*) sind der Weg,
   zweifelhafte Formen einzusammeln und mit `python3 formen.py --neu <id>` neu zu
   erzeugen.

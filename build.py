@@ -29,6 +29,7 @@ THEMENSTAPEL = [
     ("Reisen", WURZEL / "daten" / "reisen.csv", WURZEL / "daten" / "reisen-sprachen.json"),
     ("Auto", WURZEL / "daten" / "auto.csv", WURZEL / "daten" / "auto-sprachen.json"),
     ("Beruf", WURZEL / "daten" / "beruf.csv", WURZEL / "daten" / "beruf-sprachen.json"),
+    ("Gesundheit", WURZEL / "daten" / "gesundheit.csv", WURZEL / "daten" / "gesundheit-sprachen.json"),
 ]
 FORMEN = WURZEL / "daten" / "formen.json"
 VORLAGE = WURZEL / "src" / "template.html"

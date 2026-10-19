@@ -40,7 +40,7 @@ async function server() {
     await p.click('#welcomeGo');
     ok('Begrüßung nach „Los geht\'s“ weg', !(await p.isVisible('#welcome')));
     const stat = await p.textContent('#stat');
-    ok('Grundstock geladen (2512 Wörter im Status)', /2512/.test(stat), stat.trim().replace(/\s+/g,' ').slice(0,80));
+    ok('Grundstock geladen (3012 Wörter im Status)', /3012/.test(stat), stat.trim().replace(/\s+/g,' ').slice(0,80));
     await p.click('#start');
     ok('Lernfenster offen', await p.isVisible('#drill'));
     ok('Frage sichtbar', (await p.textContent('#qWord')).trim().length > 0);
@@ -85,7 +85,7 @@ async function server() {
     await p.click('#start'); await p.waitForTimeout(200);
     ok('Nur anschauen: Lösung sofort sichtbar, keine Bewertung, „Weiter“', await p.isVisible('#ans') && !(await p.isVisible('#grades')) && !(await p.isVisible('#reveal')) && await p.isVisible('#next'));
     const total = +((await p.textContent('#counter')).match(/von (\d+)/) || [0, 0])[1];
-    ok('Nur anschauen: ganze Auswahl samt Form- und Kasuskarten, Kennzeichnung „Durchsehen“', total === 2512 + 1082 && (await p.textContent('#counter')) === 'Noch ' + total + ' von ' + total && (await p.textContent('#cardState')) === 'Durchsehen', await p.textContent('#counter'));
+    ok('Nur anschauen: ganze Auswahl samt Form- und Kasuskarten, Kennzeichnung „Durchsehen“', total === 3012 + 1082 && (await p.textContent('#counter')) === 'Noch ' + total + ' von ' + total && (await p.textContent('#cardState')) === 'Durchsehen', await p.textContent('#counter'));
     await p.click('#next'); await p.waitForTimeout(100);
     ok('Nur anschauen: „Weiter“ blättert', (await p.textContent('#counter')) === 'Noch ' + (total - 1) + ' von ' + total && await p.isVisible('#ans'));
     await p.keyboard.press('Space'); await p.waitForTimeout(100);
@@ -124,6 +124,9 @@ async function server() {
     await p.click('#deckPick [data-d="Beruf"]'); await p.waitForTimeout(100);
     const catsBeruf = await p.$$eval('#catPick [data-c]', b => b.map(x => x.dataset.c));
     ok('Stapel Beruf: 500 Wörter in zwanzig Themen', (await p.textContent('#cPool')) === '500' && catsBeruf.length === 21 && catsBeruf.includes('Vorstellungsgespräch'), 'pool=' + await p.textContent('#cPool') + ' themen=' + (catsBeruf.length - 1));
+    await p.click('#deckPick [data-d="Gesundheit"]'); await p.waitForTimeout(100);
+    const catsGes = await p.$$eval('#catPick [data-c]', b => b.map(x => x.dataset.c));
+    ok('Stapel Gesundheit: 500 Wörter in zwanzig Themen', (await p.textContent('#cPool')) === '500' && catsGes.length === 21 && catsGes.includes('In der Apotheke'), 'pool=' + await p.textContent('#cPool') + ' themen=' + (catsGes.length - 1));
     await p.click('#deckPick [data-d="Küche"]'); await p.waitForTimeout(100);
     ok('Stapel Küche: 500 Wörter in zwanzig Themen', (await p.textContent('#cPool')) === '500' && catsKueche.length === 21 && catsKueche.includes('Garmethoden'), 'pool=' + await p.textContent('#cPool') + ' themen=' + (catsKueche.length - 1));
     await p.click('#deckPick [data-d="Personalgewinnung"]'); await p.waitForTimeout(100);
@@ -181,7 +184,7 @@ async function server() {
       d.cfg.from = 'mix'; localStorage.setItem('vokabeltrainer-v1', JSON.stringify(d)); return f; });
     await p.reload(); await p.waitForTimeout(400);
     const prog = async sel => (await p.$$eval(sel, r => r.map(x => [...x.querySelectorAll('span')].map(s => s.textContent.trim()).filter(Boolean).join(' '))));
-    ok('Fortschritt: Zeile je Stapel, Gesamtzeile, Summe in DE, EN', (await prog('#progList button.prow')).length === 10 && /^Alle Stapel.*\d+ %$/.test((await prog('#progAll .prow'))[0]) && /^25 sicher · 0 im Lernen · \d+ neu · 5024 Karten in DE, EN$/.test(await p.textContent('#progSum')), await p.textContent('#progSum'));
+    ok('Fortschritt: Zeile je Stapel, Gesamtzeile, Summe in DE, EN', (await prog('#progList button.prow')).length === 11 && /^Alle Stapel.*\d+ %$/.test((await prog('#progAll .prow'))[0]) && /^25 sicher · 0 im Lernen · \d+ neu · 6024 Karten in DE, EN$/.test(await p.textContent('#progSum')), await p.textContent('#progSum'));
     await p.click('#progList [data-pd="Küche"]'); await p.waitForTimeout(100);
     const sub = await prog('#progList .prow.sub');
     ok('Fortschritt: Stapel Küche aufgeklappt, 20 Themen, Obst 50 % (EN sicher, DE neu)', sub.length === 20 && sub.includes('Obst 50 %') && (await p.getAttribute('#progList [data-pd="Küche"]', 'aria-expanded')) === 'true', JSON.stringify(sub.filter(x => /Obst/.test(x))));
@@ -430,7 +433,7 @@ async function server() {
     const p = await ctx.newPage();
     const errs = []; p.on('pageerror', e => errs.push(e.message));
     await p.goto(URL); await p.waitForTimeout(500);
-    ok('Ohne Speicher: App läuft, Grundstock da', /2512/.test(await p.textContent('#stat')));
+    ok('Ohne Speicher: App läuft, Grundstock da', /3012/.test(await p.textContent('#stat')));
     ok('Ohne Speicher: roter Balken mit Sichern/Laden', await p.isVisible('#savebar') && await p.isVisible('#sbCopy') && await p.isVisible('#sbLoad'));
     await p.click('#welcomeGo'); await p.waitForTimeout(100);
     await p.click('#start'); await p.click('#reveal'); await p.click('#n1'); await p.waitForTimeout(200);
@@ -464,7 +467,7 @@ async function server() {
     await ctx.addInitScript(() => { localStorage.setItem('vokabeltrainer-v1', JSON.stringify({ cfg: { newPerDay: 5 } })); localStorage.setItem('vokabeltrainer-v1-seen', '1'); });
     const p = await ctx.newPage();
     await p.goto(URL); await p.waitForTimeout(500);
-    ok('Leerer Stand: Grundstock wiederhergestellt', /2512/.test(await p.textContent('#stat')));
+    ok('Leerer Stand: Grundstock wiederhergestellt', /3012/.test(await p.textContent('#stat')));
     ok('Leerer Stand: Einstellung erhalten (5/Tag)', await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).cfg.newPerDay === 5));
     await ctx.close();
   }
@@ -481,7 +484,7 @@ async function server() {
     await ctx.setOffline(true);
     const p3 = await ctx.newPage();
     let offlineOk = true;
-    try { await p3.goto(URL); await p3.waitForTimeout(500); offlineOk = /2512/.test(await p3.textContent('#stat')); } catch (e) { offlineOk = false; out.push('   ' + e.message.split('\n')[0]); }
+    try { await p3.goto(URL); await p3.waitForTimeout(500); offlineOk = /3012/.test(await p3.textContent('#stat')); } catch (e) { offlineOk = false; out.push('   ' + e.message.split('\n')[0]); }
     ok('Offline-Start liefert die App aus dem Cache', offlineOk);
     await ctx.close();
   }
