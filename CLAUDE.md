@@ -40,6 +40,7 @@ sw.js                               Service Worker (Offline-Betrieb)
 manifest.webmanifest, icon.svg      Home-Bildschirm-Symbol
 .nojekyll                           verhindert Jekyll-Verarbeitung auf GitHub Pages
 kurzbefehl.html                     Anleitung für den Apple-Kurzbefehl (statisch, von Hand gepflegt)
+WEITERENTWICKLUNG.md                Rechercheergebnisse und Gestaltungsvorschläge (Stand 19.10.2026)
 test/pruefung.js                    Playwright-Prüfung der App (siehe „Prüfen")
 ```
 
