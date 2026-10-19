@@ -217,7 +217,11 @@ bekommen keine automatischen Tafeln.
 für Wort × Sprache × Tafel (`entries()`), bei Substantiven also Singular oder Plural. Je Karte wird eine zufällige Zeile der
 Tafel gefragt: „*arbeiten* · Präsens · du“ (`#qTask`), Antwort eintippen oder
 aufdecken, die Auflösung zeigt die Form groß und darunter die ganze Tafel des Tempus
-mit markierter Zeile. Der Stand liegt in `i.g[k][t]`, dieselbe Leiter, dasselbe
+mit markierter Zeile (links mit `--ok` verankert; liegt sie unter dem sichtbaren
+Bereich, holt `reveal()` sie in die Mitte). `tableRows()` gruppiert Zeilen, die sich das
+erste Wort der Beschriftung teilen („Dativ m / f / n“, „ja (m) / (f)“): eine
+Gruppenzeile `tr.grp` mit dem Wort und den Fragewörtern aus `CASES`, darunter nur der
+Rest; Prüfungen zählen deshalb `tr:not(.grp)`. Der Stand liegt in `i.g[k][t]`, dieselbe Leiter, dasselbe
 Pensum (eine Formkarte zählt eins), derselbe Code (`VT2`, fünftes Feld
 `<index>.<sprache>.<tempus>.<stufe>.<tag>`). Formkarten laufen nur mit, wenn der
 Stapel Verben in der Auswahl ist und `cfg.forms` an ist (Lernweise „Verbformen
@@ -299,9 +303,12 @@ Vorgabe 20). Die Wörter landen mit dem Thema als Kategorie im angegebenen Stape
 
 ## Fortschrittsübersicht
 
-Die Lernseite endet mit dem Panel **Fortschritt** (`progress()`): eine Zeile je Stapel,
-antippbar, dann eine Zeile je Thema darunter (`progOpen`, nicht gespeichert). Jede
-Zeile trägt einen Balken aus drei Anteilen: **sicher** (Stufe ≥ 4, also Abstand 35 Tage
+Die Lernseite endet mit dem Panel **Fortschritt** (`progress()`): ein Streifen je
+Stapel, antippbar, dann ein Streifen je Thema darunter (`progOpen`, nicht gespeichert;
+ein offener Stapel liegt mit seinen Themen in einer Gruppe `.pgrp` auf `--raise`). Jeder
+Streifen hat oben Name und Prozent, darunter einen Balken über die volle Breite aus
+drei Anteilen (6 px bei Stapeln, 4 px bei Themen); die Erklärung ist in `details`
+gefaltet. Die Anteile: **sicher** (Stufe ≥ 4, also Abstand 35 Tage
 oder mehr, nicht im Wiederanlauf), **im Lernen** (begonnen, noch darunter), **neu** (nie
 gelernt). Die Zahl in Prozent ist der Anteil **begonnener** Karten (sicher und im
 Lernen), nicht der sicheren: sonst stand nach den ersten Lerntagen überall 0 %, obwohl
@@ -378,8 +385,15 @@ Ziel ist eine App, die auch außerhalb des Dienstes gern genutzt wird und späte
 Produkt bestehen kann. Deshalb gelten feste Regeln:
 
 - **Farben nur über Tokens** in `:root` (`--bg --card --raise --line --edge --ink
-  --onink --dim --faint`, Sprachfarben `--de … --ru`, Warn- und Sicherfarben). Keine
-  festen Hexwerte in Regeln oder in erzeugtem HTML. Das **helle Schema** kommt über
+  --onink --dim --faint`, Sprachfarben `--de … --ru`, Urteilsfarben `--ok --mid --bad`,
+  Warn- und Sicherfarben). Keine festen Hexwerte in Regeln oder in erzeugtem HTML.
+- **Eine Farbe, eine Bedeutung.** Sprachfarben stehen nur an Kürzeln (`.t-xx`), Chips
+  und Wörterliste. Alles, was ein Urteil oder einen Stand meint, nutzt `--ok` (richtig,
+  sicher, Leicht, Randbalken der Lösungskarte, Fortschrittsbalken, Fragewörter), `--mid`
+  (im Lernen) und `--bad` (falsch, fällig, Nochmal, Warnung). Nochmal und Leicht tragen
+  zusätzlich einen 3-px-Balken unten (`box-shadow`, damit die Knöpfe gleich hoch
+  bleiben), so bleibt die Bedeutung auch ohne Farbsehen lesbar. `--ok` ist bewusst nicht
+  `--fr`, sonst hieße die grüne Lösungskarte „Französisch“. Das **helle Schema** kommt über
   `prefers-color-scheme: light` und tauscht nur die Tokens; `theme-color` ist je Schema
   gesetzt. Die Anleitungsseite `kurzbefehl.html` führt dieselben Tokens.
 - **Kontraste geprüft** (WCAG 2.1 AA): `faint` ≥ 4,5:1 auf `bg` und `card`

@@ -17,7 +17,7 @@
     --de:#7aa7ff; --en:#f2836f; --fr:#5ecfa4; --pl:#e8b45c; --ru:#bb96ee;
     --ontag:#0e1013; --warn-bg:#2a1c1c; --warn-line:#55302e; --warn-ink:#f6d5cf;
     --safe-bg:#182520; --safe-line:#2d4a3c; --safe-ink:#bfe3d2;
-    --ok:#5ecfa4; --mid:#e8b45c;
+    --ok:#4fcf93; --mid:#e8b45c; --bad:#f0807a;
     color-scheme:dark;
     --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
     --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,7 +30,7 @@
       --de:#9dbcff; --en:#f7a08f; --fr:#8adbbb; --pl:#efc77c; --ru:#cdb1f3;
       --warn-bg:#fbe9e5; --warn-line:#e7b9b0; --warn-ink:#6b2a22;
       --safe-bg:#e4f3ea; --safe-line:#b7d9c5; --safe-ink:#1f4a35;
-      --ok:#3fa97c; --mid:#d9a23a;
+      --ok:#177a4c; --mid:#d9a23a; --bad:#c23b36;
       color-scheme:light;
     }
   }
@@ -59,7 +59,7 @@
         justify-content:space-between; gap:12px; flex-wrap:wrap}
   h1{font-family:var(--serif); font-size:22px; font-weight:600; margin:0}
   .stat{font-size:12.5px; color:var(--dim)}
-  .stat.warn{color:var(--en)}
+  .stat.warn{color:var(--bad)}
   nav{max-width:820px; margin:0 auto; padding:8px 16px 0; display:flex; gap:2px}
   nav button{border:0; background:none; padding:12px 13px; min-height:44px; font-size:14.5px; color:var(--faint);
              border-bottom:2px solid transparent; margin-bottom:-1px; border-radius:0}
@@ -109,21 +109,27 @@
   .rl .rw{font-family:var(--serif); font-size:15.5px; flex:1; min-width:0; overflow-wrap:anywhere; line-height:1.4}
   .rl .rw.first{font-size:17px}
   .rl .rs{font-size:11.5px; color:var(--faint); white-space:nowrap}
-  .rl .rs.due{color:var(--en)}
+  .rl .rs.due{color:var(--bad)}
   .rl .rlat{font-size:12px; color:var(--faint); font-style:italic}
   .rmeta{font-size:12px; color:var(--faint); margin-top:7px}
 
   /* Fortschritt: eine Zeile je Stapel oder Thema, Balken sicher / im Lernen / neu */
-  .prow{display:flex; align-items:center; gap:10px; min-height:40px; padding:3px 0; border-top:1px solid var(--line); font-size:13.5px}
-  .prow.all{border-top:0; font-weight:600}
-  .prow .pn{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-  .prow .pb{display:flex; width:96px; height:8px; border-radius:4px; background:var(--line); overflow:hidden; flex:none}
+  /* Streifen: Name und Prozent oben, darunter ein Balken über die volle Breite; aufgeklappte Stapel bilden eine Gruppe */
+  .prow{display:block; min-height:40px; padding:8px 0 7px; border-top:1px solid var(--line); font-size:13.5px}
+  .prow.all{border-top:0; padding-top:0; font-weight:600}
+  .prow .pl{display:flex; justify-content:space-between; align-items:baseline; gap:10px}
+  .prow .pn{flex:1; min-width:0; overflow-wrap:anywhere}
+  .prow .pp{flex:none; font-variant-numeric:tabular-nums; color:var(--dim)}
+  .prow .pb{display:flex; width:100%; height:6px; border-radius:3px; background:var(--line); overflow:hidden; margin-top:6px}
   .prow .pb i{display:block; height:100%}
   .prow .pb .f{background:var(--ok)} .prow .pb .l{background:var(--mid)}
-  .prow .pp{width:44px; text-align:right; font-variant-numeric:tabular-nums; color:var(--dim); flex:none}
-  .prow.sub{padding-left:16px; font-size:13px; color:var(--dim); border-top:1px dashed var(--line)}
-  button.prow{width:100%; background:none; border:0; border-top:1px solid var(--line); border-radius:0; color:var(--ink); text-align:left; font-size:13.5px; padding:3px 0}
+  .prow.sub{padding:6px 0 5px 14px; border-top:0; font-size:13px; color:var(--dim)} .prow.sub .pb{height:4px}
+  button.prow{width:100%; background:none; border:0; border-top:1px solid var(--line); border-radius:0; color:var(--ink); text-align:left; font-size:13.5px; padding:8px 0 7px; cursor:pointer}
   button.prow .pn::before{content:'\25B8\00a0'; color:var(--faint)} button.prow[aria-expanded=true] .pn::before{content:'\25BE\00a0'}
+  .pgrp{background:var(--raise); border-radius:10px; padding:2px 10px 6px; margin:6px 0}
+  .pgrp button.prow{border-top:0}
+  .phint{margin-top:10px} .phint summary{cursor:pointer; min-height:40px; display:flex; align-items:center; font-size:12.5px; color:var(--dim)}
+  .phint summary::-webkit-details-marker{display:none} .phint summary::before{content:'\25B8\00a0'; color:var(--faint)} .phint[open] summary::before{content:'\25BE\00a0'}
   button.pstrip{display:flex; align-items:center; gap:12px; width:100%; min-height:40px; margin:-4px 0 14px; padding:8px 14px;
     background:var(--card); border:1px solid var(--line); border-radius:13px; font-size:12.5px; color:var(--dim); text-align:left}
   button.pstrip .pb{display:flex; flex:0 0 84px; height:8px; border-radius:4px; background:var(--line); overflow:hidden}
@@ -142,7 +148,7 @@
   #drill.on{display:flex}
   .dtop{flex:0 0 auto; padding:calc(10px + env(safe-area-inset-top,0px)) 16px 8px}
   .dbar{height:3px; background:var(--line); border-radius:2px; overflow:hidden; margin-bottom:9px}
-  .dbar i{display:block; height:100%; background:var(--fr); width:0; transition:width .2s}
+  .dbar i{display:block; height:100%; background:var(--ok); width:0; transition:width .2s}
   .dmeta{display:flex; justify-content:space-between; align-items:center; font-size:12px; color:var(--faint)}
   .dmeta button{border:1px solid var(--edge); background:none; color:var(--dim); border-radius:8px;
                 padding:8px 12px; min-height:36px; font-size:12.5px}
@@ -161,7 +167,7 @@
   .qtask{font-size:15.5px; color:var(--dim); margin:12px 0 0}
   .qtask b{color:var(--ink); font-weight:600}
   .qtask small{display:block; font-size:12.5px; color:var(--faint); margin-top:2px}
-  .qq{color:var(--fr); font-weight:600}
+  .qq{color:var(--ok); font-weight:600}
   .rev .qtask small{display:none}
   .ftab td small{display:block; font-size:11px; color:var(--faint); line-height:1.3; margin-top:1px}
   .rev .qtask{font-size:13px; margin:4px 0 0}
@@ -169,11 +175,15 @@
   .atask{font-size:13px; color:var(--dim)}
   .ftab{width:100%; border-collapse:collapse; margin-top:12px; font-size:13.5px}
   .ftab td{padding:6px 6px; border-top:1px solid var(--line); vertical-align:top}
-  .ftab td:first-child{color:var(--faint); width:42%}
+  .ftab td:first-child{color:var(--faint); width:50%}
   .ftab td:last-child{font-family:var(--serif); font-size:15px}
+  /* Gruppenzeile (Fall oder Person) über zusammengehörigen Zeilen; die Trefferzeile ist links mit --ok verankert */
+  .ftab tr.grp td{padding:12px 6px 3px; border-top:0; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--faint); font-family:var(--sans)}
+  .ftab tr.grp td small{display:inline; text-transform:none; letter-spacing:0; margin-left:8px}
+  .ftab tr.grp+tr td{border-top:0}
   .ftab tr.hit td{background:var(--raise); color:var(--ink)}
-  .ftab tr.hit td:last-child{font-weight:600}
-  .ftab tr.hit td:first-child{border-radius:6px 0 0 6px} .ftab tr.hit td:last-child{border-radius:0 6px 6px 0}
+  .ftab tr.hit td:last-child{font-weight:600; color:var(--ink)}
+  .ftab tr.hit td:first-child{border-radius:6px 0 0 6px; box-shadow:inset 3px 0 0 var(--ok); padding-left:9px} .ftab tr.hit td:last-child{border-radius:0 6px 6px 0}
   #app .rep, .rep{margin-top:14px; font-size:12.5px; padding:8px 12px; min-height:36px}
   .say{border:1px solid var(--edge); background:none; color:var(--dim); border-radius:50%;
        width:34px; height:34px; font-size:12px; line-height:1; vertical-align:middle; margin-left:9px; padding:0; flex:0 0 auto}
@@ -185,7 +195,7 @@
   /* Nur anschauen: Frage bleibt lesbar, Lösung steht gleich darunter */
   .look .qword{font-size:clamp(22px,6vw,30px); color:var(--ink)}
   .look .qzone .sent{display:block}
-  .azone{margin-top:20px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--fr);
+  .azone{margin-top:20px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--ok);
          border-radius:14px; padding:18px 16px; text-align:left}
   .aline{display:flex; gap:10px; align-items:center; margin-bottom:6px}
   .tline .aline .say{margin-left:auto}
@@ -212,7 +222,7 @@
   .vsel button.on{background:var(--ink); color:var(--onink); border-color:var(--ink)}
   .g.pick{border-color:var(--ink); box-shadow:inset 0 0 0 1px var(--ink)}
   .verdict{font-size:13px; font-weight:600; margin:10px 0 0}
-  .ok{color:var(--fr)} .no{color:var(--en)}
+  .ok{color:var(--ok)} .no{color:var(--bad)}
   .dbtm{flex:0 0 auto; padding:10px 16px calc(12px + var(--safe-b)); border-top:1px solid var(--line)}
   .big{display:block; width:100%; min-height:58px; border-radius:12px; background:var(--ink); color:var(--onink);
        border:0; font-size:16px; font-weight:600}
@@ -220,7 +230,11 @@
   .g{min-height:58px; border:1px solid var(--edge); background:var(--card); border-radius:12px; padding:8px 4px}
   .g b{display:block; font-size:14.5px; font-weight:600}
   .g small{display:block; color:var(--faint); font-size:11px; margin-top:3px}
-  .g1 b{color:var(--en)} .g3 b{color:var(--fr)}
+  /* Urteilsfarben: Nochmal und Leicht tragen zusätzlich einen Balken unten, damit die Bedeutung auch ohne Farbsehen
+     über die Lage hinaus lesbar bleibt; Sprachfarben (--de … --ru) stehen nur noch an Kürzeln, Chips und Wörterliste */
+  .g1 b{color:var(--bad)} .g3 b{color:var(--ok)}
+  .g1{box-shadow:inset 0 -3px 0 var(--bad)} .g3{box-shadow:inset 0 -3px 0 var(--ok)}
+  .g1.pick{box-shadow:inset 0 0 0 1px var(--ink), inset 0 -3px 0 var(--bad)} .g3.pick{box-shadow:inset 0 0 0 1px var(--ink), inset 0 -3px 0 var(--ok)}
 
   .row{display:flex; gap:12px; align-items:flex-start; padding:12px 14px; border-bottom:1px solid var(--line)}
   .row:last-child{border-bottom:0}
@@ -309,7 +323,9 @@
     <div id="progAll"></div>
     <p class="hint" id="progSum"></p>
     <div id="progList"></div>
-    <p class="hint" style="margin-top:9px">Die Zahl ist der Anteil begonnener Karten. Grün im Balken sitzt sicher (Abstand von 35 Tagen und mehr erreicht), gelb ist im Lernen. Gezählt wird je Wort und Sprache, ohne Formkarten. Stapel antippen zeigt die Themen.</p>
+    <details class="phint"><summary>Wie gezählt wird</summary>
+      <p class="hint">Die Zahl ist der Anteil begonnener Karten. Grün im Balken sitzt sicher (Abstand von 35 Tagen und mehr erreicht), gelb ist im Lernen. Gezählt wird je Wort und Sprache, ohne Formkarten. Stapel antippen zeigt die Themen.</p>
+    </details>
   </div>
 </section>
 
@@ -840,6 +856,23 @@ const FORMS = __FORMS__;
     if(ses.look) reveal();
   }
   // Formkarte: „arbeiten · Präsens · du“, Auflösung mit der ganzen Tafel des Tempus
+  // Tafelzeilen: teilen sich mehrere aufeinanderfolgende Zeilen das erste Wort der Beschriftung („Dativ m“, „Dativ f“,
+  // „ja (m)“, „ja (f)“), bekommen sie eine Gruppenzeile mit dem Wort und den Fragewörtern, darunter steht nur der Rest
+  const headOf=p=>{ const m=(p||'').match(/^\p{L}+/u); return m?[m[0],p.slice(m[0].length).trim()]:[p||'','']; };
+  function tableRows(k,rows,hit){
+    const parts=rows.map(r=>headOf(r.p)), out=[]; let open=null;
+    rows.forEach((r,n)=>{
+      const [h,rest]=parts[n];
+      const same=m=>parts[m]&&parts[m][0]===h&&parts[m][1];
+      const grouped=!!rest&&!!(same(n-1)||same(n+1));
+      if(grouped&&open!==h){ open=h; const c=caseInfo(k,h);
+        out.push('<tr class="grp"><td colspan="2">'+esc(h)+(c?'<small>'+esc(c[0])+' · '+esc(c[1])+'</small>':'')+'</td></tr>'); }
+      if(!grouped) open=null;
+      const c=grouped?null:caseInfo(k,r.p);
+      out.push('<tr'+(r===hit?' class="hit"':'')+'><td>'+esc(grouped?rest:r.p)+(c?'<small>'+esc(c[0])+' · '+esc(c[1])+'</small>':'')+'</td><td>'+esc(r.f)+'</td></tr>');
+    });
+    return out.join('');
+  }
   function showForm(e,t){
     const i=e.i, k=e.k, f=formsOf(i)[k], tn=f.tenses[e.t];
     const rows=tn.rows.filter(r=>r.f);
@@ -857,8 +890,7 @@ const FORMS = __FORMS__;
     $('#qTask').hidden=false; $('#qTask').innerHTML='<b>'+esc(tn.t)+'</b> · '+esc(row.p)+caseQ(k,row.p)+(ci?'<small>'+esc(ci[0])+'</small>':'');
     $('#ans').innerHTML='<div class="tline" data-k="'+k+'"><div class="aline">'+TAG(k)+'<span class="atask">'+esc(tn.t)+' · '+esc(row.p)+caseQ(k,row.p)+'</span>'+sayBtn(k)+'</div>'
       +'<div class="aword">'+esc(row.f)+'</div><p class="verdict" data-v="'+k+'"></p></div>'
-      +'<table class="ftab" aria-label="'+esc(tn.t)+'">'+tn.rows.map(r=>{ const c=caseInfo(k,r.p);
-          return '<tr'+(r===row?' class="hit"':'')+'><td>'+esc(r.p)+(c?'<small>'+esc(c[0])+' · '+esc(c[1])+'</small>':'')+'</td><td>'+esc(r.f)+'</td></tr>'; }).join('')+'</table>'
+      +'<table class="ftab" aria-label="'+esc(tn.t)+'">'+tableRows(k,tn.rows,row)+'</table>'
       +(f.note?'<p class="acat">'+esc(f.note)+'</p>':'')
       +'<button class="btn rep" id="repBtn">Form melden</button>';
     $('#ans').querySelectorAll('[data-say]').forEach(b=>b.onclick=ev=>{ev.stopPropagation(); say(row.f,k);});
@@ -885,6 +917,9 @@ const FORMS = __FORMS__;
   function reveal(){
     const e=ses.q[0], i=e.i, typing=data.cfg.mode==='type'&&!ses.look, multi=ses.to.length>1;
     $('#dmid').classList.add('rev');
+    const hitRow=$('#ans tr.hit');
+    if(hitRow) requestAnimationFrame(()=>{ const m=$('#dmid').getBoundingClientRect(), r=hitRow.getBoundingClientRect();
+      if(r.bottom>m.bottom) hitRow.scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}); });
     $('#ans').hidden=false; $('#reveal').hidden=true; $('#typeFields').hidden=true;
     if(typing){
       // Vergleich je Zielsprache; bei Russisch gilt auch die Umschrift
@@ -1015,8 +1050,9 @@ const FORMS = __FORMS__;
   const bar=r=>{ const w=x=>r.t?(x/r.t*100).toFixed(1):0; return '<i class="f" style="width:'+w(r.f)+'%"></i><i class="l" style="width:'+w(r.l)+'%"></i>'; };
   const prow=(name,r,cls,attr)=>{
     const tag=attr?'button':'div';
-    return '<'+tag+' class="prow'+(cls?' '+cls:'')+'" '+(attr||'')+' aria-label="'+esc(name)+': '+pct(r)+' Prozent begonnen, '+pctS(r)+' Prozent sicher"><span class="pn">'+esc(name)+'</span>'
-      +'<span class="pb" aria-hidden="true">'+bar(r)+'</span><span class="pp">'+pct(r)+' %</span></'+tag+'>';
+    return '<'+tag+' class="prow'+(cls?' '+cls:'')+'" '+(attr||'')+' aria-label="'+esc(name)+': '+pct(r)+' Prozent begonnen, '+pctS(r)+' Prozent sicher">'
+      +'<span class="pl"><span class="pn">'+esc(name)+'</span><span class="pp">'+pct(r)+' %</span></span>'
+      +'<span class="pb" aria-hidden="true">'+bar(r)+'</span></'+tag+'>';
   };
   function progress(){
     const langs=progLangs(), cur=data.cfg.prog||'auto';
@@ -1030,8 +1066,8 @@ const FORMS = __FORMS__;
     $('#progList').innerHTML=decks().slice(1).map(d=>{
       const items=data.items.filter(i=>(i.deck||'Eigene')===d), r=tally(items,langs), open=progOpen.has(d);
       const cats=[...new Set(items.map(i=>i.cat).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de'));
-      return prow(d,r,'','data-pd="'+esc(d)+'" aria-expanded="'+open+'"')
-        +(open?cats.map(c=>prow(c,tally(items.filter(i=>i.cat===c),langs),'sub')).join(''):'');
+      const row=prow(d,r,'','data-pd="'+esc(d)+'" aria-expanded="'+open+'"');
+      return open?'<div class="pgrp">'+row+cats.map(c=>prow(c,tally(items.filter(i=>i.cat===c),langs),'sub')).join('')+'</div>':row;
     }).join('');
   }
   $('#pstrip').onclick=()=>$('#progPanel').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});

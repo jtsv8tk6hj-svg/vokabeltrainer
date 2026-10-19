@@ -122,7 +122,7 @@ je Jahr, Richtlinie 4.2, PWABuilder-iOS archiviert).
 - Einschätzung: solange der Nutzerkreis Freunde sind, bleibt der Link mit „Zum
   Home-Bildschirm“ der günstigste Weg.
 
-## Drei Gestaltungsvorschläge
+## Drei Gestaltungsvorschläge (umgesetzt am 19.10.2026)
 
 Gesamteindruck des Kritikers: ruhig, konsequent tokenbasiert, didaktisch sauber
 getrennt. Die größte Chance liegt in klarerer Bedeutung von Farbe und in der
