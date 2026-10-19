@@ -1,0 +1,4002 @@
+{
+ "ge001": {
+  "fr": "le visage",
+  "pl": "twarz",
+  "ru": "лицо́",
+  "rulat": "lizó",
+  "ex": "She has a kind face.",
+  "exde": "Sie hat ein freundliches Gesicht."
+ },
+ "ge002": {
+  "fr": "l'oreille",
+  "pl": "ucho",
+  "ru": "у́хо",
+  "rulat": "úcho",
+  "ex": "My left ear hurts.",
+  "exde": "Mein linkes Ohr tut weh."
+ },
+ "ge003": {
+  "fr": "le nez",
+  "pl": "nos",
+  "ru": "нос",
+  "rulat": "nos",
+  "ex": "He broke his nose playing football.",
+  "exde": "Er hat sich beim Fußballspielen die Nase gebrochen."
+ },
+ "ge004": {
+  "fr": "la bouche",
+  "pl": "usta",
+  "ru": "рот",
+  "rulat": "rot",
+  "ex": "Don't talk with your mouth full.",
+  "exde": "Sprich nicht mit vollem Mund."
+ },
+ "ge005": {
+  "fr": "la langue",
+  "pl": "język",
+  "ru": "язы́к",
+  "rulat": "jasýk",
+  "ex": "I burned my tongue on the hot soup.",
+  "exde": "Ich habe mir an der heißen Suppe die Zunge verbrannt."
+ },
+ "ge006": {
+  "fr": "le cou; la gorge",
+  "pl": "szyja; gardło",
+  "ru": "ше́я; го́рло",
+  "rulat": "schéja; górlo",
+  "ex": "My throat hurts.",
+  "exde": "Mir tut der Hals weh."
+ },
+ "ge007": {
+  "fr": "l'épaule",
+  "pl": "ramię",
+  "ru": "плечо́",
+  "rulat": "pletschó",
+  "ex": "She put her hand on my shoulder.",
+  "exde": "Sie legte ihre Hand auf meine Schulter."
+ },
+ "ge008": {
+  "fr": "le coude",
+  "pl": "łokieć",
+  "ru": "ло́коть",
+  "rulat": "lókotj",
+  "ex": "He hit his elbow on the table.",
+  "exde": "Er hat sich den Ellbogen am Tisch gestoßen."
+ },
+ "ge009": {
+  "fr": "le poignet",
+  "pl": "nadgarstek",
+  "ru": "запя́стье",
+  "rulat": "sapjástje",
+  "ex": "She wears a watch on her left wrist.",
+  "exde": "Sie trägt eine Uhr am linken Handgelenk."
+ },
+ "ge010": {
+  "fr": "le doigt",
+  "pl": "palec",
+  "ru": "па́лец",
+  "rulat": "pález",
+  "ex": "I cut my finger while cooking.",
+  "exde": "Ich habe mir beim Kochen in den Finger geschnitten."
+ },
+ "ge011": {
+  "fr": "la poitrine; le sein",
+  "pl": "klatka piersiowa; pierś",
+  "ru": "грудь",
+  "rulat": "grudj",
+  "ex": "He felt a pain in his chest.",
+  "exde": "Er spürte einen Schmerz in der Brust."
+ },
+ "ge012": {
+  "fr": "la hanche",
+  "pl": "biodro",
+  "ru": "бедро́",
+  "rulat": "bedró",
+  "ex": "My grandmother needs a new hip.",
+  "exde": "Meine Großmutter braucht eine neue Hüfte."
+ },
+ "ge013": {
+  "fr": "le genou",
+  "pl": "kolano",
+  "ru": "коле́но",
+  "rulat": "koléno",
+  "ex": "I fell and hurt my knee.",
+  "exde": "Ich bin hingefallen und habe mir das Knie verletzt."
+ },
+ "ge014": {
+  "fr": "la cheville",
+  "pl": "kostka",
+  "ru": "лоды́жка",
+  "rulat": "lodýschka",
+  "ex": "She twisted her ankle on the stairs.",
+  "exde": "Sie hat sich auf der Treppe den Knöchel verstaucht."
+ },
+ "ge015": {
+  "fr": "l'orteil",
+  "pl": "palec u nogi",
+  "ru": "па́лец ноги́",
+  "rulat": "pález nogí",
+  "ex": "I stubbed my toe on the door.",
+  "exde": "Ich habe mir den Zeh an der Tür gestoßen."
+ },
+ "ge016": {
+  "fr": "la peau",
+  "pl": "skóra",
+  "ru": "ко́жа",
+  "rulat": "kóscha",
+  "ex": "This cream is good for dry skin.",
+  "exde": "Diese Creme ist gut für trockene Haut."
+ },
+ "ge017": {
+  "fr": "l'os",
+  "pl": "kość",
+  "ru": "кость",
+  "rulat": "kostj",
+  "ex": "The dog is chewing on a bone.",
+  "exde": "Der Hund kaut auf einem Knochen."
+ },
+ "ge018": {
+  "fr": "le muscle",
+  "pl": "mięsień",
+  "ru": "мы́шца",
+  "rulat": "mýschza",
+  "ex": "I pulled a muscle at the gym.",
+  "exde": "Ich habe mir im Fitnessstudio einen Muskel gezerrt."
+ },
+ "ge019": {
+  "fr": "l'articulation",
+  "pl": "staw",
+  "ru": "суста́в",
+  "rulat": "sustáw",
+  "ex": "My joints hurt when it rains.",
+  "exde": "Meine Gelenke tun weh, wenn es regnet."
+ },
+ "ge020": {
+  "fr": "la colonne vertébrale",
+  "pl": "kręgosłup",
+  "ru": "позвоно́чник",
+  "rulat": "poswonótschnik",
+  "ex": "Sitting up straight is good for your spine.",
+  "exde": "Gerades Sitzen ist gut für die Wirbelsäule."
+ },
+ "ge021": {
+  "fr": "les poumons",
+  "pl": "płuca",
+  "ru": "лёгкие",
+  "rulat": "ljóchkije",
+  "ex": "Smoking damages your lungs.",
+  "exde": "Rauchen schädigt die Lunge."
+ },
+ "ge022": {
+  "fr": "l'estomac",
+  "pl": "żołądek",
+  "ru": "желу́док",
+  "rulat": "schelúdok",
+  "ex": "My stomach hurts after dinner.",
+  "exde": "Nach dem Abendessen tut mir der Magen weh."
+ },
+ "ge023": {
+  "fr": "le foie",
+  "pl": "wątroba",
+  "ru": "пе́чень",
+  "rulat": "pétschen",
+  "ex": "Alcohol can harm the liver.",
+  "exde": "Alkohol kann der Leber schaden."
+ },
+ "ge024": {
+  "fr": "le rein",
+  "pl": "nerka",
+  "ru": "по́чка",
+  "rulat": "pótschka",
+  "ex": "He donated a kidney to his brother.",
+  "exde": "Er hat seinem Bruder eine Niere gespendet."
+ },
+ "ge025": {
+  "fr": "le cerveau",
+  "pl": "mózg",
+  "ru": "мозг",
+  "rulat": "mosk",
+  "ex": "The brain needs a lot of oxygen.",
+  "exde": "Das Gehirn braucht viel Sauerstoff."
+ },
+ "ge026": {
+  "fr": "l'organe",
+  "pl": "narząd",
+  "ru": "о́рган",
+  "rulat": "órgan",
+  "ex": "The heart is a vital organ.",
+  "exde": "Das Herz ist ein lebenswichtiges Organ."
+ },
+ "ge027": {
+  "fr": "l'intestin",
+  "pl": "jelito",
+  "ru": "кише́чник",
+  "rulat": "kischétschnik",
+  "ex": "The doctor examined his bowel.",
+  "exde": "Der Arzt hat seinen Darm untersucht."
+ },
+ "ge028": {
+  "fr": "l'intestin grêle",
+  "pl": "jelito cienkie",
+  "ru": "то́нкая кишка́",
+  "rulat": "tónkaja kischká",
+  "ex": "Food is absorbed in the small intestine.",
+  "exde": "Die Nahrung wird im Dünndarm aufgenommen."
+ },
+ "ge029": {
+  "fr": "le gros intestin",
+  "pl": "jelito grube",
+  "ru": "то́лстая кишка́",
+  "rulat": "tólstaja kischká",
+  "ex": "The large intestine absorbs water.",
+  "exde": "Der Dickdarm nimmt Wasser auf."
+ },
+ "ge030": {
+  "fr": "le rectum",
+  "pl": "odbytnica",
+  "ru": "пряма́я кишка́",
+  "rulat": "prjamája kischká",
+  "ex": "The rectum is the last part of the bowel.",
+  "exde": "Der Mastdarm ist der letzte Teil des Darms."
+ },
+ "ge031": {
+  "fr": "l'appendice",
+  "pl": "wyrostek robaczkowy",
+  "ru": "аппе́ндикс",
+  "rulat": "appéndiks",
+  "ex": "She had her appendix removed.",
+  "exde": "Ihr wurde der Blinddarm entfernt."
+ },
+ "ge032": {
+  "fr": "la vessie",
+  "pl": "pęcherz",
+  "ru": "мочево́й пузы́рь",
+  "rulat": "motschewój pusýr",
+  "ex": "I need to empty my bladder.",
+  "exde": "Ich muss meine Blase entleeren."
+ },
+ "ge033": {
+  "fr": "la vésicule biliaire",
+  "pl": "woreczek żółciowy",
+  "ru": "жёлчный пузы́рь",
+  "rulat": "schóltschnyj pusýr",
+  "ex": "The gallbladder stores bile.",
+  "exde": "Die Gallenblase speichert die Galle."
+ },
+ "ge034": {
+  "fr": "la bile",
+  "pl": "żółć",
+  "ru": "жёлчь",
+  "rulat": "scholtsch",
+  "ex": "The liver produces bile.",
+  "exde": "Die Leber produziert Galle."
+ },
+ "ge035": {
+  "fr": "le pancréas",
+  "pl": "trzustka",
+  "ru": "поджелу́дочная железа́",
+  "rulat": "podschelúdotschnaja schelesá",
+  "ex": "The pancreas produces insulin.",
+  "exde": "Die Bauchspeicheldrüse produziert Insulin."
+ },
+ "ge036": {
+  "fr": "la rate",
+  "pl": "śledziona",
+  "ru": "селезёнка",
+  "rulat": "selesjónka",
+  "ex": "The spleen filters the blood.",
+  "exde": "Die Milz filtert das Blut."
+ },
+ "ge037": {
+  "fr": "la glande thyroïde",
+  "pl": "tarczyca",
+  "ru": "щитови́дная железа́",
+  "rulat": "schtschitowídnaja schelesá",
+  "ex": "Her thyroid gland is overactive.",
+  "exde": "Ihre Schilddrüse ist überaktiv."
+ },
+ "ge038": {
+  "fr": "la glande",
+  "pl": "gruczoł",
+  "ru": "железа́",
+  "rulat": "schelesá",
+  "ex": "This gland produces hormones.",
+  "exde": "Diese Drüse produziert Hormone."
+ },
+ "ge039": {
+  "fr": "l'œsophage",
+  "pl": "przełyk",
+  "ru": "пищево́д",
+  "rulat": "pischtschewód",
+  "ex": "Food travels down the oesophagus.",
+  "exde": "Die Nahrung gelangt durch die Speiseröhre nach unten."
+ },
+ "ge040": {
+  "fr": "la trachée",
+  "pl": "tchawica",
+  "ru": "трахе́я",
+  "rulat": "trachéja",
+  "ex": "A piece of food got stuck in his windpipe.",
+  "exde": "Ein Stück Essen blieb ihm in der Luftröhre stecken."
+ },
+ "ge041": {
+  "fr": "les bronches",
+  "pl": "oskrzela",
+  "ru": "бро́нхи",
+  "rulat": "brónchi",
+  "ex": "The infection spread to her bronchial tubes.",
+  "exde": "Die Infektion breitete sich auf ihre Bronchien aus."
+ },
+ "ge042": {
+  "fr": "le larynx",
+  "pl": "krtań",
+  "ru": "горта́нь",
+  "rulat": "gortán",
+  "ex": "The doctor examined his larynx.",
+  "exde": "Der Arzt untersuchte seinen Kehlkopf."
+ },
+ "ge043": {
+  "fr": "l'amygdale",
+  "pl": "migdałek",
+  "ru": "минда́лина",
+  "rulat": "mindálina",
+  "ex": "My tonsils are swollen.",
+  "exde": "Meine Mandeln sind geschwollen."
+ },
+ "ge044": {
+  "fr": "le diaphragme",
+  "pl": "przepona",
+  "ru": "диафра́гма",
+  "rulat": "diafrágma",
+  "ex": "Breathe deeply using your diaphragm.",
+  "exde": "Atme tief mit dem Zwerchfell."
+ },
+ "ge045": {
+  "fr": "l'utérus",
+  "pl": "macica",
+  "ru": "ма́тка",
+  "rulat": "mátka",
+  "ex": "The baby grows in the mother's womb.",
+  "exde": "Das Baby wächst in der Gebärmutter der Mutter."
+ },
+ "ge046": {
+  "fr": "l'ovaire",
+  "pl": "jajnik",
+  "ru": "яи́чник",
+  "rulat": "jaítschnik",
+  "ex": "Each ovary produces eggs.",
+  "exde": "Jeder Eierstock produziert Eizellen."
+ },
+ "ge047": {
+  "fr": "la prostate",
+  "pl": "prostata",
+  "ru": "проста́та",
+  "rulat": "prostáta",
+  "ex": "Men over fifty should have their prostate checked.",
+  "exde": "Männer über fünfzig sollten ihre Prostata untersuchen lassen."
+ },
+ "ge048": {
+  "fr": "le testicule",
+  "pl": "jądro",
+  "ru": "яи́чко",
+  "rulat": "jaítschko",
+  "ex": "The doctor found a lump on his testicle.",
+  "exde": "Der Arzt fand einen Knoten am Hoden."
+ },
+ "ge049": {
+  "fr": "la veine",
+  "pl": "żyła",
+  "ru": "ве́на",
+  "rulat": "wjéna",
+  "ex": "The nurse took blood from a vein in my arm.",
+  "exde": "Die Krankenschwester nahm Blut aus einer Vene in meinem Arm ab."
+ },
+ "ge050": {
+  "fr": "l'artère",
+  "pl": "tętnica",
+  "ru": "арте́рия",
+  "rulat": "artérija",
+  "ex": "The heart pumps blood into the arteries.",
+  "exde": "Das Herz pumpt Blut in die Arterien."
+ },
+ "ge051": {
+  "fr": "le mal de tête",
+  "pl": "ból głowy",
+  "ru": "головна́я боль",
+  "rulat": "golownája bol",
+  "ex": "I have a terrible headache.",
+  "exde": "Ich habe schreckliche Kopfschmerzen."
+ },
+ "ge052": {
+  "fr": "le mal de gorge",
+  "pl": "ból gardła",
+  "ru": "боль в го́рле",
+  "rulat": "bol w górle",
+  "ex": "I can't sing because I have a sore throat.",
+  "exde": "Ich kann nicht singen, weil ich Halsschmerzen habe."
+ },
+ "ge053": {
+  "fr": "le mal de ventre",
+  "pl": "ból brzucha",
+  "ru": "боль в животе́",
+  "rulat": "bol w schiwotjé",
+  "ex": "The child has a stomach ache.",
+  "exde": "Das Kind hat Bauchschmerzen."
+ },
+ "ge054": {
+  "fr": "le mal de dos",
+  "pl": "ból pleców",
+  "ru": "боль в спине́",
+  "rulat": "bol w spinjé",
+  "ex": "Sitting all day gives me backache.",
+  "exde": "Vom ganztägigen Sitzen bekomme ich Rückenschmerzen."
+ },
+ "ge055": {
+  "fr": "le mal de dents",
+  "pl": "ból zęba",
+  "ru": "зубна́я боль",
+  "rulat": "subnája bol",
+  "ex": "I need a dentist, I have a toothache.",
+  "exde": "Ich brauche einen Zahnarzt, ich habe Zahnschmerzen."
+ },
+ "ge056": {
+  "fr": "le rhume",
+  "pl": "katar",
+  "ru": "на́сморк",
+  "rulat": "nássmork",
+  "ex": "I caught a head cold at the weekend.",
+  "exde": "Ich habe mir am Wochenende einen Schnupfen geholt."
+ },
+ "ge057": {
+  "fr": "la nausée",
+  "pl": "mdłości",
+  "ru": "тошнота́",
+  "rulat": "toschnotá",
+  "ex": "The medicine can cause nausea.",
+  "exde": "Das Medikament kann Übelkeit verursachen."
+ },
+ "ge058": {
+  "fr": "le vertige",
+  "pl": "zawroty głowy",
+  "ru": "головокруже́ние",
+  "rulat": "golowokruschénije",
+  "ex": "She felt a sudden dizziness and sat down.",
+  "exde": "Sie spürte plötzlich Schwindel und setzte sich hin."
+ },
+ "ge059": {
+  "fr": "la diarrhée",
+  "pl": "biegunka",
+  "ru": "поно́с",
+  "rulat": "ponóss",
+  "ex": "He had diarrhoea after eating the fish.",
+  "exde": "Nach dem Fisch hatte er Durchfall."
+ },
+ "ge060": {
+  "fr": "la constipation",
+  "pl": "zaparcie",
+  "ru": "запо́р",
+  "rulat": "sapór",
+  "ex": "Eating more fibre helps against constipation.",
+  "exde": "Mehr Ballaststoffe zu essen hilft gegen Verstopfung."
+ },
+ "ge061": {
+  "fr": "vomir",
+  "pl": "wymiotować",
+  "ru": "рвать",
+  "rulat": "rwat",
+  "ex": "I think I'm going to be sick.",
+  "exde": "Ich glaube, ich muss mich übergeben."
+ },
+ "ge062": {
+  "fr": "l'éruption cutanée",
+  "pl": "wysypka",
+  "ru": "сыпь",
+  "rulat": "ssyp",
+  "ex": "The child has a rash on his arm.",
+  "exde": "Das Kind hat einen Ausschlag am Arm."
+ },
+ "ge063": {
+  "fr": "la démangeaison",
+  "pl": "swędzenie",
+  "ru": "зуд",
+  "rulat": "sud",
+  "ex": "This cream helps against itching.",
+  "exde": "Diese Creme hilft gegen Juckreiz."
+ },
+ "ge064": {
+  "fr": "le gonflement",
+  "pl": "obrzęk",
+  "ru": "о́пухоль",
+  "rulat": "ópuchol",
+  "ex": "The swelling went down after two days.",
+  "exde": "Die Schwellung ging nach zwei Tagen zurück."
+ },
+ "ge065": {
+  "fr": "l'inflammation",
+  "pl": "zapalenie",
+  "ru": "воспале́ние",
+  "rulat": "wospalénije",
+  "ex": "The doctor found an inflammation in my ear.",
+  "exde": "Der Arzt hat eine Entzündung in meinem Ohr festgestellt."
+ },
+ "ge066": {
+  "fr": "la fatigue",
+  "pl": "zmęczenie",
+  "ru": "уста́лость",
+  "rulat": "ustálost",
+  "ex": "Tiredness is a common symptom.",
+  "exde": "Müdigkeit ist ein häufiges Symptom."
+ },
+ "ge067": {
+  "fr": "l'essoufflement",
+  "pl": "duszność",
+  "ru": "одышка",
+  "rulat": "odýschka",
+  "ex": "Call a doctor if you have shortness of breath.",
+  "exde": "Ruf einen Arzt, wenn du Atemnot hast."
+ },
+ "ge068": {
+  "fr": "les brûlures d'estomac",
+  "pl": "zgaga",
+  "ru": "изжо́га",
+  "rulat": "ischóga",
+  "ex": "Spicy food gives me heartburn.",
+  "exde": "Von scharfem Essen bekomme ich Sodbrennen."
+ },
+ "ge069": {
+  "fr": "la crampe",
+  "pl": "skurcz",
+  "ru": "су́дорога",
+  "rulat": "súdoroga",
+  "ex": "I got a cramp in my leg while swimming.",
+  "exde": "Beim Schwimmen habe ich einen Krampf im Bein bekommen."
+ },
+ "ge070": {
+  "fr": "éternuer",
+  "pl": "kichać",
+  "ru": "чиха́ть",
+  "rulat": "tschichát",
+  "ex": "Dust always makes me sneeze.",
+  "exde": "Von Staub muss ich immer niesen."
+ },
+ "ge071": {
+  "fr": "saigner",
+  "pl": "krwawić",
+  "ru": "кровоточи́ть",
+  "rulat": "krowototschít",
+  "ex": "Your nose is bleeding.",
+  "exde": "Deine Nase blutet."
+ },
+ "ge072": {
+  "fr": "faire mal",
+  "pl": "boleć",
+  "ru": "боле́ть",
+  "rulat": "bolét",
+  "ex": "My back hurts.",
+  "exde": "Mein Rücken tut weh."
+ },
+ "ge073": {
+  "fr": "démanger",
+  "pl": "swędzieć",
+  "ru": "чеса́ться",
+  "rulat": "tschessátsja",
+  "ex": "The mosquito bite itches a lot.",
+  "exde": "Der Mückenstich juckt sehr."
+ },
+ "ge074": {
+  "fr": "étourdi",
+  "pl": "mający zawroty głowy",
+  "ru": "голова́ кру́жится",
+  "rulat": "golowá krúshitsja",
+  "ex": "I feel dizzy when I stand up.",
+  "exde": "Mir wird schwindlig, wenn ich aufstehe."
+ },
+ "ge075": {
+  "fr": "nauséeux",
+  "pl": "niedobrze",
+  "ru": "тошно́",
+  "rulat": "toschnó",
+  "ex": "I feel sick after the boat trip.",
+  "exde": "Mir ist nach der Bootsfahrt übel."
+ },
+ "ge076": {
+  "fr": "la maladie",
+  "pl": "choroba",
+  "ru": "боле́знь",
+  "rulat": "bolésn",
+  "ex": "He is recovering from a serious illness.",
+  "exde": "Er erholt sich von einer schweren Krankheit."
+ },
+ "ge077": {
+  "fr": "s'enrhumer",
+  "pl": "przeziębić się",
+  "ru": "простуди́ться",
+  "rulat": "prostudítsja",
+  "ex": "Wear a jacket or you'll catch a cold.",
+  "exde": "Zieh eine Jacke an, sonst erkältest du dich."
+ },
+ "ge078": {
+  "fr": "la grippe",
+  "pl": "grypa",
+  "ru": "грипп",
+  "rulat": "gripp",
+  "ex": "Half the office has the flu.",
+  "exde": "Das halbe Büro hat die Grippe."
+ },
+ "ge079": {
+  "fr": "l'infection",
+  "pl": "infekcja",
+  "ru": "инфе́кция",
+  "rulat": "inféktsija",
+  "ex": "The wound has an infection.",
+  "exde": "Die Wunde hat eine Infektion."
+ },
+ "ge080": {
+  "fr": "contagieux",
+  "pl": "zaraźliwy",
+  "ru": "зара́зный",
+  "rulat": "sarásny",
+  "ex": "Is this disease contagious?",
+  "exde": "Ist diese Krankheit ansteckend?"
+ },
+ "ge081": {
+  "fr": "attraper une maladie",
+  "pl": "zarazić się",
+  "ru": "зарази́ться",
+  "rulat": "sarasítsja",
+  "ex": "Be careful not to catch an illness from him.",
+  "exde": "Pass auf, dass du dich nicht bei ihm ansteckst."
+ },
+ "ge082": {
+  "fr": "chronique",
+  "pl": "przewlekły",
+  "ru": "хрони́ческий",
+  "rulat": "chronítscheskij",
+  "ex": "She suffers from chronic back pain.",
+  "exde": "Sie leidet an chronischen Rückenschmerzen."
+ },
+ "ge083": {
+  "fr": "le rhume des foins",
+  "pl": "katar sienny",
+  "ru": "сенна́я лихора́дка",
+  "rulat": "sennája lichorádka",
+  "ex": "My hay fever is worse in spring.",
+  "exde": "Mein Heuschnupfen ist im Frühling schlimmer."
+ },
+ "ge084": {
+  "fr": "l'asthme",
+  "pl": "astma",
+  "ru": "а́стма",
+  "rulat": "ástma",
+  "ex": "My son has asthma.",
+  "exde": "Mein Sohn hat Asthma."
+ },
+ "ge085": {
+  "fr": "le diabète",
+  "pl": "cukrzyca",
+  "ru": "диабе́т",
+  "rulat": "diabét",
+  "ex": "Because of his diabetes, he has to check his blood sugar.",
+  "exde": "Wegen seines Diabetes muss er seinen Blutzucker kontrollieren."
+ },
+ "ge086": {
+  "fr": "l'hypertension",
+  "pl": "nadciśnienie",
+  "ru": "гиперто́ния",
+  "rulat": "gipertoníja",
+  "ex": "High blood pressure often has no symptoms.",
+  "exde": "Bluthochdruck hat oft keine Symptome."
+ },
+ "ge087": {
+  "fr": "la crise cardiaque",
+  "pl": "zawał serca",
+  "ru": "инфа́ркт",
+  "rulat": "infárkt",
+  "ex": "My grandfather had a heart attack last year.",
+  "exde": "Mein Großvater hatte letztes Jahr einen Herzinfarkt."
+ },
+ "ge088": {
+  "fr": "l'accident vasculaire cérébral",
+  "pl": "udar mózgu",
+  "ru": "инсу́льт",
+  "rulat": "insúlt",
+  "ex": "After the stroke, she couldn't speak.",
+  "exde": "Nach dem Schlaganfall konnte sie nicht sprechen."
+ },
+ "ge089": {
+  "fr": "le cancer",
+  "pl": "rak",
+  "ru": "рак",
+  "rulat": "rak",
+  "ex": "Smoking can cause cancer.",
+  "exde": "Rauchen kann Krebs verursachen."
+ },
+ "ge090": {
+  "fr": "la migraine",
+  "pl": "migrena",
+  "ru": "мигре́нь",
+  "rulat": "migrénj",
+  "ex": "I have a migraine and need to lie down.",
+  "exde": "Ich habe Migräne und muss mich hinlegen."
+ },
+ "ge091": {
+  "fr": "la pneumonie",
+  "pl": "zapalenie płuc",
+  "ru": "воспале́ние лёгких",
+  "rulat": "wospalénije ljóchkich",
+  "ex": "He was in hospital with pneumonia.",
+  "exde": "Er lag mit einer Lungenentzündung im Krankenhaus."
+ },
+ "ge092": {
+  "fr": "la cystite",
+  "pl": "zapalenie pęcherza",
+  "ru": "цисти́т",
+  "rulat": "zystít",
+  "ex": "Drink plenty of water if you have cystitis.",
+  "exde": "Trink viel Wasser, wenn du eine Blasenentzündung hast."
+ },
+ "ge093": {
+  "fr": "l'otite moyenne",
+  "pl": "zapalenie ucha środkowego",
+  "ru": "оти́т",
+  "rulat": "otít",
+  "ex": "Small children often get a middle ear infection.",
+  "exde": "Kleine Kinder bekommen oft eine Mittelohrentzündung."
+ },
+ "ge094": {
+  "fr": "la gastro-entérite",
+  "pl": "grypa żołądkowa",
+  "ru": "кише́чный грипп",
+  "rulat": "kischétschnyj gripp",
+  "ex": "Half the class is at home with a stomach bug.",
+  "exde": "Die halbe Klasse ist mit einer Magen-Darm-Grippe zu Hause."
+ },
+ "ge095": {
+  "fr": "la commotion cérébrale",
+  "pl": "wstrząśnienie mózgu",
+  "ru": "сотрясе́ние мо́зга",
+  "rulat": "sotrjassénije mósga",
+  "ex": "He got a concussion playing football.",
+  "exde": "Er hat sich beim Fußballspielen eine Gehirnerschütterung zugezogen."
+ },
+ "ge096": {
+  "fr": "la dépression",
+  "pl": "depresja",
+  "ru": "депре́ссия",
+  "rulat": "depréssija",
+  "ex": "Depression is a serious illness.",
+  "exde": "Eine Depression ist eine ernste Krankheit."
+ },
+ "ge097": {
+  "fr": "la démence",
+  "pl": "demencja",
+  "ru": "деме́нция",
+  "rulat": "deménzija",
+  "ex": "Her grandmother suffers from dementia.",
+  "exde": "Ihre Großmutter leidet an Demenz."
+ },
+ "ge098": {
+  "fr": "le symptôme",
+  "pl": "objaw",
+  "ru": "симпто́м",
+  "rulat": "simptóm",
+  "ex": "Fever is a common symptom of the flu.",
+  "exde": "Fieber ist ein häufiges Symptom der Grippe."
+ },
+ "ge099": {
+  "fr": "la varicelle",
+  "pl": "ospa wietrzna",
+  "ru": "ветря́нка",
+  "rulat": "wetrjánka",
+  "ex": "My daughter has chickenpox.",
+  "exde": "Meine Tochter hat Windpocken."
+ },
+ "ge100": {
+  "fr": "la rougeole",
+  "pl": "odra",
+  "ru": "корь",
+  "rulat": "korj",
+  "ex": "Children are vaccinated against measles.",
+  "exde": "Kinder werden gegen Masern geimpft."
+ },
+ "ge101": {
+  "fr": "se blesser",
+  "pl": "zranić się",
+  "ru": "пора́ниться",
+  "rulat": "poránitsja",
+  "ex": "Be careful not to injure yourself.",
+  "exde": "Pass auf, dass du dich nicht verletzt."
+ },
+ "ge102": {
+  "fr": "la plaie",
+  "pl": "rana",
+  "ru": "ра́на",
+  "rulat": "rána",
+  "ex": "The wound is healing well.",
+  "exde": "Die Wunde heilt gut."
+ },
+ "ge103": {
+  "fr": "le sang",
+  "pl": "krew",
+  "ru": "кровь",
+  "rulat": "krow",
+  "ex": "There was blood on his shirt.",
+  "exde": "Auf seinem Hemd war Blut."
+ },
+ "ge104": {
+  "fr": "la fracture",
+  "pl": "złamanie",
+  "ru": "перело́м",
+  "rulat": "perelóm",
+  "ex": "The X-ray showed a fracture.",
+  "exde": "Das Röntgenbild zeigte einen Knochenbruch."
+ },
+ "ge105": {
+  "fr": "se casser",
+  "pl": "złamać sobie",
+  "ru": "слома́ть себе́",
+  "rulat": "slomát sebé",
+  "ex": "She broke her arm while skiing.",
+  "exde": "Sie hat sich beim Skifahren den Arm gebrochen."
+ },
+ "ge106": {
+  "fr": "se fouler",
+  "pl": "skręcić",
+  "ru": "растяну́ть",
+  "rulat": "rastjanút",
+  "ex": "I sprained my ankle.",
+  "exde": "Ich habe mir den Knöchel verstaucht."
+ },
+ "ge107": {
+  "fr": "la contusion",
+  "pl": "stłuczenie",
+  "ru": "уши́б",
+  "rulat": "uschíb",
+  "ex": "He only has a contusion, nothing is broken.",
+  "exde": "Er hat nur eine Prellung, nichts ist gebrochen."
+ },
+ "ge108": {
+  "fr": "le bleu",
+  "pl": "siniak",
+  "ru": "синя́к",
+  "rulat": "sinják",
+  "ex": "I have a big bruise on my leg.",
+  "exde": "Ich habe einen großen blauen Fleck am Bein."
+ },
+ "ge109": {
+  "fr": "la brûlure",
+  "pl": "oparzenie",
+  "ru": "ожо́г",
+  "rulat": "oshóg",
+  "ex": "Cool the burn with cold water.",
+  "exde": "Kühl die Verbrennung mit kaltem Wasser."
+ },
+ "ge110": {
+  "fr": "se brûler",
+  "pl": "oparzyć się",
+  "ru": "обже́чься",
+  "rulat": "obshétschsja",
+  "ex": "I burned myself on the stove.",
+  "exde": "Ich habe mich am Herd verbrannt."
+ },
+ "ge111": {
+  "fr": "se couper",
+  "pl": "skaleczyć się",
+  "ru": "поре́заться",
+  "rulat": "porésatsja",
+  "ex": "He cut himself while shaving.",
+  "exde": "Er hat sich beim Rasieren geschnitten."
+ },
+ "ge112": {
+  "fr": "la coupure",
+  "pl": "rana cięta",
+  "ru": "поре́з",
+  "rulat": "porés",
+  "ex": "It's only a small cut.",
+  "exde": "Es ist nur eine kleine Schnittwunde."
+ },
+ "ge113": {
+  "fr": "l'éraflure",
+  "pl": "otarcie",
+  "ru": "сса́дина",
+  "rulat": "ssádina",
+  "ex": "The child has a graze on his knee.",
+  "exde": "Das Kind hat eine Schürfwunde am Knie."
+ },
+ "ge114": {
+  "fr": "le pansement",
+  "pl": "bandaż",
+  "ru": "повя́зка",
+  "rulat": "powjáska",
+  "ex": "The nurse changed the bandage.",
+  "exde": "Die Krankenschwester wechselte den Verband."
+ },
+ "ge115": {
+  "fr": "le pansement adhésif",
+  "pl": "plaster",
+  "ru": "пла́стырь",
+  "rulat": "plástyr",
+  "ex": "Do you have a plaster?",
+  "exde": "Hast du ein Pflaster?"
+ },
+ "ge116": {
+  "fr": "le plâtre",
+  "pl": "gips",
+  "ru": "гипс",
+  "rulat": "gips",
+  "ex": "My leg is in a plaster cast.",
+  "exde": "Mein Bein ist im Gips."
+ },
+ "ge117": {
+  "fr": "la béquille",
+  "pl": "kula",
+  "ru": "косты́ль",
+  "rulat": "kostýl",
+  "ex": "He has to walk on crutches.",
+  "exde": "Er muss an Krücken gehen."
+ },
+ "ge118": {
+  "fr": "la cicatrice",
+  "pl": "blizna",
+  "ru": "шрам",
+  "rulat": "schram",
+  "ex": "She has a scar on her forehead.",
+  "exde": "Sie hat eine Narbe auf der Stirn."
+ },
+ "ge119": {
+  "fr": "recoudre",
+  "pl": "zszyć",
+  "ru": "заши́ть",
+  "rulat": "saschít",
+  "ex": "The doctor had to stitch the wound.",
+  "exde": "Der Arzt musste die Wunde nähen."
+ },
+ "ge120": {
+  "fr": "le médecin urgentiste",
+  "pl": "lekarz pogotowia",
+  "ru": "врач ско́рой по́мощи",
+  "rulat": "wratsch skóroj pómoschtschi",
+  "ex": "Call the emergency doctor!",
+  "exde": "Ruf den Notarzt!"
+ },
+ "ge121": {
+  "fr": "tomber",
+  "pl": "upaść",
+  "ru": "упа́сть",
+  "rulat": "upást",
+  "ex": "She fell on the icy stairs.",
+  "exde": "Sie ist auf der vereisten Treppe gestürzt."
+ },
+ "ge122": {
+  "fr": "glisser",
+  "pl": "poślizgnąć się",
+  "ru": "поскользну́ться",
+  "rulat": "poskolsnútsja",
+  "ex": "Be careful not to slip on the wet floor.",
+  "exde": "Pass auf, dass du auf dem nassen Boden nicht ausrutschst."
+ },
+ "ge123": {
+  "fr": "l'élongation (f)",
+  "pl": "naciągnięcie mięśnia",
+  "ru": "растяже́ние мы́шцы",
+  "rulat": "rastjaschénije mýschzy",
+  "ex": "He got a pulled muscle playing football.",
+  "exde": "Er hat sich beim Fußballspielen eine Zerrung zugezogen."
+ },
+ "ge124": {
+  "fr": "se démettre",
+  "pl": "zwichnąć",
+  "ru": "вы́вихнуть",
+  "rulat": "wýwichnut",
+  "ex": "I dislocated my shoulder while skiing.",
+  "exde": "Ich habe mir beim Skifahren die Schulter ausgerenkt."
+ },
+ "ge125": {
+  "fr": "la plaie ouverte",
+  "pl": "rana szarpana",
+  "ru": "рва́ная ра́на",
+  "rulat": "rwánaja rána",
+  "ex": "She needed stitches for the laceration on her forehead.",
+  "exde": "Die Platzwunde an ihrer Stirn musste genäht werden."
+ },
+ "ge126": {
+  "fr": "le médecin généraliste",
+  "pl": "lekarz rodzinny",
+  "ru": "семе́йный врач",
+  "rulat": "semjéjnyj wratsch",
+  "ex": "I made an appointment with my GP.",
+  "exde": "Ich habe einen Termin bei meinem Hausarzt gemacht."
+ },
+ "ge127": {
+  "fr": "le cabinet médical",
+  "pl": "gabinet lekarski",
+  "ru": "враче́бный кабине́т",
+  "rulat": "wratschébnyj kabinét",
+  "ex": "The doctor's surgery opens at eight.",
+  "exde": "Die Arztpraxis öffnet um acht."
+ },
+ "ge128": {
+  "fr": "la salle d'attente",
+  "pl": "poczekalnia",
+  "ru": "приёмная",
+  "rulat": "prijómnaja",
+  "ex": "Please take a seat in the waiting room.",
+  "exde": "Bitte nehmen Sie im Wartezimmer Platz."
+ },
+ "ge129": {
+  "fr": "les heures de consultation",
+  "pl": "godziny przyjęć",
+  "ru": "приёмные часы́",
+  "rulat": "prijómnyje tschassý",
+  "ex": "The surgery hours are from nine to twelve.",
+  "exde": "Die Sprechstunde ist von neun bis zwölf."
+ },
+ "ge130": {
+  "fr": "la secrétaire médicale",
+  "pl": "rejestratorka medyczna",
+  "ru": "медсестра́",
+  "rulat": "medsestrá",
+  "ex": "The doctor's receptionist gave me an appointment for Monday.",
+  "exde": "Die Arzthelferin hat mir einen Termin für Montag gegeben."
+ },
+ "ge131": {
+  "fr": "la carte d'assurance maladie",
+  "pl": "karta ubezpieczenia zdrowotnego",
+  "ru": "медици́нский по́лис",
+  "rulat": "medizínskij pólis",
+  "ex": "Don't forget your health insurance card.",
+  "exde": "Vergiss deine Krankenversicherungskarte nicht."
+ },
+ "ge132": {
+  "fr": "l'arrêt maladie (m)",
+  "pl": "zwolnienie lekarskie",
+  "ru": "больни́чный",
+  "rulat": "bolnítschnyj",
+  "ex": "I need a sick note for my employer.",
+  "exde": "Ich brauche eine Krankschreibung für meinen Arbeitgeber."
+ },
+ "ge133": {
+  "fr": "mettre en arrêt maladie",
+  "pl": "wystawić zwolnienie lekarskie",
+  "ru": "вы́писать больни́чный",
+  "rulat": "wýpissat bolnítschnyj",
+  "ex": "The doctor signed me off sick for a week.",
+  "exde": "Der Arzt hat mich eine Woche krankgeschrieben."
+ },
+ "ge134": {
+  "fr": "examiner",
+  "pl": "zbadać",
+  "ru": "осмотре́ть",
+  "rulat": "osmotrét",
+  "ex": "The doctor examined my knee.",
+  "exde": "Der Arzt hat mein Knie untersucht."
+ },
+ "ge135": {
+  "fr": "l'examen (m)",
+  "pl": "badanie",
+  "ru": "осмо́тр",
+  "rulat": "osmótr",
+  "ex": "The examination only took ten minutes.",
+  "exde": "Die Untersuchung hat nur zehn Minuten gedauert."
+ },
+ "ge136": {
+  "fr": "le bilan de santé",
+  "pl": "badanie kontrolne",
+  "ru": "профилакти́ческий осмо́тр",
+  "rulat": "profilaktítscheskij osmótr",
+  "ex": "I go for a check-up once a year.",
+  "exde": "Ich gehe einmal im Jahr zur Vorsorgeuntersuchung."
+ },
+ "ge137": {
+  "fr": "ausculter",
+  "pl": "osłuchać",
+  "ru": "послу́шать (лёгкие)",
+  "rulat": "poslúschat (ljóchkije)",
+  "ex": "The doctor listened to my chest.",
+  "exde": "Der Arzt hat mich abgehört."
+ },
+ "ge138": {
+  "fr": "la tension artérielle",
+  "pl": "ciśnienie krwi",
+  "ru": "кровяно́е давле́ние",
+  "rulat": "krowjanóje dawlénije",
+  "ex": "Your blood pressure is a bit high.",
+  "exde": "Ihr Blutdruck ist etwas hoch."
+ },
+ "ge139": {
+  "fr": "faire une prise de sang",
+  "pl": "pobrać krew",
+  "ru": "взять кровь",
+  "rulat": "wsjat krow",
+  "ex": "The nurse will take a blood sample.",
+  "exde": "Die Krankenschwester wird Blut abnehmen."
+ },
+ "ge140": {
+  "fr": "prendre la température",
+  "pl": "zmierzyć temperaturę",
+  "ru": "изме́рить температу́ру",
+  "rulat": "ismérit temperatúru",
+  "ex": "The nurse took my temperature.",
+  "exde": "Die Krankenschwester hat bei mir Fieber gemessen."
+ },
+ "ge141": {
+  "fr": "les troubles",
+  "pl": "dolegliwości",
+  "ru": "жа́лобы",
+  "rulat": "scháloby",
+  "ex": "Please tell the doctor about your complaints.",
+  "exde": "Bitte erzählen Sie dem Arzt von Ihren Beschwerden."
+ },
+ "ge142": {
+  "fr": "Qu'est-ce qui ne va pas ?",
+  "pl": "Co Panu/Pani dolega?",
+  "ru": "Что вас беспоко́ит?",
+  "rulat": "Schto was bespokóit?",
+  "ex": "Good morning, what seems to be the problem?",
+  "exde": "Guten Morgen, was fehlt Ihnen?"
+ },
+ "ge143": {
+  "fr": "se sentir malade",
+  "pl": "czuć się chorym",
+  "ru": "чу́вствовать себя́ больны́м",
+  "rulat": "tschústwowat sebjá bolným",
+  "ex": "I have been feeling ill since yesterday.",
+  "exde": "Ich fühle mich seit gestern krank."
+ },
+ "ge144": {
+  "fr": "le diagnostic",
+  "pl": "diagnoza",
+  "ru": "диа́гноз",
+  "rulat": "diágnos",
+  "ex": "The doctor explained the diagnosis to me.",
+  "exde": "Der Arzt hat mir die Diagnose erklärt."
+ },
+ "ge145": {
+  "fr": "le traitement",
+  "pl": "leczenie",
+  "ru": "лече́ние",
+  "rulat": "letschénije",
+  "ex": "The treatment takes two weeks.",
+  "exde": "Die Behandlung dauert zwei Wochen."
+ },
+ "ge146": {
+  "fr": "le médicament",
+  "pl": "lek",
+  "ru": "лека́рство",
+  "rulat": "lekárstwo",
+  "ex": "Take this medicine three times a day.",
+  "exde": "Nehmen Sie dieses Medikament dreimal täglich."
+ },
+ "ge147": {
+  "fr": "l'effet secondaire",
+  "pl": "skutek uboczny",
+  "ru": "побо́чное де́йствие",
+  "rulat": "pobótschnoje déjstwije",
+  "ex": "This medicine has no side effects.",
+  "exde": "Dieses Medikament hat keine Nebenwirkungen."
+ },
+ "ge148": {
+  "fr": "le médecin spécialiste",
+  "pl": "lekarz specjalista",
+  "ru": "врач-специали́ст",
+  "rulat": "wratsch-spezialíst",
+  "ex": "My GP referred me to a specialist.",
+  "exde": "Mein Hausarzt hat mich an einen Facharzt überwiesen."
+ },
+ "ge149": {
+  "fr": "le dentiste",
+  "pl": "dentysta",
+  "ru": "зубно́й врач",
+  "rulat": "subnój wratsch",
+  "ex": "I have an appointment with the dentist tomorrow.",
+  "exde": "Ich habe morgen einen Termin beim Zahnarzt."
+ },
+ "ge150": {
+  "fr": "le pédiatre",
+  "pl": "pediatra",
+  "ru": "педиа́тр",
+  "rulat": "pediátr",
+  "ex": "We are taking our son to the paediatrician.",
+  "exde": "Wir bringen unseren Sohn zum Kinderarzt."
+ },
+ "ge151": {
+  "fr": "le gynécologue",
+  "pl": "ginekolog",
+  "ru": "гинеко́лог",
+  "rulat": "ginekólog",
+  "ex": "She goes to the gynaecologist once a year.",
+  "exde": "Sie geht einmal im Jahr zum Frauenarzt."
+ },
+ "ge152": {
+  "fr": "l'ophtalmologue",
+  "pl": "okulista",
+  "ru": "окули́ст",
+  "rulat": "okulíst",
+  "ex": "The ophthalmologist examined my eyes.",
+  "exde": "Der Augenarzt hat meine Augen untersucht."
+ },
+ "ge153": {
+  "fr": "l'oto-rhino-laryngologiste (l'ORL)",
+  "pl": "laryngolog",
+  "ru": "ЛОР-врач",
+  "rulat": "lor-wratsch",
+  "ex": "My ear hurts, so I am going to the ENT specialist.",
+  "exde": "Mein Ohr tut weh, deshalb gehe ich zum Hals-Nasen-Ohren-Arzt."
+ },
+ "ge154": {
+  "fr": "le dermatologue",
+  "pl": "dermatolog",
+  "ru": "дермато́лог",
+  "rulat": "dermatólog",
+  "ex": "The dermatologist looked at the rash.",
+  "exde": "Der Hautarzt hat sich den Ausschlag angesehen."
+ },
+ "ge155": {
+  "fr": "l'orthopédiste",
+  "pl": "ortopeda",
+  "ru": "ортопе́д",
+  "rulat": "ortopéd",
+  "ex": "Because of my back pain I went to an orthopaedic specialist.",
+  "exde": "Wegen meiner Rückenschmerzen bin ich zum Orthopäden gegangen."
+ },
+ "ge156": {
+  "fr": "l'interniste",
+  "pl": "internista",
+  "ru": "терапе́вт",
+  "rulat": "terapéwt",
+  "ex": "The specialist in internal medicine ordered a blood test.",
+  "exde": "Der Internist hat eine Blutuntersuchung angeordnet."
+ },
+ "ge157": {
+  "fr": "le chirurgien",
+  "pl": "chirurg",
+  "ru": "хиру́рг",
+  "rulat": "chirúrg",
+  "ex": "The surgeon operated on my knee.",
+  "exde": "Der Chirurg hat mein Knie operiert."
+ },
+ "ge158": {
+  "fr": "l'urologue",
+  "pl": "urolog",
+  "ru": "уро́лог",
+  "rulat": "urólog",
+  "ex": "My father has an appointment with the urologist.",
+  "exde": "Mein Vater hat einen Termin beim Urologen."
+ },
+ "ge159": {
+  "fr": "le neurologue",
+  "pl": "neurolog",
+  "ru": "невро́лог",
+  "rulat": "newrólog",
+  "ex": "Because of her headaches she sees a neurologist.",
+  "exde": "Wegen ihrer Kopfschmerzen geht sie zum Neurologen."
+ },
+ "ge160": {
+  "fr": "le cardiologue",
+  "pl": "kardiolog",
+  "ru": "кардио́лог",
+  "rulat": "kardiólog",
+  "ex": "The cardiologist checked my heart.",
+  "exde": "Der Kardiologe hat mein Herz untersucht."
+ },
+ "ge161": {
+  "fr": "le psychiatre",
+  "pl": "psychiatra",
+  "ru": "психиа́тр",
+  "rulat": "psichiátr",
+  "ex": "My sister sees a psychiatrist once a month.",
+  "exde": "Meine Schwester geht einmal im Monat zum Psychiater."
+ },
+ "ge162": {
+  "fr": "le psychothérapeute",
+  "pl": "psychoterapeuta",
+  "ru": "психотерапе́вт",
+  "rulat": "psichoterapéwt",
+  "ex": "The psychotherapist listened carefully.",
+  "exde": "Der Psychotherapeut hörte aufmerksam zu."
+ },
+ "ge163": {
+  "fr": "le radiologue",
+  "pl": "radiolog",
+  "ru": "радио́лог",
+  "rulat": "radiólog",
+  "ex": "The radiologist looked at the X-ray.",
+  "exde": "Der Radiologe sah sich das Röntgenbild an."
+ },
+ "ge164": {
+  "fr": "l'anesthésiste",
+  "pl": "anestezjolog",
+  "ru": "анестезио́лог",
+  "rulat": "anestesiólog",
+  "ex": "The anaesthetist explained the procedure before the operation.",
+  "exde": "Der Anästhesist erklärte den Ablauf vor der Operation."
+ },
+ "ge165": {
+  "fr": "l'oncologue",
+  "pl": "onkolog",
+  "ru": "онко́лог",
+  "rulat": "onkólog",
+  "ex": "My aunt was referred to an oncologist.",
+  "exde": "Meine Tante wurde an einen Onkologen überwiesen."
+ },
+ "ge166": {
+  "fr": "l'orthodontiste",
+  "pl": "ortodonta",
+  "ru": "ортодо́нт",
+  "rulat": "ortodónt",
+  "ex": "My son goes to the orthodontist to have his braces checked.",
+  "exde": "Mein Sohn geht zum Kieferorthopäden, um seine Zahnspange kontrollieren zu lassen."
+ },
+ "ge167": {
+  "fr": "l'allergologue",
+  "pl": "alergolog",
+  "ru": "аллерго́лог",
+  "rulat": "allergólog",
+  "ex": "The allergist did a skin test.",
+  "exde": "Der Allergologe machte einen Hauttest."
+ },
+ "ge168": {
+  "fr": "le gastro-entérologue",
+  "pl": "gastroenterolog",
+  "ru": "гастроэнтеро́лог",
+  "rulat": "gastroenterólog",
+  "ex": "The gastroenterologist recommended a colonoscopy.",
+  "exde": "Der Gastroenterologe empfahl eine Darmspiegelung."
+ },
+ "ge169": {
+  "fr": "la sage-femme",
+  "pl": "położna",
+  "ru": "акуше́рка",
+  "rulat": "akuschérka",
+  "ex": "The midwife visited us at home after the birth.",
+  "exde": "Die Hebamme besuchte uns nach der Geburt zu Hause."
+ },
+ "ge170": {
+  "fr": "le kinésithérapeute",
+  "pl": "fizjoterapeuta",
+  "ru": "физиотерапе́вт",
+  "rulat": "fisioterapéwt",
+  "ex": "The physiotherapist showed me some exercises for my back.",
+  "exde": "Der Physiotherapeut zeigte mir einige Übungen für meinen Rücken."
+ },
+ "ge171": {
+  "fr": "la médecine interne",
+  "pl": "choroby wewnętrzne",
+  "ru": "вну́тренняя медици́на",
+  "rulat": "wnútrennjaja medizína",
+  "ex": "She is a specialist in internal medicine.",
+  "exde": "Sie ist Fachärztin für Innere Medizin."
+ },
+ "ge172": {
+  "fr": "la pédiatrie",
+  "pl": "pediatria",
+  "ru": "педиатри́я",
+  "rulat": "pediatríja",
+  "ex": "He wants to specialise in paediatrics.",
+  "exde": "Er möchte sich auf Kinderheilkunde spezialisieren."
+ },
+ "ge173": {
+  "fr": "les résultats",
+  "pl": "wyniki badań",
+  "ru": "результа́ты обсле́дования",
+  "rulat": "resultáty obslédowanija",
+  "ex": "The doctor will discuss the findings with you tomorrow.",
+  "exde": "Der Arzt wird den Befund morgen mit Ihnen besprechen."
+ },
+ "ge174": {
+  "fr": "les antécédents médicaux",
+  "pl": "historia choroby",
+  "ru": "исто́рия боле́зни",
+  "rulat": "istórija boljésni",
+  "ex": "The doctor asked about my medical history.",
+  "exde": "Der Arzt fragte nach meiner Krankengeschichte."
+ },
+ "ge175": {
+  "fr": "la suspicion",
+  "pl": "podejrzenie",
+  "ru": "подозре́ние",
+  "rulat": "podosrénije",
+  "ex": "There is a suspicion of pneumonia.",
+  "exde": "Es besteht der Verdacht auf eine Lungenentzündung."
+ },
+ "ge176": {
+  "fr": "l'échantillon de sang",
+  "pl": "próbka krwi",
+  "ru": "про́ба кро́ви",
+  "rulat": "próba krówi",
+  "ex": "The nurse took a blood sample from my arm.",
+  "exde": "Die Krankenschwester nahm mir eine Blutprobe aus dem Arm."
+ },
+ "ge177": {
+  "fr": "l'analyse de sang",
+  "pl": "badanie krwi",
+  "ru": "ана́лиз кро́ви",
+  "rulat": "anális krówi",
+  "ex": "The blood test showed that everything was normal.",
+  "exde": "Die Blutuntersuchung zeigte, dass alles normal war."
+ },
+ "ge178": {
+  "fr": "l'échantillon d'urine",
+  "pl": "próbka moczu",
+  "ru": "про́ба мочи́",
+  "rulat": "próba motschí",
+  "ex": "Please bring a urine sample to your appointment.",
+  "exde": "Bitte bringen Sie eine Urinprobe zu Ihrem Termin mit."
+ },
+ "ge179": {
+  "fr": "prendre la tension",
+  "pl": "mierzyć ciśnienie",
+  "ru": "измеря́ть давле́ние",
+  "rulat": "ismerjátj dawlénije",
+  "ex": "The nurse will take your blood pressure first.",
+  "exde": "Die Krankenschwester wird zuerst Ihren Blutdruck messen."
+ },
+ "ge180": {
+  "fr": "le pouls",
+  "pl": "puls",
+  "ru": "пульс",
+  "rulat": "puls",
+  "ex": "The doctor checked my pulse.",
+  "exde": "Der Arzt fühlte meinen Puls."
+ },
+ "ge181": {
+  "fr": "le thermomètre médical",
+  "pl": "termometr",
+  "ru": "гра́дусник",
+  "rulat": "grádusnik",
+  "ex": "The thermometer shows 39 degrees.",
+  "exde": "Das Fieberthermometer zeigt 39 Grad."
+ },
+ "ge182": {
+  "fr": "le stéthoscope",
+  "pl": "stetoskop",
+  "ru": "стетоско́п",
+  "rulat": "stetoskóp",
+  "ex": "The doctor listened to my heart with a stethoscope.",
+  "exde": "Der Arzt hörte mein Herz mit dem Stethoskop ab."
+ },
+ "ge183": {
+  "fr": "palper",
+  "pl": "badać palpacyjnie",
+  "ru": "прощу́пывать",
+  "rulat": "proschtschúpywat",
+  "ex": "The doctor will examine your belly by touch.",
+  "exde": "Die Ärztin wird Ihren Bauch abtasten."
+ },
+ "ge184": {
+  "fr": "inspirer profondément",
+  "pl": "wziąć głęboki oddech",
+  "ru": "глубоко́ вдохну́ть",
+  "rulat": "glubokó wdochnút",
+  "ex": "Please breathe in deeply.",
+  "exde": "Bitte tief einatmen."
+ },
+ "ge185": {
+  "fr": "se déshabiller jusqu'à la taille",
+  "pl": "rozebrać się do pasa",
+  "ru": "разде́ться до по́яса",
+  "rulat": "rasdétsja do pójassa",
+  "ex": "Please strip to the waist.",
+  "exde": "Bitte machen Sie den Oberkörper frei."
+ },
+ "ge186": {
+  "fr": "radiographier",
+  "pl": "prześwietlić",
+  "ru": "де́лать рентге́н",
+  "rulat": "délat rentgén",
+  "ex": "We need to X-ray your arm.",
+  "exde": "Wir müssen Ihren Arm röntgen."
+ },
+ "ge187": {
+  "fr": "l'échographie",
+  "pl": "USG",
+  "ru": "УЗИ́",
+  "rulat": "usí",
+  "ex": "The ultrasound showed nothing unusual.",
+  "exde": "Der Ultraschall zeigte nichts Ungewöhnliches."
+ },
+ "ge188": {
+  "fr": "l'IRM",
+  "pl": "rezonans magnetyczny",
+  "ru": "МРТ (эмэртэ́)",
+  "rulat": "emerté",
+  "ex": "I have an MRI scan tomorrow.",
+  "exde": "Ich habe morgen ein MRT."
+ },
+ "ge189": {
+  "fr": "le scanner",
+  "pl": "tomografia komputerowa",
+  "ru": "компью́терная томогра́фия",
+  "rulat": "kompjúternaja tomográfija",
+  "ex": "The CT scan takes only a few minutes.",
+  "exde": "Die Computertomografie dauert nur wenige Minuten."
+ },
+ "ge190": {
+  "fr": "l'électrocardiogramme",
+  "pl": "EKG",
+  "ru": "ЭКГ (экагэ́)",
+  "rulat": "ekagé",
+  "ex": "The nurse did an ECG.",
+  "exde": "Die Krankenschwester hat ein EKG gemacht."
+ },
+ "ge191": {
+  "fr": "la coloscopie",
+  "pl": "kolonoskopia",
+  "ru": "колоноскопи́я",
+  "rulat": "kolonoskopíja",
+  "ex": "A colonoscopy is recommended after fifty.",
+  "exde": "Ab fünfzig wird eine Darmspiegelung empfohlen."
+ },
+ "ge192": {
+  "fr": "la biopsie",
+  "pl": "biopsja",
+  "ru": "биопси́я",
+  "rulat": "biopsíja",
+  "ex": "The doctor took a biopsy.",
+  "exde": "Der Arzt hat eine Biopsie gemacht."
+ },
+ "ge193": {
+  "fr": "le résultat d'analyse",
+  "pl": "wynik badania",
+  "ru": "результа́т ана́лиза",
+  "rulat": "resultát análisa",
+  "ex": "The test result will be ready on Friday.",
+  "exde": "Das Laborergebnis ist am Freitag fertig."
+ },
+ "ge194": {
+  "fr": "le deuxième avis",
+  "pl": "druga opinia",
+  "ru": "второ́е мне́ние",
+  "rulat": "wtoróje mnénije",
+  "ex": "I'd like to get a second opinion.",
+  "exde": "Ich möchte eine Zweitmeinung einholen."
+ },
+ "ge195": {
+  "fr": "aigu",
+  "pl": "ostry",
+  "ru": "о́стрый",
+  "rulat": "óstryj",
+  "ex": "She has acute pain in her side.",
+  "exde": "Sie hat akute Schmerzen in der Seite."
+ },
+ "ge196": {
+  "fr": "bénin",
+  "pl": "łagodny",
+  "ru": "доброка́чественный",
+  "rulat": "dobrokátschestwennyj",
+  "ex": "Luckily, the tumour is benign.",
+  "exde": "Zum Glück ist der Tumor gutartig."
+ },
+ "ge197": {
+  "fr": "malin",
+  "pl": "złośliwy",
+  "ru": "злока́чественный",
+  "rulat": "slokátschestwennyj",
+  "ex": "The doctors found a malignant tumour.",
+  "exde": "Die Ärzte fanden einen bösartigen Tumor."
+ },
+ "ge198": {
+  "fr": "le service",
+  "pl": "oddział",
+  "ru": "отделе́ние",
+  "rulat": "otdelénije",
+  "ex": "My grandmother is on the cardiology ward.",
+  "exde": "Meine Oma liegt auf der kardiologischen Station."
+ },
+ "ge199": {
+  "fr": "le service de soins intensifs",
+  "pl": "oddział intensywnej terapii",
+  "ru": "реанима́ция",
+  "rulat": "reanimázija",
+  "ex": "He spent two days in the intensive care unit.",
+  "exde": "Er lag zwei Tage auf der Intensivstation."
+ },
+ "ge200": {
+  "fr": "le patient",
+  "pl": "pacjent",
+  "ru": "пацие́нт",
+  "rulat": "paziént",
+  "ex": "The patient is sleeping now.",
+  "exde": "Der Patient schläft jetzt."
+ },
+ "ge201": {
+  "fr": "l'infirmière",
+  "pl": "pielęgniarka",
+  "ru": "медсестра́",
+  "rulat": "medsestrá",
+  "ex": "The nurse checked my blood pressure.",
+  "exde": "Die Pflegekraft hat meinen Blutdruck gemessen."
+ },
+ "ge202": {
+  "fr": "l'opération",
+  "pl": "operacja",
+  "ru": "опера́ция",
+  "rulat": "operázija",
+  "ex": "The operation took three hours.",
+  "exde": "Die Operation dauerte drei Stunden."
+ },
+ "ge203": {
+  "fr": "opérer",
+  "pl": "operować",
+  "ru": "опери́ровать",
+  "rulat": "operírowat",
+  "ex": "The surgeons will operate tomorrow morning.",
+  "exde": "Die Chirurgen werden morgen früh operieren."
+ },
+ "ge204": {
+  "fr": "l'anesthésie générale",
+  "pl": "narkoza",
+  "ru": "нарко́з",
+  "rulat": "narkós",
+  "ex": "The operation is done under general anaesthetic.",
+  "exde": "Die Operation wird unter Narkose durchgeführt."
+ },
+ "ge205": {
+  "fr": "la perfusion",
+  "pl": "kroplówka",
+  "ru": "ка́пельница",
+  "rulat": "kápelniza",
+  "ex": "She was put on a drip.",
+  "exde": "Sie bekam eine Infusion."
+ },
+ "ge206": {
+  "fr": "la piqûre",
+  "pl": "zastrzyk",
+  "ru": "уко́л",
+  "rulat": "ukól",
+  "ex": "The nurse gave me an injection.",
+  "exde": "Die Pflegekraft gab mir eine Spritze."
+ },
+ "ge207": {
+  "fr": "être hospitalisé",
+  "pl": "zostać przyjętym do szpitala",
+  "ru": "попа́сть в больни́цу",
+  "rulat": "popást w bolnízu",
+  "ex": "He was admitted to hospital last night.",
+  "exde": "Er wurde gestern Abend ins Krankenhaus eingeliefert."
+ },
+ "ge208": {
+  "fr": "sortir de l'hôpital",
+  "pl": "zostać wypisanym ze szpitala",
+  "ru": "вы́писаться",
+  "rulat": "wýpissatsja",
+  "ex": "She will be discharged on Friday.",
+  "exde": "Sie wird am Freitag entlassen."
+ },
+ "ge209": {
+  "fr": "la sortie",
+  "pl": "wypis",
+  "ru": "вы́писка",
+  "rulat": "wýpiska",
+  "ex": "Your discharge is planned for tomorrow.",
+  "exde": "Deine Entlassung ist für morgen geplant."
+ },
+ "ge210": {
+  "fr": "le brancard",
+  "pl": "nosze",
+  "ru": "носи́лки",
+  "rulat": "nossílki",
+  "ex": "They carried him out on a stretcher.",
+  "exde": "Sie trugen ihn auf einer Trage hinaus."
+ },
+ "ge211": {
+  "fr": "le fauteuil roulant",
+  "pl": "wózek inwalidzki",
+  "ru": "инвали́дная коля́ска",
+  "rulat": "inwalídnaja koljáska",
+  "ex": "My grandmother needs a wheelchair.",
+  "exde": "Meine Großmutter braucht einen Rollstuhl."
+ },
+ "ge212": {
+  "fr": "les heures de visite",
+  "pl": "godziny odwiedzin",
+  "ru": "часы́ посеще́ния",
+  "rulat": "tschassý possestschénija",
+  "ex": "Visiting hours end at eight.",
+  "exde": "Die Besuchszeit endet um acht."
+ },
+ "ge213": {
+  "fr": "la chambre d'hôpital",
+  "pl": "sala szpitalna",
+  "ru": "больни́чная пала́та",
+  "rulat": "bolnítschnaja paláta",
+  "ex": "His hospital room has a view of the park.",
+  "exde": "Sein Krankenzimmer hat Blick auf den Park."
+ },
+ "ge214": {
+  "fr": "la visite médicale",
+  "pl": "obchód",
+  "ru": "обхо́д",
+  "rulat": "obchód",
+  "ex": "The ward round starts at nine.",
+  "exde": "Die Visite beginnt um neun."
+ },
+ "ge215": {
+  "fr": "le chef de clinique",
+  "pl": "starszy lekarz",
+  "ru": "ста́рший врач",
+  "rulat": "stárschi wratsch",
+  "ex": "The senior doctor explained the results.",
+  "exde": "Der Oberarzt erklärte die Ergebnisse."
+ },
+ "ge216": {
+  "fr": "le médecin-chef",
+  "pl": "ordynator",
+  "ru": "главвра́ч",
+  "rulat": "glawwrátsch",
+  "ex": "The consultant will see you this afternoon.",
+  "exde": "Der Chefarzt wird heute Nachmittag zu Ihnen kommen."
+ },
+ "ge217": {
+  "fr": "se rétablir",
+  "pl": "wracać do zdrowia",
+  "ru": "выздора́вливать",
+  "rulat": "wysdoráwliwat",
+  "ex": "It will take weeks to recover.",
+  "exde": "Es wird Wochen dauern, sich zu erholen."
+ },
+ "ge218": {
+  "fr": "l'intervention",
+  "pl": "zabieg",
+  "ru": "вмеша́тельство",
+  "rulat": "wmeschátelstwo",
+  "ex": "It is only a minor procedure.",
+  "exde": "Es ist nur ein kleiner Eingriff."
+ },
+ "ge219": {
+  "fr": "l'antidouleur",
+  "pl": "środek przeciwbólowy",
+  "ru": "обезбо́ливающее",
+  "rulat": "obesbóliwajuschtscheje",
+  "ex": "Take a painkiller if it hurts.",
+  "exde": "Nimm ein Schmerzmittel, wenn es wehtut."
+ },
+ "ge220": {
+  "fr": "le suivi",
+  "pl": "opieka pooperacyjna",
+  "ru": "послеоперацио́нный ухо́д",
+  "rulat": "posleoperaziónny uchód",
+  "ex": "Good aftercare is very important.",
+  "exde": "Eine gute Nachsorge ist sehr wichtig."
+ },
+ "ge221": {
+  "fr": "l'anesthésie locale",
+  "pl": "znieczulenie miejscowe",
+  "ru": "ме́стная анестези́я",
+  "rulat": "méstnaja anestesíja",
+  "ex": "The dentist gave me a local anaesthetic.",
+  "exde": "Der Zahnarzt hat mir eine örtliche Betäubung gegeben."
+ },
+ "ge222": {
+  "fr": "anesthésier",
+  "pl": "znieczulać",
+  "ru": "обезбо́ливать",
+  "rulat": "obesbóliwat",
+  "ex": "The patient is anaesthetised before the operation.",
+  "exde": "Der Patient wird vor der Operation betäubt."
+ },
+ "ge223": {
+  "fr": "la salle d'opération",
+  "pl": "sala operacyjna",
+  "ru": "операцио́нная",
+  "rulat": "operaziónnaja",
+  "ex": "The surgeon is already in the operating theatre.",
+  "exde": "Der Chirurg ist schon im Operationssaal."
+ },
+ "ge224": {
+  "fr": "l'incision",
+  "pl": "nacięcie",
+  "ru": "разре́з",
+  "rulat": "rasrés",
+  "ex": "The incision is only five centimetres long.",
+  "exde": "Der Schnitt ist nur fünf Zentimeter lang."
+ },
+ "ge225": {
+  "fr": "les points de suture",
+  "pl": "szwy",
+  "ru": "швы",
+  "rulat": "schwy",
+  "ex": "The stitches will dissolve on their own.",
+  "exde": "Die Naht löst sich von selbst auf."
+ },
+ "ge226": {
+  "fr": "retirer les fils",
+  "pl": "zdjąć szwy",
+  "ru": "снять швы",
+  "rulat": "snjat schwy",
+  "ex": "The doctor will remove the stitches next week.",
+  "exde": "Der Arzt wird nächste Woche die Fäden ziehen."
+ },
+ "ge227": {
+  "fr": "à jeun",
+  "pl": "na czczo",
+  "ru": "натоща́к",
+  "rulat": "natoschták",
+  "ex": "You must be nil by mouth from midnight.",
+  "exde": "Sie müssen ab Mitternacht nüchtern sein."
+ },
+ "ge228": {
+  "fr": "l'entretien préopératoire",
+  "pl": "rozmowa przedoperacyjna",
+  "ru": "предоперацио́нная бесе́да",
+  "rulat": "predoperaziónnaja besséda",
+  "ex": "The pre-operative consultation takes place the day before.",
+  "exde": "Das Aufklärungsgespräch findet am Tag davor statt."
+ },
+ "ge229": {
+  "fr": "la salle de réveil",
+  "pl": "sala wybudzeń",
+  "ru": "пала́та пробужде́ния",
+  "rulat": "paláta probuschdénija",
+  "ex": "After the operation you will be taken to the recovery room.",
+  "exde": "Nach der Operation werden Sie in den Aufwachraum gebracht."
+ },
+ "ge230": {
+  "fr": "se réveiller de l'anesthésie",
+  "pl": "wybudzić się z narkozy",
+  "ru": "отойти́ от нарко́за",
+  "rulat": "otojtí ot narkósa",
+  "ex": "She came round from the anaesthetic after an hour.",
+  "exde": "Sie ist nach einer Stunde aus der Narkose aufgewacht."
+ },
+ "ge231": {
+  "fr": "le cathéter",
+  "pl": "wenflon",
+  "ru": "кате́тер",
+  "rulat": "katéter",
+  "ex": "The nurse put a cannula in my arm.",
+  "exde": "Die Krankenschwester hat mir einen Zugang am Arm gelegt."
+ },
+ "ge232": {
+  "fr": "la complication",
+  "pl": "powikłanie",
+  "ru": "осложне́ние",
+  "rulat": "osloschnénije",
+  "ex": "There was no complication during the operation.",
+  "exde": "Während der Operation gab es keine Komplikation."
+ },
+ "ge233": {
+  "fr": "en ambulatoire",
+  "pl": "ambulatoryjnie",
+  "ru": "амбулато́рно",
+  "rulat": "ambulatórno",
+  "ex": "The operation can be done as an outpatient.",
+  "exde": "Die Operation kann ambulant durchgeführt werden."
+ },
+ "ge234": {
+  "fr": "la thrombose",
+  "pl": "zakrzepica",
+  "ru": "тромбо́з",
+  "rulat": "trombós",
+  "ex": "Moving your legs helps prevent thrombosis.",
+  "exde": "Bewegung der Beine hilft, einer Thrombose vorzubeugen."
+ },
+ "ge235": {
+  "fr": "le bas de contention",
+  "pl": "pończocha uciskowa",
+  "ru": "компрессио́нный чуло́к",
+  "rulat": "kompressiónnyj tschulók",
+  "ex": "Please wear the compression stocking after the operation.",
+  "exde": "Bitte tragen Sie nach der Operation den Thrombosestrumpf."
+ },
+ "ge236": {
+  "fr": "la cicatrisation",
+  "pl": "gojenie się rany",
+  "ru": "заживле́ние ра́ны",
+  "rulat": "saschiwlénije rány",
+  "ex": "Smoking slows down wound healing.",
+  "exde": "Rauchen verlangsamt die Wundheilung."
+ },
+ "ge237": {
+  "fr": "la transfusion sanguine",
+  "pl": "transfuzja krwi",
+  "ru": "перелива́ние кро́ви",
+  "rulat": "pereliwánije krówi",
+  "ex": "He needed a blood transfusion after the accident.",
+  "exde": "Nach dem Unfall brauchte er eine Bluttransfusion."
+ },
+ "ge238": {
+  "fr": "le séjour à l'hôpital",
+  "pl": "pobyt w szpitalu",
+  "ru": "пребыва́ние в больни́це",
+  "rulat": "prebywánije w bolníze",
+  "ex": "The hospital stay usually lasts three days.",
+  "exde": "Der Krankenhausaufenthalt dauert meistens drei Tage."
+ },
+ "ge239": {
+  "fr": "la chirurgie mini-invasive",
+  "pl": "chirurgia małoinwazyjna",
+  "ru": "малоинвази́вная хирурги́я",
+  "rulat": "maloinwasíwnaja chirurgíja",
+  "ex": "Keyhole surgery leaves only small scars.",
+  "exde": "Die Schlüssellochchirurgie hinterlässt nur kleine Narben."
+ },
+ "ge240": {
+  "fr": "la transplantation",
+  "pl": "przeszczep",
+  "ru": "переса́дка",
+  "rulat": "peressádka",
+  "ex": "She is waiting for a kidney transplant.",
+  "exde": "Sie wartet auf die Transplantation einer Niere."
+ },
+ "ge241": {
+  "fr": "le pharmacien",
+  "pl": "farmaceuta",
+  "ru": "фармаце́вт",
+  "rulat": "farmazéft",
+  "ex": "The pharmacist explained how to take the medicine.",
+  "exde": "Der Apotheker erklärte, wie man das Medikament einnimmt."
+ },
+ "ge242": {
+  "fr": "sur ordonnance",
+  "pl": "na receptę",
+  "ru": "отпуска́емый по реце́пту",
+  "rulat": "otpuskájemyj po rezéptu",
+  "ex": "This medicine is prescription-only.",
+  "exde": "Dieses Medikament ist rezeptpflichtig."
+ },
+ "ge243": {
+  "fr": "sans ordonnance",
+  "pl": "bez recepty",
+  "ru": "безреце́птурный",
+  "rulat": "besrezépturnyj",
+  "ex": "This painkiller is available over-the-counter.",
+  "exde": "Dieses Schmerzmittel ist rezeptfrei erhältlich."
+ },
+ "ge244": {
+  "fr": "la gélule",
+  "pl": "kapsułka",
+  "ru": "ка́псула",
+  "rulat": "kápsula",
+  "ex": "Take one capsule with a glass of water.",
+  "exde": "Nehmen Sie eine Kapsel mit einem Glas Wasser ein."
+ },
+ "ge245": {
+  "fr": "la pommade",
+  "pl": "maść",
+  "ru": "мазь",
+  "rulat": "mas",
+  "ex": "Apply the ointment twice a day.",
+  "exde": "Tragen Sie die Salbe zweimal am Tag auf."
+ },
+ "ge246": {
+  "fr": "le sirop contre la toux",
+  "pl": "syrop na kaszel",
+  "ru": "сиро́п от ка́шля",
+  "rulat": "siróp ot káschlja",
+  "ex": "This cough syrup tastes like cherries.",
+  "exde": "Dieser Hustensaft schmeckt nach Kirschen."
+ },
+ "ge247": {
+  "fr": "les gouttes pour les yeux",
+  "pl": "krople do oczu",
+  "ru": "глазны́е ка́пли",
+  "rulat": "glasnýje kápli",
+  "ex": "I need eye drops for my dry eyes.",
+  "exde": "Ich brauche Augentropfen für meine trockenen Augen."
+ },
+ "ge248": {
+  "fr": "le spray nasal",
+  "pl": "spray do nosa",
+  "ru": "спрей для но́са",
+  "rulat": "sprej dlja nósa",
+  "ex": "Don't use the nasal spray for more than a week.",
+  "exde": "Benutzen Sie das Nasenspray nicht länger als eine Woche."
+ },
+ "ge249": {
+  "fr": "la notice",
+  "pl": "ulotka",
+  "ru": "инстру́кция по примене́нию",
+  "rulat": "instrúkzija po primenéniju",
+  "ex": "Read the patient information leaflet carefully.",
+  "exde": "Lesen Sie die Packungsbeilage sorgfältig durch."
+ },
+ "ge250": {
+  "fr": "la posologie",
+  "pl": "dawkowanie",
+  "ru": "дозиро́вка",
+  "rulat": "dasirófka",
+  "ex": "The dosage depends on your weight.",
+  "exde": "Die Dosierung hängt von Ihrem Gewicht ab."
+ },
+ "ge251": {
+  "fr": "la participation forfaitaire",
+  "pl": "dopłata",
+  "ru": "допла́та",
+  "rulat": "dopláta",
+  "ex": "The prescription charge is five euros.",
+  "exde": "Die Zuzahlung beträgt fünf Euro."
+ },
+ "ge252": {
+  "fr": "le médicament générique",
+  "pl": "lek generyczny",
+  "ru": "дже́нерик",
+  "rulat": "dschénerik",
+  "ex": "The generic drug is much cheaper.",
+  "exde": "Das Generikum ist viel günstiger."
+ },
+ "ge253": {
+  "fr": "prendre",
+  "pl": "przyjmować",
+  "ru": "принима́ть",
+  "rulat": "prinimát",
+  "ex": "Take this medicine after meals.",
+  "exde": "Nehmen Sie dieses Medikament nach dem Essen ein."
+ },
+ "ge254": {
+  "fr": "à jeun",
+  "pl": "na czczo",
+  "ru": "натоща́к",
+  "rulat": "natoschták",
+  "ex": "Take the tablet on an empty stomach.",
+  "exde": "Nehmen Sie die Tablette auf nüchternen Magen ein."
+ },
+ "ge255": {
+  "fr": "trois fois par jour",
+  "pl": "trzy razy dziennie",
+  "ru": "три ра́за в день",
+  "rulat": "tri rása w den",
+  "ex": "Take two drops three times a day.",
+  "exde": "Nehmen Sie dreimal täglich zwei Tropfen."
+ },
+ "ge256": {
+  "fr": "l'interaction",
+  "pl": "interakcja",
+  "ru": "взаимоде́йствие",
+  "rulat": "wsaimodéjstwije",
+  "ex": "Is there an interaction with my other medication?",
+  "exde": "Gibt es eine Wechselwirkung mit meinen anderen Medikamenten?"
+ },
+ "ge257": {
+  "fr": "la pastille",
+  "pl": "tabletka do ssania",
+  "ru": "табле́тка для расса́сывания",
+  "rulat": "tabljétka dlja rassássywanija",
+  "ex": "This lozenge helps with a sore throat.",
+  "exde": "Diese Lutschtablette hilft gegen Halsschmerzen."
+ },
+ "ge258": {
+  "fr": "la pharmacie de garde",
+  "pl": "apteka dyżurna",
+  "ru": "дежу́рная апте́ка",
+  "rulat": "deschúrnaja aptjéka",
+  "ex": "On Sundays, only the duty chemist's is open.",
+  "exde": "Sonntags hat nur die Notdienstapotheke geöffnet."
+ },
+ "ge259": {
+  "fr": "le comprimé effervescent",
+  "pl": "tabletka musująca",
+  "ru": "шипу́чая табле́тка",
+  "rulat": "schipútschaja tabljétka",
+  "ex": "Dissolve the effervescent tablet in a glass of water.",
+  "exde": "Lösen Sie die Brausetablette in einem Glas Wasser auf."
+ },
+ "ge260": {
+  "fr": "le suppositoire",
+  "pl": "czopek",
+  "ru": "свеча́",
+  "rulat": "swjetschá",
+  "ex": "Use one suppository before bedtime.",
+  "exde": "Verwenden Sie vor dem Schlafengehen ein Zäpfchen."
+ },
+ "ge261": {
+  "fr": "un remède contre",
+  "pl": "środek na",
+  "ru": "сре́дство от",
+  "rulat": "srédstwo ot",
+  "ex": "Do you have something for a headache?",
+  "exde": "Haben Sie ein Mittel gegen Kopfschmerzen?"
+ },
+ "ge262": {
+  "fr": "la date de péremption",
+  "pl": "data ważności",
+  "ru": "срок го́дности",
+  "rulat": "srok gódnosti",
+  "ex": "Check the expiry date before you take it.",
+  "exde": "Prüfen Sie das Verfallsdatum, bevor Sie es einnehmen."
+ },
+ "ge263": {
+  "fr": "la caisse d'assurance maladie",
+  "pl": "kasa chorych",
+  "ru": "больни́чная ка́сса",
+  "rulat": "bolnítschnaja kássa",
+  "ex": "The health insurance company pays for the medicine.",
+  "exde": "Die Krankenkasse bezahlt das Medikament."
+ },
+ "ge264": {
+  "fr": "prescrire",
+  "pl": "przepisać",
+  "ru": "прописа́ть",
+  "rulat": "propissát",
+  "ex": "The doctor will prescribe you something for the pain.",
+  "exde": "Der Arzt wird Ihnen etwas gegen die Schmerzen verschreiben."
+ },
+ "ge265": {
+  "fr": "l'effet",
+  "pl": "działanie",
+  "ru": "де́йствие",
+  "rulat": "déjstwije",
+  "ex": "The effect starts after half an hour.",
+  "exde": "Die Wirkung setzt nach einer halben Stunde ein."
+ },
+ "ge266": {
+  "fr": "la dose",
+  "pl": "dawka",
+  "ru": "до́за",
+  "rulat": "dósa",
+  "ex": "Do not exceed the recommended dose.",
+  "exde": "Überschreiten Sie nicht die empfohlene Dosis."
+ },
+ "ge267": {
+  "fr": "la notice",
+  "pl": "ulotka",
+  "ru": "инстру́кция по примене́нию",
+  "rulat": "instrúkzija po primenéniju",
+  "ex": "Read the package leaflet carefully.",
+  "exde": "Lesen Sie den Beipackzettel sorgfältig."
+ },
+ "ge268": {
+  "fr": "avant les repas",
+  "pl": "przed jedzeniem",
+  "ru": "до еды́",
+  "rulat": "do jedý",
+  "ex": "Take the tablets before meals.",
+  "exde": "Nehmen Sie die Tabletten vor dem Essen."
+ },
+ "ge269": {
+  "fr": "après les repas",
+  "pl": "po jedzeniu",
+  "ru": "по́сле еды́",
+  "rulat": "pósle jedý",
+  "ex": "Take one tablet three times a day after meals.",
+  "exde": "Nehmen Sie dreimal täglich eine Tablette nach dem Essen."
+ },
+ "ge270": {
+  "fr": "avaler",
+  "pl": "połykać",
+  "ru": "глота́ть",
+  "rulat": "glotát",
+  "ex": "Swallow the tablet with water.",
+  "exde": "Schlucken Sie die Tablette mit Wasser."
+ },
+ "ge271": {
+  "fr": "l'antibiotique",
+  "pl": "antybiotyk",
+  "ru": "антибио́тик",
+  "rulat": "antibiótik",
+  "ex": "You must take the antibiotic for seven days.",
+  "exde": "Sie müssen das Antibiotikum sieben Tage lang nehmen."
+ },
+ "ge272": {
+  "fr": "dissoudre",
+  "pl": "rozpuścić",
+  "ru": "растворя́ть",
+  "rulat": "rastworját",
+  "ex": "Dissolve the powder in a glass of water.",
+  "exde": "Lösen Sie das Pulver in einem Glas Wasser auf."
+ },
+ "ge273": {
+  "fr": "l'inhalateur",
+  "pl": "inhalator",
+  "ru": "ингаля́тор",
+  "rulat": "ingaljátor",
+  "ex": "Always carry your inhaler with you.",
+  "exde": "Haben Sie Ihren Inhalator immer dabei."
+ },
+ "ge274": {
+  "fr": "arrêter de prendre",
+  "pl": "odstawić",
+  "ru": "прекрати́ть приём",
+  "rulat": "prekratít prijóm",
+  "ex": "Don't stop taking the medicine without asking your doctor.",
+  "exde": "Setzen Sie das Medikament nicht ohne Rücksprache mit Ihrem Arzt ab."
+ },
+ "ge275": {
+  "fr": "la surdose",
+  "pl": "przedawkowanie",
+  "ru": "передозиро́вка",
+  "rulat": "peredosirówka",
+  "ex": "An overdose can be dangerous.",
+  "exde": "Eine Überdosis kann gefährlich sein."
+ },
+ "ge276": {
+  "fr": "supporter",
+  "pl": "tolerować",
+  "ru": "переноси́ть",
+  "rulat": "perenossít",
+  "ex": "I can't tolerate this medicine.",
+  "exde": "Ich vertrage dieses Medikament nicht."
+ },
+ "ge277": {
+  "fr": "le principe actif",
+  "pl": "substancja czynna",
+  "ru": "де́йствующее вещество́",
+  "rulat": "déjstwujuschtscheje weschtschestwó",
+  "ex": "Which active ingredient does this tablet contain?",
+  "exde": "Welchen Wirkstoff enthält diese Tablette?"
+ },
+ "ge278": {
+  "fr": "le somnifère",
+  "pl": "środek nasenny",
+  "ru": "снотво́рное",
+  "rulat": "snotwórnoje",
+  "ex": "I need a sleeping pill.",
+  "exde": "Ich brauche ein Schlafmittel."
+ },
+ "ge279": {
+  "fr": "le remède",
+  "pl": "środek",
+  "ru": "сре́дство",
+  "rulat": "srédstwo",
+  "ex": "This is a good remedy for coughs.",
+  "exde": "Das ist ein gutes Mittel gegen Husten."
+ },
+ "ge280": {
+  "fr": "conserver au frais",
+  "pl": "przechowywać w chłodnym miejscu",
+  "ru": "храни́ть в прохла́дном ме́сте",
+  "rulat": "chranít w prochládnom méste",
+  "ex": "Store this medicine in a cool place.",
+  "exde": "Lagern Sie dieses Medikament kühl."
+ },
+ "ge281": {
+  "fr": "régulièrement",
+  "pl": "regularnie",
+  "ru": "регуля́рно",
+  "rulat": "reguljárno",
+  "ex": "Take this medicine regularly.",
+  "exde": "Nehmen Sie dieses Medikament regelmäßig."
+ },
+ "ge282": {
+  "fr": "couper en deux",
+  "pl": "przepołowić",
+  "ru": "раздели́ть попола́м",
+  "rulat": "rasdelít popolám",
+  "ex": "You can halve the tablet.",
+  "exde": "Sie können die Tablette halbieren."
+ },
+ "ge283": {
+  "fr": "les gencives",
+  "pl": "dziąsła",
+  "ru": "дёсны",
+  "rulat": "djósny",
+  "ex": "My gums are bleeding.",
+  "exde": "Mein Zahnfleisch blutet."
+ },
+ "ge284": {
+  "fr": "la carie",
+  "pl": "próchnica",
+  "ru": "карие́с",
+  "rulat": "kariés",
+  "ex": "Sugar causes tooth decay.",
+  "exde": "Zucker verursacht Karies."
+ },
+ "ge285": {
+  "fr": "le trou dans la dent",
+  "pl": "dziura w zębie",
+  "ru": "ды́рка в зу́бе",
+  "rulat": "dýrka w súbe",
+  "ex": "The dentist found a cavity.",
+  "exde": "Der Zahnarzt hat ein Loch im Zahn gefunden."
+ },
+ "ge286": {
+  "fr": "la couronne",
+  "pl": "korona",
+  "ru": "коро́нка",
+  "rulat": "korónka",
+  "ex": "I need a new crown.",
+  "exde": "Ich brauche eine neue Krone."
+ },
+ "ge287": {
+  "fr": "l'implant",
+  "pl": "implant",
+  "ru": "импла́нт",
+  "rulat": "implánt",
+  "ex": "The implant looks like a natural tooth.",
+  "exde": "Das Implantat sieht aus wie ein natürlicher Zahn."
+ },
+ "ge288": {
+  "fr": "le traitement de canal",
+  "pl": "leczenie kanałowe",
+  "ru": "лече́ние корневы́х кана́лов",
+  "rulat": "letschénije kornewých kanálow",
+  "ex": "Root canal treatment can take two visits.",
+  "exde": "Eine Wurzelbehandlung kann zwei Termine dauern."
+ },
+ "ge289": {
+  "fr": "arracher une dent",
+  "pl": "wyrwać ząb",
+  "ru": "удали́ть зуб",
+  "rulat": "udalít sub",
+  "ex": "The dentist had to extract a tooth.",
+  "exde": "Der Zahnarzt musste einen Zahn ziehen."
+ },
+ "ge290": {
+  "fr": "la dent de sagesse",
+  "pl": "ząb mądrości",
+  "ru": "зуб му́дрости",
+  "rulat": "sub múdrosti",
+  "ex": "My wisdom tooth hurts.",
+  "exde": "Mein Weisheitszahn tut weh."
+ },
+ "ge291": {
+  "fr": "l'appareil dentaire",
+  "pl": "aparat ortodontyczny",
+  "ru": "бре́кеты",
+  "rulat": "brékety",
+  "ex": "My daughter has to wear a brace.",
+  "exde": "Meine Tochter muss eine Zahnspange tragen."
+ },
+ "ge292": {
+  "fr": "le dentier",
+  "pl": "proteza zębowa",
+  "ru": "зубно́й проте́з",
+  "rulat": "subnój protés",
+  "ex": "My grandfather cleans his dentures every night.",
+  "exde": "Mein Großvater reinigt seine Zahnprothese jeden Abend."
+ },
+ "ge293": {
+  "fr": "la brosse à dents",
+  "pl": "szczoteczka do zębów",
+  "ru": "зубна́я щётка",
+  "rulat": "subnája schtschjótka",
+  "ex": "I need a new toothbrush.",
+  "exde": "Ich brauche eine neue Zahnbürste."
+ },
+ "ge294": {
+  "fr": "le dentifrice",
+  "pl": "pasta do zębów",
+  "ru": "зубна́я па́ста",
+  "rulat": "subnája pásta",
+  "ex": "Use just a little toothpaste.",
+  "exde": "Nimm nur ein bisschen Zahnpasta."
+ },
+ "ge295": {
+  "fr": "le fil dentaire",
+  "pl": "nić dentystyczna",
+  "ru": "зубна́я нить",
+  "rulat": "subnája nit",
+  "ex": "Use dental floss every day.",
+  "exde": "Benutze jeden Tag Zahnseide."
+ },
+ "ge296": {
+  "fr": "le détartrage",
+  "pl": "profesjonalne czyszczenie zębów",
+  "ru": "профессиона́льная чи́стка зубо́в",
+  "rulat": "professionálnaja tschístka subów",
+  "ex": "I booked a scale and polish for Friday.",
+  "exde": "Ich habe für Freitag eine professionelle Zahnreinigung gebucht."
+ },
+ "ge297": {
+  "fr": "le tartre",
+  "pl": "kamień nazębny",
+  "ru": "зубно́й ка́мень",
+  "rulat": "subnój kámen",
+  "ex": "The hygienist removed the tartar.",
+  "exde": "Die Dentalhygienikerin hat den Zahnstein entfernt."
+ },
+ "ge298": {
+  "fr": "la plaque dentaire",
+  "pl": "płytka nazębna",
+  "ru": "зубно́й налёт",
+  "rulat": "subnój naljót",
+  "ex": "Brushing removes plaque.",
+  "exde": "Zähneputzen entfernt Zahnbelag."
+ },
+ "ge299": {
+  "fr": "fraiser",
+  "pl": "borować",
+  "ru": "сверли́ть",
+  "rulat": "swerlít",
+  "ex": "The dentist has to drill a little.",
+  "exde": "Der Zahnarzt muss ein bisschen bohren."
+ },
+ "ge300": {
+  "fr": "la gingivite",
+  "pl": "zapalenie dziąseł",
+  "ru": "воспале́ние дёсен",
+  "rulat": "wospalénije djósen",
+  "ex": "Gum inflammation can cause bleeding.",
+  "exde": "Eine Zahnfleischentzündung kann Blutungen verursachen."
+ },
+ "ge301": {
+  "fr": "le saignement des gencives",
+  "pl": "krwawienie dziąseł",
+  "ru": "кровоточи́вость дёсен",
+  "rulat": "krowototschíwost djóssen",
+  "ex": "Bleeding gums can be a sign of gum disease.",
+  "exde": "Zahnfleischbluten kann ein Zeichen für eine Zahnfleischerkrankung sein."
+ },
+ "ge302": {
+  "fr": "sensible",
+  "pl": "wrażliwy",
+  "ru": "чувстви́тельный",
+  "rulat": "tschuwstwítelny",
+  "ex": "My teeth are sensitive to cold drinks.",
+  "exde": "Meine Zähne sind empfindlich gegen kalte Getränke."
+ },
+ "ge303": {
+  "fr": "la molaire",
+  "pl": "ząb trzonowy",
+  "ru": "коренно́й зуб",
+  "rulat": "korennój sub",
+  "ex": "The dentist filled a hole in my molar.",
+  "exde": "Der Zahnarzt hat ein Loch in meinem Backenzahn gefüllt."
+ },
+ "ge304": {
+  "fr": "l'incisive",
+  "pl": "siekacz",
+  "ru": "резе́ц",
+  "rulat": "rjeséz",
+  "ex": "He chipped an incisor playing football.",
+  "exde": "Er hat sich beim Fußballspielen einen Schneidezahn angeschlagen."
+ },
+ "ge305": {
+  "fr": "se rincer la bouche",
+  "pl": "przepłukać usta",
+  "ru": "прополоска́ть рот",
+  "rulat": "propolosskát rot",
+  "ex": "Please rinse your mouth now.",
+  "exde": "Bitte spülen Sie jetzt den Mund aus."
+ },
+ "ge306": {
+  "fr": "ouvrir grand la bouche",
+  "pl": "szeroko otworzyć usta",
+  "ru": "широко́ откры́ть рот",
+  "rulat": "schirokó otkrýt rot",
+  "ex": "Open wide, please.",
+  "exde": "Bitte öffnen Sie den Mund weit."
+ },
+ "ge307": {
+  "fr": "l'abcès",
+  "pl": "ropień",
+  "ru": "абсце́сс",
+  "rulat": "apszéss",
+  "ex": "The abscess under my tooth was very painful.",
+  "exde": "Der Abszess unter meinem Zahn war sehr schmerzhaft."
+ },
+ "ge308": {
+  "fr": "les lunettes",
+  "pl": "okulary",
+  "ru": "очки́",
+  "rulat": "otschkí",
+  "ex": "I need my glasses to read.",
+  "exde": "Ich brauche meine Brille zum Lesen."
+ },
+ "ge309": {
+  "fr": "la lentille de contact",
+  "pl": "soczewka kontaktowa",
+  "ru": "конта́ктная ли́нза",
+  "rulat": "kontáktnaja línsa",
+  "ex": "I lost a contact lens this morning.",
+  "exde": "Ich habe heute Morgen eine Kontaktlinse verloren."
+ },
+ "ge310": {
+  "fr": "myope",
+  "pl": "krótkowzroczny",
+  "ru": "близору́кий",
+  "rulat": "blisorúkij",
+  "ex": "I'm short-sighted, so I can't see the board.",
+  "exde": "Ich bin kurzsichtig, deshalb kann ich die Tafel nicht sehen."
+ },
+ "ge311": {
+  "fr": "hypermétrope",
+  "pl": "dalekowzroczny",
+  "ru": "дальнозо́ркий",
+  "rulat": "dalnosórkij",
+  "ex": "My grandfather is long-sighted.",
+  "exde": "Mein Großvater ist weitsichtig."
+ },
+ "ge312": {
+  "fr": "la conjonctivite",
+  "pl": "zapalenie spojówek",
+  "ru": "конъюнктиви́т",
+  "rulat": "konjunktiwít",
+  "ex": "My son has conjunctivitis and can't go to school.",
+  "exde": "Mein Sohn hat eine Bindehautentzündung und kann nicht zur Schule gehen."
+ },
+ "ge313": {
+  "fr": "le test de vue",
+  "pl": "badanie wzroku",
+  "ru": "прове́рка зре́ния",
+  "rulat": "prowjérka srénija",
+  "ex": "You need an eye test for your driving licence.",
+  "exde": "Für den Führerschein brauchst du einen Sehtest."
+ },
+ "ge314": {
+  "fr": "la vue",
+  "pl": "wzrok",
+  "ru": "зре́ние",
+  "rulat": "srénije",
+  "ex": "My eyesight is getting worse.",
+  "exde": "Meine Sehkraft wird schlechter."
+ },
+ "ge315": {
+  "fr": "larmoyer",
+  "pl": "łzawić",
+  "ru": "слези́ться",
+  "rulat": "slesítsa",
+  "ex": "My eyes water when I cut onions.",
+  "exde": "Meine Augen tränen, wenn ich Zwiebeln schneide."
+ },
+ "ge316": {
+  "fr": "le bouton",
+  "pl": "pryszcz",
+  "ru": "прыщ",
+  "rulat": "pryschtsch",
+  "ex": "I've got a big spot on my nose.",
+  "exde": "Ich habe einen großen Pickel auf der Nase."
+ },
+ "ge317": {
+  "fr": "le grain de beauté",
+  "pl": "pieprzyk",
+  "ru": "ро́динка",
+  "rulat": "ródinka",
+  "ex": "The doctor checked the mole on my back.",
+  "exde": "Der Arzt hat das Muttermal auf meinem Rücken untersucht."
+ },
+ "ge318": {
+  "fr": "le mal d'oreille",
+  "pl": "ból ucha",
+  "ru": "боль в у́хе",
+  "rulat": "bol w úche",
+  "ex": "The child has had earache since yesterday.",
+  "exde": "Das Kind hat seit gestern Ohrenschmerzen."
+ },
+ "ge319": {
+  "fr": "malentendant",
+  "pl": "niedosłyszący",
+  "ru": "слабослы́шащий",
+  "rulat": "slaboslýschaschtschij",
+  "ex": "My grandmother is hard of hearing.",
+  "exde": "Meine Großmutter ist schwerhörig."
+ },
+ "ge320": {
+  "fr": "l'appareil auditif",
+  "pl": "aparat słuchowy",
+  "ru": "слухово́й аппара́т",
+  "rulat": "sluchowój apparát",
+  "ex": "He wears a hearing aid in his left ear.",
+  "exde": "Er trägt ein Hörgerät im linken Ohr."
+ },
+ "ge321": {
+  "fr": "le cérumen",
+  "pl": "woskowina uszna",
+  "ru": "ушна́я се́ра",
+  "rulat": "uschnája séra",
+  "ex": "The doctor removed the earwax from my ear.",
+  "exde": "Der Arzt hat das Ohrenschmalz aus meinem Ohr entfernt."
+ },
+ "ge322": {
+  "fr": "la piqûre d'insecte",
+  "pl": "ukąszenie owada",
+  "ru": "уку́с насеко́мого",
+  "rulat": "ukús nassekómowo",
+  "ex": "This insect bite is very itchy.",
+  "exde": "Dieser Insektenstich juckt sehr."
+ },
+ "ge323": {
+  "fr": "la cataracte",
+  "pl": "zaćma",
+  "ru": "катара́кта",
+  "rulat": "katarákta",
+  "ex": "My grandmother had surgery for a cataract.",
+  "exde": "Meine Großmutter wurde am grauen Star operiert."
+ },
+ "ge324": {
+  "fr": "l'eczéma",
+  "pl": "egzema",
+  "ru": "экзе́ма",
+  "rulat": "ekséma",
+  "ex": "My son has eczema on his arms.",
+  "exde": "Mein Sohn hat ein Ekzem an den Armen."
+ },
+ "ge325": {
+  "fr": "avoir la vue trouble",
+  "pl": "widzieć niewyraźnie",
+  "ru": "ви́деть нечётко",
+  "rulat": "wídet netschjótko",
+  "ex": "I have blurred vision in my left eye.",
+  "exde": "Ich sehe auf dem linken Auge verschwommen."
+ },
+ "ge326": {
+  "fr": "la grossesse",
+  "pl": "ciąża",
+  "ru": "бере́менность",
+  "rulat": "berémennost",
+  "ex": "She felt very well during her pregnancy.",
+  "exde": "Während der Schwangerschaft fühlte sie sich sehr wohl."
+ },
+ "ge327": {
+  "fr": "enceinte",
+  "pl": "w ciąży",
+  "ru": "бере́менная",
+  "rulat": "berémennaja",
+  "ex": "My sister is pregnant with her second child.",
+  "exde": "Meine Schwester ist mit ihrem zweiten Kind schwanger."
+ },
+ "ge328": {
+  "fr": "le test de grossesse",
+  "pl": "test ciążowy",
+  "ru": "тест на бере́менность",
+  "rulat": "test na berémennost",
+  "ex": "You can buy a pregnancy test at the pharmacy.",
+  "exde": "Einen Schwangerschaftstest kann man in der Apotheke kaufen."
+ },
+ "ge329": {
+  "fr": "le carnet de maternité",
+  "pl": "karta ciąży",
+  "ru": "обме́нная ка́рта",
+  "rulat": "obménnaja kárta",
+  "ex": "Always bring your maternity record to the appointment.",
+  "exde": "Bring zum Termin immer deinen Mutterpass mit."
+ },
+ "ge330": {
+  "fr": "la date prévue d'accouchement",
+  "pl": "termin porodu",
+  "ru": "предполага́емая да́та ро́дов",
+  "rulat": "predpolagájemaja dáta ródow",
+  "ex": "My due date is in early May.",
+  "exde": "Mein Geburtstermin ist Anfang Mai."
+ },
+ "ge331": {
+  "fr": "la naissance",
+  "pl": "poród",
+  "ru": "ро́ды",
+  "rulat": "ródy",
+  "ex": "The birth went without complications.",
+  "exde": "Die Geburt verlief ohne Komplikationen."
+ },
+ "ge332": {
+  "fr": "les contractions",
+  "pl": "skurcze porodowe",
+  "ru": "схва́тки",
+  "rulat": "sschwátki",
+  "ex": "The contractions started at night.",
+  "exde": "Die Wehen haben in der Nacht begonnen."
+ },
+ "ge333": {
+  "fr": "la césarienne",
+  "pl": "cesarskie cięcie",
+  "ru": "ке́сарево сече́ние",
+  "rulat": "késsarewo ssetschénije",
+  "ex": "The baby was born by caesarean section.",
+  "exde": "Das Baby kam per Kaiserschnitt zur Welt."
+ },
+ "ge334": {
+  "fr": "la fausse couche",
+  "pl": "poronienie",
+  "ru": "вы́кидыш",
+  "rulat": "wýkidysch",
+  "ex": "After the miscarriage she needed a lot of support.",
+  "exde": "Nach der Fehlgeburt brauchte sie viel Unterstützung."
+ },
+ "ge335": {
+  "fr": "le nouveau-né",
+  "pl": "noworodek",
+  "ru": "новорождённый",
+  "rulat": "noworoschdjónny",
+  "ex": "The newborn baby sleeps most of the day.",
+  "exde": "Das Neugeborene schläft fast den ganzen Tag."
+ },
+ "ge336": {
+  "fr": "le nourrisson",
+  "pl": "niemowlę",
+  "ru": "младе́нец",
+  "rulat": "mladénez",
+  "ex": "The infant needs to be fed every three hours.",
+  "exde": "Der Säugling muss alle drei Stunden gefüttert werden."
+ },
+ "ge337": {
+  "fr": "allaiter",
+  "pl": "karmić piersią",
+  "ru": "корми́ть гру́дью",
+  "rulat": "kormít grúdju",
+  "ex": "She wants to breastfeed for six months.",
+  "exde": "Sie möchte sechs Monate lang stillen."
+ },
+ "ge338": {
+  "fr": "le lait maternel",
+  "pl": "mleko matki",
+  "ru": "гру́дное молоко́",
+  "rulat": "grúdnoje molokó",
+  "ex": "Breast milk contains important antibodies.",
+  "exde": "Muttermilch enthält wichtige Abwehrstoffe."
+ },
+ "ge339": {
+  "fr": "le biberon",
+  "pl": "butelka dla niemowląt",
+  "ru": "буты́лочка",
+  "rulat": "butýlotschka",
+  "ex": "Please warm up the baby bottle.",
+  "exde": "Bitte wärm das Fläschchen auf."
+ },
+ "ge340": {
+  "fr": "le carnet de vaccination",
+  "pl": "książeczka szczepień",
+  "ru": "приви́вочный сертифика́т",
+  "rulat": "priwíwotschny ssertifikát",
+  "ex": "Bring your child's vaccination record to the pediatrician.",
+  "exde": "Bringen Sie den Impfpass Ihres Kindes zum Kinderarzt mit."
+ },
+ "ge341": {
+  "fr": "vacciner",
+  "pl": "szczepić",
+  "ru": "привива́ть",
+  "rulat": "priwiwátj",
+  "ex": "We need to vaccinate the baby next week.",
+  "exde": "Wir müssen das Baby nächste Woche impfen."
+ },
+ "ge342": {
+  "fr": "les oreillons",
+  "pl": "świnka",
+  "ru": "сви́нка",
+  "rulat": "swínka",
+  "ex": "My son had mumps last year.",
+  "exde": "Mein Sohn hatte letztes Jahr Mumps."
+ },
+ "ge343": {
+  "fr": "la rubéole",
+  "pl": "różyczka",
+  "ru": "красну́ха",
+  "rulat": "krasnúcha",
+  "ex": "German measles is dangerous during pregnancy.",
+  "exde": "Röteln sind in der Schwangerschaft gefährlich."
+ },
+ "ge344": {
+  "fr": "faire ses dents",
+  "pl": "ząbkować",
+  "ru": "у ребёнка ре́жутся зу́бы",
+  "rulat": "u rebjónka réschutsja súby",
+  "ex": "The baby is teething and cries a lot.",
+  "exde": "Das Baby zahnt und weint viel."
+ },
+ "ge345": {
+  "fr": "la maladie infantile",
+  "pl": "choroba wieku dziecięcego",
+  "ru": "де́тская боле́знь",
+  "rulat": "djétskaja boljésnj",
+  "ex": "Chickenpox is a common childhood illness.",
+  "exde": "Windpocken sind eine häufige Kinderkrankheit."
+ },
+ "ge346": {
+  "fr": "accoucher",
+  "pl": "rodzić",
+  "ru": "рожа́ть",
+  "rulat": "roschátj",
+  "ex": "She is going to give birth in May.",
+  "exde": "Sie wird im Mai entbinden."
+ },
+ "ge347": {
+  "fr": "la salle d'accouchement",
+  "pl": "sala porodowa",
+  "ru": "роди́льный зал",
+  "rulat": "rodíljnyj sal",
+  "ex": "The father waited outside the delivery room.",
+  "exde": "Der Vater wartete vor dem Kreißsaal."
+ },
+ "ge348": {
+  "fr": "le post-partum",
+  "pl": "połóg",
+  "ru": "послеродово́й пери́од",
+  "rulat": "posslerodowój períod",
+  "ex": "She needs a lot of rest during the postnatal period.",
+  "exde": "Im Wochenbett braucht sie viel Ruhe."
+ },
+ "ge349": {
+  "fr": "la tétine",
+  "pl": "smoczek",
+  "ru": "пусты́шка",
+  "rulat": "pustýschka",
+  "ex": "The baby fell asleep with a dummy in his mouth.",
+  "exde": "Das Baby ist mit dem Schnuller im Mund eingeschlafen."
+ },
+ "ge350": {
+  "fr": "la couche",
+  "pl": "pieluszka",
+  "ru": "подгу́зник",
+  "rulat": "podgúsnik",
+  "ex": "Can you change the baby's nappy?",
+  "exde": "Kannst du dem Baby die Windel wechseln?"
+ },
+ "ge351": {
+  "fr": "le psychisme",
+  "pl": "psychika",
+  "ru": "пси́хика",
+  "rulat": "psíchika",
+  "ex": "Constant stress affects the psyche.",
+  "exde": "Ständiger Stress wirkt sich auf die Psyche aus."
+ },
+ "ge352": {
+  "fr": "l'âme",
+  "pl": "dusza",
+  "ru": "душа́",
+  "rulat": "duschá",
+  "ex": "Music is good for the soul.",
+  "exde": "Musik tut der Seele gut."
+ },
+ "ge353": {
+  "fr": "l'anxiété",
+  "pl": "lęk",
+  "ru": "трево́га",
+  "rulat": "trewóga",
+  "ex": "Her anxiety gets worse at night.",
+  "exde": "Ihre Angst wird nachts schlimmer."
+ },
+ "ge354": {
+  "fr": "le trouble anxieux",
+  "pl": "zaburzenie lękowe",
+  "ru": "трево́жное расстро́йство",
+  "rulat": "trewóschnoje rasstrójstwo",
+  "ex": "He is being treated for an anxiety disorder.",
+  "exde": "Er wird wegen einer Angststörung behandelt."
+ },
+ "ge355": {
+  "fr": "la crise de panique",
+  "pl": "atak paniki",
+  "ru": "пани́ческая ата́ка",
+  "rulat": "panítscheskaja atáka",
+  "ex": "She had a panic attack on the train.",
+  "exde": "Sie hatte im Zug eine Panikattacke."
+ },
+ "ge356": {
+  "fr": "le stress",
+  "pl": "stres",
+  "ru": "стресс",
+  "rulat": "stress",
+  "ex": "I'm under a lot of stress at work.",
+  "exde": "Ich habe bei der Arbeit viel Stress."
+ },
+ "ge357": {
+  "fr": "le burn-out",
+  "pl": "wypalenie zawodowe",
+  "ru": "эмоциона́льное выгора́ние",
+  "rulat": "emozionáljnoje wygoránije",
+  "ex": "After years of overwork, he suffered from burnout.",
+  "exde": "Nach Jahren der Überlastung litt er an einem Burn-out."
+ },
+ "ge358": {
+  "fr": "le psychologue",
+  "pl": "psycholog",
+  "ru": "психо́лог",
+  "rulat": "psichólog",
+  "ex": "I have an appointment with a psychologist.",
+  "exde": "Ich habe einen Termin bei einem Psychologen."
+ },
+ "ge359": {
+  "fr": "la psychothérapie",
+  "pl": "psychoterapia",
+  "ru": "психотерапи́я",
+  "rulat": "psichoterapíja",
+  "ex": "Psychotherapy helped her a lot.",
+  "exde": "Die Psychotherapie hat ihr sehr geholfen."
+ },
+ "ge360": {
+  "fr": "la thérapie",
+  "pl": "terapia",
+  "ru": "терапи́я",
+  "rulat": "terapíja",
+  "ex": "He started therapy last month.",
+  "exde": "Er hat letzten Monat mit einer Therapie begonnen."
+ },
+ "ge361": {
+  "fr": "l'antidépresseur",
+  "pl": "lek przeciwdepresyjny",
+  "ru": "антидепресса́нт",
+  "rulat": "antidepressánt",
+  "ex": "The doctor prescribed her an antidepressant.",
+  "exde": "Die Ärztin hat ihr ein Antidepressivum verschrieben."
+ },
+ "ge362": {
+  "fr": "le calmant",
+  "pl": "środek uspokajający",
+  "ru": "успокои́тельное сре́дство",
+  "rulat": "uspokoítelnoje srédstwo",
+  "ex": "She took a sedative before the flight.",
+  "exde": "Sie nahm vor dem Flug ein Beruhigungsmittel."
+ },
+ "ge363": {
+  "fr": "le trouble du sommeil",
+  "pl": "zaburzenie snu",
+  "ru": "расстро́йство сна",
+  "rulat": "rasstróistwo sna",
+  "ex": "He has been suffering from a sleep disorder for years.",
+  "exde": "Er leidet seit Jahren an einer Schlafstörung."
+ },
+ "ge364": {
+  "fr": "l'insomnie",
+  "pl": "bezsenność",
+  "ru": "бессо́нница",
+  "rulat": "bessónniza",
+  "ex": "Stress often causes insomnia.",
+  "exde": "Stress verursacht oft Schlaflosigkeit."
+ },
+ "ge365": {
+  "fr": "l'épuisement",
+  "pl": "wyczerpanie",
+  "ru": "истоще́ние",
+  "rulat": "istoschtschénije",
+  "ex": "After the marathon she collapsed from exhaustion.",
+  "exde": "Nach dem Marathon brach sie vor Erschöpfung zusammen."
+ },
+ "ge366": {
+  "fr": "le traumatisme",
+  "pl": "trauma",
+  "ru": "тра́вма",
+  "rulat": "tráwma",
+  "ex": "The accident left him with a deep trauma.",
+  "exde": "Der Unfall hinterließ bei ihm ein tiefes Trauma."
+ },
+ "ge367": {
+  "fr": "la dépendance",
+  "pl": "uzależnienie",
+  "ru": "зави́симость",
+  "rulat": "sawíssimost",
+  "ex": "He finally overcame his addiction.",
+  "exde": "Er hat seine Sucht endlich überwunden."
+ },
+ "ge368": {
+  "fr": "le trouble alimentaire",
+  "pl": "zaburzenie odżywiania",
+  "ru": "расстро́йство пищево́го поведе́ния",
+  "rulat": "rasstróistwo pischtschewówo powedénija",
+  "ex": "Many teenagers struggle with an eating disorder.",
+  "exde": "Viele Jugendliche kämpfen mit einer Essstörung."
+ },
+ "ge369": {
+  "fr": "l'humeur",
+  "pl": "nastrój",
+  "ru": "настрое́ние",
+  "rulat": "nastrojénije",
+  "ex": "She is in a good mood today.",
+  "exde": "Sie ist heute in guter Stimmung."
+ },
+ "ge370": {
+  "fr": "la saute d'humeur",
+  "pl": "wahanie nastroju",
+  "ru": "перепа́д настрое́ния",
+  "rulat": "perepád nastrojénija",
+  "ex": "Lack of sleep can cause mood swings.",
+  "exde": "Schlafmangel kann Stimmungsschwankungen verursachen."
+ },
+ "ge371": {
+  "fr": "l'estime de soi",
+  "pl": "poczucie własnej wartości",
+  "ru": "самооце́нка",
+  "rulat": "samoozénka",
+  "ex": "Sport can boost your self-esteem.",
+  "exde": "Sport kann dein Selbstwertgefühl stärken."
+ },
+ "ge372": {
+  "fr": "la solitude",
+  "pl": "samotność",
+  "ru": "одино́чество",
+  "rulat": "odinótschestwo",
+  "ex": "Many elderly people suffer from loneliness.",
+  "exde": "Viele ältere Menschen leiden unter Einsamkeit."
+ },
+ "ge373": {
+  "fr": "le chagrin",
+  "pl": "żałoba",
+  "ru": "го́ре",
+  "rulat": "góre",
+  "ex": "Her grief was hard to bear.",
+  "exde": "Ihre Trauer war schwer zu ertragen."
+ },
+ "ge374": {
+  "fr": "abattu",
+  "pl": "przygnębiony",
+  "ru": "пода́вленный",
+  "rulat": "podáwlenny",
+  "ex": "He felt downhearted after losing his job.",
+  "exde": "Er fühlte sich niedergeschlagen, nachdem er seine Arbeit verloren hatte."
+ },
+ "ge375": {
+  "fr": "anxieux",
+  "pl": "niespokojny",
+  "ru": "трево́жный",
+  "rulat": "trewóschny",
+  "ex": "She gets anxious before exams.",
+  "exde": "Vor Prüfungen wird sie ängstlich."
+ },
+ "ge376": {
+  "fr": "la prévention",
+  "pl": "profilaktyka",
+  "ru": "профила́ктика",
+  "rulat": "profiláktika",
+  "ex": "Regular preventive care can save lives.",
+  "exde": "Regelmäßige Vorsorge kann Leben retten."
+ },
+ "ge377": {
+  "fr": "prévenir",
+  "pl": "zapobiegać",
+  "ru": "предотвраща́ть",
+  "rulat": "predotwraschtschát",
+  "ex": "A healthy diet can help prevent many diseases.",
+  "exde": "Eine gesunde Ernährung kann vielen Krankheiten vorbeugen."
+ },
+ "ge378": {
+  "fr": "se faire vacciner",
+  "pl": "zaszczepić się",
+  "ru": "сде́лать приви́вку",
+  "rulat": "sdélat priwíwku",
+  "ex": "I want to get vaccinated against the flu.",
+  "exde": "Ich möchte mich gegen Grippe impfen lassen."
+ },
+ "ge379": {
+  "fr": "le rappel de vaccin",
+  "pl": "dawka przypominająca",
+  "ru": "ревакцина́ция",
+  "rulat": "rewakzinázija",
+  "ex": "You need a tetanus booster jab every ten years.",
+  "exde": "Alle zehn Jahre braucht man eine Auffrischungsimpfung gegen Tetanus."
+ },
+ "ge380": {
+  "fr": "le dépistage précoce",
+  "pl": "wczesne wykrywanie",
+  "ru": "ра́нняя диагно́стика",
+  "rulat": "ránnjaja diagnóstika",
+  "ex": "Early detection greatly improves the chances of recovery.",
+  "exde": "Die Früherkennung verbessert die Heilungschancen erheblich."
+ },
+ "ge381": {
+  "fr": "le bilan de santé",
+  "pl": "badanie profilaktyczne",
+  "ru": "медосмо́тр",
+  "rulat": "medosmótr",
+  "ex": "I have a health check every year.",
+  "exde": "Ich mache jedes Jahr einen Gesundheitscheck."
+ },
+ "ge382": {
+  "fr": "le dépistage du cancer",
+  "pl": "badania profilaktyczne w kierunku raka",
+  "ru": "скри́нинг ра́ка",
+  "rulat": "skríning ráka",
+  "ex": "Cancer screening can save lives.",
+  "exde": "Die Krebsvorsorge kann Leben retten."
+ },
+ "ge383": {
+  "fr": "la mammographie",
+  "pl": "mammografia",
+  "ru": "маммогра́фия",
+  "rulat": "mammográfija",
+  "ex": "My doctor recommended a mammogram.",
+  "exde": "Meine Ärztin hat mir eine Mammografie empfohlen."
+ },
+ "ge384": {
+  "fr": "la glycémie",
+  "pl": "cukier we krwi",
+  "ru": "са́хар в крови́",
+  "rulat": "sáchar w kroví",
+  "ex": "You should check your blood sugar regularly.",
+  "exde": "Du solltest regelmäßig deinen Blutzucker messen."
+ },
+ "ge385": {
+  "fr": "le taux de cholestérol",
+  "pl": "poziom cholesterolu",
+  "ru": "у́ровень холестери́на",
+  "rulat": "úrowen cholesterína",
+  "ex": "His cholesterol level is too high.",
+  "exde": "Sein Cholesterinspiegel ist zu hoch."
+ },
+ "ge386": {
+  "fr": "le mode de vie",
+  "pl": "styl życia",
+  "ru": "о́браз жи́зни",
+  "rulat": "óbras shísni",
+  "ex": "A healthy lifestyle is important.",
+  "exde": "Ein gesunder Lebensstil ist wichtig."
+ },
+ "ge387": {
+  "fr": "l'alimentation",
+  "pl": "odżywianie",
+  "ru": "пита́ние",
+  "rulat": "pitánije",
+  "ex": "A good diet keeps you healthy.",
+  "exde": "Eine gute Ernährung hält dich gesund."
+ },
+ "ge388": {
+  "fr": "manger sainement",
+  "pl": "zdrowo się odżywiać",
+  "ru": "пра́вильно пита́ться",
+  "rulat": "práwilno pitátsja",
+  "ex": "I try to eat healthily.",
+  "exde": "Ich versuche, mich gesund zu ernähren."
+ },
+ "ge389": {
+  "fr": "équilibré",
+  "pl": "zrównoważony",
+  "ru": "сбаланси́рованный",
+  "rulat": "sbalansírowannyj",
+  "ex": "She eats a balanced diet.",
+  "exde": "Sie ernährt sich ausgewogen."
+ },
+ "ge390": {
+  "fr": "la fibre alimentaire",
+  "pl": "błonnik",
+  "ru": "клетча́тка",
+  "rulat": "kletschátka",
+  "ex": "Wholemeal bread contains a lot of fibre.",
+  "exde": "Vollkornbrot enthält viele Ballaststoffe."
+ },
+ "ge391": {
+  "fr": "la vitamine",
+  "pl": "witamina",
+  "ru": "витами́н",
+  "rulat": "witamín",
+  "ex": "Oranges are rich in vitamin C.",
+  "exde": "Orangen sind reich an Vitamin C."
+ },
+ "ge392": {
+  "fr": "le complément alimentaire",
+  "pl": "suplement diety",
+  "ru": "биодоба́вка",
+  "rulat": "biodobáwka",
+  "ex": "Do you take any dietary supplements?",
+  "exde": "Nimmst du Nahrungsergänzungsmittel?"
+ },
+ "ge393": {
+  "fr": "le surpoids",
+  "pl": "nadwaga",
+  "ru": "ли́шний вес",
+  "rulat": "líschnij wes",
+  "ex": "Excess weight can cause health problems.",
+  "exde": "Übergewicht kann gesundheitliche Probleme verursachen."
+ },
+ "ge394": {
+  "fr": "prendre du poids",
+  "pl": "przytyć",
+  "ru": "попра́виться",
+  "rulat": "poprávitsja",
+  "ex": "I put on weight over the holidays.",
+  "exde": "Ich habe über die Feiertage zugenommen."
+ },
+ "ge395": {
+  "fr": "l'activité physique",
+  "pl": "ruch",
+  "ru": "физи́ческая акти́вность",
+  "rulat": "fisítscheskaja aktíwnost",
+  "ex": "Regular exercise is good for your heart.",
+  "exde": "Regelmäßige Bewegung ist gut für das Herz."
+ },
+ "ge396": {
+  "fr": "faire du sport",
+  "pl": "uprawiać sport",
+  "ru": "занима́ться спо́ртом",
+  "rulat": "sanimátsja spórtom",
+  "ex": "I do sport three times a week.",
+  "exde": "Ich treibe dreimal pro Woche Sport."
+ },
+ "ge397": {
+  "fr": "arrêter de fumer",
+  "pl": "rzucić palenie",
+  "ru": "бро́сить кури́ть",
+  "rulat": "brósit kurít",
+  "ex": "My father gave up smoking last year.",
+  "exde": "Mein Vater hat letztes Jahr mit dem Rauchen aufgehört."
+ },
+ "ge398": {
+  "fr": "l'alcool",
+  "pl": "alkohol",
+  "ru": "алкого́ль",
+  "rulat": "alkogól",
+  "ex": "Too much alcohol is bad for your health.",
+  "exde": "Zu viel Alkohol ist schlecht für die Gesundheit."
+ },
+ "ge399": {
+  "fr": "le sommeil",
+  "pl": "sen",
+  "ru": "сон",
+  "rulat": "son",
+  "ex": "Sleep is important for recovery.",
+  "exde": "Schlaf ist wichtig für die Erholung."
+ },
+ "ge400": {
+  "fr": "se détendre",
+  "pl": "odprężać się",
+  "ru": "рассла́бляться",
+  "rulat": "rasslábljatsja",
+  "ex": "I like to relax with a good book.",
+  "exde": "Ich entspanne mich gern mit einem guten Buch."
+ },
+ "ge401": {
+  "fr": "le certificat d'arrêt de travail",
+  "pl": "zaświadczenie o niezdolności do pracy",
+  "ru": "больни́чный лист",
+  "rulat": "bolnítschnyj list",
+  "ex": "I need to send the certificate of incapacity for work to my employer.",
+  "exde": "Ich muss die Arbeitsunfähigkeitsbescheinigung an meinen Arbeitgeber schicken."
+ },
+ "ge402": {
+  "fr": "en incapacité de travail",
+  "pl": "niezdolny do pracy",
+  "ru": "нетрудоспосо́бный",
+  "rulat": "netrudosposóbnyj",
+  "ex": "The doctor said I am unfit for work for a week.",
+  "exde": "Der Arzt sagte, ich bin eine Woche arbeitsunfähig."
+ },
+ "ge403": {
+  "fr": "l'incapacité de travail",
+  "pl": "niezdolność do pracy",
+  "ru": "нетрудоспосо́бность",
+  "rulat": "netrudosposóbnost",
+  "ex": "His incapacity for work lasted three weeks.",
+  "exde": "Seine Arbeitsunfähigkeit dauerte drei Wochen."
+ },
+ "ge404": {
+  "fr": "affilié à l'assurance maladie obligatoire",
+  "pl": "ubezpieczony w ustawowej kasie chorych",
+  "ru": "застрахо́ванный в обяза́тельном поря́дке",
+  "rulat": "sastrachówannyj w objasátelnom porjádke",
+  "ex": "Most employees are covered by statutory health insurance.",
+  "exde": "Die meisten Arbeitnehmer sind gesetzlich versichert."
+ },
+ "ge405": {
+  "fr": "couvert par une assurance privée",
+  "pl": "ubezpieczony prywatnie",
+  "ru": "застрахо́ванный ча́стно",
+  "rulat": "sastrachówannyj tschástno",
+  "ex": "She is privately insured.",
+  "exde": "Sie ist privat versichert."
+ },
+ "ge406": {
+  "fr": "le patient privé",
+  "pl": "pacjent prywatny",
+  "ru": "ча́стный пацие́нт",
+  "rulat": "tschástnyj paziént",
+  "ex": "A private patient often gets an appointment faster.",
+  "exde": "Ein Privatpatient bekommt oft schneller einen Termin."
+ },
+ "ge407": {
+  "fr": "le patient affilié à la caisse publique",
+  "pl": "pacjent ubezpieczony w kasie chorych",
+  "ru": "пацие́нт с обяза́тельной страхо́вкой",
+  "rulat": "paziént s objasátelnoj strachówkoj",
+  "ex": "As a patient with statutory health insurance, I had to wait two months.",
+  "exde": "Als Kassenpatient musste ich zwei Monate warten."
+ },
+ "ge408": {
+  "fr": "la cotisation",
+  "pl": "składka",
+  "ru": "взнос",
+  "rulat": "wsnos",
+  "ex": "The monthly contribution depends on your income.",
+  "exde": "Der monatliche Beitrag hängt von deinem Einkommen ab."
+ },
+ "ge409": {
+  "fr": "le maintien du salaire",
+  "pl": "wypłata wynagrodzenia w czasie choroby",
+  "ru": "сохране́ние зарпла́ты",
+  "rulat": "sochranénije sarpláty",
+  "ex": "Continued payment of wages lasts up to six weeks.",
+  "exde": "Die Lohnfortzahlung dauert bis zu sechs Wochen."
+ },
+ "ge410": {
+  "fr": "les indemnités journalières",
+  "pl": "zasiłek chorobowy",
+  "ru": "посо́бие по боле́зни",
+  "rulat": "posóbije po bolésni",
+  "ex": "After six weeks you receive sickness benefit.",
+  "exde": "Nach sechs Wochen bekommst du Krankengeld."
+ },
+ "ge411": {
+  "fr": "la prise en charge des frais",
+  "pl": "pokrycie kosztów",
+  "ru": "покры́тие расхо́дов",
+  "rulat": "pokrýtije raschódow",
+  "ex": "The insurance confirmed the assumption of costs.",
+  "exde": "Die Versicherung hat die Kostenübernahme bestätigt."
+ },
+ "ge412": {
+  "fr": "rembourser",
+  "pl": "zwracać",
+  "ru": "возмеща́ть",
+  "rulat": "wosmeschtschát",
+  "ex": "The insurance will reimburse the costs.",
+  "exde": "Die Versicherung wird die Kosten erstatten."
+ },
+ "ge413": {
+  "fr": "le remboursement",
+  "pl": "zwrot kosztów",
+  "ru": "возмеще́ние",
+  "rulat": "wosmeschtschénije",
+  "ex": "I'm still waiting for the reimbursement.",
+  "exde": "Ich warte noch auf die Erstattung."
+ },
+ "ge414": {
+  "fr": "l'assuré",
+  "pl": "ubezpieczony",
+  "ru": "застрахо́ванный",
+  "rulat": "sastrachówannyj",
+  "ex": "Every insured person receives a health card.",
+  "exde": "Jeder Versicherte erhält eine Gesundheitskarte."
+ },
+ "ge415": {
+  "fr": "l'assurance familiale",
+  "pl": "ubezpieczenie rodzinne",
+  "ru": "семе́йное страхова́ние",
+  "rulat": "semjéjnoje strachowánije",
+  "ex": "My children are covered by my family health cover.",
+  "exde": "Meine Kinder sind über meine Familienversicherung versichert."
+ },
+ "ge416": {
+  "fr": "la franchise",
+  "pl": "udział własny",
+  "ru": "франши́за",
+  "rulat": "franschísa",
+  "ex": "My policy has an excess of 300 euros.",
+  "exde": "Meine Police hat einen Selbstbehalt von 300 Euro."
+ },
+ "ge417": {
+  "fr": "l'assurance complémentaire",
+  "pl": "ubezpieczenie dodatkowe",
+  "ru": "дополни́тельное страхова́ние",
+  "rulat": "dopolnítelnoje strachowánije",
+  "ex": "I took out supplementary insurance for dental treatment.",
+  "exde": "Ich habe eine Zusatzversicherung für Zahnbehandlungen abgeschlossen."
+ },
+ "ge418": {
+  "fr": "la prestation",
+  "pl": "świadczenie",
+  "ru": "страхова́я услу́га",
+  "rulat": "strachowája uslúga",
+  "ex": "This treatment is not a benefit covered by the insurance.",
+  "exde": "Diese Behandlung ist keine Leistung der Krankenkasse."
+ },
+ "ge419": {
+  "fr": "la demande",
+  "pl": "wniosek",
+  "ru": "заявле́ние",
+  "rulat": "sajawlénije",
+  "ex": "I filled out the application yesterday.",
+  "exde": "Ich habe gestern den Antrag ausgefüllt."
+ },
+ "ge420": {
+  "fr": "faire une demande de",
+  "pl": "złożyć wniosek o",
+  "ru": "подава́ть заявле́ние",
+  "rulat": "podawát sajawlénije",
+  "ex": "You have to apply for sickness benefit.",
+  "exde": "Du musst das Krankengeld beantragen."
+ },
+ "ge421": {
+  "fr": "le numéro d'assurance",
+  "pl": "numer ubezpieczenia",
+  "ru": "стра́ховой но́мер",
+  "rulat": "stráchowoj nómer",
+  "ex": "Please write your insurance number on the form.",
+  "exde": "Bitte schreiben Sie Ihre Versicherungsnummer auf das Formular."
+ },
+ "ge422": {
+  "fr": "la couverture d'assurance",
+  "pl": "ochrona ubezpieczeniowa",
+  "ru": "страхова́я защи́та",
+  "rulat": "strachowája saschtschíta",
+  "ex": "Do I have insurance cover abroad?",
+  "exde": "Habe ich im Ausland Versicherungsschutz?"
+ },
+ "ge423": {
+  "fr": "le certificat",
+  "pl": "zaświadczenie",
+  "ru": "спра́вка",
+  "rulat": "spráwka",
+  "ex": "I need a certificate for my employer.",
+  "exde": "Ich brauche eine Bescheinigung für meinen Arbeitgeber."
+ },
+ "ge424": {
+  "fr": "l'ambulance",
+  "pl": "karetka pogotowia",
+  "ru": "ско́рая по́мощь",
+  "rulat": "skóraja pómoschtsch",
+  "ex": "Call an ambulance!",
+  "exde": "Ruf einen Rettungswagen!"
+ },
+ "ge425": {
+  "fr": "la position latérale de sécurité",
+  "pl": "pozycja boczna ustalona",
+  "ru": "усто́йчивое боково́е положе́ние",
+  "rulat": "ustójtschiwoje bokowóje poloshénije",
+  "ex": "Put him in the recovery position.",
+  "exde": "Bring ihn in die stabile Seitenlage."
+ },
+ "ge426": {
+  "fr": "le massage cardiaque",
+  "pl": "masaż serca",
+  "ru": "непрямо́й масса́ж се́рдца",
+  "rulat": "neprjamój massásch sérdza",
+  "ex": "Start chest compressions immediately.",
+  "exde": "Beginnen Sie sofort mit der Herzdruckmassage."
+ },
+ "ge427": {
+  "fr": "la réanimation",
+  "pl": "resuscytacja",
+  "ru": "реанима́ция",
+  "rulat": "reanimázija",
+  "ex": "The resuscitation was successful.",
+  "exde": "Die Wiederbelebung war erfolgreich."
+ },
+ "ge428": {
+  "fr": "le service de soins à domicile",
+  "pl": "opieka domowa",
+  "ru": "слу́жба ухо́да на дому́",
+  "rulat": "slúshba uchóda na domú",
+  "ex": "A home care service visits my grandmother every day.",
+  "exde": "Ein Pflegedienst besucht meine Großmutter jeden Tag."
+ },
+ "ge429": {
+  "fr": "la maison de retraite",
+  "pl": "dom opieki",
+  "ru": "дом престаре́лых",
+  "rulat": "dom prestarélych",
+  "ex": "My grandfather lives in a care home.",
+  "exde": "Mein Großvater lebt in einem Pflegeheim."
+ },
+ "ge430": {
+  "fr": "dépendant",
+  "pl": "wymagający opieki",
+  "ru": "нужда́ющийся в ухо́де",
+  "rulat": "nushdájuschtschijsja w uchóde",
+  "ex": "Her mother is in need of care.",
+  "exde": "Ihre Mutter ist pflegebedürftig."
+ },
+ "ge431": {
+  "fr": "le degré de dépendance",
+  "pl": "stopień niesamodzielności",
+  "ru": "сте́пень потре́бности в ухо́де",
+  "rulat": "stépen potrébnosti w uchóde",
+  "ex": "He has been assigned care level 3.",
+  "exde": "Er hat Pflegegrad 3 bekommen."
+ },
+ "ge432": {
+  "fr": "s'évanouir",
+  "pl": "zemdleć",
+  "ru": "потеря́ть созна́ние",
+  "rulat": "poterját sosnánije",
+  "ex": "She fainted in the heat.",
+  "exde": "Sie wurde in der Hitze ohnmächtig."
+ },
+ "ge433": {
+  "fr": "le choc",
+  "pl": "szok",
+  "ru": "шок",
+  "rulat": "schok",
+  "ex": "The patient is in shock.",
+  "exde": "Der Patient steht unter Schock."
+ },
+ "ge434": {
+  "fr": "le défibrillateur",
+  "pl": "defibrylator",
+  "ru": "дефибрилля́тор",
+  "rulat": "defibriljátor",
+  "ex": "There is a defibrillator at the entrance.",
+  "exde": "Am Eingang gibt es einen Defibrillator."
+ },
+ "ge435": {
+  "fr": "l'intoxication",
+  "pl": "zatrucie",
+  "ru": "отравле́ние",
+  "rulat": "otrawlénije",
+  "ex": "Poisoning from mushrooms can be dangerous.",
+  "exde": "Eine Vergiftung durch Pilze kann gefährlich sein."
+ },
+ "ge436": {
+  "fr": "s'occuper de quelqu'un",
+  "pl": "opiekować się kimś",
+  "ru": "забо́титься о ко́м-нибудь",
+  "rulat": "sabótitsja o kóm-nibud",
+  "ex": "I look after my sick father.",
+  "exde": "Ich kümmere mich um meinen kranken Vater."
+ },
+ "ge437": {
+  "fr": "traiter",
+  "pl": "leczyć",
+  "ru": "лечи́ть",
+  "rulat": "letschít",
+  "ex": "The doctor treats many patients.",
+  "exde": "Der Arzt behandelt viele Patienten."
+ },
+ "ge438": {
+  "fr": "guérir",
+  "pl": "wyleczyć",
+  "ru": "вы́лечить",
+  "rulat": "wýletschit",
+  "ex": "This medicine can heal the infection.",
+  "exde": "Dieses Medikament kann die Infektion heilen."
+ },
+ "ge439": {
+  "fr": "injecter",
+  "pl": "wstrzykiwać",
+  "ru": "де́лать уко́л",
+  "rulat": "délat ukól",
+  "ex": "The nurse injects the insulin.",
+  "exde": "Die Pflegekraft spritzt das Insulin."
+ },
+ "ge440": {
+  "fr": "hospitaliser",
+  "pl": "skierować do szpitala",
+  "ru": "госпитализи́ровать",
+  "rulat": "gospitalisírowat",
+  "ex": "The doctor admitted him to hospital.",
+  "exde": "Der Arzt hat ihn ins Krankenhaus eingewiesen."
+ },
+ "ge441": {
+  "fr": "plâtrer",
+  "pl": "założyć gips",
+  "ru": "наложи́ть гипс",
+  "rulat": "naloschít gips",
+  "ex": "The doctor had to put my arm in a plaster cast.",
+  "exde": "Der Arzt musste meinen Arm eingipsen."
+ },
+ "ge442": {
+  "fr": "refroidir",
+  "pl": "chłodzić",
+  "ru": "охлажда́ть",
+  "rulat": "ochlaschdát",
+  "ex": "Cool the bruise with an ice pack.",
+  "exde": "Kühl die Prellung mit einem Kühlpack."
+ },
+ "ge443": {
+  "fr": "frictionner",
+  "pl": "wcierać",
+  "ru": "втира́ть",
+  "rulat": "wtirát",
+  "ex": "Rub in the ointment twice a day.",
+  "exde": "Reiben Sie die Salbe zweimal täglich ein."
+ },
+ "ge444": {
+  "fr": "soulager",
+  "pl": "łagodzić",
+  "ru": "облегча́ть",
+  "rulat": "oblechtschát",
+  "ex": "This tea will relieve your cough.",
+  "exde": "Dieser Tee wird deinen Husten lindern."
+ },
+ "ge445": {
+  "fr": "masser",
+  "pl": "masować",
+  "ru": "масси́ровать",
+  "rulat": "massírowat",
+  "ex": "The physiotherapist massages my back.",
+  "exde": "Die Physiotherapeutin massiert meinen Rücken."
+ },
+ "ge446": {
+  "fr": "soigner",
+  "pl": "pielęgnować",
+  "ru": "уха́живать",
+  "rulat": "ucháschiwat",
+  "ex": "She nursed her sick mother for months.",
+  "exde": "Sie pflegte ihre kranke Mutter monatelang."
+ },
+ "ge447": {
+  "fr": "ventiler",
+  "pl": "wentylować",
+  "ru": "проводи́ть иску́сственное дыха́ние",
+  "rulat": "prowodít iskússtwennoje dychánije",
+  "ex": "The patient had to be ventilated after the accident.",
+  "exde": "Der Patient musste nach dem Unfall beatmet werden."
+ },
+ "ge448": {
+  "fr": "soigner (une plaie)",
+  "pl": "opatrzyć",
+  "ru": "обрабо́тать (ра́ну)",
+  "rulat": "obrabótat (ránu)",
+  "ex": "The nurse treated the wound carefully.",
+  "exde": "Die Krankenschwester versorgte die Wunde sorgfältig."
+ },
+ "ge449": {
+  "fr": "arrêter un médicament",
+  "pl": "odstawić lek",
+  "ru": "прекрати́ть приём лека́рства",
+  "rulat": "prekratít prijóm lekárstwa",
+  "ex": "Don't stop taking the medication without asking your doctor.",
+  "exde": "Setzen Sie das Medikament nicht ohne Rücksprache mit Ihrem Arzt ab."
+ },
+ "ge450": {
+  "fr": "immobiliser",
+  "pl": "unieruchomić",
+  "ru": "обездви́жить",
+  "rulat": "obesdwíschit",
+  "ex": "The broken finger must be immobilised.",
+  "exde": "Der gebrochene Finger muss ruhiggestellt werden."
+ },
+ "ge451": {
+  "fr": "mettre de la crème",
+  "pl": "posmarować kremem",
+  "ru": "нама́зать кре́мом",
+  "rulat": "namásat krémom",
+  "ex": "Don't forget to apply cream before going in the sun.",
+  "exde": "Vergiss nicht, dich einzucremen, bevor du in die Sonne gehst."
+ },
+ "ge452": {
+  "fr": "se déshabiller",
+  "pl": "rozebrać się",
+  "ru": "разде́ться",
+  "rulat": "rasdétsja",
+  "ex": "Please undress for the examination.",
+  "exde": "Bitte machen Sie sich für die Untersuchung frei."
+ },
+ "ge453": {
+  "fr": "l'admission",
+  "pl": "przyjęcie (do szpitala)",
+  "ru": "госпитализа́ция",
+  "rulat": "gospitalisázija",
+  "ex": "Please go to admission on the ground floor.",
+  "exde": "Bitte gehen Sie zur Aufnahme im Erdgeschoss."
+ },
+ "ge454": {
+  "fr": "l'infirmier",
+  "pl": "pielęgniarz",
+  "ru": "медбра́т",
+  "rulat": "medbrát",
+  "ex": "The male nurse brought me some water.",
+  "exde": "Der Krankenpfleger brachte mir etwas Wasser."
+ },
+ "ge455": {
+  "fr": "l'anesthésie générale",
+  "pl": "znieczulenie ogólne",
+  "ru": "о́бщий нарко́з",
+  "rulat": "óbschtschij narkós",
+  "ex": "The operation is done under general anaesthesia.",
+  "exde": "Die Operation wird unter Vollnarkose durchgeführt."
+ },
+ "ge456": {
+  "fr": "le bilan préopératoire",
+  "pl": "badanie przedoperacyjne",
+  "ru": "предоперацио́нное обсле́дование",
+  "rulat": "predoperaziónnoje obslédowanije",
+  "ex": "The pre-operative assessment is next Monday.",
+  "exde": "Die Voruntersuchung ist nächsten Montag."
+ },
+ "ge457": {
+  "fr": "subir une opération",
+  "pl": "poddać się operacji",
+  "ru": "перенести́ опера́цию",
+  "rulat": "perenestí operáziju",
+  "ex": "My father has to undergo surgery next week.",
+  "exde": "Mein Vater muss sich nächste Woche einer Operation unterziehen."
+ },
+ "ge458": {
+  "fr": "faire effet",
+  "pl": "działać",
+  "ru": "де́йствовать",
+  "rulat": "déjstwowat",
+  "ex": "The painkiller takes effect after twenty minutes.",
+  "exde": "Das Schmerzmittel wirkt nach zwanzig Minuten."
+ },
+ "ge459": {
+  "fr": "les gouttes auriculaires",
+  "pl": "krople do uszu",
+  "ru": "ушны́е ка́пли",
+  "rulat": "uschnýje kápli",
+  "ex": "Use the ear drops three times a day.",
+  "exde": "Nehmen Sie die Ohrentropfen dreimal täglich."
+ },
+ "ge460": {
+  "fr": "l'acné",
+  "pl": "trądzik",
+  "ru": "угрева́я сыпь",
+  "rulat": "ugrewája syp",
+  "ex": "Many teenagers suffer from acne.",
+  "exde": "Viele Jugendliche leiden unter Akne."
+ },
+ "ge461": {
+  "fr": "les acouphènes",
+  "pl": "szumy uszne",
+  "ru": "шум в уша́х",
+  "rulat": "schum w uschách",
+  "ex": "My tinnitus gets worse when I'm stressed.",
+  "exde": "Mein Tinnitus wird schlimmer, wenn ich gestresst bin."
+ },
+ "ge462": {
+  "fr": "l'orgelet",
+  "pl": "jęczmień",
+  "ru": "ячме́нь",
+  "rulat": "jatschmén",
+  "ex": "I have a stye on my left eye.",
+  "exde": "Ich habe ein Gerstenkorn am linken Auge."
+ },
+ "ge463": {
+  "fr": "la verrue",
+  "pl": "brodawka",
+  "ru": "борода́вка",
+  "rulat": "borodáwka",
+  "ex": "The doctor removed the wart from my finger.",
+  "exde": "Der Arzt hat die Warze von meinem Finger entfernt."
+ },
+ "ge464": {
+  "fr": "les lunettes de lecture",
+  "pl": "okulary do czytania",
+  "ru": "очки́ для чте́ния",
+  "rulat": "otschkí dlja tschténija",
+  "ex": "I can't find my reading glasses.",
+  "exde": "Ich finde meine Lesebrille nicht."
+ },
+ "ge465": {
+  "fr": "le glaucome",
+  "pl": "jaskra",
+  "ru": "глауко́ма",
+  "rulat": "glaukóma",
+  "ex": "Glaucoma can damage the optic nerve.",
+  "exde": "Der grüne Star kann den Sehnerv schädigen."
+ },
+ "ge466": {
+  "fr": "l'assurance dépendance",
+  "pl": "ubezpieczenie pielęgnacyjne",
+  "ru": "страхова́ние по ухо́ду",
+  "rulat": "strachowánije po uchódu",
+  "ex": "Long-term care insurance covers part of the costs.",
+  "exde": "Die Pflegeversicherung übernimmt einen Teil der Kosten."
+ },
+ "ge467": {
+  "fr": "l'accident du travail",
+  "pl": "wypadek przy pracy",
+  "ru": "несча́стный слу́чай на произво́дстве",
+  "rulat": "neschtschástnyj slútschaj na proiswódstwe",
+  "ex": "He was injured in an accident at work.",
+  "exde": "Er wurde bei einem Arbeitsunfall verletzt."
+ },
+ "ge468": {
+  "fr": "l'ambulancier",
+  "pl": "ratownik medyczny",
+  "ru": "фе́льдшер ско́рой по́мощи",
+  "rulat": "féldscher skóroj pómoschtschi",
+  "ex": "The paramedic arrived within minutes.",
+  "exde": "Der Sanitäter kam innerhalb weniger Minuten."
+ },
+ "ge469": {
+  "fr": "l'aide à la marche",
+  "pl": "chodzik",
+  "ru": "ходунки́",
+  "rulat": "chodunkí",
+  "ex": "After the operation she needed a walking aid.",
+  "exde": "Nach der Operation brauchte sie eine Gehhilfe."
+ },
+ "ge470": {
+  "fr": "le lit médicalisé",
+  "pl": "łóżko rehabilitacyjne",
+  "ru": "медици́нская крова́ть",
+  "rulat": "medizínskaja krowát",
+  "ex": "We rented a care bed for my grandmother.",
+  "exde": "Wir haben ein Pflegebett für meine Oma gemietet."
+ },
+ "ge471": {
+  "fr": "appeler les secours",
+  "pl": "zadzwonić na numer alarmowy",
+  "ru": "позвони́ть в слу́жбу спасе́ния",
+  "rulat": "poswonít w slúschbu spassénija",
+  "ex": "If someone collapses, call the emergency services immediately.",
+  "exde": "Wenn jemand zusammenbricht, wähle sofort den Notruf."
+ },
+ "ge472": {
+  "fr": "la téléassistance",
+  "pl": "teleopieka",
+  "ru": "трево́жная кно́пка",
+  "rulat": "trewóschnaja knópka",
+  "ex": "My grandfather has a personal alarm system at home.",
+  "exde": "Mein Opa hat zu Hause einen Hausnotruf."
+ },
+ "ge473": {
+  "fr": "suturer une plaie",
+  "pl": "zszyć ranę",
+  "ru": "заши́ть ра́ну",
+  "rulat": "saschít ránu",
+  "ex": "The doctor had to stitch the wound.",
+  "exde": "Der Arzt musste die Wunde nähen."
+ },
+ "ge474": {
+  "fr": "administrer",
+  "pl": "podawać",
+  "ru": "вводи́ть",
+  "rulat": "wwodít",
+  "ex": "The nurse administered the medication.",
+  "exde": "Die Pflegekraft verabreichte das Medikament."
+ },
+ "ge475": {
+  "fr": "poser une perfusion",
+  "pl": "podłączyć kroplówkę",
+  "ru": "поста́вить капе́льницу",
+  "rulat": "postáwit kapélnizu",
+  "ex": "They put him on a drip in the emergency room.",
+  "exde": "In der Notaufnahme haben sie ihm eine Infusion gelegt."
+ },
+ "ge476": {
+  "fr": "le cabinet médical",
+  "pl": "gabinet lekarski",
+  "ru": "кабине́т врача́",
+  "rulat": "kabinjét wratschá",
+  "ex": "The doctor's practice opens at eight.",
+  "exde": "Die Praxis öffnet um acht."
+ },
+ "ge477": {
+  "fr": "la réception",
+  "pl": "rejestracja",
+  "ru": "регистрату́ра",
+  "rulat": "registratúra",
+  "ex": "Please wait at the reception desk.",
+  "exde": "Bitte warten Sie an der Anmeldung."
+ },
+ "ge478": {
+  "fr": "rester à jeun",
+  "pl": "pozostać na czczo",
+  "ru": "остава́ться натощა́к",
+  "rulat": "ostawátsja natoschták",
+  "ex": "You have to fast before surgery.",
+  "exde": "Sie müssen vor der Operation nüchtern bleiben."
+ },
+ "ge479": {
+  "fr": "la phase de réveil",
+  "pl": "faza wybudzania",
+  "ru": "пери́од пробужде́ния",
+  "rulat": "períod probuschdénija",
+  "ex": "The recovery phase usually lasts about an hour.",
+  "exde": "Die Aufwachphase dauert meist etwa eine Stunde."
+ },
+ "ge480": {
+  "fr": "le remède de grand-mère",
+  "pl": "domowy sposób",
+  "ru": "дома́шнее сре́дство",
+  "rulat": "domáschneje srédstwo",
+  "ex": "Honey is a good home remedy for a cough.",
+  "exde": "Honig ist ein gutes Hausmittel gegen Husten."
+ },
+ "ge481": {
+  "fr": "le déambulateur",
+  "pl": "chodzik",
+  "ru": "ходунки́",
+  "rulat": "chodunkí",
+  "ex": "My grandmother walks with a walking frame.",
+  "exde": "Meine Großmutter geht mit einem Rollator."
+ },
+ "ge482": {
+  "fr": "arrêter le saignement",
+  "pl": "zatamować krwawienie",
+  "ru": "останови́ть кровотече́ние",
+  "rulat": "ostanowít krowotetschénije",
+  "ex": "Press on the wound to stop the bleeding.",
+  "exde": "Drück auf die Wunde, um die Blutung zu stillen."
+ },
+ "ge483": {
+  "fr": "le bouche-à-bouche",
+  "pl": "oddech ratowniczy",
+  "ru": "иску́сственное дыха́ние",
+  "rulat": "iskússtwennoje dychánije",
+  "ex": "He gave her rescue breathing until the ambulance arrived.",
+  "exde": "Er leistete ihr Atemspende, bis der Krankenwagen kam."
+ },
+ "ge484": {
+  "fr": "le repos au lit",
+  "pl": "leżenie w łóżku",
+  "ru": "посте́льный режи́м",
+  "rulat": "postélnyj reschím",
+  "ex": "The doctor prescribed three days of bed rest.",
+  "exde": "Der Arzt hat drei Tage Bettruhe verordnet."
+ },
+ "ge485": {
+  "fr": "ausculter",
+  "pl": "osłuchać",
+  "ru": "прослу́шать",
+  "rulat": "proslúschat",
+  "ex": "The doctor listens to my lungs with a stethoscope.",
+  "exde": "Der Arzt horcht meine Lunge ab."
+ },
+ "ge486": {
+  "fr": "prendre le pouls",
+  "pl": "zmierzyć puls",
+  "ru": "изме́рить пульс",
+  "rulat": "ismérit puls",
+  "ex": "The nurse takes my pulse every morning.",
+  "exde": "Die Krankenschwester misst jeden Morgen meinen Puls."
+ },
+ "ge487": {
+  "fr": "se ménager",
+  "pl": "oszczędzać się",
+  "ru": "бере́чь себя́",
+  "rulat": "berétsch sebjá",
+  "ex": "You should take it easy for a few days.",
+  "exde": "Du solltest dich ein paar Tage schonen."
+ },
+ "ge488": {
+  "fr": "clarifier",
+  "pl": "wyjaśnić",
+  "ru": "вы́яснить",
+  "rulat": "wýjasnit",
+  "ex": "We need to clarify the cause of the pain.",
+  "exde": "Wir müssen die Ursache der Schmerzen abklären."
+ },
+ "ge489": {
+  "fr": "la dose journalière",
+  "pl": "dawka dobowa",
+  "ru": "су́точная до́за",
+  "rulat": "ssútotschnaja dósa",
+  "ex": "Do not exceed the daily dose.",
+  "exde": "Überschreiten Sie nicht die Tagesdosis."
+ },
+ "ge490": {
+  "fr": "le pilulier",
+  "pl": "pojemnik na tabletki",
+  "ru": "табле́тница",
+  "rulat": "tabljétniza",
+  "ex": "I fill my pill organiser every Sunday.",
+  "exde": "Ich fülle meine Tablettenbox jeden Sonntag."
+ },
+ "ge491": {
+  "fr": "le laxatif",
+  "pl": "środek przeczyszczający",
+  "ru": "слаби́тельное",
+  "rulat": "slabítelnoje",
+  "ex": "The doctor prescribed a mild laxative.",
+  "exde": "Der Arzt verschrieb ein mildes Abführmittel."
+ },
+ "ge492": {
+  "fr": "l'antihistaminique",
+  "pl": "lek przeciwhistaminowy",
+  "ru": "антигистами́нный препара́т",
+  "rulat": "antigistamínnyj preparát",
+  "ex": "She takes an antihistamine for her hay fever.",
+  "exde": "Sie nimmt ein Antihistaminikum gegen ihren Heuschnupfen."
+ },
+ "ge493": {
+  "fr": "l'hélicoptère sanitaire",
+  "pl": "śmigłowiec ratunkowy",
+  "ru": "санита́рный вертолёт",
+  "rulat": "ssanitárnyj wertoljót",
+  "ex": "The air ambulance landed next to the motorway.",
+  "exde": "Der Rettungshubschrauber landete neben der Autobahn."
+ },
+ "ge494": {
+  "fr": "le lieu de l'accident",
+  "pl": "miejsce wypadku",
+  "ru": "ме́сто ава́рии",
+  "rulat": "mésto awárii",
+  "ex": "The police secured the scene of the accident.",
+  "exde": "Die Polizei sicherte die Unfallstelle."
+ },
+ "ge495": {
+  "fr": "la couverture de survie",
+  "pl": "koc ratunkowy",
+  "ru": "спаса́тельное одея́ло",
+  "rulat": "sspassátelnoje odejálo",
+  "ex": "Wrap him in a foil blanket to keep him warm.",
+  "exde": "Wickeln Sie ihn in eine Rettungsdecke, damit er warm bleibt."
+ },
+ "ge496": {
+  "fr": "soigner",
+  "pl": "opatrzyć",
+  "ru": "подлечи́ть",
+  "rulat": "podletschít",
+  "ex": "The nurse patched up his knee.",
+  "exde": "Die Krankenschwester verarztete sein Knie."
+ },
+ "ge497": {
+  "fr": "irradier",
+  "pl": "naświetlać",
+  "ru": "облуча́ть",
+  "rulat": "oblutschát",
+  "ex": "The tumour will be irradiated for six weeks.",
+  "exde": "Der Tumor wird sechs Wochen lang bestrahlt."
+ },
+ "ge498": {
+  "fr": "remettre en place",
+  "pl": "nastawić",
+  "ru": "вправля́ть",
+  "rulat": "wprawlját",
+  "ex": "The doctor had to set the joint in his shoulder.",
+  "exde": "Der Arzt musste ihm die Schulter einrenken."
+ },
+ "ge499": {
+  "fr": "le suppositoire contre la fièvre",
+  "pl": "czopek przeciwgorączkowy",
+  "ru": "жаропонижа́ющая свеча́",
+  "rulat": "scharoponischájuschtschaja swetschá",
+  "ex": "The pediatrician recommended a fever suppository for the baby.",
+  "exde": "Die Kinderärztin empfahl ein Fieberzäpfchen für das Baby."
+ },
+ "ge500": {
+  "fr": "l'expectorant",
+  "pl": "lek wykrztuśny",
+  "ru": "отха́ркивающее сре́дство",
+  "rulat": "otchárkiwajuschtscheje srédstwo",
+  "ex": "Take the expectorant three times a day with plenty of water.",
+  "exde": "Nimm den Hustenlöser dreimal täglich mit viel Wasser."
+ }
+}

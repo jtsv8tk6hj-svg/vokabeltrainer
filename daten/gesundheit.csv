@@ -1,0 +1,501 @@
+id;de;en;thema
+ge001;das Gesicht;face;Körperteile
+ge002;das Ohr;ear;Körperteile
+ge003;die Nase;nose;Körperteile
+ge004;der Mund;mouth;Körperteile
+ge005;die Zunge;tongue;Körperteile
+ge006;der Hals;"neck; throat";Körperteile
+ge007;die Schulter;shoulder;Körperteile
+ge008;der Ellbogen;elbow;Körperteile
+ge009;das Handgelenk;wrist;Körperteile
+ge010;der Finger;finger;Körperteile
+ge011;die Brust;"chest; breast";Körperteile
+ge012;die Hüfte;hip;Körperteile
+ge013;das Knie;knee;Körperteile
+ge014;der Knöchel;ankle;Körperteile
+ge015;der Zeh;toe;Körperteile
+ge016;die Haut;skin;Körperteile
+ge017;der Knochen;bone;Körperteile
+ge018;der Muskel;muscle;Körperteile
+ge019;das Gelenk;joint;Körperteile
+ge020;die Wirbelsäule;spine;Körperteile
+ge021;die Lunge;lungs;Körperteile
+ge022;der Magen;stomach;Körperteile
+ge023;die Leber;liver;Körperteile
+ge024;die Niere;kidney;Körperteile
+ge025;das Gehirn;brain;Körperteile
+ge026;das Organ;organ;Innere Organe
+ge027;der Darm;bowel;Innere Organe
+ge028;der Dünndarm;small intestine;Innere Organe
+ge029;der Dickdarm;large intestine;Innere Organe
+ge030;der Mastdarm;rectum;Innere Organe
+ge031;der Blinddarm;appendix;Innere Organe
+ge032;die Blase;bladder;Innere Organe
+ge033;die Gallenblase;gallbladder;Innere Organe
+ge034;die Galle;bile;Innere Organe
+ge035;die Bauchspeicheldrüse;pancreas;Innere Organe
+ge036;die Milz;spleen;Innere Organe
+ge037;die Schilddrüse;thyroid gland;Innere Organe
+ge038;die Drüse;gland;Innere Organe
+ge039;die Speiseröhre;oesophagus;Innere Organe
+ge040;die Luftröhre;windpipe;Innere Organe
+ge041;die Bronchien;bronchial tubes;Innere Organe
+ge042;der Kehlkopf;larynx;Innere Organe
+ge043;die Mandel;tonsil;Innere Organe
+ge044;das Zwerchfell;diaphragm;Innere Organe
+ge045;die Gebärmutter;womb;Innere Organe
+ge046;der Eierstock;ovary;Innere Organe
+ge047;die Prostata;prostate;Innere Organe
+ge048;der Hoden;testicle;Innere Organe
+ge049;die Vene;vein;Innere Organe
+ge050;die Arterie;artery;Innere Organe
+ge051;die Kopfschmerzen;headache;Beschwerden und Symptome
+ge052;die Halsschmerzen;sore throat;Beschwerden und Symptome
+ge053;die Bauchschmerzen;stomach ache;Beschwerden und Symptome
+ge054;die Rückenschmerzen;backache;Beschwerden und Symptome
+ge055;die Zahnschmerzen;toothache;Beschwerden und Symptome
+ge056;der Schnupfen;runny nose, head cold;Beschwerden und Symptome
+ge057;die Übelkeit;nausea;Beschwerden und Symptome
+ge058;der Schwindel;dizziness;Beschwerden und Symptome
+ge059;der Durchfall;diarrhoea;Beschwerden und Symptome
+ge060;die Verstopfung;constipation;Beschwerden und Symptome
+ge061;sich übergeben;to be sick, to vomit;Beschwerden und Symptome
+ge062;der Ausschlag;rash;Beschwerden und Symptome
+ge063;der Juckreiz;itching;Beschwerden und Symptome
+ge064;die Schwellung;swelling;Beschwerden und Symptome
+ge065;die Entzündung;inflammation;Beschwerden und Symptome
+ge066;die Müdigkeit;tiredness;Beschwerden und Symptome
+ge067;die Atemnot;shortness of breath;Beschwerden und Symptome
+ge068;das Sodbrennen;heartburn;Beschwerden und Symptome
+ge069;der Krampf;cramp;Beschwerden und Symptome
+ge070;niesen;to sneeze;Beschwerden und Symptome
+ge071;bluten;to bleed;Beschwerden und Symptome
+ge072;wehtun;to hurt;Beschwerden und Symptome
+ge073;jucken;to itch;Beschwerden und Symptome
+ge074;schwindlig;dizzy;Beschwerden und Symptome
+ge075;übel;sick, queasy;Beschwerden und Symptome
+ge076;die Krankheit;illness;Krankheiten
+ge077;sich erkälten;to catch a cold;Krankheiten
+ge078;die Grippe;flu;Krankheiten
+ge079;die Infektion;infection;Krankheiten
+ge080;ansteckend;contagious;Krankheiten
+ge081;sich anstecken;to catch an illness;Krankheiten
+ge082;chronisch;chronic;Krankheiten
+ge083;der Heuschnupfen;hay fever;Krankheiten
+ge084;das Asthma;asthma;Krankheiten
+ge085;der Diabetes;diabetes;Krankheiten
+ge086;der Bluthochdruck;high blood pressure;Krankheiten
+ge087;der Herzinfarkt;heart attack;Krankheiten
+ge088;der Schlaganfall;stroke;Krankheiten
+ge089;der Krebs;cancer;Krankheiten
+ge090;die Migräne;migraine;Krankheiten
+ge091;die Lungenentzündung;pneumonia;Krankheiten
+ge092;die Blasenentzündung;cystitis;Krankheiten
+ge093;die Mittelohrentzündung;middle ear infection;Krankheiten
+ge094;die Magen-Darm-Grippe;stomach bug;Krankheiten
+ge095;die Gehirnerschütterung;concussion;Krankheiten
+ge096;die Depression;depression;Krankheiten
+ge097;die Demenz;dementia;Krankheiten
+ge098;das Symptom;symptom;Krankheiten
+ge099;die Windpocken;chickenpox;Krankheiten
+ge100;die Masern;measles;Krankheiten
+ge101;sich verletzen;to injure oneself;Verletzungen und Unfälle
+ge102;die Wunde;wound;Verletzungen und Unfälle
+ge103;das Blut;blood;Verletzungen und Unfälle
+ge104;der Knochenbruch;fracture;Verletzungen und Unfälle
+ge105;sich etwas brechen;to break (a bone);Verletzungen und Unfälle
+ge106;verstauchen;to sprain;Verletzungen und Unfälle
+ge107;die Prellung;contusion;Verletzungen und Unfälle
+ge108;der blaue Fleck;bruise;Verletzungen und Unfälle
+ge109;die Verbrennung;burn;Verletzungen und Unfälle
+ge110;sich verbrennen;to burn oneself;Verletzungen und Unfälle
+ge111;sich schneiden;to cut oneself;Verletzungen und Unfälle
+ge112;die Schnittwunde;cut;Verletzungen und Unfälle
+ge113;die Schürfwunde;graze;Verletzungen und Unfälle
+ge114;der Verband;bandage;Verletzungen und Unfälle
+ge115;das Pflaster;plaster;Verletzungen und Unfälle
+ge116;der Gips;plaster cast;Verletzungen und Unfälle
+ge117;die Krücke;crutch;Verletzungen und Unfälle
+ge118;die Narbe;scar;Verletzungen und Unfälle
+ge119;nähen;to stitch;Verletzungen und Unfälle
+ge120;der Notarzt;emergency doctor;Verletzungen und Unfälle
+ge121;stürzen;to fall;Verletzungen und Unfälle
+ge122;ausrutschen;to slip;Verletzungen und Unfälle
+ge123;die Zerrung;pulled muscle;Verletzungen und Unfälle
+ge124;sich etwas ausrenken;to dislocate;Verletzungen und Unfälle
+ge125;die Platzwunde;laceration;Verletzungen und Unfälle
+ge126;der Hausarzt;GP (general practitioner);Beim Hausarzt
+ge127;die Arztpraxis;doctor's surgery;Beim Hausarzt
+ge128;das Wartezimmer;waiting room;Beim Hausarzt
+ge129;die Sprechstunde;surgery hours;Beim Hausarzt
+ge130;die Arzthelferin;doctor's receptionist;Beim Hausarzt
+ge131;die Krankenversicherungskarte;health insurance card;Beim Hausarzt
+ge132;die Krankschreibung;sick note;Beim Hausarzt
+ge133;krankschreiben;to sign someone off sick;Beim Hausarzt
+ge134;untersuchen;to examine;Beim Hausarzt
+ge135;die Untersuchung;examination;Beim Hausarzt
+ge136;die Vorsorgeuntersuchung;check-up;Beim Hausarzt
+ge137;abhören;to listen to someone's chest;Beim Hausarzt
+ge138;der Blutdruck;blood pressure;Beim Hausarzt
+ge139;Blut abnehmen;to take a blood sample;Beim Hausarzt
+ge140;Fieber messen;to take someone's temperature;Beim Hausarzt
+ge141;die Beschwerden;complaints (health problems);Beim Hausarzt
+ge142;Was fehlt Ihnen?;What seems to be the problem?;Beim Hausarzt
+ge143;sich krank fühlen;to feel ill;Beim Hausarzt
+ge144;die Diagnose;diagnosis;Beim Hausarzt
+ge145;die Behandlung;treatment;Beim Hausarzt
+ge146;das Medikament;medicine;Beim Hausarzt
+ge147;die Nebenwirkung;side effect;Beim Hausarzt
+ge148;der Facharzt;specialist;Fachärzte und Fachgebiete
+ge149;der Zahnarzt;dentist;Fachärzte und Fachgebiete
+ge150;der Kinderarzt;paediatrician;Fachärzte und Fachgebiete
+ge151;der Frauenarzt;gynaecologist;Fachärzte und Fachgebiete
+ge152;der Augenarzt;ophthalmologist;Fachärzte und Fachgebiete
+ge153;der Hals-Nasen-Ohren-Arzt;ENT specialist;Fachärzte und Fachgebiete
+ge154;der Hautarzt;dermatologist;Fachärzte und Fachgebiete
+ge155;der Orthopäde;orthopaedic specialist;Fachärzte und Fachgebiete
+ge156;der Internist;specialist in internal medicine;Fachärzte und Fachgebiete
+ge157;der Chirurg;surgeon;Fachärzte und Fachgebiete
+ge158;der Urologe;urologist;Fachärzte und Fachgebiete
+ge159;der Neurologe;neurologist;Fachärzte und Fachgebiete
+ge160;der Kardiologe;cardiologist;Fachärzte und Fachgebiete
+ge161;der Psychiater;psychiatrist;Fachärzte und Fachgebiete
+ge162;der Psychotherapeut;psychotherapist;Fachärzte und Fachgebiete
+ge163;der Radiologe;radiologist;Fachärzte und Fachgebiete
+ge164;der Anästhesist;anaesthetist;Fachärzte und Fachgebiete
+ge165;der Onkologe;oncologist;Fachärzte und Fachgebiete
+ge166;der Kieferorthopäde;orthodontist;Fachärzte und Fachgebiete
+ge167;der Allergologe;allergist;Fachärzte und Fachgebiete
+ge168;der Gastroenterologe;gastroenterologist;Fachärzte und Fachgebiete
+ge169;die Hebamme;midwife;Fachärzte und Fachgebiete
+ge170;der Physiotherapeut;physiotherapist;Fachärzte und Fachgebiete
+ge171;die Innere Medizin;internal medicine;Fachärzte und Fachgebiete
+ge172;die Kinderheilkunde;paediatrics;Fachärzte und Fachgebiete
+ge173;der Befund;findings;Untersuchung und Diagnose
+ge174;die Krankengeschichte;medical history;Untersuchung und Diagnose
+ge175;der Verdacht;suspicion;Untersuchung und Diagnose
+ge176;die Blutprobe;blood sample;Untersuchung und Diagnose
+ge177;die Blutuntersuchung;blood test;Untersuchung und Diagnose
+ge178;die Urinprobe;urine sample;Untersuchung und Diagnose
+ge179;den Blutdruck messen;to take someone's blood pressure;Untersuchung und Diagnose
+ge180;der Puls;pulse;Untersuchung und Diagnose
+ge181;das Fieberthermometer;thermometer;Untersuchung und Diagnose
+ge182;das Stethoskop;stethoscope;Untersuchung und Diagnose
+ge183;abtasten;to examine by touch;Untersuchung und Diagnose
+ge184;tief einatmen;to breathe in deeply;Untersuchung und Diagnose
+ge185;den Oberkörper frei machen;to strip to the waist;Untersuchung und Diagnose
+ge186;röntgen;to X-ray;Untersuchung und Diagnose
+ge187;der Ultraschall;ultrasound;Untersuchung und Diagnose
+ge188;das MRT;MRI scan;Untersuchung und Diagnose
+ge189;die Computertomografie;CT scan;Untersuchung und Diagnose
+ge190;das EKG;ECG;Untersuchung und Diagnose
+ge191;die Darmspiegelung;colonoscopy;Untersuchung und Diagnose
+ge192;die Biopsie;biopsy;Untersuchung und Diagnose
+ge193;das Laborergebnis;test result;Untersuchung und Diagnose
+ge194;die Zweitmeinung;second opinion;Untersuchung und Diagnose
+ge195;akut;acute;Untersuchung und Diagnose
+ge196;gutartig;benign;Untersuchung und Diagnose
+ge197;bösartig;malignant;Untersuchung und Diagnose
+ge198;die Station;ward;Im Krankenhaus
+ge199;die Intensivstation;intensive care unit;Im Krankenhaus
+ge200;der Patient;patient;Im Krankenhaus
+ge201;die Pflegekraft;nurse;Im Krankenhaus
+ge202;die Operation;operation;Im Krankenhaus
+ge203;operieren;to operate;Im Krankenhaus
+ge204;die Narkose;general anaesthetic;Im Krankenhaus
+ge205;die Infusion;drip;Im Krankenhaus
+ge206;die Spritze;injection;Im Krankenhaus
+ge207;ins Krankenhaus eingeliefert werden;to be admitted to hospital;Im Krankenhaus
+ge208;entlassen werden;to be discharged;Im Krankenhaus
+ge209;die Entlassung;discharge;Im Krankenhaus
+ge210;die Trage;stretcher;Im Krankenhaus
+ge211;der Rollstuhl;wheelchair;Im Krankenhaus
+ge212;die Besuchszeit;visiting hours;Im Krankenhaus
+ge213;das Krankenzimmer;hospital room;Im Krankenhaus
+ge214;die Visite;ward round;Im Krankenhaus
+ge215;der Oberarzt;senior doctor;Im Krankenhaus
+ge216;der Chefarzt;consultant;Im Krankenhaus
+ge217;sich erholen;to recover;Im Krankenhaus
+ge218;der Eingriff;procedure;Im Krankenhaus
+ge219;das Schmerzmittel;painkiller;Im Krankenhaus
+ge220;die Nachsorge;aftercare;Im Krankenhaus
+ge221;die örtliche Betäubung;local anaesthetic;Operation und Narkose
+ge222;betäuben;to anaesthetise;Operation und Narkose
+ge223;der Operationssaal;operating theatre;Operation und Narkose
+ge224;der Schnitt;incision;Operation und Narkose
+ge225;die Naht;stitches;Operation und Narkose
+ge226;die Fäden ziehen;to remove the stitches;Operation und Narkose
+ge227;nüchtern;nil by mouth;Operation und Narkose
+ge228;das Aufklärungsgespräch;pre-operative consultation;Operation und Narkose
+ge229;der Aufwachraum;recovery room;Operation und Narkose
+ge230;aus der Narkose aufwachen;to come round from the anaesthetic;Operation und Narkose
+ge231;der Zugang;cannula;Operation und Narkose
+ge232;die Komplikation;complication;Operation und Narkose
+ge233;ambulant;as an outpatient;Operation und Narkose
+ge234;die Thrombose;thrombosis;Operation und Narkose
+ge235;der Thrombosestrumpf;compression stocking;Operation und Narkose
+ge236;die Wundheilung;wound healing;Operation und Narkose
+ge237;die Bluttransfusion;blood transfusion;Operation und Narkose
+ge238;der Krankenhausaufenthalt;hospital stay;Operation und Narkose
+ge239;die Schlüssellochchirurgie;keyhole surgery;Operation und Narkose
+ge240;die Transplantation;transplant;Operation und Narkose
+ge241;der Apotheker;the pharmacist;In der Apotheke
+ge242;rezeptpflichtig;prescription-only;In der Apotheke
+ge243;rezeptfrei;over-the-counter;In der Apotheke
+ge244;die Kapsel;the capsule;In der Apotheke
+ge245;die Salbe;the ointment;In der Apotheke
+ge246;der Hustensaft;the cough syrup;In der Apotheke
+ge247;die Augentropfen;the eye drops;In der Apotheke
+ge248;das Nasenspray;the nasal spray;In der Apotheke
+ge249;die Packungsbeilage;the patient information leaflet;In der Apotheke
+ge250;die Dosierung;the dosage;In der Apotheke
+ge251;die Zuzahlung;the prescription charge;In der Apotheke
+ge252;das Generikum;the generic drug;In der Apotheke
+ge253;einnehmen;to take;In der Apotheke
+ge254;auf nüchternen Magen;on an empty stomach;In der Apotheke
+ge255;dreimal täglich;three times a day;In der Apotheke
+ge256;die Wechselwirkung;the interaction;In der Apotheke
+ge257;die Lutschtablette;the lozenge;In der Apotheke
+ge258;die Notdienstapotheke;the duty chemist's;In der Apotheke
+ge259;die Brausetablette;the effervescent tablet;In der Apotheke
+ge260;das Zäpfchen;the suppository;In der Apotheke
+ge261;ein Mittel gegen;something for;In der Apotheke
+ge262;das Verfallsdatum;the expiry date;In der Apotheke
+ge263;die Krankenkasse;the health insurance company;In der Apotheke
+ge264;verschreiben;to prescribe;In der Apotheke
+ge265;die Wirkung;the effect;In der Apotheke
+ge266;die Dosis;dose;Medikamente und Einnahme
+ge267;der Beipackzettel;package leaflet;Medikamente und Einnahme
+ge268;vor dem Essen;before meals;Medikamente und Einnahme
+ge269;nach dem Essen;after meals;Medikamente und Einnahme
+ge270;schlucken;to swallow;Medikamente und Einnahme
+ge271;das Antibiotikum;antibiotic;Medikamente und Einnahme
+ge272;auflösen;to dissolve;Medikamente und Einnahme
+ge273;der Inhalator;inhaler;Medikamente und Einnahme
+ge274;absetzen;to stop taking;Medikamente und Einnahme
+ge275;die Überdosis;overdose;Medikamente und Einnahme
+ge276;vertragen;to tolerate;Medikamente und Einnahme
+ge277;der Wirkstoff;active ingredient;Medikamente und Einnahme
+ge278;das Schlafmittel;sleeping pill;Medikamente und Einnahme
+ge279;das Mittel;remedy;Medikamente und Einnahme
+ge280;kühl lagern;to store in a cool place;Medikamente und Einnahme
+ge281;regelmäßig;regularly;Medikamente und Einnahme
+ge282;halbieren;to halve;Medikamente und Einnahme
+ge283;das Zahnfleisch;gums;Zahnarzt
+ge284;die Karies;tooth decay;Zahnarzt
+ge285;das Loch im Zahn;cavity;Zahnarzt
+ge286;die Krone;crown;Zahnarzt
+ge287;das Implantat;implant;Zahnarzt
+ge288;die Wurzelbehandlung;root canal treatment;Zahnarzt
+ge289;einen Zahn ziehen;to extract a tooth;Zahnarzt
+ge290;der Weisheitszahn;wisdom tooth;Zahnarzt
+ge291;die Zahnspange;brace;Zahnarzt
+ge292;die Zahnprothese;dentures;Zahnarzt
+ge293;die Zahnbürste;toothbrush;Zahnarzt
+ge294;die Zahnpasta;toothpaste;Zahnarzt
+ge295;die Zahnseide;dental floss;Zahnarzt
+ge296;die professionelle Zahnreinigung;scale and polish;Zahnarzt
+ge297;der Zahnstein;tartar;Zahnarzt
+ge298;der Zahnbelag;plaque;Zahnarzt
+ge299;bohren;to drill;Zahnarzt
+ge300;die Zahnfleischentzündung;gum inflammation;Zahnarzt
+ge301;das Zahnfleischbluten;bleeding gums;Zahnarzt
+ge302;empfindlich;sensitive;Zahnarzt
+ge303;der Backenzahn;molar;Zahnarzt
+ge304;der Schneidezahn;incisor;Zahnarzt
+ge305;den Mund ausspülen;to rinse one's mouth;Zahnarzt
+ge306;den Mund weit öffnen;to open wide;Zahnarzt
+ge307;der Abszess;abscess;Zahnarzt
+ge308;die Brille;glasses;Augen, Ohren und Haut
+ge309;die Kontaktlinse;contact lens;Augen, Ohren und Haut
+ge310;kurzsichtig;short-sighted;Augen, Ohren und Haut
+ge311;weitsichtig;long-sighted;Augen, Ohren und Haut
+ge312;die Bindehautentzündung;conjunctivitis;Augen, Ohren und Haut
+ge313;der Sehtest;eye test;Augen, Ohren und Haut
+ge314;die Sehkraft;eyesight;Augen, Ohren und Haut
+ge315;tränen;to water (of eyes);Augen, Ohren und Haut
+ge316;der Pickel;spot;Augen, Ohren und Haut
+ge317;das Muttermal;mole;Augen, Ohren und Haut
+ge318;die Ohrenschmerzen;earache;Augen, Ohren und Haut
+ge319;schwerhörig;hard of hearing;Augen, Ohren und Haut
+ge320;das Hörgerät;hearing aid;Augen, Ohren und Haut
+ge321;das Ohrenschmalz;earwax;Augen, Ohren und Haut
+ge322;der Insektenstich;insect bite;Augen, Ohren und Haut
+ge323;der graue Star;cataract;Augen, Ohren und Haut
+ge324;das Ekzem;eczema;Augen, Ohren und Haut
+ge325;verschwommen sehen;to have blurred vision;Augen, Ohren und Haut
+ge326;die Schwangerschaft;pregnancy;Schwangerschaft und Kinderarzt
+ge327;schwanger;pregnant;Schwangerschaft und Kinderarzt
+ge328;der Schwangerschaftstest;pregnancy test;Schwangerschaft und Kinderarzt
+ge329;der Mutterpass;maternity record;Schwangerschaft und Kinderarzt
+ge330;der Geburtstermin;due date;Schwangerschaft und Kinderarzt
+ge331;die Geburt;birth;Schwangerschaft und Kinderarzt
+ge332;die Wehen;contractions;Schwangerschaft und Kinderarzt
+ge333;der Kaiserschnitt;caesarean section;Schwangerschaft und Kinderarzt
+ge334;die Fehlgeburt;miscarriage;Schwangerschaft und Kinderarzt
+ge335;das Neugeborene;newborn baby;Schwangerschaft und Kinderarzt
+ge336;der Säugling;infant;Schwangerschaft und Kinderarzt
+ge337;stillen;to breastfeed;Schwangerschaft und Kinderarzt
+ge338;die Muttermilch;breast milk;Schwangerschaft und Kinderarzt
+ge339;das Fläschchen;baby bottle;Schwangerschaft und Kinderarzt
+ge340;der Impfpass;vaccination record;Schwangerschaft und Kinderarzt
+ge341;impfen;to vaccinate;Schwangerschaft und Kinderarzt
+ge342;der Mumps;mumps;Schwangerschaft und Kinderarzt
+ge343;die Röteln;German measles;Schwangerschaft und Kinderarzt
+ge344;zahnen;to be teething;Schwangerschaft und Kinderarzt
+ge345;die Kinderkrankheit;childhood illness;Schwangerschaft und Kinderarzt
+ge346;entbinden;to give birth;Schwangerschaft und Kinderarzt
+ge347;der Kreißsaal;delivery room;Schwangerschaft und Kinderarzt
+ge348;das Wochenbett;postnatal period;Schwangerschaft und Kinderarzt
+ge349;der Schnuller;dummy;Schwangerschaft und Kinderarzt
+ge350;die Windel;nappy;Schwangerschaft und Kinderarzt
+ge351;die Psyche;psyche;Psyche und Seele
+ge352;die Seele;soul;Psyche und Seele
+ge353;die Angst;anxiety;Psyche und Seele
+ge354;die Angststörung;anxiety disorder;Psyche und Seele
+ge355;die Panikattacke;panic attack;Psyche und Seele
+ge356;der Stress;stress;Psyche und Seele
+ge357;das Burn-out;burnout;Psyche und Seele
+ge358;der Psychologe;psychologist;Psyche und Seele
+ge359;die Psychotherapie;psychotherapy;Psyche und Seele
+ge360;die Therapie;therapy;Psyche und Seele
+ge361;das Antidepressivum;antidepressant;Psyche und Seele
+ge362;das Beruhigungsmittel;sedative;Psyche und Seele
+ge363;die Schlafstörung;sleep disorder;Psyche und Seele
+ge364;die Schlaflosigkeit;insomnia;Psyche und Seele
+ge365;die Erschöpfung;exhaustion;Psyche und Seele
+ge366;das Trauma;trauma;Psyche und Seele
+ge367;die Sucht;addiction;Psyche und Seele
+ge368;die Essstörung;eating disorder;Psyche und Seele
+ge369;die Stimmung;mood;Psyche und Seele
+ge370;die Stimmungsschwankung;mood swing;Psyche und Seele
+ge371;das Selbstwertgefühl;self-esteem;Psyche und Seele
+ge372;die Einsamkeit;loneliness;Psyche und Seele
+ge373;die Trauer;grief;Psyche und Seele
+ge374;niedergeschlagen;downhearted;Psyche und Seele
+ge375;ängstlich;anxious;Psyche und Seele
+ge376;die Vorsorge;preventive care;Vorsorge und gesundes Leben
+ge377;vorbeugen;to prevent;Vorsorge und gesundes Leben
+ge378;sich impfen lassen;to get vaccinated;Vorsorge und gesundes Leben
+ge379;die Auffrischungsimpfung;booster jab;Vorsorge und gesundes Leben
+ge380;die Früherkennung;early detection;Vorsorge und gesundes Leben
+ge381;der Gesundheitscheck;health check;Vorsorge und gesundes Leben
+ge382;die Krebsvorsorge;cancer screening;Vorsorge und gesundes Leben
+ge383;die Mammografie;mammogram;Vorsorge und gesundes Leben
+ge384;der Blutzucker;blood sugar;Vorsorge und gesundes Leben
+ge385;der Cholesterinspiegel;cholesterol level;Vorsorge und gesundes Leben
+ge386;der Lebensstil;lifestyle;Vorsorge und gesundes Leben
+ge387;die Ernährung;diet;Vorsorge und gesundes Leben
+ge388;sich gesund ernähren;to eat healthily;Vorsorge und gesundes Leben
+ge389;ausgewogen;balanced;Vorsorge und gesundes Leben
+ge390;der Ballaststoff;fibre;Vorsorge und gesundes Leben
+ge391;das Vitamin;vitamin;Vorsorge und gesundes Leben
+ge392;das Nahrungsergänzungsmittel;dietary supplement;Vorsorge und gesundes Leben
+ge393;das Übergewicht;excess weight;Vorsorge und gesundes Leben
+ge394;zunehmen;to put on weight;Vorsorge und gesundes Leben
+ge395;die Bewegung;exercise;Vorsorge und gesundes Leben
+ge396;Sport treiben;to do sport;Vorsorge und gesundes Leben
+ge397;mit dem Rauchen aufhören;to give up smoking;Vorsorge und gesundes Leben
+ge398;der Alkohol;alcohol;Vorsorge und gesundes Leben
+ge399;der Schlaf;sleep;Vorsorge und gesundes Leben
+ge400;sich entspannen;to relax;Vorsorge und gesundes Leben
+ge401;die Arbeitsunfähigkeitsbescheinigung;certificate of incapacity for work;Krankenversicherung und Krankschreibung
+ge402;arbeitsunfähig;unfit for work;Krankenversicherung und Krankschreibung
+ge403;die Arbeitsunfähigkeit;incapacity for work;Krankenversicherung und Krankschreibung
+ge404;gesetzlich versichert;covered by statutory health insurance;Krankenversicherung und Krankschreibung
+ge405;privat versichert;privately insured;Krankenversicherung und Krankschreibung
+ge406;der Privatpatient;private patient;Krankenversicherung und Krankschreibung
+ge407;der Kassenpatient;patient with statutory health insurance;Krankenversicherung und Krankschreibung
+ge408;der Beitrag;contribution;Krankenversicherung und Krankschreibung
+ge409;die Lohnfortzahlung;continued payment of wages;Krankenversicherung und Krankschreibung
+ge410;das Krankengeld;sickness benefit;Krankenversicherung und Krankschreibung
+ge411;die Kostenübernahme;assumption of costs;Krankenversicherung und Krankschreibung
+ge412;erstatten;to reimburse;Krankenversicherung und Krankschreibung
+ge413;die Erstattung;reimbursement;Krankenversicherung und Krankschreibung
+ge414;der Versicherte;insured person;Krankenversicherung und Krankschreibung
+ge415;die Familienversicherung;family health cover;Krankenversicherung und Krankschreibung
+ge416;der Selbstbehalt;excess;Krankenversicherung und Krankschreibung
+ge417;die Zusatzversicherung;supplementary insurance;Krankenversicherung und Krankschreibung
+ge418;die Leistung;benefit;Krankenversicherung und Krankschreibung
+ge419;der Antrag;application;Krankenversicherung und Krankschreibung
+ge420;beantragen;to apply for;Krankenversicherung und Krankschreibung
+ge421;die Versicherungsnummer;insurance number;Krankenversicherung und Krankschreibung
+ge422;der Versicherungsschutz;insurance cover;Krankenversicherung und Krankschreibung
+ge423;die Bescheinigung;certificate;Krankenversicherung und Krankschreibung
+ge424;der Rettungswagen;ambulance;Pflege und Notfall
+ge425;die stabile Seitenlage;recovery position;Pflege und Notfall
+ge426;die Herzdruckmassage;chest compressions;Pflege und Notfall
+ge427;die Wiederbelebung;resuscitation;Pflege und Notfall
+ge428;der Pflegedienst;home care service;Pflege und Notfall
+ge429;das Pflegeheim;care home;Pflege und Notfall
+ge430;pflegebedürftig;in need of care;Pflege und Notfall
+ge431;der Pflegegrad;care level;Pflege und Notfall
+ge432;ohnmächtig werden;to faint;Pflege und Notfall
+ge433;der Schock;shock;Pflege und Notfall
+ge434;der Defibrillator;defibrillator;Pflege und Notfall
+ge435;die Vergiftung;poisoning;Pflege und Notfall
+ge436;sich um jemanden kümmern;to look after someone;Pflege und Notfall
+ge437;behandeln;to treat;Behandeln (Verben)
+ge438;heilen;to heal;Behandeln (Verben)
+ge439;spritzen;to inject;Behandeln (Verben)
+ge440;einweisen;to admit (to hospital);Behandeln (Verben)
+ge441;eingipsen;to put in a plaster cast;Behandeln (Verben)
+ge442;kühlen;to cool;Behandeln (Verben)
+ge443;einreiben;to rub in;Behandeln (Verben)
+ge444;lindern;to relieve;Behandeln (Verben)
+ge445;massieren;to massage;Behandeln (Verben)
+ge446;pflegen;to nurse, to care for;Behandeln (Verben)
+ge447;beatmen;to ventilate;Behandeln (Verben)
+ge448;versorgen;to attend to, to treat (a wound);Behandeln (Verben)
+ge449;ein Medikament absetzen;to stop taking a medication;Behandeln (Verben)
+ge450;ruhigstellen;to immobilise;Behandeln (Verben)
+ge451;eincremen;to apply cream;Behandeln (Verben)
+ge452;sich frei machen;to undress (for an examination);Beim Hausarzt
+ge453;die Aufnahme;admission;Im Krankenhaus
+ge454;der Krankenpfleger;male nurse;Im Krankenhaus
+ge455;die Vollnarkose;general anaesthesia;Operation und Narkose
+ge456;die Voruntersuchung;pre-operative assessment;Operation und Narkose
+ge457;sich einer Operation unterziehen;to undergo surgery;Operation und Narkose
+ge458;wirken;to take effect;Medikamente und Einnahme
+ge459;die Ohrentropfen;ear drops;Augen, Ohren und Haut
+ge460;die Akne;acne;Augen, Ohren und Haut
+ge461;der Tinnitus;tinnitus;Augen, Ohren und Haut
+ge462;das Gerstenkorn;stye;Augen, Ohren und Haut
+ge463;die Warze;wart;Augen, Ohren und Haut
+ge464;die Lesebrille;reading glasses;Augen, Ohren und Haut
+ge465;der grüne Star;glaucoma;Augen, Ohren und Haut
+ge466;die Pflegeversicherung;long-term care insurance;Krankenversicherung und Krankschreibung
+ge467;der Arbeitsunfall;accident at work;Krankenversicherung und Krankschreibung
+ge468;der Sanitäter;paramedic;Pflege und Notfall
+ge469;die Gehhilfe;walking aid;Pflege und Notfall
+ge470;das Pflegebett;care bed;Pflege und Notfall
+ge471;den Notruf wählen;to call the emergency services;Pflege und Notfall
+ge472;der Hausnotruf;personal alarm system;Pflege und Notfall
+ge473;eine Wunde nähen;to stitch a wound;Behandeln (Verben)
+ge474;verabreichen;to administer;Behandeln (Verben)
+ge475;eine Infusion legen;to put someone on a drip;Behandeln (Verben)
+ge476;die Praxis;doctor's practice;Beim Hausarzt
+ge477;die Anmeldung;reception desk;Beim Hausarzt
+ge478;nüchtern bleiben;to fast before surgery;Operation und Narkose
+ge479;die Aufwachphase;recovery phase;Operation und Narkose
+ge480;das Hausmittel;home remedy;Medikamente und Einnahme
+ge481;der Rollator;walking frame;Pflege und Notfall
+ge482;die Blutung stillen;to stop the bleeding;Pflege und Notfall
+ge483;die Atemspende;rescue breathing;Pflege und Notfall
+ge484;die Bettruhe;bed rest;Pflege und Notfall
+ge485;abhorchen;to listen with a stethoscope;Behandeln (Verben)
+ge486;den Puls messen;to take the pulse;Behandeln (Verben)
+ge487;schonen;to take it easy;Behandeln (Verben)
+ge488;abklären;to clarify;Behandeln (Verben)
+ge489;die Tagesdosis;daily dose;Medikamente und Einnahme
+ge490;die Tablettenbox;pill organiser;Medikamente und Einnahme
+ge491;das Abführmittel;laxative;Medikamente und Einnahme
+ge492;das Antihistaminikum;antihistamine;Medikamente und Einnahme
+ge493;der Rettungshubschrauber;air ambulance;Pflege und Notfall
+ge494;die Unfallstelle;scene of the accident;Pflege und Notfall
+ge495;die Rettungsdecke;foil blanket;Pflege und Notfall
+ge496;verarzten;to patch up;Behandeln (Verben)
+ge497;bestrahlen;to irradiate;Behandeln (Verben)
+ge498;einrenken;to set a joint;Behandeln (Verben)
+ge499;das Fieberzäpfchen;fever suppository;Medikamente und Einnahme
+ge500;der Hustenlöser;expectorant;Medikamente und Einnahme
