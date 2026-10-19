@@ -72,11 +72,11 @@ Russisch.
 301 Fachbegriffe der Personalgewinnung der Bundeswehr in elf Kategorien, 240
 Alltagswörter in zwölf Themen, 500 Begriffe rund um Lebensmittel, Küche und Kochen,
 500 zu Reisen und Verkehr, 300 zu Auto und Autoteilen, 500 zu Beruf und Büro, 500 zu
-Gesundheit und Arzt, dazu Verben, Substantive,
+Gesundheit und Arzt, 500 zu Wohnen und Haushalt, dazu Verben, Substantive,
 Adjektive und Pronomen mit Formentafeln. Eigene Wörter lassen sich unter *Neu* anlegen,
 weitere Listen unter *Daten* als CSV einlesen.
 
-## Alltag, Küche, Reisen, Auto, Beruf, Gesundheit und Themen
+## Alltag, Küche, Reisen, Auto, Beruf, Gesundheit, Wohnen und Themen
 
 Der Stapel **Alltag** bringt 240 Wörter und Wendungen in zwölf Themen mit, von
 „Begrüßung und Höflichkeit“ über „Unterwegs“ bis „Körper und Gesundheit“, der Stapel
@@ -87,7 +87,8 @@ Wegbeschreibung, Notfall), **Auto** 300 Begriffe zu Autoteilen, Technik und Werk
 **Beruf** 500 Begriffe zu Beruf, Arbeitswelt und Büro (Bewerbung, Vertrag, Büro,
 E-Mail, Besprechungen, Projekte, Führung, Kündigung, Buchhaltung, Kunden),
 **Gesundheit** 500 Begriffe zu Körper, Beschwerden, Arzt, Krankenhaus, Apotheke und
-Medikamenten.
+Medikamenten, **Wohnen** 500 Begriffe zu Haus, Wohnung, Möbeln, Haushaltsgeräten,
+Putzen, Wäsche, Miete und Umzug.
 Unter *Lernen* den Stapel wählen, dann das Thema, dann starten. Die Themen eines Stapels erscheinen als
 Kategorien.
 

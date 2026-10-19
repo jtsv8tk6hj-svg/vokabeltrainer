@@ -66,6 +66,14 @@ PLAENE = {
         "Vorsorge und gesundes Leben", "Krankenversicherung und Krankschreibung", "Pflege und Notfall",
         "Behandeln (Verben)",
     ]),
+    "wohnen": ("wo", "daten/wohnen.csv", 25, "Wohnen, Haus, Wohnung und Haushalt", [
+        "Haus und Wohnung", "Räume", "Wohnzimmer und Möbel", "Schlafzimmer und Bettwäsche", "Bad und Toilette",
+        "Flur, Keller und Dachboden", "Balkon, Garten und Terrasse", "Türen, Fenster und Schlösser",
+        "Heizung, Strom und Wasser", "Licht und Lampen", "Haushaltsgeräte", "Putzen und Reinigen",
+        "Wäsche und Bügeln", "Müll und Recycling", "Werkzeug und Reparaturen zu Hause", "Umzug und Einrichten",
+        "Miete, Nebenkosten und Vermieter", "Nachbarn und Hausordnung", "Hausarbeit (Verben)",
+        "Haushalt (Wendungen)",
+    ]),
 }
 
 SCHEMA = {"type": "object", "properties": {"items": {"type": "array", "items": {
