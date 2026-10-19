@@ -1,0 +1,501 @@
+id;de;en;thema
+be001;die Tätigkeit;the activity;Berufe und Tätigkeiten
+be002;der Arzt / die Ärztin;the doctor;Berufe und Tätigkeiten
+be003;der Lehrer / die Lehrerin;the teacher;Berufe und Tätigkeiten
+be004;der Krankenpfleger / die Krankenpflegerin;the nurse;Berufe und Tätigkeiten
+be005;der Ingenieur / die Ingenieurin;the engineer;Berufe und Tätigkeiten
+be006;der Verkäufer / die Verkäuferin;the shop assistant;Berufe und Tätigkeiten
+be007;der Koch / die Köchin;the cook;Berufe und Tätigkeiten
+be008;der Kellner / die Kellnerin;the waiter / the waitress;Berufe und Tätigkeiten
+be009;der Polizist / die Polizistin;the police officer;Berufe und Tätigkeiten
+be010;der Rechtsanwalt / die Rechtsanwältin;the lawyer;Berufe und Tätigkeiten
+be011;der Handwerker / die Handwerkerin;the tradesman / the tradeswoman;Berufe und Tätigkeiten
+be012;der Elektriker / die Elektrikerin;the electrician;Berufe und Tätigkeiten
+be013;der Klempner / die Klempnerin;the plumber;Berufe und Tätigkeiten
+be014;der Mechaniker / die Mechanikerin;the mechanic;Berufe und Tätigkeiten
+be015;der Buchhalter / die Buchhalterin;the accountant;Berufe und Tätigkeiten
+be016;der Sekretär / die Sekretärin;the secretary;Berufe und Tätigkeiten
+be017;der Programmierer / die Programmiererin;the programmer;Berufe und Tätigkeiten
+be018;der Architekt / die Architektin;the architect;Berufe und Tätigkeiten
+be019;der Friseur / die Friseurin;the hairdresser;Berufe und Tätigkeiten
+be020;der Bäcker / die Bäckerin;the baker;Berufe und Tätigkeiten
+be021;der Landwirt / die Landwirtin;the farmer;Berufe und Tätigkeiten
+be022;der Fahrer / die Fahrerin;the driver;Berufe und Tätigkeiten
+be023;der Journalist / die Journalistin;the journalist;Berufe und Tätigkeiten
+be024;der Beamte / die Beamtin;the civil servant;Berufe und Tätigkeiten
+be025;der Selbstständige / die Selbstständige;the self-employed person;Berufe und Tätigkeiten
+be026;der Lebenslauf;CV;Bewerbung und Lebenslauf
+be027;das Vorstellungsgespräch;job interview;Bewerbung und Lebenslauf
+be028;die Stellenanzeige;job advertisement;Bewerbung und Lebenslauf
+be029;die Bewerbungsunterlagen;application documents;Bewerbung und Lebenslauf
+be030;das Arbeitszeugnis;reference (from an employer);Bewerbung und Lebenslauf
+be031;die Berufserfahrung;work experience;Bewerbung und Lebenslauf
+be032;der Abschluss;qualification;Bewerbung und Lebenslauf
+be033;die Kenntnisse;knowledge;Bewerbung und Lebenslauf
+be034;die Fähigkeit;skill;Bewerbung und Lebenslauf
+be035;die Sprachkenntnisse;language skills;Bewerbung und Lebenslauf
+be036;das Praktikum;internship;Bewerbung und Lebenslauf
+be037;der Arbeitgeber;employer;Bewerbung und Lebenslauf
+be038;der Arbeitnehmer;employee;Bewerbung und Lebenslauf
+be039;die Gehaltsvorstellung;salary expectations;Bewerbung und Lebenslauf
+be040;das Bewerbungsfoto;application photo;Bewerbung und Lebenslauf
+be041;die Stärke;strength;Bewerbung und Lebenslauf
+be042;die Schwäche;weakness;Bewerbung und Lebenslauf
+be043;die Zusage;offer;Bewerbung und Lebenslauf
+be044;die Absage;rejection;Bewerbung und Lebenslauf
+be045;die Probezeit;probationary period;Bewerbung und Lebenslauf
+be046;der Arbeitsvertrag;employment contract;Bewerbung und Lebenslauf
+be047;teamfähig;able to work in a team;Bewerbung und Lebenslauf
+be048;die Initiativbewerbung;speculative application;Bewerbung und Lebenslauf
+be049;der Bewerber / die Bewerberin;applicant;Vorstellungsgespräch
+be050;das Studium;university studies;Vorstellungsgespräch
+be051;die Gehaltsverhandlung;salary negotiation;Vorstellungsgespräch
+be052;die Herausforderung;challenge;Vorstellungsgespräch
+be053;die Motivation;motivation;Vorstellungsgespräch
+be054;die Verantwortung;responsibility;Vorstellungsgespräch
+be055;der Personalleiter / die Personalleiterin;HR manager;Vorstellungsgespräch
+be056;die Personalabteilung;human resources department;Vorstellungsgespräch
+be057;die Einarbeitung;induction period;Vorstellungsgespräch
+be058;die Kündigungsfrist;notice period;Vorstellungsgespräch
+be059;selbstständig arbeiten;to work independently;Vorstellungsgespräch
+be060;die Eigeninitiative;initiative;Vorstellungsgespräch
+be061;die Weiterbildung;further training;Vorstellungsgespräch
+be062;die Aufstiegsmöglichkeit;opportunity for promotion;Vorstellungsgespräch
+be063;der Eintrittstermin;start date;Vorstellungsgespräch
+be064;die Vollzeitstelle;full-time job;Vorstellungsgespräch
+be065;die Teilzeitstelle;part-time job;Vorstellungsgespräch
+be066;einen guten Eindruck machen;to make a good impression;Vorstellungsgespräch
+be067;das Unternehmen;company;Vorstellungsgespräch
+be068;die Arbeitszeit;working hours;Vorstellungsgespräch
+be069;die Lücke im Lebenslauf;gap in one's CV;Vorstellungsgespräch
+be070;der Lohn;wage;Arbeitsvertrag und Gehalt
+be071;das Bruttogehalt;gross salary;Arbeitsvertrag und Gehalt
+be072;das Nettogehalt;net salary;Arbeitsvertrag und Gehalt
+be073;die Gehaltsabrechnung;payslip;Arbeitsvertrag und Gehalt
+be074;die Gehaltserhöhung;pay rise;Arbeitsvertrag und Gehalt
+be075;der Mindestlohn;minimum wage;Arbeitsvertrag und Gehalt
+be076;der Stundenlohn;hourly wage;Arbeitsvertrag und Gehalt
+be077;der Urlaubsanspruch;holiday entitlement;Arbeitsvertrag und Gehalt
+be078;das Urlaubsgeld;holiday bonus;Arbeitsvertrag und Gehalt
+be079;das Weihnachtsgeld;Christmas bonus;Arbeitsvertrag und Gehalt
+be080;die Prämie;bonus;Arbeitsvertrag und Gehalt
+be081;die Lohnsteuer;income tax;Arbeitsvertrag und Gehalt
+be082;die Sozialversicherung;social security;Arbeitsvertrag und Gehalt
+be083;die Krankenversicherung;health insurance;Arbeitsvertrag und Gehalt
+be084;die Rentenversicherung;state pension scheme;Arbeitsvertrag und Gehalt
+be085;befristet;fixed-term;Arbeitsvertrag und Gehalt
+be086;unbefristet;permanent;Arbeitsvertrag und Gehalt
+be087;die Kündigung;dismissal;Arbeitsvertrag und Gehalt
+be088;kündigen;to hand in one's notice;Arbeitsvertrag und Gehalt
+be089;der Tarifvertrag;collective agreement;Arbeitsvertrag und Gehalt
+be090;die Gewerkschaft;trade union;Arbeitsvertrag und Gehalt
+be091;der Betriebsrat;works council;Arbeitsvertrag und Gehalt
+be092;die Vertragsbedingungen;terms of contract;Arbeitsvertrag und Gehalt
+be093;die Lohnfortzahlung im Krankheitsfall;sick pay;Arbeitsvertrag und Gehalt
+be094;die Krankmeldung;sick note;Arbeitsvertrag und Gehalt
+be095;Urlaub nehmen;to take holiday;Arbeitszeit und Urlaub
+be096;der Urlaubsantrag;holiday request;Arbeitszeit und Urlaub
+be097;Urlaub beantragen;to apply for leave;Arbeitszeit und Urlaub
+be098;Überstunden machen;to work overtime;Arbeitszeit und Urlaub
+be099;Überstunden abbauen;to take time off in lieu;Arbeitszeit und Urlaub
+be100;die Gleitzeit;flexitime;Arbeitszeit und Urlaub
+be101;die Kernarbeitszeit;core hours;Arbeitszeit und Urlaub
+be102;die Schichtarbeit;shift work;Arbeitszeit und Urlaub
+be103;die Frühschicht;early shift;Arbeitszeit und Urlaub
+be104;die Spätschicht;late shift;Arbeitszeit und Urlaub
+be105;die Nachtschicht;night shift;Arbeitszeit und Urlaub
+be106;die Mittagspause;lunch break;Arbeitszeit und Urlaub
+be107;der Feiertag;bank holiday;Arbeitszeit und Urlaub
+be108;der Brückentag;day off between a bank holiday and the weekend;Arbeitszeit und Urlaub
+be109;der Resturlaub;remaining holiday;Arbeitszeit und Urlaub
+be110;der Sonderurlaub;special leave;Arbeitszeit und Urlaub
+be111;die Elternzeit;parental leave;Arbeitszeit und Urlaub
+be112;der Mutterschutz;maternity leave;Arbeitszeit und Urlaub
+be113;krankgeschrieben sein;to be signed off sick;Arbeitszeit und Urlaub
+be114;die Zeiterfassung;time recording;Arbeitszeit und Urlaub
+be115;einstempeln;to clock in;Arbeitszeit und Urlaub
+be116;ausstempeln;to clock out;Arbeitszeit und Urlaub
+be117;sich freinehmen;to take time off;Arbeitszeit und Urlaub
+be118;der freie Tag;day off;Arbeitszeit und Urlaub
+be119;die Wochenarbeitszeit;weekly working hours;Arbeitszeit und Urlaub
+be120;der Schreibtisch;desk;Im Büro (Räume und Einrichtung)
+be121;der Bürostuhl;office chair;Im Büro (Räume und Einrichtung)
+be122;der Besprechungsraum;meeting room;Im Büro (Räume und Einrichtung)
+be123;der Konferenzraum;conference room;Im Büro (Räume und Einrichtung)
+be124;der Empfang;reception;Im Büro (Räume und Einrichtung)
+be125;die Kaffeeküche;staff kitchen;Im Büro (Räume und Einrichtung)
+be126;der Pausenraum;break room;Im Büro (Räume und Einrichtung)
+be127;das Großraumbüro;open-plan office;Im Büro (Räume und Einrichtung)
+be128;das Einzelbüro;private office;Im Büro (Räume und Einrichtung)
+be129;der Arbeitsplatz;workplace;Im Büro (Räume und Einrichtung)
+be130;der Flur;corridor;Im Büro (Räume und Einrichtung)
+be131;der Aktenschrank;filing cabinet;Im Büro (Räume und Einrichtung)
+be132;die Schublade;drawer;Im Büro (Räume und Einrichtung)
+be133;der Kopierer;photocopier;Im Büro (Räume und Einrichtung)
+be134;der Bildschirm;screen;Im Büro (Räume und Einrichtung)
+be135;die Tastatur;keyboard;Im Büro (Räume und Einrichtung)
+be136;die Maus;mouse;Im Büro (Räume und Einrichtung)
+be137;der Laptop;laptop;Im Büro (Räume und Einrichtung)
+be138;die Schreibtischlampe;desk lamp;Im Büro (Räume und Einrichtung)
+be139;der Papierkorb;wastepaper basket;Im Büro (Räume und Einrichtung)
+be140;das Whiteboard;whiteboard;Im Büro (Räume und Einrichtung)
+be141;der Beamer;projector;Im Büro (Räume und Einrichtung)
+be142;die Pinnwand;noticeboard;Im Büro (Räume und Einrichtung)
+be143;der Ordner;folder;Im Büro (Räume und Einrichtung)
+be144;der Aktenvernichter;shredder;Im Büro (Räume und Einrichtung)
+be145;der Kugelschreiber;ballpoint pen;Büromaterial und Geräte
+be146;der Bleistift;pencil;Büromaterial und Geräte
+be147;der Radiergummi;rubber;Büromaterial und Geräte
+be148;der Anspitzer;pencil sharpener;Büromaterial und Geräte
+be149;das Lineal;ruler;Büromaterial und Geräte
+be150;der Textmarker;highlighter;Büromaterial und Geräte
+be151;die Schere;scissors;Büromaterial und Geräte
+be152;der Klebstoff;glue;Büromaterial und Geräte
+be153;der Tesafilm;Sellotape;Büromaterial und Geräte
+be154;der Hefter;stapler;Büromaterial und Geräte
+be155;die Heftklammer;staple;Büromaterial und Geräte
+be156;der Locher;hole punch;Büromaterial und Geräte
+be157;die Büroklammer;paper clip;Büromaterial und Geräte
+be158;der Notizblock;notepad;Büromaterial und Geräte
+be159;der Haftnotizzettel;sticky note;Büromaterial und Geräte
+be160;der Briefumschlag;envelope;Büromaterial und Geräte
+be161;der Scanner;scanner;Büromaterial und Geräte
+be162;das Druckerpapier;printer paper;Büromaterial und Geräte
+be163;die Druckerpatrone;ink cartridge;Büromaterial und Geräte
+be164;der Toner;toner;Büromaterial und Geräte
+be165;der Taschenrechner;calculator;Büromaterial und Geräte
+be166;die Klarsichthülle;plastic wallet;Büromaterial und Geräte
+be167;der Terminkalender;diary;Büromaterial und Geräte
+be168;das Headset;headset;Büromaterial und Geräte
+be169;der USB-Stick;USB stick;Büromaterial und Geräte
+be170;die Datei;the file;Computer und Software
+be171;das Programm;the program;Computer und Software
+be172;der Anhang;the attachment;Computer und Software
+be173;speichern;to save;Computer und Software
+be174;löschen;to delete;Computer und Software
+be175;herunterladen;to download;Computer und Software
+be176;hochladen;to upload;Computer und Software
+be177;ausdrucken;to print out;Computer und Software
+be178;sich anmelden;to log in;Computer und Software
+be179;sich abmelden;to log out;Computer und Software
+be180;aktualisieren;to update;Computer und Software
+be181;installieren;to install;Computer und Software
+be182;das Netzwerk;the network;Computer und Software
+be183;die Sicherungskopie;the backup;Computer und Software
+be184;das Betriebssystem;the operating system;Computer und Software
+be185;die Festplatte;the hard drive;Computer und Software
+be186;der Virus;the virus;Computer und Software
+be187;abstürzen;to crash;Computer und Software
+be188;neu starten;to restart;Computer und Software
+be189;die Tabellenkalkulation;the spreadsheet;Computer und Software
+be190;die Textverarbeitung;word processing;Computer und Software
+be191;das WLAN;the Wi-Fi;Computer und Software
+be192;die Internetverbindung;the internet connection;Computer und Software
+be193;das Benutzerkonto;the user account;Computer und Software
+be194;die Software;the software;Computer und Software
+be195;der Betreff;subject line;E-Mail und Schriftverkehr
+be196;der Empfänger / die Empfängerin;recipient;E-Mail und Schriftverkehr
+be197;der Absender / die Absenderin;sender;E-Mail und Schriftverkehr
+be198;die Anrede;salutation;E-Mail und Schriftverkehr
+be199;die Grußformel;closing formula;E-Mail und Schriftverkehr
+be200;weiterleiten;to forward;E-Mail und Schriftverkehr
+be201;allen antworten;to reply to all;E-Mail und Schriftverkehr
+be202;in Kopie setzen;to copy in;E-Mail und Schriftverkehr
+be203;die Blindkopie;blind carbon copy (bcc);E-Mail und Schriftverkehr
+be204;der Posteingang;inbox;E-Mail und Schriftverkehr
+be205;der Postausgang;outbox;E-Mail und Schriftverkehr
+be206;der Entwurf;draft;E-Mail und Schriftverkehr
+be207;der Spam;spam;E-Mail und Schriftverkehr
+be208;die Abwesenheitsnotiz;out-of-office message;E-Mail und Schriftverkehr
+be209;der Briefkopf;letterhead;E-Mail und Schriftverkehr
+be210;die Signatur;email signature;E-Mail und Schriftverkehr
+be211;die Briefmarke;stamp;E-Mail und Schriftverkehr
+be212;das Einschreiben;registered letter;E-Mail und Schriftverkehr
+be213;die Anfrage;enquiry;E-Mail und Schriftverkehr
+be214;die Rückmeldung;feedback;E-Mail und Schriftverkehr
+be215;bestätigen;to confirm;E-Mail und Schriftverkehr
+be216;Sehr geehrte Damen und Herren;Dear Sir or Madam;E-Mail und Schriftverkehr
+be217;Mit freundlichen Grüßen;Yours faithfully / Kind regards;E-Mail und Schriftverkehr
+be218;Vielen Dank im Voraus;Thank you in advance;E-Mail und Schriftverkehr
+be219;dringend;urgent;E-Mail und Schriftverkehr
+be220;zurückrufen;to call back;Telefon und Videokonferenz
+be221;der Anrufbeantworter;the answering machine;Telefon und Videokonferenz
+be222;die Mailbox;the voicemail;Telefon und Videokonferenz
+be223;eine Nachricht hinterlassen;to leave a message;Telefon und Videokonferenz
+be224;auflegen;to hang up;Telefon und Videokonferenz
+be225;abnehmen;to answer the phone;Telefon und Videokonferenz
+be226;besetzt;engaged;Telefon und Videokonferenz
+be227;die Durchwahl;the direct line;Telefon und Videokonferenz
+be228;verbinden;to put through;Telefon und Videokonferenz
+be229;die Vorwahl;the dialling code;Telefon und Videokonferenz
+be230;wählen;to dial;Telefon und Videokonferenz
+be231;Am Apparat.;Speaking.;Telefon und Videokonferenz
+be232;Bleiben Sie bitte dran.;Please hold the line.;Telefon und Videokonferenz
+be233;falsch verbunden sein;to have the wrong number;Telefon und Videokonferenz
+be234;die Verbindung;the connection;Telefon und Videokonferenz
+be235;die Videokonferenz;the video conference;Telefon und Videokonferenz
+be236;die Telefonkonferenz;the conference call;Telefon und Videokonferenz
+be237;die Kamera;the camera;Telefon und Videokonferenz
+be238;das Mikrofon;the microphone;Telefon und Videokonferenz
+be239;stummschalten;to mute;Telefon und Videokonferenz
+be240;den Bildschirm teilen;to share one's screen;Telefon und Videokonferenz
+be241;der Link;the link;Telefon und Videokonferenz
+be242;die Einladung;the invitation;Telefon und Videokonferenz
+be243;der Teilnehmer / die Teilnehmerin;the participant;Telefon und Videokonferenz
+be244;Können Sie mich hören?;Can you hear me?;Telefon und Videokonferenz
+be245;einen Termin vereinbaren;to make an appointment;Besprechungen und Termine
+be246;einen Termin verschieben;to postpone an appointment;Besprechungen und Termine
+be247;einen Termin absagen;to cancel an appointment;Besprechungen und Termine
+be248;die Tagesordnung;agenda;Besprechungen und Termine
+be249;der Tagesordnungspunkt;agenda item;Besprechungen und Termine
+be250;das Protokoll;minutes;Besprechungen und Termine
+be251;Protokoll führen;to take the minutes;Besprechungen und Termine
+be252;die Sitzung;meeting;Besprechungen und Termine
+be253;die Präsentation;presentation;Besprechungen und Termine
+be254;präsentieren;to present;Besprechungen und Termine
+be255;der Vorschlag;suggestion;Besprechungen und Termine
+be256;vorschlagen;to suggest;Besprechungen und Termine
+be257;eine Entscheidung treffen;to make a decision;Besprechungen und Termine
+be258;die Abstimmung;vote;Besprechungen und Termine
+be259;der Vorsitz;chair;Besprechungen und Termine
+be260;die Diskussion;discussion;Besprechungen und Termine
+be261;diskutieren;to discuss;Besprechungen und Termine
+be262;das Ergebnis;outcome;Besprechungen und Termine
+be263;zusammenfassen;to summarise;Besprechungen und Termine
+be264;sich einigen;to agree;Besprechungen und Termine
+be265;der Zeitplan;schedule;Besprechungen und Termine
+be266;verhindert sein;to be unable to attend;Besprechungen und Termine
+be267;Hätten Sie am … Zeit?;Would you be available on …?;Besprechungen und Termine
+be268;eine Frist einhalten;to meet a deadline;Projekte und Aufgaben
+be269;der Projektleiter / die Projektleiterin;project manager;Projekte und Aufgaben
+be270;das Ziel;goal;Projekte und Aufgaben
+be271;der Meilenstein;milestone;Projekte und Aufgaben
+be272;die Priorität;priority;Projekte und Aufgaben
+be273;Prioritäten setzen;to set priorities;Projekte und Aufgaben
+be274;delegieren;to delegate;Projekte und Aufgaben
+be275;erledigen;to get done;Projekte und Aufgaben
+be276;der Fortschritt;progress;Projekte und Aufgaben
+be277;umsetzen;to implement;Projekte und Aufgaben
+be278;die Umsetzung;implementation;Projekte und Aufgaben
+be279;das Budget;budget;Projekte und Aufgaben
+be280;der Aufwand;effort;Projekte und Aufgaben
+be281;die Verzögerung;delay;Projekte und Aufgaben
+be282;der Engpass;bottleneck;Projekte und Aufgaben
+be283;zuständig sein für;to be in charge of;Projekte und Aufgaben
+be284;die Zuständigkeit;area of responsibility;Projekte und Aufgaben
+be285;die To-do-Liste;to-do list;Projekte und Aufgaben
+be286;der Zwischenstand;progress update;Projekte und Aufgaben
+be287;der Auftrag;assignment;Projekte und Aufgaben
+be288;die Anforderung;requirement;Projekte und Aufgaben
+be289;im Verzug sein;to be behind schedule;Projekte und Aufgaben
+be290;unter Zeitdruck stehen;to be under time pressure;Projekte und Aufgaben
+be291;das Risiko;risk;Projekte und Aufgaben
+be292;zuweisen;to assign;Projekte und Aufgaben
+be293;der Kollege / die Kollegin;colleague;Kolleginnen, Kollegen und Vorgesetzte
+be294;der Vorgesetzte / die Vorgesetzte;superior, line manager;Kolleginnen, Kollegen und Vorgesetzte
+be295;der Chef / die Chefin;boss;Kolleginnen, Kollegen und Vorgesetzte
+be296;der Mitarbeiter / die Mitarbeiterin;employee, member of staff;Kolleginnen, Kollegen und Vorgesetzte
+be297;das Team;team;Kolleginnen, Kollegen und Vorgesetzte
+be298;die Abteilung;department;Kolleginnen, Kollegen und Vorgesetzte
+be299;der Abteilungsleiter / die Abteilungsleiterin;head of department;Kolleginnen, Kollegen und Vorgesetzte
+be300;die Geschäftsführung;management;Kolleginnen, Kollegen und Vorgesetzte
+be301;der Teamleiter / die Teamleiterin;team leader;Kolleginnen, Kollegen und Vorgesetzte
+be302;die Hierarchie;hierarchy;Kolleginnen, Kollegen und Vorgesetzte
+be303;das Betriebsklima;working atmosphere;Kolleginnen, Kollegen und Vorgesetzte
+be304;zusammenarbeiten;to work together;Kolleginnen, Kollegen und Vorgesetzte
+be305;die Zusammenarbeit;cooperation;Kolleginnen, Kollegen und Vorgesetzte
+be306;kollegial;collegial, supportive;Kolleginnen, Kollegen und Vorgesetzte
+be307;hilfsbereit;helpful;Kolleginnen, Kollegen und Vorgesetzte
+be308;sich mit jemandem gut verstehen;to get on well with someone;Kolleginnen, Kollegen und Vorgesetzte
+be309;der Konflikt;conflict;Kolleginnen, Kollegen und Vorgesetzte
+be310;die Kritik;criticism;Kolleginnen, Kollegen und Vorgesetzte
+be311;loben;to praise;Kolleginnen, Kollegen und Vorgesetzte
+be312;der Praktikant / die Praktikantin;intern;Kolleginnen, Kollegen und Vorgesetzte
+be313;der Auszubildende / die Auszubildende;trainee, apprentice;Kolleginnen, Kollegen und Vorgesetzte
+be314;einarbeiten;to train someone up, to show someone the ropes;Kolleginnen, Kollegen und Vorgesetzte
+be315;vertreten;to stand in for, to cover for;Kolleginnen, Kollegen und Vorgesetzte
+be316;die Vertretung;cover, stand-in;Kolleginnen, Kollegen und Vorgesetzte
+be317;das Mitarbeitergespräch;appraisal, performance review;Kolleginnen, Kollegen und Vorgesetzte
+be318;die Führungskraft;manager;Führung und Personal
+be319;entlassen;to dismiss;Führung und Personal
+be320;die Beförderung;promotion;Führung und Personal
+be321;befördern;to promote;Führung und Personal
+be322;motivieren;to motivate;Führung und Personal
+be323;der Führungsstil;leadership style;Führung und Personal
+be324;die Leistungsbeurteilung;performance appraisal;Führung und Personal
+be325;kritisieren;to criticise;Führung und Personal
+be326;der Fachkräftemangel;skills shortage;Führung und Personal
+be327;die Abmahnung;formal warning;Führung und Personal
+be328;die Lehre;apprenticeship;Ausbildung und Weiterbildung
+be329;der Ausbildungsplatz;apprenticeship place;Ausbildung und Weiterbildung
+be330;der Ausbilder / die Ausbilderin;trainer, instructor;Ausbildung und Weiterbildung
+be331;die Ausbildungsvergütung;apprentice pay;Ausbildung und Weiterbildung
+be332;die Berufsschule;vocational school;Ausbildung und Weiterbildung
+be333;das duale System;dual vocational training system;Ausbildung und Weiterbildung
+be334;das Berichtsheft;training record book;Ausbildung und Weiterbildung
+be335;die Fortbildung;further training, professional development;Ausbildung und Weiterbildung
+be336;sich weiterbilden;to undertake further training;Ausbildung und Weiterbildung
+be337;die Umschulung;retraining;Ausbildung und Weiterbildung
+be338;der Lehrgang;training course;Ausbildung und Weiterbildung
+be339;die Schulung;training session;Ausbildung und Weiterbildung
+be340;das Seminar;seminar;Ausbildung und Weiterbildung
+be341;das Webinar;webinar;Ausbildung und Weiterbildung
+be342;einen Kurs belegen;to take a course;Ausbildung und Weiterbildung
+be343;das Fernstudium;distance learning;Ausbildung und Weiterbildung
+be344;die Abschlussprüfung;final exam;Ausbildung und Weiterbildung
+be345;eine Prüfung bestehen;to pass an exam;Ausbildung und Weiterbildung
+be346;durchfallen;to fail;Ausbildung und Weiterbildung
+be347;das Zertifikat;certificate;Ausbildung und Weiterbildung
+be348;die Teilnahmebestätigung;certificate of attendance;Ausbildung und Weiterbildung
+be349;sich qualifizieren;to qualify;Ausbildung und Weiterbildung
+be350;erwerben;to acquire;Ausbildung und Weiterbildung
+be351;der Bildungsurlaub;educational leave;Ausbildung und Weiterbildung
+be352;das lebenslange Lernen;lifelong learning;Ausbildung und Weiterbildung
+be353;das Kündigungsschreiben;letter of resignation;Kündigung und Jobwechsel
+be354;fristlos kündigen;to dismiss without notice;Kündigung und Jobwechsel
+be355;die Abfindung;severance pay;Kündigung und Jobwechsel
+be356;der Aufhebungsvertrag;termination agreement;Kündigung und Jobwechsel
+be357;arbeitslos;unemployed;Kündigung und Jobwechsel
+be358;sich arbeitslos melden;to register as unemployed;Kündigung und Jobwechsel
+be359;das Arbeitslosengeld;unemployment benefit;Kündigung und Jobwechsel
+be360;die Agentur für Arbeit;Jobcentre;Kündigung und Jobwechsel
+be361;der Jobwechsel;change of job;Kündigung und Jobwechsel
+be362;den Job wechseln;to change jobs;Kündigung und Jobwechsel
+be363;der letzte Arbeitstag;last working day;Kündigung und Jobwechsel
+be364;der Kündigungsschutz;protection against dismissal;Kündigung und Jobwechsel
+be365;die Übergabe;handover;Kündigung und Jobwechsel
+be366;der Nachfolger;successor;Kündigung und Jobwechsel
+be367;das Jobangebot;job offer;Kündigung und Jobwechsel
+be368;die Buchhaltung;accounting;Buchhaltung und Rechnungen
+be369;eine Rechnung stellen;to issue an invoice;Buchhaltung und Rechnungen
+be370;die Rechnungsnummer;invoice number;Buchhaltung und Rechnungen
+be371;der Rechnungsbetrag;invoice amount;Buchhaltung und Rechnungen
+be372;die Mehrwertsteuer;VAT (value added tax);Buchhaltung und Rechnungen
+be373;netto;net;Buchhaltung und Rechnungen
+be374;brutto;gross;Buchhaltung und Rechnungen
+be375;die Zahlungsfrist;payment deadline;Buchhaltung und Rechnungen
+be376;fällig;due;Buchhaltung und Rechnungen
+be377;überweisen;to transfer;Buchhaltung und Rechnungen
+be378;die Überweisung;bank transfer;Buchhaltung und Rechnungen
+be379;die Mahnung;reminder (for payment);Buchhaltung und Rechnungen
+be380;der Beleg;voucher;Buchhaltung und Rechnungen
+be381;die Ausgaben;expenses;Buchhaltung und Rechnungen
+be382;die Einnahmen;income;Buchhaltung und Rechnungen
+be383;der Umsatz;turnover;Buchhaltung und Rechnungen
+be384;der Gewinn;profit;Buchhaltung und Rechnungen
+be385;der Verlust;loss;Buchhaltung und Rechnungen
+be386;die Bilanz;balance sheet;Buchhaltung und Rechnungen
+be387;das Konto;account;Buchhaltung und Rechnungen
+be388;die Buchung;entry;Buchhaltung und Rechnungen
+be389;die Steuererklärung;tax return;Buchhaltung und Rechnungen
+be390;die Kosten;costs;Buchhaltung und Rechnungen
+be391;die Gutschrift;credit note;Buchhaltung und Rechnungen
+be392;der Rabatt;discount;Buchhaltung und Rechnungen
+be393;der Kunde / die Kundin;customer;Kunden und Vertrieb
+be394;der Stammkunde / die Stammkundin;regular customer;Kunden und Vertrieb
+be395;der Neukunde / die Neukundin;new customer;Kunden und Vertrieb
+be396;der Vertrieb;sales;Kunden und Vertrieb
+be397;der Außendienst;field sales;Kunden und Vertrieb
+be398;der Innendienst;office-based sales;Kunden und Vertrieb
+be399;ein Angebot erstellen;to draw up a quote;Kunden und Vertrieb
+be400;die Bestellung;order;Kunden und Vertrieb
+be401;die Auftragsbestätigung;order confirmation;Kunden und Vertrieb
+be402;die Lieferung;delivery;Kunden und Vertrieb
+be403;liefern;to deliver;Kunden und Vertrieb
+be404;der Liefertermin;delivery date;Kunden und Vertrieb
+be405;die Preisliste;price list;Kunden und Vertrieb
+be406;verhandeln;to negotiate;Kunden und Vertrieb
+be407;die Verhandlung;negotiation;Kunden und Vertrieb
+be408;einen Vertrag abschließen;to conclude a contract;Kunden und Vertrieb
+be409;die Reklamation;complaint;Kunden und Vertrieb
+be410;sich beschweren;to complain;Kunden und Vertrieb
+be411;die Kundenzufriedenheit;customer satisfaction;Kunden und Vertrieb
+be412;der Kundendienst;customer service;Kunden und Vertrieb
+be413;die Kundenbetreuung;customer care;Kunden und Vertrieb
+be414;der Ansprechpartner / die Ansprechpartnerin;contact person;Kunden und Vertrieb
+be415;der Wettbewerber / die Wettbewerberin;competitor;Kunden und Vertrieb
+be416;die Akquise;customer acquisition;Kunden und Vertrieb
+be417;die Kundenbindung;customer loyalty;Kunden und Vertrieb
+be418;leiten;to manage;Arbeiten (Verben)
+be419;bearbeiten;to process;Arbeiten (Verben)
+be420;sich kümmern um;to take care of;Arbeiten (Verben)
+be421;korrigieren;to correct;Arbeiten (Verben)
+be422;kopieren;to copy;Arbeiten (Verben)
+be423;scannen;to scan;Arbeiten (Verben)
+be424;verdienen;to earn;Arbeiten (Verben)
+be425;sich krankmelden;to call in sick;Arbeiten (Verben)
+be426;betreuen;to look after;Arbeiten (Verben)
+be427;koordinieren;to coordinate;Arbeiten (Verben)
+be428;analysieren;to analyse;Arbeiten (Verben)
+be429;Feierabend machen;to finish work;Arbeiten (Verben)
+be430;ausfüllen;to fill in;Arbeiten (Verben)
+be431;Schönen Feierabend!;Have a nice evening!;Redewendungen im Büro
+be432;jemanden auf dem Laufenden halten;to keep someone up to date;Redewendungen im Büro
+be433;etwas auf den Punkt bringen;to get to the point;Redewendungen im Büro
+be434;an einem Strang ziehen;to pull together;Redewendungen im Büro
+be435;unter vier Augen sprechen;to speak in private;Redewendungen im Büro
+be436;jemandem den Rücken freihalten;to cover for someone;Redewendungen im Büro
+be437;etwas auf die lange Bank schieben;to put something off;Redewendungen im Büro
+be438;Dienst nach Vorschrift machen;to work to rule;Redewendungen im Büro
+be439;alle Hände voll zu tun haben;to have one's hands full;Redewendungen im Büro
+be440;die Initiative ergreifen;to take the initiative;Redewendungen im Büro
+be441;etwas in Angriff nehmen;to tackle something;Redewendungen im Büro
+be442;auf Hochtouren laufen;to be in full swing;Redewendungen im Büro
+be443;den Überblick behalten;to keep track;Redewendungen im Büro
+be444;den Überblick verlieren;to lose track;Redewendungen im Büro
+be445;etwas unter Dach und Fach bringen;to get something wrapped up;Redewendungen im Büro
+be446;Rücksprache halten;to consult;Redewendungen im Büro
+be447;im Homeoffice arbeiten;to work from home;Redewendungen im Büro
+be448;eine Besprechung ansetzen;to schedule a meeting;Redewendungen im Büro
+be449;Ich melde mich bei Ihnen.;I'll get back to you.;Redewendungen im Büro
+be450;Ich bin heute nicht im Büro.;I'm out of the office today.;Redewendungen im Büro
+be451;am Ball bleiben;to keep at it;Redewendungen im Büro
+be452;etwas abhaken;to tick something off;Redewendungen im Büro
+be453;jemandem Bescheid geben;to let someone know;Redewendungen im Büro
+be454;ins kalte Wasser geworfen werden;to be thrown in at the deep end;Redewendungen im Büro
+be455;das Rad neu erfinden;to reinvent the wheel;Redewendungen im Büro
+be456;der Werdegang;career history;Bewerbung und Lebenslauf
+be457;die Bewerbungsfrist;application deadline;Bewerbung und Lebenslauf
+be458;sich bewerben um;to apply for;Vorstellungsgespräch
+be459;das Anliegen;the concern;Besprechungen und Termine
+be460;die Rückfrage;the follow-up question;Besprechungen und Termine
+be461;die Belegschaft;workforce;Führung und Personal
+be462;die Anerkennung;recognition;Führung und Personal
+be463;Feedback geben;to give feedback;Führung und Personal
+be464;die Fluktuation;staff turnover;Führung und Personal
+be465;gekündigt werden;to be made redundant;Kündigung und Jobwechsel
+be466;die betriebsbedingte Kündigung;the redundancy;Kündigung und Jobwechsel
+be467;freigestellt werden;to be put on garden leave;Kündigung und Jobwechsel
+be468;die Kündigungsschutzklage;the unfair dismissal claim;Kündigung und Jobwechsel
+be469;sich beruflich neu orientieren;to reorient oneself professionally;Kündigung und Jobwechsel
+be470;die Arbeitssuche;the job search;Kündigung und Jobwechsel
+be471;das Austrittsgespräch;the exit interview;Kündigung und Jobwechsel
+be472;einreichen;to submit;Arbeiten (Verben)
+be473;erstellen;to draw up, to create;Arbeiten (Verben)
+be474;entwickeln;to develop;Arbeiten (Verben)
+be475;verwalten;to manage, to administer;Arbeiten (Verben)
+be476;der Eindruck;impression;Vorstellungsgespräch
+be477;die Körpersprache;body language;Vorstellungsgespräch
+be478;der Händedruck;handshake;Vorstellungsgespräch
+be479;die Teamleitung;team leadership;Führung und Personal
+be480;die Zielvereinbarung;target agreement;Führung und Personal
+be481;die Anweisung;instruction;Führung und Personal
+be482;die Stellenbeschreibung;job description;Führung und Personal
+be483;die Teambesprechung;team meeting;Führung und Personal
+be484;der Vorgesetzte;superior;Führung und Personal
+be485;das Vorbild;role model;Führung und Personal
+be486;anerkennen;to acknowledge;Führung und Personal
+be487;die Arbeitsmoral;morale;Führung und Personal
+be488;das Vertrauen;trust;Führung und Personal
+be489;die Verantwortung übernehmen;to take responsibility;Führung und Personal
+be490;fristlos;without notice;Kündigung und Jobwechsel
+be491;die Arbeitslosigkeit;unemployment;Kündigung und Jobwechsel
+be492;das Arbeitsamt;job centre;Kündigung und Jobwechsel
+be493;vorbereiten;to prepare;Arbeiten (Verben)
+be494;protokollieren;to take minutes;Arbeiten (Verben)
+be495;archivieren;to archive;Arbeiten (Verben)
+be496;verschieben;to postpone;Arbeiten (Verben)
+be497;priorisieren;to prioritise;Arbeiten (Verben)
+be498;abstimmen;to coordinate with;Arbeiten (Verben)
+be499;recherchieren;to research;Arbeiten (Verben)
+be500;freigeben;to approve;Arbeiten (Verben)

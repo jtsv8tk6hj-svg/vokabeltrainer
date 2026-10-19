@@ -1,0 +1,4002 @@
+{
+ "be001": {
+  "fr": "l'activité",
+  "pl": "czynność",
+  "ru": "де́ятельность",
+  "rulat": "déjatelnost",
+  "ex": "Reading is my favourite activity.",
+  "exde": "Lesen ist meine liebste Tätigkeit."
+ },
+ "be002": {
+  "fr": "le médecin / la médecin",
+  "pl": "lekarz / lekarka",
+  "ru": "врач",
+  "rulat": "wratsch",
+  "ex": "The doctor examined my throat.",
+  "exde": "Der Arzt hat meinen Hals untersucht."
+ },
+ "be003": {
+  "fr": "le professeur / la professeure",
+  "pl": "nauczyciel / nauczycielka",
+  "ru": "учи́тель / учи́тельница",
+  "rulat": "utschítel / utschítelniza",
+  "ex": "Our teacher gives us a lot of homework.",
+  "exde": "Unser Lehrer gibt uns viele Hausaufgaben auf."
+ },
+ "be004": {
+  "fr": "l'infirmier / l'infirmière",
+  "pl": "pielęgniarz / pielęgniarka",
+  "ru": "медбра́т / медсестра́",
+  "rulat": "medbrát / medsestrá",
+  "ex": "The nurse brought me a glass of water.",
+  "exde": "Die Krankenpflegerin brachte mir ein Glas Wasser."
+ },
+ "be005": {
+  "fr": "l'ingénieur / l'ingénieure",
+  "pl": "inżynier / inżynierka",
+  "ru": "инжене́р",
+  "rulat": "inschenér",
+  "ex": "My brother works as an engineer.",
+  "exde": "Mein Bruder arbeitet als Ingenieur."
+ },
+ "be006": {
+  "fr": "le vendeur / la vendeuse",
+  "pl": "sprzedawca / sprzedawczyni",
+  "ru": "продаве́ц / продавщи́ца",
+  "rulat": "prodawéz / prodawschtschíza",
+  "ex": "The shop assistant helped me find a jacket.",
+  "exde": "Die Verkäuferin half mir, eine Jacke zu finden."
+ },
+ "be007": {
+  "fr": "le cuisinier / la cuisinière",
+  "pl": "kucharz / kucharka",
+  "ru": "по́вар",
+  "rulat": "pówar",
+  "ex": "The cook prepares fresh soup every day.",
+  "exde": "Der Koch bereitet jeden Tag frische Suppe zu."
+ },
+ "be008": {
+  "fr": "le serveur / la serveuse",
+  "pl": "kelner / kelnerka",
+  "ru": "официа́нт / официа́нтка",
+  "rulat": "ofiziánt / ofiziántka",
+  "ex": "The waiter brought us the menu.",
+  "exde": "Der Kellner brachte uns die Speisekarte."
+ },
+ "be009": {
+  "fr": "le policier / la policière",
+  "pl": "policjant / policjantka",
+  "ru": "полице́йский",
+  "rulat": "polizéjskij",
+  "ex": "A police officer showed us the way.",
+  "exde": "Ein Polizist zeigte uns den Weg."
+ },
+ "be010": {
+  "fr": "l'avocat / l'avocate",
+  "pl": "adwokat / adwokatka",
+  "ru": "адвока́т",
+  "rulat": "adwokát",
+  "ex": "You should talk to a lawyer.",
+  "exde": "Du solltest mit einem Rechtsanwalt sprechen."
+ },
+ "be011": {
+  "fr": "l'artisan / l'artisane",
+  "pl": "rzemieślnik / rzemieślniczka",
+  "ru": "ре́месленник",
+  "rulat": "rémeslennik",
+  "ex": "We need a tradesman to repair the roof.",
+  "exde": "Wir brauchen einen Handwerker, der das Dach repariert."
+ },
+ "be012": {
+  "fr": "l'électricien / l'électricienne",
+  "pl": "elektryk",
+  "ru": "эле́ктрик",
+  "rulat": "eléktrik",
+  "ex": "The electrician fixed the light in the kitchen.",
+  "exde": "Der Elektriker hat das Licht in der Küche repariert."
+ },
+ "be013": {
+  "fr": "le plombier / la plombière",
+  "pl": "hydraulik",
+  "ru": "санте́хник",
+  "rulat": "santéchnik",
+  "ex": "Call a plumber, the pipe is leaking.",
+  "exde": "Ruf einen Klempner, das Rohr ist undicht."
+ },
+ "be014": {
+  "fr": "le mécanicien / la mécanicienne",
+  "pl": "mechanik",
+  "ru": "меха́ник",
+  "rulat": "mechánik",
+  "ex": "The mechanic checked the brakes on my car.",
+  "exde": "Der Mechaniker hat die Bremsen an meinem Auto überprüft."
+ },
+ "be015": {
+  "fr": "le comptable / la comptable",
+  "pl": "księgowy / księgowa",
+  "ru": "бухга́лтер",
+  "rulat": "buchgálter",
+  "ex": "Our accountant prepares the tax return.",
+  "exde": "Unsere Buchhalterin erstellt die Steuererklärung."
+ },
+ "be016": {
+  "fr": "le secrétaire / la secrétaire",
+  "pl": "sekretarz / sekretarka",
+  "ru": "секрета́рь / секрета́рша",
+  "rulat": "sekretár / sekretárscha",
+  "ex": "The secretary answered the phone.",
+  "exde": "Die Sekretärin ging ans Telefon."
+ },
+ "be017": {
+  "fr": "le programmeur / la programmeuse",
+  "pl": "programista / programistka",
+  "ru": "программи́ст / программи́стка",
+  "rulat": "programmíst / programmístka",
+  "ex": "She works as a programmer at a big company.",
+  "exde": "Sie arbeitet als Programmiererin in einer großen Firma."
+ },
+ "be018": {
+  "fr": "l'architecte",
+  "pl": "architekt / architektka",
+  "ru": "архите́ктор",
+  "rulat": "architéktor",
+  "ex": "The architect designed a modern house.",
+  "exde": "Der Architekt hat ein modernes Haus entworfen."
+ },
+ "be019": {
+  "fr": "le coiffeur / la coiffeuse",
+  "pl": "fryzjer / fryzjerka",
+  "ru": "парикма́хер",
+  "rulat": "parikmácher",
+  "ex": "I have an appointment with the hairdresser tomorrow.",
+  "exde": "Ich habe morgen einen Termin beim Friseur."
+ },
+ "be020": {
+  "fr": "le boulanger / la boulangère",
+  "pl": "piekarz / piekarka",
+  "ru": "пе́карь",
+  "rulat": "pékar",
+  "ex": "The baker sells fresh bread every morning.",
+  "exde": "Der Bäcker verkauft jeden Morgen frisches Brot."
+ },
+ "be021": {
+  "fr": "l'agriculteur / l'agricultrice",
+  "pl": "rolnik / rolniczka",
+  "ru": "фе́рмер",
+  "rulat": "férmer",
+  "ex": "The farmer gets up very early every day.",
+  "exde": "Der Landwirt steht jeden Tag sehr früh auf."
+ },
+ "be022": {
+  "fr": "le chauffeur / la chauffeuse",
+  "pl": "kierowca",
+  "ru": "води́тель",
+  "rulat": "wodítel",
+  "ex": "The driver stopped at the red light.",
+  "exde": "Der Fahrer hielt an der roten Ampel."
+ },
+ "be023": {
+  "fr": "le / la journaliste",
+  "pl": "dziennikarz / dziennikarka",
+  "ru": "журнали́ст / журнали́стка",
+  "rulat": "schurnalíst / schurnalístka",
+  "ex": "The journalist asked the minister a question.",
+  "exde": "Der Journalist stellte dem Minister eine Frage."
+ },
+ "be024": {
+  "fr": "le / la fonctionnaire",
+  "pl": "urzędnik / urzędniczka",
+  "ru": "госслу́жащий / госслу́жащая",
+  "rulat": "gosslúschtschij / gosslúschtschaja",
+  "ex": "My father has worked as a civil servant for thirty years.",
+  "exde": "Mein Vater arbeitet seit dreißig Jahren als Beamter."
+ },
+ "be025": {
+  "fr": "le travailleur indépendant / la travailleuse indépendante",
+  "pl": "osoba samozatrudniona",
+  "ru": "индивидуа́льный предпринима́тель",
+  "rulat": "indiwiduálnyj predprinimátel",
+  "ex": "As a self-employed person, she sets her own working hours.",
+  "exde": "Als Selbstständige legt sie ihre Arbeitszeiten selbst fest."
+ },
+ "be026": {
+  "fr": "le CV",
+  "pl": "życiorys, CV",
+  "ru": "резюме́",
+  "rulat": "resjumé",
+  "ex": "Please send us your CV by email.",
+  "exde": "Bitte schicken Sie uns Ihren Lebenslauf per E-Mail."
+ },
+ "be027": {
+  "fr": "l'entretien d'embauche",
+  "pl": "rozmowa kwalifikacyjna",
+  "ru": "собесе́дование",
+  "rulat": "sobessédowanije",
+  "ex": "I have a job interview tomorrow morning.",
+  "exde": "Ich habe morgen früh ein Vorstellungsgespräch."
+ },
+ "be028": {
+  "fr": "l'offre d'emploi",
+  "pl": "ogłoszenie o pracę",
+  "ru": "объявле́ние о вака́нсии",
+  "rulat": "objawlénije o wakánssii",
+  "ex": "I found the job advertisement in the newspaper.",
+  "exde": "Ich habe die Stellenanzeige in der Zeitung gefunden."
+ },
+ "be029": {
+  "fr": "le dossier de candidature",
+  "pl": "dokumenty aplikacyjne",
+  "ru": "докуме́нты для трудоустро́йства",
+  "rulat": "dokuménty dlja trudoustróistwa",
+  "ex": "Please send your application documents by Friday.",
+  "exde": "Bitte senden Sie Ihre Bewerbungsunterlagen bis Freitag."
+ },
+ "be030": {
+  "fr": "le certificat de travail",
+  "pl": "świadectwo pracy",
+  "ru": "характери́стика с ме́ста рабо́ты",
+  "rulat": "charakterístika s mésta rabóty",
+  "ex": "My old boss wrote me a very good reference.",
+  "exde": "Mein alter Chef hat mir ein sehr gutes Arbeitszeugnis geschrieben."
+ },
+ "be031": {
+  "fr": "l'expérience professionnelle",
+  "pl": "doświadczenie zawodowe",
+  "ru": "о́пыт рабо́ты",
+  "rulat": "ópyt rabóty",
+  "ex": "She has five years of work experience.",
+  "exde": "Sie hat fünf Jahre Berufserfahrung."
+ },
+ "be032": {
+  "fr": "le diplôme",
+  "pl": "wykształcenie, dyplom",
+  "ru": "дипло́м",
+  "rulat": "diplóm",
+  "ex": "What qualification do you have?",
+  "exde": "Welchen Abschluss haben Sie?"
+ },
+ "be033": {
+  "fr": "les connaissances",
+  "pl": "znajomość, wiedza",
+  "ru": "зна́ния",
+  "rulat": "snánija",
+  "ex": "Good knowledge of Excel is required.",
+  "exde": "Gute Kenntnisse in Excel sind erforderlich."
+ },
+ "be034": {
+  "fr": "la compétence",
+  "pl": "umiejętność",
+  "ru": "уме́ние",
+  "rulat": "uménije",
+  "ex": "Teamwork is an important skill.",
+  "exde": "Teamarbeit ist eine wichtige Fähigkeit."
+ },
+ "be035": {
+  "fr": "les compétences linguistiques",
+  "pl": "znajomość języków",
+  "ru": "зна́ние языко́в",
+  "rulat": "snánije jasyków",
+  "ex": "Language skills are very useful in this job.",
+  "exde": "Sprachkenntnisse sind in diesem Beruf sehr nützlich."
+ },
+ "be036": {
+  "fr": "le stage",
+  "pl": "praktyka, staż",
+  "ru": "стажиро́вка",
+  "rulat": "staschirówka",
+  "ex": "He is doing an internship at a bank.",
+  "exde": "Er macht ein Praktikum bei einer Bank."
+ },
+ "be037": {
+  "fr": "l'employeur",
+  "pl": "pracodawca",
+  "ru": "работода́тель",
+  "rulat": "rabotodátel",
+  "ex": "My employer pays for my German course.",
+  "exde": "Mein Arbeitgeber bezahlt meinen Deutschkurs."
+ },
+ "be038": {
+  "fr": "le salarié",
+  "pl": "pracownik",
+  "ru": "рабо́тник",
+  "rulat": "rabótnik",
+  "ex": "Every employee has a right to holidays.",
+  "exde": "Jeder Arbeitnehmer hat ein Recht auf Urlaub."
+ },
+ "be039": {
+  "fr": "les prétentions salariales",
+  "pl": "oczekiwania finansowe",
+  "ru": "жела́емая зарпла́та",
+  "rulat": "scheláemaja sarpláta",
+  "ex": "Please state your salary expectations in your application.",
+  "exde": "Bitte nennen Sie Ihre Gehaltsvorstellung in der Bewerbung."
+ },
+ "be040": {
+  "fr": "la photo de candidature",
+  "pl": "zdjęcie do CV",
+  "ru": "фо́то для резюме́",
+  "rulat": "fóto dlja resjumé",
+  "ex": "I need a new application photo.",
+  "exde": "Ich brauche ein neues Bewerbungsfoto."
+ },
+ "be041": {
+  "fr": "le point fort",
+  "pl": "mocna strona",
+  "ru": "си́льная сторона́",
+  "rulat": "sílnaja storoná",
+  "ex": "Teamwork is my greatest strength.",
+  "exde": "Teamarbeit ist meine größte Stärke."
+ },
+ "be042": {
+  "fr": "le point faible",
+  "pl": "słaba strona",
+  "ru": "сла́бая сторона́",
+  "rulat": "slábaja storoná",
+  "ex": "What is your biggest weakness?",
+  "exde": "Was ist Ihre größte Schwäche?"
+ },
+ "be043": {
+  "fr": "la réponse positive",
+  "pl": "pozytywna odpowiedź",
+  "ru": "положи́тельный отве́т",
+  "rulat": "poloschítelnyj otwét",
+  "ex": "I received an offer from the company yesterday.",
+  "exde": "Ich habe gestern eine Zusage von der Firma bekommen."
+ },
+ "be044": {
+  "fr": "le refus",
+  "pl": "odmowa",
+  "ru": "отка́з",
+  "rulat": "otkás",
+  "ex": "Unfortunately, I got a rejection.",
+  "exde": "Leider habe ich eine Absage bekommen."
+ },
+ "be045": {
+  "fr": "la période d'essai",
+  "pl": "okres próbny",
+  "ru": "испыта́тельный срок",
+  "rulat": "ispytátelnyj srok",
+  "ex": "The probationary period lasts six months.",
+  "exde": "Die Probezeit dauert sechs Monate."
+ },
+ "be046": {
+  "fr": "le contrat de travail",
+  "pl": "umowa o pracę",
+  "ru": "трудово́й догово́р",
+  "rulat": "trudowój dogowór",
+  "ex": "Please sign the employment contract.",
+  "exde": "Bitte unterschreiben Sie den Arbeitsvertrag."
+ },
+ "be047": {
+  "fr": "capable de travailler en équipe",
+  "pl": "umiejący pracować w zespole",
+  "ru": "уме́ющий рабо́тать в кома́нде",
+  "rulat": "uméjuschtschij rabótat w kománde",
+  "ex": "We are looking for someone who is able to work in a team.",
+  "exde": "Wir suchen jemanden, der teamfähig ist."
+ },
+ "be048": {
+  "fr": "la candidature spontanée",
+  "pl": "aplikacja z własnej inicjatywy",
+  "ru": "инициати́вная зая́вка",
+  "rulat": "inizijatíwnaja sajáwka",
+  "ex": "She sent a speculative application to the company.",
+  "exde": "Sie hat eine Initiativbewerbung an die Firma geschickt."
+ },
+ "be049": {
+  "fr": "le candidat / la candidate",
+  "pl": "kandydat / kandydatka",
+  "ru": "кандида́т / кандида́тка",
+  "rulat": "kandidát / kandidátka",
+  "ex": "The applicant arrived early for the interview.",
+  "exde": "Der Bewerber kam früh zum Vorstellungsgespräch."
+ },
+ "be050": {
+  "fr": "les études universitaires",
+  "pl": "studia",
+  "ru": "учёба в университе́те",
+  "rulat": "utschjóba w uniwersitéte",
+  "ex": "I finished my university studies last year.",
+  "exde": "Ich habe mein Studium letztes Jahr abgeschlossen."
+ },
+ "be051": {
+  "fr": "la négociation salariale",
+  "pl": "negocjacje płacowe",
+  "ru": "перегово́ры о зарпла́те",
+  "rulat": "peregowóry o sarpláte",
+  "ex": "The salary negotiation went well.",
+  "exde": "Die Gehaltsverhandlung lief gut."
+ },
+ "be052": {
+  "fr": "le défi",
+  "pl": "wyzwanie",
+  "ru": "вы́зов",
+  "rulat": "wýsow",
+  "ex": "This job is a big challenge for me.",
+  "exde": "Diese Stelle ist eine große Herausforderung für mich."
+ },
+ "be053": {
+  "fr": "la motivation",
+  "pl": "motywacja",
+  "ru": "мотива́ция",
+  "rulat": "motiwázija",
+  "ex": "Tell us about your motivation.",
+  "exde": "Erzählen Sie uns von Ihrer Motivation."
+ },
+ "be054": {
+  "fr": "la responsabilité",
+  "pl": "odpowiedzialność",
+  "ru": "отве́тственность",
+  "rulat": "otwétstwennost",
+  "ex": "I am ready to take on more responsibility.",
+  "exde": "Ich bin bereit, mehr Verantwortung zu übernehmen."
+ },
+ "be055": {
+  "fr": "le directeur / la directrice des ressources humaines",
+  "pl": "kierownik / kierowniczka działu kadr",
+  "ru": "руководи́тель отде́ла ка́дров",
+  "rulat": "rukowodítel otdéla kádrow",
+  "ex": "The HR manager will call you tomorrow.",
+  "exde": "Der Personalleiter ruft Sie morgen an."
+ },
+ "be056": {
+  "fr": "le service des ressources humaines",
+  "pl": "dział kadr",
+  "ru": "отде́л ка́дров",
+  "rulat": "otdél kádrow",
+  "ex": "Send your documents to the human resources department.",
+  "exde": "Schicken Sie Ihre Unterlagen an die Personalabteilung."
+ },
+ "be057": {
+  "fr": "la période d'intégration",
+  "pl": "okres wdrożenia",
+  "ru": "пери́од адапта́ции",
+  "rulat": "períod adaptázii",
+  "ex": "The induction period takes two weeks.",
+  "exde": "Die Einarbeitung dauert zwei Wochen."
+ },
+ "be058": {
+  "fr": "le préavis",
+  "pl": "okres wypowiedzenia",
+  "ru": "срок предупрежде́ния об увольне́нии",
+  "rulat": "srok predupreschdénija ob uwolnénii",
+  "ex": "My notice period is three months.",
+  "exde": "Meine Kündigungsfrist beträgt drei Monate."
+ },
+ "be059": {
+  "fr": "travailler de manière autonome",
+  "pl": "pracować samodzielnie",
+  "ru": "рабо́тать самостоя́тельно",
+  "rulat": "rabótat samostojátelno",
+  "ex": "I can work independently.",
+  "exde": "Ich kann selbstständig arbeiten."
+ },
+ "be060": {
+  "fr": "l'initiative personnelle",
+  "pl": "własna inicjatywa",
+  "ru": "со́бственная инициати́ва",
+  "rulat": "sóbstwennaja inizijatíwa",
+  "ex": "We value initiative in our employees.",
+  "exde": "Wir schätzen Eigeninitiative bei unseren Mitarbeitern."
+ },
+ "be061": {
+  "fr": "la formation continue",
+  "pl": "doskonalenie zawodowe",
+  "ru": "повыше́ние квалифика́ции",
+  "rulat": "powyschénije kwalifikázii",
+  "ex": "The company pays for further training.",
+  "exde": "Die Firma bezahlt die Weiterbildung."
+ },
+ "be062": {
+  "fr": "la possibilité d'avancement",
+  "pl": "możliwość awansu",
+  "ru": "возмо́жность карье́рного ро́ста",
+  "rulat": "wosmóshnost karjérnogo rósta",
+  "ex": "Is there an opportunity for promotion in this job?",
+  "exde": "Gibt es in dieser Stelle eine Aufstiegsmöglichkeit?"
+ },
+ "be063": {
+  "fr": "la date d'entrée en fonction",
+  "pl": "data rozpoczęcia pracy",
+  "ru": "да́та вы́хода на рабо́ту",
+  "rulat": "dáta wýchoda na rabótu",
+  "ex": "What is your earliest possible start date?",
+  "exde": "Was ist Ihr frühestmöglicher Eintrittstermin?"
+ },
+ "be064": {
+  "fr": "le poste à temps plein",
+  "pl": "praca na pełen etat",
+  "ru": "рабо́та на по́лную ста́вку",
+  "rulat": "rabóta na pólnuju stáwku",
+  "ex": "She is looking for a full-time job.",
+  "exde": "Sie sucht eine Vollzeitstelle."
+ },
+ "be065": {
+  "fr": "le poste à temps partiel",
+  "pl": "praca w niepełnym wymiarze godzin",
+  "ru": "рабо́та на непо́лную ста́вку",
+  "rulat": "rabóta na nepólnuju stáwku",
+  "ex": "I have a part-time job in a bakery.",
+  "exde": "Ich habe eine Teilzeitstelle in einer Bäckerei."
+ },
+ "be066": {
+  "fr": "faire bonne impression",
+  "pl": "zrobić dobre wrażenie",
+  "ru": "произвести́ хоро́шее впечатле́ние",
+  "rulat": "proiswestí choróscheje wpetschatlénije",
+  "ex": "I want to make a good impression at the interview.",
+  "exde": "Ich möchte im Vorstellungsgespräch einen guten Eindruck machen."
+ },
+ "be067": {
+  "fr": "l'entreprise",
+  "pl": "przedsiębiorstwo",
+  "ru": "компа́ния",
+  "rulat": "kompánija",
+  "ex": "The company has 200 employees.",
+  "exde": "Das Unternehmen hat 200 Mitarbeiter."
+ },
+ "be068": {
+  "fr": "les horaires de travail",
+  "pl": "godziny pracy",
+  "ru": "рабо́чее вре́мя",
+  "rulat": "rabótscheje wrémja",
+  "ex": "What are the working hours?",
+  "exde": "Wie ist die Arbeitszeit?"
+ },
+ "be069": {
+  "fr": "le trou dans le CV",
+  "pl": "luka w życiorysie",
+  "ru": "пробе́л в резюме́",
+  "rulat": "probél w resjumé",
+  "ex": "Can you explain the gap in your CV?",
+  "exde": "Können Sie die Lücke im Lebenslauf erklären?"
+ },
+ "be070": {
+  "fr": "le salaire",
+  "pl": "płaca",
+  "ru": "зарпла́та",
+  "rulat": "sarpláta",
+  "ex": "The wage is paid every Friday.",
+  "exde": "Der Lohn wird jeden Freitag ausgezahlt."
+ },
+ "be071": {
+  "fr": "le salaire brut",
+  "pl": "wynagrodzenie brutto",
+  "ru": "валова́я зарпла́та",
+  "rulat": "walowája sarpláta",
+  "ex": "My gross salary is 3,000 euros a month.",
+  "exde": "Mein Bruttogehalt beträgt 3.000 Euro im Monat."
+ },
+ "be072": {
+  "fr": "le salaire net",
+  "pl": "wynagrodzenie netto",
+  "ru": "чи́стая зарпла́та",
+  "rulat": "tschístaja sarpláta",
+  "ex": "After taxes, my net salary is much lower.",
+  "exde": "Nach Steuern ist mein Nettogehalt viel niedriger."
+ },
+ "be073": {
+  "fr": "la fiche de paie",
+  "pl": "pasek wypłaty",
+  "ru": "расчётный листо́к",
+  "rulat": "rastschjótny listók",
+  "ex": "Please check your payslip carefully.",
+  "exde": "Bitte prüfen Sie Ihre Gehaltsabrechnung sorgfältig."
+ },
+ "be074": {
+  "fr": "l'augmentation de salaire",
+  "pl": "podwyżka",
+  "ru": "повыше́ние зарпла́ты",
+  "rulat": "powyschénije sarpláty",
+  "ex": "I asked my boss for a pay rise.",
+  "exde": "Ich habe meinen Chef um eine Gehaltserhöhung gebeten."
+ },
+ "be075": {
+  "fr": "le salaire minimum",
+  "pl": "płaca minimalna",
+  "ru": "минима́льная зарпла́та",
+  "rulat": "minimálnaja sarpláta",
+  "ex": "The minimum wage was raised this year.",
+  "exde": "Der Mindestlohn wurde dieses Jahr erhöht."
+ },
+ "be076": {
+  "fr": "le salaire horaire",
+  "pl": "stawka godzinowa",
+  "ru": "почасова́я опла́та",
+  "rulat": "potschasowája opláta",
+  "ex": "My hourly wage is 15 euros.",
+  "exde": "Mein Stundenlohn beträgt 15 Euro."
+ },
+ "be077": {
+  "fr": "le droit aux congés",
+  "pl": "prawo do urlopu",
+  "ru": "пра́во на о́тпуск",
+  "rulat": "práwo na ótpusk",
+  "ex": "My holiday entitlement is 30 days a year.",
+  "exde": "Mein Urlaubsanspruch beträgt 30 Tage im Jahr."
+ },
+ "be078": {
+  "fr": "la prime de vacances",
+  "pl": "dodatek urlopowy",
+  "ru": "отпускны́е",
+  "rulat": "otpusknýje",
+  "ex": "We get a holiday bonus in June.",
+  "exde": "Wir bekommen im Juni Urlaubsgeld."
+ },
+ "be079": {
+  "fr": "la prime de Noël",
+  "pl": "premia świąteczna",
+  "ru": "рожде́ственская пре́мия",
+  "rulat": "roshdéstwenskaja prémija",
+  "ex": "Employees receive a Christmas bonus in November.",
+  "exde": "Die Mitarbeiter erhalten im November Weihnachtsgeld."
+ },
+ "be080": {
+  "fr": "la prime",
+  "pl": "premia",
+  "ru": "пре́мия",
+  "rulat": "prémija",
+  "ex": "She got a bonus for her good work.",
+  "exde": "Sie hat eine Prämie für ihre gute Arbeit bekommen."
+ },
+ "be081": {
+  "fr": "l'impôt sur le revenu",
+  "pl": "podatek dochodowy",
+  "ru": "подохо́дный нало́г",
+  "rulat": "podochódnyj nalóg",
+  "ex": "Income tax is deducted from my salary every month.",
+  "exde": "Die Lohnsteuer wird jeden Monat von meinem Gehalt abgezogen."
+ },
+ "be082": {
+  "fr": "la sécurité sociale",
+  "pl": "ubezpieczenie społeczne",
+  "ru": "социа́льное страхова́ние",
+  "rulat": "soziálnoje strachowánije",
+  "ex": "Social security contributions are paid by both employer and employee.",
+  "exde": "Die Beiträge zur Sozialversicherung zahlen Arbeitgeber und Arbeitnehmer gemeinsam."
+ },
+ "be083": {
+  "fr": "l'assurance maladie",
+  "pl": "ubezpieczenie zdrowotne",
+  "ru": "медици́нское страхова́ние",
+  "rulat": "medizínskoje strachowánije",
+  "ex": "Do you have health insurance?",
+  "exde": "Hast du eine Krankenversicherung?"
+ },
+ "be084": {
+  "fr": "l'assurance retraite",
+  "pl": "ubezpieczenie emerytalne",
+  "ru": "пенсио́нное страхова́ние",
+  "rulat": "pensiónnoje strachowánije",
+  "ex": "Part of my wage goes into the state pension scheme.",
+  "exde": "Ein Teil meines Lohns geht in die Rentenversicherung."
+ },
+ "be085": {
+  "fr": "à durée déterminée",
+  "pl": "na czas określony",
+  "ru": "сро́чный",
+  "rulat": "srótschnyj",
+  "ex": "She has a fixed-term contract for one year.",
+  "exde": "Sie hat einen befristeten Vertrag für ein Jahr."
+ },
+ "be086": {
+  "fr": "à durée indéterminée",
+  "pl": "na czas nieokreślony",
+  "ru": "бессро́чный",
+  "rulat": "bessrótschnyj",
+  "ex": "After two years I got a permanent contract.",
+  "exde": "Nach zwei Jahren bekam ich einen unbefristeten Vertrag."
+ },
+ "be087": {
+  "fr": "le licenciement",
+  "pl": "wypowiedzenie",
+  "ru": "увольне́ние",
+  "rulat": "uwolnjénije",
+  "ex": "The dismissal came as a shock to him.",
+  "exde": "Die Kündigung war ein Schock für ihn."
+ },
+ "be088": {
+  "fr": "démissionner",
+  "pl": "złożyć wypowiedzenie",
+  "ru": "уво́литься",
+  "rulat": "uwólitsja",
+  "ex": "I'm going to hand in my notice next week.",
+  "exde": "Ich werde nächste Woche kündigen."
+ },
+ "be089": {
+  "fr": "la convention collective",
+  "pl": "układ zbiorowy",
+  "ru": "коллекти́вный догово́р",
+  "rulat": "kollektíwnyj dogowór",
+  "ex": "The collective agreement sets our wages.",
+  "exde": "Der Tarifvertrag legt unsere Löhne fest."
+ },
+ "be090": {
+  "fr": "le syndicat",
+  "pl": "związek zawodowy",
+  "ru": "профсою́з",
+  "rulat": "profsojús",
+  "ex": "She is a member of a trade union.",
+  "exde": "Sie ist Mitglied einer Gewerkschaft."
+ },
+ "be091": {
+  "fr": "le comité d'entreprise",
+  "pl": "rada zakładowa",
+  "ru": "сове́т трудово́го коллекти́ва",
+  "rulat": "sowét trudowówo kollektíwa",
+  "ex": "The works council must approve the new schedules.",
+  "exde": "Der Betriebsrat muss den neuen Dienstplänen zustimmen."
+ },
+ "be092": {
+  "fr": "les conditions du contrat",
+  "pl": "warunki umowy",
+  "ru": "усло́вия догово́ра",
+  "rulat": "uslówija dogowóra",
+  "ex": "Please read the terms of contract carefully.",
+  "exde": "Bitte lesen Sie die Vertragsbedingungen sorgfältig."
+ },
+ "be093": {
+  "fr": "le maintien du salaire en cas de maladie",
+  "pl": "wynagrodzenie chorobowe",
+  "ru": "опла́та больни́чного",
+  "rulat": "opláta bolnítschnowo",
+  "ex": "Employees receive sick pay for up to six weeks.",
+  "exde": "Arbeitnehmer erhalten bis zu sechs Wochen Lohnfortzahlung im Krankheitsfall."
+ },
+ "be094": {
+  "fr": "l'arrêt maladie",
+  "pl": "zwolnienie lekarskie",
+  "ru": "больни́чный лист",
+  "rulat": "bolnítschnyj list",
+  "ex": "I need to send my sick note to the office.",
+  "exde": "Ich muss meine Krankmeldung ans Büro schicken."
+ },
+ "be095": {
+  "fr": "prendre des congés",
+  "pl": "wziąć urlop",
+  "ru": "взять о́тпуск",
+  "rulat": "wsjat ótpusk",
+  "ex": "I want to take holiday in August.",
+  "exde": "Ich möchte im August Urlaub nehmen."
+ },
+ "be096": {
+  "fr": "la demande de congé",
+  "pl": "wniosek urlopowy",
+  "ru": "заявле́ние на о́тпуск",
+  "rulat": "sajawlénije na ótpusk",
+  "ex": "My boss approved my holiday request.",
+  "exde": "Mein Chef hat meinen Urlaubsantrag genehmigt."
+ },
+ "be097": {
+  "fr": "demander un congé",
+  "pl": "złożyć wniosek o urlop",
+  "ru": "пода́ть заявле́ние на о́тпуск",
+  "rulat": "podát sajawlénije na ótpusk",
+  "ex": "You have to apply for leave two weeks in advance.",
+  "exde": "Man muss zwei Wochen im Voraus Urlaub beantragen."
+ },
+ "be098": {
+  "fr": "faire des heures supplémentaires",
+  "pl": "pracować w nadgodzinach",
+  "ru": "рабо́тать сверхуро́чно",
+  "rulat": "rabótat swerchurótschno",
+  "ex": "I often have to work overtime on Fridays.",
+  "exde": "Freitags muss ich oft Überstunden machen."
+ },
+ "be099": {
+  "fr": "récupérer des heures supplémentaires",
+  "pl": "odebrać nadgodziny",
+  "ru": "отгуля́ть перерабо́тку",
+  "rulat": "otgulját pererabótku",
+  "ex": "I'm going to take time off in lieu next Monday.",
+  "exde": "Nächsten Montag werde ich Überstunden abbauen."
+ },
+ "be100": {
+  "fr": "l'horaire flexible",
+  "pl": "ruchomy czas pracy",
+  "ru": "ги́бкий гра́фик",
+  "rulat": "gíbkij gráfik",
+  "ex": "Our company offers flexitime.",
+  "exde": "Unsere Firma bietet Gleitzeit an."
+ },
+ "be101": {
+  "fr": "la plage fixe",
+  "pl": "obowiązkowe godziny obecności",
+  "ru": "обяза́тельное рабо́чее вре́мя",
+  "rulat": "objasátelnoje rabótscheje wrémja",
+  "ex": "Our core hours are from ten to three.",
+  "exde": "Unsere Kernarbeitszeit ist von zehn bis fünfzehn Uhr."
+ },
+ "be102": {
+  "fr": "le travail posté",
+  "pl": "praca zmianowa",
+  "ru": "сме́нная рабо́та",
+  "rulat": "smjénnaja rabóta",
+  "ex": "Shift work can be very tiring.",
+  "exde": "Schichtarbeit kann sehr anstrengend sein."
+ },
+ "be103": {
+  "fr": "le poste du matin",
+  "pl": "poranna zmiana",
+  "ru": "у́тренняя сме́на",
+  "rulat": "útrennjaja smjéna",
+  "ex": "I'm on the early shift this week.",
+  "exde": "Ich habe diese Woche Frühschicht."
+ },
+ "be104": {
+  "fr": "le poste de l'après-midi",
+  "pl": "popołudniowa zmiana",
+  "ru": "вече́рняя сме́на",
+  "rulat": "wetschérnjaja smjéna",
+  "ex": "She works the late shift today.",
+  "exde": "Sie arbeitet heute in der Spätschicht."
+ },
+ "be105": {
+  "fr": "le poste de nuit",
+  "pl": "nocna zmiana",
+  "ru": "ночна́я сме́на",
+  "rulat": "natschnája smjéna",
+  "ex": "He hates working the night shift.",
+  "exde": "Er hasst es, in der Nachtschicht zu arbeiten."
+ },
+ "be106": {
+  "fr": "la pause déjeuner",
+  "pl": "przerwa obiadowa",
+  "ru": "обе́денный переры́в",
+  "rulat": "abédennyj pererýw",
+  "ex": "Let's go for a walk during the lunch break.",
+  "exde": "Lass uns in der Mittagspause spazieren gehen."
+ },
+ "be107": {
+  "fr": "le jour férié",
+  "pl": "dzień ustawowo wolny od pracy",
+  "ru": "пра́здничный день",
+  "rulat": "prásdnitschnyj den",
+  "ex": "Monday is a bank holiday.",
+  "exde": "Montag ist ein Feiertag."
+ },
+ "be108": {
+  "fr": "le pont",
+  "pl": "mostek",
+  "ru": "день ме́жду пра́здником и выходны́ми",
+  "rulat": "den méschdu prásdnikom i wychadnými",
+  "ex": "Many people take the day off between a bank holiday and the weekend.",
+  "exde": "Viele Leute nehmen sich den Brückentag frei."
+ },
+ "be109": {
+  "fr": "les congés restants",
+  "pl": "zaległy urlop",
+  "ru": "оста́ток о́тпуска",
+  "rulat": "astátok ótpuska",
+  "ex": "I still have five days of remaining holiday.",
+  "exde": "Ich habe noch fünf Tage Resturlaub."
+ },
+ "be110": {
+  "fr": "le congé exceptionnel",
+  "pl": "urlop okolicznościowy",
+  "ru": "внеочередно́й о́тпуск",
+  "rulat": "wneatscherednój ótpusk",
+  "ex": "He got special leave for his wedding.",
+  "exde": "Er bekam Sonderurlaub für seine Hochzeit."
+ },
+ "be111": {
+  "fr": "le congé parental",
+  "pl": "urlop rodzicielski",
+  "ru": "о́тпуск по ухо́ду за ребёнком",
+  "rulat": "ótpusk pa uchódu sa rebjónkom",
+  "ex": "She is on parental leave until May.",
+  "exde": "Sie ist bis Mai in Elternzeit."
+ },
+ "be112": {
+  "fr": "le congé de maternité",
+  "pl": "urlop macierzyński",
+  "ru": "декре́тный о́тпуск",
+  "rulat": "dekrétnyj ótpusk",
+  "ex": "My colleague starts her maternity leave next week.",
+  "exde": "Meine Kollegin geht nächste Woche in den Mutterschutz."
+ },
+ "be113": {
+  "fr": "être en arrêt maladie",
+  "pl": "być na zwolnieniu lekarskim",
+  "ru": "быть на больни́чном",
+  "rulat": "byt na balnítschnom",
+  "ex": "I am signed off sick until Friday.",
+  "exde": "Ich bin bis Freitag krankgeschrieben."
+ },
+ "be114": {
+  "fr": "le pointage",
+  "pl": "ewidencja czasu pracy",
+  "ru": "учёт рабо́чего вре́мени",
+  "rulat": "utschót rabótschewo wrémeni",
+  "ex": "The company uses digital time recording.",
+  "exde": "Die Firma nutzt eine digitale Zeiterfassung."
+ },
+ "be115": {
+  "fr": "pointer à l'arrivée",
+  "pl": "odbić kartę przy wejściu",
+  "ru": "отме́титься на вхо́де",
+  "rulat": "atmétitsja na wchóde",
+  "ex": "Don't forget to clock in in the morning.",
+  "exde": "Vergiss nicht, morgens einzustempeln."
+ },
+ "be116": {
+  "fr": "pointer à la sortie",
+  "pl": "odbić kartę przy wyjściu",
+  "ru": "отме́титься на вы́ходе",
+  "rulat": "atmétitsja na wýchode",
+  "ex": "I clocked out at six o'clock.",
+  "exde": "Ich habe um sechs Uhr ausgestempelt."
+ },
+ "be117": {
+  "fr": "prendre un congé",
+  "pl": "wziąć wolne",
+  "ru": "взять отгу́л",
+  "rulat": "wsjat atgúl",
+  "ex": "I need to take time off next week.",
+  "exde": "Ich muss mir nächste Woche freinehmen."
+ },
+ "be118": {
+  "fr": "le jour de congé",
+  "pl": "dzień wolny",
+  "ru": "выходно́й день",
+  "rulat": "wychadnój den",
+  "ex": "Tuesday is my day off.",
+  "exde": "Dienstag ist mein freier Tag."
+ },
+ "be119": {
+  "fr": "la durée hebdomadaire du travail",
+  "pl": "tygodniowy czas pracy",
+  "ru": "еженеде́льное рабо́чее вре́мя",
+  "rulat": "jeschenedélnoje rabótscheje wrémja",
+  "ex": "Our weekly working hours total 38.",
+  "exde": "Unsere Wochenarbeitszeit beträgt 38 Stunden."
+ },
+ "be120": {
+  "fr": "le bureau",
+  "pl": "biurko",
+  "ru": "пи́сьменный стол",
+  "rulat": "písmennyj stol",
+  "ex": "My desk is by the window.",
+  "exde": "Mein Schreibtisch steht am Fenster."
+ },
+ "be121": {
+  "fr": "la chaise de bureau",
+  "pl": "krzesło biurowe",
+  "ru": "офи́сный стул",
+  "rulat": "ofíssnyj stul",
+  "ex": "My office chair is very comfortable.",
+  "exde": "Mein Bürostuhl ist sehr bequem."
+ },
+ "be122": {
+  "fr": "la salle de réunion",
+  "pl": "sala spotkań",
+  "ru": "перегово́рная",
+  "rulat": "peregowórnaja",
+  "ex": "The meeting room is booked until noon.",
+  "exde": "Der Besprechungsraum ist bis Mittag reserviert."
+ },
+ "be123": {
+  "fr": "la salle de conférence",
+  "pl": "sala konferencyjna",
+  "ru": "конфере́нц-зал",
+  "rulat": "konferénz-sal",
+  "ex": "The conference room has a large projector.",
+  "exde": "Der Konferenzraum hat einen großen Beamer."
+ },
+ "be124": {
+  "fr": "la réception",
+  "pl": "recepcja",
+  "ru": "ресе́пшен",
+  "rulat": "ressépschen",
+  "ex": "Please wait at reception.",
+  "exde": "Bitte warten Sie am Empfang."
+ },
+ "be125": {
+  "fr": "la kitchenette",
+  "pl": "kuchnia biurowa",
+  "ru": "ку́хня для сотру́дников",
+  "rulat": "kúchnja dlja ssotrúdnikow",
+  "ex": "We drink coffee together in the staff kitchen.",
+  "exde": "Wir trinken in der Kaffeeküche zusammen Kaffee."
+ },
+ "be126": {
+  "fr": "la salle de pause",
+  "pl": "pokój socjalny",
+  "ru": "ко́мната о́тдыха",
+  "rulat": "kómnata ótdycha",
+  "ex": "I eat my lunch in the break room.",
+  "exde": "Ich esse mein Mittagessen im Pausenraum."
+ },
+ "be127": {
+  "fr": "le bureau paysager",
+  "pl": "biuro typu open space",
+  "ru": "откры́тый о́фис",
+  "rulat": "otkrýtyj ófiss",
+  "ex": "It is often noisy in the open-plan office.",
+  "exde": "Im Großraumbüro ist es oft laut."
+ },
+ "be128": {
+  "fr": "le bureau individuel",
+  "pl": "gabinet",
+  "ru": "отде́льный кабине́т",
+  "rulat": "otdélnyj kabinét",
+  "ex": "My boss has a private office.",
+  "exde": "Meine Chefin hat ein Einzelbüro."
+ },
+ "be129": {
+  "fr": "le poste de travail",
+  "pl": "stanowisko pracy",
+  "ru": "рабо́чее ме́сто",
+  "rulat": "rabótscheje méssto",
+  "ex": "Please keep your workplace tidy.",
+  "exde": "Bitte halte deinen Arbeitsplatz ordentlich."
+ },
+ "be130": {
+  "fr": "le couloir",
+  "pl": "korytarz",
+  "ru": "коридо́р",
+  "rulat": "koridór",
+  "ex": "The toilets are at the end of the corridor.",
+  "exde": "Die Toiletten sind am Ende des Flurs."
+ },
+ "be131": {
+  "fr": "le meuble de classement",
+  "pl": "szafa na akta",
+  "ru": "шкаф для докуме́нтов",
+  "rulat": "schkaf dlja dokuméntow",
+  "ex": "The contracts are in the filing cabinet.",
+  "exde": "Die Verträge sind im Aktenschrank."
+ },
+ "be132": {
+  "fr": "le tiroir",
+  "pl": "szuflada",
+  "ru": "я́щик",
+  "rulat": "jáschtschik",
+  "ex": "The scissors are in the top drawer.",
+  "exde": "Die Schere ist in der obersten Schublade."
+ },
+ "be133": {
+  "fr": "la photocopieuse",
+  "pl": "kserokopiarka",
+  "ru": "ксе́рокс",
+  "rulat": "kssérokss",
+  "ex": "The photocopier is out of paper again.",
+  "exde": "Der Kopierer hat schon wieder kein Papier."
+ },
+ "be134": {
+  "fr": "l'écran (m)",
+  "pl": "ekran",
+  "ru": "экра́н",
+  "rulat": "ekrán",
+  "ex": "My screen is too bright.",
+  "exde": "Mein Bildschirm ist zu hell."
+ },
+ "be135": {
+  "fr": "le clavier",
+  "pl": "klawiatura",
+  "ru": "клавиату́ра",
+  "rulat": "klawiatúra",
+  "ex": "I need a new keyboard.",
+  "exde": "Ich brauche eine neue Tastatur."
+ },
+ "be136": {
+  "fr": "la souris",
+  "pl": "mysz",
+  "ru": "мышь",
+  "rulat": "mysch",
+  "ex": "The mouse isn't working.",
+  "exde": "Die Maus funktioniert nicht."
+ },
+ "be137": {
+  "fr": "l'ordinateur portable (m)",
+  "pl": "laptop",
+  "ru": "ноутбу́к",
+  "rulat": "noutbúk",
+  "ex": "I take my laptop home every evening.",
+  "exde": "Ich nehme meinen Laptop jeden Abend mit nach Hause."
+ },
+ "be138": {
+  "fr": "la lampe de bureau",
+  "pl": "lampka biurkowa",
+  "ru": "насто́льная ла́мпа",
+  "rulat": "nasstólnaja lámpa",
+  "ex": "Turn on the desk lamp, please.",
+  "exde": "Mach bitte die Schreibtischlampe an."
+ },
+ "be139": {
+  "fr": "la corbeille à papier",
+  "pl": "kosz na śmieci",
+  "ru": "му́сорная корзи́на",
+  "rulat": "mússornaja korsína",
+  "ex": "Throw the old notes in the wastepaper basket.",
+  "exde": "Wirf die alten Notizen in den Papierkorb."
+ },
+ "be140": {
+  "fr": "le tableau blanc",
+  "pl": "tablica suchościeralna",
+  "ru": "ма́ркерная доска́",
+  "rulat": "márkernaja doská",
+  "ex": "She wrote the plan on the whiteboard.",
+  "exde": "Sie schrieb den Plan an das Whiteboard."
+ },
+ "be141": {
+  "fr": "le vidéoprojecteur",
+  "pl": "projektor",
+  "ru": "прое́ктор",
+  "rulat": "prajéktor",
+  "ex": "The projector in the meeting room is broken.",
+  "exde": "Der Beamer im Besprechungsraum ist kaputt."
+ },
+ "be142": {
+  "fr": "le tableau d'affichage",
+  "pl": "tablica ogłoszeń",
+  "ru": "доска́ объявле́ний",
+  "rulat": "daská abjawlénij",
+  "ex": "I pinned the schedule to the noticeboard.",
+  "exde": "Ich habe den Plan an die Pinnwand gehängt."
+ },
+ "be143": {
+  "fr": "le classeur",
+  "pl": "segregator",
+  "ru": "па́пка",
+  "rulat": "pápka",
+  "ex": "Put the invoices in the blue folder.",
+  "exde": "Leg die Rechnungen in den blauen Ordner."
+ },
+ "be144": {
+  "fr": "le destructeur de documents",
+  "pl": "niszczarka",
+  "ru": "шре́дер",
+  "rulat": "schréder",
+  "ex": "Please put old documents in the shredder.",
+  "exde": "Bitte steck alte Unterlagen in den Aktenvernichter."
+ },
+ "be145": {
+  "fr": "le stylo à bille",
+  "pl": "długopis",
+  "ru": "ша́риковая ру́чка",
+  "rulat": "schárikowaja rútschka",
+  "ex": "Can I borrow your ballpoint pen?",
+  "exde": "Kann ich mir deinen Kugelschreiber leihen?"
+ },
+ "be146": {
+  "fr": "le crayon",
+  "pl": "ołówek",
+  "ru": "каранда́ш",
+  "rulat": "karandásch",
+  "ex": "I always write notes with a pencil.",
+  "exde": "Ich schreibe Notizen immer mit einem Bleistift."
+ },
+ "be147": {
+  "fr": "la gomme",
+  "pl": "gumka do mazania",
+  "ru": "ла́стик",
+  "rulat": "lástik",
+  "ex": "Do you have a rubber I can use?",
+  "exde": "Hast du einen Radiergummi für mich?"
+ },
+ "be148": {
+  "fr": "le taille-crayon",
+  "pl": "temperówka",
+  "ru": "точи́лка",
+  "rulat": "tatschílka",
+  "ex": "My pencil is blunt, where is the pencil sharpener?",
+  "exde": "Mein Bleistift ist stumpf, wo ist der Anspitzer?"
+ },
+ "be149": {
+  "fr": "la règle",
+  "pl": "linijka",
+  "ru": "лине́йка",
+  "rulat": "linéjka",
+  "ex": "Draw a straight line with the ruler.",
+  "exde": "Zieh mit dem Lineal eine gerade Linie."
+ },
+ "be150": {
+  "fr": "le surligneur",
+  "pl": "zakreślacz",
+  "ru": "ма́ркер",
+  "rulat": "márker",
+  "ex": "She marked the important parts with a highlighter.",
+  "exde": "Sie hat die wichtigen Stellen mit einem Textmarker markiert."
+ },
+ "be151": {
+  "fr": "les ciseaux",
+  "pl": "nożyczki",
+  "ru": "но́жницы",
+  "rulat": "nóschnizy",
+  "ex": "These scissors are very sharp.",
+  "exde": "Diese Schere ist sehr scharf."
+ },
+ "be152": {
+  "fr": "la colle",
+  "pl": "klej",
+  "ru": "клей",
+  "rulat": "klej",
+  "ex": "I need some glue for the poster.",
+  "exde": "Ich brauche Klebstoff für das Poster."
+ },
+ "be153": {
+  "fr": "le ruban adhésif",
+  "pl": "taśma klejąca",
+  "ru": "скотч",
+  "rulat": "skotsch",
+  "ex": "Can you pass me the Sellotape?",
+  "exde": "Kannst du mir den Tesafilm geben?"
+ },
+ "be154": {
+  "fr": "l'agrafeuse",
+  "pl": "zszywacz",
+  "ru": "сте́плер",
+  "rulat": "stépler",
+  "ex": "The stapler is empty.",
+  "exde": "Der Hefter ist leer."
+ },
+ "be155": {
+  "fr": "l'agrafe",
+  "pl": "zszywka",
+  "ru": "скоба́ для сте́плера",
+  "rulat": "skabá dlja stéplera",
+  "ex": "We have run out of staples.",
+  "exde": "Wir haben keine Heftklammern mehr."
+ },
+ "be156": {
+  "fr": "la perforatrice",
+  "pl": "dziurkacz",
+  "ru": "дыроко́л",
+  "rulat": "dyrakól",
+  "ex": "Use the hole punch before filing the pages.",
+  "exde": "Benutz den Locher, bevor du die Seiten abheftest."
+ },
+ "be157": {
+  "fr": "le trombone",
+  "pl": "spinacz",
+  "ru": "скре́пка",
+  "rulat": "skrépka",
+  "ex": "Hold the pages together with a paper clip.",
+  "exde": "Halte die Seiten mit einer Büroklammer zusammen."
+ },
+ "be158": {
+  "fr": "le bloc-notes",
+  "pl": "notes",
+  "ru": "блокно́т",
+  "rulat": "blaknót",
+  "ex": "He wrote the number on his notepad.",
+  "exde": "Er schrieb die Nummer auf seinen Notizblock."
+ },
+ "be159": {
+  "fr": "le post-it",
+  "pl": "karteczka samoprzylepna",
+  "ru": "сти́кер",
+  "rulat": "stíker",
+  "ex": "I left you a sticky note on your screen.",
+  "exde": "Ich habe dir einen Haftnotizzettel an den Bildschirm geklebt."
+ },
+ "be160": {
+  "fr": "l'enveloppe",
+  "pl": "koperta",
+  "ru": "конве́рт",
+  "rulat": "kanwért",
+  "ex": "Put the letter in the envelope.",
+  "exde": "Steck den Brief in den Briefumschlag."
+ },
+ "be161": {
+  "fr": "le scanner",
+  "pl": "skaner",
+  "ru": "ска́нер",
+  "rulat": "skáner",
+  "ex": "The scanner on the second floor is broken.",
+  "exde": "Der Scanner im zweiten Stock ist kaputt."
+ },
+ "be162": {
+  "fr": "le papier d'imprimante",
+  "pl": "papier do drukarki",
+  "ru": "бума́га для при́нтера",
+  "rulat": "bumága dlja príntera",
+  "ex": "We need more printer paper.",
+  "exde": "Wir brauchen mehr Druckerpapier."
+ },
+ "be163": {
+  "fr": "la cartouche d'encre",
+  "pl": "wkład atramentowy",
+  "ru": "картри́дж",
+  "rulat": "kartrídsch",
+  "ex": "I have to change the ink cartridge.",
+  "exde": "Ich muss die Druckerpatrone wechseln."
+ },
+ "be164": {
+  "fr": "le toner",
+  "pl": "toner",
+  "ru": "то́нер",
+  "rulat": "tóner",
+  "ex": "The printer is out of toner.",
+  "exde": "Der Drucker hat keinen Toner mehr."
+ },
+ "be165": {
+  "fr": "la calculatrice",
+  "pl": "kalkulator",
+  "ru": "калькуля́тор",
+  "rulat": "kalkuljátor",
+  "ex": "Can I borrow your calculator?",
+  "exde": "Kann ich deinen Taschenrechner ausleihen?"
+ },
+ "be166": {
+  "fr": "la pochette plastique",
+  "pl": "koszulka foliowa",
+  "ru": "прозра́чный файл",
+  "rulat": "prosrátschnyj fajl",
+  "ex": "Put the documents in a plastic wallet.",
+  "exde": "Leg die Dokumente in eine Klarsichthülle."
+ },
+ "be167": {
+  "fr": "l'agenda",
+  "pl": "terminarz",
+  "ru": "ежедне́вник",
+  "rulat": "jeshednéwnik",
+  "ex": "I wrote the meeting in my diary.",
+  "exde": "Ich habe das Treffen in meinen Terminkalender eingetragen."
+ },
+ "be168": {
+  "fr": "le casque-micro",
+  "pl": "zestaw słuchawkowy",
+  "ru": "гарниту́ра",
+  "rulat": "garnitúra",
+  "ex": "I use a headset for video calls.",
+  "exde": "Ich benutze ein Headset für Videoanrufe."
+ },
+ "be169": {
+  "fr": "la clé USB",
+  "pl": "pendrive",
+  "ru": "фле́шка",
+  "rulat": "fléschka",
+  "ex": "I saved the presentation on a USB stick.",
+  "exde": "Ich habe die Präsentation auf einem USB-Stick gespeichert."
+ },
+ "be170": {
+  "fr": "le fichier",
+  "pl": "plik",
+  "ru": "файл",
+  "rulat": "fajl",
+  "ex": "Please send me the file.",
+  "exde": "Bitte schick mir die Datei."
+ },
+ "be171": {
+  "fr": "le programme",
+  "pl": "program",
+  "ru": "програ́мма",
+  "rulat": "prográmma",
+  "ex": "This program is very easy to use.",
+  "exde": "Dieses Programm ist sehr einfach zu bedienen."
+ },
+ "be172": {
+  "fr": "la pièce jointe",
+  "pl": "załącznik",
+  "ru": "вложе́ние",
+  "rulat": "wloshénije",
+  "ex": "I forgot to add the attachment.",
+  "exde": "Ich habe vergessen, den Anhang hinzuzufügen."
+ },
+ "be173": {
+  "fr": "enregistrer",
+  "pl": "zapisać",
+  "ru": "сохрани́ть",
+  "rulat": "sochranít",
+  "ex": "Don't forget to save the document.",
+  "exde": "Vergiss nicht, das Dokument zu speichern."
+ },
+ "be174": {
+  "fr": "supprimer",
+  "pl": "usunąć",
+  "ru": "удали́ть",
+  "rulat": "udalít",
+  "ex": "Can I delete this email?",
+  "exde": "Kann ich diese E-Mail löschen?"
+ },
+ "be175": {
+  "fr": "télécharger",
+  "pl": "pobrać",
+  "ru": "скача́ть",
+  "rulat": "skatschát",
+  "ex": "You can download the app for free.",
+  "exde": "Du kannst die App kostenlos herunterladen."
+ },
+ "be176": {
+  "fr": "mettre en ligne",
+  "pl": "przesłać",
+  "ru": "загрузи́ть",
+  "rulat": "sagrusít",
+  "ex": "Please upload the photos to the shared folder.",
+  "exde": "Bitte lade die Fotos in den gemeinsamen Ordner hoch."
+ },
+ "be177": {
+  "fr": "imprimer",
+  "pl": "wydrukować",
+  "ru": "распеча́тать",
+  "rulat": "raspetschátat",
+  "ex": "Could you print out the report?",
+  "exde": "Könntest du den Bericht ausdrucken?"
+ },
+ "be178": {
+  "fr": "se connecter",
+  "pl": "zalogować się",
+  "ru": "войти́ (в систе́му)",
+  "rulat": "wojtí (w sistému)",
+  "ex": "I can't log in to my account.",
+  "exde": "Ich kann mich nicht bei meinem Konto anmelden."
+ },
+ "be179": {
+  "fr": "se déconnecter",
+  "pl": "wylogować się",
+  "ru": "вы́йти (из систе́мы)",
+  "rulat": "wýjti (is sistémy)",
+  "ex": "Always log out when you leave the computer.",
+  "exde": "Melde dich immer ab, wenn du den Computer verlässt."
+ },
+ "be180": {
+  "fr": "mettre à jour",
+  "pl": "zaktualizować",
+  "ru": "обнови́ть",
+  "rulat": "obnowít",
+  "ex": "You should update the software regularly.",
+  "exde": "Du solltest die Software regelmäßig aktualisieren."
+ },
+ "be181": {
+  "fr": "installer",
+  "pl": "instalować",
+  "ru": "устана́вливать",
+  "rulat": "ustanáwliwat",
+  "ex": "I need to install the new program.",
+  "exde": "Ich muss das neue Programm installieren."
+ },
+ "be182": {
+  "fr": "le réseau",
+  "pl": "sieć",
+  "ru": "сеть",
+  "rulat": "sjet",
+  "ex": "The office network is very slow today.",
+  "exde": "Das Netzwerk im Büro ist heute sehr langsam."
+ },
+ "be183": {
+  "fr": "la copie de sauvegarde",
+  "pl": "kopia zapasowa",
+  "ru": "резе́рвная ко́пия",
+  "rulat": "resérwnaja kópija",
+  "ex": "Always make a backup of your files.",
+  "exde": "Mach immer eine Sicherungskopie deiner Dateien."
+ },
+ "be184": {
+  "fr": "le système d'exploitation",
+  "pl": "system operacyjny",
+  "ru": "операцио́нная систе́ма",
+  "rulat": "operaziónnaja sistéma",
+  "ex": "My laptop needs a new operating system.",
+  "exde": "Mein Laptop braucht ein neues Betriebssystem."
+ },
+ "be185": {
+  "fr": "le disque dur",
+  "pl": "dysk twardy",
+  "ru": "жёсткий диск",
+  "rulat": "schóstkij disk",
+  "ex": "The hard drive is almost full.",
+  "exde": "Die Festplatte ist fast voll."
+ },
+ "be186": {
+  "fr": "le virus",
+  "pl": "wirus",
+  "ru": "ви́рус",
+  "rulat": "wírus",
+  "ex": "My computer has a virus.",
+  "exde": "Mein Computer hat einen Virus."
+ },
+ "be187": {
+  "fr": "planter",
+  "pl": "zawieszać się",
+  "ru": "зависа́ть",
+  "rulat": "sawissát",
+  "ex": "The program crashed again.",
+  "exde": "Das Programm ist schon wieder abgestürzt."
+ },
+ "be188": {
+  "fr": "redémarrer",
+  "pl": "uruchomić ponownie",
+  "ru": "перезагрузи́ть",
+  "rulat": "peresagrusít",
+  "ex": "Please restart your computer.",
+  "exde": "Bitte starte deinen Computer neu."
+ },
+ "be189": {
+  "fr": "le tableur",
+  "pl": "arkusz kalkulacyjny",
+  "ru": "электро́нная табли́ца",
+  "rulat": "elektrónnaja tablíza",
+  "ex": "I keep my budget in a spreadsheet.",
+  "exde": "Ich führe mein Budget in einer Tabellenkalkulation."
+ },
+ "be190": {
+  "fr": "le traitement de texte",
+  "pl": "przetwarzanie tekstu",
+  "ru": "обрабо́тка те́кста",
+  "rulat": "obrabótka téksta",
+  "ex": "She uses word processing software for her letters.",
+  "exde": "Sie nutzt ein Programm zur Textverarbeitung für ihre Briefe."
+ },
+ "be191": {
+  "fr": "le Wi-Fi",
+  "pl": "Wi-Fi",
+  "ru": "вайфа́й",
+  "rulat": "waifái",
+  "ex": "What is the Wi-Fi password?",
+  "exde": "Wie lautet das WLAN-Passwort?"
+ },
+ "be192": {
+  "fr": "la connexion internet",
+  "pl": "połączenie internetowe",
+  "ru": "подключе́ние к интерне́ту",
+  "rulat": "podkljutschénije k internétu",
+  "ex": "The internet connection keeps dropping.",
+  "exde": "Die Internetverbindung bricht ständig ab."
+ },
+ "be193": {
+  "fr": "le compte utilisateur",
+  "pl": "konto użytkownika",
+  "ru": "учётная за́пись",
+  "rulat": "utschótnaja sápis",
+  "ex": "Create a user account to log in.",
+  "exde": "Erstelle ein Benutzerkonto, um dich anzumelden."
+ },
+ "be194": {
+  "fr": "le logiciel",
+  "pl": "oprogramowanie",
+  "ru": "програ́ммное обеспе́чение",
+  "rulat": "prográmmnoje obespétschenije",
+  "ex": "The software needs an update.",
+  "exde": "Die Software braucht ein Update."
+ },
+ "be195": {
+  "fr": "l'objet",
+  "pl": "temat",
+  "ru": "те́ма письма́",
+  "rulat": "téma pismá",
+  "ex": "Don't forget to write a subject line.",
+  "exde": "Vergiss nicht, einen Betreff zu schreiben."
+ },
+ "be196": {
+  "fr": "le destinataire / la destinataire",
+  "pl": "odbiorca / odbiorczyni",
+  "ru": "получа́тель / получа́тельница",
+  "rulat": "polutschátel / polutschátelniza",
+  "ex": "Check the recipient's address before sending.",
+  "exde": "Prüf die Adresse des Empfängers vor dem Senden."
+ },
+ "be197": {
+  "fr": "l'expéditeur / l'expéditrice",
+  "pl": "nadawca / nadawczyni",
+  "ru": "отправи́тель / отправи́тельница",
+  "rulat": "otprawítel / otprawítelniza",
+  "ex": "The sender of this email is unknown.",
+  "exde": "Der Absender dieser E-Mail ist unbekannt."
+ },
+ "be198": {
+  "fr": "la formule d'appel",
+  "pl": "zwrot grzecznościowy",
+  "ru": "обраще́ние",
+  "rulat": "obraschtschénije",
+  "ex": "Use a formal salutation in business letters.",
+  "exde": "Verwende in Geschäftsbriefen eine förmliche Anrede."
+ },
+ "be199": {
+  "fr": "la formule de politesse",
+  "pl": "zwrot pożegnalny",
+  "ru": "заключи́тельная фра́за",
+  "rulat": "sakljutschítelnaja frása",
+  "ex": "'Best regards' is a common closing formula.",
+  "exde": "'Mit freundlichen Grüßen' ist eine übliche Grußformel."
+ },
+ "be200": {
+  "fr": "transférer",
+  "pl": "przekazywać dalej",
+  "ru": "пересыла́ть",
+  "rulat": "pereßylát",
+  "ex": "Can you forward me the email?",
+  "exde": "Kannst du mir die E-Mail weiterleiten?"
+ },
+ "be201": {
+  "fr": "répondre à tous",
+  "pl": "odpowiedzieć wszystkim",
+  "ru": "отве́тить всем",
+  "rulat": "otwétit wsjem",
+  "ex": "Please don't reply to all, just to me.",
+  "exde": "Bitte nicht allen antworten, nur mir."
+ },
+ "be202": {
+  "fr": "mettre en copie",
+  "pl": "dodać do kopii",
+  "ru": "поста́вить в ко́пию",
+  "rulat": "postáwit w kópiju",
+  "ex": "Please copy in my manager.",
+  "exde": "Bitte setz meine Chefin in Kopie."
+ },
+ "be203": {
+  "fr": "la copie cachée (Cci)",
+  "pl": "ukryta kopia (UDW)",
+  "ru": "скры́тая ко́пия",
+  "rulat": "skrýtaja kópija",
+  "ex": "I sent her the email as a blind carbon copy.",
+  "exde": "Ich habe ihr die E-Mail als Blindkopie geschickt."
+ },
+ "be204": {
+  "fr": "la boîte de réception",
+  "pl": "skrzynka odbiorcza",
+  "ru": "входя́щие",
+  "rulat": "wchodjáschtschije",
+  "ex": "My inbox is full.",
+  "exde": "Mein Posteingang ist voll."
+ },
+ "be205": {
+  "fr": "la boîte d'envoi",
+  "pl": "skrzynka nadawcza",
+  "ru": "исходя́щие",
+  "rulat": "ischodjáschtschije",
+  "ex": "The email is still in the outbox.",
+  "exde": "Die E-Mail ist noch im Postausgang."
+ },
+ "be206": {
+  "fr": "le brouillon",
+  "pl": "wersja robocza",
+  "ru": "черно́вик",
+  "rulat": "tschernówik",
+  "ex": "I saved the draft.",
+  "exde": "Ich habe den Entwurf gespeichert."
+ },
+ "be207": {
+  "fr": "le spam",
+  "pl": "spam",
+  "ru": "спам",
+  "rulat": "spam",
+  "ex": "Your email ended up in spam.",
+  "exde": "Deine E-Mail ist im Spam gelandet."
+ },
+ "be208": {
+  "fr": "le message d'absence",
+  "pl": "automatyczna odpowiedź o nieobecności",
+  "ru": "автоотве́т",
+  "rulat": "awtootwét",
+  "ex": "I set up an out-of-office message before my holiday.",
+  "exde": "Vor meinem Urlaub habe ich eine Abwesenheitsnotiz eingerichtet."
+ },
+ "be209": {
+  "fr": "l'en-tête (m.)",
+  "pl": "nagłówek firmowy",
+  "ru": "фи́рменный бланк",
+  "rulat": "fírmennyj blank",
+  "ex": "The letter was printed on company letterhead.",
+  "exde": "Der Brief wurde mit dem Briefkopf der Firma gedruckt."
+ },
+ "be210": {
+  "fr": "la signature",
+  "pl": "podpis e-mailowy",
+  "ru": "по́дпись",
+  "rulat": "pódpis",
+  "ex": "Add your phone number to your email signature.",
+  "exde": "Füg deine Telefonnummer zu deiner Signatur hinzu."
+ },
+ "be211": {
+  "fr": "le timbre",
+  "pl": "znaczek pocztowy",
+  "ru": "ма́рка",
+  "rulat": "márka",
+  "ex": "I need a stamp for this letter.",
+  "exde": "Ich brauche eine Briefmarke für diesen Brief."
+ },
+ "be212": {
+  "fr": "la lettre recommandée",
+  "pl": "list polecony",
+  "ru": "заказно́е письмо́",
+  "rulat": "sakasnóje pismó",
+  "ex": "The contract was sent by registered letter.",
+  "exde": "Der Vertrag wurde per Einschreiben geschickt."
+ },
+ "be213": {
+  "fr": "la demande",
+  "pl": "zapytanie",
+  "ru": "запро́с",
+  "rulat": "saprós",
+  "ex": "Thank you for your enquiry.",
+  "exde": "Vielen Dank für Ihre Anfrage."
+ },
+ "be214": {
+  "fr": "le retour",
+  "pl": "informacja zwrotna",
+  "ru": "обра́тная связь",
+  "rulat": "obrátnaja swjas",
+  "ex": "I look forward to your feedback.",
+  "exde": "Ich freue mich auf Ihre Rückmeldung."
+ },
+ "be215": {
+  "fr": "confirmer",
+  "pl": "potwierdzić",
+  "ru": "подтверди́ть",
+  "rulat": "podtwerdít",
+  "ex": "Please confirm your appointment.",
+  "exde": "Bitte bestätigen Sie Ihren Termin."
+ },
+ "be216": {
+  "fr": "Madame, Monsieur",
+  "pl": "Szanowni Państwo",
+  "ru": "Уважа́емые да́мы и господа́",
+  "rulat": "Uwashájemyje dámy i gospodá",
+  "ex": "The letter began with \"Dear Sir or Madam\".",
+  "exde": "Der Brief begann mit „Sehr geehrte Damen und Herren“."
+ },
+ "be217": {
+  "fr": "Cordialement",
+  "pl": "Z poważaniem",
+  "ru": "С уваже́нием",
+  "rulat": "s uwashénijem",
+  "ex": "She ended the email with \"Kind regards\".",
+  "exde": "Sie beendete die E-Mail mit „Mit freundlichen Grüßen“."
+ },
+ "be218": {
+  "fr": "Merci d'avance",
+  "pl": "Z góry dziękuję",
+  "ru": "Зара́нее спаси́бо",
+  "rulat": "Saráneje spassíbo",
+  "ex": "Thank you in advance for your help.",
+  "exde": "Vielen Dank im Voraus für Ihre Hilfe."
+ },
+ "be219": {
+  "fr": "urgent",
+  "pl": "pilny",
+  "ru": "сро́чный",
+  "rulat": "srótschnyj",
+  "ex": "This is an urgent message.",
+  "exde": "Das ist eine dringende Nachricht."
+ },
+ "be220": {
+  "fr": "rappeler",
+  "pl": "oddzwonić",
+  "ru": "перезвони́ть",
+  "rulat": "pereswonít",
+  "ex": "Can you call me back later?",
+  "exde": "Kannst du mich später zurückrufen?"
+ },
+ "be221": {
+  "fr": "le répondeur",
+  "pl": "automatyczna sekretarka",
+  "ru": "автоотве́тчик",
+  "rulat": "awtoatwétschik",
+  "ex": "I left a message on the answering machine.",
+  "exde": "Ich habe eine Nachricht auf dem Anrufbeantworter hinterlassen."
+ },
+ "be222": {
+  "fr": "la messagerie vocale",
+  "pl": "poczta głosowa",
+  "ru": "голосова́я по́чта",
+  "rulat": "golossowája pótschta",
+  "ex": "My call went straight to voicemail.",
+  "exde": "Mein Anruf ging direkt auf die Mailbox."
+ },
+ "be223": {
+  "fr": "laisser un message",
+  "pl": "zostawić wiadomość",
+  "ru": "оста́вить сообще́ние",
+  "rulat": "astáwit ssaobschtschénije",
+  "ex": "Please leave a message after the beep.",
+  "exde": "Bitte hinterlassen Sie nach dem Signalton eine Nachricht."
+ },
+ "be224": {
+  "fr": "raccrocher",
+  "pl": "rozłączyć się",
+  "ru": "положи́ть тру́бку",
+  "rulat": "palaschít trúbku",
+  "ex": "Don't hang up, I'm still here.",
+  "exde": "Leg nicht auf, ich bin noch dran."
+ },
+ "be225": {
+  "fr": "décrocher",
+  "pl": "odebrać telefon",
+  "ru": "взять тру́бку",
+  "rulat": "wsjat trúbku",
+  "ex": "Nobody answered the phone at the office.",
+  "exde": "Im Büro hat niemand abgenommen."
+ },
+ "be226": {
+  "fr": "occupé",
+  "pl": "zajęty",
+  "ru": "за́нято",
+  "rulat": "sánjata",
+  "ex": "The line is engaged.",
+  "exde": "Die Leitung ist besetzt."
+ },
+ "be227": {
+  "fr": "la ligne directe",
+  "pl": "numer bezpośredni",
+  "ru": "прямо́й но́мер",
+  "rulat": "prjamój nómer",
+  "ex": "Can you give me your direct line?",
+  "exde": "Können Sie mir Ihre Durchwahl geben?"
+ },
+ "be228": {
+  "fr": "mettre en communication",
+  "pl": "połączyć",
+  "ru": "соедини́ть",
+  "rulat": "ssajedinít",
+  "ex": "Could you put me through to the manager?",
+  "exde": "Könnten Sie mich mit dem Geschäftsführer verbinden?"
+ },
+ "be229": {
+  "fr": "l'indicatif",
+  "pl": "numer kierunkowy",
+  "ru": "телефо́нный код",
+  "rulat": "telefónnyj kod",
+  "ex": "What is the dialling code for Berlin?",
+  "exde": "Wie lautet die Vorwahl von Berlin?"
+ },
+ "be230": {
+  "fr": "composer",
+  "pl": "wybrać numer",
+  "ru": "набира́ть но́мер",
+  "rulat": "nabirát nómer",
+  "ex": "Dial zero for an outside line.",
+  "exde": "Wählen Sie die Null für eine Amtsleitung."
+ },
+ "be231": {
+  "fr": "C'est lui-même.",
+  "pl": "Przy telefonie.",
+  "ru": "Слу́шаю.",
+  "rulat": "Sslúschaju.",
+  "ex": "Is this Mr Smith? – Speaking.",
+  "exde": "Spreche ich mit Herrn Schmidt? – Am Apparat."
+ },
+ "be232": {
+  "fr": "Ne quittez pas, s'il vous plaît.",
+  "pl": "Proszę nie odkładać słuchawki.",
+  "ru": "Не клади́те, пожа́луйста, тру́бку.",
+  "rulat": "Ne kladíte, paschálujsta, trúbku.",
+  "ex": "Please hold the line, I'll check.",
+  "exde": "Bleiben Sie bitte dran, ich schaue nach."
+ },
+ "be233": {
+  "fr": "se tromper de numéro",
+  "pl": "pomylić numer",
+  "ru": "ошиби́ться но́мером",
+  "rulat": "aschibítsa nómeram",
+  "ex": "Sorry, you have the wrong number.",
+  "exde": "Tut mir leid, Sie sind falsch verbunden."
+ },
+ "be234": {
+  "fr": "la connexion",
+  "pl": "połączenie",
+  "ru": "связь",
+  "rulat": "swjas",
+  "ex": "The connection is very bad.",
+  "exde": "Die Verbindung ist sehr schlecht."
+ },
+ "be235": {
+  "fr": "la visioconférence",
+  "pl": "wideokonferencja",
+  "ru": "видеоконфере́нция",
+  "rulat": "wideokanferénzija",
+  "ex": "The video conference starts at ten.",
+  "exde": "Die Videokonferenz beginnt um zehn."
+ },
+ "be236": {
+  "fr": "la conférence téléphonique",
+  "pl": "telekonferencja",
+  "ru": "телефо́нная конфере́нция",
+  "rulat": "telefónnaja kanferénzija",
+  "ex": "We have a conference call with the client.",
+  "exde": "Wir haben eine Telefonkonferenz mit dem Kunden."
+ },
+ "be237": {
+  "fr": "la caméra",
+  "pl": "kamera",
+  "ru": "ка́мера",
+  "rulat": "kámera",
+  "ex": "Please turn on your camera.",
+  "exde": "Bitte schalte deine Kamera ein."
+ },
+ "be238": {
+  "fr": "le micro",
+  "pl": "mikrofon",
+  "ru": "микрофо́н",
+  "rulat": "mikrafón",
+  "ex": "Your microphone is not working.",
+  "exde": "Dein Mikrofon funktioniert nicht."
+ },
+ "be239": {
+  "fr": "couper le micro",
+  "pl": "wyciszyć",
+  "ru": "вы́ключить звук",
+  "rulat": "wýkljutschit swuk",
+  "ex": "Please mute your microphone.",
+  "exde": "Bitte schalte dein Mikrofon stumm."
+ },
+ "be240": {
+  "fr": "partager son écran",
+  "pl": "udostępnić ekran",
+  "ru": "показа́ть свой экра́н",
+  "rulat": "pakasát swoj ekrán",
+  "ex": "Can you share your screen?",
+  "exde": "Kannst du deinen Bildschirm teilen?"
+ },
+ "be241": {
+  "fr": "le lien",
+  "pl": "link",
+  "ru": "ссы́лка",
+  "rulat": "ssýlka",
+  "ex": "I'll send you the link to the meeting.",
+  "exde": "Ich schicke dir den Link zur Besprechung."
+ },
+ "be242": {
+  "fr": "l'invitation",
+  "pl": "zaproszenie",
+  "ru": "приглаше́ние",
+  "rulat": "priglaschénije",
+  "ex": "Did you get the invitation to the video call?",
+  "exde": "Hast du die Einladung zum Videoanruf bekommen?"
+ },
+ "be243": {
+  "fr": "le participant / la participante",
+  "pl": "uczestnik / uczestniczka",
+  "ru": "уча́стник / уча́стница",
+  "rulat": "utschástnik / utschástniza",
+  "ex": "Every participant should turn on the camera.",
+  "exde": "Jeder Teilnehmer sollte die Kamera einschalten."
+ },
+ "be244": {
+  "fr": "Vous m'entendez ?",
+  "pl": "Czy Pan/Pani mnie słyszy?",
+  "ru": "Вы меня́ слы́шите?",
+  "rulat": "Wy menjá slýschite?",
+  "ex": "Hello, can you hear me?",
+  "exde": "Hallo, können Sie mich hören?"
+ },
+ "be245": {
+  "fr": "prendre rendez-vous",
+  "pl": "umówić się na spotkanie",
+  "ru": "назна́чить встре́чу",
+  "rulat": "nasnátschit wstrétschu",
+  "ex": "I'd like to make an appointment for Tuesday.",
+  "exde": "Ich möchte einen Termin für Dienstag vereinbaren."
+ },
+ "be246": {
+  "fr": "reporter un rendez-vous",
+  "pl": "przełożyć spotkanie",
+  "ru": "перенести́ встре́чу",
+  "rulat": "perenestí wstrétschu",
+  "ex": "Can we postpone the appointment to Friday?",
+  "exde": "Können wir den Termin auf Freitag verschieben?"
+ },
+ "be247": {
+  "fr": "annuler un rendez-vous",
+  "pl": "odwołać spotkanie",
+  "ru": "отмени́ть встре́чу",
+  "rulat": "otmenít wstrétschu",
+  "ex": "I have to cancel the appointment because I'm ill.",
+  "exde": "Ich muss den Termin absagen, weil ich krank bin."
+ },
+ "be248": {
+  "fr": "l'ordre du jour",
+  "pl": "porządek obrad",
+  "ru": "пове́стка дня",
+  "rulat": "powéstka dnja",
+  "ex": "Please read the agenda before the meeting.",
+  "exde": "Bitte lesen Sie die Tagesordnung vor der Sitzung."
+ },
+ "be249": {
+  "fr": "le point de l'ordre du jour",
+  "pl": "punkt porządku obrad",
+  "ru": "пункт пове́стки дня",
+  "rulat": "punkt powéstki dnja",
+  "ex": "Let's move on to the next agenda item.",
+  "exde": "Kommen wir zum nächsten Tagesordnungspunkt."
+ },
+ "be250": {
+  "fr": "le procès-verbal",
+  "pl": "protokół",
+  "ru": "протоко́л",
+  "rulat": "protokól",
+  "ex": "The minutes will be sent out tomorrow.",
+  "exde": "Das Protokoll wird morgen verschickt."
+ },
+ "be251": {
+  "fr": "rédiger le procès-verbal",
+  "pl": "protokołować",
+  "ru": "вести́ протоко́л",
+  "rulat": "westí protokól",
+  "ex": "Who will take the minutes today?",
+  "exde": "Wer führt heute Protokoll?"
+ },
+ "be252": {
+  "fr": "la réunion",
+  "pl": "zebranie",
+  "ru": "заседа́ние",
+  "rulat": "sassedánije",
+  "ex": "The meeting starts at ten o'clock.",
+  "exde": "Die Sitzung beginnt um zehn Uhr."
+ },
+ "be253": {
+  "fr": "la présentation",
+  "pl": "prezentacja",
+  "ru": "презента́ция",
+  "rulat": "presentázija",
+  "ex": "Her presentation was very clear.",
+  "exde": "Ihre Präsentation war sehr klar."
+ },
+ "be254": {
+  "fr": "présenter",
+  "pl": "prezentować",
+  "ru": "представля́ть",
+  "rulat": "predstawlját",
+  "ex": "Tomorrow I will present the results.",
+  "exde": "Morgen werde ich die Ergebnisse präsentieren."
+ },
+ "be255": {
+  "fr": "la proposition",
+  "pl": "propozycja",
+  "ru": "предложе́ние",
+  "rulat": "predloschénije",
+  "ex": "That's a good suggestion.",
+  "exde": "Das ist ein guter Vorschlag."
+ },
+ "be256": {
+  "fr": "proposer",
+  "pl": "proponować",
+  "ru": "предлага́ть",
+  "rulat": "predlagát",
+  "ex": "I suggest a short break.",
+  "exde": "Ich schlage eine kurze Pause vor."
+ },
+ "be257": {
+  "fr": "prendre une décision",
+  "pl": "podjąć decyzję",
+  "ru": "приня́ть реше́ние",
+  "rulat": "prinját reschénije",
+  "ex": "We have to make a decision today.",
+  "exde": "Wir müssen heute eine Entscheidung treffen."
+ },
+ "be258": {
+  "fr": "le vote",
+  "pl": "głosowanie",
+  "ru": "голосова́ние",
+  "rulat": "golossowánije",
+  "ex": "The vote will take place at the end of the meeting.",
+  "exde": "Die Abstimmung findet am Ende der Sitzung statt."
+ },
+ "be259": {
+  "fr": "la présidence",
+  "pl": "przewodnictwo",
+  "ru": "председа́тельство",
+  "rulat": "predsedátelstwo",
+  "ex": "Ms Weber will take the chair today.",
+  "exde": "Frau Weber übernimmt heute den Vorsitz."
+ },
+ "be260": {
+  "fr": "la discussion",
+  "pl": "dyskusja",
+  "ru": "диску́ссия",
+  "rulat": "diskússija",
+  "ex": "After the presentation there will be a discussion.",
+  "exde": "Nach der Präsentation gibt es eine Diskussion."
+ },
+ "be261": {
+  "fr": "discuter",
+  "pl": "dyskutować",
+  "ru": "обсужда́ть",
+  "rulat": "obsuschdát'",
+  "ex": "We need to discuss the new plan.",
+  "exde": "Wir müssen den neuen Plan diskutieren."
+ },
+ "be262": {
+  "fr": "le résultat",
+  "pl": "wynik",
+  "ru": "результа́т",
+  "rulat": "resultát",
+  "ex": "The outcome of the meeting was positive.",
+  "exde": "Das Ergebnis der Besprechung war positiv."
+ },
+ "be263": {
+  "fr": "résumer",
+  "pl": "podsumować",
+  "ru": "подвести́ ито́ги",
+  "rulat": "podwestí itógi",
+  "ex": "Could you summarise the main points?",
+  "exde": "Könnten Sie die wichtigsten Punkte zusammenfassen?"
+ },
+ "be264": {
+  "fr": "se mettre d'accord",
+  "pl": "dojść do porozumienia",
+  "ru": "договори́ться",
+  "rulat": "dogowarít'sja",
+  "ex": "We finally agreed on a date.",
+  "exde": "Wir haben uns endlich auf einen Termin geeinigt."
+ },
+ "be265": {
+  "fr": "le calendrier",
+  "pl": "harmonogram",
+  "ru": "гра́фик",
+  "rulat": "gráfik",
+  "ex": "The schedule is very tight.",
+  "exde": "Der Zeitplan ist sehr eng."
+ },
+ "be266": {
+  "fr": "être empêché",
+  "pl": "nie móc przyjść",
+  "ru": "не смочь прийти́",
+  "rulat": "ne smotsch prijtí",
+  "ex": "I'm afraid I'm unable to attend tomorrow.",
+  "exde": "Leider bin ich morgen verhindert."
+ },
+ "be267": {
+  "fr": "Seriez-vous disponible le … ?",
+  "pl": "Czy miałby Pan / miałaby Pani czas w …?",
+  "ru": "Вы бу́дете свобо́дны в …?",
+  "rulat": "Wy búdete swobódny w …?",
+  "ex": "Would you be available on Monday?",
+  "exde": "Hätten Sie am Montag Zeit?"
+ },
+ "be268": {
+  "fr": "respecter un délai",
+  "pl": "dotrzymać terminu",
+  "ru": "уложи́ться в срок",
+  "rulat": "uloschít'sja w srok",
+  "ex": "We managed to meet the deadline.",
+  "exde": "Wir haben es geschafft, die Frist einzuhalten."
+ },
+ "be269": {
+  "fr": "le chef de projet / la cheffe de projet",
+  "pl": "kierownik projektu / kierowniczka projektu",
+  "ru": "руководи́тель прое́кта",
+  "rulat": "rukowodítel' projékta",
+  "ex": "The project manager called a meeting.",
+  "exde": "Der Projektleiter hat eine Besprechung einberufen."
+ },
+ "be270": {
+  "fr": "l'objectif",
+  "pl": "cel",
+  "ru": "цель",
+  "rulat": "zel'",
+  "ex": "Our goal is to finish by June.",
+  "exde": "Unser Ziel ist es, bis Juni fertig zu sein."
+ },
+ "be271": {
+  "fr": "le jalon",
+  "pl": "kamień milowy",
+  "ru": "ключево́й эта́п",
+  "rulat": "kljutschewój etáp",
+  "ex": "We reached an important milestone.",
+  "exde": "Wir haben einen wichtigen Meilenstein erreicht."
+ },
+ "be272": {
+  "fr": "la priorité",
+  "pl": "priorytet",
+  "ru": "приорите́т",
+  "rulat": "prioritét",
+  "ex": "Safety is our top priority.",
+  "exde": "Sicherheit hat für uns oberste Priorität."
+ },
+ "be273": {
+  "fr": "établir des priorités",
+  "pl": "ustalać priorytety",
+  "ru": "расставля́ть приорите́ты",
+  "rulat": "rasstawlját' prioritéty",
+  "ex": "You need to set priorities.",
+  "exde": "Du musst Prioritäten setzen."
+ },
+ "be274": {
+  "fr": "déléguer",
+  "pl": "delegować",
+  "ru": "делеги́ровать",
+  "rulat": "delegírowat'",
+  "ex": "A good manager knows how to delegate.",
+  "exde": "Eine gute Führungskraft weiß, wie man delegiert."
+ },
+ "be275": {
+  "fr": "accomplir",
+  "pl": "załatwić",
+  "ru": "вы́полнить",
+  "rulat": "wýpolnit'",
+  "ex": "I need to get this done today.",
+  "exde": "Ich muss das heute erledigen."
+ },
+ "be276": {
+  "fr": "le progrès",
+  "pl": "postęp",
+  "ru": "прогре́сс",
+  "rulat": "progréss",
+  "ex": "We are making good progress.",
+  "exde": "Wir machen gute Fortschritte."
+ },
+ "be277": {
+  "fr": "mettre en œuvre",
+  "pl": "wdrożyć",
+  "ru": "реализова́ть",
+  "rulat": "realisowát'",
+  "ex": "We will implement the new strategy next month.",
+  "exde": "Wir werden die neue Strategie nächsten Monat umsetzen."
+ },
+ "be278": {
+  "fr": "la mise en œuvre",
+  "pl": "wdrożenie",
+  "ru": "реализа́ция",
+  "rulat": "realisázija",
+  "ex": "The implementation took longer than expected.",
+  "exde": "Die Umsetzung dauerte länger als erwartet."
+ },
+ "be279": {
+  "fr": "le budget",
+  "pl": "budżet",
+  "ru": "бюдже́т",
+  "rulat": "bjudschét",
+  "ex": "We have exceeded the budget.",
+  "exde": "Wir haben das Budget überschritten."
+ },
+ "be280": {
+  "fr": "l'effort",
+  "pl": "nakład pracy",
+  "ru": "трудозатра́ты",
+  "rulat": "trudosatráty",
+  "ex": "The effort was worth it.",
+  "exde": "Der Aufwand hat sich gelohnt."
+ },
+ "be281": {
+  "fr": "le retard",
+  "pl": "opóźnienie",
+  "ru": "заде́ржка",
+  "rulat": "sadérschka",
+  "ex": "There was a delay in the delivery.",
+  "exde": "Es gab eine Verzögerung bei der Lieferung."
+ },
+ "be282": {
+  "fr": "le goulot d'étranglement",
+  "pl": "wąskie gardło",
+  "ru": "у́зкое ме́сто",
+  "rulat": "ússkoje méssto",
+  "ex": "Testing is the main bottleneck in our project.",
+  "exde": "Das Testen ist der größte Engpass in unserem Projekt."
+ },
+ "be283": {
+  "fr": "être responsable de",
+  "pl": "być odpowiedzialnym za",
+  "ru": "отвеча́ть за",
+  "rulat": "otwetschát sa",
+  "ex": "Who is in charge of the budget?",
+  "exde": "Wer ist für das Budget zuständig?"
+ },
+ "be284": {
+  "fr": "le domaine de compétence",
+  "pl": "zakres obowiązków",
+  "ru": "сфе́ра отве́тственности",
+  "rulat": "sféra otwétstwennosti",
+  "ex": "That is not my area of responsibility.",
+  "exde": "Das fällt nicht in meine Zuständigkeit."
+ },
+ "be285": {
+  "fr": "la liste de tâches",
+  "pl": "lista zadań",
+  "ru": "спи́сок дел",
+  "rulat": "spíssok del",
+  "ex": "My to-do list is very long today.",
+  "exde": "Meine To-do-Liste ist heute sehr lang."
+ },
+ "be286": {
+  "fr": "le point d'étape",
+  "pl": "aktualny stan prac",
+  "ru": "промежу́точный отчёт",
+  "rulat": "promeschútotschnyj otschjót",
+  "ex": "Please send me a progress update by Friday.",
+  "exde": "Bitte schick mir bis Freitag einen Zwischenstand."
+ },
+ "be287": {
+  "fr": "la mission",
+  "pl": "zlecenie",
+  "ru": "зада́ние",
+  "rulat": "sadánije",
+  "ex": "She finished the assignment ahead of time.",
+  "exde": "Sie hat den Auftrag vorzeitig erledigt."
+ },
+ "be288": {
+  "fr": "l'exigence (f)",
+  "pl": "wymaganie",
+  "ru": "тре́бование",
+  "rulat": "trébowanije",
+  "ex": "The software meets all requirements.",
+  "exde": "Die Software erfüllt alle Anforderungen."
+ },
+ "be289": {
+  "fr": "être en retard sur le planning",
+  "pl": "mieć opóźnienie",
+  "ru": "отстава́ть от гра́фика",
+  "rulat": "otstawát ot gráfika",
+  "ex": "We are two weeks behind schedule.",
+  "exde": "Wir sind zwei Wochen im Verzug."
+ },
+ "be290": {
+  "fr": "être pressé par le temps",
+  "pl": "być pod presją czasu",
+  "ru": "быть в цейтно́те",
+  "rulat": "byt w zejtnóte",
+  "ex": "The whole team is under time pressure this month.",
+  "exde": "Das ganze Team steht diesen Monat unter Zeitdruck."
+ },
+ "be291": {
+  "fr": "le risque",
+  "pl": "ryzyko",
+  "ru": "риск",
+  "rulat": "risk",
+  "ex": "We have to assess the risk carefully.",
+  "exde": "Wir müssen das Risiko sorgfältig einschätzen."
+ },
+ "be292": {
+  "fr": "attribuer",
+  "pl": "przydzielać",
+  "ru": "поруча́ть",
+  "rulat": "porutschát",
+  "ex": "The manager will assign the tasks tomorrow.",
+  "exde": "Die Managerin wird morgen die Aufgaben zuweisen."
+ },
+ "be293": {
+  "fr": "le collègue / la collègue",
+  "pl": "kolega / koleżanka",
+  "ru": "колле́га",
+  "rulat": "kolléga",
+  "ex": "My colleague helped me with the report.",
+  "exde": "Meine Kollegin hat mir beim Bericht geholfen."
+ },
+ "be294": {
+  "fr": "le supérieur / la supérieure",
+  "pl": "przełożony / przełożona",
+  "ru": "руководи́тель",
+  "rulat": "rukowodítel",
+  "ex": "I have to discuss this with my superior.",
+  "exde": "Ich muss das mit meinem Vorgesetzten besprechen."
+ },
+ "be295": {
+  "fr": "le patron / la patronne",
+  "pl": "szef / szefowa",
+  "ru": "нача́льник / нача́льница",
+  "rulat": "natschálnik / natschálniza",
+  "ex": "My boss is on holiday this week.",
+  "exde": "Mein Chef ist diese Woche im Urlaub."
+ },
+ "be296": {
+  "fr": "le collaborateur / la collaboratrice",
+  "pl": "pracownik / pracownica",
+  "ru": "сотру́дник / сотру́дница",
+  "rulat": "sotrúdnik / sotrúdniza",
+  "ex": "The company has two hundred employees.",
+  "exde": "Die Firma hat zweihundert Mitarbeiter."
+ },
+ "be297": {
+  "fr": "l'équipe (f)",
+  "pl": "zespół",
+  "ru": "кома́нда",
+  "rulat": "kománda",
+  "ex": "Our team works well together.",
+  "exde": "Unser Team arbeitet gut zusammen."
+ },
+ "be298": {
+  "fr": "le service",
+  "pl": "dział",
+  "ru": "отде́л",
+  "rulat": "otdél",
+  "ex": "She works in the sales department.",
+  "exde": "Sie arbeitet in der Abteilung Vertrieb."
+ },
+ "be299": {
+  "fr": "le chef de service / la cheffe de service",
+  "pl": "kierownik działu / kierowniczka działu",
+  "ru": "нача́льник отде́ла",
+  "rulat": "natschálnik otdéla",
+  "ex": "The head of department approved the plan.",
+  "exde": "Der Abteilungsleiter hat den Plan genehmigt."
+ },
+ "be300": {
+  "fr": "la direction",
+  "pl": "zarząd",
+  "ru": "руково́дство",
+  "rulat": "rukowódstwo",
+  "ex": "The management has decided to open a new office.",
+  "exde": "Die Geschäftsführung hat beschlossen, ein neues Büro zu eröffnen."
+ },
+ "be301": {
+  "fr": "le chef d'équipe / la cheffe d'équipe",
+  "pl": "kierownik zespołu / kierowniczka zespołu",
+  "ru": "руководи́тель кома́нды",
+  "rulat": "rukowodítel komándy",
+  "ex": "Our team leader organises a meeting every Monday.",
+  "exde": "Unser Teamleiter organisiert jeden Montag eine Besprechung."
+ },
+ "be302": {
+  "fr": "la hiérarchie",
+  "pl": "hierarchia",
+  "ru": "иера́рхия",
+  "rulat": "ijerárchija",
+  "ex": "The company has a very flat hierarchy.",
+  "exde": "Die Firma hat eine sehr flache Hierarchie."
+ },
+ "be303": {
+  "fr": "l'ambiance de travail",
+  "pl": "atmosfera w pracy",
+  "ru": "атмосфе́ра в коллекти́ве",
+  "rulat": "atmosféra w kollektíwe",
+  "ex": "The working atmosphere in our office is very good.",
+  "exde": "Das Betriebsklima in unserem Büro ist sehr gut."
+ },
+ "be304": {
+  "fr": "travailler ensemble",
+  "pl": "współpracować",
+  "ru": "сотру́дничать",
+  "rulat": "sotrúdnitschat",
+  "ex": "We work together on many projects.",
+  "exde": "Wir arbeiten an vielen Projekten zusammen."
+ },
+ "be305": {
+  "fr": "la collaboration",
+  "pl": "współpraca",
+  "ru": "сотру́дничество",
+  "rulat": "sotrúdnitschestwo",
+  "ex": "Thank you for the good cooperation.",
+  "exde": "Vielen Dank für die gute Zusammenarbeit."
+ },
+ "be306": {
+  "fr": "solidaire, confraternel",
+  "pl": "koleżeński",
+  "ru": "това́рищеский",
+  "rulat": "towáristscheskij",
+  "ex": "My colleagues are very collegial and supportive.",
+  "exde": "Meine Kollegen sind sehr kollegial."
+ },
+ "be307": {
+  "fr": "serviable",
+  "pl": "pomocny, uczynny",
+  "ru": "отзы́вчивый",
+  "rulat": "otsýwtschiwyj",
+  "ex": "The new colleague is very helpful.",
+  "exde": "Die neue Kollegin ist sehr hilfsbereit."
+ },
+ "be308": {
+  "fr": "bien s'entendre avec quelqu'un",
+  "pl": "dobrze się z kimś dogadywać",
+  "ru": "ла́дить с ке́м-либо",
+  "rulat": "ládit s kém-libo",
+  "ex": "I get on well with my boss.",
+  "exde": "Ich verstehe mich gut mit meinem Chef."
+ },
+ "be309": {
+  "fr": "le conflit",
+  "pl": "konflikt",
+  "ru": "конфли́кт",
+  "rulat": "konflíkt",
+  "ex": "We solved the conflict in a calm conversation.",
+  "exde": "Wir haben den Konflikt in einem ruhigen Gespräch gelöst."
+ },
+ "be310": {
+  "fr": "la critique",
+  "pl": "krytyka",
+  "ru": "кри́тика",
+  "rulat": "krítika",
+  "ex": "She can accept criticism well.",
+  "exde": "Sie kann Kritik gut annehmen."
+ },
+ "be311": {
+  "fr": "féliciter, louer",
+  "pl": "chwalić",
+  "ru": "хвали́ть",
+  "rulat": "chwalít",
+  "ex": "The boss praised the whole team.",
+  "exde": "Die Chefin hat das ganze Team gelobt."
+ },
+ "be312": {
+  "fr": "le stagiaire / la stagiaire",
+  "pl": "praktykant / praktykantka, stażysta / stażystka",
+  "ru": "практика́нт / практика́нтка",
+  "rulat": "praktikánt / praktikántka",
+  "ex": "The intern is staying with us for three months.",
+  "exde": "Der Praktikant bleibt drei Monate bei uns."
+ },
+ "be313": {
+  "fr": "l'apprenti / l'apprentie",
+  "pl": "uczeń / uczennica (w zawodzie)",
+  "ru": "учени́к / учени́ца",
+  "rulat": "utscheník / utscheníza",
+  "ex": "Our trainee is in her second year.",
+  "exde": "Unsere Auszubildende ist im zweiten Jahr."
+ },
+ "be314": {
+  "fr": "former, mettre au courant",
+  "pl": "wdrażać (do pracy)",
+  "ru": "вводи́ть в курс де́ла",
+  "rulat": "wwodít w kurs déla",
+  "ex": "Who is going to show the new colleague the ropes?",
+  "exde": "Wer arbeitet den neuen Kollegen ein?"
+ },
+ "be315": {
+  "fr": "remplacer",
+  "pl": "zastępować",
+  "ru": "замеща́ть",
+  "rulat": "sameschtschát",
+  "ex": "Can you cover for me next week?",
+  "exde": "Kannst du mich nächste Woche vertreten?"
+ },
+ "be316": {
+  "fr": "le remplacement / le remplaçant",
+  "pl": "zastępstwo / zastępca",
+  "ru": "замеще́ние / замести́тель",
+  "rulat": "sameschtschénije / samestítel",
+  "ex": "During my holiday Mr Braun is my stand-in.",
+  "exde": "Während meines Urlaubs ist Herr Braun meine Vertretung."
+ },
+ "be317": {
+  "fr": "l'entretien annuel d'évaluation",
+  "pl": "rozmowa oceniająca",
+  "ru": "аттестацио́нная бесе́да",
+  "rulat": "attestaziónnaja besséda",
+  "ex": "My performance review is next Tuesday.",
+  "exde": "Mein Mitarbeitergespräch ist nächsten Dienstag."
+ },
+ "be318": {
+  "fr": "le cadre dirigeant",
+  "pl": "kierownik, menedżer",
+  "ru": "руководи́тель",
+  "rulat": "rukowodítel",
+  "ex": "As a manager, she is responsible for twenty people.",
+  "exde": "Als Führungskraft ist sie für zwanzig Mitarbeiter verantwortlich."
+ },
+ "be319": {
+  "fr": "licencier",
+  "pl": "zwalniać (z pracy)",
+  "ru": "увольня́ть",
+  "rulat": "uwolnját",
+  "ex": "The company had to dismiss fifty employees.",
+  "exde": "Die Firma musste fünfzig Mitarbeiter entlassen."
+ },
+ "be320": {
+  "fr": "la promotion",
+  "pl": "awans",
+  "ru": "повыше́ние (по слу́жбе)",
+  "rulat": "powyschénije (po slúshbe)",
+  "ex": "He got a promotion last year.",
+  "exde": "Er hat letztes Jahr eine Beförderung bekommen."
+ },
+ "be321": {
+  "fr": "promouvoir",
+  "pl": "awansować",
+  "ru": "повы́сить в до́лжности",
+  "rulat": "powýssit w dólschnosti",
+  "ex": "The company promoted her to manager.",
+  "exde": "Die Firma beförderte sie zur Managerin."
+ },
+ "be322": {
+  "fr": "motiver",
+  "pl": "motywować",
+  "ru": "мотиви́ровать",
+  "rulat": "motiwírowat",
+  "ex": "A good boss knows how to motivate the team.",
+  "exde": "Ein guter Chef weiß, wie man das Team motiviert."
+ },
+ "be323": {
+  "fr": "le style de direction",
+  "pl": "styl zarządzania",
+  "ru": "стиль руково́дства",
+  "rulat": "stil rukowódstwa",
+  "ex": "Her leadership style is very open.",
+  "exde": "Ihr Führungsstil ist sehr offen."
+ },
+ "be324": {
+  "fr": "l'évaluation des performances",
+  "pl": "ocena okresowa pracownika",
+  "ru": "оце́нка эффекти́вности рабо́ты",
+  "rulat": "ozénka effektíwnosti rabóty",
+  "ex": "My performance appraisal is next week.",
+  "exde": "Meine Leistungsbeurteilung ist nächste Woche."
+ },
+ "be325": {
+  "fr": "critiquer",
+  "pl": "krytykować",
+  "ru": "критикова́ть",
+  "rulat": "kritikowát",
+  "ex": "He never criticises his staff in public.",
+  "exde": "Er kritisiert seine Mitarbeiter nie öffentlich."
+ },
+ "be326": {
+  "fr": "la pénurie de main-d'œuvre qualifiée",
+  "pl": "niedobór wykwalifikowanych pracowników",
+  "ru": "нехва́тка квалифици́рованных ка́дров",
+  "rulat": "nechwátka kwalifizírowannych kádrow",
+  "ex": "Many companies suffer from a skills shortage.",
+  "exde": "Viele Firmen leiden unter dem Fachkräftemangel."
+ },
+ "be327": {
+  "fr": "l'avertissement",
+  "pl": "upomnienie",
+  "ru": "вы́говор",
+  "rulat": "wýgowor",
+  "ex": "He received a formal warning for being late.",
+  "exde": "Er bekam eine Abmahnung wegen Unpünktlichkeit."
+ },
+ "be328": {
+  "fr": "l'apprentissage",
+  "pl": "nauka zawodu",
+  "ru": "учени́чество",
+  "rulat": "utschenítschestwo",
+  "ex": "She started an apprenticeship as a baker.",
+  "exde": "Sie hat eine Lehre als Bäckerin angefangen."
+ },
+ "be329": {
+  "fr": "la place d'apprentissage",
+  "pl": "miejsce praktyki zawodowej",
+  "ru": "учени́ческое ме́сто",
+  "rulat": "utschenítscheskoje mésto",
+  "ex": "He is looking for an apprenticeship place.",
+  "exde": "Er sucht einen Ausbildungsplatz."
+ },
+ "be330": {
+  "fr": "le formateur / la formatrice",
+  "pl": "instruktor / instruktorka",
+  "ru": "наста́вник / наста́вница",
+  "rulat": "nastáwnik / nastáwniza",
+  "ex": "My trainer explains everything patiently.",
+  "exde": "Mein Ausbilder erklärt alles geduldig."
+ },
+ "be331": {
+  "fr": "la rémunération de l'apprenti",
+  "pl": "wynagrodzenie ucznia",
+  "ru": "стипе́ндия ученика́",
+  "rulat": "stipéndija utschenik\\u00e1",
+  "ex": "The apprentice pay rises every year.",
+  "exde": "Die Ausbildungsvergütung steigt jedes Jahr."
+ },
+ "be332": {
+  "fr": "l'école professionnelle",
+  "pl": "szkoła zawodowa",
+  "ru": "профессиона́льное учи́лище",
+  "rulat": "professionálnoje utschílischtsche",
+  "ex": "Apprentices go to vocational school twice a week.",
+  "exde": "Auszubildende gehen zweimal pro Woche in die Berufsschule."
+ },
+ "be333": {
+  "fr": "le système de formation en alternance",
+  "pl": "dualny system kształcenia",
+  "ru": "дуа́льная систе́ма обуче́ния",
+  "rulat": "duálnaja sistéma obutschénija",
+  "ex": "Germany is known for its dual vocational training system.",
+  "exde": "Deutschland ist für das duale System bekannt."
+ },
+ "be334": {
+  "fr": "le carnet d'apprentissage",
+  "pl": "dzienniczek praktyk",
+  "ru": "дневни́к обуче́ния",
+  "rulat": "dnewník obutschénija",
+  "ex": "Don't forget to fill in your training record book.",
+  "exde": "Vergiss nicht, dein Berichtsheft auszufüllen."
+ },
+ "be335": {
+  "fr": "la formation continue",
+  "pl": "doskonalenie zawodowe",
+  "ru": "повыше́ние квалифика́ции",
+  "rulat": "powyschénije kwalifikázii",
+  "ex": "The company pays for my further training.",
+  "exde": "Die Firma bezahlt meine Fortbildung."
+ },
+ "be336": {
+  "fr": "se perfectionner",
+  "pl": "dokształcać się",
+  "ru": "повыша́ть квалифика́цию",
+  "rulat": "powyschát kwalifikáziju",
+  "ex": "I want to undertake further training in marketing.",
+  "exde": "Ich möchte mich im Marketing weiterbilden."
+ },
+ "be337": {
+  "fr": "la reconversion professionnelle",
+  "pl": "przekwalifikowanie",
+  "ru": "переподгото́вка",
+  "rulat": "perepodgotówka",
+  "ex": "After his injury, he started retraining as a programmer.",
+  "exde": "Nach seiner Verletzung begann er eine Umschulung zum Programmierer."
+ },
+ "be338": {
+  "fr": "le stage de formation",
+  "pl": "kurs szkoleniowy",
+  "ru": "курс обуче́ния",
+  "rulat": "kurs obutschénija",
+  "ex": "I'm attending a training course on first aid.",
+  "exde": "Ich besuche einen Lehrgang in Erster Hilfe."
+ },
+ "be339": {
+  "fr": "la session de formation",
+  "pl": "szkolenie",
+  "ru": "тре́нинг",
+  "rulat": "tréning",
+  "ex": "There is a training session on the new software tomorrow.",
+  "exde": "Morgen gibt es eine Schulung zur neuen Software."
+ },
+ "be340": {
+  "fr": "le séminaire",
+  "pl": "seminarium",
+  "ru": "семина́р",
+  "rulat": "seminár",
+  "ex": "I'm attending a seminar on time management.",
+  "exde": "Ich nehme an einem Seminar über Zeitmanagement teil."
+ },
+ "be341": {
+  "fr": "le webinaire",
+  "pl": "webinarium",
+  "ru": "вебина́р",
+  "rulat": "webinár",
+  "ex": "I joined a webinar on time management.",
+  "exde": "Ich habe an einem Webinar über Zeitmanagement teilgenommen."
+ },
+ "be342": {
+  "fr": "suivre un cours",
+  "pl": "zapisać się na kurs",
+  "ru": "записа́ться на курс",
+  "rulat": "sapissátsja na kurs",
+  "ex": "She wants to take a course in accounting.",
+  "exde": "Sie möchte einen Kurs in Buchhaltung belegen."
+ },
+ "be343": {
+  "fr": "la formation à distance",
+  "pl": "studia na odległość",
+  "ru": "зао́чное обуче́ние",
+  "rulat": "saótschnoje obutschénije",
+  "ex": "He got his degree through distance learning.",
+  "exde": "Er hat seinen Abschluss im Fernstudium gemacht."
+ },
+ "be344": {
+  "fr": "l'examen final",
+  "pl": "egzamin końcowy",
+  "ru": "выпускно́й экза́мен",
+  "rulat": "wypusknój eksámen",
+  "ex": "The final exam is next Monday.",
+  "exde": "Die Abschlussprüfung ist nächsten Montag."
+ },
+ "be345": {
+  "fr": "réussir un examen",
+  "pl": "zdać egzamin",
+  "ru": "сдать экза́мен",
+  "rulat": "sdat eksámen",
+  "ex": "I passed the exam on my first try.",
+  "exde": "Ich habe die Prüfung beim ersten Versuch bestanden."
+ },
+ "be346": {
+  "fr": "échouer",
+  "pl": "oblać",
+  "ru": "провали́ться",
+  "rulat": "prawalítsja",
+  "ex": "Two students failed the test.",
+  "exde": "Zwei Studenten sind bei dem Test durchgefallen."
+ },
+ "be347": {
+  "fr": "le certificat",
+  "pl": "certyfikat",
+  "ru": "сертифика́т",
+  "rulat": "sertifikát",
+  "ex": "You will receive a certificate after the course.",
+  "exde": "Nach dem Kurs bekommst du ein Zertifikat."
+ },
+ "be348": {
+  "fr": "l'attestation de participation",
+  "pl": "zaświadczenie o uczestnictwie",
+  "ru": "спра́вка об уча́стии",
+  "rulat": "spráwka ob utschástii",
+  "ex": "Please send me a certificate of attendance.",
+  "exde": "Bitte schicken Sie mir eine Teilnahmebestätigung."
+ },
+ "be349": {
+  "fr": "se qualifier",
+  "pl": "zdobyć kwalifikacje",
+  "ru": "получи́ть квалифика́цию",
+  "rulat": "polutschít kwalifikáziju",
+  "ex": "She qualified as a nurse last year.",
+  "exde": "Sie hat sich letztes Jahr als Pflegekraft qualifiziert."
+ },
+ "be350": {
+  "fr": "acquérir",
+  "pl": "zdobyć",
+  "ru": "приобрести́",
+  "rulat": "priobrestí",
+  "ex": "He acquired new skills at work.",
+  "exde": "Er hat bei der Arbeit neue Fähigkeiten erworben."
+ },
+ "be351": {
+  "fr": "le congé de formation",
+  "pl": "urlop szkoleniowy",
+  "ru": "уче́бный о́тпуск",
+  "rulat": "utschébny ótpusk",
+  "ex": "I'm taking a week of educational leave.",
+  "exde": "Ich nehme eine Woche Bildungsurlaub."
+ },
+ "be352": {
+  "fr": "la formation tout au long de la vie",
+  "pl": "uczenie się przez całe życie",
+  "ru": "обуче́ние в тече́ние всей жи́зни",
+  "rulat": "obutschénije w tetschénije wsej shísni",
+  "ex": "Lifelong learning is important in a changing world.",
+  "exde": "Lebenslanges Lernen ist in einer sich wandelnden Welt wichtig."
+ },
+ "be353": {
+  "fr": "la lettre de démission",
+  "pl": "pismo z wypowiedzeniem",
+  "ru": "заявле́ние об увольне́нии",
+  "rulat": "sajawlénije ob uwolnénii",
+  "ex": "I handed in my letter of resignation today.",
+  "exde": "Ich habe heute mein Kündigungsschreiben abgegeben."
+ },
+ "be354": {
+  "fr": "licencier sans préavis",
+  "pl": "zwolnić bez wypowiedzenia",
+  "ru": "уво́лить без предупрежде́ния",
+  "rulat": "uwólit bes predupreshdénija",
+  "ex": "The company dismissed him without notice.",
+  "exde": "Die Firma hat ihm fristlos gekündigt."
+ },
+ "be355": {
+  "fr": "l'indemnité de licenciement",
+  "pl": "odprawa",
+  "ru": "выходно́е посо́бие",
+  "rulat": "wychodnóje possóbije",
+  "ex": "She received generous severance pay.",
+  "exde": "Sie hat eine großzügige Abfindung bekommen."
+ },
+ "be356": {
+  "fr": "la rupture conventionnelle",
+  "pl": "porozumienie o rozwiązaniu umowy",
+  "ru": "соглаше́ние о расторже́нии догово́ра",
+  "rulat": "soglaschénije o rastorshénii dogowóra",
+  "ex": "Both sides signed a termination agreement.",
+  "exde": "Beide Seiten haben einen Aufhebungsvertrag unterschrieben."
+ },
+ "be357": {
+  "fr": "au chômage",
+  "pl": "bezrobotny",
+  "ru": "безрабо́тный",
+  "rulat": "besrabótny",
+  "ex": "He has been unemployed since March.",
+  "exde": "Er ist seit März arbeitslos."
+ },
+ "be358": {
+  "fr": "s'inscrire au chômage",
+  "pl": "zarejestrować się jako bezrobotny",
+  "ru": "встать на учёт как безрабо́тный",
+  "rulat": "wstat na utschjót kak besrabótny",
+  "ex": "You must register as unemployed immediately.",
+  "exde": "Du musst dich sofort arbeitslos melden."
+ },
+ "be359": {
+  "fr": "l'allocation chômage",
+  "pl": "zasiłek dla bezrobotnych",
+  "ru": "посо́бие по безрабо́тице",
+  "rulat": "possóbije po besrabótize",
+  "ex": "She receives unemployment benefit.",
+  "exde": "Sie bekommt Arbeitslosengeld."
+ },
+ "be360": {
+  "fr": "l'agence pour l'emploi",
+  "pl": "urząd pracy",
+  "ru": "центр за́нятости",
+  "rulat": "zentr sánjatosti",
+  "ex": "I have an appointment at the Jobcentre tomorrow.",
+  "exde": "Ich habe morgen einen Termin bei der Agentur für Arbeit."
+ },
+ "be361": {
+  "fr": "le changement d'emploi",
+  "pl": "zmiana pracy",
+  "ru": "сме́на рабо́ты",
+  "rulat": "smjéna rabóty",
+  "ex": "His change of job was a good decision.",
+  "exde": "Sein Jobwechsel war eine gute Entscheidung."
+ },
+ "be362": {
+  "fr": "changer d'emploi",
+  "pl": "zmienić pracę",
+  "ru": "смени́ть рабо́ту",
+  "rulat": "smenít rabótu",
+  "ex": "I want to change jobs next year.",
+  "exde": "Ich möchte nächstes Jahr den Job wechseln."
+ },
+ "be363": {
+  "fr": "le dernier jour de travail",
+  "pl": "ostatni dzień pracy",
+  "ru": "после́дний рабо́чий день",
+  "rulat": "posljédni rabótschi djen",
+  "ex": "Friday is my last working day.",
+  "exde": "Freitag ist mein letzter Arbeitstag."
+ },
+ "be364": {
+  "fr": "la protection contre le licenciement",
+  "pl": "ochrona przed zwolnieniem",
+  "ru": "защи́та от увольне́ния",
+  "rulat": "saschtschíta ot uwolnjénija",
+  "ex": "Pregnant women have special protection against dismissal.",
+  "exde": "Schwangere Frauen haben besonderen Kündigungsschutz."
+ },
+ "be365": {
+  "fr": "la passation",
+  "pl": "przekazanie obowiązków",
+  "ru": "переда́ча дел",
+  "rulat": "peredátscha djel",
+  "ex": "The handover to my colleague took two days.",
+  "exde": "Die Übergabe an meine Kollegin dauerte zwei Tage."
+ },
+ "be366": {
+  "fr": "le successeur",
+  "pl": "następca",
+  "ru": "прее́мник",
+  "rulat": "prijémnik",
+  "ex": "My successor starts on Monday.",
+  "exde": "Mein Nachfolger fängt am Montag an."
+ },
+ "be367": {
+  "fr": "l'offre d'emploi",
+  "pl": "oferta pracy",
+  "ru": "предложе́ние о рабо́те",
+  "rulat": "predloschénije o rabóte",
+  "ex": "She accepted the job offer.",
+  "exde": "Sie hat das Jobangebot angenommen."
+ },
+ "be368": {
+  "fr": "la comptabilité",
+  "pl": "księgowość",
+  "ru": "бухгалте́рия",
+  "rulat": "buchgaltérija",
+  "ex": "She works in accounting.",
+  "exde": "Sie arbeitet in der Buchhaltung."
+ },
+ "be369": {
+  "fr": "établir une facture",
+  "pl": "wystawić fakturę",
+  "ru": "вы́ставить счёт",
+  "rulat": "wýstawit schtschjot",
+  "ex": "We will issue an invoice next week.",
+  "exde": "Wir werden nächste Woche eine Rechnung stellen."
+ },
+ "be370": {
+  "fr": "le numéro de facture",
+  "pl": "numer faktury",
+  "ru": "но́мер счёта",
+  "rulat": "nómer schtschjóta",
+  "ex": "Please state the invoice number.",
+  "exde": "Bitte geben Sie die Rechnungsnummer an."
+ },
+ "be371": {
+  "fr": "le montant de la facture",
+  "pl": "kwota faktury",
+  "ru": "су́мма счёта",
+  "rulat": "súmma schtschjóta",
+  "ex": "The invoice amount is 500 euros.",
+  "exde": "Der Rechnungsbetrag beträgt 500 Euro."
+ },
+ "be372": {
+  "fr": "la TVA (taxe sur la valeur ajoutée)",
+  "pl": "podatek VAT",
+  "ru": "нало́г на доба́вленную сто́имость (НДС)",
+  "rulat": "nalók na dobáwlennuju stóimost (en-de-és)",
+  "ex": "The price includes VAT.",
+  "exde": "Der Preis enthält die Mehrwertsteuer."
+ },
+ "be373": {
+  "fr": "net",
+  "pl": "netto",
+  "ru": "не́тто",
+  "rulat": "nétto",
+  "ex": "The price is 100 euros net.",
+  "exde": "Der Preis beträgt 100 Euro netto."
+ },
+ "be374": {
+  "fr": "brut",
+  "pl": "brutto",
+  "ru": "бру́тто",
+  "rulat": "brútto",
+  "ex": "My salary is 3,000 euros gross.",
+  "exde": "Mein Gehalt beträgt 3.000 Euro brutto."
+ },
+ "be375": {
+  "fr": "le délai de paiement",
+  "pl": "termin płatności",
+  "ru": "срок опла́ты",
+  "rulat": "srok opláty",
+  "ex": "The payment deadline is 14 days.",
+  "exde": "Die Zahlungsfrist beträgt 14 Tage."
+ },
+ "be376": {
+  "fr": "exigible",
+  "pl": "płatny",
+  "ru": "подлежа́щий опла́те",
+  "rulat": "podlescháschtschi opláte",
+  "ex": "The invoice is due at the end of the month.",
+  "exde": "Die Rechnung ist Ende des Monats fällig."
+ },
+ "be377": {
+  "fr": "virer",
+  "pl": "przelać",
+  "ru": "перевести́ (де́ньги)",
+  "rulat": "perewestí (djéngi)",
+  "ex": "Please transfer the money by Friday.",
+  "exde": "Bitte überweisen Sie das Geld bis Freitag."
+ },
+ "be378": {
+  "fr": "le virement bancaire",
+  "pl": "przelew",
+  "ru": "банко́вский перево́д",
+  "rulat": "bankówski perewód",
+  "ex": "I paid by bank transfer.",
+  "exde": "Ich habe per Überweisung bezahlt."
+ },
+ "be379": {
+  "fr": "la relance de paiement",
+  "pl": "upomnienie",
+  "ru": "напомина́ние об опла́те",
+  "rulat": "napominánije ob opláte",
+  "ex": "We received a reminder for the unpaid bill.",
+  "exde": "Wir haben eine Mahnung für die unbezahlte Rechnung erhalten."
+ },
+ "be380": {
+  "fr": "le justificatif",
+  "pl": "dowód księgowy",
+  "ru": "оправда́тельный докуме́нт",
+  "rulat": "oprawdátelny dokumént",
+  "ex": "Keep every voucher for the tax office.",
+  "exde": "Bewahren Sie jeden Beleg für das Finanzamt auf."
+ },
+ "be381": {
+  "fr": "les dépenses",
+  "pl": "wydatki",
+  "ru": "расхо́ды",
+  "rulat": "raschódy",
+  "ex": "We need to reduce our expenses.",
+  "exde": "Wir müssen unsere Ausgaben senken."
+ },
+ "be382": {
+  "fr": "les recettes",
+  "pl": "dochody",
+  "ru": "дохо́ды",
+  "rulat": "dochódy",
+  "ex": "Our income rose last year.",
+  "exde": "Unsere Einnahmen sind letztes Jahr gestiegen."
+ },
+ "be383": {
+  "fr": "le chiffre d'affaires",
+  "pl": "obrót",
+  "ru": "оборо́т",
+  "rulat": "oborót",
+  "ex": "The company's turnover has doubled.",
+  "exde": "Der Umsatz der Firma hat sich verdoppelt."
+ },
+ "be384": {
+  "fr": "le bénéfice",
+  "pl": "zysk",
+  "ru": "при́быль",
+  "rulat": "príbyl",
+  "ex": "The profit was higher than expected.",
+  "exde": "Der Gewinn war höher als erwartet."
+ },
+ "be385": {
+  "fr": "la perte",
+  "pl": "strata",
+  "ru": "убы́ток",
+  "rulat": "ubýtok",
+  "ex": "The shop made a loss this year.",
+  "exde": "Der Laden hat dieses Jahr einen Verlust gemacht."
+ },
+ "be386": {
+  "fr": "le bilan",
+  "pl": "bilans",
+  "ru": "бала́нс",
+  "rulat": "baláns",
+  "ex": "The accountant is preparing the balance sheet.",
+  "exde": "Der Buchhalter erstellt die Bilanz."
+ },
+ "be387": {
+  "fr": "le compte",
+  "pl": "konto",
+  "ru": "счёт",
+  "rulat": "schtschjot",
+  "ex": "Please transfer the money to this account.",
+  "exde": "Bitte überweisen Sie das Geld auf dieses Konto."
+ },
+ "be388": {
+  "fr": "l'écriture comptable",
+  "pl": "zapis księgowy",
+  "ru": "прово́дка",
+  "rulat": "prowódka",
+  "ex": "This entry is incorrect.",
+  "exde": "Diese Buchung ist falsch."
+ },
+ "be389": {
+  "fr": "la déclaration d'impôts",
+  "pl": "zeznanie podatkowe",
+  "ru": "нало́говая деклара́ция",
+  "rulat": "nalógowaja deklarázija",
+  "ex": "I still have to do my tax return.",
+  "exde": "Ich muss noch meine Steuererklärung machen."
+ },
+ "be390": {
+  "fr": "les coûts",
+  "pl": "koszty",
+  "ru": "затра́ты",
+  "rulat": "satráty",
+  "ex": "The costs are too high.",
+  "exde": "Die Kosten sind zu hoch."
+ },
+ "be391": {
+  "fr": "l'avoir",
+  "pl": "nota kredytowa",
+  "ru": "креди́т-но́та",
+  "rulat": "kredít-nóta",
+  "ex": "We will send you a credit note.",
+  "exde": "Wir schicken Ihnen eine Gutschrift."
+ },
+ "be392": {
+  "fr": "la remise",
+  "pl": "rabat",
+  "ru": "ски́дка",
+  "rulat": "skídka",
+  "ex": "Can you give me a discount?",
+  "exde": "Können Sie mir einen Rabatt geben?"
+ },
+ "be393": {
+  "fr": "le client / la cliente",
+  "pl": "klient / klientka",
+  "ru": "клие́нт / клие́нтка",
+  "rulat": "kliént / kliéntka",
+  "ex": "The customer is always right.",
+  "exde": "Der Kunde hat immer recht."
+ },
+ "be394": {
+  "fr": "le client fidèle / la cliente fidèle",
+  "pl": "stały klient / stała klientka",
+  "ru": "постоя́нный клие́нт / постоя́нная клие́нтка",
+  "rulat": "postojánny kliént / postojánnaja kliéntka",
+  "ex": "She is a regular customer at our shop.",
+  "exde": "Sie ist Stammkundin in unserem Laden."
+ },
+ "be395": {
+  "fr": "le nouveau client / la nouvelle cliente",
+  "pl": "nowy klient / nowa klientka",
+  "ru": "но́вый клие́нт / но́вая клие́нтка",
+  "rulat": "nówy kliént / nówaja kliéntka",
+  "ex": "We want to win new customers.",
+  "exde": "Wir wollen Neukunden gewinnen."
+ },
+ "be396": {
+  "fr": "le service commercial",
+  "pl": "dział sprzedaży",
+  "ru": "сбыт",
+  "rulat": "sbyt",
+  "ex": "He works in sales.",
+  "exde": "Er arbeitet im Vertrieb."
+ },
+ "be397": {
+  "fr": "la vente sur le terrain",
+  "pl": "sprzedaż w terenie",
+  "ru": "вы́ездные прода́жи",
+  "rulat": "wýjesdnyje prodáschi",
+  "ex": "She has worked in field sales for ten years.",
+  "exde": "Sie arbeitet seit zehn Jahren im Außendienst."
+ },
+ "be398": {
+  "fr": "le service commercial sédentaire",
+  "pl": "sprzedaż wewnętrzna",
+  "ru": "о́фисные прода́жи",
+  "rulat": "ófisnyje prodáschi",
+  "ex": "Office-based sales handles the orders.",
+  "exde": "Der Innendienst bearbeitet die Bestellungen."
+ },
+ "be399": {
+  "fr": "établir un devis",
+  "pl": "przygotować ofertę",
+  "ru": "соста́вить предложе́ние",
+  "rulat": "sostáwit predloschénije",
+  "ex": "I will draw up a quote for you tomorrow.",
+  "exde": "Ich werde Ihnen morgen ein Angebot erstellen."
+ },
+ "be400": {
+  "fr": "la commande",
+  "pl": "zamówienie",
+  "ru": "зака́з",
+  "rulat": "sakás",
+  "ex": "Your order has been shipped.",
+  "exde": "Ihre Bestellung wurde verschickt."
+ },
+ "be401": {
+  "fr": "la confirmation de commande",
+  "pl": "potwierdzenie zamówienia",
+  "ru": "подтвержде́ние зака́за",
+  "rulat": "podtwerschdénije sakása",
+  "ex": "We sent the order confirmation yesterday.",
+  "exde": "Wir haben die Auftragsbestätigung gestern verschickt."
+ },
+ "be402": {
+  "fr": "la livraison",
+  "pl": "dostawa",
+  "ru": "доста́вка",
+  "rulat": "dostáwka",
+  "ex": "The delivery arrived on time.",
+  "exde": "Die Lieferung kam pünktlich an."
+ },
+ "be403": {
+  "fr": "livrer",
+  "pl": "dostarczać",
+  "ru": "доставля́ть",
+  "rulat": "dostawlját",
+  "ex": "We deliver within three days.",
+  "exde": "Wir liefern innerhalb von drei Tagen."
+ },
+ "be404": {
+  "fr": "la date de livraison",
+  "pl": "termin dostawy",
+  "ru": "срок поста́вки",
+  "rulat": "srok postáwki",
+  "ex": "Can we postpone the delivery date?",
+  "exde": "Können wir den Liefertermin verschieben?"
+ },
+ "be405": {
+  "fr": "la liste de prix",
+  "pl": "cennik",
+  "ru": "прайс-ли́ст",
+  "rulat": "prajs-líst",
+  "ex": "Please send me your current price list.",
+  "exde": "Bitte schicken Sie mir Ihre aktuelle Preisliste."
+ },
+ "be406": {
+  "fr": "négocier",
+  "pl": "negocjować",
+  "ru": "вести́ перегово́ры",
+  "rulat": "westí peregowóry",
+  "ex": "We need to negotiate the price.",
+  "exde": "Wir müssen über den Preis verhandeln."
+ },
+ "be407": {
+  "fr": "la négociation",
+  "pl": "negocjacje",
+  "ru": "перегово́ры",
+  "rulat": "peregowóry",
+  "ex": "The negotiation took two hours.",
+  "exde": "Die Verhandlung dauerte zwei Stunden."
+ },
+ "be408": {
+  "fr": "conclure un contrat",
+  "pl": "zawrzeć umowę",
+  "ru": "заключи́ть догово́р",
+  "rulat": "sakljutschít dogowór",
+  "ex": "We concluded a contract with the new supplier.",
+  "exde": "Wir haben mit dem neuen Lieferanten einen Vertrag abgeschlossen."
+ },
+ "be409": {
+  "fr": "la réclamation",
+  "pl": "reklamacja",
+  "ru": "реклама́ция",
+  "rulat": "reklamázija",
+  "ex": "We received a complaint about the packaging.",
+  "exde": "Wir haben eine Reklamation wegen der Verpackung erhalten."
+ },
+ "be410": {
+  "fr": "se plaindre",
+  "pl": "skarżyć się",
+  "ru": "жа́ловаться",
+  "rulat": "schálowatsja",
+  "ex": "The customer complained about the delay.",
+  "exde": "Der Kunde hat sich über die Verspätung beschwert."
+ },
+ "be411": {
+  "fr": "la satisfaction client",
+  "pl": "zadowolenie klientów",
+  "ru": "удовлетворённость клие́нтов",
+  "rulat": "udowletworjónnost kliéntow",
+  "ex": "Customer satisfaction is our top priority.",
+  "exde": "Kundenzufriedenheit hat für uns höchste Priorität."
+ },
+ "be412": {
+  "fr": "le service client",
+  "pl": "obsługa klienta",
+  "ru": "слу́жба обслу́живания клие́нтов",
+  "rulat": "slúschba obslúschiwanija kliéntow",
+  "ex": "Please contact customer service.",
+  "exde": "Bitte wenden Sie sich an den Kundendienst."
+ },
+ "be413": {
+  "fr": "le suivi client",
+  "pl": "opieka nad klientem",
+  "ru": "рабо́та с клие́нтами",
+  "rulat": "rabóta s kliéntami",
+  "ex": "She is responsible for customer care.",
+  "exde": "Sie ist für die Kundenbetreuung zuständig."
+ },
+ "be414": {
+  "fr": "l'interlocuteur / l'interlocutrice",
+  "pl": "osoba kontaktowa",
+  "ru": "конта́ктное лицо́",
+  "rulat": "kontáktnoje lizó",
+  "ex": "Who is your contact person at the company?",
+  "exde": "Wer ist Ihr Ansprechpartner in der Firma?"
+ },
+ "be415": {
+  "fr": "le concurrent / la concurrente",
+  "pl": "konkurent / konkurentka",
+  "ru": "конкуре́нт / конкуре́нтка",
+  "rulat": "konkurént / konkuréntka",
+  "ex": "Our competitor has lowered its prices.",
+  "exde": "Unser Wettbewerber hat seine Preise gesenkt."
+ },
+ "be416": {
+  "fr": "la prospection",
+  "pl": "pozyskiwanie klientów",
+  "ru": "привлече́ние клие́нтов",
+  "rulat": "priwletschénije kliéntow",
+  "ex": "He spends a lot of time on customer acquisition.",
+  "exde": "Er verbringt viel Zeit mit der Akquise."
+ },
+ "be417": {
+  "fr": "la fidélisation de la clientèle",
+  "pl": "lojalność klientów",
+  "ru": "лоя́льность клие́нтов",
+  "rulat": "lojálnost kliéntow",
+  "ex": "Good service increases customer loyalty.",
+  "exde": "Guter Service stärkt die Kundenbindung."
+ },
+ "be418": {
+  "fr": "diriger",
+  "pl": "kierować",
+  "ru": "руководи́ть",
+  "rulat": "rukowodít",
+  "ex": "She manages a team of ten people.",
+  "exde": "Sie leitet ein Team von zehn Personen."
+ },
+ "be419": {
+  "fr": "traiter",
+  "pl": "rozpatrywać",
+  "ru": "обраба́тывать",
+  "rulat": "obrabátywat",
+  "ex": "We will process your request as soon as possible.",
+  "exde": "Wir bearbeiten Ihre Anfrage so schnell wie möglich."
+ },
+ "be420": {
+  "fr": "s'occuper de",
+  "pl": "zajmować się",
+  "ru": "занима́ться",
+  "rulat": "sanimátsja",
+  "ex": "I will take care of the invoices.",
+  "exde": "Ich kümmere mich um die Rechnungen."
+ },
+ "be421": {
+  "fr": "corriger",
+  "pl": "poprawiać",
+  "ru": "исправля́ть",
+  "rulat": "isprawlját",
+  "ex": "Can you correct my mistakes?",
+  "exde": "Kannst du meine Fehler korrigieren?"
+ },
+ "be422": {
+  "fr": "copier",
+  "pl": "kopiować",
+  "ru": "копи́ровать",
+  "rulat": "kopírowat",
+  "ex": "Please copy this document.",
+  "exde": "Bitte kopiere dieses Dokument."
+ },
+ "be423": {
+  "fr": "scanner",
+  "pl": "skanować",
+  "ru": "скани́ровать",
+  "rulat": "skanírowat",
+  "ex": "I need to scan the contract.",
+  "exde": "Ich muss den Vertrag scannen."
+ },
+ "be424": {
+  "fr": "gagner",
+  "pl": "zarabiać",
+  "ru": "зараба́тывать",
+  "rulat": "sarabátywat",
+  "ex": "She earns a good salary.",
+  "exde": "Sie verdient ein gutes Gehalt."
+ },
+ "be425": {
+  "fr": "se faire porter malade",
+  "pl": "wziąć zwolnienie lekarskie",
+  "ru": "взять больни́чный",
+  "rulat": "wsjat bolnítschnyj",
+  "ex": "I had to call in sick today.",
+  "exde": "Ich musste mich heute krankmelden."
+ },
+ "be426": {
+  "fr": "s'occuper de",
+  "pl": "opiekować się",
+  "ru": "забо́титься о",
+  "rulat": "sabótitsja o",
+  "ex": "She looks after the new employees.",
+  "exde": "Sie betreut die neuen Mitarbeiter."
+ },
+ "be427": {
+  "fr": "coordonner",
+  "pl": "koordynować",
+  "ru": "координи́ровать",
+  "rulat": "koordinírowat",
+  "ex": "He coordinates the project team.",
+  "exde": "Er koordiniert das Projektteam."
+ },
+ "be428": {
+  "fr": "analyser",
+  "pl": "analizować",
+  "ru": "анализи́ровать",
+  "rulat": "analisírowat",
+  "ex": "We need to analyse the data.",
+  "exde": "Wir müssen die Daten analysieren."
+ },
+ "be429": {
+  "fr": "finir sa journée",
+  "pl": "skończyć pracę",
+  "ru": "зака́нчивать рабо́ту",
+  "rulat": "sakántschiwat rabótu",
+  "ex": "Let's finish work early today.",
+  "exde": "Lass uns heute früh Feierabend machen."
+ },
+ "be430": {
+  "fr": "remplir",
+  "pl": "wypełniać",
+  "ru": "заполня́ть",
+  "rulat": "sapolnját",
+  "ex": "Please fill in this form.",
+  "exde": "Bitte füllen Sie dieses Formular aus."
+ },
+ "be431": {
+  "fr": "Bonne soirée !",
+  "pl": "Miłego wieczoru!",
+  "ru": "Хоро́шего ве́чера!",
+  "rulat": "Choróschewo wétschera!",
+  "ex": "Have a nice evening! See you tomorrow.",
+  "exde": "Schönen Feierabend! Bis morgen."
+ },
+ "be432": {
+  "fr": "tenir quelqu'un au courant",
+  "pl": "informować kogoś na bieżąco",
+  "ru": "держа́ть кого́-то в ку́рсе",
+  "rulat": "derschát kowó-to w kúrse",
+  "ex": "Please keep me up to date.",
+  "exde": "Bitte halte mich auf dem Laufenden."
+ },
+ "be433": {
+  "fr": "aller droit au but",
+  "pl": "przejść do sedna",
+  "ru": "говори́ть по существу́",
+  "rulat": "goworít po suschtschestwú",
+  "ex": "Let's get to the point.",
+  "exde": "Bringen wir es auf den Punkt."
+ },
+ "be434": {
+  "fr": "tirer dans le même sens",
+  "pl": "ciągnąć w tę samą stronę",
+  "ru": "де́йствовать сообща́",
+  "rulat": "déistwowat soobschtschá",
+  "ex": "We all need to pull together.",
+  "exde": "Wir müssen alle an einem Strang ziehen."
+ },
+ "be435": {
+  "fr": "parler en tête-à-tête",
+  "pl": "rozmawiać w cztery oczy",
+  "ru": "поговори́ть с гла́зу на глаз",
+  "rulat": "pogoworít s glásu na glas",
+  "ex": "Can we speak in private?",
+  "exde": "Können wir unter vier Augen sprechen?"
+ },
+ "be436": {
+  "fr": "couvrir quelqu'un",
+  "pl": "kryć kogoś",
+  "ru": "прикрыва́ть кого́-то",
+  "rulat": "prikrywát kowó-to",
+  "ex": "Thanks for covering for me.",
+  "exde": "Danke, dass du mir den Rücken freihältst."
+ },
+ "be437": {
+  "fr": "remettre quelque chose à plus tard",
+  "pl": "odkładać coś na później",
+  "ru": "откла́дывать в до́лгий я́щик",
+  "rulat": "otkládywat w dólgij jáschtschik",
+  "ex": "Don't put it off any longer.",
+  "exde": "Schieb es nicht länger auf die lange Bank."
+ },
+ "be438": {
+  "fr": "faire la grève du zèle",
+  "pl": "prowadzić strajk włoski",
+  "ru": "рабо́тать стро́го по инстру́кции",
+  "rulat": "rabótat strógo po instrúkzii",
+  "ex": "The staff decided to work to rule.",
+  "exde": "Die Belegschaft beschloss, Dienst nach Vorschrift zu machen."
+ },
+ "be439": {
+  "fr": "être débordé",
+  "pl": "mieć pełne ręce roboty",
+  "ru": "быть по го́рло в рабо́те",
+  "rulat": "byt po górlo w rabóte",
+  "ex": "I have my hands full this week.",
+  "exde": "Ich habe diese Woche alle Hände voll zu tun."
+ },
+ "be440": {
+  "fr": "prendre l'initiative",
+  "pl": "przejąć inicjatywę",
+  "ru": "прояви́ть инициати́ву",
+  "rulat": "projawít iniziatíwu",
+  "ex": "She took the initiative and called the client.",
+  "exde": "Sie ergriff die Initiative und rief den Kunden an."
+ },
+ "be441": {
+  "fr": "s'attaquer à quelque chose",
+  "pl": "zabrać się za coś",
+  "ru": "взя́ться за что́-либо",
+  "rulat": "wsjátsja sa schtó-libo",
+  "ex": "We need to tackle this problem this week.",
+  "exde": "Wir müssen dieses Problem diese Woche in Angriff nehmen."
+ },
+ "be442": {
+  "fr": "battre son plein",
+  "pl": "iść pełną parą",
+  "ru": "идти́ по́лным хо́дом",
+  "rulat": "idtí pólnym chódom",
+  "ex": "Preparations for the launch are in full swing.",
+  "exde": "Die Vorbereitungen für den Start laufen auf Hochtouren."
+ },
+ "be443": {
+  "fr": "garder une vue d'ensemble",
+  "pl": "zachować orientację",
+  "ru": "держа́ть всё под контро́лем",
+  "rulat": "derschátj wsjo pod kontrólem",
+  "ex": "It's hard to keep track of all these emails.",
+  "exde": "Es ist schwer, bei all diesen E-Mails den Überblick zu behalten."
+ },
+ "be444": {
+  "fr": "perdre le fil",
+  "pl": "stracić orientację",
+  "ru": "запу́таться",
+  "rulat": "sapútatsja",
+  "ex": "I lost track of the deadlines.",
+  "exde": "Ich habe bei den Fristen den Überblick verloren."
+ },
+ "be445": {
+  "fr": "boucler quelque chose",
+  "pl": "dopiąć coś na ostatni guzik",
+  "ru": "довести́ де́ло до конца́",
+  "rulat": "dowestí délo do konzá",
+  "ex": "We want to get the contract wrapped up by Friday.",
+  "exde": "Wir wollen den Vertrag bis Freitag unter Dach und Fach bringen."
+ },
+ "be446": {
+  "fr": "consulter",
+  "pl": "skonsultować się",
+  "ru": "проконсульти́роваться",
+  "rulat": "prokonsultírowatsja",
+  "ex": "I need to consult with my manager first.",
+  "exde": "Ich muss zuerst mit meinem Vorgesetzten Rücksprache halten."
+ },
+ "be447": {
+  "fr": "télétravailler",
+  "pl": "pracować zdalnie",
+  "ru": "рабо́тать из до́ма",
+  "rulat": "rabótatj is dóma",
+  "ex": "I work from home on Mondays.",
+  "exde": "Montags arbeite ich im Homeoffice."
+ },
+ "be448": {
+  "fr": "fixer une réunion",
+  "pl": "wyznaczyć spotkanie",
+  "ru": "назна́чить совеща́ние",
+  "rulat": "nasnátschitj sowestschánije",
+  "ex": "Let's schedule a meeting for next Tuesday.",
+  "exde": "Lass uns eine Besprechung für nächsten Dienstag ansetzen."
+ },
+ "be449": {
+  "fr": "Je reviens vers vous.",
+  "pl": "Odezwę się do Pana/Pani.",
+  "ru": "Я с ва́ми свяжу́сь.",
+  "rulat": "Ja s wámi swjaschús.",
+  "ex": "I'll check the figures and get back to you.",
+  "exde": "Ich prüfe die Zahlen und melde mich bei Ihnen."
+ },
+ "be450": {
+  "fr": "Je ne suis pas au bureau aujourd'hui.",
+  "pl": "Nie ma mnie dziś w biurze.",
+  "ru": "Сего́дня меня́ нет в о́фисе.",
+  "rulat": "Sewódnja menjá net w ófise.",
+  "ex": "Sorry, I'm out of the office today.",
+  "exde": "Tut mir leid, ich bin heute nicht im Büro."
+ },
+ "be451": {
+  "fr": "ne pas lâcher prise",
+  "pl": "nie odpuszczać",
+  "ru": "не сдава́ться",
+  "rulat": "ne sdawátsja",
+  "ex": "The project is tough, but we have to keep at it.",
+  "exde": "Das Projekt ist schwierig, aber wir müssen am Ball bleiben."
+ },
+ "be452": {
+  "fr": "cocher quelque chose",
+  "pl": "odhaczyć coś",
+  "ru": "поста́вить га́лочку",
+  "rulat": "postáwitj gálotschku",
+  "ex": "I can tick that task off my list.",
+  "exde": "Ich kann diese Aufgabe auf meiner Liste abhaken."
+ },
+ "be453": {
+  "fr": "prévenir quelqu'un",
+  "pl": "dać komuś znać",
+  "ru": "дать знать кому́-либо",
+  "rulat": "datj snatj komú-libo",
+  "ex": "Please let me know when you're ready.",
+  "exde": "Bitte gib mir Bescheid, wenn du fertig bist."
+ },
+ "be454": {
+  "fr": "être jeté dans le grand bain",
+  "pl": "zostać rzuconym na głęboką wodę",
+  "ru": "нача́ть рабо́ту без вся́кой подгото́вки",
+  "rulat": "natschátj rabótu bes wsjákoj podgotówki",
+  "ex": "On my first day I was thrown in at the deep end.",
+  "exde": "An meinem ersten Tag wurde ich ins kalte Wasser geworfen."
+ },
+ "be455": {
+  "fr": "réinventer la roue",
+  "pl": "wymyślać koło na nowo",
+  "ru": "изобрета́ть велосипе́д",
+  "rulat": "isobretátj welosipéd",
+  "ex": "We don't need to reinvent the wheel.",
+  "exde": "Wir müssen das Rad nicht neu erfinden."
+ },
+ "be456": {
+  "fr": "le parcours professionnel",
+  "pl": "przebieg kariery",
+  "ru": "карье́рный путь",
+  "rulat": "karjérnyj putj",
+  "ex": "She described her career history in the interview.",
+  "exde": "Sie beschrieb im Gespräch ihren Werdegang."
+ },
+ "be457": {
+  "fr": "la date limite de candidature",
+  "pl": "termin składania aplikacji",
+  "ru": "срок пода́чи заяво́к",
+  "rulat": "srok podátschi sajawók",
+  "ex": "The application deadline is May 31.",
+  "exde": "Die Bewerbungsfrist endet am 31. Mai."
+ },
+ "be458": {
+  "fr": "postuler à",
+  "pl": "ubiegać się o",
+  "ru": "подава́ть заявле́ние на",
+  "rulat": "podawátj sajawlénije na",
+  "ex": "I want to apply for the marketing position.",
+  "exde": "Ich möchte mich um die Stelle im Marketing bewerben."
+ },
+ "be459": {
+  "fr": "la demande",
+  "pl": "sprawa",
+  "ru": "про́сьба",
+  "rulat": "prósba",
+  "ex": "I'll pass your concern on to the team.",
+  "exde": "Ich gebe Ihr Anliegen an das Team weiter."
+ },
+ "be460": {
+  "fr": "la question complémentaire",
+  "pl": "dodatkowe pytanie",
+  "ru": "уточня́ющий вопро́с",
+  "rulat": "utotschnjájuschtschij woprós",
+  "ex": "If you have a follow-up question, just call me.",
+  "exde": "Bei einer Rückfrage rufen Sie mich einfach an."
+ },
+ "be461": {
+  "fr": "le personnel",
+  "pl": "załoga",
+  "ru": "персона́л",
+  "rulat": "personál",
+  "ex": "The entire workforce received a bonus this year.",
+  "exde": "Die gesamte Belegschaft hat dieses Jahr einen Bonus erhalten."
+ },
+ "be462": {
+  "fr": "la reconnaissance",
+  "pl": "uznanie",
+  "ru": "призна́ние",
+  "rulat": "prisnánije",
+  "ex": "She received recognition for her hard work.",
+  "exde": "Sie erhielt Anerkennung für ihre harte Arbeit."
+ },
+ "be463": {
+  "fr": "faire un retour",
+  "pl": "udzielać informacji zwrotnej",
+  "ru": "дава́ть обра́тную связь",
+  "rulat": "dawát obrátnuju swjas",
+  "ex": "My boss gives feedback every Friday.",
+  "exde": "Mein Chef gibt jeden Freitag Feedback."
+ },
+ "be464": {
+  "fr": "la rotation du personnel",
+  "pl": "rotacja pracowników",
+  "ru": "теку́честь ка́дров",
+  "rulat": "tekútschest kádrow",
+  "ex": "The company has a high staff turnover.",
+  "exde": "Die Firma hat eine hohe Fluktuation."
+ },
+ "be465": {
+  "fr": "être licencié",
+  "pl": "zostać zwolnionym",
+  "ru": "быть уво́ленным",
+  "rulat": "byt uwólennym",
+  "ex": "He was made redundant last month.",
+  "exde": "Er wurde letzten Monat gekündigt."
+ },
+ "be466": {
+  "fr": "le licenciement économique",
+  "pl": "zwolnienie z przyczyn niedotyczących pracownika",
+  "ru": "сокраще́ние шта́та",
+  "rulat": "sokraschtschénije schtáta",
+  "ex": "The redundancy came as a shock to everyone.",
+  "exde": "Die betriebsbedingte Kündigung kam für alle überraschend."
+ },
+ "be467": {
+  "fr": "être dispensé de préavis",
+  "pl": "zostać zwolnionym z obowiązku świadczenia pracy",
+  "ru": "быть освобождённым от рабо́ты",
+  "rulat": "byt oswoboschdjónnym ot rabóty",
+  "ex": "After resigning, she was put on garden leave for three months.",
+  "exde": "Nach ihrer Kündigung wurde sie für drei Monate freigestellt."
+ },
+ "be468": {
+  "fr": "le recours pour licenciement abusif",
+  "pl": "odwołanie od wypowiedzenia",
+  "ru": "иск о незако́нном увольне́нии",
+  "rulat": "isk o nesakónnom uwolnénii",
+  "ex": "He filed an unfair dismissal claim against his employer.",
+  "exde": "Er reichte eine Kündigungsschutzklage gegen seinen Arbeitgeber ein."
+ },
+ "be469": {
+  "fr": "se réorienter professionnellement",
+  "pl": "zmienić ścieżkę zawodową",
+  "ru": "смени́ть сфе́ру де́ятельности",
+  "rulat": "smenít sféru déjatelnosti",
+  "ex": "After the layoff, she decided to reorient herself professionally.",
+  "exde": "Nach der Entlassung beschloss sie, sich beruflich neu zu orientieren."
+ },
+ "be470": {
+  "fr": "la recherche d'emploi",
+  "pl": "poszukiwanie pracy",
+  "ru": "по́иск рабо́ты",
+  "rulat": "póisk rabóty",
+  "ex": "The job search took longer than expected.",
+  "exde": "Die Arbeitssuche dauerte länger als erwartet."
+ },
+ "be471": {
+  "fr": "l'entretien de départ",
+  "pl": "rozmowa wyjściowa",
+  "ru": "выходно́е интервью́",
+  "rulat": "wychodnóje interwjú",
+  "ex": "HR scheduled an exit interview for my last day.",
+  "exde": "Die Personalabteilung hat für meinen letzten Tag ein Austrittsgespräch angesetzt."
+ },
+ "be472": {
+  "fr": "soumettre",
+  "pl": "składać",
+  "ru": "подава́ть",
+  "rulat": "podawát",
+  "ex": "Please submit your report by Monday.",
+  "exde": "Bitte reichen Sie Ihren Bericht bis Montag ein."
+ },
+ "be473": {
+  "fr": "établir, créer",
+  "pl": "sporządzać, tworzyć",
+  "ru": "составля́ть, создава́ть",
+  "rulat": "sostawlját, sosdawát",
+  "ex": "Can you draw up a schedule for next week?",
+  "exde": "Kannst du einen Zeitplan für nächste Woche erstellen?"
+ },
+ "be474": {
+  "fr": "développer",
+  "pl": "rozwijać",
+  "ru": "разраба́тывать",
+  "rulat": "rasrabátywat",
+  "ex": "Our team develops new software.",
+  "exde": "Unser Team entwickelt neue Software."
+ },
+ "be475": {
+  "fr": "gérer, administrer",
+  "pl": "zarządzać, administrować",
+  "ru": "управля́ть",
+  "rulat": "uprawlját",
+  "ex": "She manages the company's finances.",
+  "exde": "Sie verwaltet die Finanzen der Firma."
+ },
+ "be476": {
+  "fr": "l'impression",
+  "pl": "wrażenie",
+  "ru": "впечатле́ние",
+  "rulat": "wpetschatlénije",
+  "ex": "She made a good impression at the interview.",
+  "exde": "Sie hat beim Vorstellungsgespräch einen guten Eindruck gemacht."
+ },
+ "be477": {
+  "fr": "le langage corporel",
+  "pl": "mowa ciała",
+  "ru": "язы́к те́ла",
+  "rulat": "jasýk téla",
+  "ex": "Your body language shows confidence.",
+  "exde": "Deine Körpersprache zeigt Selbstvertrauen."
+ },
+ "be478": {
+  "fr": "la poignée de main",
+  "pl": "uścisk dłoni",
+  "ru": "рукопожа́тие",
+  "rulat": "rukoposhátije",
+  "ex": "He greeted me with a firm handshake.",
+  "exde": "Er begrüßte mich mit einem festen Händedruck."
+ },
+ "be479": {
+  "fr": "la direction d'équipe",
+  "pl": "kierowanie zespołem",
+  "ru": "руково́дство кома́ндой",
+  "rulat": "rukowódstwo komándoj",
+  "ex": "She took over team leadership last year.",
+  "exde": "Sie hat letztes Jahr die Teamleitung übernommen."
+ },
+ "be480": {
+  "fr": "l'accord sur les objectifs",
+  "pl": "uzgodnienie celów",
+  "ru": "соглаше́ние о целя́х",
+  "rulat": "soglaschénije o zeljách",
+  "ex": "We signed the target agreement in January.",
+  "exde": "Wir haben die Zielvereinbarung im Januar unterschrieben."
+ },
+ "be481": {
+  "fr": "la consigne",
+  "pl": "polecenie",
+  "ru": "указа́ние",
+  "rulat": "ukasánije",
+  "ex": "Please follow this instruction carefully.",
+  "exde": "Bitte befolgen Sie diese Anweisung genau."
+ },
+ "be482": {
+  "fr": "la description de poste",
+  "pl": "opis stanowiska",
+  "ru": "должностна́я инстру́кция",
+  "rulat": "dolshnostnája instrúkzija",
+  "ex": "Read the job description carefully.",
+  "exde": "Lies die Stellenbeschreibung sorgfältig."
+ },
+ "be483": {
+  "fr": "la réunion d'équipe",
+  "pl": "spotkanie zespołu",
+  "ru": "совеща́ние кома́нды",
+  "rulat": "sowestschánije komándy",
+  "ex": "The team meeting starts at nine.",
+  "exde": "Die Teambesprechung beginnt um neun."
+ },
+ "be484": {
+  "fr": "le supérieur",
+  "pl": "przełożony",
+  "ru": "нача́льник",
+  "rulat": "natschálnik",
+  "ex": "I need to talk to my superior.",
+  "exde": "Ich muss mit meinem Vorgesetzten sprechen."
+ },
+ "be485": {
+  "fr": "le modèle",
+  "pl": "wzór do naśladowania",
+  "ru": "приме́р для подража́ния",
+  "rulat": "primér dlja podrashánija",
+  "ex": "A good boss is a role model for the team.",
+  "exde": "Ein guter Chef ist ein Vorbild für das Team."
+ },
+ "be486": {
+  "fr": "reconnaître",
+  "pl": "doceniać",
+  "ru": "признава́ть",
+  "rulat": "prisnawát",
+  "ex": "Managers should acknowledge good work.",
+  "exde": "Führungskräfte sollten gute Arbeit anerkennen."
+ },
+ "be487": {
+  "fr": "le moral",
+  "pl": "morale pracowników",
+  "ru": "мора́льный дух",
+  "rulat": "morálnyj duch",
+  "ex": "Morale in the office is high.",
+  "exde": "Die Arbeitsmoral im Büro ist hoch."
+ },
+ "be488": {
+  "fr": "la confiance",
+  "pl": "zaufanie",
+  "ru": "дове́рие",
+  "rulat": "dowérije",
+  "ex": "Trust is the basis of good teamwork.",
+  "exde": "Vertrauen ist die Grundlage guter Teamarbeit."
+ },
+ "be489": {
+  "fr": "assumer la responsabilité",
+  "pl": "wziąć odpowiedzialność",
+  "ru": "брать на себя́ отве́тственность",
+  "rulat": "brat na sebjá otwétstwennost",
+  "ex": "A good leader takes responsibility for mistakes.",
+  "exde": "Eine gute Führungskraft übernimmt die Verantwortung für Fehler."
+ },
+ "be490": {
+  "fr": "sans préavis",
+  "pl": "bez wypowiedzenia",
+  "ru": "без предупрежде́ния",
+  "rulat": "bes predupreshdénija",
+  "ex": "He was dismissed without notice.",
+  "exde": "Er wurde fristlos entlassen."
+ },
+ "be491": {
+  "fr": "le chômage",
+  "pl": "bezrobocie",
+  "ru": "безрабо́тица",
+  "rulat": "besrabótiza",
+  "ex": "Unemployment has fallen this year.",
+  "exde": "Die Arbeitslosigkeit ist dieses Jahr gesunken."
+ },
+ "be492": {
+  "fr": "l'agence pour l'emploi",
+  "pl": "urząd pracy",
+  "ru": "би́ржа труда́",
+  "rulat": "bírsha trudá",
+  "ex": "She registered at the job centre.",
+  "exde": "Sie hat sich beim Arbeitsamt gemeldet."
+ },
+ "be493": {
+  "fr": "préparer",
+  "pl": "przygotować",
+  "ru": "гото́вить",
+  "rulat": "gotówit",
+  "ex": "I need to prepare for the meeting.",
+  "exde": "Ich muss mich auf das Meeting vorbereiten."
+ },
+ "be494": {
+  "fr": "rédiger le procès-verbal",
+  "pl": "protokołować",
+  "ru": "вести́ протоко́л",
+  "rulat": "westí protokól",
+  "ex": "Who will take minutes today?",
+  "exde": "Wer wird heute protokollieren?"
+ },
+ "be495": {
+  "fr": "archiver",
+  "pl": "archiwizować",
+  "ru": "архиви́ровать",
+  "rulat": "archiwírowat",
+  "ex": "Please archive the old files.",
+  "exde": "Bitte archivieren Sie die alten Dateien."
+ },
+ "be496": {
+  "fr": "reporter",
+  "pl": "przełożyć",
+  "ru": "отложи́ть",
+  "rulat": "otloschít",
+  "ex": "We have to postpone the meeting.",
+  "exde": "Wir müssen die Besprechung verschieben."
+ },
+ "be497": {
+  "fr": "prioriser",
+  "pl": "priorytetyzować",
+  "ru": "расставля́ть приорите́ты",
+  "rulat": "rasstawlját prioritéty",
+  "ex": "You need to prioritise your tasks.",
+  "exde": "Du musst deine Aufgaben priorisieren."
+ },
+ "be498": {
+  "fr": "se concerter avec",
+  "pl": "uzgadniać",
+  "ru": "согласо́вывать",
+  "rulat": "soglassówywat",
+  "ex": "I will coordinate with my team first.",
+  "exde": "Ich stimme mich zuerst mit meinem Team ab."
+ },
+ "be499": {
+  "fr": "faire des recherches",
+  "pl": "szukać informacji",
+  "ru": "иссле́довать",
+  "rulat": "issljédowat",
+  "ex": "She researched the topic online.",
+  "exde": "Sie hat das Thema online recherchiert."
+ },
+ "be500": {
+  "fr": "approuver",
+  "pl": "zatwierdzić",
+  "ru": "утверди́ть",
+  "rulat": "utwerdít",
+  "ex": "The manager has to approve the budget.",
+  "exde": "Der Manager muss das Budget freigeben."
+ }
+}

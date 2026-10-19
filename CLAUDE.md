@@ -300,9 +300,13 @@ Vorgabe 20). Die Wörter landen mit dem Thema als Kategorie im angegebenen Stape
 
 Die Lernseite endet mit dem Panel **Fortschritt** (`progress()`): eine Zeile je Stapel,
 antippbar, dann eine Zeile je Thema darunter (`progOpen`, nicht gespeichert). Jede
-Zeile trägt einen Balken aus drei Anteilen und die Zahl in Prozent: **sicher** (Stufe
-≥ 4, also Abstand 35 Tage oder mehr, nicht im Wiederanlauf), **im Lernen** (begonnen,
-noch darunter), **neu** (nie gelernt). Gezählt wird je Wort und Sprache, ohne
+Zeile trägt einen Balken aus drei Anteilen: **sicher** (Stufe ≥ 4, also Abstand 35 Tage
+oder mehr, nicht im Wiederanlauf), **im Lernen** (begonnen, noch darunter), **neu** (nie
+gelernt). Die Zahl in Prozent ist der Anteil **begonnener** Karten (sicher und im
+Lernen), nicht der sicheren: sonst stand nach den ersten Lerntagen überall 0 %, obwohl
+gelernt wurde. Dieselbe Rechnung in Kurzform steht als Leiste `#pstrip` direkt unter
+den Zählern der Lernseite („17 % begonnen · 4 % sicher · DE, EN“); ein Tipp darauf
+scrollt zum Panel, damit der Stand auch ohne Scrollen sichtbar ist. Gezählt wird je Wort und Sprache, ohne
 Formkarten; Wörter ohne Eintrag in der Sprache zählen nicht. Die Chips wählen die
 Sprache: „Lernrichtung“ (`cfg.prog = 'auto'`, bei `mix` Deutsch und Englisch, sonst
 `cfg.to`) oder eine einzelne. Farben über die Tokens `--ok` und `--mid`, neu bleibt
@@ -412,7 +416,7 @@ eine ausdrückliche Anforderung für das iPhone.
 
 ## Fallen, die schon zugeschnappt sind
 
-Alle vier haben in der Praxis Zeit gekostet. Sie stehen hier, damit sie nicht
+Alle fünf haben in der Praxis Zeit gekostet. Sie stehen hier, damit sie nicht
 wiederkehren.
 
 **1. `display` schlägt das `hidden`-Attribut.** Eine Regel wie `.grades{display:grid}`
@@ -433,6 +437,12 @@ App brav nichts und zeigte „0 Wörter". Behoben durch Selbstheilung in `load()
 `data.items` leer oder kein Array, wird der Grundstock aus `SEED` wiederhergestellt.
 Zusätzlich fängt ein `try/catch` um die Initialisierung einen Totalausfall ab und
 zeigt statt einer toten Seite einen Knopf zum Zurücksetzen.
+
+**5. Zentrierung im Scrollbereich.** `.dmid` zentriert die Frage vor dem Aufdecken mit
+`justify-content:center`. Nach dem Aufdecken war das falsch: ist die Auflösung höher als
+der Bereich (lange Tafeln, polnische Vergangenheit), schiebt Flexbox den Anfang über den
+oberen Rand hinaus, wo er nicht erreichbar ist, und die klebrige Frage verdeckte ihn.
+Deshalb `.dmid.rev, .dmid.look{justify-content:flex-start}`, vorher `safe center`.
 
 **4. Datumsgrenze nach Weltzeit.** `toISOString()` für den Tagesschlüssel ordnete
 alles zwischen Mitternacht und 02:00 dem Vortag zu. `today()` rechnet jetzt in
