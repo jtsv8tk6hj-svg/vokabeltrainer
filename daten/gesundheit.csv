@@ -239,31 +239,31 @@ ge237;die Bluttransfusion;blood transfusion;Operation und Narkose
 ge238;der Krankenhausaufenthalt;hospital stay;Operation und Narkose
 ge239;die Schlüssellochchirurgie;keyhole surgery;Operation und Narkose
 ge240;die Transplantation;transplant;Operation und Narkose
-ge241;der Apotheker;the pharmacist;In der Apotheke
+ge241;der Apotheker;pharmacist;In der Apotheke
 ge242;rezeptpflichtig;prescription-only;In der Apotheke
 ge243;rezeptfrei;over-the-counter;In der Apotheke
-ge244;die Kapsel;the capsule;In der Apotheke
-ge245;die Salbe;the ointment;In der Apotheke
-ge246;der Hustensaft;the cough syrup;In der Apotheke
-ge247;die Augentropfen;the eye drops;In der Apotheke
-ge248;das Nasenspray;the nasal spray;In der Apotheke
-ge249;die Packungsbeilage;the patient information leaflet;In der Apotheke
-ge250;die Dosierung;the dosage;In der Apotheke
-ge251;die Zuzahlung;the prescription charge;In der Apotheke
-ge252;das Generikum;the generic drug;In der Apotheke
+ge244;die Kapsel;capsule;In der Apotheke
+ge245;die Salbe;ointment;In der Apotheke
+ge246;der Hustensaft;cough syrup;In der Apotheke
+ge247;die Augentropfen;eye drops;In der Apotheke
+ge248;das Nasenspray;nasal spray;In der Apotheke
+ge249;die Packungsbeilage;patient information leaflet;In der Apotheke
+ge250;die Dosierung;dosage;In der Apotheke
+ge251;die Zuzahlung;prescription charge;In der Apotheke
+ge252;das Generikum;generic drug;In der Apotheke
 ge253;einnehmen;to take;In der Apotheke
 ge254;auf nüchternen Magen;on an empty stomach;In der Apotheke
 ge255;dreimal täglich;three times a day;In der Apotheke
-ge256;die Wechselwirkung;the interaction;In der Apotheke
-ge257;die Lutschtablette;the lozenge;In der Apotheke
-ge258;die Notdienstapotheke;the duty chemist's;In der Apotheke
-ge259;die Brausetablette;the effervescent tablet;In der Apotheke
-ge260;das Zäpfchen;the suppository;In der Apotheke
+ge256;die Wechselwirkung;interaction;In der Apotheke
+ge257;die Lutschtablette;lozenge;In der Apotheke
+ge258;die Notdienstapotheke;duty chemist's;In der Apotheke
+ge259;die Brausetablette;effervescent tablet;In der Apotheke
+ge260;das Zäpfchen;suppository;In der Apotheke
 ge261;ein Mittel gegen;something for;In der Apotheke
-ge262;das Verfallsdatum;the expiry date;In der Apotheke
-ge263;die Krankenkasse;the health insurance company;In der Apotheke
+ge262;das Verfallsdatum;expiry date;In der Apotheke
+ge263;die Krankenkasse;health insurance company;In der Apotheke
 ge264;verschreiben;to prescribe;In der Apotheke
-ge265;die Wirkung;the effect;In der Apotheke
+ge265;die Wirkung;effect;In der Apotheke
 ge266;die Dosis;dose;Medikamente und Einnahme
 ge267;der Beipackzettel;package leaflet;Medikamente und Einnahme
 ge268;vor dem Essen;before meals;Medikamente und Einnahme

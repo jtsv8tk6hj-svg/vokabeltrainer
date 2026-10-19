@@ -1,0 +1,4002 @@
+{
+ "wo001": {
+  "fr": "la salle de bains",
+  "pl": "łazienka",
+  "ru": "ва́нная",
+  "rulat": "wánnaja",
+  "ex": "The bathroom is next to the bedroom.",
+  "exde": "Das Badezimmer ist neben dem Schlafzimmer."
+ },
+ "wo002": {
+  "fr": "la cave",
+  "pl": "piwnica",
+  "ru": "подва́л",
+  "rulat": "podwál",
+  "ex": "We keep the bikes in the cellar.",
+  "exde": "Wir bewahren die Fahrräder im Keller auf."
+ },
+ "wo003": {
+  "fr": "le grenier",
+  "pl": "strych",
+  "ru": "черда́к",
+  "rulat": "tscherdák",
+  "ex": "Our old toys are stored in the attic.",
+  "exde": "Unsere alten Spielsachen liegen auf dem Dachboden."
+ },
+ "wo004": {
+  "fr": "l'étage",
+  "pl": "piętro",
+  "ru": "эта́ж",
+  "rulat": "etásch",
+  "ex": "I live on the third floor.",
+  "exde": "Ich wohne im dritten Stock."
+ },
+ "wo005": {
+  "fr": "le rez-de-chaussée",
+  "pl": "parter",
+  "ru": "пе́рвый эта́ж",
+  "rulat": "pérwyj etásch",
+  "ex": "The shop is on the ground floor.",
+  "exde": "Der Laden ist im Erdgeschoss."
+ },
+ "wo006": {
+  "fr": "le mur",
+  "pl": "ściana",
+  "ru": "стена́",
+  "rulat": "stená",
+  "ex": "There is a picture on the wall.",
+  "exde": "An der Wand hängt ein Bild."
+ },
+ "wo007": {
+  "fr": "le plafond",
+  "pl": "sufit",
+  "ru": "потоло́к",
+  "rulat": "potolók",
+  "ex": "The ceiling in this room is very high.",
+  "exde": "Die Decke in diesem Zimmer ist sehr hoch."
+ },
+ "wo008": {
+  "fr": "le locataire",
+  "pl": "najemca",
+  "ru": "жиле́ц",
+  "rulat": "schiléz",
+  "ex": "The new tenant moves in next week.",
+  "exde": "Der neue Mieter zieht nächste Woche ein."
+ },
+ "wo009": {
+  "fr": "les charges",
+  "pl": "opłaty dodatkowe",
+  "ru": "коммуна́льные платежи́",
+  "rulat": "kommunálnyje plateschí",
+  "ex": "The rent is 800 euros plus additional costs.",
+  "exde": "Die Miete beträgt 800 Euro plus Nebenkosten."
+ },
+ "wo010": {
+  "fr": "déménager",
+  "pl": "przeprowadzać się",
+  "ru": "переезжа́ть",
+  "rulat": "perejeschát",
+  "ex": "We want to move house next year.",
+  "exde": "Wir wollen nächstes Jahr umziehen."
+ },
+ "wo011": {
+  "fr": "meublé",
+  "pl": "umeblowany",
+  "ru": "меблиро́ванный",
+  "rulat": "meblirówannyj",
+  "ex": "She rents a furnished apartment.",
+  "exde": "Sie mietet eine möblierte Wohnung."
+ },
+ "wo012": {
+  "fr": "spacieux",
+  "pl": "przestronny",
+  "ru": "просто́рный",
+  "rulat": "prostórnyj",
+  "ex": "The kitchen is bright and spacious.",
+  "exde": "Die Küche ist hell und geräumig."
+ },
+ "wo013": {
+  "fr": "la colocation",
+  "pl": "wspólne mieszkanie",
+  "ru": "совме́стная аре́нда кварти́ры",
+  "rulat": "sowméstnaja arénda kwartíry",
+  "ex": "He lives in a flat share with three students.",
+  "exde": "Er wohnt in einer Wohngemeinschaft mit drei Studenten."
+ },
+ "wo014": {
+  "fr": "la pièce, l'espace",
+  "pl": "pomieszczenie, przestrzeń",
+  "ru": "помеще́ние, простра́нство",
+  "rulat": "pomeschtschénije, prostránstwo",
+  "ex": "This room is too small for a party.",
+  "exde": "Dieser Raum ist zu klein für eine Party."
+ },
+ "wo015": {
+  "fr": "la salle à manger",
+  "pl": "jadalnia",
+  "ru": "столо́вая",
+  "rulat": "stolówaja",
+  "ex": "We have dinner in the dining room.",
+  "exde": "Wir essen im Esszimmer zu Abend."
+ },
+ "wo016": {
+  "fr": "la chambre d'enfant",
+  "pl": "pokój dziecięcy",
+  "ru": "де́тская",
+  "rulat": "détskaja",
+  "ex": "The children's room is full of toys.",
+  "exde": "Das Kinderzimmer ist voller Spielsachen."
+ },
+ "wo017": {
+  "fr": "le bureau",
+  "pl": "gabinet",
+  "ru": "кабине́т",
+  "rulat": "kabinét",
+  "ex": "My father works in his study.",
+  "exde": "Mein Vater arbeitet in seinem Arbeitszimmer."
+ },
+ "wo018": {
+  "fr": "la chambre d'amis",
+  "pl": "pokój gościnny",
+  "ru": "гостева́я ко́мната",
+  "rulat": "gostewája kómnata",
+  "ex": "You can sleep in the guest room.",
+  "exde": "Du kannst im Gästezimmer schlafen."
+ },
+ "wo019": {
+  "fr": "la terrasse",
+  "pl": "taras",
+  "ru": "терра́са",
+  "rulat": "terrása",
+  "ex": "In summer we have breakfast on the terrace.",
+  "exde": "Im Sommer frühstücken wir auf der Terrasse."
+ },
+ "wo020": {
+  "fr": "le débarras",
+  "pl": "schowek, komórka",
+  "ru": "кладова́я",
+  "rulat": "kladowája",
+  "ex": "The vacuum cleaner is in the storeroom.",
+  "exde": "Der Staubsauger steht in der Abstellkammer."
+ },
+ "wo021": {
+  "fr": "le garde-manger",
+  "pl": "spiżarnia",
+  "ru": "кладова́я",
+  "rulat": "kladowája",
+  "ex": "We keep the flour in the pantry.",
+  "exde": "Wir bewahren das Mehl in der Speisekammer auf."
+ },
+ "wo022": {
+  "fr": "la buanderie",
+  "pl": "pralnia",
+  "ru": "праче́чная",
+  "rulat": "pratschétschnaja",
+  "ex": "The washing machine is in the utility room.",
+  "exde": "Die Waschmaschine steht in der Waschküche."
+ },
+ "wo023": {
+  "fr": "le garage",
+  "pl": "garaż",
+  "ru": "гара́ж",
+  "rulat": "garásch",
+  "ex": "He parks his car in the garage.",
+  "exde": "Er parkt sein Auto in der Garage."
+ },
+ "wo024": {
+  "fr": "l'entrée (f.)",
+  "pl": "wejście",
+  "ru": "вход",
+  "rulat": "wchod",
+  "ex": "The entrance is around the corner.",
+  "exde": "Der Eingang ist um die Ecke."
+ },
+ "wo025": {
+  "fr": "l'étage supérieur (m.)",
+  "pl": "piętro",
+  "ru": "ве́рхний эта́ж",
+  "rulat": "wérchnij etásch",
+  "ex": "The bedrooms are on the upper floor.",
+  "exde": "Die Schlafzimmer sind im Obergeschoss."
+ },
+ "wo026": {
+  "fr": "la véranda",
+  "pl": "ogród zimowy",
+  "ru": "зи́мний сад",
+  "rulat": "símnij sad",
+  "ex": "We have breakfast in the conservatory.",
+  "exde": "Wir frühstücken im Wintergarten."
+ },
+ "wo027": {
+  "fr": "le plan",
+  "pl": "plan mieszkania",
+  "ru": "планиро́вка",
+  "rulat": "planirówka",
+  "ex": "The floor plan shows three bedrooms.",
+  "exde": "Der Grundriss zeigt drei Schlafzimmer."
+ },
+ "wo028": {
+  "fr": "le mètre carré",
+  "pl": "metr kwadratowy",
+  "ru": "квадра́тный метр",
+  "rulat": "kwadrátnyj metr",
+  "ex": "The flat has eighty square metres.",
+  "exde": "Die Wohnung hat achtzig Quadratmeter."
+ },
+ "wo029": {
+  "fr": "la cuisine équipée",
+  "pl": "kuchnia w zabudowie",
+  "ru": "встро́енная ку́хня",
+  "rulat": "wstrójennaja kúchnja",
+  "ex": "The flat comes with a fitted kitchen.",
+  "exde": "Die Wohnung hat eine Einbauküche."
+ },
+ "wo030": {
+  "fr": "clair",
+  "pl": "jasny",
+  "ru": "све́тлый",
+  "rulat": "swétlyj",
+  "ex": "The living room is very bright.",
+  "exde": "Das Wohnzimmer ist sehr hell."
+ },
+ "wo031": {
+  "fr": "sombre",
+  "pl": "ciemny",
+  "ru": "тёмный",
+  "rulat": "tjómnyj",
+  "ex": "The hallway is a bit dark.",
+  "exde": "Der Flur ist ein bisschen dunkel."
+ },
+ "wo032": {
+  "fr": "douillet, confortable",
+  "pl": "przytulny",
+  "ru": "ую́тный",
+  "rulat": "ujútnyj",
+  "ex": "Our kitchen is small but cosy.",
+  "exde": "Unsere Küche ist klein, aber gemütlich."
+ },
+ "wo033": {
+  "fr": "exigu",
+  "pl": "ciasny",
+  "ru": "те́сный",
+  "rulat": "tjésnyj",
+  "ex": "The bathroom is quite cramped.",
+  "exde": "Das Bad ist ziemlich eng."
+ },
+ "wo034": {
+  "fr": "meubler, aménager",
+  "pl": "urządzać",
+  "ru": "обставля́ть",
+  "rulat": "obstawlját",
+  "ex": "We want to furnish the flat simply.",
+  "exde": "Wir wollen die Wohnung einfach einrichten."
+ },
+ "wo035": {
+  "fr": "rénover",
+  "pl": "remontować",
+  "ru": "ремонти́ровать",
+  "rulat": "remontírowat",
+  "ex": "They are going to renovate the bathroom.",
+  "exde": "Sie werden das Bad renovieren."
+ },
+ "wo036": {
+  "fr": "aérer",
+  "pl": "wietrzyć",
+  "ru": "прове́тривать",
+  "rulat": "prowétriwat",
+  "ex": "Please air the bedroom every morning.",
+  "exde": "Bitte lüfte das Schlafzimmer jeden Morgen."
+ },
+ "wo037": {
+  "fr": "le canapé",
+  "pl": "sofa",
+  "ru": "дива́н",
+  "rulat": "diwán",
+  "ex": "The cat is sleeping on the sofa.",
+  "exde": "Die Katze schläft auf dem Sofa."
+ },
+ "wo038": {
+  "fr": "le fauteuil",
+  "pl": "fotel",
+  "ru": "кре́сло",
+  "rulat": "kréslo",
+  "ex": "Grandpa reads in his armchair.",
+  "exde": "Opa liest in seinem Sessel."
+ },
+ "wo039": {
+  "fr": "la table basse",
+  "pl": "stolik kawowy",
+  "ru": "журна́льный сто́лик",
+  "rulat": "schurnálnyj stólik",
+  "ex": "Put your cup on the coffee table.",
+  "exde": "Stell deine Tasse auf den Couchtisch."
+ },
+ "wo040": {
+  "fr": "la bibliothèque",
+  "pl": "regał na książki",
+  "ru": "кни́жный шкаф",
+  "rulat": "kníschnyj schkaf",
+  "ex": "The bookcase is full of novels.",
+  "exde": "Das Bücherregal ist voller Romane."
+ },
+ "wo041": {
+  "fr": "le tapis",
+  "pl": "dywan",
+  "ru": "ковёр",
+  "rulat": "kowjór",
+  "ex": "The rug in the living room is very soft.",
+  "exde": "Der Teppich im Wohnzimmer ist sehr weich."
+ },
+ "wo042": {
+  "fr": "le rideau",
+  "pl": "zasłona",
+  "ru": "занаве́ска",
+  "rulat": "sanawéska",
+  "ex": "Please close the curtain.",
+  "exde": "Bitte zieh den Vorhang zu."
+ },
+ "wo043": {
+  "fr": "le lampadaire",
+  "pl": "lampa stojąca",
+  "ru": "торше́р",
+  "rulat": "torschér",
+  "ex": "The standard lamp stands next to the sofa.",
+  "exde": "Die Stehlampe steht neben dem Sofa."
+ },
+ "wo044": {
+  "fr": "la télévision",
+  "pl": "telewizor",
+  "ru": "телеви́зор",
+  "rulat": "telewísor",
+  "ex": "The television is on in the living room.",
+  "exde": "Der Fernseher läuft im Wohnzimmer."
+ },
+ "wo045": {
+  "fr": "le coussin",
+  "pl": "poduszka",
+  "ru": "поду́шка",
+  "rulat": "podúschka",
+  "ex": "There is a red cushion on the sofa.",
+  "exde": "Auf dem Sofa liegt ein rotes Kissen."
+ },
+ "wo046": {
+  "fr": "la commode",
+  "pl": "komoda",
+  "ru": "комо́д",
+  "rulat": "komód",
+  "ex": "The socks are in the chest of drawers.",
+  "exde": "Die Socken sind in der Kommode."
+ },
+ "wo047": {
+  "fr": "la cheminée",
+  "pl": "kominek",
+  "ru": "ками́н",
+  "rulat": "kamín",
+  "ex": "In winter we sit by the fireplace.",
+  "exde": "Im Winter sitzen wir am Kamin."
+ },
+ "wo048": {
+  "fr": "le rebord de fenêtre",
+  "pl": "parapet",
+  "ru": "подоко́нник",
+  "rulat": "podokónnik",
+  "ex": "The cat is sleeping on the windowsill.",
+  "exde": "Die Katze schläft auf der Fensterbank."
+ },
+ "wo049": {
+  "fr": "la plante d'intérieur",
+  "pl": "roślina doniczkowa",
+  "ru": "ко́мнатное расте́ние",
+  "rulat": "kómnatnoje rasténije",
+  "ex": "I water the houseplant once a week.",
+  "exde": "Ich gieße die Zimmerpflanze einmal pro Woche."
+ },
+ "wo050": {
+  "fr": "le tableau",
+  "pl": "obraz",
+  "ru": "карти́на",
+  "rulat": "kartína",
+  "ex": "This picture shows the sea.",
+  "exde": "Dieses Bild zeigt das Meer."
+ },
+ "wo051": {
+  "fr": "le cadre",
+  "pl": "ramka na zdjęcia",
+  "ru": "ра́мка",
+  "rulat": "rámka",
+  "ex": "I need a new picture frame for this photo.",
+  "exde": "Ich brauche einen neuen Bilderrahmen für dieses Foto."
+ },
+ "wo052": {
+  "fr": "le miroir",
+  "pl": "lustro",
+  "ru": "зе́ркало",
+  "rulat": "sérkalo",
+  "ex": "A big mirror hangs in the hall.",
+  "exde": "Im Flur hängt ein großer Spiegel."
+ },
+ "wo053": {
+  "fr": "l'interrupteur",
+  "pl": "włącznik światła",
+  "ru": "выключа́тель",
+  "rulat": "wykljutschátel",
+  "ex": "The light switch is next to the door.",
+  "exde": "Der Lichtschalter ist neben der Tür."
+ },
+ "wo054": {
+  "fr": "le parquet",
+  "pl": "parkiet",
+  "ru": "парке́т",
+  "rulat": "parkét",
+  "ex": "The parquet floor in the living room is new.",
+  "exde": "Das Parkett im Wohnzimmer ist neu."
+ },
+ "wo055": {
+  "fr": "les meubles",
+  "pl": "meble",
+  "ru": "ме́бель",
+  "rulat": "mébel",
+  "ex": "We bought new furniture for the flat.",
+  "exde": "Wir haben neue Möbel für die Wohnung gekauft."
+ },
+ "wo056": {
+  "fr": "le meuble",
+  "pl": "mebel",
+  "ru": "предме́т ме́бели",
+  "rulat": "predmét mébeli",
+  "ex": "This chair is an old piece of furniture.",
+  "exde": "Dieser Stuhl ist ein altes Möbelstück."
+ },
+ "wo057": {
+  "fr": "monter",
+  "pl": "składać",
+  "ru": "собира́ть",
+  "rulat": "sobirát",
+  "ex": "We need to assemble the new shelf.",
+  "exde": "Wir müssen das neue Regal aufbauen."
+ },
+ "wo058": {
+  "fr": "réaménager",
+  "pl": "przestawiać",
+  "ru": "переставля́ть",
+  "rulat": "perestawlját",
+  "ex": "Let's rearrange the furniture in the living room.",
+  "exde": "Lass uns die Möbel im Wohnzimmer umstellen."
+ },
+ "wo059": {
+  "fr": "accrocher",
+  "pl": "wieszać",
+  "ru": "ве́шать",
+  "rulat": "wéschat",
+  "ex": "Can you help me hang up the picture?",
+  "exde": "Kannst du mir helfen, das Bild aufzuhängen?"
+ },
+ "wo060": {
+  "fr": "confortable",
+  "pl": "wygodny",
+  "ru": "удо́бный",
+  "rulat": "udóbnyj",
+  "ex": "This armchair is very comfortable.",
+  "exde": "Dieser Sessel ist sehr bequem."
+ },
+ "wo061": {
+  "fr": "le mobilier",
+  "pl": "wyposażenie wnętrz",
+  "ru": "обстано́вка",
+  "rulat": "abstanówka",
+  "ex": "The furnishings in this flat are very modern.",
+  "exde": "Die Einrichtung in dieser Wohnung ist sehr modern."
+ },
+ "wo062": {
+  "fr": "le lit double",
+  "pl": "łóżko podwójne",
+  "ru": "двуспа́льная крова́ть",
+  "rulat": "dwuspálnaja krowát'",
+  "ex": "We booked a room with a double bed.",
+  "exde": "Wir haben ein Zimmer mit Doppelbett gebucht."
+ },
+ "wo063": {
+  "fr": "le lit simple",
+  "pl": "łóżko pojedyncze",
+  "ru": "односпа́льная крова́ть",
+  "rulat": "adnaspálnaja krowát'",
+  "ex": "There is a single bed in the children's room.",
+  "exde": "Im Kinderzimmer steht ein Einzelbett."
+ },
+ "wo064": {
+  "fr": "le lit superposé",
+  "pl": "łóżko piętrowe",
+  "ru": "двухъя́русная крова́ть",
+  "rulat": "dwuchjárusnaja krowát'",
+  "ex": "My brother sleeps on top of the bunk bed.",
+  "exde": "Mein Bruder schläft oben im Etagenbett."
+ },
+ "wo065": {
+  "fr": "le canapé-lit",
+  "pl": "sofa rozkładana",
+  "ru": "дива́н-крова́ть",
+  "rulat": "diwán-krowát'",
+  "ex": "Our guests can sleep on the sofa bed.",
+  "exde": "Unsere Gäste können auf dem Schlafsofa schlafen."
+ },
+ "wo066": {
+  "fr": "le matelas",
+  "pl": "materac",
+  "ru": "матра́с",
+  "rulat": "matrás",
+  "ex": "This mattress is too hard for me.",
+  "exde": "Diese Matratze ist mir zu hart."
+ },
+ "wo067": {
+  "fr": "le sommier à lattes",
+  "pl": "stelaż do łóżka",
+  "ru": "ре́ечное основа́ние",
+  "rulat": "réjetschnoje asnowánije",
+  "ex": "The slatted bed base is broken.",
+  "exde": "Der Lattenrost ist kaputt."
+ },
+ "wo068": {
+  "fr": "le cadre de lit",
+  "pl": "rama łóżka",
+  "ru": "карка́с крова́ти",
+  "rulat": "karkás krowáti",
+  "ex": "The bed frame is made of solid wood.",
+  "exde": "Das Bettgestell ist aus Massivholz."
+ },
+ "wo069": {
+  "fr": "le drap",
+  "pl": "prześcieradło",
+  "ru": "простыня́",
+  "rulat": "prostynjá",
+  "ex": "I change the sheet every week.",
+  "exde": "Ich wechsle das Bettlaken jede Woche."
+ },
+ "wo070": {
+  "fr": "le drap-housse",
+  "pl": "prześcieradło z gumką",
+  "ru": "простыня́ на рези́нке",
+  "rulat": "prostynjá na resínke",
+  "ex": "The fitted sheet doesn't fit this mattress.",
+  "exde": "Das Spannbetttuch passt nicht auf diese Matratze."
+ },
+ "wo071": {
+  "fr": "la couette",
+  "pl": "kołdra",
+  "ru": "одея́ло",
+  "rulat": "adejálo",
+  "ex": "In winter I need a warm duvet.",
+  "exde": "Im Winter brauche ich eine warme Bettdecke."
+ },
+ "wo072": {
+  "fr": "la couette en duvet",
+  "pl": "kołdra puchowa",
+  "ru": "пухово́е одея́ло",
+  "rulat": "puchowóje adejálo",
+  "ex": "A down duvet is light and warm.",
+  "exde": "Eine Daunendecke ist leicht und warm."
+ },
+ "wo073": {
+  "fr": "la housse de couette",
+  "pl": "poszwa",
+  "ru": "пододея́льник",
+  "rulat": "padadejál'nik",
+  "ex": "I bought a new duvet cover with flowers.",
+  "exde": "Ich habe einen neuen Bettbezug mit Blumen gekauft."
+ },
+ "wo074": {
+  "fr": "la taie d'oreiller",
+  "pl": "poszewka",
+  "ru": "на́волочка",
+  "rulat": "náwolotschka",
+  "ex": "The pillowcase matches the duvet cover.",
+  "exde": "Der Kissenbezug passt zum Bettbezug."
+ },
+ "wo075": {
+  "fr": "le couvre-lit",
+  "pl": "narzuta",
+  "ru": "покрыва́ло",
+  "rulat": "pakrywálo",
+  "ex": "She put a bedspread over the bed.",
+  "exde": "Sie legte eine Tagesdecke über das Bett."
+ },
+ "wo076": {
+  "fr": "la couverture en laine",
+  "pl": "koc wełniany",
+  "ru": "шерстяно́е одея́ло",
+  "rulat": "scherstjanóje adejálo",
+  "ex": "Take a woollen blanket, it's cold tonight.",
+  "exde": "Nimm eine Wolldecke, heute Nacht ist es kalt."
+ },
+ "wo077": {
+  "fr": "l'armoire",
+  "pl": "szafa",
+  "ru": "платяно́й шкаф",
+  "rulat": "platjanój schkaf",
+  "ex": "My clothes hang in the wardrobe.",
+  "exde": "Meine Kleider hängen im Kleiderschrank."
+ },
+ "wo078": {
+  "fr": "la table de chevet",
+  "pl": "szafka nocna",
+  "ru": "прикрова́тная ту́мбочка",
+  "rulat": "prikrowátnaja túmbotschka",
+  "ex": "My phone is on the bedside table.",
+  "exde": "Mein Handy liegt auf dem Nachttisch."
+ },
+ "wo079": {
+  "fr": "la lampe de chevet",
+  "pl": "lampka nocna",
+  "ru": "ночни́к",
+  "rulat": "notschník",
+  "ex": "I read in bed with the bedside lamp on.",
+  "exde": "Ich lese im Bett bei eingeschalteter Nachttischlampe."
+ },
+ "wo080": {
+  "fr": "la coiffeuse",
+  "pl": "toaletka",
+  "ru": "туале́тный сто́лик",
+  "rulat": "tualétnyj stólik",
+  "ex": "She sits at the dressing table and does her hair.",
+  "exde": "Sie sitzt am Frisiertisch und macht sich die Haare."
+ },
+ "wo081": {
+  "fr": "le cintre",
+  "pl": "wieszak",
+  "ru": "ве́шалка",
+  "rulat": "wéschalka",
+  "ex": "Hang your jacket on a coat hanger.",
+  "exde": "Häng deine Jacke auf einen Kleiderbügel."
+ },
+ "wo082": {
+  "fr": "le store",
+  "pl": "żaluzja",
+  "ru": "жалюзи́",
+  "rulat": "schaljusí",
+  "ex": "Please close the blind.",
+  "exde": "Mach bitte die Jalousie zu."
+ },
+ "wo083": {
+  "fr": "le réveil",
+  "pl": "budzik",
+  "ru": "буди́льник",
+  "rulat": "budílnik",
+  "ex": "My alarm clock rings at six.",
+  "exde": "Mein Wecker klingelt um sechs."
+ },
+ "wo084": {
+  "fr": "le pyjama",
+  "pl": "piżama",
+  "ru": "пижа́ма",
+  "rulat": "pischáma",
+  "ex": "He is still wearing his pyjamas.",
+  "exde": "Er trägt noch seinen Schlafanzug."
+ },
+ "wo085": {
+  "fr": "faire le lit",
+  "pl": "słać łóżko",
+  "ru": "заправля́ть посте́ль",
+  "rulat": "saprawlját postél",
+  "ex": "I make the bed every morning.",
+  "exde": "Ich mache jeden Morgen das Bett."
+ },
+ "wo086": {
+  "fr": "changer les draps",
+  "pl": "zmieniać pościel",
+  "ru": "меня́ть посте́льное бельё",
+  "rulat": "menját postélnoje beljó",
+  "ex": "We change the sheets every week.",
+  "exde": "Wir beziehen jede Woche das Bett."
+ },
+ "wo087": {
+  "fr": "la baignoire",
+  "pl": "wanna",
+  "ru": "ва́нна",
+  "rulat": "wánna",
+  "ex": "The bath is full of hot water.",
+  "exde": "Die Badewanne ist voll mit heißem Wasser."
+ },
+ "wo088": {
+  "fr": "le lavabo",
+  "pl": "umywalka",
+  "ru": "ра́ковина",
+  "rulat": "rákowina",
+  "ex": "The washbasin is blocked.",
+  "exde": "Das Waschbecken ist verstopft."
+ },
+ "wo089": {
+  "fr": "le robinet",
+  "pl": "kran",
+  "ru": "кран",
+  "rulat": "kran",
+  "ex": "Turn off the tap, please.",
+  "exde": "Dreh bitte den Wasserhahn zu."
+ },
+ "wo090": {
+  "fr": "le papier toilette",
+  "pl": "papier toaletowy",
+  "ru": "туале́тная бума́га",
+  "rulat": "tualétnaja bumága",
+  "ex": "We've run out of toilet paper.",
+  "exde": "Wir haben kein Toilettenpapier mehr."
+ },
+ "wo091": {
+  "fr": "le shampooing",
+  "pl": "szampon",
+  "ru": "шампу́нь",
+  "rulat": "schampún",
+  "ex": "This shampoo smells of apples.",
+  "exde": "Dieses Shampoo riecht nach Äpfeln."
+ },
+ "wo092": {
+  "fr": "prendre une douche",
+  "pl": "brać prysznic",
+  "ru": "принима́ть душ",
+  "rulat": "prinimát dusch",
+  "ex": "I have a shower every morning.",
+  "exde": "Ich dusche jeden Morgen."
+ },
+ "wo093": {
+  "fr": "prendre un bain",
+  "pl": "brać kąpiel",
+  "ru": "принима́ть ва́нну",
+  "rulat": "prinimát wánnu",
+  "ex": "The children have a bath in the evening.",
+  "exde": "Die Kinder baden am Abend."
+ },
+ "wo094": {
+  "fr": "se brosser les dents",
+  "pl": "myć zęby",
+  "ru": "чи́стить зу́бы",
+  "rulat": "tschístit súby",
+  "ex": "Don't forget to brush your teeth.",
+  "exde": "Vergiss nicht, dir die Zähne zu putzen."
+ },
+ "wo095": {
+  "fr": "la brosse de toilettes",
+  "pl": "szczotka do WC",
+  "ru": "ёршик для унита́за",
+  "rulat": "jórschik dlja unitása",
+  "ex": "The toilet brush is next to the toilet.",
+  "exde": "Die Klobürste steht neben der Toilette."
+ },
+ "wo096": {
+  "fr": "la chasse d'eau",
+  "pl": "spłuczka",
+  "ru": "смыв",
+  "rulat": "smyw",
+  "ex": "The flush doesn't work.",
+  "exde": "Die Spülung funktioniert nicht."
+ },
+ "wo097": {
+  "fr": "le sèche-cheveux",
+  "pl": "suszarka do włosów",
+  "ru": "фен",
+  "rulat": "fen",
+  "ex": "Can I borrow your hairdryer?",
+  "exde": "Kann ich deinen Föhn ausleihen?"
+ },
+ "wo098": {
+  "fr": "le peignoir",
+  "pl": "szlafrok",
+  "ru": "хала́т",
+  "rulat": "chalát",
+  "ex": "She put on her bathrobe after her shower.",
+  "exde": "Nach dem Duschen zog sie ihren Bademantel an."
+ },
+ "wo099": {
+  "fr": "le tapis de bain",
+  "pl": "dywanik łazienkowy",
+  "ru": "коври́к для ва́нной",
+  "rulat": "kowrík dlja wánnoj",
+  "ex": "The bath mat is wet.",
+  "exde": "Die Badematte ist nass."
+ },
+ "wo100": {
+  "fr": "le rideau de douche",
+  "pl": "zasłona prysznicowa",
+  "ru": "занаве́ска для ду́ша",
+  "rulat": "sanawéska dlja dúscha",
+  "ex": "Close the shower curtain.",
+  "exde": "Zieh den Duschvorhang zu."
+ },
+ "wo101": {
+  "fr": "le carreau",
+  "pl": "płytka",
+  "ru": "пли́тка",
+  "rulat": "plítka",
+  "ex": "One tile in the shower is cracked.",
+  "exde": "Eine Fliese in der Dusche hat einen Sprung."
+ },
+ "wo102": {
+  "fr": "la bonde",
+  "pl": "odpływ",
+  "ru": "сток",
+  "rulat": "stok",
+  "ex": "There is hair stuck in the plughole.",
+  "exde": "Im Abfluss stecken Haare."
+ },
+ "wo103": {
+  "fr": "bouché",
+  "pl": "zatkany",
+  "ru": "засорённый",
+  "rulat": "sassorjónnyj",
+  "ex": "The sink is blocked again.",
+  "exde": "Das Waschbecken ist schon wieder verstopft."
+ },
+ "wo104": {
+  "fr": "le gel douche",
+  "pl": "żel pod prysznic",
+  "ru": "гель для ду́ша",
+  "rulat": "gel dlja dúscha",
+  "ex": "We have run out of shower gel.",
+  "exde": "Wir haben kein Duschgel mehr."
+ },
+ "wo105": {
+  "fr": "le peigne",
+  "pl": "grzebień",
+  "ru": "расчёска",
+  "rulat": "rasstschjóska",
+  "ex": "I always carry a comb in my bag.",
+  "exde": "Ich habe immer einen Kamm in der Tasche."
+ },
+ "wo106": {
+  "fr": "le rasoir",
+  "pl": "maszynka do golenia",
+  "ru": "бри́тва",
+  "rulat": "brítwa",
+  "ex": "My razor needs a new blade.",
+  "exde": "Mein Rasierer braucht eine neue Klinge."
+ },
+ "wo107": {
+  "fr": "se raser",
+  "pl": "golić się",
+  "ru": "бри́ться",
+  "rulat": "brítsja",
+  "ex": "He shaves every morning.",
+  "exde": "Er rasiert sich jeden Morgen."
+ },
+ "wo108": {
+  "fr": "l'armoire de toilette",
+  "pl": "szafka z lustrem",
+  "ru": "зерка́льный шка́фчик",
+  "rulat": "serkálnyj schkáftschik",
+  "ex": "The plasters are in the bathroom cabinet.",
+  "exde": "Die Pflaster sind im Spiegelschrank."
+ },
+ "wo109": {
+  "fr": "les toilettes pour invités",
+  "pl": "toaleta dla gości",
+  "ru": "гостево́й туале́т",
+  "rulat": "gostewój tualét",
+  "ex": "The guest toilet is next to the front door.",
+  "exde": "Das Gäste-WC ist neben der Haustür."
+ },
+ "wo110": {
+  "fr": "le porte-serviettes",
+  "pl": "wieszak na ręczniki",
+  "ru": "держа́тель для полоте́нец",
+  "rulat": "derschátel dlja polotjénez",
+  "ex": "Hang the towel on the towel rail.",
+  "exde": "Häng das Handtuch an den Handtuchhalter."
+ },
+ "wo111": {
+  "fr": "la lunette des toilettes",
+  "pl": "deska sedesowa",
+  "ru": "сиде́нье унита́за",
+  "rulat": "sidénje unitása",
+  "ex": "Please put the toilet seat down.",
+  "exde": "Bitte klapp die Klobrille runter."
+ },
+ "wo112": {
+  "fr": "le portemanteau",
+  "pl": "wieszak na ubrania",
+  "ru": "ве́шалка",
+  "rulat": "wjéschalka",
+  "ex": "Hang your jacket on the coat rack.",
+  "exde": "Häng deine Jacke an die Garderobe."
+ },
+ "wo113": {
+  "fr": "le meuble à chaussures",
+  "pl": "szafka na buty",
+  "ru": "обувно́й шкаф",
+  "rulat": "obuwnój schkaf",
+  "ex": "Put your shoes in the shoe cabinet.",
+  "exde": "Stell deine Schuhe in den Schuhschrank."
+ },
+ "wo114": {
+  "fr": "la cage d'escalier",
+  "pl": "klatka schodowa",
+  "ru": "ле́стничная кле́тка",
+  "rulat": "ljéstnitschnaja kljétka",
+  "ex": "The light in the stairwell is broken.",
+  "exde": "Das Licht im Treppenhaus ist kaputt."
+ },
+ "wo115": {
+  "fr": "la rampe",
+  "pl": "poręcz",
+  "ru": "пери́ла",
+  "rulat": "períla",
+  "ex": "Hold on to the banister.",
+  "exde": "Halt dich am Geländer fest."
+ },
+ "wo116": {
+  "fr": "la marche",
+  "pl": "stopień",
+  "ru": "ступе́нька",
+  "rulat": "stupjénka",
+  "ex": "Mind the step!",
+  "exde": "Vorsicht, Stufe!"
+ },
+ "wo117": {
+  "fr": "la porte d'entrée",
+  "pl": "drzwi wejściowe",
+  "ru": "входна́я дверь",
+  "rulat": "wchodnája dwer",
+  "ex": "Did you lock the front door?",
+  "exde": "Hast du die Haustür abgeschlossen?"
+ },
+ "wo118": {
+  "fr": "le paillasson",
+  "pl": "wycieraczka",
+  "ru": "дверно́й ко́врик",
+  "rulat": "dwernój kówrik",
+  "ex": "The key is under the doormat.",
+  "exde": "Der Schlüssel liegt unter der Fußmatte."
+ },
+ "wo119": {
+  "fr": "la boîte aux lettres",
+  "pl": "skrzynka pocztowa",
+  "ru": "почто́вый я́щик",
+  "rulat": "potschtówyj jáschtschik",
+  "ex": "There is a letter in the letterbox.",
+  "exde": "Im Briefkasten liegt ein Brief."
+ },
+ "wo120": {
+  "fr": "la cave",
+  "pl": "komórka lokatorska",
+  "ru": "кладо́вка в подва́ле",
+  "rulat": "kladówka w podwálje",
+  "ex": "We keep our bikes in the cellar storage compartment.",
+  "exde": "Wir bewahren unsere Fahrräder im Kellerabteil auf."
+ },
+ "wo121": {
+  "fr": "la caisse",
+  "pl": "skrzynia",
+  "ru": "я́щик",
+  "rulat": "jáschtschik",
+  "ex": "We stored the apples in a crate.",
+  "exde": "Wir haben die Äpfel in einer Kiste gelagert."
+ },
+ "wo122": {
+  "fr": "le carton",
+  "pl": "karton",
+  "ru": "коро́бка",
+  "rulat": "karóbka",
+  "ex": "Put the books in a cardboard box.",
+  "exde": "Pack die Bücher in einen Karton."
+ },
+ "wo123": {
+  "fr": "le bric-à-brac",
+  "pl": "graty",
+  "ru": "хлам",
+  "rulat": "chlam",
+  "ex": "The attic is full of junk.",
+  "exde": "Der Dachboden ist voller Gerümpel."
+ },
+ "wo124": {
+  "fr": "ranger",
+  "pl": "sprzątać",
+  "ru": "убира́ть",
+  "rulat": "ubirát",
+  "ex": "I need to tidy up the hallway.",
+  "exde": "Ich muss den Flur aufräumen."
+ },
+ "wo125": {
+  "fr": "faire du tri",
+  "pl": "robić porządki",
+  "ru": "избавля́ться от хла́ма",
+  "rulat": "isbawljátsja ot chláma",
+  "ex": "This weekend we want to declutter the basement.",
+  "exde": "Dieses Wochenende wollen wir den Keller ausmisten."
+ },
+ "wo126": {
+  "fr": "ranger",
+  "pl": "chować",
+  "ru": "укла́дывать",
+  "rulat": "ukládywat",
+  "ex": "We stow away the winter clothes in the attic.",
+  "exde": "Wir verstauen die Winterkleidung auf dem Dachboden."
+ },
+ "wo127": {
+  "fr": "la chaudière",
+  "pl": "kocioł grzewczy",
+  "ru": "отопи́тельный котёл",
+  "rulat": "otopítelnyj kotjól",
+  "ex": "The boiler is in the basement.",
+  "exde": "Der Heizkessel steht im Keller."
+ },
+ "wo128": {
+  "fr": "humide",
+  "pl": "wilgotny",
+  "ru": "сыро́й",
+  "rulat": "syrój",
+  "ex": "The cellar is cold and damp.",
+  "exde": "Der Keller ist kalt und feucht."
+ },
+ "wo129": {
+  "fr": "poussiéreux",
+  "pl": "zakurzony",
+  "ru": "пы́льный",
+  "rulat": "pýlnyj",
+  "ex": "The old boxes are very dusty.",
+  "exde": "Die alten Kisten sind sehr staubig."
+ },
+ "wo130": {
+  "fr": "le plafond en pente",
+  "pl": "skos",
+  "ru": "ско́шенный потоло́к",
+  "rulat": "skóschennyj potolók",
+  "ex": "I keep hitting my head on the sloping ceiling.",
+  "exde": "Ich stoße mir ständig den Kopf an der Dachschräge."
+ },
+ "wo131": {
+  "fr": "la lucarne",
+  "pl": "okno dachowe",
+  "ru": "манса́рдное окно́",
+  "rulat": "mansárdnoje oknó",
+  "ex": "Light comes in through the skylight.",
+  "exde": "Licht fällt durch das Dachfenster herein."
+ },
+ "wo132": {
+  "fr": "l'échelle",
+  "pl": "drabina",
+  "ru": "ле́стница",
+  "rulat": "léstniza",
+  "ex": "Hold the ladder while I climb up.",
+  "exde": "Halt die Leiter fest, während ich hochsteige."
+ },
+ "wo133": {
+  "fr": "l'escalier escamotable",
+  "pl": "schody strychowe",
+  "ru": "черда́чная ле́стница",
+  "rulat": "tscherdátschnaja léstniza",
+  "ex": "Pull down the loft ladder to reach the attic.",
+  "exde": "Zieh die Bodentreppe herunter, um auf den Dachboden zu kommen."
+ },
+ "wo134": {
+  "fr": "la boîte à outils",
+  "pl": "skrzynka na narzędzia",
+  "ru": "я́щик для инструме́нтов",
+  "rulat": "jáschtschik dlja instruméntow",
+  "ex": "The hammer is in the toolbox.",
+  "exde": "Der Hammer ist im Werkzeugkasten."
+ },
+ "wo135": {
+  "fr": "la pelouse",
+  "pl": "trawnik",
+  "ru": "газо́н",
+  "rulat": "gasón",
+  "ex": "He mows the lawn every Saturday.",
+  "exde": "Er mäht jeden Samstag den Rasen."
+ },
+ "wo136": {
+  "fr": "le parterre de fleurs",
+  "pl": "rabata",
+  "ru": "клу́мба",
+  "rulat": "klúmba",
+  "ex": "She planted tulips in the flower bed.",
+  "exde": "Sie hat Tulpen ins Beet gepflanzt."
+ },
+ "wo137": {
+  "fr": "la jardinière",
+  "pl": "skrzynka balkonowa",
+  "ru": "балко́нный я́щик для цвето́в",
+  "rulat": "balkónnyj jáschtschik dlja zwetów",
+  "ex": "The window box is full of geraniums.",
+  "exde": "Der Blumenkasten ist voller Geranien."
+ },
+ "wo138": {
+  "fr": "le pot de fleurs",
+  "pl": "doniczka",
+  "ru": "цвето́чный горшо́к",
+  "rulat": "zwetótschnyj gorschók",
+  "ex": "The flowerpot fell off the balcony.",
+  "exde": "Der Blumentopf ist vom Balkon gefallen."
+ },
+ "wo139": {
+  "fr": "l'arrosoir",
+  "pl": "konewka",
+  "ru": "ле́йка",
+  "rulat": "léjka",
+  "ex": "Fill the watering can with water.",
+  "exde": "Füll die Gießkanne mit Wasser."
+ },
+ "wo140": {
+  "fr": "arroser",
+  "pl": "podlewać",
+  "ru": "полива́ть",
+  "rulat": "poliwát",
+  "ex": "Don't forget to water the plants.",
+  "exde": "Vergiss nicht, die Pflanzen zu gießen."
+ },
+ "wo141": {
+  "fr": "tondre la pelouse",
+  "pl": "kosić trawnik",
+  "ru": "подстрига́ть газо́н",
+  "rulat": "podstrigát gasón",
+  "ex": "I have to mow the lawn on Saturday.",
+  "exde": "Ich muss am Samstag den Rasen mähen."
+ },
+ "wo142": {
+  "fr": "la tondeuse à gazon",
+  "pl": "kosiarka",
+  "ru": "газонокоси́лка",
+  "rulat": "gasonokossílka",
+  "ex": "The lawnmower is in the shed.",
+  "exde": "Der Rasenmäher steht im Schuppen."
+ },
+ "wo143": {
+  "fr": "le tuyau d'arrosage",
+  "pl": "wąż ogrodowy",
+  "ru": "садо́вый шланг",
+  "rulat": "ssadówyj schlang",
+  "ex": "The garden hose has a hole.",
+  "exde": "Der Gartenschlauch hat ein Loch."
+ },
+ "wo144": {
+  "fr": "la pelle",
+  "pl": "łopata",
+  "ru": "лопа́та",
+  "rulat": "lopáta",
+  "ex": "Hand me the shovel, please.",
+  "exde": "Gib mir bitte die Schaufel."
+ },
+ "wo145": {
+  "fr": "la bêche",
+  "pl": "szpadel",
+  "ru": "штыкова́я лопа́та",
+  "rulat": "schtykowája lopáta",
+  "ex": "He dug a hole with the spade.",
+  "exde": "Er hat mit dem Spaten ein Loch gegraben."
+ },
+ "wo146": {
+  "fr": "le râteau",
+  "pl": "grabie",
+  "ru": "гра́бли",
+  "rulat": "grábli",
+  "ex": "I need the rake for the leaves.",
+  "exde": "Ich brauche den Rechen für das Laub."
+ },
+ "wo147": {
+  "fr": "le sécateur",
+  "pl": "sekator",
+  "ru": "се́катор",
+  "rulat": "ssékator",
+  "ex": "Cut the roses with the secateurs.",
+  "exde": "Schneide die Rosen mit der Gartenschere."
+ },
+ "wo148": {
+  "fr": "planter",
+  "pl": "sadzić",
+  "ru": "сажа́ть",
+  "rulat": "ssaschát",
+  "ex": "We want to plant tomatoes this year.",
+  "exde": "Wir wollen dieses Jahr Tomaten pflanzen."
+ },
+ "wo149": {
+  "fr": "semer",
+  "pl": "siać",
+  "ru": "се́ять",
+  "rulat": "ssséjat",
+  "ex": "We sow the carrots in spring.",
+  "exde": "Wir säen die Karotten im Frühling."
+ },
+ "wo150": {
+  "fr": "désherber",
+  "pl": "pielić",
+  "ru": "поло́ть",
+  "rulat": "polót",
+  "ex": "I have to weed the flower beds.",
+  "exde": "Ich muss die Beete jäten."
+ },
+ "wo151": {
+  "fr": "les mauvaises herbes",
+  "pl": "chwasty",
+  "ru": "сорняки́",
+  "rulat": "ssornjakí",
+  "ex": "The weeds are growing everywhere.",
+  "exde": "Das Unkraut wächst überall."
+ },
+ "wo152": {
+  "fr": "la haie",
+  "pl": "żywopłot",
+  "ru": "жива́я и́згородь",
+  "rulat": "schiwája ísgorod",
+  "ex": "The hedge needs cutting.",
+  "exde": "Die Hecke muss geschnitten werden."
+ },
+ "wo153": {
+  "fr": "la clôture",
+  "pl": "płot",
+  "ru": "забо́р",
+  "rulat": "sabór",
+  "ex": "The cat jumped over the fence.",
+  "exde": "Die Katze ist über den Zaun gesprungen."
+ },
+ "wo154": {
+  "fr": "le buisson",
+  "pl": "krzak",
+  "ru": "куст",
+  "rulat": "kust",
+  "ex": "The ball is under the bush.",
+  "exde": "Der Ball liegt unter dem Busch."
+ },
+ "wo155": {
+  "fr": "l'arbre fruitier",
+  "pl": "drzewo owocowe",
+  "ru": "фрукто́вое де́рево",
+  "rulat": "fruktówoje dérewo",
+  "ex": "We have three fruit trees in the garden.",
+  "exde": "Wir haben drei Obstbäume im Garten."
+ },
+ "wo156": {
+  "fr": "le tas de compost",
+  "pl": "kompostownik",
+  "ru": "компо́стная ку́ча",
+  "rulat": "kompóstnaja kútscha",
+  "ex": "Put the peelings on the compost heap.",
+  "exde": "Wirf die Schalen auf den Komposthaufen."
+ },
+ "wo157": {
+  "fr": "la terre",
+  "pl": "ziemia",
+  "ru": "земля́",
+  "rulat": "semljá",
+  "ex": "The soil is very dry.",
+  "exde": "Die Erde ist sehr trocken."
+ },
+ "wo158": {
+  "fr": "l'engrais",
+  "pl": "nawóz",
+  "ru": "удобре́ние",
+  "rulat": "udobrénije",
+  "ex": "The plants need some fertiliser.",
+  "exde": "Die Pflanzen brauchen etwas Dünger."
+ },
+ "wo159": {
+  "fr": "fleurir",
+  "pl": "kwitnąć",
+  "ru": "цвести́",
+  "rulat": "zwestí",
+  "ex": "The roses bloom in June.",
+  "exde": "Die Rosen blühen im Juni."
+ },
+ "wo160": {
+  "fr": "le trousseau de clés",
+  "pl": "pęk kluczy",
+  "ru": "свя́зка ключе́й",
+  "rulat": "swjáska kljutschéj",
+  "ex": "I can't find my bunch of keys.",
+  "exde": "Ich finde meinen Schlüsselbund nicht."
+ },
+ "wo161": {
+  "fr": "la porte de derrière",
+  "pl": "tylne drzwi",
+  "ru": "за́дняя дверь",
+  "rulat": "sádnjaja dwerj",
+  "ex": "We left through the back door.",
+  "exde": "Wir sind durch die Hintertür gegangen."
+ },
+ "wo162": {
+  "fr": "la poignée de porte",
+  "pl": "klamka",
+  "ru": "дверна́я ру́чка",
+  "rulat": "dwernája rútschka",
+  "ex": "The door handle is broken.",
+  "exde": "Die Türklinke ist kaputt."
+ },
+ "wo163": {
+  "fr": "le bouton de porte",
+  "pl": "gałka do drzwi",
+  "ru": "кру́глая дверна́я ру́чка",
+  "rulat": "krúglaja dwernája rútschka",
+  "ex": "Turn the doorknob slowly.",
+  "exde": "Dreh den Türknauf langsam."
+ },
+ "wo164": {
+  "fr": "sonner",
+  "pl": "dzwonić",
+  "ru": "звони́ть",
+  "rulat": "swanítj",
+  "ex": "Please ring the bell twice.",
+  "exde": "Bitte zweimal klingeln."
+ },
+ "wo165": {
+  "fr": "frapper",
+  "pl": "pukać",
+  "ru": "стуча́ть",
+  "rulat": "stutschátj",
+  "ex": "Someone is knocking at the door.",
+  "exde": "Jemand klopft an die Tür."
+ },
+ "wo166": {
+  "fr": "le cadre de fenêtre",
+  "pl": "rama okienna",
+  "ru": "око́нная ра́ма",
+  "rulat": "akónnaja ráma",
+  "ex": "The window frame is made of wood.",
+  "exde": "Der Fensterrahmen ist aus Holz."
+ },
+ "wo167": {
+  "fr": "la vitre",
+  "pl": "szyba",
+  "ru": "око́нное стекло́",
+  "rulat": "akónnoje stekló",
+  "ex": "The ball broke the windowpane.",
+  "exde": "Der Ball hat die Fensterscheibe zerbrochen."
+ },
+ "wo168": {
+  "fr": "le volet roulant",
+  "pl": "roleta zewnętrzna",
+  "ru": "рольста́вни",
+  "rulat": "roljstáwni",
+  "ex": "I pull down the roller shutter at night.",
+  "exde": "Nachts lasse ich den Rollladen herunter."
+ },
+ "wo169": {
+  "fr": "le volet",
+  "pl": "okiennica",
+  "ru": "ста́вня",
+  "rulat": "stáwnja",
+  "ex": "Close the shutter, please.",
+  "exde": "Mach bitte den Fensterladen zu."
+ },
+ "wo170": {
+  "fr": "déverrouiller",
+  "pl": "otwierać kluczem",
+  "ru": "отпира́ть",
+  "rulat": "atpirátj",
+  "ex": "I can't unlock the door.",
+  "exde": "Ich kann die Tür nicht aufschließen."
+ },
+ "wo171": {
+  "fr": "fermer",
+  "pl": "zamykać",
+  "ru": "закрыва́ть",
+  "rulat": "sakrywátj",
+  "ex": "Please close the window.",
+  "exde": "Bitte schließ das Fenster."
+ },
+ "wo172": {
+  "fr": "fermer",
+  "pl": "zamknąć",
+  "ru": "закры́ть",
+  "rulat": "sakrýtj",
+  "ex": "Shut the door, it's cold.",
+  "exde": "Mach die Tür zu, es ist kalt."
+ },
+ "wo173": {
+  "fr": "ouvrir",
+  "pl": "otworzyć",
+  "ru": "откры́ть",
+  "rulat": "atkrýtj",
+  "ex": "Can you open up the door for me?",
+  "exde": "Kannst du mir die Tür aufmachen?"
+ },
+ "wo174": {
+  "fr": "ouvrir en oscillo-battant",
+  "pl": "uchylić",
+  "ru": "поста́вить на прове́тривание",
+  "rulat": "pastáwitj na prawétriwanije",
+  "ex": "I tilt open the window for some fresh air.",
+  "exde": "Ich kippe das Fenster für etwas frische Luft."
+ },
+ "wo175": {
+  "fr": "claquer",
+  "pl": "trzaskać",
+  "ru": "хло́пать",
+  "rulat": "chlópatj",
+  "ex": "Don't slam the door!",
+  "exde": "Lass die Tür nicht knallen!"
+ },
+ "wo176": {
+  "fr": "fermé à clé",
+  "pl": "zamknięty na klucz",
+  "ru": "за́пертый",
+  "rulat": "sápertyj",
+  "ex": "The door was locked.",
+  "exde": "Die Tür war abgeschlossen."
+ },
+ "wo177": {
+  "fr": "entrouvert",
+  "pl": "uchylony",
+  "ru": "приоткры́тый",
+  "rulat": "priatkrýtyj",
+  "ex": "The door is ajar.",
+  "exde": "Die Tür ist angelehnt."
+ },
+ "wo178": {
+  "fr": "le verrou",
+  "pl": "zasuwa",
+  "ru": "засо́в",
+  "rulat": "sasóf",
+  "ex": "Slide the bolt across the door.",
+  "exde": "Schieb den Riegel vor die Tür."
+ },
+ "wo179": {
+  "fr": "la chaîne de sûreté",
+  "pl": "łańcuch do drzwi",
+  "ru": "дверна́я цепо́чка",
+  "rulat": "dwernája zepótschka",
+  "ex": "She opened the door with the door chain on.",
+  "exde": "Sie öffnete die Tür mit vorgelegter Türkette."
+ },
+ "wo180": {
+  "fr": "le judas",
+  "pl": "wizjer",
+  "ru": "дверно́й глазо́к",
+  "rulat": "dwernój glasók",
+  "ex": "Look through the peephole first.",
+  "exde": "Schau zuerst durch den Spion."
+ },
+ "wo181": {
+  "fr": "l'interphone",
+  "pl": "domofon",
+  "ru": "домофо́н",
+  "rulat": "domofón",
+  "ex": "Someone is ringing the intercom.",
+  "exde": "Jemand klingelt an der Gegensprechanlage."
+ },
+ "wo182": {
+  "fr": "le serrurier",
+  "pl": "ślusarz",
+  "ru": "слу́жба вскры́тия замко́в",
+  "rulat": "slúschba wskrýtija samków",
+  "ex": "We had to call a locksmith.",
+  "exde": "Wir mussten den Schlüsseldienst rufen."
+ },
+ "wo183": {
+  "fr": "s'enfermer dehors",
+  "pl": "zatrzasnąć klucze w domu",
+  "ru": "захло́пнуть дверь",
+  "rulat": "sachlópnut dwer",
+  "ex": "I locked myself out again.",
+  "exde": "Ich habe mich schon wieder ausgesperrt."
+ },
+ "wo184": {
+  "fr": "le double de clé",
+  "pl": "zapasowy klucz",
+  "ru": "запасно́й ключ",
+  "rulat": "sapasnój kljutsch",
+  "ex": "My neighbour has a spare key.",
+  "exde": "Mein Nachbar hat einen Ersatzschlüssel."
+ },
+ "wo185": {
+  "fr": "le radiateur",
+  "pl": "kaloryfer",
+  "ru": "батаре́я",
+  "rulat": "bataréja",
+  "ex": "The radiator is cold.",
+  "exde": "Der Heizkörper ist kalt."
+ },
+ "wo186": {
+  "fr": "le chauffage central",
+  "pl": "centralne ogrzewanie",
+  "ru": "центра́льное отопле́ние",
+  "rulat": "zentrálnoje otopljénije",
+  "ex": "The flat has central heating.",
+  "exde": "Die Wohnung hat Zentralheizung."
+ },
+ "wo187": {
+  "fr": "le chauffage au sol",
+  "pl": "ogrzewanie podłogowe",
+  "ru": "тёплый пол",
+  "rulat": "tjóplyj pol",
+  "ex": "The bathroom has underfloor heating.",
+  "exde": "Das Bad hat Fußbodenheizung."
+ },
+ "wo188": {
+  "fr": "le thermostat",
+  "pl": "termostat",
+  "ru": "термоста́т",
+  "rulat": "termostát",
+  "ex": "Set the thermostat to twenty degrees.",
+  "exde": "Stell das Thermostat auf zwanzig Grad."
+ },
+ "wo189": {
+  "fr": "chauffer",
+  "pl": "ogrzewać",
+  "ru": "отаплива́ть",
+  "rulat": "otaplíwat",
+  "ex": "We heat the house with gas.",
+  "exde": "Wir heizen das Haus mit Gas."
+ },
+ "wo190": {
+  "fr": "monter le chauffage",
+  "pl": "podkręcić ogrzewanie",
+  "ru": "приба́вить отопле́ние",
+  "rulat": "pribáwit otopljénije",
+  "ex": "Can you turn the heating up?",
+  "exde": "Kannst du die Heizung aufdrehen?"
+ },
+ "wo191": {
+  "fr": "baisser le chauffage",
+  "pl": "skręcić ogrzewanie",
+  "ru": "уба́вить отопле́ние",
+  "rulat": "ubáwit otopljénije",
+  "ex": "It's too warm, turn the heating down.",
+  "exde": "Es ist zu warm, dreh die Heizung herunter."
+ },
+ "wo192": {
+  "fr": "purger le radiateur",
+  "pl": "odpowietrzyć kaloryfer",
+  "ru": "спусти́ть во́здух из батаре́и",
+  "rulat": "spustít wósduch is bataréi",
+  "ex": "You need to bleed the radiator.",
+  "exde": "Du musst die Heizung entlüften."
+ },
+ "wo193": {
+  "fr": "l'électricité",
+  "pl": "prąd",
+  "ru": "электри́чество",
+  "rulat": "elektrítschestwo",
+  "ex": "Electricity is getting more expensive.",
+  "exde": "Der Strom wird immer teurer."
+ },
+ "wo194": {
+  "fr": "la rallonge",
+  "pl": "przedłużacz",
+  "ru": "удлини́тель",
+  "rulat": "udlinítel",
+  "ex": "I need an extension lead for the lamp.",
+  "exde": "Ich brauche eine Verlängerungsschnur für die Lampe."
+ },
+ "wo195": {
+  "fr": "la multiprise",
+  "pl": "rozgałęziacz",
+  "ru": "тройни́к",
+  "rulat": "trojník",
+  "ex": "Plug it into the multi-plug adaptor.",
+  "exde": "Steck es in die Mehrfachsteckdose."
+ },
+ "wo196": {
+  "fr": "la coupure de courant",
+  "pl": "przerwa w dostawie prądu",
+  "ru": "отключе́ние электри́чества",
+  "rulat": "otkljutschénije elektrítschestwa",
+  "ex": "There was a power cut last night.",
+  "exde": "Gestern Abend gab es einen Stromausfall."
+ },
+ "wo197": {
+  "fr": "le compteur électrique",
+  "pl": "licznik prądu",
+  "ru": "электросчётчик",
+  "rulat": "elektroschtschótschik",
+  "ex": "The electricity meter is in the cellar.",
+  "exde": "Der Stromzähler ist im Keller."
+ },
+ "wo198": {
+  "fr": "relever le compteur",
+  "pl": "odczytać licznik",
+  "ru": "снять показа́ния счётчика",
+  "rulat": "snjat pokasánija schtschótschika",
+  "ex": "Someone is coming to read the meter tomorrow.",
+  "exde": "Morgen kommt jemand, um den Zähler abzulesen."
+ },
+ "wo199": {
+  "fr": "la facture d'électricité",
+  "pl": "rachunek za prąd",
+  "ru": "счёт за электри́чество",
+  "rulat": "schtschot sa elektrítschestwo",
+  "ex": "Our electricity bill was very high.",
+  "exde": "Unsere Stromrechnung war sehr hoch."
+ },
+ "wo200": {
+  "fr": "le fournisseur d'électricité",
+  "pl": "dostawca prądu",
+  "ru": "поставщи́к электроэне́ргии",
+  "rulat": "postawschtschík elektroenérgii",
+  "ex": "We switched electricity supplier.",
+  "exde": "Wir haben den Stromanbieter gewechselt."
+ },
+ "wo201": {
+  "fr": "allumer",
+  "pl": "włączać",
+  "ru": "включа́ть",
+  "rulat": "wkljutschát",
+  "ex": "Can you switch on the heating?",
+  "exde": "Kannst du die Heizung einschalten?"
+ },
+ "wo202": {
+  "fr": "éteindre",
+  "pl": "wyłączać",
+  "ru": "выключа́ть",
+  "rulat": "wykljutschát",
+  "ex": "Don't forget to switch off the oven.",
+  "exde": "Vergiss nicht, den Ofen auszuschalten."
+ },
+ "wo203": {
+  "fr": "économiser l'électricité",
+  "pl": "oszczędzać prąd",
+  "ru": "эконо́мить электри́чество",
+  "rulat": "ekonómit elektrítschestwo",
+  "ex": "We want to save electricity this winter.",
+  "exde": "Wir wollen diesen Winter Strom sparen."
+ },
+ "wo204": {
+  "fr": "l'eau chaude",
+  "pl": "ciepła woda",
+  "ru": "горя́чая вода́",
+  "rulat": "gorjátschaja wodá",
+  "ex": "There is no hot water today.",
+  "exde": "Heute gibt es kein Warmwasser."
+ },
+ "wo205": {
+  "fr": "le chauffe-eau",
+  "pl": "bojler",
+  "ru": "водонагрева́тель",
+  "rulat": "wodonagrewátel",
+  "ex": "The water heater is broken.",
+  "exde": "Der Boiler ist kaputt."
+ },
+ "wo206": {
+  "fr": "la pression de l'eau",
+  "pl": "ciśnienie wody",
+  "ru": "давле́ние воды́",
+  "rulat": "dawlénije wodý",
+  "ex": "The water pressure is too low.",
+  "exde": "Der Wasserdruck ist zu niedrig."
+ },
+ "wo207": {
+  "fr": "le dégât des eaux",
+  "pl": "zalanie",
+  "ru": "уще́рб от воды́",
+  "rulat": "uschtschérb ot wodý",
+  "ex": "The water damage in the kitchen is serious.",
+  "exde": "Der Wasserschaden in der Küche ist schlimm."
+ },
+ "wo208": {
+  "fr": "le tuyau",
+  "pl": "rura",
+  "ru": "труба́",
+  "rulat": "trubá",
+  "ex": "The pipe under the sink is leaking.",
+  "exde": "Das Rohr unter der Spüle ist undicht."
+ },
+ "wo209": {
+  "fr": "la rupture de canalisation",
+  "pl": "pęknięcie rury",
+  "ru": "проры́в трубы́",
+  "rulat": "prorýw trubý",
+  "ex": "We had a burst pipe last night.",
+  "exde": "Wir hatten letzte Nacht einen Rohrbruch."
+ },
+ "wo210": {
+  "fr": "allumer la lumière",
+  "pl": "włączyć światło",
+  "ru": "включи́ть свет",
+  "rulat": "wkljutschít swet",
+  "ex": "Can you switch on the light, please?",
+  "exde": "Kannst du bitte das Licht einschalten?"
+ },
+ "wo211": {
+  "fr": "éteindre la lumière",
+  "pl": "wyłączyć światło",
+  "ru": "вы́ключить свет",
+  "rulat": "wýkljutschit swet",
+  "ex": "Don't forget to switch off the light.",
+  "exde": "Vergiss nicht, das Licht auszuschalten."
+ },
+ "wo212": {
+  "fr": "le plafonnier",
+  "pl": "lampa sufitowa",
+  "ru": "потоло́чный свети́льник",
+  "rulat": "potolótschnyj swetílnik",
+  "ex": "The ceiling light in the hall is very bright.",
+  "exde": "Die Deckenlampe im Flur ist sehr hell."
+ },
+ "wo213": {
+  "fr": "le luminaire",
+  "pl": "oprawa oświetleniowa",
+  "ru": "свети́льник",
+  "rulat": "swetílnik",
+  "ex": "We need a new light fitting for the bathroom.",
+  "exde": "Wir brauchen eine neue Leuchte für das Badezimmer."
+ },
+ "wo214": {
+  "fr": "l'ampoule LED",
+  "pl": "żarówka LED",
+  "ru": "светодио́дная ла́мпа",
+  "rulat": "swetodiódnaja lámpa",
+  "ex": "This LED bulb lasts for years.",
+  "exde": "Diese LED-Lampe hält jahrelang."
+ },
+ "wo215": {
+  "fr": "l'ampoule basse consommation",
+  "pl": "świetlówka energooszczędna",
+  "ru": "энергосберега́ющая ла́мпа",
+  "rulat": "energosberegájuschtschaja lámpa",
+  "ex": "I replaced the old bulb with an energy-saving bulb.",
+  "exde": "Ich habe die alte Glühbirne durch eine Energiesparlampe ersetzt."
+ },
+ "wo216": {
+  "fr": "l'abat-jour",
+  "pl": "abażur",
+  "ru": "абажу́р",
+  "rulat": "abaschúr",
+  "ex": "The lampshade is covered in dust.",
+  "exde": "Der Lampenschirm ist voller Staub."
+ },
+ "wo217": {
+  "fr": "la douille",
+  "pl": "oprawka",
+  "ru": "патро́н",
+  "rulat": "patrón",
+  "ex": "Screw the bulb into the lamp holder.",
+  "exde": "Schraube die Glühbirne in die Fassung."
+ },
+ "wo218": {
+  "fr": "le variateur",
+  "pl": "ściemniacz",
+  "ru": "димме́р",
+  "rulat": "dimmér",
+  "ex": "The living room has a dimmer switch.",
+  "exde": "Das Wohnzimmer hat einen Dimmer."
+ },
+ "wo219": {
+  "fr": "tamiser",
+  "pl": "przyciemniać",
+  "ru": "приглуша́ть свет",
+  "rulat": "prigluschát swet",
+  "ex": "Can you dim the lights a little?",
+  "exde": "Kannst du das Licht etwas dimmen?"
+ },
+ "wo220": {
+  "fr": "la bougie",
+  "pl": "świeca",
+  "ru": "свеча́",
+  "rulat": "swetschá",
+  "ex": "She lit a candle on the table.",
+  "exde": "Sie zündete eine Kerze auf dem Tisch an."
+ },
+ "wo221": {
+  "fr": "la lampe de poche",
+  "pl": "latarka",
+  "ru": "фона́рик",
+  "rulat": "fonárik",
+  "ex": "I always keep a torch in the car.",
+  "exde": "Ich habe immer eine Taschenlampe im Auto."
+ },
+ "wo222": {
+  "fr": "le lustre",
+  "pl": "żyrandol",
+  "ru": "лю́стра",
+  "rulat": "ljústra",
+  "ex": "A huge chandelier hangs in the hall.",
+  "exde": "Im Saal hängt ein riesiger Kronleuchter."
+ },
+ "wo223": {
+  "fr": "la guirlande lumineuse",
+  "pl": "girlanda świetlna",
+  "ru": "гирля́нда",
+  "rulat": "girljánda",
+  "ex": "We hung fairy lights on the balcony.",
+  "exde": "Wir haben eine Lichterkette auf dem Balkon aufgehängt."
+ },
+ "wo224": {
+  "fr": "le détecteur de mouvement",
+  "pl": "czujnik ruchu",
+  "ru": "да́тчик движе́ния",
+  "rulat": "dáttschik dwishénija",
+  "ex": "The motion sensor switches on the light at the door.",
+  "exde": "Der Bewegungsmelder schaltet das Licht an der Tür ein."
+ },
+ "wo225": {
+  "fr": "changer l'ampoule",
+  "pl": "wymienić żarówkę",
+  "ru": "поменя́ть ла́мпочку",
+  "rulat": "pomenját lámpotschku",
+  "ex": "Can you help me change the light bulb?",
+  "exde": "Kannst du mir helfen, die Glühbirne zu wechseln?"
+ },
+ "wo226": {
+  "fr": "la lumière du jour",
+  "pl": "światło dzienne",
+  "ru": "дневно́й свет",
+  "rulat": "dnewnój swet",
+  "ex": "This room gets a lot of daylight.",
+  "exde": "Dieses Zimmer bekommt viel Tageslicht."
+ },
+ "wo227": {
+  "fr": "l'applique murale (f)",
+  "pl": "kinkiet",
+  "ru": "бра",
+  "rulat": "bra",
+  "ex": "We put a wall light next to the mirror.",
+  "exde": "Wir haben neben dem Spiegel eine Wandleuchte angebracht."
+ },
+ "wo228": {
+  "fr": "vaciller",
+  "pl": "migotać",
+  "ru": "мерца́ть",
+  "rulat": "merzát",
+  "ex": "The light in the kitchen keeps flickering.",
+  "exde": "Das Licht in der Küche flackert ständig."
+ },
+ "wo229": {
+  "fr": "l'éclairage (m)",
+  "pl": "oświetlenie",
+  "ru": "освеще́ние",
+  "rulat": "oswjeschtschénije",
+  "ex": "The lighting in this restaurant is very cosy.",
+  "exde": "Die Beleuchtung in diesem Restaurant ist sehr gemütlich."
+ },
+ "wo230": {
+  "fr": "éblouissant",
+  "pl": "jaskrawy",
+  "ru": "ослепи́тельный",
+  "rulat": "oslepítelny",
+  "ex": "The glaring light hurts my eyes.",
+  "exde": "Das grelle Licht tut mir in den Augen weh."
+ },
+ "wo231": {
+  "fr": "la veilleuse",
+  "pl": "lampka nocna",
+  "ru": "ночни́к",
+  "rulat": "notschník",
+  "ex": "My son can't sleep without a night light.",
+  "exde": "Mein Sohn kann ohne Nachtlicht nicht schlafen."
+ },
+ "wo232": {
+  "fr": "l'éclairage extérieur (m)",
+  "pl": "oświetlenie zewnętrzne",
+  "ru": "нару́жное освеще́ние",
+  "rulat": "narúshnoje oswjeschtschénije",
+  "ex": "The outdoor lighting turns on automatically at night.",
+  "exde": "Die Außenbeleuchtung geht nachts automatisch an."
+ },
+ "wo233": {
+  "fr": "le sèche-linge",
+  "pl": "suszarka bębnowa",
+  "ru": "суши́льная маши́на",
+  "rulat": "suschílnaja maschína",
+  "ex": "I put the towels in the tumble dryer.",
+  "exde": "Ich habe die Handtücher in den Wäschetrockner getan."
+ },
+ "wo234": {
+  "fr": "l'aspirateur (m)",
+  "pl": "odkurzacz",
+  "ru": "пылесо́с",
+  "rulat": "pylesós",
+  "ex": "The vacuum cleaner is in the cupboard.",
+  "exde": "Der Staubsauger ist im Schrank."
+ },
+ "wo235": {
+  "fr": "le fer à repasser",
+  "pl": "żelazko",
+  "ru": "утю́г",
+  "rulat": "utjúg",
+  "ex": "Don't forget to unplug the iron.",
+  "exde": "Vergiss nicht, den Stecker vom Bügeleisen zu ziehen."
+ },
+ "wo236": {
+  "fr": "la hotte aspirante",
+  "pl": "okap",
+  "ru": "вы́тяжка",
+  "rulat": "wýtjashka",
+  "ex": "Turn on the extractor hood when you fry fish.",
+  "exde": "Schalte die Dunstabzugshaube ein, wenn du Fisch brätst."
+ },
+ "wo237": {
+  "fr": "la plaque de cuisson",
+  "pl": "płyta grzewcza",
+  "ru": "ва́рочная пане́ль",
+  "rulat": "wárotschnaja panél",
+  "ex": "Our new hob heats up very quickly.",
+  "exde": "Unser neues Kochfeld wird sehr schnell heiß."
+ },
+ "wo238": {
+  "fr": "l'aspirateur robot (m)",
+  "pl": "robot sprzątający",
+  "ru": "ро́бот-пылесо́с",
+  "rulat": "róbot-pylesós",
+  "ex": "The robot vacuum cleaner cleans the flat while we're at work.",
+  "exde": "Der Saugroboter putzt die Wohnung, während wir bei der Arbeit sind."
+ },
+ "wo239": {
+  "fr": "le ventilateur",
+  "pl": "wentylator",
+  "ru": "вентиля́тор",
+  "rulat": "wentiljátor",
+  "ex": "In summer I sleep with the fan on.",
+  "exde": "Im Sommer schlafe ich mit eingeschaltetem Ventilator."
+ },
+ "wo240": {
+  "fr": "le radiateur soufflant",
+  "pl": "termowentylator",
+  "ru": "тепловентиля́тор",
+  "rulat": "teplowentiljátor",
+  "ex": "The fan heater warms up the bathroom quickly.",
+  "exde": "Der Heizlüfter wärmt das Bad schnell auf."
+ },
+ "wo241": {
+  "fr": "brancher",
+  "pl": "podłączyć",
+  "ru": "подключи́ть",
+  "rulat": "podkljutschít",
+  "ex": "Can you connect the washing machine?",
+  "exde": "Kannst du die Waschmaschine anschließen?"
+ },
+ "wo242": {
+  "fr": "passer l'aspirateur",
+  "pl": "odkurzać",
+  "ru": "пылесо́сить",
+  "rulat": "pylessóssit",
+  "ex": "I hoover the living room every Saturday.",
+  "exde": "Ich staubsauge jeden Samstag das Wohnzimmer."
+ },
+ "wo243": {
+  "fr": "le mode d'emploi",
+  "pl": "instrukcja obsługi",
+  "ru": "инстру́кция по эксплуата́ции",
+  "rulat": "instrúkzija po ekspluatázii",
+  "ex": "Please read the instructions for use first.",
+  "exde": "Bitte lies zuerst die Gebrauchsanweisung."
+ },
+ "wo244": {
+  "fr": "économe en énergie",
+  "pl": "energooszczędny",
+  "ru": "энергосберега́ющий",
+  "rulat": "energosberegájuschtschi",
+  "ex": "This fridge is very energy-efficient.",
+  "exde": "Dieser Kühlschrank ist sehr energiesparend."
+ },
+ "wo245": {
+  "fr": "cassé",
+  "pl": "zepsuty",
+  "ru": "сло́манный",
+  "rulat": "slómanny",
+  "ex": "The toaster is broken.",
+  "exde": "Der Toaster ist kaputt."
+ },
+ "wo246": {
+  "fr": "réparer",
+  "pl": "naprawiać",
+  "ru": "ремонти́ровать",
+  "rulat": "remontírowat",
+  "ex": "Can you repair the dishwasher?",
+  "exde": "Kannst du die Spülmaschine reparieren?"
+ },
+ "wo247": {
+  "fr": "l'appareil électroménager",
+  "pl": "urządzenie AGD",
+  "ru": "бытово́й прибо́р",
+  "rulat": "bytowói pribór",
+  "ex": "We bought a new household appliance.",
+  "exde": "Wir haben ein neues Haushaltsgerät gekauft."
+ },
+ "wo248": {
+  "fr": "nettoyer",
+  "pl": "sprzątać",
+  "ru": "убира́ть",
+  "rulat": "ubirát",
+  "ex": "We clean the flat on Fridays.",
+  "exde": "Wir putzen freitags die Wohnung."
+ },
+ "wo249": {
+  "fr": "essuyer",
+  "pl": "wycierać",
+  "ru": "вытира́ть",
+  "rulat": "wytirát",
+  "ex": "Please wipe the table.",
+  "exde": "Bitte wisch den Tisch ab."
+ },
+ "wo250": {
+  "fr": "passer la serpillière",
+  "pl": "myć podłogę",
+  "ru": "мыть пол",
+  "rulat": "myt pol",
+  "ex": "I have to mop the floor in the kitchen.",
+  "exde": "Ich muss in der Küche den Boden wischen."
+ },
+ "wo251": {
+  "fr": "balayer",
+  "pl": "zamiatać",
+  "ru": "подмета́ть",
+  "rulat": "podmetát",
+  "ex": "He sweeps the terrace.",
+  "exde": "Er fegt die Terrasse."
+ },
+ "wo252": {
+  "fr": "faire la poussière",
+  "pl": "ścierać kurze",
+  "ru": "вытира́ть пыль",
+  "rulat": "wytirát pyl",
+  "ex": "Can you dust the shelves?",
+  "exde": "Kannst du auf den Regalen Staub wischen?"
+ },
+ "wo253": {
+  "fr": "frotter",
+  "pl": "szorować",
+  "ru": "тере́ть",
+  "rulat": "terét",
+  "ex": "She scrubs the bathtub.",
+  "exde": "Sie schrubbt die Badewanne."
+ },
+ "wo254": {
+  "fr": "faire la vaisselle",
+  "pl": "zmywać naczynia",
+  "ru": "мыть посу́ду",
+  "rulat": "myt possúdu",
+  "ex": "Who is washing up today?",
+  "exde": "Wer spült heute?"
+ },
+ "wo255": {
+  "fr": "le balai",
+  "pl": "miotła",
+  "ru": "метла́",
+  "rulat": "metlá",
+  "ex": "The broom is in the cupboard.",
+  "exde": "Der Besen steht im Schrank."
+ },
+ "wo256": {
+  "fr": "la pelle à poussière",
+  "pl": "szufelka",
+  "ru": "сово́к",
+  "rulat": "sowók",
+  "ex": "Where is the dustpan?",
+  "exde": "Wo ist das Kehrblech?"
+ },
+ "wo257": {
+  "fr": "le balai à franges",
+  "pl": "mop",
+  "ru": "шва́бра",
+  "rulat": "schwábra",
+  "ex": "The mop is wet.",
+  "exde": "Der Wischmopp ist nass."
+ },
+ "wo258": {
+  "fr": "le seau",
+  "pl": "wiadro",
+  "ru": "ведро́",
+  "rulat": "wedró",
+  "ex": "Fill the bucket with water.",
+  "exde": "Füll den Eimer mit Wasser."
+ },
+ "wo259": {
+  "fr": "la brosse",
+  "pl": "szczotka",
+  "ru": "щётка",
+  "rulat": "schtschjótka",
+  "ex": "I need a brush for the toilet.",
+  "exde": "Ich brauche eine Bürste für die Toilette."
+ },
+ "wo260": {
+  "fr": "le produit d'entretien",
+  "pl": "środek czyszczący",
+  "ru": "чи́стящее сре́дство",
+  "rulat": "tschístjaschtscheje srédstwo",
+  "ex": "This cleaning product smells good.",
+  "exde": "Dieses Putzmittel riecht gut."
+ },
+ "wo261": {
+  "fr": "le nettoyant multi-usage",
+  "pl": "środek uniwersalny do czyszczenia",
+  "ru": "универса́льное чи́стящее сре́дство",
+  "rulat": "uniwersálnoje tschístjaschtscheje srédstwo",
+  "ex": "I use an all-purpose cleaner for the kitchen.",
+  "exde": "Ich benutze einen Allzweckreiniger für die Küche."
+ },
+ "wo262": {
+  "fr": "le nettoyant pour vitres",
+  "pl": "płyn do mycia szyb",
+  "ru": "сре́дство для мытья́ стёкол",
+  "rulat": "srédstwo dlja mytjá stjókol",
+  "ex": "This glass cleaner leaves no streaks.",
+  "exde": "Dieser Glasreiniger hinterlässt keine Streifen."
+ },
+ "wo263": {
+  "fr": "le détartrant",
+  "pl": "odkamieniacz",
+  "ru": "сре́дство от на́кипи",
+  "rulat": "srédstwo ot nákipi",
+  "ex": "The coffee machine needs descaler.",
+  "exde": "Die Kaffeemaschine braucht Entkalker."
+ },
+ "wo264": {
+  "fr": "les gants en caoutchouc",
+  "pl": "gumowe rękawiczki",
+  "ru": "рези́новые перча́тки",
+  "rulat": "resínowyje pertschátki",
+  "ex": "Wear rubber gloves when you clean the bathroom.",
+  "exde": "Trag Gummihandschuhe, wenn du das Bad putzt."
+ },
+ "wo265": {
+  "fr": "la saleté",
+  "pl": "brud",
+  "ru": "грязь",
+  "rulat": "grjas",
+  "ex": "There is dirt on your shoes.",
+  "exde": "An deinen Schuhen ist Schmutz."
+ },
+ "wo266": {
+  "fr": "la tache",
+  "pl": "plama",
+  "ru": "пятно́",
+  "rulat": "pjatnó",
+  "ex": "This stain won't come out.",
+  "exde": "Dieser Fleck geht nicht raus."
+ },
+ "wo267": {
+  "fr": "le calcaire",
+  "pl": "kamień",
+  "ru": "на́кипь",
+  "rulat": "nákip",
+  "ex": "The kettle is full of limescale.",
+  "exde": "Der Wasserkocher ist voller Kalk."
+ },
+ "wo268": {
+  "fr": "le grand ménage de printemps",
+  "pl": "wiosenne porządki",
+  "ru": "весе́нняя убо́рка",
+  "rulat": "wesénnjaja ubórka",
+  "ex": "We're doing a spring clean this weekend.",
+  "exde": "Wir machen dieses Wochenende Frühjahrsputz."
+ },
+ "wo269": {
+  "fr": "la femme de ménage",
+  "pl": "sprzątaczka",
+  "ru": "убо́рщица",
+  "rulat": "ubórschtschiza",
+  "ex": "The cleaner comes on Fridays.",
+  "exde": "Die Putzfrau kommt freitags."
+ },
+ "wo270": {
+  "fr": "le planning de ménage",
+  "pl": "grafik sprzątania",
+  "ru": "гра́фик убо́рки",
+  "rulat": "gráfik ubórki",
+  "ex": "Our cleaning rota hangs on the fridge.",
+  "exde": "Unser Putzplan hängt am Kühlschrank."
+ },
+ "wo271": {
+  "fr": "laver les vitres",
+  "pl": "myć okna",
+  "ru": "мыть о́кна",
+  "rulat": "myt ókna",
+  "ex": "I need to clean the windows today.",
+  "exde": "Ich muss heute die Fenster putzen."
+ },
+ "wo272": {
+  "fr": "sortir la poubelle",
+  "pl": "wynieść śmieci",
+  "ru": "вы́нести му́сор",
+  "rulat": "wýnesti músor",
+  "ex": "Can you take out the rubbish, please?",
+  "exde": "Kannst du bitte den Müll rausbringen?"
+ },
+ "wo273": {
+  "fr": "le linge",
+  "pl": "pranie",
+  "ru": "бельё",
+  "rulat": "beljó",
+  "ex": "The laundry is still wet.",
+  "exde": "Die Wäsche ist noch nass."
+ },
+ "wo274": {
+  "fr": "faire la lessive",
+  "pl": "robić pranie",
+  "ru": "стира́ть бельё",
+  "rulat": "stirát beljó",
+  "ex": "I usually do the washing on Sundays.",
+  "exde": "Ich wasche meistens sonntags Wäsche."
+ },
+ "wo275": {
+  "fr": "la lessive",
+  "pl": "proszek do prania",
+  "ru": "стира́льный порошо́к",
+  "rulat": "stirálnyj poroschók",
+  "ex": "We've run out of washing powder.",
+  "exde": "Wir haben kein Waschmittel mehr."
+ },
+ "wo276": {
+  "fr": "l'assouplissant",
+  "pl": "płyn do płukania",
+  "ru": "кондиционе́р для белья́",
+  "rulat": "kondizionér dlja beljá",
+  "ex": "The fabric softener makes the towels soft.",
+  "exde": "Der Weichspüler macht die Handtücher weich."
+ },
+ "wo277": {
+  "fr": "le panier à linge",
+  "pl": "kosz na pranie",
+  "ru": "корзи́на для белья́",
+  "rulat": "korsína dlja beljá",
+  "ex": "The laundry basket is full again.",
+  "exde": "Der Wäschekorb ist schon wieder voll."
+ },
+ "wo278": {
+  "fr": "l'étendoir",
+  "pl": "suszarka na pranie",
+  "ru": "суши́лка для белья́",
+  "rulat": "suschílka dlja beljá",
+  "ex": "Put the clothes airer on the balcony.",
+  "exde": "Stell den Wäscheständer auf den Balkon."
+ },
+ "wo279": {
+  "fr": "la corde à linge",
+  "pl": "sznurek na pranie",
+  "ru": "бельева́я верёвка",
+  "rulat": "beljewája werjówka",
+  "ex": "I hung the sheets on the washing line.",
+  "exde": "Ich habe die Laken an die Wäscheleine gehängt."
+ },
+ "wo280": {
+  "fr": "la pince à linge",
+  "pl": "klamerka do bielizny",
+  "ru": "прище́пка",
+  "rulat": "prischtschépka",
+  "ex": "This clothes peg is broken.",
+  "exde": "Diese Wäscheklammer ist kaputt."
+ },
+ "wo281": {
+  "fr": "étendre le linge",
+  "pl": "wieszać pranie",
+  "ru": "разве́шивать бельё",
+  "rulat": "raswéschiwat beljó",
+  "ex": "I hang out the washing every Sunday.",
+  "exde": "Ich hänge jeden Sonntag die Wäsche auf."
+ },
+ "wo282": {
+  "fr": "rentrer le linge",
+  "pl": "zdejmować pranie",
+  "ru": "снима́ть бельё",
+  "rulat": "snimát beljó",
+  "ex": "Can you take in the washing before it rains?",
+  "exde": "Kannst du die Wäsche abnehmen, bevor es regnet?"
+ },
+ "wo283": {
+  "fr": "le fer à repasser à vapeur",
+  "pl": "żelazko parowe",
+  "ru": "парово́й утю́г",
+  "rulat": "parawój utjúk",
+  "ex": "This steam iron removes creases quickly.",
+  "exde": "Dieses Dampfbügeleisen entfernt Falten schnell."
+ },
+ "wo284": {
+  "fr": "la planche à repasser",
+  "pl": "deska do prasowania",
+  "ru": "глади́льная доска́",
+  "rulat": "gladílnaja daská",
+  "ex": "The ironing board is behind the door.",
+  "exde": "Das Bügelbrett steht hinter der Tür."
+ },
+ "wo285": {
+  "fr": "plier",
+  "pl": "składać",
+  "ru": "скла́дывать",
+  "rulat": "skládywat",
+  "ex": "Please fold the towels.",
+  "exde": "Bitte leg die Handtücher zusammen."
+ },
+ "wo286": {
+  "fr": "trier",
+  "pl": "sortować",
+  "ru": "сортирова́ть",
+  "rulat": "sartirowát",
+  "ex": "I always sort the laundry by colour.",
+  "exde": "Ich sortiere die Wäsche immer nach Farben."
+ },
+ "wo287": {
+  "fr": "le linge de couleur",
+  "pl": "pranie kolorowe",
+  "ru": "цветно́е бельё",
+  "rulat": "zwetnóje beljó",
+  "ex": "Wash the coloureds at forty degrees.",
+  "exde": "Wasch die Buntwäsche bei vierzig Grad."
+ },
+ "wo288": {
+  "fr": "le linge blanc",
+  "pl": "pranie białe",
+  "ru": "бе́лое бельё",
+  "rulat": "bjéloje beljó",
+  "ex": "Never wash the whites with a red shirt.",
+  "exde": "Wasch die Weißwäsche nie mit einem roten Hemd."
+ },
+ "wo289": {
+  "fr": "le linge délicat",
+  "pl": "pranie delikatne",
+  "ru": "делика́тное бельё",
+  "rulat": "delikátnoje beljó",
+  "ex": "Put the delicates in a laundry bag.",
+  "exde": "Leg die Feinwäsche in einen Wäschebeutel."
+ },
+ "wo290": {
+  "fr": "le lavage à la main",
+  "pl": "pranie ręczne",
+  "ru": "ручна́я сти́рка",
+  "rulat": "rutschnája stírka",
+  "ex": "This sweater is hand wash only.",
+  "exde": "Dieser Pullover ist nur für die Handwäsche geeignet."
+ },
+ "wo291": {
+  "fr": "le détachant",
+  "pl": "odplamiacz",
+  "ru": "пятновыводи́тель",
+  "rulat": "pjatnowywadítel",
+  "ex": "Use stain remover on the wine stain.",
+  "exde": "Nimm Fleckentferner für den Weinfleck."
+ },
+ "wo292": {
+  "fr": "rétrécir",
+  "pl": "skurczyć się",
+  "ru": "сесть",
+  "rulat": "sjest",
+  "ex": "My jumper shrank in the wash.",
+  "exde": "Mein Pullover ist in der Wäsche eingelaufen."
+ },
+ "wo293": {
+  "fr": "déteindre",
+  "pl": "farbować",
+  "ru": "линя́ть",
+  "rulat": "linját",
+  "ex": "The new jeans might run in the wash.",
+  "exde": "Die neue Jeans könnte in der Wäsche abfärben."
+ },
+ "wo294": {
+  "fr": "se froisser",
+  "pl": "gnieść się",
+  "ru": "мя́ться",
+  "rulat": "mjátsja",
+  "ex": "Linen creases very easily.",
+  "exde": "Leinen knittert sehr leicht."
+ },
+ "wo295": {
+  "fr": "infroissable",
+  "pl": "niegniotący",
+  "ru": "немну́щийся",
+  "rulat": "nemnúschtschijsja",
+  "ex": "I prefer non-iron shirts for travelling.",
+  "exde": "Für Reisen bevorzuge ich knitterfreie Hemden."
+ },
+ "wo296": {
+  "fr": "le programme de lavage",
+  "pl": "program prania",
+  "ru": "програ́мма сти́рки",
+  "rulat": "prográmma stírki",
+  "ex": "Choose a short wash cycle for these clothes.",
+  "exde": "Wähle für diese Kleidung ein kurzes Waschprogramm."
+ },
+ "wo297": {
+  "fr": "l'essorage",
+  "pl": "wirowanie",
+  "ru": "отжи́м",
+  "rulat": "atschím",
+  "ex": "The spin cycle is very loud.",
+  "exde": "Der Schleudergang ist sehr laut."
+ },
+ "wo298": {
+  "fr": "la poubelle",
+  "pl": "pojemnik na śmieci",
+  "ru": "му́сорный бак",
+  "rulat": "músornyj bak",
+  "ex": "Put the wheelie bin out on Monday night.",
+  "exde": "Stell die Mülltonne am Montagabend raus."
+ },
+ "wo299": {
+  "fr": "le sac poubelle",
+  "pl": "worek na śmieci",
+  "ru": "мешо́к для му́сора",
+  "rulat": "meschók dlja músora",
+  "ex": "We need a new bin bag.",
+  "exde": "Wir brauchen einen neuen Müllbeutel."
+ },
+ "wo300": {
+  "fr": "le ramassage des ordures",
+  "pl": "wywóz śmieci",
+  "ru": "вы́воз му́сора",
+  "rulat": "wýwas músora",
+  "ex": "The refuse collection comes on Thursdays.",
+  "exde": "Die Müllabfuhr kommt donnerstags."
+ },
+ "wo301": {
+  "fr": "le camion-poubelle",
+  "pl": "śmieciarka",
+  "ru": "мусорово́з",
+  "rulat": "mussorowós",
+  "ex": "The bin lorry comes every Tuesday.",
+  "exde": "Der Müllwagen kommt jeden Dienstag."
+ },
+ "wo302": {
+  "fr": "le tri des déchets",
+  "pl": "segregacja śmieci",
+  "ru": "сортиро́вка му́сора",
+  "rulat": "sortirówka mússora",
+  "ex": "Waste separation is very important in Germany.",
+  "exde": "Die Mülltrennung ist in Deutschland sehr wichtig."
+ },
+ "wo303": {
+  "fr": "trier",
+  "pl": "segregować",
+  "ru": "сортирова́ть",
+  "rulat": "sortirowát",
+  "ex": "We separate our rubbish at home.",
+  "exde": "Wir trennen unseren Müll zu Hause."
+ },
+ "wo304": {
+  "fr": "recycler",
+  "pl": "poddawać recyklingowi",
+  "ru": "перераба́тывать",
+  "rulat": "pererabátywat",
+  "ex": "You can recycle plastic bottles.",
+  "exde": "Man kann Plastikflaschen recyceln."
+ },
+ "wo305": {
+  "fr": "le recyclage",
+  "pl": "recykling",
+  "ru": "перерабо́тка",
+  "rulat": "pererabótka",
+  "ex": "Recycling helps the environment.",
+  "exde": "Das Recycling hilft der Umwelt."
+ },
+ "wo306": {
+  "fr": "les ordures ménagères",
+  "pl": "odpady zmieszane",
+  "ru": "несортиро́ванные отхо́ды",
+  "rulat": "nesortirówannyje otchódy",
+  "ex": "Put the nappies in the general waste.",
+  "exde": "Wirf die Windeln in den Restmüll."
+ },
+ "wo307": {
+  "fr": "les déchets organiques",
+  "pl": "bioodpady",
+  "ru": "пищевы́е отхо́ды",
+  "rulat": "pischtschewýje otchódy",
+  "ex": "Banana peels go in the food waste.",
+  "exde": "Bananenschalen gehören in den Biomüll."
+ },
+ "wo308": {
+  "fr": "la poubelle à déchets organiques",
+  "pl": "pojemnik na bioodpady",
+  "ru": "конте́йнер для пищевы́х отхо́дов",
+  "rulat": "kontéjner dlja pischtschewých otchódow",
+  "ex": "The food waste bin is full.",
+  "exde": "Die Biotonne ist voll."
+ },
+ "wo309": {
+  "fr": "les vieux papiers",
+  "pl": "makulatura",
+  "ru": "макулату́ра",
+  "rulat": "makulatúra",
+  "ex": "I take the waste paper downstairs.",
+  "exde": "Ich bringe das Altpapier nach unten."
+ },
+ "wo310": {
+  "fr": "la poubelle à papier",
+  "pl": "pojemnik na papier",
+  "ru": "конте́йнер для бума́ги",
+  "rulat": "kontéjner dlja bumági",
+  "ex": "Put the cardboard in the paper recycling bin.",
+  "exde": "Wirf den Karton in die Papiertonne."
+ },
+ "wo311": {
+  "fr": "le sac jaune",
+  "pl": "żółty worek",
+  "ru": "жёлтый мешо́к",
+  "rulat": "shóltyj meschók",
+  "ex": "Yoghurt pots go in the yellow recycling bag.",
+  "exde": "Joghurtbecher kommen in den Gelben Sack."
+ },
+ "wo312": {
+  "fr": "l'emballage",
+  "pl": "opakowanie",
+  "ru": "упако́вка",
+  "rulat": "upakówka",
+  "ex": "This product has too much packaging.",
+  "exde": "Dieses Produkt hat zu viel Verpackung."
+ },
+ "wo313": {
+  "fr": "le verre usagé",
+  "pl": "szkło do recyklingu",
+  "ru": "стекля́нные отхо́ды",
+  "rulat": "stekljánnyje otchódy",
+  "ex": "We take the waste glass to the container.",
+  "exde": "Wir bringen das Altglas zum Container."
+ },
+ "wo314": {
+  "fr": "le conteneur à verre",
+  "pl": "pojemnik na szkło",
+  "ru": "конте́йнер для стекла́",
+  "rulat": "kontéjner dlja steklá",
+  "ex": "The bottle bank is next to the supermarket.",
+  "exde": "Der Glascontainer steht neben dem Supermarkt."
+ },
+ "wo315": {
+  "fr": "la bouteille consignée",
+  "pl": "butelka zwrotna",
+  "ru": "возвра́тная буты́лка",
+  "rulat": "woswrátnaja butýlka",
+  "ex": "This is a returnable bottle.",
+  "exde": "Das ist eine Pfandflasche."
+ },
+ "wo316": {
+  "fr": "la machine de reprise des bouteilles",
+  "pl": "automat do zwrotu butelek",
+  "ru": "автома́т по приёму буты́лок",
+  "rulat": "awtomát po prijómu butýlok",
+  "ex": "The bottle return machine is broken.",
+  "exde": "Der Pfandautomat ist kaputt."
+ },
+ "wo317": {
+  "fr": "les encombrants",
+  "pl": "odpady wielkogabarytowe",
+  "ru": "крупногабари́тный му́сор",
+  "rulat": "krupnogabarítnyj mússor",
+  "ex": "The old sofa goes out with the bulky waste.",
+  "exde": "Das alte Sofa kommt zum Sperrmüll."
+ },
+ "wo318": {
+  "fr": "la déchetterie",
+  "pl": "punkt selektywnej zbiórki odpadów",
+  "ru": "пункт приёма вторсырья́",
+  "rulat": "punkt prijóma wtorsyrjá",
+  "ex": "We drove the old fridge to the recycling centre.",
+  "exde": "Wir haben den alten Kühlschrank zum Wertstoffhof gebracht."
+ },
+ "wo319": {
+  "fr": "les déchets dangereux",
+  "pl": "odpady niebezpieczne",
+  "ru": "опа́сные отхо́ды",
+  "rulat": "opásnyje otchódy",
+  "ex": "Old batteries are hazardous waste.",
+  "exde": "Alte Batterien sind Sondermüll."
+ },
+ "wo320": {
+  "fr": "le compost",
+  "pl": "kompost",
+  "ru": "компо́ст",
+  "rulat": "kompóst",
+  "ex": "We use compost in the garden.",
+  "exde": "Wir benutzen Kompost im Garten."
+ },
+ "wo321": {
+  "fr": "jeter",
+  "pl": "wyrzucać",
+  "ru": "выбра́сывать",
+  "rulat": "wybrássywat",
+  "ex": "Don't throw away the old bread.",
+  "exde": "Wirf das alte Brot nicht weg."
+ },
+ "wo322": {
+  "fr": "éliminer",
+  "pl": "utylizować",
+  "ru": "утилизи́ровать",
+  "rulat": "utilisírowat",
+  "ex": "Where can I dispose of old batteries?",
+  "exde": "Wo kann ich alte Batterien entsorgen?"
+ },
+ "wo323": {
+  "fr": "le clou",
+  "pl": "gwóźdź",
+  "ru": "гвоздь",
+  "rulat": "gwosdj",
+  "ex": "He hammered a nail into the wall.",
+  "exde": "Er schlug einen Nagel in die Wand."
+ },
+ "wo324": {
+  "fr": "le tournevis",
+  "pl": "śrubokręt",
+  "ru": "отвёртка",
+  "rulat": "otwjórtka",
+  "ex": "I need a screwdriver to open this.",
+  "exde": "Ich brauche einen Schraubenzieher, um das zu öffnen."
+ },
+ "wo325": {
+  "fr": "la perceuse",
+  "pl": "wiertarka",
+  "ru": "дрель",
+  "rulat": "drelj",
+  "ex": "Can I borrow your drill?",
+  "exde": "Kann ich mir deine Bohrmaschine leihen?"
+ },
+ "wo326": {
+  "fr": "la cheville",
+  "pl": "kołek rozporowy",
+  "ru": "дю́бель",
+  "rulat": "djúbel",
+  "ex": "Put a wall plug in the hole first.",
+  "exde": "Steck zuerst einen Dübel in das Loch."
+ },
+ "wo327": {
+  "fr": "la scie",
+  "pl": "piła",
+  "ru": "пила́",
+  "rulat": "pilá",
+  "ex": "This saw is very sharp.",
+  "exde": "Diese Säge ist sehr scharf."
+ },
+ "wo328": {
+  "fr": "la visseuse sans fil",
+  "pl": "wkrętarka akumulatorowa",
+  "ru": "аккумуля́торный шуруповёрт",
+  "rulat": "akkumuljátornyj schurupowjórt",
+  "ex": "The cordless screwdriver needs charging.",
+  "exde": "Der Akkuschrauber muss aufgeladen werden."
+ },
+ "wo329": {
+  "fr": "le mètre pliant",
+  "pl": "miarka składana",
+  "ru": "складно́й метр",
+  "rulat": "skladnój metr",
+  "ex": "Measure the shelf with the folding rule.",
+  "exde": "Miss das Regal mit dem Zollstock."
+ },
+ "wo330": {
+  "fr": "le mètre ruban",
+  "pl": "taśma miernicza",
+  "ru": "руле́тка",
+  "rulat": "rulétka",
+  "ex": "Hand me the tape measure, please.",
+  "exde": "Gib mir bitte das Maßband."
+ },
+ "wo331": {
+  "fr": "le niveau à bulle",
+  "pl": "poziomica",
+  "ru": "строи́тельный у́ровень",
+  "rulat": "stroítelnyj úrowen",
+  "ex": "Use a spirit level to hang the picture straight.",
+  "exde": "Benutze eine Wasserwaage, um das Bild gerade aufzuhängen."
+ },
+ "wo332": {
+  "fr": "le ruban adhésif",
+  "pl": "taśma klejąca",
+  "ru": "кле́йкая ле́нта",
+  "rulat": "kléjkaja lénta",
+  "ex": "Close the box with adhesive tape.",
+  "exde": "Kleb den Karton mit Klebeband zu."
+ },
+ "wo333": {
+  "fr": "la colle",
+  "pl": "klej",
+  "ru": "клей",
+  "rulat": "klej",
+  "ex": "The glue dries in ten minutes.",
+  "exde": "Der Kleber trocknet in zehn Minuten."
+ },
+ "wo334": {
+  "fr": "visser à fond",
+  "pl": "przykręcić",
+  "ru": "прикрути́ть",
+  "rulat": "prikrutít",
+  "ex": "Screw the handle tight.",
+  "exde": "Schraub den Griff fest."
+ },
+ "wo335": {
+  "fr": "fixer",
+  "pl": "zamontować",
+  "ru": "закрепи́ть",
+  "rulat": "sakrepít",
+  "ex": "We need to put up a shelf in the kitchen.",
+  "exde": "Wir müssen in der Küche ein Regal anbringen."
+ },
+ "wo336": {
+  "fr": "colmater",
+  "pl": "uszczelnić",
+  "ru": "загермети́зировать",
+  "rulat": "sagermetisírowat",
+  "ex": "We have to seal the window.",
+  "exde": "Wir müssen das Fenster abdichten."
+ },
+ "wo337": {
+  "fr": "l'artisan",
+  "pl": "fachowiec",
+  "ru": "ма́стер",
+  "rulat": "máster",
+  "ex": "The tradesman is coming tomorrow.",
+  "exde": "Der Handwerker kommt morgen."
+ },
+ "wo338": {
+  "fr": "le plombier",
+  "pl": "hydraulik",
+  "ru": "санте́хник",
+  "rulat": "santéchnik",
+  "ex": "We called a plumber because the pipe is leaking.",
+  "exde": "Wir haben einen Klempner gerufen, weil das Rohr leckt."
+ },
+ "wo339": {
+  "fr": "l'électricien",
+  "pl": "elektryk",
+  "ru": "эле́ктрик",
+  "rulat": "eléktrik",
+  "ex": "The electrician fixed the light.",
+  "exde": "Der Elektriker hat das Licht repariert."
+ },
+ "wo340": {
+  "fr": "peindre",
+  "pl": "malować",
+  "ru": "кра́сить",
+  "rulat": "krássit",
+  "ex": "We want to paint the living room white.",
+  "exde": "Wir wollen das Wohnzimmer weiß streichen."
+ },
+ "wo341": {
+  "fr": "le pinceau",
+  "pl": "pędzel",
+  "ru": "кисть",
+  "rulat": "kist",
+  "ex": "I need a wider paintbrush for the wall.",
+  "exde": "Ich brauche einen breiteren Pinsel für die Wand."
+ },
+ "wo342": {
+  "fr": "le papier de verre",
+  "pl": "papier ścierny",
+  "ru": "нажда́чная бума́га",
+  "rulat": "naschdátschnaja bumága",
+  "ex": "Smooth the edges with sandpaper.",
+  "exde": "Glätte die Kanten mit Schleifpapier."
+ },
+ "wo343": {
+  "fr": "le bricoleur",
+  "pl": "majsterkowicz",
+  "ru": "дома́шний ма́стер",
+  "rulat": "domáschnij máster",
+  "ex": "My neighbour is a real DIY enthusiast.",
+  "exde": "Mein Nachbar ist ein echter Heimwerker."
+ },
+ "wo344": {
+  "fr": "le carton de déménagement",
+  "pl": "karton przeprowadzkowy",
+  "ru": "коро́бка для перее́зда",
+  "rulat": "korópka dlja perejésda",
+  "ex": "We still need ten moving boxes.",
+  "exde": "Wir brauchen noch zehn Umzugskartons."
+ },
+ "wo345": {
+  "fr": "la société de déménagement",
+  "pl": "firma przeprowadzkowa",
+  "ru": "фи́рма по перее́здам",
+  "rulat": "fírma po perejésdam",
+  "ex": "We hired a removal company.",
+  "exde": "Wir haben ein Umzugsunternehmen beauftragt."
+ },
+ "wo346": {
+  "fr": "le camion de déménagement",
+  "pl": "samochód do przeprowadzki",
+  "ru": "грузови́к для перее́зда",
+  "rulat": "grusowík dlja perejésda",
+  "ex": "The removal van arrives at eight.",
+  "exde": "Der Umzugswagen kommt um acht."
+ },
+ "wo347": {
+  "fr": "le déménageur",
+  "pl": "pomocnik przy przeprowadzce",
+  "ru": "гру́зчик",
+  "rulat": "grúschtschik",
+  "ex": "Every removal helper gets a pizza.",
+  "exde": "Jeder Umzugshelfer bekommt eine Pizza."
+ },
+ "wo348": {
+  "fr": "emballer",
+  "pl": "pakować",
+  "ru": "упако́вывать",
+  "rulat": "upakówywat",
+  "ex": "We have to pack the dishes carefully.",
+  "exde": "Wir müssen das Geschirr vorsichtig einpacken."
+ },
+ "wo349": {
+  "fr": "le papier bulle",
+  "pl": "folia bąbelkowa",
+  "ru": "пузы́рчатая плёнка",
+  "rulat": "pusýrtschataja pljónka",
+  "ex": "Wrap the glasses in bubble wrap.",
+  "exde": "Wickle die Gläser in Luftpolsterfolie."
+ },
+ "wo350": {
+  "fr": "porter",
+  "pl": "nieść",
+  "ru": "нести́",
+  "rulat": "nestí",
+  "ex": "Can you help me carry the sofa?",
+  "exde": "Kannst du mir helfen, das Sofa zu tragen?"
+ },
+ "wo351": {
+  "fr": "démonter",
+  "pl": "rozmontować",
+  "ru": "разбира́ть",
+  "rulat": "rasbirát",
+  "ex": "We have to dismantle the bed first.",
+  "exde": "Wir müssen zuerst das Bett abbauen."
+ },
+ "wo352": {
+  "fr": "la notice de montage",
+  "pl": "instrukcja montażu",
+  "ru": "инстру́кция по сбо́рке",
+  "rulat": "instrúkzija po sbórke",
+  "ex": "The assembly instructions are missing.",
+  "exde": "Die Aufbauanleitung fehlt."
+ },
+ "wo353": {
+  "fr": "déclarer son changement d'adresse",
+  "pl": "przemeldować się",
+  "ru": "прописа́ться по но́вому а́дресу",
+  "rulat": "propissátsja po nówomu ádressu",
+  "ex": "You have to register your new address within two weeks.",
+  "exde": "Du musst dich innerhalb von zwei Wochen ummelden."
+ },
+ "wo354": {
+  "fr": "le contrat de réexpédition du courrier",
+  "pl": "zlecenie przekierowania poczty",
+  "ru": "переадреса́ция по́чты",
+  "rulat": "pereadressázija pótschty",
+  "ex": "I have set up a mail redirection request.",
+  "exde": "Ich habe einen Nachsendeauftrag gestellt."
+ },
+ "wo355": {
+  "fr": "la remise des clés",
+  "pl": "przekazanie mieszkania",
+  "ru": "переда́ча кварти́ры",
+  "rulat": "peredátscha kwartíry",
+  "ex": "The handover of the flat is on Friday.",
+  "exde": "Die Wohnungsübergabe ist am Freitag."
+ },
+ "wo356": {
+  "fr": "le nouveau locataire",
+  "pl": "nowy najemca",
+  "ru": "но́вый жиле́ц",
+  "rulat": "nówyj schiléz",
+  "ex": "We found an incoming tenant quickly.",
+  "exde": "Wir haben schnell einen Nachmieter gefunden."
+ },
+ "wo357": {
+  "fr": "tapisser",
+  "pl": "tapetować",
+  "ru": "кле́ить обо́и",
+  "rulat": "kléit obói",
+  "ex": "We want to wallpaper the bedroom.",
+  "exde": "Wir wollen das Schlafzimmer tapezieren."
+ },
+ "wo358": {
+  "fr": "la zone d'interdiction de stationner",
+  "pl": "strefa zakazu parkowania",
+  "ru": "зо́на запре́та парко́вки",
+  "rulat": "sóna sapréta parkówki",
+  "ex": "We applied for a temporary no-parking zone.",
+  "exde": "Wir haben eine Halteverbotszone beantragt."
+ },
+ "wo359": {
+  "fr": "le loyer hors charges",
+  "pl": "czynsz bez opłat",
+  "ru": "аре́ндная пла́та без коммуна́льных услу́г",
+  "rulat": "aréndnaja pláta bes kommunálnych uslúg",
+  "ex": "The basic rent is 800 euros.",
+  "exde": "Die Kaltmiete beträgt 800 Euro."
+ },
+ "wo360": {
+  "fr": "le loyer charges comprises",
+  "pl": "czynsz z opłatami",
+  "ru": "аре́ндная пла́та с коммуна́льными услу́гами",
+  "rulat": "aréndnaja pláta s kommunálnymi uslúgami",
+  "ex": "The rent including bills is 1,000 euros.",
+  "exde": "Die Warmmiete beträgt 1.000 Euro."
+ },
+ "wo361": {
+  "fr": "le décompte des charges",
+  "pl": "rozliczenie kosztów eksploatacyjnych",
+  "ru": "расчёт коммуна́льных платеже́й",
+  "rulat": "rastschjót kommunálnych platjeschéj",
+  "ex": "The annual service charge statement arrived yesterday.",
+  "exde": "Die Nebenkostenabrechnung kam gestern an."
+ },
+ "wo362": {
+  "fr": "le paiement complémentaire",
+  "pl": "dopłata",
+  "ru": "допла́та",
+  "rulat": "dopláta",
+  "ex": "We have to make an additional payment of 200 euros.",
+  "exde": "Wir müssen eine Nachzahlung von 200 Euro leisten."
+ },
+ "wo363": {
+  "fr": "la hausse de loyer",
+  "pl": "podwyżka czynszu",
+  "ru": "повыше́ние аре́ндной пла́ты",
+  "rulat": "powyschénije aréndnoj pláty",
+  "ex": "The landlord announced a rent increase.",
+  "exde": "Der Vermieter hat eine Mieterhöhung angekündigt."
+ },
+ "wo364": {
+  "fr": "louer",
+  "pl": "wynajmować",
+  "ru": "сдава́ть в аре́нду",
+  "rulat": "sdawát w aréndu",
+  "ex": "They want to let their flat to students.",
+  "exde": "Sie wollen ihre Wohnung an Studenten vermieten."
+ },
+ "wo365": {
+  "fr": "la gérance immobilière",
+  "pl": "zarząd nieruchomości",
+  "ru": "управля́ющая компа́ния",
+  "rulat": "uprawljájuschtschaja kompánija",
+  "ex": "Please contact the property management about the broken lift.",
+  "exde": "Bitte wenden Sie sich wegen des kaputten Aufzugs an die Hausverwaltung."
+ },
+ "wo366": {
+  "fr": "le concierge",
+  "pl": "dozorca",
+  "ru": "дво́рник",
+  "rulat": "dwórnik",
+  "ex": "The caretaker repaired the heating.",
+  "exde": "Der Hausmeister hat die Heizung repariert."
+ },
+ "wo367": {
+  "fr": "la sous-location",
+  "pl": "podnajem",
+  "ru": "субаре́нда",
+  "rulat": "subarénda",
+  "ex": "Subletting is only allowed with the landlord's permission.",
+  "exde": "Untermiete ist nur mit Erlaubnis des Vermieters gestattet."
+ },
+ "wo368": {
+  "fr": "sous-louer",
+  "pl": "podnajmować",
+  "ru": "сдава́ть в субаре́нду",
+  "rulat": "sdawát w subaréndu",
+  "ex": "I want to sublet my room for the summer.",
+  "exde": "Ich möchte mein Zimmer für den Sommer untervermieten."
+ },
+ "wo369": {
+  "fr": "les arriérés de loyer",
+  "pl": "zaległości czynszowe",
+  "ru": "задо́лженность по аре́ндной пла́те",
+  "rulat": "sadólschennost po aréndnoj pláte",
+  "ex": "He has three months of rent arrears.",
+  "exde": "Er hat einen Mietrückstand von drei Monaten."
+ },
+ "wo370": {
+  "fr": "les frais de chauffage",
+  "pl": "koszty ogrzewania",
+  "ru": "расхо́ды на отопле́ние",
+  "rulat": "raschódy na otopljénije",
+  "ex": "Heating costs have risen sharply this winter.",
+  "exde": "Die Heizkosten sind diesen Winter stark gestiegen."
+ },
+ "wo371": {
+  "fr": "la taxe d'enlèvement des ordures",
+  "pl": "opłaty za wywóz śmieci",
+  "ru": "пла́та за вы́воз му́сора",
+  "rulat": "pláta sa wýwos mússora",
+  "ex": "The refuse collection charges are included in the service charges.",
+  "exde": "Die Müllgebühren sind in den Nebenkosten enthalten."
+ },
+ "wo372": {
+  "fr": "le règlement intérieur",
+  "pl": "regulamin domu",
+  "ru": "пра́вила прожива́ния",
+  "rulat": "práwila proschiwánija",
+  "ex": "The house rules forbid loud music after 10 pm.",
+  "exde": "Die Hausordnung verbietet laute Musik nach 22 Uhr."
+ },
+ "wo373": {
+  "fr": "le barème local des loyers",
+  "pl": "lokalny wskaźnik czynszów",
+  "ru": "спра́вочник сре́дних аре́ндных ста́вок",
+  "rulat": "spráwotschnik srédnich aréndnych stáwok",
+  "ex": "According to the local rent index, the rent is too high.",
+  "exde": "Laut Mietspiegel ist die Miete zu hoch."
+ },
+ "wo374": {
+  "fr": "la réduction de loyer",
+  "pl": "obniżka czynszu",
+  "ru": "сниже́ние аре́ндной пла́ты",
+  "rulat": "snischénije aréndnoj pláty",
+  "ex": "Because of the mould we are entitled to a rent reduction.",
+  "exde": "Wegen des Schimmels haben wir Anspruch auf eine Mietminderung."
+ },
+ "wo375": {
+  "fr": "les travaux de rafraîchissement",
+  "pl": "drobne naprawy kosmetyczne",
+  "ru": "космети́ческий ремо́нт",
+  "rulat": "kosmetítscheskij remónt",
+  "ex": "The tenant must carry out cosmetic repairs before moving out.",
+  "exde": "Der Mieter muss vor dem Auszug die Schönheitsreparaturen durchführen."
+ },
+ "wo376": {
+  "fr": "l'état des lieux",
+  "pl": "protokół zdawczo-odbiorczy",
+  "ru": "акт приёма-переда́чи",
+  "rulat": "akt prijóma-peredátschi",
+  "ex": "We signed the inventory report when we got the keys.",
+  "exde": "Wir haben das Übergabeprotokoll unterschrieben, als wir die Schlüssel bekamen."
+ },
+ "wo377": {
+  "fr": "le versement d'acompte",
+  "pl": "zaliczka",
+  "ru": "ава́нсовый платёж",
+  "rulat": "awánsowyj platjósch",
+  "ex": "The monthly advance payment for electricity is 60 euros.",
+  "exde": "Die monatliche Abschlagszahlung für Strom beträgt 60 Euro."
+ },
+ "wo378": {
+  "fr": "le virement permanent",
+  "pl": "zlecenie stałe",
+  "ru": "постоя́нное поруче́ние",
+  "rulat": "postojánnoje porutschénije",
+  "ex": "I pay my rent by standing order.",
+  "exde": "Ich zahle meine Miete per Dauerauftrag."
+ },
+ "wo379": {
+  "fr": "le défaut",
+  "pl": "usterka",
+  "ru": "дефе́кт",
+  "rulat": "defékt",
+  "ex": "We reported the defect to the landlord immediately.",
+  "exde": "Wir haben den Mangel sofort dem Vermieter gemeldet."
+ },
+ "wo380": {
+  "fr": "l'agent immobilier",
+  "pl": "pośrednik nieruchomości",
+  "ru": "риэ́лтор",
+  "rulat": "riéltor",
+  "ex": "We found the flat through an estate agent.",
+  "exde": "Wir haben die Wohnung über einen Makler gefunden."
+ },
+ "wo381": {
+  "fr": "le propriétaire",
+  "pl": "właściciel",
+  "ru": "владе́лец",
+  "rulat": "wladéjez",
+  "ex": "The owner lives on the top floor.",
+  "exde": "Der Eigentümer wohnt im obersten Stock."
+ },
+ "wo382": {
+  "fr": "la visite d'appartement",
+  "pl": "oglądanie mieszkania",
+  "ru": "осмо́тр кварти́ры",
+  "rulat": "osmótr kwartíry",
+  "ex": "The flat viewing is on Saturday at ten.",
+  "exde": "Die Wohnungsbesichtigung ist am Samstag um zehn."
+ },
+ "wo383": {
+  "fr": "la voisine",
+  "pl": "sąsiadka",
+  "ru": "сосе́дка",
+  "rulat": "sossédka",
+  "ex": "My neighbour waters my plants when I'm away.",
+  "exde": "Meine Nachbarin gießt meine Pflanzen, wenn ich weg bin."
+ },
+ "wo384": {
+  "fr": "le voisinage",
+  "pl": "sąsiedztwo",
+  "ru": "сосе́дство",
+  "rulat": "sossédstwo",
+  "ex": "We live in a quiet neighbourhood.",
+  "exde": "Wir wohnen in einer ruhigen Nachbarschaft."
+ },
+ "wo385": {
+  "fr": "les heures de silence",
+  "pl": "godziny ciszy",
+  "ru": "часы́ тишины́",
+  "rulat": "tschassý tischiný",
+  "ex": "Please respect the quiet hours.",
+  "exde": "Bitte halte die Ruhezeit ein."
+ },
+ "wo386": {
+  "fr": "le repos de midi",
+  "pl": "cisza poobiednia",
+  "ru": "ти́хий час",
+  "rulat": "tíchij tschas",
+  "ex": "Don't mow the lawn during the midday quiet period.",
+  "exde": "Mäh den Rasen nicht während der Mittagsruhe."
+ },
+ "wo387": {
+  "fr": "le repos nocturne",
+  "pl": "cisza nocna",
+  "ru": "ночна́я тишина́",
+  "rulat": "notschnája tischiná",
+  "ex": "The night-time quiet hours start at 10 p.m.",
+  "exde": "Die Nachtruhe beginnt um 22 Uhr."
+ },
+ "wo388": {
+  "fr": "le bruit",
+  "pl": "hałas",
+  "ru": "шум",
+  "rulat": "schum",
+  "ex": "The noise from the street is terrible.",
+  "exde": "Der Lärm von der Straße ist schrecklich."
+ },
+ "wo389": {
+  "fr": "bruyant",
+  "pl": "głośny",
+  "ru": "гро́мкий",
+  "rulat": "grómkij",
+  "ex": "The music is too loud.",
+  "exde": "Die Musik ist zu laut."
+ },
+ "wo390": {
+  "fr": "silencieux",
+  "pl": "cichy",
+  "ru": "ти́хий",
+  "rulat": "tíchij",
+  "ex": "Please be quiet after ten o'clock.",
+  "exde": "Bitte seid nach zehn Uhr leise."
+ },
+ "wo391": {
+  "fr": "la plainte",
+  "pl": "skarga",
+  "ru": "жа́лоба",
+  "rulat": "scháloba",
+  "ex": "She made a complaint to the landlord.",
+  "exde": "Sie hat beim Vermieter eine Beschwerde eingereicht."
+ },
+ "wo392": {
+  "fr": "déranger",
+  "pl": "przeszkadzać",
+  "ru": "меша́ть",
+  "rulat": "meschát",
+  "ex": "I hope I'm not disturbing you.",
+  "exde": "Ich hoffe, ich störe dich nicht."
+ },
+ "wo393": {
+  "fr": "respectueux",
+  "pl": "taktowny",
+  "ru": "внима́тельный",
+  "rulat": "wnimátelnyj",
+  "ex": "Our neighbours are very considerate.",
+  "exde": "Unsere Nachbarn sind sehr rücksichtsvoll."
+ },
+ "wo394": {
+  "fr": "les égards",
+  "pl": "wzgląd",
+  "ru": "внима́ние",
+  "rulat": "wnimánije",
+  "ex": "Please show consideration for others.",
+  "exde": "Bitte nimm Rücksicht auf andere."
+ },
+ "wo395": {
+  "fr": "la colocataire",
+  "pl": "współlokatorka",
+  "ru": "сосе́дка по кварти́ре",
+  "rulat": "sossédka po kwartíre",
+  "ex": "My flatmate is cooking dinner.",
+  "exde": "Meine Mitbewohnerin kocht das Abendessen."
+ },
+ "wo396": {
+  "fr": "la dispute",
+  "pl": "kłótnia",
+  "ru": "ссо́ра",
+  "rulat": "ssóra",
+  "ex": "They had an argument about the rubbish.",
+  "exde": "Sie hatten einen Streit wegen des Mülls."
+ },
+ "wo397": {
+  "fr": "s'entendre",
+  "pl": "dogadywać się",
+  "ru": "ла́дить",
+  "rulat": "ládit",
+  "ex": "We get along well with our neighbours.",
+  "exde": "Wir vertragen uns gut mit unseren Nachbarn."
+ },
+ "wo398": {
+  "fr": "saluer",
+  "pl": "pozdrawiać",
+  "ru": "здоро́ваться",
+  "rulat": "sdorówatsja",
+  "ex": "He always greets me in the stairwell.",
+  "exde": "Er grüßt mich immer im Treppenhaus."
+ },
+ "wo399": {
+  "fr": "le tour de ménage des parties communes",
+  "pl": "dyżur sprzątania części wspólnych",
+  "ru": "гра́фик убо́рки подъе́зда",
+  "rulat": "gráfik ubórki podjésda",
+  "ex": "This week it's my turn on the rota for cleaning shared areas.",
+  "exde": "Diese Woche habe ich Kehrwoche."
+ },
+ "wo400": {
+  "fr": "réceptionner un colis",
+  "pl": "odebrać paczkę",
+  "ru": "приня́ть посы́лку",
+  "rulat": "prinját possýlku",
+  "ex": "Could you take in a parcel for me?",
+  "exde": "Könnten Sie ein Paket für mich annehmen?"
+ },
+ "wo401": {
+  "fr": "la poussette",
+  "pl": "wózek dziecięcy",
+  "ru": "де́тская коля́ска",
+  "rulat": "détskaja koljáska",
+  "ex": "She left the pram in the hallway.",
+  "exde": "Sie hat den Kinderwagen im Hausflur stehen lassen."
+ },
+ "wo402": {
+  "fr": "le local à vélos",
+  "pl": "rowerownia",
+  "ru": "подва́л для велосипе́дов",
+  "rulat": "podwál dlja welosipédow",
+  "ex": "Our bikes are in the bike storage room.",
+  "exde": "Unsere Fahrräder stehen im Fahrradkeller."
+ },
+ "wo403": {
+  "fr": "les parties communes",
+  "pl": "część wspólna",
+  "ru": "о́бщее иму́щество",
+  "rulat": "óbschtscheje imúschtschestwo",
+  "ex": "The stairwell is common property.",
+  "exde": "Das Treppenhaus ist Gemeinschaftseigentum."
+ },
+ "wo404": {
+  "fr": "débarrasser la table",
+  "pl": "sprzątać ze stołu",
+  "ru": "убира́ть со стола́",
+  "rulat": "ubirát so stolá",
+  "ex": "Can you help me clear the table?",
+  "exde": "Kannst du mir helfen, den Tisch abzuräumen?"
+ },
+ "wo405": {
+  "fr": "remplir le lave-vaisselle",
+  "pl": "ładować zmywarkę",
+  "ru": "загружа́ть посудомо́ечную маши́ну",
+  "rulat": "sagrushát possudomójetschnuju maschínu",
+  "ex": "I'll load the dishwasher after dinner.",
+  "exde": "Ich räume nach dem Abendessen die Spülmaschine ein."
+ },
+ "wo406": {
+  "fr": "vider le lave-vaisselle",
+  "pl": "rozładowywać zmywarkę",
+  "ru": "разгружа́ть посудомо́ечную маши́ну",
+  "rulat": "rasgrushát possudomójetschnuju maschínu",
+  "ex": "Please unload the dishwasher when it's finished.",
+  "exde": "Bitte räum die Spülmaschine aus, wenn sie fertig ist."
+ },
+ "wo407": {
+  "fr": "polir",
+  "pl": "polerować",
+  "ru": "полирова́ть",
+  "rulat": "polirowát",
+  "ex": "He polished the silver spoons.",
+  "exde": "Er hat die Silberlöffel poliert."
+ },
+ "wo408": {
+  "fr": "détartrer",
+  "pl": "odkamieniać",
+  "ru": "удаля́ть на́кипь",
+  "rulat": "udalját nákip",
+  "ex": "We need to descale the kettle.",
+  "exde": "Wir müssen den Wasserkocher entkalken."
+ },
+ "wo409": {
+  "fr": "trier le linge",
+  "pl": "sortować pranie",
+  "ru": "сортирова́ть бельё",
+  "rulat": "sortirowát beljó",
+  "ex": "First, sort the laundry by colour.",
+  "exde": "Sortiere zuerst die Wäsche nach Farben."
+ },
+ "wo410": {
+  "fr": "arroser les plantes",
+  "pl": "podlewać kwiaty",
+  "ru": "полива́ть цветы́",
+  "rulat": "poliwát zwetý",
+  "ex": "Could you water the plants while I'm away?",
+  "exde": "Könntest du die Blumen gießen, während ich weg bin?"
+ },
+ "wo411": {
+  "fr": "dégivrer le réfrigérateur",
+  "pl": "rozmrażać lodówkę",
+  "ru": "размора́живать холоди́льник",
+  "rulat": "rasmoráshiwat cholodílnik",
+  "ex": "We defrost the fridge twice a year.",
+  "exde": "Wir tauen den Kühlschrank zweimal im Jahr ab."
+ },
+ "wo412": {
+  "fr": "maintenir l'ordre",
+  "pl": "utrzymywać porządek",
+  "ru": "подде́рживать поря́док",
+  "rulat": "poddérshiwat porjádok",
+  "ex": "It's hard to keep things tidy with three kids.",
+  "exde": "Mit drei Kindern ist es schwer, Ordnung zu halten."
+ },
+ "wo413": {
+  "fr": "tenir la maison",
+  "pl": "prowadzić dom",
+  "ru": "вести́ хозя́йство",
+  "rulat": "westí chasjáistwo",
+  "ex": "My grandmother ran the household alone.",
+  "exde": "Meine Großmutter hat den Haushalt allein geführt."
+ },
+ "wo414": {
+  "fr": "nettoyer à fond",
+  "pl": "czyścić",
+  "ru": "чи́стить",
+  "rulat": "tschístit",
+  "ex": "The carpets need to be cleaned thoroughly.",
+  "exde": "Die Teppiche müssen gründlich gereinigt werden."
+ },
+ "wo415": {
+  "fr": "enlever les taches",
+  "pl": "usuwać plamy",
+  "ru": "выводи́ть пя́тна",
+  "rulat": "wywodít pjátna",
+  "ex": "Vinegar helps to remove stains.",
+  "exde": "Essig hilft, Flecken zu entfernen."
+ },
+ "wo416": {
+  "fr": "lancer la machine à laver",
+  "pl": "włączyć pralkę",
+  "ru": "включи́ть стира́льную маши́ну",
+  "rulat": "wkljutschít stirálnuju maschínu",
+  "ex": "I'll put the washing machine on before work.",
+  "exde": "Ich stelle vor der Arbeit die Waschmaschine an."
+ },
+ "wo417": {
+  "fr": "lancer le lave-vaisselle",
+  "pl": "włączyć zmywarkę",
+  "ru": "включи́ть посудомо́ечную маши́ну",
+  "rulat": "wkljutschít possudomójetschnuju maschínu",
+  "ex": "Don't forget to put the dishwasher on.",
+  "exde": "Vergiss nicht, die Spülmaschine anzustellen."
+ },
+ "wo418": {
+  "fr": "sortir la poubelle",
+  "pl": "wystawić kosz na śmieci",
+  "ru": "вы́ставить му́сорный бак",
+  "rulat": "wýstawit músornyj bak",
+  "ex": "It's your turn to put the bin out tonight.",
+  "exde": "Heute Abend bist du dran, die Mülltonne rauszustellen."
+ },
+ "wo419": {
+  "fr": "changer les draps",
+  "pl": "zmienić pościel",
+  "ru": "смени́ть посте́льное бельё",
+  "rulat": "smenít postélnoje beljó",
+  "ex": "I change the bed sheets every Sunday.",
+  "exde": "Ich beziehe jeden Sonntag das Bett frisch."
+ },
+ "wo420": {
+  "fr": "balayer le sol",
+  "pl": "zamiatać podłogę",
+  "ru": "подмета́ть пол",
+  "rulat": "podmetát pol",
+  "ex": "Can you sweep the floor in the kitchen?",
+  "exde": "Kannst du den Boden in der Küche fegen?"
+ },
+ "wo421": {
+  "fr": "faire la vaisselle",
+  "pl": "zmywać naczynia",
+  "ru": "мыть посу́ду",
+  "rulat": "myt possúdu",
+  "ex": "I'll do the washing-up after dinner.",
+  "exde": "Ich spüle nach dem Abendessen das Geschirr."
+ },
+ "wo422": {
+  "fr": "essuyer la vaisselle",
+  "pl": "wycierać naczynia",
+  "ru": "вытира́ть посу́ду",
+  "rulat": "wytirát possúdu",
+  "ex": "Can you help me dry up?",
+  "exde": "Kannst du mir helfen, das Geschirr abzutrocknen?"
+ },
+ "wo423": {
+  "fr": "nettoyer la salle de bains",
+  "pl": "sprzątać łazienkę",
+  "ru": "убира́ть ва́нную",
+  "rulat": "ubirát wánnuju",
+  "ex": "I clean the bathroom every Saturday.",
+  "exde": "Ich putze jeden Samstag das Bad."
+ },
+ "wo424": {
+  "fr": "faire le ménage",
+  "pl": "sprzątać",
+  "ru": "убира́ться",
+  "rulat": "ubirátsja",
+  "ex": "We need to clean up before the guests arrive.",
+  "exde": "Wir müssen sauber machen, bevor die Gäste kommen."
+ },
+ "wo425": {
+  "fr": "faire les tâches ménagères",
+  "pl": "robić prace domowe",
+  "ru": "занима́ться дома́шними дела́ми",
+  "rulat": "sanimátsja domáschnimi delámi",
+  "ex": "We do the housework together on Sundays.",
+  "exde": "Sonntags erledigen wir die Hausarbeit gemeinsam."
+ },
+ "wo426": {
+  "fr": "faire les courses",
+  "pl": "robić zakupy",
+  "ru": "де́лать поку́пки",
+  "rulat": "délat pokúpki",
+  "ex": "My father does the shopping on Fridays.",
+  "exde": "Mein Vater erledigt freitags die Einkäufe."
+ },
+ "wo427": {
+  "fr": "repasser des chemises",
+  "pl": "prasować koszule",
+  "ru": "гла́дить руба́шки",
+  "rulat": "gládit rubáschki",
+  "ex": "He irons his shirts on Sunday evening.",
+  "exde": "Er bügelt seine Hemden am Sonntagabend."
+ },
+ "wo428": {
+  "fr": "allumer la lumière",
+  "pl": "włączyć światło",
+  "ru": "включи́ть свет",
+  "rulat": "wkljutschít swet",
+  "ex": "Could you switch the light on, please?",
+  "exde": "Könntest du bitte das Licht anmachen?"
+ },
+ "wo429": {
+  "fr": "éteindre la lumière",
+  "pl": "wyłączyć światło",
+  "ru": "вы́ключить свет",
+  "rulat": "wýkljutschit swet",
+  "ex": "Don't forget to switch the light off.",
+  "exde": "Vergiss nicht, das Licht auszumachen."
+ },
+ "wo430": {
+  "fr": "aérer la pièce",
+  "pl": "wietrzyć pokój",
+  "ru": "прове́тривать ко́мнату",
+  "rulat": "prowétriwat kómnatu",
+  "ex": "Open the window to air the room.",
+  "exde": "Mach das Fenster auf, um das Zimmer zu lüften."
+ },
+ "wo431": {
+  "fr": "préchauffer le four",
+  "pl": "nagrzać piekarnik",
+  "ru": "разогре́ть духо́вку",
+  "rulat": "rasogrét duchówku",
+  "ex": "Preheat the oven to 180 degrees.",
+  "exde": "Heize den Backofen auf 180 Grad vor."
+ },
+ "wo432": {
+  "fr": "préparer le repas",
+  "pl": "przygotować posiłek",
+  "ru": "пригото́вить еду́",
+  "rulat": "prigotówit jedú",
+  "ex": "My mother is preparing the meal in the kitchen.",
+  "exde": "Meine Mutter bereitet in der Küche das Essen zu."
+ },
+ "wo433": {
+  "fr": "déplacer les meubles",
+  "pl": "przesuwać meble",
+  "ru": "передвига́ть ме́бель",
+  "rulat": "peredwigát mébel",
+  "ex": "We moved the furniture to clean the floor.",
+  "exde": "Wir haben die Möbel gerückt, um den Boden zu putzen."
+ },
+ "wo434": {
+  "fr": "faire le tri dans sa garde-robe",
+  "pl": "zrobić porządek w szafie",
+  "ru": "разобра́ть платяно́й шкаф",
+  "rulat": "rasobrát platjanój schkaf",
+  "ex": "I want to declutter my wardrobe this weekend.",
+  "exde": "Ich will dieses Wochenende meinen Kleiderschrank ausmisten."
+ },
+ "wo435": {
+  "fr": "emménager",
+  "pl": "wprowadzić się",
+  "ru": "въе́хать",
+  "rulat": "wjéchat",
+  "ex": "We moved in last month.",
+  "exde": "Wir sind letzten Monat eingezogen."
+ },
+ "wo436": {
+  "fr": "les toilettes pour invités",
+  "pl": "toaleta dla gości",
+  "ru": "гостево́й туале́т",
+  "rulat": "gostewój tualét",
+  "ex": "The downstairs toilet is next to the front door.",
+  "exde": "Die Gästetoilette ist neben der Haustür."
+ },
+ "wo437": {
+  "fr": "l'escalier de la cave",
+  "pl": "schody do piwnicy",
+  "ru": "ле́стница в подва́л",
+  "rulat": "léstniza w podwál",
+  "ex": "Be careful on the cellar stairs.",
+  "exde": "Sei vorsichtig auf der Kellertreppe."
+ },
+ "wo438": {
+  "fr": "le porte-parapluie",
+  "pl": "stojak na parasole",
+  "ru": "подста́вка для зонто́в",
+  "rulat": "podstáwka dlja sontów",
+  "ex": "Put your umbrella in the umbrella stand.",
+  "exde": "Stell deinen Schirm in den Schirmständer."
+ },
+ "wo439": {
+  "fr": "laisser la lumière allumée",
+  "pl": "zostawić zapalone światło",
+  "ru": "оста́вить свет включённым",
+  "rulat": "ostáwit swet wkljutschjónnym",
+  "ex": "Please leave the light on in the hall.",
+  "exde": "Bitte lass das Licht im Flur an."
+ },
+ "wo440": {
+  "fr": "la garantie",
+  "pl": "gwarancja",
+  "ru": "гара́нтия",
+  "rulat": "garántija",
+  "ex": "The washing machine has a two-year guarantee.",
+  "exde": "Die Waschmaschine hat zwei Jahre Garantie."
+ },
+ "wo441": {
+  "fr": "le déménagement",
+  "pl": "przeprowadzka",
+  "ru": "перее́зд",
+  "rulat": "perejésd",
+  "ex": "The move took the whole weekend.",
+  "exde": "Der Umzug hat das ganze Wochenende gedauert."
+ },
+ "wo442": {
+  "fr": "déménager",
+  "pl": "wyprowadzić się",
+  "ru": "съе́хать",
+  "rulat": "sjéchat",
+  "ex": "We have to move out by the end of the month.",
+  "exde": "Wir müssen bis Ende des Monats ausziehen."
+ },
+ "wo443": {
+  "fr": "la pendaison de crémaillère",
+  "pl": "parapetówka",
+  "ru": "новосе́лье",
+  "rulat": "nowosélje",
+  "ex": "We're having a house-warming party on Saturday.",
+  "exde": "Wir machen am Samstag eine Einweihungsparty."
+ },
+ "wo444": {
+  "fr": "la surface habitable",
+  "pl": "powierzchnia mieszkalna",
+  "ru": "жила́я пло́щадь",
+  "rulat": "schilája plóschtschad",
+  "ex": "The flat has 70 square metres of living space.",
+  "exde": "Die Wohnung hat 70 Quadratmeter Wohnfläche."
+ },
+ "wo445": {
+  "fr": "l'assemblée des copropriétaires",
+  "pl": "zebranie właścicieli",
+  "ru": "собра́ние со́бственников",
+  "rulat": "sobránije sóbstwennikow",
+  "ex": "The owners' meeting is next Tuesday.",
+  "exde": "Die Eigentümerversammlung ist nächsten Dienstag."
+ },
+ "wo446": {
+  "fr": "la nuisance sonore",
+  "pl": "zakłócanie ciszy",
+  "ru": "наруше́ние тишины́",
+  "rulat": "naruschénije tischiný",
+  "ex": "The neighbours called the police because of a noise disturbance.",
+  "exde": "Die Nachbarn haben wegen Ruhestörung die Polizei gerufen."
+ },
+ "wo447": {
+  "fr": "déblayer la neige",
+  "pl": "odśnieżać",
+  "ru": "убира́ть снег",
+  "rulat": "ubirát snek",
+  "ex": "Who has to clear the snow this week?",
+  "exde": "Wer muss diese Woche den Schnee räumen?"
+ },
+ "wo448": {
+  "fr": "l'avis",
+  "pl": "ogłoszenie",
+  "ru": "объявле́ние",
+  "rulat": "objawlénije",
+  "ex": "There's a notice in the stairwell.",
+  "exde": "Im Treppenhaus hängt ein Aushang."
+ },
+ "wo449": {
+  "fr": "ranger la chambre",
+  "pl": "posprzątać pokój",
+  "ru": "убра́ть ко́мнату",
+  "rulat": "ubrát kómnatu",
+  "ex": "Please tidy the room before dinner.",
+  "exde": "Bitte räum das Zimmer vor dem Abendessen auf."
+ },
+ "wo450": {
+  "fr": "changer une ampoule",
+  "pl": "wymienić żarówkę",
+  "ru": "поменя́ть ла́мпочку",
+  "rulat": "pomenját lámpotschku",
+  "ex": "Can you help me change a light bulb?",
+  "exde": "Kannst du mir helfen, eine Glühbirne zu wechseln?"
+ },
+ "wo451": {
+  "fr": "fermer la porte à clé",
+  "pl": "zamknąć drzwi na klucz",
+  "ru": "запере́ть дверь",
+  "rulat": "saperét dwer",
+  "ex": "Don't forget to lock the door.",
+  "exde": "Vergiss nicht, die Tür abzuschließen."
+ },
+ "wo452": {
+  "fr": "la maison individuelle",
+  "pl": "dom jednorodzinny",
+  "ru": "ча́стный дом",
+  "rulat": "tschástnyj dom",
+  "ex": "They live in a detached house with a garden.",
+  "exde": "Sie wohnen in einem Einfamilienhaus mit Garten."
+ },
+ "wo453": {
+  "fr": "la maison mitoyenne",
+  "pl": "dom szeregowy",
+  "ru": "таунха́ус",
+  "rulat": "taunchá-us",
+  "ex": "We bought a terraced house in the suburbs.",
+  "exde": "Wir haben ein Reihenhaus am Stadtrand gekauft."
+ },
+ "wo454": {
+  "fr": "le tube fluorescent",
+  "pl": "świetlówka",
+  "ru": "ла́мпа дневно́го све́та",
+  "rulat": "lámpa dnewnówo swéta",
+  "ex": "The fluorescent tube in the garage is flickering.",
+  "exde": "Die Leuchtstoffröhre in der Garage flackert."
+ },
+ "wo455": {
+  "fr": "remplacer",
+  "pl": "wymienić",
+  "ru": "замени́ть",
+  "rulat": "samenít",
+  "ex": "I need to replace the batteries.",
+  "exde": "Ich muss die Batterien auswechseln."
+ },
+ "wo456": {
+  "fr": "desserré",
+  "pl": "poluzowany",
+  "ru": "расша́танный",
+  "rulat": "rasschátannyj",
+  "ex": "This screw is loose.",
+  "exde": "Diese Schraube ist locker."
+ },
+ "wo457": {
+  "fr": "le cutter",
+  "pl": "nożyk do tapet",
+  "ru": "канцеля́рский нож",
+  "rulat": "kanzeljárskij nosch",
+  "ex": "Be careful with the Stanley knife.",
+  "exde": "Sei vorsichtig mit dem Cutter."
+ },
+ "wo458": {
+  "fr": "vider la poubelle",
+  "pl": "opróżnić kosz na śmieci",
+  "ru": "вы́нести му́сор",
+  "rulat": "wýnesti músor",
+  "ex": "Can you empty the bin, please?",
+  "exde": "Kannst du bitte den Mülleimer ausleeren?"
+ },
+ "wo459": {
+  "fr": "ranger les courses",
+  "pl": "rozpakować zakupy",
+  "ru": "разложи́ть поку́пки",
+  "rulat": "rasloschít pokúpki",
+  "ex": "Help me put the shopping away.",
+  "exde": "Hilf mir, die Einkäufe wegzuräumen."
+ },
+ "wo460": {
+  "fr": "désencombrer",
+  "pl": "uprzątnąć",
+  "ru": "разобра́ть хлам",
+  "rulat": "rasobrát chlam",
+  "ex": "We want to clear out the attic.",
+  "exde": "Wir wollen den Dachboden entrümpeln."
+ },
+ "wo461": {
+  "fr": "tapoter les coussins",
+  "pl": "strzepać poduszki",
+  "ru": "взбить поду́шки",
+  "rulat": "wsbit podúschki",
+  "ex": "She plumped up the cushions on the sofa.",
+  "exde": "Sie schüttelte die Kissen auf dem Sofa auf."
+ },
+ "wo462": {
+  "fr": "partager les tâches ménagères",
+  "pl": "dzielić się obowiązkami domowymi",
+  "ru": "дели́ть дома́шние дела́",
+  "rulat": "delít domáschnije delá",
+  "ex": "We share the housework fairly.",
+  "exde": "Wir teilen die Hausarbeit gerecht auf."
+ },
+ "wo463": {
+  "fr": "passer l'aspirateur",
+  "pl": "odkurzać",
+  "ru": "пылесо́сить",
+  "rulat": "pylessóssit",
+  "ex": "I vacuum the living room every Saturday.",
+  "exde": "Ich sauge jeden Samstag im Wohnzimmer Staub."
+ },
+ "wo464": {
+  "fr": "passer la serpillière dans la cuisine",
+  "pl": "umyć podłogę w kuchni",
+  "ru": "помы́ть пол на ку́хне",
+  "rulat": "pomýt pol na kúchne",
+  "ex": "Don't come in, I've just mopped the kitchen floor.",
+  "exde": "Komm nicht rein, ich habe gerade die Küche gewischt."
+ },
+ "wo465": {
+  "fr": "la maison jumelée",
+  "pl": "bliźniak",
+  "ru": "дом на две семьи́",
+  "rulat": "dom na dwe semjí",
+  "ex": "They rent a semi-detached house near the park.",
+  "exde": "Sie mieten eine Doppelhaushälfte in der Nähe des Parks."
+ },
+ "wo466": {
+  "fr": "l'immeuble",
+  "pl": "budynek wielorodzinny",
+  "ru": "многокварти́рный дом",
+  "rulat": "mnogokwartírnyj dom",
+  "ex": "There are twelve flats in our apartment building.",
+  "exde": "In unserem Mehrfamilienhaus gibt es zwölf Wohnungen."
+ },
+ "wo467": {
+  "fr": "l'appartement en propriété",
+  "pl": "mieszkanie własnościowe",
+  "ru": "со́бственная кварти́ра",
+  "rulat": "sóbstwennaja kwartíra",
+  "ex": "They finally bought an owner-occupied flat.",
+  "exde": "Sie haben endlich eine Eigentumswohnung gekauft."
+ },
+ "wo468": {
+  "fr": "l'appartement en location",
+  "pl": "mieszkanie na wynajem",
+  "ru": "съёмная кварти́ра",
+  "rulat": "sjómnaja kwartíra",
+  "ex": "We still live in a rented flat.",
+  "exde": "Wir wohnen noch in einer Mietwohnung."
+ },
+ "wo469": {
+  "fr": "le studio",
+  "pl": "kawalerka",
+  "ru": "однокомна́тная кварти́ра",
+  "rulat": "odnokomnátnaja kwartíra",
+  "ex": "A studio flat is enough for me.",
+  "exde": "Eine Einzimmerwohnung reicht mir."
+ },
+ "wo470": {
+  "fr": "l'appartement sous les toits",
+  "pl": "mieszkanie na poddaszu",
+  "ru": "кварти́ра в манса́рде",
+  "rulat": "kwartíra w mansárde",
+  "ex": "Her attic flat gets very hot in summer.",
+  "exde": "Ihre Dachgeschosswohnung wird im Sommer sehr heiß."
+ },
+ "wo471": {
+  "fr": "l'appartement au rez-de-chaussée",
+  "pl": "mieszkanie na parterze",
+  "ru": "кварти́ра на пе́рвом этаже́",
+  "rulat": "kwartíra na pérwom etasché",
+  "ex": "A ground-floor flat is practical with a pram.",
+  "exde": "Eine Erdgeschosswohnung ist mit Kinderwagen praktisch."
+ },
+ "wo472": {
+  "fr": "la tour",
+  "pl": "wieżowiec",
+  "ru": "высо́тка",
+  "rulat": "wyssótka",
+  "ex": "They live on the tenth floor of a high-rise.",
+  "exde": "Sie wohnen im zehnten Stock eines Hochhauses."
+ },
+ "wo473": {
+  "fr": "le bâtiment ancien",
+  "pl": "stara kamienica",
+  "ru": "ста́рый дом",
+  "rulat": "stáryj dom",
+  "ex": "Our flat is in an old building with high ceilings.",
+  "exde": "Unsere Wohnung ist in einem Altbau mit hohen Decken."
+ },
+ "wo474": {
+  "fr": "le dressing",
+  "pl": "garderoba",
+  "ru": "гардеро́бная",
+  "rulat": "garderóbnaja",
+  "ex": "She keeps all her shoes in the dressing room.",
+  "exde": "Sie bewahrt alle ihre Schuhe im Ankleidezimmer auf."
+ },
+ "wo475": {
+  "fr": "l'aspirateur robot",
+  "pl": "robot sprzątający",
+  "ru": "ро́бот-пылесо́с",
+  "rulat": "róbot-pylessós",
+  "ex": "The robot vacuum cleans the floor while we are at work.",
+  "exde": "Der Staubsaugerroboter reinigt den Boden, während wir bei der Arbeit sind."
+ },
+ "wo476": {
+  "fr": "la machine à coudre",
+  "pl": "maszyna do szycia",
+  "ru": "шве́йная маши́на",
+  "rulat": "schwéjnaja maschína",
+  "ex": "My grandmother still uses her old sewing machine.",
+  "exde": "Meine Großmutter benutzt immer noch ihre alte Nähmaschine."
+ },
+ "wo477": {
+  "fr": "l'humidificateur",
+  "pl": "nawilżacz powietrza",
+  "ru": "увлажни́тель во́здуха",
+  "rulat": "uwlaschnítel wósducha",
+  "ex": "We turn on the humidifier in winter.",
+  "exde": "Im Winter schalten wir den Luftbefeuchter ein."
+ },
+ "wo478": {
+  "fr": "le déshumidificateur",
+  "pl": "osuszacz powietrza",
+  "ru": "осуши́тель во́здуха",
+  "rulat": "ossuschítel wósducha",
+  "ex": "The dehumidifier helps against mould in the basement.",
+  "exde": "Der Luftentfeuchter hilft gegen Schimmel im Keller."
+ },
+ "wo479": {
+  "fr": "le nettoyeur vapeur",
+  "pl": "myjka parowa",
+  "ru": "пароочисти́тель",
+  "rulat": "paroatschistítel",
+  "ex": "I clean the bathroom tiles with a steam cleaner.",
+  "exde": "Ich reinige die Badfliesen mit einem Dampfreiniger."
+ },
+ "wo480": {
+  "fr": "le nettoyeur de vitres",
+  "pl": "myjka do okien",
+  "ru": "пылесо́с для о́кон",
+  "rulat": "pylessós dlja ókon",
+  "ex": "With a window vacuum, there are no streaks on the glass.",
+  "exde": "Mit einem Fenstersauger gibt es keine Streifen auf dem Glas."
+ },
+ "wo481": {
+  "fr": "le réfrigérateur-congélateur",
+  "pl": "lodówko-zamrażarka",
+  "ru": "холоди́льник с морози́льной ка́мерой",
+  "rulat": "chaladílnik s marasílnoj kámeroj",
+  "ex": "Our new fridge freezer is very quiet.",
+  "exde": "Unsere neue Kühl-Gefrier-Kombination ist sehr leise."
+ },
+ "wo482": {
+  "fr": "l'aspirateur sans fil",
+  "pl": "odkurzacz bezprzewodowy",
+  "ru": "беспроводно́й пылесо́с",
+  "rulat": "besprawadnój pylessós",
+  "ex": "The cordless vacuum is light and easy to use.",
+  "exde": "Der Akkusauger ist leicht und einfach zu bedienen."
+ },
+ "wo483": {
+  "fr": "le détecteur de fumée",
+  "pl": "czujnik dymu",
+  "ru": "да́тчик ды́ма",
+  "rulat": "dáttschik dýma",
+  "ex": "Check the battery in the smoke detector every year.",
+  "exde": "Prüfe jedes Jahr die Batterie im Rauchmelder."
+ },
+ "wo484": {
+  "fr": "la déclaration de changement d'adresse",
+  "pl": "przemeldowanie",
+  "ru": "перерегистра́ция по но́вому а́дресу",
+  "rulat": "pereregistrázija pa nówomu ádressu",
+  "ex": "After the move, the change of address registration must be done within two weeks.",
+  "exde": "Nach dem Umzug muss die Ummeldung innerhalb von zwei Wochen erfolgen."
+ },
+ "wo485": {
+  "fr": "les déménageurs",
+  "pl": "tragarze",
+  "ru": "гру́зчики",
+  "rulat": "grúschtschiki",
+  "ex": "The removal men carried the sofa up the stairs.",
+  "exde": "Die Möbelpacker trugen das Sofa die Treppe hinauf."
+ },
+ "wo486": {
+  "fr": "le camion de déménagement",
+  "pl": "samochód do przeprowadzek",
+  "ru": "ме́бельный фурго́н",
+  "rulat": "mébelnyj furgón",
+  "ex": "The furniture van arrived at eight in the morning.",
+  "exde": "Der Möbelwagen kam um acht Uhr morgens an."
+ },
+ "wo487": {
+  "fr": "le diable",
+  "pl": "wózek ręczny",
+  "ru": "ручна́я теле́жка",
+  "rulat": "rutschnája teléschka",
+  "ex": "Use the hand truck for the heavy boxes.",
+  "exde": "Nimm die Sackkarre für die schweren Kisten."
+ },
+ "wo488": {
+  "fr": "le carton de déménagement",
+  "pl": "karton do przeprowadzki",
+  "ru": "коро́бка для перее́зда",
+  "rulat": "karóbka dlja perejésda",
+  "ex": "We need at least thirty packing crates.",
+  "exde": "Wir brauchen mindestens dreißig Umzugskisten."
+ },
+ "wo489": {
+  "fr": "la peinture murale",
+  "pl": "farba do ścian",
+  "ru": "кра́ска для стен",
+  "rulat": "kráska dlja sten",
+  "ex": "We chose a light grey wall paint for the bedroom.",
+  "exde": "Wir haben eine hellgraue Wandfarbe für das Schlafzimmer ausgesucht."
+ },
+ "wo490": {
+  "fr": "le voilage",
+  "pl": "firanka",
+  "ru": "тюль",
+  "rulat": "tjul",
+  "ex": "The net curtain lets in light but keeps out prying eyes.",
+  "exde": "Die Gardine lässt Licht herein, hält aber neugierige Blicke ab."
+ },
+ "wo491": {
+  "fr": "plier le linge",
+  "pl": "składać pranie",
+  "ru": "скла́дывать бельё",
+  "rulat": "skládywat beljó",
+  "ex": "Can you help me fold the laundry?",
+  "exde": "Kannst du mir helfen, die Wäsche zusammenzulegen?"
+ },
+ "wo492": {
+  "fr": "ranger",
+  "pl": "odkładać na miejsce",
+  "ru": "убира́ть",
+  "rulat": "ubirát",
+  "ex": "Please put away the dishes.",
+  "exde": "Bitte räum das Geschirr ein."
+ },
+ "wo493": {
+  "fr": "défaire le lit",
+  "pl": "zdejmować pościel",
+  "ru": "снима́ть посте́льное бельё",
+  "rulat": "snimát postéljnoje beljó",
+  "ex": "I strip the bed every Sunday.",
+  "exde": "Ich ziehe jeden Sonntag das Bett ab."
+ },
+ "wo494": {
+  "fr": "essorer",
+  "pl": "wyżymać",
+  "ru": "выжима́ть",
+  "rulat": "wyschimát",
+  "ex": "Wring out the cloth before you wipe the table.",
+  "exde": "Wring den Lappen aus, bevor du den Tisch abwischst."
+ },
+ "wo495": {
+  "fr": "rincer",
+  "pl": "spłukiwać",
+  "ru": "опола́скивать",
+  "rulat": "opoláskiwat",
+  "ex": "Rinse off the plates before you put them in the dishwasher.",
+  "exde": "Spül die Teller ab, bevor du sie in die Spülmaschine stellst."
+ },
+ "wo496": {
+  "fr": "chaque chose à sa place",
+  "pl": "wszystko na swoim miejscu",
+  "ru": "всё на своём ме́сте",
+  "rulat": "wsjo na swajóm mjéstje",
+  "ex": "My grandmother likes everything in its place.",
+  "exde": "Meine Großmutter mag alles an seinem Platz."
+ },
+ "wo497": {
+  "fr": "laisser du désordre",
+  "pl": "zostawić bałagan",
+  "ru": "оста́вить беспоря́док",
+  "rulat": "astáwit bjesparjádak",
+  "ex": "The kids left a mess in the kitchen.",
+  "exde": "Die Kinder haben in der Küche ein Chaos hinterlassen."
+ },
+ "wo498": {
+  "fr": "la clé à tube",
+  "pl": "klucz do rur",
+  "ru": "газо́вый ключ",
+  "rulat": "gasówyj kljutsch",
+  "ex": "I need a pipe wrench to loosen this pipe.",
+  "exde": "Ich brauche eine Rohrzange, um dieses Rohr zu lösen."
+ },
+ "wo499": {
+  "fr": "battre",
+  "pl": "trzepać",
+  "ru": "выбива́ть",
+  "rulat": "wybiwát",
+  "ex": "I beat out the rug on the balcony every spring.",
+  "exde": "Ich klopfe den Teppich jeden Frühling auf dem Balkon aus."
+ },
+ "wo500": {
+  "fr": "essuyer",
+  "pl": "wycierać",
+  "ru": "вытира́ть",
+  "rulat": "wytirát",
+  "ex": "Please wipe up the spilled milk.",
+  "exde": "Bitte wisch die verschüttete Milch auf."
+ }
+}

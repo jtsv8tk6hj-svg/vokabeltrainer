@@ -1,0 +1,501 @@
+id;de;en;thema
+wo001;das Badezimmer;bathroom;Haus und Wohnung
+wo002;der Keller;cellar;Haus und Wohnung
+wo003;der Dachboden;attic;Haus und Wohnung
+wo004;der Stock;floor;Haus und Wohnung
+wo005;das Erdgeschoss;ground floor;Haus und Wohnung
+wo006;die Wand;wall;Haus und Wohnung
+wo007;die Decke;ceiling;Haus und Wohnung
+wo008;der Mieter;tenant;Haus und Wohnung
+wo009;die Nebenkosten;additional costs;Haus und Wohnung
+wo010;umziehen;to move house;Haus und Wohnung
+wo011;möbliert;furnished;Haus und Wohnung
+wo012;geräumig;spacious;Haus und Wohnung
+wo013;die Wohngemeinschaft;flat share;Haus und Wohnung
+wo014;der Raum;room, space;Räume
+wo015;das Esszimmer;dining room;Räume
+wo016;das Kinderzimmer;children's room;Räume
+wo017;das Arbeitszimmer;study;Räume
+wo018;das Gästezimmer;guest room;Räume
+wo019;die Terrasse;terrace, patio;Räume
+wo020;die Abstellkammer;box room, storeroom;Räume
+wo021;die Speisekammer;pantry, larder;Räume
+wo022;die Waschküche;utility room;Räume
+wo023;die Garage;garage;Räume
+wo024;der Eingang;entrance;Räume
+wo025;das Obergeschoss;upper floor;Räume
+wo026;der Wintergarten;conservatory;Räume
+wo027;der Grundriss;floor plan;Räume
+wo028;der Quadratmeter;square metre;Räume
+wo029;die Einbauküche;fitted kitchen;Räume
+wo030;hell;bright, light;Räume
+wo031;dunkel;dark;Räume
+wo032;gemütlich;cosy;Räume
+wo033;eng;cramped;Räume
+wo034;einrichten;to furnish;Räume
+wo035;renovieren;to renovate;Räume
+wo036;lüften;to air, to ventilate;Räume
+wo037;das Sofa;sofa;Wohnzimmer und Möbel
+wo038;der Sessel;armchair;Wohnzimmer und Möbel
+wo039;der Couchtisch;coffee table;Wohnzimmer und Möbel
+wo040;das Bücherregal;bookcase;Wohnzimmer und Möbel
+wo041;der Teppich;rug;Wohnzimmer und Möbel
+wo042;der Vorhang;curtain;Wohnzimmer und Möbel
+wo043;die Stehlampe;standard lamp;Wohnzimmer und Möbel
+wo044;der Fernseher;television;Wohnzimmer und Möbel
+wo045;das Kissen;cushion;Wohnzimmer und Möbel
+wo046;die Kommode;chest of drawers;Wohnzimmer und Möbel
+wo047;der Kamin;fireplace;Wohnzimmer und Möbel
+wo048;die Fensterbank;windowsill;Wohnzimmer und Möbel
+wo049;die Zimmerpflanze;houseplant;Wohnzimmer und Möbel
+wo050;das Bild;picture;Wohnzimmer und Möbel
+wo051;der Bilderrahmen;picture frame;Wohnzimmer und Möbel
+wo052;der Spiegel;mirror;Wohnzimmer und Möbel
+wo053;der Lichtschalter;light switch;Wohnzimmer und Möbel
+wo054;das Parkett;parquet floor;Wohnzimmer und Möbel
+wo055;die Möbel;furniture;Wohnzimmer und Möbel
+wo056;das Möbelstück;piece of furniture;Wohnzimmer und Möbel
+wo057;aufbauen;to assemble;Wohnzimmer und Möbel
+wo058;umstellen;to rearrange;Wohnzimmer und Möbel
+wo059;aufhängen;to hang up;Wohnzimmer und Möbel
+wo060;bequem;comfortable;Wohnzimmer und Möbel
+wo061;die Einrichtung;furnishings;Wohnzimmer und Möbel
+wo062;das Doppelbett;double bed;Schlafzimmer und Bettwäsche
+wo063;das Einzelbett;single bed;Schlafzimmer und Bettwäsche
+wo064;das Etagenbett;bunk bed;Schlafzimmer und Bettwäsche
+wo065;das Schlafsofa;sofa bed;Schlafzimmer und Bettwäsche
+wo066;die Matratze;mattress;Schlafzimmer und Bettwäsche
+wo067;der Lattenrost;slatted bed base;Schlafzimmer und Bettwäsche
+wo068;das Bettgestell;bed frame;Schlafzimmer und Bettwäsche
+wo069;das Bettlaken;sheet;Schlafzimmer und Bettwäsche
+wo070;das Spannbetttuch;fitted sheet;Schlafzimmer und Bettwäsche
+wo071;die Bettdecke;duvet;Schlafzimmer und Bettwäsche
+wo072;die Daunendecke;down duvet;Schlafzimmer und Bettwäsche
+wo073;der Bettbezug;duvet cover;Schlafzimmer und Bettwäsche
+wo074;der Kissenbezug;pillowcase;Schlafzimmer und Bettwäsche
+wo075;die Tagesdecke;bedspread;Schlafzimmer und Bettwäsche
+wo076;die Wolldecke;woollen blanket;Schlafzimmer und Bettwäsche
+wo077;der Kleiderschrank;wardrobe;Schlafzimmer und Bettwäsche
+wo078;der Nachttisch;bedside table;Schlafzimmer und Bettwäsche
+wo079;die Nachttischlampe;bedside lamp;Schlafzimmer und Bettwäsche
+wo080;der Frisiertisch;dressing table;Schlafzimmer und Bettwäsche
+wo081;der Kleiderbügel;coat hanger;Schlafzimmer und Bettwäsche
+wo082;die Jalousie;blind;Schlafzimmer und Bettwäsche
+wo083;der Wecker;alarm clock;Schlafzimmer und Bettwäsche
+wo084;der Schlafanzug;pyjamas;Schlafzimmer und Bettwäsche
+wo085;das Bett machen;to make the bed;Schlafzimmer und Bettwäsche
+wo086;das Bett beziehen;to change the sheets;Schlafzimmer und Bettwäsche
+wo087;die Badewanne;bath;Bad und Toilette
+wo088;das Waschbecken;washbasin;Bad und Toilette
+wo089;der Wasserhahn;tap;Bad und Toilette
+wo090;das Toilettenpapier;toilet paper;Bad und Toilette
+wo091;das Shampoo;shampoo;Bad und Toilette
+wo092;duschen;to have a shower;Bad und Toilette
+wo093;baden;to have a bath;Bad und Toilette
+wo094;sich die Zähne putzen;to brush one's teeth;Bad und Toilette
+wo095;die Klobürste;toilet brush;Bad und Toilette
+wo096;die Spülung;flush;Bad und Toilette
+wo097;der Föhn;hairdryer;Bad und Toilette
+wo098;der Bademantel;bathrobe;Bad und Toilette
+wo099;die Badematte;bath mat;Bad und Toilette
+wo100;der Duschvorhang;shower curtain;Bad und Toilette
+wo101;die Fliese;tile;Bad und Toilette
+wo102;der Abfluss;plughole;Bad und Toilette
+wo103;verstopft;blocked;Bad und Toilette
+wo104;das Duschgel;shower gel;Bad und Toilette
+wo105;der Kamm;comb;Bad und Toilette
+wo106;der Rasierer;razor;Bad und Toilette
+wo107;sich rasieren;to shave;Bad und Toilette
+wo108;der Spiegelschrank;bathroom cabinet;Bad und Toilette
+wo109;das Gäste-WC;guest toilet;Bad und Toilette
+wo110;der Handtuchhalter;towel rail;Bad und Toilette
+wo111;die Klobrille;toilet seat;Bad und Toilette
+wo112;die Garderobe;coat rack;Flur, Keller und Dachboden
+wo113;der Schuhschrank;shoe cabinet;Flur, Keller und Dachboden
+wo114;das Treppenhaus;stairwell;Flur, Keller und Dachboden
+wo115;das Geländer;banister;Flur, Keller und Dachboden
+wo116;die Stufe;step;Flur, Keller und Dachboden
+wo117;die Haustür;front door;Flur, Keller und Dachboden
+wo118;die Fußmatte;doormat;Flur, Keller und Dachboden
+wo119;der Briefkasten;letterbox;Flur, Keller und Dachboden
+wo120;das Kellerabteil;cellar storage compartment;Flur, Keller und Dachboden
+wo121;die Kiste;crate;Flur, Keller und Dachboden
+wo122;der Karton;cardboard box;Flur, Keller und Dachboden
+wo123;das Gerümpel;junk;Flur, Keller und Dachboden
+wo124;aufräumen;to tidy up;Flur, Keller und Dachboden
+wo125;ausmisten;to declutter;Flur, Keller und Dachboden
+wo126;verstauen;to stow away;Flur, Keller und Dachboden
+wo127;der Heizkessel;boiler;Flur, Keller und Dachboden
+wo128;feucht;damp;Flur, Keller und Dachboden
+wo129;staubig;dusty;Flur, Keller und Dachboden
+wo130;die Dachschräge;sloping ceiling;Flur, Keller und Dachboden
+wo131;das Dachfenster;skylight;Flur, Keller und Dachboden
+wo132;die Leiter;ladder;Flur, Keller und Dachboden
+wo133;die Bodentreppe;loft ladder;Flur, Keller und Dachboden
+wo134;der Werkzeugkasten;toolbox;Flur, Keller und Dachboden
+wo135;der Rasen;lawn;Balkon, Garten und Terrasse
+wo136;das Beet;flower bed;Balkon, Garten und Terrasse
+wo137;der Blumenkasten;window box;Balkon, Garten und Terrasse
+wo138;der Blumentopf;flowerpot;Balkon, Garten und Terrasse
+wo139;die Gießkanne;watering can;Balkon, Garten und Terrasse
+wo140;gießen;to water;Balkon, Garten und Terrasse
+wo141;den Rasen mähen;to mow the lawn;Balkon, Garten und Terrasse
+wo142;der Rasenmäher;lawnmower;Balkon, Garten und Terrasse
+wo143;der Gartenschlauch;garden hose;Balkon, Garten und Terrasse
+wo144;die Schaufel;shovel;Balkon, Garten und Terrasse
+wo145;der Spaten;spade;Balkon, Garten und Terrasse
+wo146;der Rechen;rake;Balkon, Garten und Terrasse
+wo147;die Gartenschere;secateurs;Balkon, Garten und Terrasse
+wo148;pflanzen;to plant;Balkon, Garten und Terrasse
+wo149;säen;to sow;Balkon, Garten und Terrasse
+wo150;jäten;to weed;Balkon, Garten und Terrasse
+wo151;das Unkraut;weeds;Balkon, Garten und Terrasse
+wo152;die Hecke;hedge;Balkon, Garten und Terrasse
+wo153;der Zaun;fence;Balkon, Garten und Terrasse
+wo154;der Busch;bush;Balkon, Garten und Terrasse
+wo155;der Obstbaum;fruit tree;Balkon, Garten und Terrasse
+wo156;der Komposthaufen;compost heap;Balkon, Garten und Terrasse
+wo157;die Erde;soil;Balkon, Garten und Terrasse
+wo158;der Dünger;fertiliser;Balkon, Garten und Terrasse
+wo159;blühen;to bloom;Balkon, Garten und Terrasse
+wo160;der Schlüsselbund;bunch of keys;Türen, Fenster und Schlösser
+wo161;die Hintertür;back door;Türen, Fenster und Schlösser
+wo162;die Türklinke;door handle;Türen, Fenster und Schlösser
+wo163;der Türknauf;doorknob;Türen, Fenster und Schlösser
+wo164;klingeln;to ring the bell;Türen, Fenster und Schlösser
+wo165;klopfen;to knock;Türen, Fenster und Schlösser
+wo166;der Fensterrahmen;window frame;Türen, Fenster und Schlösser
+wo167;die Fensterscheibe;windowpane;Türen, Fenster und Schlösser
+wo168;der Rollladen;roller shutter;Türen, Fenster und Schlösser
+wo169;der Fensterladen;shutter;Türen, Fenster und Schlösser
+wo170;aufschließen;to unlock;Türen, Fenster und Schlösser
+wo171;schließen;to close;Türen, Fenster und Schlösser
+wo172;zumachen;to shut;Türen, Fenster und Schlösser
+wo173;aufmachen;to open up;Türen, Fenster und Schlösser
+wo174;kippen;to tilt open;Türen, Fenster und Schlösser
+wo175;knallen;to slam;Türen, Fenster und Schlösser
+wo176;abgeschlossen;locked;Türen, Fenster und Schlösser
+wo177;angelehnt;ajar;Türen, Fenster und Schlösser
+wo178;der Riegel;bolt;Türen, Fenster und Schlösser
+wo179;die Türkette;door chain;Türen, Fenster und Schlösser
+wo180;der Spion;peephole;Türen, Fenster und Schlösser
+wo181;die Gegensprechanlage;intercom;Türen, Fenster und Schlösser
+wo182;der Schlüsseldienst;locksmith;Türen, Fenster und Schlösser
+wo183;sich aussperren;to lock oneself out;Türen, Fenster und Schlösser
+wo184;der Ersatzschlüssel;spare key;Türen, Fenster und Schlösser
+wo185;der Heizkörper;radiator;Heizung, Strom und Wasser
+wo186;die Zentralheizung;central heating;Heizung, Strom und Wasser
+wo187;die Fußbodenheizung;underfloor heating;Heizung, Strom und Wasser
+wo188;das Thermostat;thermostat;Heizung, Strom und Wasser
+wo189;heizen;to heat;Heizung, Strom und Wasser
+wo190;die Heizung aufdrehen;to turn the heating up;Heizung, Strom und Wasser
+wo191;die Heizung herunterdrehen;to turn the heating down;Heizung, Strom und Wasser
+wo192;die Heizung entlüften;to bleed the radiator;Heizung, Strom und Wasser
+wo193;der Strom;electricity;Heizung, Strom und Wasser
+wo194;die Verlängerungsschnur;extension lead;Heizung, Strom und Wasser
+wo195;die Mehrfachsteckdose;multi-plug adaptor;Heizung, Strom und Wasser
+wo196;der Stromausfall;power cut;Heizung, Strom und Wasser
+wo197;der Stromzähler;electricity meter;Heizung, Strom und Wasser
+wo198;den Zähler ablesen;to read the meter;Heizung, Strom und Wasser
+wo199;die Stromrechnung;electricity bill;Heizung, Strom und Wasser
+wo200;der Stromanbieter;electricity supplier;Heizung, Strom und Wasser
+wo201;einschalten;to switch on;Heizung, Strom und Wasser
+wo202;ausschalten;to switch off;Heizung, Strom und Wasser
+wo203;Strom sparen;to save electricity;Heizung, Strom und Wasser
+wo204;das Warmwasser;hot water;Heizung, Strom und Wasser
+wo205;der Boiler;water heater;Heizung, Strom und Wasser
+wo206;der Wasserdruck;water pressure;Heizung, Strom und Wasser
+wo207;der Wasserschaden;water damage;Heizung, Strom und Wasser
+wo208;das Rohr;pipe;Heizung, Strom und Wasser
+wo209;der Rohrbruch;burst pipe;Heizung, Strom und Wasser
+wo210;das Licht einschalten;to switch on the light;Licht und Lampen
+wo211;das Licht ausschalten;to switch off the light;Licht und Lampen
+wo212;die Deckenlampe;ceiling light;Licht und Lampen
+wo213;die Leuchte;light fitting;Licht und Lampen
+wo214;die LED-Lampe;LED bulb;Licht und Lampen
+wo215;die Energiesparlampe;energy-saving bulb;Licht und Lampen
+wo216;der Lampenschirm;lampshade;Licht und Lampen
+wo217;die Fassung;lamp holder;Licht und Lampen
+wo218;der Dimmer;dimmer switch;Licht und Lampen
+wo219;dimmen;to dim;Licht und Lampen
+wo220;die Kerze;candle;Licht und Lampen
+wo221;die Taschenlampe;torch;Licht und Lampen
+wo222;der Kronleuchter;chandelier;Licht und Lampen
+wo223;die Lichterkette;fairy lights;Licht und Lampen
+wo224;der Bewegungsmelder;motion sensor;Licht und Lampen
+wo225;die Glühbirne wechseln;to change the light bulb;Licht und Lampen
+wo226;das Tageslicht;daylight;Licht und Lampen
+wo227;die Wandleuchte;wall light;Licht und Lampen
+wo228;flackern;to flicker;Licht und Lampen
+wo229;die Beleuchtung;lighting;Licht und Lampen
+wo230;grell;glaring;Licht und Lampen
+wo231;das Nachtlicht;night light;Licht und Lampen
+wo232;die Außenbeleuchtung;outdoor lighting;Licht und Lampen
+wo233;der Wäschetrockner;tumble dryer;Haushaltsgeräte
+wo234;der Staubsauger;vacuum cleaner;Haushaltsgeräte
+wo235;das Bügeleisen;iron;Haushaltsgeräte
+wo236;die Dunstabzugshaube;extractor hood;Haushaltsgeräte
+wo237;das Kochfeld;hob;Haushaltsgeräte
+wo238;der Saugroboter;robot vacuum cleaner;Haushaltsgeräte
+wo239;der Ventilator;fan;Haushaltsgeräte
+wo240;der Heizlüfter;fan heater;Haushaltsgeräte
+wo241;anschließen;to connect;Haushaltsgeräte
+wo242;staubsaugen;to hoover;Haushaltsgeräte
+wo243;die Gebrauchsanweisung;instructions for use;Haushaltsgeräte
+wo244;energiesparend;energy-efficient;Haushaltsgeräte
+wo245;kaputt;broken;Haushaltsgeräte
+wo246;reparieren;to repair;Haushaltsgeräte
+wo247;das Haushaltsgerät;household appliance;Haushaltsgeräte
+wo248;putzen;to clean;Putzen und Reinigen
+wo249;wischen;to wipe;Putzen und Reinigen
+wo250;den Boden wischen;to mop the floor;Putzen und Reinigen
+wo251;fegen;to sweep;Putzen und Reinigen
+wo252;Staub wischen;to dust;Putzen und Reinigen
+wo253;schrubben;to scrub;Putzen und Reinigen
+wo254;spülen;to wash up;Putzen und Reinigen
+wo255;der Besen;broom;Putzen und Reinigen
+wo256;das Kehrblech;dustpan;Putzen und Reinigen
+wo257;der Wischmopp;mop;Putzen und Reinigen
+wo258;der Eimer;bucket;Putzen und Reinigen
+wo259;die Bürste;brush;Putzen und Reinigen
+wo260;das Putzmittel;cleaning product;Putzen und Reinigen
+wo261;der Allzweckreiniger;all-purpose cleaner;Putzen und Reinigen
+wo262;der Glasreiniger;glass cleaner;Putzen und Reinigen
+wo263;der Entkalker;descaler;Putzen und Reinigen
+wo264;die Gummihandschuhe;rubber gloves;Putzen und Reinigen
+wo265;der Schmutz;dirt;Putzen und Reinigen
+wo266;der Fleck;stain;Putzen und Reinigen
+wo267;der Kalk;limescale;Putzen und Reinigen
+wo268;der Frühjahrsputz;spring clean;Putzen und Reinigen
+wo269;die Putzfrau;cleaner;Putzen und Reinigen
+wo270;der Putzplan;cleaning rota;Putzen und Reinigen
+wo271;die Fenster putzen;to clean the windows;Putzen und Reinigen
+wo272;den Müll rausbringen;to take out the rubbish;Putzen und Reinigen
+wo273;die Wäsche;laundry;Wäsche und Bügeln
+wo274;Wäsche waschen;to do the washing;Wäsche und Bügeln
+wo275;das Waschmittel;washing powder;Wäsche und Bügeln
+wo276;der Weichspüler;fabric softener;Wäsche und Bügeln
+wo277;der Wäschekorb;laundry basket;Wäsche und Bügeln
+wo278;der Wäscheständer;clothes airer;Wäsche und Bügeln
+wo279;die Wäscheleine;washing line;Wäsche und Bügeln
+wo280;die Wäscheklammer;clothes peg;Wäsche und Bügeln
+wo281;Wäsche aufhängen;to hang out the washing;Wäsche und Bügeln
+wo282;Wäsche abnehmen;to take in the washing;Wäsche und Bügeln
+wo283;das Dampfbügeleisen;steam iron;Wäsche und Bügeln
+wo284;das Bügelbrett;ironing board;Wäsche und Bügeln
+wo285;zusammenlegen;to fold;Wäsche und Bügeln
+wo286;sortieren;to sort;Wäsche und Bügeln
+wo287;die Buntwäsche;coloureds;Wäsche und Bügeln
+wo288;die Weißwäsche;whites;Wäsche und Bügeln
+wo289;die Feinwäsche;delicates;Wäsche und Bügeln
+wo290;die Handwäsche;hand wash;Wäsche und Bügeln
+wo291;der Fleckentferner;stain remover;Wäsche und Bügeln
+wo292;einlaufen;to shrink;Wäsche und Bügeln
+wo293;abfärben;to run (colour);Wäsche und Bügeln
+wo294;knittern;to crease;Wäsche und Bügeln
+wo295;knitterfrei;non-iron;Wäsche und Bügeln
+wo296;das Waschprogramm;wash cycle;Wäsche und Bügeln
+wo297;der Schleudergang;spin cycle;Wäsche und Bügeln
+wo298;die Mülltonne;wheelie bin;Müll und Recycling
+wo299;der Müllbeutel;bin bag;Müll und Recycling
+wo300;die Müllabfuhr;refuse collection;Müll und Recycling
+wo301;der Müllwagen;bin lorry;Müll und Recycling
+wo302;die Mülltrennung;waste separation;Müll und Recycling
+wo303;trennen;to separate;Müll und Recycling
+wo304;recyceln;to recycle;Müll und Recycling
+wo305;das Recycling;recycling;Müll und Recycling
+wo306;der Restmüll;general waste;Müll und Recycling
+wo307;der Biomüll;food waste;Müll und Recycling
+wo308;die Biotonne;food waste bin;Müll und Recycling
+wo309;das Altpapier;waste paper;Müll und Recycling
+wo310;die Papiertonne;paper recycling bin;Müll und Recycling
+wo311;der Gelbe Sack;yellow recycling bag;Müll und Recycling
+wo312;die Verpackung;packaging;Müll und Recycling
+wo313;das Altglas;waste glass;Müll und Recycling
+wo314;der Glascontainer;bottle bank;Müll und Recycling
+wo315;die Pfandflasche;returnable bottle;Müll und Recycling
+wo316;der Pfandautomat;bottle return machine;Müll und Recycling
+wo317;der Sperrmüll;bulky waste;Müll und Recycling
+wo318;der Wertstoffhof;recycling centre;Müll und Recycling
+wo319;der Sondermüll;hazardous waste;Müll und Recycling
+wo320;der Kompost;compost;Müll und Recycling
+wo321;wegwerfen;to throw away;Müll und Recycling
+wo322;entsorgen;to dispose of;Müll und Recycling
+wo323;der Nagel;nail;Werkzeug und Reparaturen zu Hause
+wo324;der Schraubenzieher;screwdriver;Werkzeug und Reparaturen zu Hause
+wo325;die Bohrmaschine;drill;Werkzeug und Reparaturen zu Hause
+wo326;der Dübel;wall plug;Werkzeug und Reparaturen zu Hause
+wo327;die Säge;saw;Werkzeug und Reparaturen zu Hause
+wo328;der Akkuschrauber;cordless screwdriver;Werkzeug und Reparaturen zu Hause
+wo329;der Zollstock;folding rule;Werkzeug und Reparaturen zu Hause
+wo330;das Maßband;tape measure;Werkzeug und Reparaturen zu Hause
+wo331;die Wasserwaage;spirit level;Werkzeug und Reparaturen zu Hause
+wo332;das Klebeband;adhesive tape;Werkzeug und Reparaturen zu Hause
+wo333;der Kleber;glue;Werkzeug und Reparaturen zu Hause
+wo334;festschrauben;to screw tight;Werkzeug und Reparaturen zu Hause
+wo335;anbringen;to put up;Werkzeug und Reparaturen zu Hause
+wo336;abdichten;to seal;Werkzeug und Reparaturen zu Hause
+wo337;der Handwerker;tradesman;Werkzeug und Reparaturen zu Hause
+wo338;der Klempner;plumber;Werkzeug und Reparaturen zu Hause
+wo339;der Elektriker;electrician;Werkzeug und Reparaturen zu Hause
+wo340;streichen;to paint;Werkzeug und Reparaturen zu Hause
+wo341;der Pinsel;paintbrush;Werkzeug und Reparaturen zu Hause
+wo342;das Schleifpapier;sandpaper;Werkzeug und Reparaturen zu Hause
+wo343;der Heimwerker;DIY enthusiast;Werkzeug und Reparaturen zu Hause
+wo344;der Umzugskarton;moving box;Umzug und Einrichten
+wo345;das Umzugsunternehmen;removal company;Umzug und Einrichten
+wo346;der Umzugswagen;removal van;Umzug und Einrichten
+wo347;der Umzugshelfer;removal helper;Umzug und Einrichten
+wo348;einpacken;to pack;Umzug und Einrichten
+wo349;die Luftpolsterfolie;bubble wrap;Umzug und Einrichten
+wo350;tragen;to carry;Umzug und Einrichten
+wo351;abbauen;to dismantle;Umzug und Einrichten
+wo352;die Aufbauanleitung;assembly instructions;Umzug und Einrichten
+wo353;sich ummelden;to register one's new address;Umzug und Einrichten
+wo354;der Nachsendeauftrag;mail redirection request;Umzug und Einrichten
+wo355;die Wohnungsübergabe;handover of the flat;Umzug und Einrichten
+wo356;der Nachmieter;incoming tenant;Umzug und Einrichten
+wo357;tapezieren;to wallpaper;Umzug und Einrichten
+wo358;die Halteverbotszone;temporary no-parking zone;Umzug und Einrichten
+wo359;die Kaltmiete;basic rent (excluding bills);Miete, Nebenkosten und Vermieter
+wo360;die Warmmiete;rent including bills;Miete, Nebenkosten und Vermieter
+wo361;die Nebenkostenabrechnung;annual service charge statement;Miete, Nebenkosten und Vermieter
+wo362;die Nachzahlung;additional payment;Miete, Nebenkosten und Vermieter
+wo363;die Mieterhöhung;rent increase;Miete, Nebenkosten und Vermieter
+wo364;vermieten;to let;Miete, Nebenkosten und Vermieter
+wo365;die Hausverwaltung;property management;Miete, Nebenkosten und Vermieter
+wo366;der Hausmeister;caretaker;Miete, Nebenkosten und Vermieter
+wo367;die Untermiete;subletting;Miete, Nebenkosten und Vermieter
+wo368;untervermieten;to sublet;Miete, Nebenkosten und Vermieter
+wo369;der Mietrückstand;rent arrears;Miete, Nebenkosten und Vermieter
+wo370;die Heizkosten;heating costs;Miete, Nebenkosten und Vermieter
+wo371;die Müllgebühren;refuse collection charges;Miete, Nebenkosten und Vermieter
+wo372;die Hausordnung;house rules;Miete, Nebenkosten und Vermieter
+wo373;der Mietspiegel;local rent index;Miete, Nebenkosten und Vermieter
+wo374;die Mietminderung;rent reduction;Miete, Nebenkosten und Vermieter
+wo375;die Schönheitsreparaturen;cosmetic repairs;Miete, Nebenkosten und Vermieter
+wo376;das Übergabeprotokoll;inventory report;Miete, Nebenkosten und Vermieter
+wo377;die Abschlagszahlung;advance payment;Miete, Nebenkosten und Vermieter
+wo378;der Dauerauftrag;standing order;Miete, Nebenkosten und Vermieter
+wo379;der Mangel;defect;Miete, Nebenkosten und Vermieter
+wo380;der Makler;estate agent;Miete, Nebenkosten und Vermieter
+wo381;der Eigentümer;owner;Miete, Nebenkosten und Vermieter
+wo382;die Wohnungsbesichtigung;flat viewing;Miete, Nebenkosten und Vermieter
+wo383;die Nachbarin;neighbour (female);Nachbarn und Hausordnung
+wo384;die Nachbarschaft;neighbourhood;Nachbarn und Hausordnung
+wo385;die Ruhezeit;quiet hours;Nachbarn und Hausordnung
+wo386;die Mittagsruhe;midday quiet period;Nachbarn und Hausordnung
+wo387;die Nachtruhe;night-time quiet hours;Nachbarn und Hausordnung
+wo388;der Lärm;noise;Nachbarn und Hausordnung
+wo389;laut;loud;Nachbarn und Hausordnung
+wo390;leise;quiet;Nachbarn und Hausordnung
+wo391;die Beschwerde;complaint;Nachbarn und Hausordnung
+wo392;stören;to disturb;Nachbarn und Hausordnung
+wo393;rücksichtsvoll;considerate;Nachbarn und Hausordnung
+wo394;die Rücksicht;consideration;Nachbarn und Hausordnung
+wo395;die Mitbewohnerin;flatmate (female);Nachbarn und Hausordnung
+wo396;der Streit;argument;Nachbarn und Hausordnung
+wo397;sich vertragen;to get along;Nachbarn und Hausordnung
+wo398;grüßen;to greet;Nachbarn und Hausordnung
+wo399;die Kehrwoche;rota for cleaning shared areas;Nachbarn und Hausordnung
+wo400;das Paket annehmen;to take in a parcel;Nachbarn und Hausordnung
+wo401;der Kinderwagen;pram;Nachbarn und Hausordnung
+wo402;der Fahrradkeller;bike storage room;Nachbarn und Hausordnung
+wo403;das Gemeinschaftseigentum;common property;Nachbarn und Hausordnung
+wo404;den Tisch abräumen;to clear the table;Hausarbeit (Verben)
+wo405;die Spülmaschine einräumen;to load the dishwasher;Hausarbeit (Verben)
+wo406;die Spülmaschine ausräumen;to unload the dishwasher;Hausarbeit (Verben)
+wo407;polieren;to polish;Hausarbeit (Verben)
+wo408;entkalken;to descale;Hausarbeit (Verben)
+wo409;die Wäsche sortieren;to sort the laundry;Hausarbeit (Verben)
+wo410;Blumen gießen;to water the plants;Hausarbeit (Verben)
+wo411;den Kühlschrank abtauen;to defrost the fridge;Hausarbeit (Verben)
+wo412;Ordnung halten;to keep things tidy;Hausarbeit (Verben)
+wo413;den Haushalt führen;to run the household;Hausarbeit (Verben)
+wo414;reinigen;to clean thoroughly;Hausarbeit (Verben)
+wo415;Flecken entfernen;to remove stains;Hausarbeit (Verben)
+wo416;die Waschmaschine anstellen;to put the washing machine on;Hausarbeit (Verben)
+wo417;die Spülmaschine anstellen;to put the dishwasher on;Haushalt (Wendungen)
+wo418;die Mülltonne rausstellen;to put the bin out;Haushalt (Wendungen)
+wo419;das Bett frisch beziehen;to change the bed sheets;Haushalt (Wendungen)
+wo420;den Boden fegen;to sweep the floor;Haushalt (Wendungen)
+wo421;das Geschirr spülen;to do the washing-up;Haushalt (Wendungen)
+wo422;das Geschirr abtrocknen;to dry up;Haushalt (Wendungen)
+wo423;das Bad putzen;to clean the bathroom;Haushalt (Wendungen)
+wo424;sauber machen;to clean up;Haushalt (Wendungen)
+wo425;die Hausarbeit erledigen;to do the housework;Haushalt (Wendungen)
+wo426;die Einkäufe erledigen;to do the shopping;Haushalt (Wendungen)
+wo427;Hemden bügeln;to iron shirts;Haushalt (Wendungen)
+wo428;das Licht anmachen;to switch the light on;Haushalt (Wendungen)
+wo429;das Licht ausmachen;to switch the light off;Haushalt (Wendungen)
+wo430;das Zimmer lüften;to air the room;Haushalt (Wendungen)
+wo431;den Backofen vorheizen;to preheat the oven;Haushalt (Wendungen)
+wo432;das Essen zubereiten;to prepare the meal;Haushalt (Wendungen)
+wo433;die Möbel rücken;to move the furniture;Haushalt (Wendungen)
+wo434;den Kleiderschrank ausmisten;to declutter the wardrobe;Haushalt (Wendungen)
+wo435;einziehen;to move in;Haus und Wohnung
+wo436;die Gästetoilette;downstairs toilet;Räume
+wo437;die Kellertreppe;cellar stairs;Flur, Keller und Dachboden
+wo438;der Schirmständer;umbrella stand;Flur, Keller und Dachboden
+wo439;das Licht anlassen;to leave the light on;Licht und Lampen
+wo440;die Garantie;guarantee;Haushaltsgeräte
+wo441;der Umzug;move;Umzug und Einrichten
+wo442;ausziehen;to move out;Umzug und Einrichten
+wo443;die Einweihungsparty;house-warming party;Umzug und Einrichten
+wo444;die Wohnfläche;living space;Miete, Nebenkosten und Vermieter
+wo445;die Eigentümerversammlung;owners' meeting;Nachbarn und Hausordnung
+wo446;die Ruhestörung;noise disturbance;Nachbarn und Hausordnung
+wo447;den Schnee räumen;to clear the snow;Nachbarn und Hausordnung
+wo448;der Aushang;notice;Nachbarn und Hausordnung
+wo449;das Zimmer aufräumen;to tidy the room;Haushalt (Wendungen)
+wo450;eine Glühbirne wechseln;to change a light bulb;Haushalt (Wendungen)
+wo451;die Tür abschließen;to lock the door;Haushalt (Wendungen)
+wo452;das Einfamilienhaus;detached house;Haus und Wohnung
+wo453;das Reihenhaus;terraced house;Haus und Wohnung
+wo454;die Leuchtstoffröhre;fluorescent tube;Licht und Lampen
+wo455;auswechseln;to replace;Werkzeug und Reparaturen zu Hause
+wo456;locker;loose;Werkzeug und Reparaturen zu Hause
+wo457;der Cutter;Stanley knife;Werkzeug und Reparaturen zu Hause
+wo458;den Mülleimer ausleeren;to empty the bin;Hausarbeit (Verben)
+wo459;die Einkäufe wegräumen;to put the shopping away;Hausarbeit (Verben)
+wo460;entrümpeln;to clear out;Hausarbeit (Verben)
+wo461;die Kissen aufschütteln;to plump up the cushions;Hausarbeit (Verben)
+wo462;die Hausarbeit aufteilen;to share the housework;Hausarbeit (Verben)
+wo463;Staub saugen;to vacuum;Haushalt (Wendungen)
+wo464;die Küche wischen;to mop the kitchen floor;Haushalt (Wendungen)
+wo465;die Doppelhaushälfte;semi-detached house;Haus und Wohnung
+wo466;das Mehrfamilienhaus;apartment building;Haus und Wohnung
+wo467;die Eigentumswohnung;owner-occupied flat;Haus und Wohnung
+wo468;die Mietwohnung;rented flat;Haus und Wohnung
+wo469;die Einzimmerwohnung;studio flat;Haus und Wohnung
+wo470;die Dachgeschosswohnung;attic flat;Haus und Wohnung
+wo471;die Erdgeschosswohnung;ground-floor flat;Haus und Wohnung
+wo472;das Hochhaus;high-rise;Haus und Wohnung
+wo473;der Altbau;old building;Haus und Wohnung
+wo474;das Ankleidezimmer;dressing room;Räume
+wo475;der Staubsaugerroboter;robot vacuum;Haushaltsgeräte
+wo476;die Nähmaschine;sewing machine;Haushaltsgeräte
+wo477;der Luftbefeuchter;humidifier;Haushaltsgeräte
+wo478;der Luftentfeuchter;dehumidifier;Haushaltsgeräte
+wo479;der Dampfreiniger;steam cleaner;Haushaltsgeräte
+wo480;der Fenstersauger;window vacuum;Haushaltsgeräte
+wo481;die Kühl-Gefrier-Kombination;fridge freezer;Haushaltsgeräte
+wo482;der Akkusauger;cordless vacuum;Haushaltsgeräte
+wo483;der Rauchmelder;smoke detector;Haushaltsgeräte
+wo484;der Ummeldung;change of address registration;Umzug und Einrichten
+wo485;die Möbelpacker;removal men;Umzug und Einrichten
+wo486;der Möbelwagen;furniture van;Umzug und Einrichten
+wo487;die Sackkarre;hand truck;Umzug und Einrichten
+wo488;die Umzugskiste;packing crate;Umzug und Einrichten
+wo489;die Wandfarbe;wall paint;Umzug und Einrichten
+wo490;die Gardine;net curtain;Umzug und Einrichten
+wo491;Wäsche zusammenlegen;to fold the laundry;Hausarbeit (Verben)
+wo492;einräumen;to put away;Hausarbeit (Verben)
+wo493;abziehen (Bett);to strip the bed;Hausarbeit (Verben)
+wo494;auswringen;to wring out;Hausarbeit (Verben)
+wo495;abspülen;to rinse off;Hausarbeit (Verben)
+wo496;alles an seinem Platz;everything in its place;Haushalt (Wendungen)
+wo497;ein Chaos hinterlassen;to leave a mess;Haushalt (Wendungen)
+wo498;die Rohrzange;pipe wrench;Werkzeug und Reparaturen zu Hause
+wo499;ausklopfen;to beat out;Hausarbeit (Verben)
+wo500;aufwischen;to wipe up;Hausarbeit (Verben)

@@ -1,29 +1,29 @@
 id;de;en;thema
-be001;die Tätigkeit;the activity;Berufe und Tätigkeiten
-be002;der Arzt / die Ärztin;the doctor;Berufe und Tätigkeiten
-be003;der Lehrer / die Lehrerin;the teacher;Berufe und Tätigkeiten
-be004;der Krankenpfleger / die Krankenpflegerin;the nurse;Berufe und Tätigkeiten
-be005;der Ingenieur / die Ingenieurin;the engineer;Berufe und Tätigkeiten
-be006;der Verkäufer / die Verkäuferin;the shop assistant;Berufe und Tätigkeiten
-be007;der Koch / die Köchin;the cook;Berufe und Tätigkeiten
-be008;der Kellner / die Kellnerin;the waiter / the waitress;Berufe und Tätigkeiten
-be009;der Polizist / die Polizistin;the police officer;Berufe und Tätigkeiten
-be010;der Rechtsanwalt / die Rechtsanwältin;the lawyer;Berufe und Tätigkeiten
-be011;der Handwerker / die Handwerkerin;the tradesman / the tradeswoman;Berufe und Tätigkeiten
-be012;der Elektriker / die Elektrikerin;the electrician;Berufe und Tätigkeiten
-be013;der Klempner / die Klempnerin;the plumber;Berufe und Tätigkeiten
-be014;der Mechaniker / die Mechanikerin;the mechanic;Berufe und Tätigkeiten
-be015;der Buchhalter / die Buchhalterin;the accountant;Berufe und Tätigkeiten
-be016;der Sekretär / die Sekretärin;the secretary;Berufe und Tätigkeiten
-be017;der Programmierer / die Programmiererin;the programmer;Berufe und Tätigkeiten
-be018;der Architekt / die Architektin;the architect;Berufe und Tätigkeiten
-be019;der Friseur / die Friseurin;the hairdresser;Berufe und Tätigkeiten
-be020;der Bäcker / die Bäckerin;the baker;Berufe und Tätigkeiten
-be021;der Landwirt / die Landwirtin;the farmer;Berufe und Tätigkeiten
-be022;der Fahrer / die Fahrerin;the driver;Berufe und Tätigkeiten
-be023;der Journalist / die Journalistin;the journalist;Berufe und Tätigkeiten
-be024;der Beamte / die Beamtin;the civil servant;Berufe und Tätigkeiten
-be025;der Selbstständige / die Selbstständige;the self-employed person;Berufe und Tätigkeiten
+be001;die Tätigkeit;activity;Berufe und Tätigkeiten
+be002;der Arzt / die Ärztin;doctor;Berufe und Tätigkeiten
+be003;der Lehrer / die Lehrerin;teacher;Berufe und Tätigkeiten
+be004;der Krankenpfleger / die Krankenpflegerin;nurse;Berufe und Tätigkeiten
+be005;der Ingenieur / die Ingenieurin;engineer;Berufe und Tätigkeiten
+be006;der Verkäufer / die Verkäuferin;shop assistant;Berufe und Tätigkeiten
+be007;der Koch / die Köchin;cook;Berufe und Tätigkeiten
+be008;der Kellner / die Kellnerin;waiter / the waitress;Berufe und Tätigkeiten
+be009;der Polizist / die Polizistin;police officer;Berufe und Tätigkeiten
+be010;der Rechtsanwalt / die Rechtsanwältin;lawyer;Berufe und Tätigkeiten
+be011;der Handwerker / die Handwerkerin;tradesman / the tradeswoman;Berufe und Tätigkeiten
+be012;der Elektriker / die Elektrikerin;electrician;Berufe und Tätigkeiten
+be013;der Klempner / die Klempnerin;plumber;Berufe und Tätigkeiten
+be014;der Mechaniker / die Mechanikerin;mechanic;Berufe und Tätigkeiten
+be015;der Buchhalter / die Buchhalterin;accountant;Berufe und Tätigkeiten
+be016;der Sekretär / die Sekretärin;secretary;Berufe und Tätigkeiten
+be017;der Programmierer / die Programmiererin;programmer;Berufe und Tätigkeiten
+be018;der Architekt / die Architektin;architect;Berufe und Tätigkeiten
+be019;der Friseur / die Friseurin;hairdresser;Berufe und Tätigkeiten
+be020;der Bäcker / die Bäckerin;baker;Berufe und Tätigkeiten
+be021;der Landwirt / die Landwirtin;farmer;Berufe und Tätigkeiten
+be022;der Fahrer / die Fahrerin;driver;Berufe und Tätigkeiten
+be023;der Journalist / die Journalistin;journalist;Berufe und Tätigkeiten
+be024;der Beamte / die Beamtin;civil servant;Berufe und Tätigkeiten
+be025;der Selbstständige / die Selbstständige;self-employed person;Berufe und Tätigkeiten
 be026;der Lebenslauf;CV;Bewerbung und Lebenslauf
 be027;das Vorstellungsgespräch;job interview;Bewerbung und Lebenslauf
 be028;die Stellenanzeige;job advertisement;Bewerbung und Lebenslauf
@@ -168,9 +168,9 @@ be166;die Klarsichthülle;plastic wallet;Büromaterial und Geräte
 be167;der Terminkalender;diary;Büromaterial und Geräte
 be168;das Headset;headset;Büromaterial und Geräte
 be169;der USB-Stick;USB stick;Büromaterial und Geräte
-be170;die Datei;the file;Computer und Software
-be171;das Programm;the program;Computer und Software
-be172;der Anhang;the attachment;Computer und Software
+be170;die Datei;file;Computer und Software
+be171;das Programm;program;Computer und Software
+be172;der Anhang;attachment;Computer und Software
 be173;speichern;to save;Computer und Software
 be174;löschen;to delete;Computer und Software
 be175;herunterladen;to download;Computer und Software
@@ -180,19 +180,19 @@ be178;sich anmelden;to log in;Computer und Software
 be179;sich abmelden;to log out;Computer und Software
 be180;aktualisieren;to update;Computer und Software
 be181;installieren;to install;Computer und Software
-be182;das Netzwerk;the network;Computer und Software
-be183;die Sicherungskopie;the backup;Computer und Software
-be184;das Betriebssystem;the operating system;Computer und Software
-be185;die Festplatte;the hard drive;Computer und Software
-be186;der Virus;the virus;Computer und Software
+be182;das Netzwerk;network;Computer und Software
+be183;die Sicherungskopie;backup;Computer und Software
+be184;das Betriebssystem;operating system;Computer und Software
+be185;die Festplatte;hard drive;Computer und Software
+be186;der Virus;virus;Computer und Software
 be187;abstürzen;to crash;Computer und Software
 be188;neu starten;to restart;Computer und Software
-be189;die Tabellenkalkulation;the spreadsheet;Computer und Software
+be189;die Tabellenkalkulation;spreadsheet;Computer und Software
 be190;die Textverarbeitung;word processing;Computer und Software
-be191;das WLAN;the Wi-Fi;Computer und Software
-be192;die Internetverbindung;the internet connection;Computer und Software
-be193;das Benutzerkonto;the user account;Computer und Software
-be194;die Software;the software;Computer und Software
+be191;das WLAN;Wi-Fi;Computer und Software
+be192;die Internetverbindung;internet connection;Computer und Software
+be193;das Benutzerkonto;user account;Computer und Software
+be194;die Software;software;Computer und Software
 be195;der Betreff;subject line;E-Mail und Schriftverkehr
 be196;der Empfänger / die Empfängerin;recipient;E-Mail und Schriftverkehr
 be197;der Absender / die Absenderin;sender;E-Mail und Schriftverkehr
@@ -219,29 +219,29 @@ be217;Mit freundlichen Grüßen;Yours faithfully / Kind regards;E-Mail und Schri
 be218;Vielen Dank im Voraus;Thank you in advance;E-Mail und Schriftverkehr
 be219;dringend;urgent;E-Mail und Schriftverkehr
 be220;zurückrufen;to call back;Telefon und Videokonferenz
-be221;der Anrufbeantworter;the answering machine;Telefon und Videokonferenz
-be222;die Mailbox;the voicemail;Telefon und Videokonferenz
+be221;der Anrufbeantworter;answering machine;Telefon und Videokonferenz
+be222;die Mailbox;voicemail;Telefon und Videokonferenz
 be223;eine Nachricht hinterlassen;to leave a message;Telefon und Videokonferenz
 be224;auflegen;to hang up;Telefon und Videokonferenz
 be225;abnehmen;to answer the phone;Telefon und Videokonferenz
 be226;besetzt;engaged;Telefon und Videokonferenz
-be227;die Durchwahl;the direct line;Telefon und Videokonferenz
+be227;die Durchwahl;direct line;Telefon und Videokonferenz
 be228;verbinden;to put through;Telefon und Videokonferenz
-be229;die Vorwahl;the dialling code;Telefon und Videokonferenz
+be229;die Vorwahl;dialling code;Telefon und Videokonferenz
 be230;wählen;to dial;Telefon und Videokonferenz
 be231;Am Apparat.;Speaking.;Telefon und Videokonferenz
 be232;Bleiben Sie bitte dran.;Please hold the line.;Telefon und Videokonferenz
 be233;falsch verbunden sein;to have the wrong number;Telefon und Videokonferenz
-be234;die Verbindung;the connection;Telefon und Videokonferenz
-be235;die Videokonferenz;the video conference;Telefon und Videokonferenz
-be236;die Telefonkonferenz;the conference call;Telefon und Videokonferenz
-be237;die Kamera;the camera;Telefon und Videokonferenz
-be238;das Mikrofon;the microphone;Telefon und Videokonferenz
+be234;die Verbindung;connection;Telefon und Videokonferenz
+be235;die Videokonferenz;video conference;Telefon und Videokonferenz
+be236;die Telefonkonferenz;conference call;Telefon und Videokonferenz
+be237;die Kamera;camera;Telefon und Videokonferenz
+be238;das Mikrofon;microphone;Telefon und Videokonferenz
 be239;stummschalten;to mute;Telefon und Videokonferenz
 be240;den Bildschirm teilen;to share one's screen;Telefon und Videokonferenz
-be241;der Link;the link;Telefon und Videokonferenz
-be242;die Einladung;the invitation;Telefon und Videokonferenz
-be243;der Teilnehmer / die Teilnehmerin;the participant;Telefon und Videokonferenz
+be241;der Link;link;Telefon und Videokonferenz
+be242;die Einladung;invitation;Telefon und Videokonferenz
+be243;der Teilnehmer / die Teilnehmerin;participant;Telefon und Videokonferenz
 be244;Können Sie mich hören?;Can you hear me?;Telefon und Videokonferenz
 be245;einen Termin vereinbaren;to make an appointment;Besprechungen und Termine
 be246;einen Termin verschieben;to postpone an appointment;Besprechungen und Termine
@@ -457,19 +457,19 @@ be455;das Rad neu erfinden;to reinvent the wheel;Redewendungen im Büro
 be456;der Werdegang;career history;Bewerbung und Lebenslauf
 be457;die Bewerbungsfrist;application deadline;Bewerbung und Lebenslauf
 be458;sich bewerben um;to apply for;Vorstellungsgespräch
-be459;das Anliegen;the concern;Besprechungen und Termine
-be460;die Rückfrage;the follow-up question;Besprechungen und Termine
+be459;das Anliegen;concern;Besprechungen und Termine
+be460;die Rückfrage;follow-up question;Besprechungen und Termine
 be461;die Belegschaft;workforce;Führung und Personal
 be462;die Anerkennung;recognition;Führung und Personal
 be463;Feedback geben;to give feedback;Führung und Personal
 be464;die Fluktuation;staff turnover;Führung und Personal
 be465;gekündigt werden;to be made redundant;Kündigung und Jobwechsel
-be466;die betriebsbedingte Kündigung;the redundancy;Kündigung und Jobwechsel
+be466;die betriebsbedingte Kündigung;redundancy;Kündigung und Jobwechsel
 be467;freigestellt werden;to be put on garden leave;Kündigung und Jobwechsel
-be468;die Kündigungsschutzklage;the unfair dismissal claim;Kündigung und Jobwechsel
+be468;die Kündigungsschutzklage;unfair dismissal claim;Kündigung und Jobwechsel
 be469;sich beruflich neu orientieren;to reorient oneself professionally;Kündigung und Jobwechsel
-be470;die Arbeitssuche;the job search;Kündigung und Jobwechsel
-be471;das Austrittsgespräch;the exit interview;Kündigung und Jobwechsel
+be470;die Arbeitssuche;job search;Kündigung und Jobwechsel
+be471;das Austrittsgespräch;exit interview;Kündigung und Jobwechsel
 be472;einreichen;to submit;Arbeiten (Verben)
 be473;erstellen;to draw up, to create;Arbeiten (Verben)
 be474;entwickeln;to develop;Arbeiten (Verben)

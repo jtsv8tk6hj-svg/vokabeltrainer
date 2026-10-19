@@ -277,11 +277,11 @@ async function server() {
     await p.fill('#apiKey', 'sk-ant-test'); await p.click('#keySave');
     await p.click('#listLang [data-l="en"]');
     await p.fill('#listDeck', 'Englisch');
-    await p.fill('#listBox', 'sailboat\ncollective agreement = Tarifvertrag');
+    await p.fill('#listBox', 'sailboat\nlighthouse = Leuchtturm');
     await p.click('#listGo');
     await p.waitForFunction(() => /Alle übersetzt/.test(document.querySelector('#listMsg').textContent), null, { timeout: 5000 }).catch(() => {});
     items = await p.evaluate(() => JSON.parse(localStorage.getItem('vokabeltrainer-v1')).items.filter(i => i.deck === 'Englisch'));
-    ok('Liste mit Schlüssel: Englisch als Ausgangssprache, alle Felder gefüllt, Vorhandenes bleibt', items.length === 2 && items[0].en === 'sailboat' && items[0].de === 'de:sailboat' && items[0].ru === 'ru:sailboat' && items[0].exde === 'Bsp sailboat.' && items[1].de === 'Tarifvertrag' && items[1].fr === 'fr:Tarifvertrag', JSON.stringify(items));
+    ok('Liste mit Schlüssel: Englisch als Ausgangssprache, alle Felder gefüllt, Vorhandenes bleibt', items.length === 2 && items[0].en === 'sailboat' && items[0].de === 'de:sailboat' && items[0].ru === 'ru:sailboat' && items[0].exde === 'Bsp sailboat.' && items[1].de === 'Leuchtturm' && items[1].fr === 'fr:Leuchtturm', JSON.stringify(items));
     ok('Liste mit Schlüssel: Feld geleert, Meldung', (await p.inputValue('#listBox')) === '' && /Alle übersetzt/.test(await p.textContent('#listMsg')), (await p.textContent('#listMsg')).trim());
     const req = requests[0];
     ok('API-Anfrage: Modell, JSON-Schema, Schlüssel im Kopf', req && req.model === 'claude-opus-5-5' && req.output_config.format.type === 'json_schema' && req.output_config.format.schema.properties.items.items.required.includes('rulat') && req.max_tokens >= 4000, req && JSON.stringify([req.model, req.output_config && req.output_config.format.type]));
