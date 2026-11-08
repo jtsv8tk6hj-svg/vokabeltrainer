@@ -8,6 +8,7 @@
 <meta name="theme-color" content="#0e1013" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f5f4ef" media="(prefers-color-scheme: light)">
 <meta name="color-scheme" content="dark light">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.anthropic.com; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <title>Vokabeltrainer</title>
 <style>
   /* Farbtokens. Kontraste geprüft: dim und faint ≥ 4,5:1 auf bg und card, edge ≥ 3:1 (Ränder von Knöpfen) */
@@ -264,6 +265,17 @@
   details.howto summary{cursor:pointer; color:var(--dim); font-weight:600}
   details.howto ol{margin:8px 0 0; padding-left:20px; line-height:1.6}
   details.howto code{font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--dim); word-break:break-all}
+  .qto{font-size:12.5px; color:var(--faint); margin:14px 0 0}
+  .qto .flag{width:16px; height:11px}
+  .rev .qzone .qto{display:none}
+  .rsheet{text-align:center; padding:8px 4px}
+  .rhead{font-family:var(--serif); font-size:26px; font-weight:600; margin:0 0 14px}
+  .rline{font-size:15px; color:var(--dim); margin:6px 0 0; line-height:1.55}
+  .rline b{color:var(--ink); font-variant-numeric:tabular-nums}
+  .big.quiet{background:none; color:var(--ink); border:1px solid var(--edge); margin-top:8px; min-height:48px}
+  .wpick{margin:18px 0 20px}
+  .wq{font-size:13px; font-weight:600; margin:16px 0 8px}
+  .whelp{margin:0 0 18px}
   .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:calc(26px + var(--safe-b));
          background:var(--ink); color:var(--onink); padding:12px 20px; border-radius:24px; font-size:14px;
          font-weight:600; z-index:200; max-width:90vw; text-align:center; box-shadow:0 6px 24px rgba(0,0,0,.25)}
@@ -478,14 +490,18 @@
       <p class="translit" id="qLat"></p>
       <p class="qtask" id="qTask" hidden></p>
       <p class="sent" id="qSent"></p>
+      <p class="qto" id="qTo"></p>
     </div>
     <div id="typeFields" hidden></div>
     <div class="azone" id="ans" aria-live="polite" hidden></div>
+    <div class="rsheet" id="rsheet" aria-live="polite" hidden></div>
   </div>
   <div class="dbtm">
     <button class="big" id="reveal">Aufdecken</button>
     <button class="big" id="next" hidden>Weiter</button>
     <button class="big" id="apply" hidden>Übernehmen</button>
+    <button class="big" id="roundNext" hidden>Nächste Runde</button>
+    <button class="big quiet" id="roundEnd" hidden>Fertig</button>
     <div class="grades" id="grades" hidden>
       <button class="g g1" data-g="0"><b>Nochmal</b><small id="n0"></small></button>
       <button class="g g2" data-g="1"><b>Gut</b><small id="n1"></small></button>
@@ -497,8 +513,16 @@
 <div id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle" hidden style="position:fixed;inset:0;z-index:150;background:var(--bg);overflow:auto;
      padding:calc(26px + env(safe-area-inset-top,0px)) 18px calc(26px + var(--safe-b))">
   <div style="max-width:520px;margin:0 auto">
-    <h2 id="welcomeTitle" style="font-family:var(--serif);font-size:27px;font-weight:600;margin:0 0 6px">Vokabeltrainer</h2>
-    <p class="lead">Fachbegriffe der Personalgewinnung, Alltagswortschatz nach Themen und Grammatiktafeln in fünf Sprachen, mit Beispielsätzen und Karteikartensystem. Läuft vollständig ohne Internet.</p>
+    <h2 id="welcomeTitle" class="wtitle">Vokabeltrainer</h2>
+    <p class="lead wlead">Du siehst ein Wort, überlegst die Übersetzung und deckst auf. Dann sagst du ehrlich, wie gut es saß. Was du gut kannst, kommt seltener wieder, was hakt, öfter.</p>
+    <div class="wpick">
+      <p class="wq">Ich lerne</p>
+      <div class="chips" id="wLang" role="group" aria-label="Sprache, die du lernst"></div>
+      <p class="wq">Anfangen mit</p>
+      <div class="chips" id="wDeckPick" role="group" aria-label="Stapel zum Anfangen"></div>
+      <p class="hint" style="margin-top:8px">Beides lässt sich auf der Lernseite jederzeit ändern. Alles bleibt auf diesem Gerät, ein Konto gibt es nicht.</p>
+    </div>
+    <details class="howto whelp"><summary>Mehr zur Bedienung</summary>
     <div class="panel">
       <h2>So lernst du</h2>
       <p class="hint">Du siehst einen Begriff und den Beispielsatz mit Lücke. Antwort überlegen, dann <b>Aufdecken</b>. Anschließend selbst bewerten:</p>
@@ -516,7 +540,8 @@
       <p class="hint" style="margin-top:9px">Unter <b>Neu</b> legst du eigene Wörter an – einzeln, als Liste aus Apple Notizen oder als ganzes <b>Thema</b> („Beim Arzt“), das die App mit eigenem API-Schlüssel in fünf Sprachen zusammenstellt. Die Stapel <b>Alltag</b>, <b>Küche</b>, <b>Reisen</b>, <b>Auto</b>, <b>Beruf</b>, <b>Gesundheit</b> und <b>Wohnen</b> bringen über 3.000 Wörter nach Themen mit; ein Thema wählst du unter „Lernen“ als Kategorie.</p>
       <p class="hint" style="margin-top:9px">Die Stapel <b>Verben</b>, <b>Substantive</b>, <b>Adjektive</b> und <b>Pronomen</b> üben zusätzlich Formen: „<i>arbeiten</i> · Präsens · du“, „<i>дом</i> · Plural · Genitiv“, „<i>duży</i> · Komparation · Superlativ“. Die Auflösung zeigt die ganze Tafel, bei Fällen mit Fragewörtern. Jede Tafel hat ihren eigenen Lernstand.</p>
     </div>
-    <button class="btn main wide" id="welcomeGo" style="min-height:54px">Los geht's</button>
+    </details>
+    <button class="btn main wide" id="welcomeGo" style="min-height:54px">Los geht’s</button>
     <p class="hint" style="text-align:center;margin-top:12px">Diese Übersicht findest du jederzeit unter „Daten".</p>
     <p class="hint" style="text-align:center;margin-top:18px">Ein Vokabeltrainer von CJL</p>
   </div>
@@ -536,7 +561,8 @@
 const SEED = __SEED__;
 const FORMS = __FORMS__;
 (function(){
-  const KEY='vokabeltrainer-v1';
+  // v1: der ganze Bestand samt Texten (bis Fassung 12); v2: nur Lernstand, eigene Wörter und Abweichungen vom Grundstock
+  const KEY='vokabeltrainer-v1', KEY2='vokabeltrainer-v2';
   const L=[['de','DE'],['en','EN'],['fr','FR'],['pl','PL'],['ru','RU']];
   const NAME={de:'Deutsch',en:'Englisch',fr:'Französisch',pl:'Polnisch',ru:'Russisch'};
   const DAY=864e5, LADDER=[1,3,7,16,35,75,150,300];
@@ -552,16 +578,55 @@ const FORMS = __FORMS__;
   const FLAG=k=>'<span class="flag f-'+k+'" aria-hidden="true"></span>';
   const today=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');};
   const dtxt=n=>n===1?'1 Tag':n<31?n+' Tage':Math.round(n/30)+' Monate';
-  function toast(m){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(t._x);t._x=setTimeout(()=>t.hidden=true,2600);}
+  // Hinweis unten; mit act wird er antippbar (Rückgängig) und bleibt etwas länger stehen
+  function toast(m,act){const t=$('#toast');t.textContent=m;t.hidden=false;t.onclick=act?()=>{ t.hidden=true; t.onclick=null; act(); }:null;
+    t.classList.toggle('act',!!act);clearTimeout(t._x);t._x=setTimeout(()=>{ t.hidden=true; t.onclick=null; },act?5000:2600);}
+
+  /* Speicherform v2: Grundstockwörter kommen aus SEED; gespeichert wird je Grundstock-Id nur, was davon abweicht
+     (Lernstand p und g, nachgetragene Felder, eigene Änderungen), dazu die eigenen Wörter vollständig und die Ids
+     gelöschter Grundstockwörter. Korrekturen am Grundstock erreichen so auch bestehende Nutzer. */
+  const SEEDBY={}; SEED.forEach(x=>SEEDBY[x.id]=x);
+  const same=(a,b)=>a===b||(a&&b&&typeof a==='object'&&JSON.stringify(a)===JSON.stringify(b));
+  function pack(d){
+    const st={}, own=[], present=new Set();
+    (d.items||[]).forEach(i=>{
+      const x=SEEDBY[i.id];
+      if(!x){ own.push(i); return; }
+      present.add(i.id);
+      const o={};
+      Object.keys(i).forEach(k=>{
+        if(k==='id') return;
+        const v=i[k];
+        if(k==='p'||k==='g'){ if(v&&typeof v==='object'&&Object.keys(v).length) o[k]=v; return; }
+        if(!same(v,x[k])) o[k]=v;
+      });
+      if(Object.keys(o).length) st[i.id]=o;
+    });
+    const out=Object.assign({},d,{v:2,st,own,del:SEED.filter(x=>!present.has(x.id)).map(x=>x.id)});
+    delete out.items; return out;
+  }
+  function unpack(o){
+    const d=Object.assign({},o), del=new Set(o.del||[]), st=o.st||{};
+    d.items=(o.own||[]).concat(SEED.filter(x=>!del.has(x.id)).map(x=>Object.assign({},x,st[x.id]||{})));
+    delete d.st; delete d.own; delete d.del; delete d.v;
+    return d;
+  }
+  // für Prüfung und Fehlersuche: Speicherstand lesen und schreiben, ausgepackt wie data
+  window.vtStore={ read:()=>unpack(JSON.parse(localStorage.getItem(KEY2)||'{}')), write:d=>localStorage.setItem(KEY2,JSON.stringify(pack(d))) };
 
   function load(){
+    let fromV1=false;
     try{
-      const raw=localStorage.getItem(KEY);
-      if(raw) data=Object.assign(data,JSON.parse(raw));
+      const raw2=localStorage.getItem(KEY2);
+      if(raw2) data=Object.assign(data,unpack(JSON.parse(raw2)));
+      else{ const raw=localStorage.getItem(KEY); if(raw){ data=Object.assign(data,JSON.parse(raw)); fromV1=true; } }
       store=true;
     }catch(e){ store=false; }
     if(!Array.isArray(data.items)||!data.items.length) data.items=SEED.map(s=>migrate(Object.assign({},s)));
-    if(store){ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){ store=false; } }
+    // Übernahme aus v1: dort lag eine Kopie der Grundstocktexte. Wo der Grundstock einen Text hat, gilt er
+    // (sonst blieben alte Fassungen für immer stehen); nur leere Grundstockfelder behalten den nachgetragenen Wert.
+    if(fromV1) data.items.forEach(i=>{ const x=SEEDBY[i.id]; if(!x) return;
+      Object.keys(x).forEach(k=>{ if(k!=='id'&&typeof x[k]==='string'&&x[k]&&i[k]!==x[k]) i[k]=x[k]; }); });
     if(!data.cfg) data.cfg={newPerDay:20};
     if(!MODES.some(([k])=>k===data.cfg.mode)) data.cfg.mode=data.cfg.typing?'type':'check';
     delete data.cfg.typing;
@@ -585,10 +650,16 @@ const FORMS = __FORMS__;
     const m={}; SEED.forEach(s=>{ if(s.exde) m[s.id]=s.exde; });
     data.items.forEach(i=>{ if(!i.exde&&m[i.id]) i.exde=m[i.id]; });
   }
+  let full=false;   // Speicher voll: weiter versuchen, bis es wieder passt
   function save(){
-    if(!store) return;
-    try{ localStorage.setItem(KEY,JSON.stringify(data)); }
-    catch(e){ store=false; render(); toast('Speicher gesperrt – bitte Sicherung speichern'); }
+    if(!store&&!full) return;
+    try{
+      localStorage.setItem(KEY2,JSON.stringify(pack(data)));
+      if(full){ full=false; store=true; unsaved=0; savebar(); }
+    }catch(e){
+      const quota=e&&(e.name==='QuotaExceededError'||e.code===22||e.code===1014);
+      if(store){ store=false; full=quota; render(); toast(quota?'Speicher voll – bitte oben sichern':'Speicher gesperrt – bitte Sicherung speichern'); }
+    }
   }
 
   /* Lernstand je Wort und Zielsprache: i.p[k]={s:Stufe, d:Fälligkeit, r:1 beim Wiederanlauf nach „Nochmal“} */
@@ -598,6 +669,23 @@ const FORMS = __FORMS__;
   const isDue=(i,k,t)=>{const s=st(i,k); return !!s&&s.d<=t;};
   const isNew=(i,k)=>!st(i,k)&&!!i[k];
   // alte Bestände: ein Stand je Wort wird zum Stand für Deutsch und Englisch
+  // fremde Einträge (Datei, Code) prüfen: Id aus Wortzeichen, Textfelder als Text, Lernstand als Zahlen
+  const TXT=['de','en','fr','pl','ru','rulat','cat','deck','ex','exde'];
+  function cleanState(o){ const r={}; if(o&&typeof o==='object') Object.keys(o).forEach(k=>{ const x=o[k];
+    if(x&&typeof x==='object'&&isFinite(x.s)&&isFinite(x.d)) r[k]=x.r?{s:+x.s,d:+x.d,r:1}:{s:+x.s,d:+x.d}; }); return r; }
+  function clean(i){
+    if(!i||typeof i!=='object'||typeof i.id!=='string'||!/^[\w.-]{1,60}$/.test(i.id)) return null;
+    const o={id:i.id};
+    TXT.forEach(k=>{ if(i[k]!==undefined&&i[k]!==null) o[k]=String(i[k]).slice(0,2000); });
+    o.p=cleanState(i.p);
+    if(i.g&&typeof i.g==='object'){ o.g={}; Object.keys(i.g).forEach(k=>{ if(LANGS.includes(k)) o.g[k]=cleanState(i.g[k]); }); }
+    if(i.step!==undefined&&isFinite(i.step)) o.step=+i.step; if(i.due!==undefined&&isFinite(i.due)) o.due=+i.due;
+    if(i.forms&&typeof i.forms==='object') o.forms=i.forms;
+    if(i.tbl) o.tbl=1;
+    return o;
+  }
+  // später fällig heißt weiter gelernt: davon den Stand nehmen
+  const later=(a,b)=>!a?b:!b?a:(b.d>a.d?b:a);
   function migrate(i){
     if(!i.p||typeof i.p!=='object') i.p={};
     if(i.due){ const s={s:i.step||0,d:i.due}; ['de','en'].forEach(k=>{ if(i[k]&&!i.p[k]) i.p[k]=Object.assign({},s); }); }
@@ -638,7 +726,9 @@ const FORMS = __FORMS__;
   const isForm=e=>e.k!==undefined;
   function eState(e,t){
     if(isForm(e)){ const s=gst(e.i,e.k,e.t); return {due:s&&s.d<=t?1:0, fresh:s?0:1}; }
-    const ls=cardLangs(e.i); return {due:ls.filter(k=>isDue(e.i,k,t)).length, fresh:ls.filter(k=>isNew(e.i,k)).length};
+    const ls=cardLangs(e.i), due=ls.filter(k=>isDue(e.i,k,t)).length, fresh=ls.filter(k=>isNew(e.i,k)).length;
+    // gemischt fragt jede Karte genau eine Richtung: höchstens eins, sonst belastete ein Wort das Pensum doppelt
+    return data.cfg.from==='mix'?{due:Math.min(due,1),fresh:due?0:Math.min(fresh,1)}:{due,fresh};
   }
   const decks=()=>['alle',...new Set(data.items.map(i=>i.deck||'Eigene'))];
   // Kategorien (Themen) nur aus dem gewählten Stapel, sonst mischen sich die Themen aller Stapel
@@ -647,6 +737,16 @@ const FORMS = __FORMS__;
   const newToday=()=>data.log[today()]||0;
   // Zuschlag zum Tagespensum, gilt nur für den Tag, an dem er gewählt wurde („Weiter lernen“)
   const extra=()=>data.more&&data.more.d===today()?data.more.n||0:0;
+  function shuffle(a){ for(let n=a.length-1;n>0;n--){ const m=Math.floor(Math.random()*(n+1)); [a[n],a[m]]=[a[m],a[n]]; } return a; }
+  // reihum je Stapel, innerhalb eines Stapels in kuratierter Reihenfolge
+  function interleave(list){
+    if(deck!=='alle') return list;
+    const by=new Map(); list.forEach(e=>{ const d=e.i.deck||'Eigene'; if(!by.has(d)) by.set(d,[]); by.get(d).push(e); });
+    // Reihenfolge der Stapel zufällig, damit nicht immer derselbe Stapel vorn steht
+    const qs=shuffle([...by.values()]), out=[];
+    for(let n=0; out.length<list.length; n++) qs.forEach(q=>{ if(q[n]) out.push(q[n]); });
+    return out;
+  }
   function counts(){
     const p=pool(), t=Date.now();
     const dueList=[], freshList=[]; let due=0, fresh=0;
@@ -658,7 +758,7 @@ const FORMS = __FORMS__;
     // Tagespensum zählt je Wort und Zielsprache bzw. je Formkarte; neue Karten bis zur Grenze mitnehmen
     const budget=Math.max(0,data.cfg.newPerDay+extra()-newToday());
     const take=[]; let used=0;
-    for(const e of freshList){ const n=eState(e,t).fresh; if(used+n>budget) continue; used+=n; take.push(e); }
+    for(const e of interleave(freshList)){ const n=eState(e,t).fresh; if(used+n>budget) continue; used+=n; take.push(e); }
     return {pool:p.length, due, dueList, freshList, take, newLeft:Math.min(fresh,budget)};
   }
   // nächste Stufe: neu und Wiederanlauf starten bei 0 (Gut) bzw. 1 (Leicht)
@@ -677,16 +777,16 @@ const FORMS = __FORMS__;
   const SIDX={}; SEED.forEach((s,n)=>SIDX[s.id]=n);
   const b36=n=>Math.round(n).toString(36);
   function makeCode(){
-    const parts=[], gparts=[], extra=[];
+    const parts=[], gparts=[], own=[];
     data.items.forEach(i=>{
-      if(SIDX[i.id]===undefined){ extra.push(i); return; }
+      if(SIDX[i.id]===undefined){ own.push(i); return; }
       const n=b36(SIDX[i.id]);
       LANGS.forEach(k=>{
         const s=st(i,k); if(s) parts.push(n+'.'+LC[k]+'.'+b36(s.s||0)+'.'+b36(s.d/864e5));
         const gk=i.g&&i.g[k]; if(gk) Object.keys(gk).forEach(t=>{ const x=gk[t]; gparts.push(n+'.'+LC[k]+'.'+b36(+t)+'.'+b36(x.s||0)+'.'+b36(x.d/864e5)); });
       });
     });
-    let c='VT2|'+parts.join(',')+'|'+b36(newToday())+'|'+(extra.length?btoa(unescape(encodeURIComponent(JSON.stringify(extra)))):'');
+    let c='VT2|'+parts.join(',')+'|'+b36(newToday())+'|'+(own.length?btoa(unescape(encodeURIComponent(JSON.stringify(own)))):'');
     if(gparts.length) c+='|'+gparts.join(',');
     return c;
   }
@@ -695,6 +795,9 @@ const FORMS = __FORMS__;
     const ver=c.indexOf('VT2|')===0?2:c.indexOf('VT1|')===0?1:0;
     if(!ver) throw new Error('kein gültiger Code');
     const f=c.split('|');
+    // eigene Wörter zuerst lesen und prüfen: ein kaputter Code darf den Bestand nicht halb verändern
+    const ownIn=f[3]?JSON.parse(decodeURIComponent(escape(atob(f[3])))):[];
+    if(!Array.isArray(ownIn)) throw new Error('kein gültiger Code');
     const byIdx={}; data.items.forEach(i=>{ if(SIDX[i.id]!==undefined) byIdx[SIDX[i.id]]=i; });
     let n=0;
     (f[1]||'').split(',').filter(Boolean).forEach(t=>{
@@ -703,10 +806,9 @@ const FORMS = __FORMS__;
       if(ver===2){ const k=CL[a[1]]; if(!k||!it[k]) return; it.p[k]={s:parseInt(a[2],36)||0,d:parseInt(a[3],36)*864e5}; n++; }
       else{ const s={s:parseInt(a[1],36)||0,d:parseInt(a[2],36)*864e5}; ['de','en'].forEach(k=>{ if(it[k]) it.p[k]=Object.assign({},s); }); n++; }
     });
-    if(f[3]){
-      const ex=JSON.parse(decodeURIComponent(escape(atob(f[3]))));
+    if(ownIn.length){
       const known=new Set(data.items.map(i=>i.id));
-      ex.forEach(i=>{ if(i&&i.id&&!known.has(i.id)){ data.items.push(migrate(i)); n++; } });
+      ownIn.map(clean).forEach(i=>{ if(i&&!known.has(i.id)){ data.items.push(migrate(i)); n++; } });
     }
     if(ver===2&&f[4]) (f[4]||'').split(',').filter(Boolean).forEach(t=>{
       const a=t.split('.'); const it=byIdx[parseInt(a[0],36)], k=CL[a[1]]; if(!it||!k) return;
@@ -780,7 +882,14 @@ const FORMS = __FORMS__;
   }
 
   /* Lernen */
-  const shuffle=a=>a.sort(()=>Math.random()-.5);
+  // Fisher-Yates statt sort(random), das verzerrt mischt
+  // eine Runde: höchstens ROUND Karten; liegt viel Fälliges an, bleibt trotzdem ein Viertel für Neues
+  const ROUND=20;
+  function roundOf(c){
+    const due=shuffle(c.dueList.slice()), fresh=c.take;
+    const nNew=Math.min(fresh.length, Math.max(ROUND-due.length, Math.ceil(ROUND/4)));
+    return shuffle(due.slice(0,ROUND-nNew).concat(fresh.slice(0,nNew)));
+  }
   $('#start').onclick=()=>{
     const c=counts(), look=data.cfg.mode==='look';
     let q;
@@ -791,11 +900,14 @@ const FORMS = __FORMS__;
       q=shuffle(first).concat(shuffle(rest));
       if(!q.length){ toast('Keine Wörter für diese Richtung in der Auswahl'); return; }
     }else{
-      q=shuffle(c.dueList.concat(c.take));
-      if(!q.length){ toast(c.freshList.length&&!c.newLeft?'Tagespensum erreicht':'Nichts fällig in dieser Auswahl'); return; }
+      if(!c.dueList.length&&!c.take.length){ toast(c.freshList.length&&!c.newLeft?'Für heute geschafft':'Nichts fällig in dieser Auswahl'); return; }
+      q=roundOf(c);
     }
-    ses={q,total:q.length,done:0,look};
-    document.body.classList.add('drilling'); $('#drill').classList.add('on'); show();
+    ses={q,total:q.length,done:0,look,known:0,again:new Set()};
+    document.body.classList.add('drilling'); $('#drill').classList.add('on');
+    // Hintergrund für Tastatur und Bildschirmleser sperren, Fokus ins Lernfenster
+    $('header').inert=true; $('.wrap').inert=true;
+    show(); const fb=['#reveal','#next'].map(x=>$(x)).find(b=>!b.hidden); if(fb) fb.focus({preventScroll:true});
   };
   const sayBtn=(k,small)=>window.speechSynthesis?'<button class="say" data-say="'+k+'" aria-label="Vorlesen"'
     +(small?' style="width:24px;height:24px;font-size:10px;margin-left:auto"':'')+'>&#9658;</button>':'';
@@ -803,7 +915,7 @@ const FORMS = __FORMS__;
   // Kopfzeile des Lernfensters und Grundzustand der Karte
   function head(e,t){
     const i=e.i, due=isForm(e)?eState(e,t).due:ses.to.some(k=>isDue(i,k,t));
-    $('#counter').textContent='Noch '+ses.q.length+' von '+ses.total;
+    $('#counter').textContent=Math.min(ses.done+1,ses.total)+' von '+ses.total;
     $('#cardState').textContent=ses.look?'Durchsehen':(due?'Wiederholung':'neu');
     $('#progFill').style.width=Math.round(ses.done/ses.total*100)+'%';
     $('#qLang').className='tag t-'+ses.from; $('#qLang').textContent=ses.from.toUpperCase(); $('#qFlag').className='flag f-'+ses.from;
@@ -820,7 +932,7 @@ const FORMS = __FORMS__;
     $('#reveal').textContent=typing?'Prüfen':'Aufdecken';
   }
   function show(){
-    if(!ses.q.length){ const c=counts(); stop(!ses.look&&c.freshList.length&&!c.newLeft&&!c.due?'Durchgang beendet, Tagespensum erreicht':'Durchgang beendet'); return; }
+    if(!ses.q.length){ if(ses.look) return stop('Durchgang beendet'); return result(); }
     const e=ses.q[0], t=Date.now();
     if(isForm(e)) return showForm(e,t);
     const i=e.i;
@@ -834,6 +946,7 @@ const FORMS = __FORMS__;
     $('#qTask').hidden=true;
     const qs=sentFor(i,ses.from);
     $('#qSent').innerHTML=data.cfg.gap?gapSent(qs,i[ses.from]):esc(qs);
+    $('#qTo').innerHTML=ses.look?'':'gesucht: '+ses.to.map(k=>FLAG(k)+' '+NAME[k]).join(', ');
     $('#qWord').innerHTML=esc(i[ses.from])
       +(window.speechSynthesis?' <button class="say" id="sayQ" aria-label="Vorlesen">&#9658;</button>':'');
     const sq=$('#sayQ'); if(sq) sq.onclick=ev=>{ev.stopPropagation(); say(i[ses.from],ses.from);};
@@ -882,7 +995,7 @@ const FORMS = __FORMS__;
     ses.getState=()=>gst(i,k,e.t);
     head(e,t);
     $('#qLat').textContent=k==='ru'?(i.rulat||''):'';
-    $('#qSent').innerHTML='';
+    $('#qSent').innerHTML=''; $('#qTo').innerHTML='';
     $('#qWord').innerHTML=esc(f.inf)+(f.pair?' <span class="pair">/ '+esc(f.pair)+'</span>':'')+(f.gender?' <span class="pair">· '+esc(f.gender)+'</span>':'')
       +(window.speechSynthesis?' <button class="say" id="sayQ" aria-label="Vorlesen">&#9658;</button>':'');
     const sq=$('#sayQ'); if(sq) sq.onclick=ev=>{ev.stopPropagation(); say(f.inf,k);};
@@ -916,6 +1029,7 @@ const FORMS = __FORMS__;
   const VSEL=[[0,'Nochmal'],[1,'Gut'],[2,'Leicht']];
   function reveal(){
     const e=ses.q[0], i=e.i, typing=data.cfg.mode==='type'&&!ses.look, multi=ses.to.length>1;
+    ses.revAt=Date.now();   // ein zweiter Tipp auf dieselbe Stelle träfe sonst ungesehen „Gut“
     $('#dmid').classList.add('rev');
     const hitRow=$('#ans tr.hit');
     if(hitRow) requestAnimationFrame(()=>{ const m=$('#dmid').getBoundingClientRect(), r=hitRow.getBoundingClientRect();
@@ -959,13 +1073,15 @@ const FORMS = __FORMS__;
     b.parentNode.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));
   });
   $('#grades').onclick=e=>{const b=e.target.closest('.g'); if(b) answer(+b.dataset.g);};
-  $('#apply').onclick=()=>{ if(ses&&ses.v&&!$('#apply').hidden) finish(ses.v); };
+  $('#apply').onclick=()=>{ if(ses&&ses.v&&!$('#apply').hidden&&!tooSoon()) finish(ses.v); };
   // Durchsehen: weiterblättern ohne Wertung
   function next(){ if(!ses||!ses.look) return; ses.q.shift(); ses.done++; show(); }
   $('#next').onclick=next;
   // eine Wertung für alle gezeigten Zielsprachen (Aufdecken-Modus oder eine Zielsprache)
+  // Sperre nach dem Aufdecken; die Prüfung tippt schneller als ein Mensch und setzt window.vtTapLock=0
+  const tooSoon=()=>Date.now()-(ses.revAt||0)<(window.vtTapLock===undefined?400:window.vtTapLock);
   function answer(g){
-    if(!ses||ses.look||$('#grades').hidden) return;
+    if(!ses||ses.look||$('#grades').hidden||tooSoon()) return;
     const v={}; ses.to.forEach(k=>v[k]=g); finish(v);
   }
   function finish(v){
@@ -973,15 +1089,51 @@ const FORMS = __FORMS__;
     let again=false;
     if(isForm(e)){ planG(i,e.k,e.t,v[e.k],t); again=v[e.k]===0; }
     else Object.keys(v).forEach(k=>{ plan(i,k,v[k],t); if(v[k]===0) again=true; });
+    const key=e.i.id+'|'+(isForm(e)?e.k+'.'+e.t:'');
+    if(again) ses.again.add(key); else if(!ses.again.has(key)) ses.known++;
     if(again) ses.q.push(e); else ses.done++;
+    ses.graded=true; data.days=data.days||{}; data.days[today()]=(data.days[today()]||0)+1;
     if(!store){ unsaved++; savebar(); }
     save(); show();
   }
+  // Ergebnis einer Runde mit dem Weg zur nächsten
+  function result(){
+    const c=counts(), t=Date.now(), next=c.dueList.length+c.take.length;
+    const tomorrow=pool().reduce((n,i)=>n+cardLangs(i).filter(k=>{ const x=st(i,k); return x&&x.d>t&&x.d<=t+DAY; }).length,0);
+    $('#counter').textContent=ses.total+' von '+ses.total; $('#cardState').textContent='Runde fertig';
+    $('#progFill').style.width='100%';
+    $('#qzone').hidden=true; $('#typeFields').hidden=true; $('#ans').hidden=true;
+    $('#dmid').classList.remove('rev','look');
+    const s=streak();
+    $('#rsheet').innerHTML='<h2 class="rhead">Runde geschafft</h2>'
+      +'<p class="rline"><b>'+ses.total+'</b> Karten · <b>'+ses.known+'</b> auf Anhieb gewusst · <b>'+ses.again.size+'</b> noch einmal geübt</p>'
+      +'<p class="rline">Morgen fällig: <b>'+tomorrow+'</b>'+(s>1?' · <b>'+s+'</b> Tage in Folge':'')+'</p>'
+      +(next?'':'<p class="rline">'+(c.freshList.length&&!c.newLeft?'Für heute ist alles erledigt. Neue Wörter gibt es morgen wieder, oder unter „Lernen“ mit „Weiter lernen“.':'Für heute ist alles erledigt.')+'</p>');
+    $('#rsheet').hidden=false;
+    ['#reveal','#next','#apply','#grades'].forEach(x=>$(x).hidden=true);
+    $('#roundNext').hidden=!next; $('#roundNext').textContent='Nächste Runde ('+Math.min(next,ROUND)+')';
+    $('#roundEnd').hidden=false;
+  }
+  $('#roundNext').onclick=()=>{ resetDrill(); $('#start').click(); };
+  $('#roundEnd').onclick=()=>stop();
+  function resetDrill(){ $('#rsheet').hidden=true; $('#roundNext').hidden=true; $('#roundEnd').hidden=true; $('#qzone').hidden=false; }
+  // Tage in Folge mit mindestens einer Bewertung; heute zählt mit, ein noch leerer heutiger Tag bricht die Serie nicht
+  function streak(){
+    const d=data.days||{}, day=new Date(); let n=0;
+    const key=x=>x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0');
+    if(!d[key(day)]) day.setDate(day.getDate()-1);
+    while(d[key(day)]){ n++; day.setDate(day.getDate()-1); }
+    return n;
+  }
   function stop(m){
+    const graded=ses&&ses.graded&&ses.q&&ses.q.length;
+    resetDrill();
     $('#drill').classList.remove('on'); document.body.classList.remove('drilling');
+    $('header').inert=false; $('.wrap').inert=false; $('#start').focus({preventScroll:true});
     ses=null; render();
     if(!store&&unsaved){ toast('Nicht vergessen: Fortschritt oben sichern'); }
     else if(m) toast(m);
+    else if(graded) toast('Gespeichert. Du kannst jederzeit weitermachen.');
   }
   $('#stop').onclick=()=>stop();
   document.addEventListener('keydown',e=>{
@@ -1003,7 +1155,8 @@ const FORMS = __FORMS__;
     $('#stat').className=store?'stat':'stat warn';
     $('#cNew').textContent=c.newLeft; $('#cDue').textContent=c.due; $('#cPool').textContent=c.pool;
     $('#deckPick').innerHTML=decks().map(d=>chip(d===deck,'data-d="'+esc(d)+'"',d==='alle'?'Alle Stapel':esc(d))).join('');
-    $('#catPick').innerHTML=cats().map(k=>chip(k===cat,'data-c="'+esc(k)+'"',k==='alle'?'Alle Kategorien':esc(k))).join('');
+    $('#catPick').innerHTML=deck==='alle'?'':cats().map(k=>chip(k===cat,'data-c="'+esc(k)+'"',k==='alle'?'Alle Themen':esc(k))).join('');
+    $('#catPick').hidden=deck==='alle';
     $('#cfgNew').value=data.cfg.newPerDay;
     $('#storeInfo').textContent=store?'Alles liegt lokal auf diesem Gerät. Kein Internet nötig.'
       :'Der Browser verweigert den Speicher. Bitte Sicherung als Datei ablegen.';
@@ -1013,21 +1166,21 @@ const FORMS = __FORMS__;
       : 'Dieses Gerät speichert nichts. Sichere den Code nach jeder Lernrunde, sonst ist der Fortschritt weg.';
     $('#statBlock').textContent=data.items.length+' Wörter · '+data.items.filter(i=>LANGS.some(k=>st(i,k))).length
       +' begonnen · '+data.items.filter(i=>LANGS.some(k=>(st(i,k)||{}).s>=4)).length+' sitzen fest · heute '+newToday()+' neue';
-    modeChips(); answerChips(); dirChips(); wLangChips(); progress();
+    modeChips(); answerChips(c); dirChips(); wLangChips(); progress();
     const miss=missing().length, mv=verbsMissing().length;
     $('#fillInfo').textContent=(miss?miss+' Wörter ohne vollständige Übersetzung oder Beispielsatz':'Alle Wörter sind vollständig übersetzt')
       +(mv?', '+mv+' Wörter ohne Formentafel.':'.');
     $('#fillGo').disabled=!(miss||mv);
     $('#repInfo').textContent=data.rep.length?data.rep.length+' gemeldete Formen, zuletzt '+data.rep[data.rep.length-1].inf+' ('+data.rep[data.rep.length-1].tense+').':'Keine Meldungen.';
     $('#repCopy').disabled=!data.rep.length; $('#repClear').disabled=!data.rep.length;
-    words();
+    if($('#v-words').classList.contains('on')) words();
   }
   const chip=(on,attr,inner,cls)=>'<button class="chipbtn'+(cls?' '+cls:'')+(on?' on':'')+'" aria-pressed="'+(on?'true':'false')+'" '+attr+'>'+inner+'</button>';
   const lchip=(k,on,attr)=>chip(on,attr,FLAG(k)+k.toUpperCase(),'l');
-  function answerChips(){
+  function answerChips(cc){
     $('#answerPick').innerHTML=MODES.map(([k,l])=>chip(data.cfg.mode===k,'data-a="'+k+'"',l)).join('');
     const m=MODES.find(([k])=>k===data.cfg.mode); $('#answerHint').textContent=m?m[2]:'';
-    const c=counts(), look=data.cfg.mode==='look', nothing=!look&&!c.due&&!c.take.length;
+    const c=cc||counts(), look=data.cfg.mode==='look', nothing=!look&&!c.due&&!c.take.length;
     const b=$('#start');
     b.textContent=look?'Durchsehen starten':nothing?(c.freshList.length?'Tagespensum erreicht':'Heute nichts fällig'):'Lernen starten';
     b.classList.toggle('done',nothing);
@@ -1097,8 +1250,8 @@ const FORMS = __FORMS__;
     else data.cfg.to=LANGS.filter(x=>x===k||to.includes(x));
     save(); render();
   };
-  $('#deckPick').onclick=e=>{const b=e.target.closest('[data-d]'), d=b&&b.dataset.d; if(d){deck=d; if(!cats().includes(cat)) cat='alle'; render();}};
-  $('#catPick').onclick=e=>{const b=e.target.closest('[data-c]'), k=b&&b.dataset.c; if(k){cat=k; render();}};
+  $('#deckPick').onclick=e=>{const b=e.target.closest('[data-d]'), d=b&&b.dataset.d; if(d){deck=d; if(deck==='alle'||!cats().includes(cat)) cat='alle'; data.cfg.deck=deck; data.cfg.cat=cat; save(); render();}};
+  $('#catPick').onclick=e=>{const b=e.target.closest('[data-c]'), k=b&&b.dataset.c; if(k){cat=k; data.cfg.cat=cat; save(); render();}};
 
   function words(){
     const q=$('#search').value.trim().toLowerCase();
@@ -1116,11 +1269,11 @@ const FORMS = __FORMS__;
       }).join('');
       return '<div class="row"><div class="rmain">'+(lines||'<div class="rl"><span class="rw">'+esc(i.en||i.de||'')+'</span></div>')
         +'<div class="rmeta">'+esc(i.cat||'')+(i.cat?' · ':'')+esc(i.deck||'Eigene')+(formsOf(i)?' · Formen':'')+'</div></div>'
-        +'<div class="rbtns"><button data-e="'+i.id+'">ändern</button><button data-x="'+i.id+'">löschen</button></div></div>';
+        +'<div class="rbtns"><button data-e="'+esc(i.id)+'">ändern</button><button data-x="'+esc(i.id)+'">löschen</button></div></div>';
     }).join('')||'<p class="empty">Nichts gefunden.</p>';
     $('#wCount').textContent=list.length+' Treffer'+(list.length>300?' (300 angezeigt)':'');
   }
-  $('#search').oninput=words;
+  let searchT=0; $('#search').oninput=()=>{ clearTimeout(searchT); searchT=setTimeout(words,150); };
   function wLangChips(){
     const wl=data.cfg.wl||LANGS;
     $('#wLangs').innerHTML=L.map(([k])=>lchip(k,wl.includes(k),'data-w="'+k+'"')).join('');
@@ -1139,7 +1292,8 @@ const FORMS = __FORMS__;
   $('#wDeck').onchange=words; $('#wCat').onchange=words;
   $('#list').onclick=e=>{
     const x=e.target.dataset.x, ed=e.target.dataset.e;
-    if(x){ data.items=data.items.filter(i=>i.id!==x); save(); fillSelects(); render(); toast('Gelöscht'); }
+    if(x){ const n=data.items.findIndex(i=>i.id===x); if(n<0) return; const [gone]=data.items.splice(n,1); save(); fillSelects(); render();
+      toast('Gelöscht. Hier tippen zum Rückgängigmachen.',()=>{ data.items.splice(n,0,gone); save(); fillSelects(); render(); toast('Wiederhergestellt'); }); }
     if(ed){ edit=data.items.find(i=>i.id===ed); fillForm(edit); go('new'); $('#fMsg').textContent='Eintrag wird geändert.'; }
   };
 
@@ -1419,8 +1573,9 @@ const FORMS = __FORMS__;
 
   /* Daten */
   function dl(n,t,ty){ const a=document.createElement('a');
-    a.href=URL.createObjectURL(new Blob([t],{type:ty})); a.download=n; a.click(); URL.revokeObjectURL(a.href); }
-  $('#expJson').onclick=()=>dl('vokabeln-'+today()+'.json',JSON.stringify(data),'application/json');
+    a.href=URL.createObjectURL(new Blob([t],{type:ty})); a.download=n; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),60000); }
+  // Sicherung ohne API-Schlüssel: die Datei landet oft in Notizen, Mails oder der Cloud
+  $('#expJson').onclick=()=>{ const d=Object.assign({},data); delete d.key; dl('vokabeln-'+today()+'.json',JSON.stringify(d),'application/json'); };
   $('#expCsv').onclick=()=>dl('vokabeln-'+today()+'.csv',
     'Englisch;Deutsch;Französisch;Polnisch;Russisch;Umschrift;Kategorie;Beispielsatz;Beispielsatz deutsch\n'
     +data.items.map(i=>[i.en,i.de,i.fr,i.pl,i.ru,i.rulat,i.cat,i.ex,i.exde].map(v=>'"'+(v||'').replace(/"/g,'""')+'"').join(';')).join('\n'),
@@ -1432,17 +1587,34 @@ const FORMS = __FORMS__;
       try{
         const txt=r.result;
         if(f.name.toLowerCase().endsWith('.json')){
-          const inc=JSON.parse(txt), items=inc.items||inc, known=new Set(data.items.map(i=>i.id));
-          let n=0; items.forEach(i=>{ if(i&&i.id&&!known.has(i.id)){ data.items.push(migrate(i)); n++; } });
-          if(inc.cfg) data.cfg=Object.assign(data.cfg,inc.cfg);
-          toast(n+' Wörter ergänzt');
+          const inc=JSON.parse(txt), raw=Array.isArray(inc)?inc:Array.isArray(inc.items)?inc.items:inc.v===2?unpack(inc).items:null;
+          if(!raw) throw new Error('kein Bestand');
+          const byId={}; data.items.forEach(i=>byId[i.id]=i);
+          let n=0, m=0;
+          raw.map(clean).forEach(i=>{
+            if(!i) return;
+            migrate(i);
+            const have=byId[i.id];
+            if(!have){ data.items.push(i); byId[i.id]=i; n++; return; }
+            // bekanntes Wort: Lernstand je Sprache und Tafel zusammenführen
+            have.p=have.p||{}; Object.keys(i.p).forEach(k=>{ const x=later(have.p[k],i.p[k]); if(x!==have.p[k]){ have.p[k]=x; m++; } });
+            if(i.g) Object.keys(i.g).forEach(k=>{ have.g=have.g||{}; have.g[k]=have.g[k]||{};
+              Object.keys(i.g[k]).forEach(t=>{ const x=later(have.g[k][t],i.g[k][t]); if(x!==have.g[k][t]){ have.g[k][t]=x; m++; } }); });
+          });
+          if(inc.log&&typeof inc.log==='object') Object.keys(inc.log).forEach(d=>{ if(/^\d{4}-\d\d-\d\d$/.test(d)&&isFinite(inc.log[d])) data.log[d]=Math.max(data.log[d]||0,+inc.log[d]); });
+          if(inc.days&&typeof inc.days==='object'){ data.days=data.days||{}; Object.keys(inc.days).forEach(d=>{ if(/^\d{4}-\d\d-\d\d$/.test(d)&&isFinite(inc.days[d])) data.days[d]=Math.max(data.days[d]||0,+inc.days[d]); }); }
+          toast(n+' Wörter ergänzt, '+m+' Lernstände übernommen');
         }else{
           const lines=txt.split(/\r?\n/).filter(x=>x.trim()); let n=0;
+          // eigenes Exportformat (neun Spalten mit Französisch an dritter Stelle) oder Englisch;Deutsch;Kategorie;Beispielsatz
+          const head=lines[0]?lines[0].split(';').map(x=>x.replace(/^"|"$/g,'').trim().toLowerCase()):[];
+          const own=head[2]==='französisch';
           lines.slice(1).forEach(line=>{
-            const c=line.split(';').map(x=>x.replace(/^"|"$/g,'').trim());
+            const c=line.split(';').map(x=>x.replace(/^"|"$/g,'').replace(/""/g,'"').trim());
             if(!c[0]&&!c[1]) return;
-            data.items.push({id:'c'+Date.now()+'-'+(n++),en:c[0]||'',de:c[1]||'',cat:c[2]||'',ex:c[3]||'',
-              exde:c[8]||'',deck:f.name.replace(/\.[^.]+$/,''),p:{}});
+            data.items.push(own
+              ?{id:'c'+Date.now()+'-'+(n++),en:c[0]||'',de:c[1]||'',fr:c[2]||'',pl:c[3]||'',ru:c[4]||'',rulat:c[5]||'',cat:c[6]||'',ex:c[7]||'',exde:c[8]||'',deck:f.name.replace(/\.[^.]+$/,''),p:{}}
+              :{id:'c'+Date.now()+'-'+(n++),en:c[0]||'',de:c[1]||'',cat:c[2]||'',ex:c[3]||'',exde:'',deck:f.name.replace(/\.[^.]+$/,''),p:{}});
           });
           toast(n+' Wörter angelegt');
         }
@@ -1479,16 +1651,34 @@ const FORMS = __FORMS__;
   };
   $('#resetBtn').onclick=()=>{
     if(!confirm('Alle Fälligkeiten zurücksetzen? Die Wörter bleiben erhalten.')) return;
-    data.items.forEach(i=>{i.p={}; delete i.g;}); data.log={}; delete data.more;
+    data.items.forEach(i=>{i.p={}; delete i.g;}); data.log={}; data.days={}; delete data.more;
     if(!data.items.length) data.items=SEED.map(s=>migrate(Object.assign({},s)));
     save(); fillSelects(); render(); toast('Zurückgesetzt');
   };
 
-  $('#welcomeGo').onclick=()=>{ $('#welcome').hidden=true; try{localStorage.setItem(KEY+'-seen','1');}catch(e){} };
-  $('#helpBtn').onclick=()=>{ $('#welcome').hidden=false; };
+  // Begrüßung: Sprache und Stapel zum Anfangen wählen; beim erneuten Öffnen über „Hilfe“ ist die aktuelle Wahl vorbelegt
+  const WDECKS=['Alltag','Küche','Reisen','Beruf','Gesundheit','Wohnen','Auto','Personalgewinnung','alle'];
+  let wSel={lang:'en',deck:'Alltag'};
+  function welcomeFill(first){
+    wSel=first?{lang:'en',deck:'Alltag'}:{lang:data.cfg.from==='mix'?'en':(data.cfg.to||['en'])[0],deck};
+    const have=decks();
+    $('#wLang').innerHTML=['en','fr','pl','ru'].map(k=>lchip(k,wSel.lang===k,'data-wl="'+k+'"')).join('');
+    $('#wDeckPick').innerHTML=WDECKS.filter(d=>d==='alle'||have.includes(d)).map(d=>chip(wSel.deck===d,'data-wd="'+esc(d)+'"',d==='alle'?'Alle Stapel':esc(d))).join('');
+  }
+  $('#wLang').onclick=e=>{ const b=e.target.closest('[data-wl]'); if(b){ wSel.lang=b.dataset.wl; $('#wLang').querySelectorAll('[data-wl]').forEach(x=>{ const on=x===b; x.classList.toggle('on',on); x.setAttribute('aria-pressed',on); }); } };
+  $('#wDeckPick').onclick=e=>{ const b=e.target.closest('[data-wd]'); if(b){ wSel.deck=b.dataset.wd; $('#wDeckPick').querySelectorAll('[data-wd]').forEach(x=>{ const on=x===b; x.classList.toggle('on',on); x.setAttribute('aria-pressed',on); }); } };
+  $('#welcomeGo').onclick=()=>{
+    // Englisch: Deutsch und Englisch im Wechsel wie bisher; sonst von Deutsch in die gewählte Sprache
+    if(wSel.lang==='en'){ data.cfg.from='mix'; } else { data.cfg.from='de'; data.cfg.to=[wSel.lang]; }
+    deck=wSel.deck; cat='alle'; data.cfg.deck=deck; data.cfg.cat=cat;
+    save(); render();
+    $('#welcome').hidden=true; try{localStorage.setItem(KEY+'-seen','1');}catch(e){}
+  };
+  $('#helpBtn').onclick=()=>{ welcomeFill(false); $('#welcome').hidden=false; };
   function go(v){
     document.querySelectorAll('nav button').forEach(b=>{ b.classList.toggle('on',b.dataset.v===v); if(b.dataset.v===v) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
     document.querySelectorAll('.view').forEach(s=>s.classList.toggle('on',s.id==='v-'+v));
+    if(v==='words') words();
     window.scrollTo(0,0);
   }
   document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>go(b.dataset.v));
@@ -1496,8 +1686,14 @@ const FORMS = __FORMS__;
   let firstRun=false;
   try{ firstRun=!localStorage.getItem(KEY+'-seen'); }catch(e){ firstRun=true; }
   try{
-    load(); formHtml(); fillForm({}); fillSelects(); listLangChips(); $('#apiKey').value=data.key||''; render(); save();
-    if(firstRun) $('#welcome').hidden=false;
+    load();
+    // gemerkte Auswahl, sofern es den Stapel und das Thema noch gibt
+    if(data.cfg.deck&&decks().includes(data.cfg.deck)) deck=data.cfg.deck;
+    if(deck!=='alle'&&data.cfg.cat&&cats().includes(data.cfg.cat)) cat=data.cfg.cat;
+    formHtml(); fillForm({}); fillSelects(); listLangChips(); $('#apiKey').value=data.key||''; render(); save();
+    if(firstRun){ welcomeFill(true); $('#welcome').hidden=false; }
+    // iOS und andere Browser bitten, den Speicher nicht bei Platzmangel zu räumen
+    if(store&&navigator.storage&&navigator.storage.persist) navigator.storage.persist().catch(()=>{});
     fromLink();
   }catch(err){
     document.body.innerHTML='<div style="max-width:440px;margin:60px auto;padding:0 20px;font-family:'
@@ -1507,10 +1703,17 @@ const FORMS = __FORMS__;
       +'Meist hilft ein Zurücksetzen – die mitgelieferten Wörter sind in der Datei gespeichert und gehen dabei nicht verloren. '
       +'Nur selbst angelegte Wörter und der Lernfortschritt auf diesem Gerät werden entfernt.</p>'
       +'<p style="font-size:12px;color:var(--faint);margin-top:14px">'+String(err&&err.message||err)+'</p>'
+      +'<button id="rawcopy" style="margin-top:18px;width:100%;padding:14px;border:1px solid var(--edge);border-radius:8px;'
+      +'background:none;color:var(--ink);font-size:15px;font-family:inherit">Gespeicherte Daten zuerst kopieren</button>'
       +'<button id="rescue" style="margin-top:18px;width:100%;padding:14px;border:0;border-radius:10px;'
       +'background:var(--ink);color:var(--onink);font-size:15px;font-weight:600;font-family:inherit">Zurücksetzen und neu starten</button></div>';
+    document.getElementById('rawcopy').onclick=()=>{
+      let raw=''; try{ raw=localStorage.getItem(KEY2)||localStorage.getItem(KEY)||''; }catch(e){}
+      (navigator.clipboard?navigator.clipboard.writeText(raw):Promise.reject()).then(()=>{ document.getElementById('rawcopy').textContent='Kopiert – jetzt in eine Notiz einfügen'; },
+        ()=>{ const t=document.createElement('textarea'); t.value=raw; t.style.cssText='width:100%;height:160px;margin-top:12px'; document.getElementById('rawcopy').after(t); t.select(); });
+    };
     document.getElementById('rescue').onclick=()=>{
-      try{ localStorage.removeItem(KEY); localStorage.removeItem(KEY+'-seen'); }catch(e){}
+      try{ localStorage.removeItem(KEY2); localStorage.removeItem(KEY); localStorage.removeItem(KEY+'-seen'); }catch(e){}
       location.reload();
     };
   }
