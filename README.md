@@ -32,6 +32,11 @@ Ein Begriff erscheint, dazu der Beispielsatz mit Lücke. Antwort überlegen, dan
 Die Leiter: 1, 3, 7, 16, 35, 75, 150, 300 Tage. Auf jedem Knopf steht, wann die Karte
 wiederkommt.
 
+Gelernt wird in Runden zu höchstens 20 Karten. Danach zeigt die App, wie viele Karten
+auf Anhieb saßen, was morgen fällig ist und wie viele Tage in Folge du gelernt hast, und
+bietet die nächste Runde an. Beim ersten Start fragt sie, welche Sprache du lernst und
+mit welchem Stapel du anfangen willst.
+
 ### Antwortmodus
 
 Auf der Lernseite lässt sich wählen, wie geantwortet wird:
@@ -60,6 +65,11 @@ und, nach Antippen, je Thema ein Balken aus sicher (Abstand 35 Tage und mehr), i
 und neu, wahlweise für die Lernrichtung oder eine einzelne Sprache.
 
 ## Erscheinungsbild
+
+Die App sieht aus wie ein Lehrbuch mit Karteikasten: warmes Papier, schwarze Tinte, die
+Buchschrift Literata für alles, was man liest, und IBM Plex Sans für die Bedienung. Beide
+Schriften liegen in `fonts/` und funktionieren offline; Literata setzt auch die russischen
+Betonungszeichen richtig. Das Zeichen der App ist ein V mit Betonungsakzent.
 
 Die App folgt der Systemeinstellung: dunkel oder hell. Jede Sprache hat eine Flagge und
 eine feste Farbe, die sich durch Lernkarte, Richtungswahl, Wörterliste und Formular

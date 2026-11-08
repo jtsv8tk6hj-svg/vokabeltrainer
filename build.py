@@ -42,20 +42,12 @@ STAPEL_SUBSTANTIVE = "Substantive"
 STAPEL_ADJEKTIVE = "Adjektive"
 STAPEL_PRONOMEN = "Pronomen"
 
-# Als data:-URI eingebettet, damit iOS beim Ablegen auf dem Home-Bildschirm
-# sofort ein Symbol hat, ohne eine zweite Datei zu laden.
-APPLE_ICON = (
-    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E"
-    "%3Crect width='180' height='180' rx='40' fill='%230e1013'/%3E"
-    "%3Ctext x='90' y='120' font-size='96' font-family='Georgia,serif' fill='%23eceef1' "
-    "text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E"
-)
-
 KOPF_ALT = "<title>Vokabeltrainer</title>"
 KOPF_NEU = (
     '<title>Vokabeltrainer</title>\n'
     '<link rel="manifest" href="manifest.webmanifest">\n'
-    '<link rel="apple-touch-icon" href="' + APPLE_ICON + '">\n'
+    '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n'
+    '<link rel="icon" href="icon.svg" type="image/svg+xml">\n'
     '<meta name="apple-mobile-web-app-title" content="Vokabeln">'
 )
 

@@ -162,3 +162,24 @@ ein Balken über die volle Breite (6 px bei Stapeln, 4 px bei Themen); Themenzei
 Trennlinie mit 24 px Einrückung; Stapelzeile mit `--card`-Hintergrund, sodass die
 aufgeklappten Themen sichtbar zur Gruppe gehören. Die Erklärung in ein `details`
 falten. Tipp-Ziele bleiben über 40 px, `aria-label` je Zeile bleibt.
+
+## Zweite Prüfrunde (08.11.2026): Entwickler, UX, Design
+
+Drei Fachprüfungen, umgesetzt am selben Tag:
+
+- **Entwickler:** Service Worker überschrieb offline die App mit der Anleitung (behoben),
+  Ids ungeprüft im HTML (behoben, dazu `clean()` und CSP), Sicherungsdatei brachte den
+  Lernstand nicht zurück und enthielt den API-Schlüssel (behoben), Doppeltipp bewertete
+  ungesehen (Sperre 400 ms), Speicher schrieb 1,1 MB je Bewertung (Speicherform v2, rund
+  1 KB), volle Speicher still verloren (Hinweis und erneuter Versuch). Offen:
+  **stabile Kennungen** (der Fortschritts-Code VT2 nutzt die Position im Grundstock; eine
+  eingefügte Zeile in einer CSV verschiebt Lernstände) und die Aufteilung der einen großen
+  Skriptfunktion.
+- **UX:** Runden zu 20 mit Ergebnisblatt, Tagesserie, Begrüßung mit Sprach- und
+  Stapelwahl, Neues gemischt statt zuerst Personalgewinnung, Themen-Chips nur bei einem
+  Stapel, Zeile „was gleich abgefragt wird“ über dem Startknopf, gesuchte Sprache auf der
+  Frageseite, Neu und Daten neu geordnet, klarere Begriffe. Offen: Richtungswahl als
+  „Ich lerne“ statt Von/Nach auf der Lernseite, Einstellungen als Blatt hinter „ändern“.
+- **Design:** Lehrbuch statt Dashboard: Literata und IBM Plex Sans, Papier- und
+  Tintenpalette, Linien statt Kästen, Kassenbuch-Zähler, Signet V́, neues App-Symbol.
+

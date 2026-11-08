@@ -3,31 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0e1013" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#f5f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)">
 <title>Kurzbefehl: Notiz in den Vokabeltrainer</title>
 <style>
-  :root{ --bg:#0e1013; --card:#181b21; --raise:#20242b; --line:#2b3038; --ink:#eceef1; --dim:#a2aab4; --faint:#8b939d; --fr:#5ecfa4; --link:#7aa7ff;
-         --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
-         --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; color-scheme:dark }
+  /* dieselben Schriften und Tokens wie die App (src/template.html) */
+  @font-face{font-family:"Literata";font-weight:400;font-display:swap;src:url(fonts/literata-latin-400-normal.woff2) format("woff2")}
+  @font-face{font-family:"Literata";font-weight:600;font-display:swap;src:url(fonts/literata-latin-600-normal.woff2) format("woff2")}
+  @font-face{font-family:"Plex";font-weight:400;font-display:swap;src:url(fonts/ibm-plex-sans-latin-400-normal.woff2) format("woff2")}
+  @font-face{font-family:"Plex";font-weight:600;font-display:swap;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2")}
+  :root{ --bg:#151311; --card:#1e1b18; --raise:#28241f; --line:#36312b; --ink:#eee8dd; --dim:#b8afa1; --faint:#9a9184; --fr:#6fc898; --link:#8fb0ee;
+         --serif:"Literata","Iowan Old Style",Georgia,serif;
+         --sans:"Plex",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color-scheme:dark }
   @media (prefers-color-scheme: light){
-    :root{ --bg:#f5f4ef; --card:#ffffff; --raise:#edebe4; --line:#e1dfd7; --ink:#1a1c21; --dim:#4b535e; --faint:#646c76; --fr:#3fae84; --link:#2f63c9; color-scheme:light }
+    :root{ --bg:#f3efe6; --card:#fbf9f4; --raise:#e8e3d7; --line:#dcd5c7; --ink:#1e1b16; --dim:#4d473e; --faint:#6a6358; --fr:#1d6e47; --link:#2f5aa8; color-scheme:light }
   }
   *{box-sizing:border-box}
   body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:15px; line-height:1.55;
        padding:calc(18px + env(safe-area-inset-top,0px)) 16px calc(40px + env(safe-area-inset-bottom,0px))}
   main{max-width:640px; margin:0 auto}
   h1{font-family:var(--serif); font-size:24px; font-weight:600; margin:0 0 6px}
-  h2{font-size:16px; font-weight:600; margin:0 0 10px}
+  h2{font-family:var(--serif); font-size:18px; font-weight:600; margin:0 0 10px}
   .lead{color:var(--dim); margin:0 0 18px}
-  .panel{background:var(--card); border:1px solid var(--line); border-radius:13px; padding:16px; margin-bottom:14px}
+  .panel{background:none; border:0; border-top:1px solid var(--ink); border-radius:0; padding:12px 0 20px; margin:0}
   ol,ul{margin:0; padding-left:22px}
   li{margin-bottom:9px}
   li:last-child{margin-bottom:0}
   b{font-weight:600}
-  code{font-family:ui-monospace,Menlo,monospace; font-size:13px; background:var(--raise); padding:2px 6px; border-radius:5px; white-space:nowrap}
-  pre{background:var(--raise); border:1px solid var(--line); border-radius:9px; padding:10px 12px; overflow:auto; margin:8px 0 0; font-size:13px}
-  .act{display:inline-block; border:1px solid var(--line); border-radius:7px; padding:1px 8px; color:var(--ink); background:var(--raise); font-weight:600; font-size:13.5px}
+  code{font-family:ui-monospace,Menlo,monospace; font-size:13px; background:var(--raise); padding:2px 6px; border-radius:3px; white-space:nowrap}
+  pre{background:var(--raise); border:1px solid var(--line); border-radius:6px; padding:10px 12px; overflow:auto; margin:8px 0 0; font-size:13px}
+  .act{display:inline-block; border:1px solid var(--line); border-radius:6px; padding:1px 8px; color:var(--ink); background:var(--raise); font-weight:600; font-size:13.5px}
   .hint{font-size:13px; color:var(--faint)}
   .ok{border-left:4px solid var(--fr)}
   a{color:var(--link)}

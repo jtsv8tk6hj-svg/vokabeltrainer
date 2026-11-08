@@ -37,12 +37,18 @@ daten/formen.json                   Formentafeln je Wort (Konjugation, Deklinati
 formen.py                           erzeugt und prüft die Formentafeln über die API (auf dem eigenen Rechner)
 index.html                          erzeugt — nicht von Hand bearbeiten
 sw.js                               Service Worker (Offline-Betrieb)
-manifest.webmanifest, icon.svg      Home-Bildschirm-Symbol
+manifest.webmanifest, icon.svg      Home-Bildschirm-Symbol (Signet V́ auf Papier)
+apple-touch-icon.png                Symbol für iOS (180 × 180, iOS nimmt kein SVG)
+fonts/                              Literata und IBM Plex Sans als woff2 (SIL OFL, Lizenzen daneben)
 .nojekyll                           verhindert Jekyll-Verarbeitung auf GitHub Pages
 kurzbefehl.html                     Anleitung für den Apple-Kurzbefehl (statisch, von Hand gepflegt)
 WEITERENTWICKLUNG.md                Rechercheergebnisse und Gestaltungsvorschläge (Stand 19.10.2026)
 test/pruefung.js                    Playwright-Prüfung der App (siehe „Prüfen")
 ```
+
+Die App ist eine HTML-Datei plus Schriften: `fonts/` liegt neben `index.html`, wird vom
+Service Worker vorgehalten und relativ eingebunden. Fehlen die Schriften (lokal geöffnete
+Datei ohne Ordner), greifen die Systemschriften; nichts bricht.
 
 **Wichtig:** `index.html` ist ein Erzeugnis. Änderungen an der App gehören in
 `src/template.html`, Änderungen am Wortschatz in `daten/`. Wer `index.html` direkt
@@ -105,8 +111,25 @@ Gegenstück (Deutsch ↔ Englisch, andere Fragesprachen nach Deutsch).
 eintippen) oder `look` (nur anschauen). Das frühere Feld `cfg.typing` wird in `load()`
 nach `mode` übernommen und gelöscht.
 
-Speicherschlüssel: `localStorage["vokabeltrainer-v1"]`, dazu
-`vokabeltrainer-v1-seen` für die einmalige Begrüßung.
+Weitere Felder: `days` (Bewertungen je Tag, für die Tagesserie), `cfg.deck`/`cfg.cat`
+(gemerkte Auswahl), `cfg.prog` (Sprache der Fortschrittsübersicht).
+
+**Speicher (v2).** Schlüssel `localStorage["vokabeltrainer-v2"]`, dazu
+`vokabeltrainer-v1-seen` für die Begrüßung. Gespeichert wird nicht mehr der ganze Bestand,
+sondern `pack(data)`: je Grundstock-Id nur, was vom `SEED` abweicht (`st`: Lernstand `p`
+und `g`, nachgetragene Felder, eigene Änderungen), die eigenen Wörter vollständig (`own`)
+und die Ids gelöschter Grundstockwörter (`del`); `unpack()` baut beim Laden daraus
+`data.items` (eigene zuerst, dann der Grundstock in seiner Reihenfolge). Ein frischer
+Stand ist damit rund 1 KB statt 1,1 MB, und Korrekturen an Grundstocktexten erreichen
+bestehende Nutzer. Liegt nur ein alter `vokabeltrainer-v1` vor, übernimmt `load()` ihn:
+Lernstand, eigene Wörter, Löschungen und Einstellungen bleiben, für Grundstockfelder
+mit Text gilt der aktuelle `SEED` (nur leere Grundstockfelder behalten nachgetragene
+Werte; Änderungen an Grundstockwörtern aus v1-Zeiten gehen dabei verloren). v1 bleibt
+als Rückfall liegen. Schlägt das Schreiben fehl, zeigt der rote Balken „Sichern“; bei
+vollem Speicher versucht `save()` es beim nächsten Mal erneut. `window.vtStore`
+(`read()`, `write(d)`) liest und schreibt den Speicher ausgepackt, für Prüfung und
+Fehlersuche. Beim Start bittet die App per `navigator.storage.persist()` darum, den
+Speicher nicht zu räumen.
 
 ## Lernverfahren
 
@@ -124,6 +147,24 @@ LADDER = [1, 3, 7, 16, 35, 75, 150, 300]   // Tage
 Auf jedem Knopf steht der tatsächlich resultierende Abstand. Eine neue Karte
 startet bei Stufe 0 (Gut → 1 Tag) bzw. Stufe 1 (Leicht → 3 Tage). Der Wiederanlauf
 nach „Nochmal“ zählt wie neu: Gut führt wieder zu Stufe 0.
+
+**Runden.** Eine Runde hat höchstens 20 Karten (`ROUND`, `roundOf()`); liegt viel
+Fälliges an, bleibt trotzdem ein Viertel für Neues. Neues kommt bei „alle Stapel“
+reihum aus den Stapeln in zufälliger Stapelfolge (`interleave()`), sonst begann jeder mit
+Personalgewinnung. Nach der letzten Karte steht ein Ergebnisblatt im Lernfenster (`result()`):
+Karten, auf Anhieb gewusst, noch einmal geübt, morgen fällig, Tage in Folge (`streak()` aus
+`data.days`), dazu **Nächste Runde (n)** und **Fertig**. Im gemischten Modus zählt eine
+Wortkarte fürs Pensum und die Zähler einmal (`eState()`), weil sie genau eine Richtung
+fragt. Die Kopfzeile zählt „3 von 20“. Kurz nach dem Aufdecken (400 ms, `tooSoon()`)
+nimmt die App keine Bewertung an: ein Doppeltipp auf „Aufdecken“ träfe sonst ungesehen
+„Gut“. Die Prüfung setzt `window.vtTapLock=0`.
+
+**Begrüßung.** Drei Sätze, dann „Ich lerne“ (EN, FR, PL, RU) und „Anfangen mit“
+(Alltag vorgewählt, Personalgewinnung weiter hinten). Englisch setzt `from: 'mix'`, die
+anderen Sprachen „Deutsch → Sprache“; der Stapel wird gemerkt. Der frühere Langtext steht
+aufklappbar darunter („Mehr zur Bedienung“). Über *Daten → Hilfe* öffnet sich dieselbe
+Begrüßung mit der aktuellen Wahl vorbelegt. Auf der Frageseite steht klein „gesucht:
+Polnisch“ (`#qTo`), nach dem Aufdecken nicht mehr.
 
 **Tagespensum und Weitermachen.** Das Pensum (`cfg.newPerDay`, Vorgabe 20) begrenzt
 neue Karten je Tag; Wiederholungen sind nie begrenzt. Ist es erreicht und liegt in der
@@ -324,6 +365,17 @@ Sprache: „Lernrichtung“ (`cfg.prog = 'auto'`, bei `mix` Deutsch und Englisch
 Ein dezenter Hinweis „Vokabeltrainer von CJL“ steht am Ende der Begrüßung und am Ende
 der Seite *Daten*.
 
+**Seitenaufbau.** Lernseite: Zähler, Fortschrittsleiste, Zeile „Deutsch → Polnisch ·
+Küche · ändern“ (`selLine()`), Startknopf, dann die Abschnitte „Was lernen“ (Stapel,
+Themen nur bei einem gewählten Stapel), Richtung, „Wie antworten“, Fortschritt. *Neu*:
+Liste übernehmen, Wort anlegen, Thema aufbereiten, Automatisch übersetzen (Schlüssel),
+Fehlende Übersetzungen (nur sichtbar, wenn etwas fehlt). *Daten*: Neue Wörter pro Tag,
+Lernweise, Hilfe, Sichern (Datei), Auf ein anderes Gerät (Code), Meldungen, Bestand mit
+rotem „Zurücksetzen“. Die Sicherungsdatei enthält keinen API-Schlüssel und bringt beim
+Einlesen den Lernstand bekannter Wörter zurück (je Sprache und Tafel der weiter
+fortgeschrittene Stand). Löschen in der Wörterliste lässt sich über den Hinweis unten
+rückgängig machen.
+
 ## Didaktische Festlegungen
 
 Diese sind nicht beliebig — sie wurden mit fremdsprachendidaktischer Begründung so
@@ -384,24 +436,43 @@ ein `stop_reason: "refusal"` wird als Fehler gemeldet.
 Ziel ist eine App, die auch außerhalb des Dienstes gern genutzt wird und später als
 Produkt bestehen kann. Deshalb gelten feste Regeln:
 
+- **Richtung: Lehrbuch und Karteikasten, nicht Dashboard.** Warmes Papier, schwarze Tinte,
+  eine Buchschrift für alles, was man liest und lernt, eine nüchterne Grotesk für die
+  Bedienung. Abschnitte trennt eine Tintenlinie mit Überschrift (`.panel` ohne Kasten);
+  Kästen gibt es nur für Dinge, die man anfasst (Lösungskarte, Felder, Knöpfe). Die Zähler
+  stehen als Kassenbuchzeile, der Startknopf trägt einen Pfeil, das Urteil ist eine
+  verbundene Leiste. Entworfen nach einer Designkritik (Stand in `WEITERENTWICKLUNG.md`).
+- **Schriften** selbst gehostet in `fonts/`: **Literata** (400, 400 kursiv, 600; latin,
+  latin-ext, cyrillic) für Wörter, Sätze, Überschriften, Erklärtext und Zahlen, **IBM Plex
+  Sans** (400, 600; latin, latin-ext) für Reiter, Knöpfe, Chips und Etiketten, zusammen
+  rund 250 KB. Der Kyrillisch-Abschnitt von Literata enthält U+0301 in seiner
+  `unicode-range`, damit das Betonungszeichen aus derselben Datei wie der Buchstabe kommt
+  und richtig sitzt (mit Systemschriften stand es neben dem Vokal).
+- **Signet:** ein V mit Akut über einer Grundlinie, das Betonungszeichen, das die App im
+  Russischen lehrt (`<symbol id="sig">`, `currentColor`); dasselbe als `icon.svg` und
+  `apple-touch-icon.png`.
 - **Farben nur über Tokens** in `:root` (`--bg --card --raise --line --edge --ink
   --onink --dim --faint`, Sprachfarben `--de … --ru`, Urteilsfarben `--ok --mid --bad`,
-  Warn- und Sicherfarben). Keine festen Hexwerte in Regeln oder in erzeugtem HTML.
+  Warn- und Sicherfarben, `--focus` für den Fokusring, `--shade` für Schatten, Radien
+  `--r` 6 px und `--r-big` 8 px). Keine festen Hexwerte in Regeln oder in erzeugtem HTML.
 - **Eine Farbe, eine Bedeutung.** Sprachfarben stehen nur an Kürzeln (`.t-xx`), Chips
   und Wörterliste. Alles, was ein Urteil oder einen Stand meint, nutzt `--ok` (richtig,
   sicher, Leicht, Randbalken der Lösungskarte, Fortschrittsbalken, Fragewörter), `--mid`
-  (im Lernen) und `--bad` (falsch, fällig, Nochmal, Warnung). Nochmal und Leicht tragen
-  zusätzlich einen 3-px-Balken unten (`box-shadow`, damit die Knöpfe gleich hoch
-  bleiben), so bleibt die Bedeutung auch ohne Farbsehen lesbar. `--ok` ist bewusst nicht
-  `--fr`, sonst hieße die grüne Lösungskarte „Französisch“. Das **helle Schema** kommt über
-  `prefers-color-scheme: light` und tauscht nur die Tokens; `theme-color` ist je Schema
-  gesetzt. Die Anleitungsseite `kurzbefehl.html` führt dieselben Tokens.
-- **Kontraste geprüft** (WCAG 2.1 AA): `faint` ≥ 4,5:1 auf `bg` und `card`
-  (`#8b939d`, das frühere `#727b86` lag bei 4,0:1), Ränder von Knöpfen und Chips über
-  `--edge` ≥ 3:1 (`--line` ist nur für Trennlinien und Kartenränder, 1,3:1).
-  Sprachfarben tragen dunklen Text `--ontag`.
+  (im Lernen) und `--bad` (falsch, fällig, Nochmal, Warnung, Zurücksetzen). Nochmal und
+  Leicht tragen zusätzlich einen 3-px-Balken unten (`box-shadow`, damit die Knöpfe gleich
+  hoch bleiben), so bleibt die Bedeutung auch ohne Farbsehen lesbar. Im Dunkeln sind
+  `--ok` und `--mid` gleich hell; der Fortschrittsbalken hat deshalb eine Fuge zwischen
+  den Anteilen. Einfachwahl-Chips sind gewählt voll in Tinte, Mehrfachwahl (`.toggle`:
+  Zielsprachen, „Zeigen“, Lernweise) gewählt nur mit Tintenrand. Das **helle Schema** kommt
+  über `prefers-color-scheme: light` und tauscht nur die Tokens; `theme-color` ist je
+  Schema gesetzt (#f3efe6 hell, #151311 dunkel). `kurzbefehl.html` führt dieselben Tokens
+  und Schriften.
+- **Kontraste geprüft** (WCAG 2.1 AA): `dim` und `faint` ≥ 4,5:1 auf `bg`, `card` und
+  `raise` (hell `faint` #6a6358: 5,2:1 auf bg), `ok` und `bad` ≥ 5,4:1, Ränder von
+  Knöpfen, Chips und Feldern über `--edge` ≥ 3:1 (`--line` ist nur für Trennlinien,
+  1,3:1), Sprachfarben mit dunklem Text `--ontag` ≥ 8:1.
 - **Tipp-Ziele** mindestens 40 px hoch (Chips, Urteil-Knöpfe, Reiter 44 px,
-  Vorlese-Knopf 34 px).
+  Vorlese-Knopf 34 px, ein Lautsprecher-Symbol statt ►).
 - **Flaggen** sind eingebettete SVG-Grafiken (`.flag.f-xx`), weil Emoji-Flaggen auf
   Windows nicht dargestellt werden. Sie stehen überall neben dem farbigen
   Sprachkürzel (`TAG()`), in der Richtungswahl, in der Wörterliste und im Formular.
@@ -431,7 +502,7 @@ eine ausdrückliche Anforderung für das iPhone.
 
 ## Fallen, die schon zugeschnappt sind
 
-Alle fünf haben in der Praxis Zeit gekostet. Sie stehen hier, damit sie nicht
+Alle sieben haben in der Praxis Zeit gekostet. Sie stehen hier, damit sie nicht
 wiederkehren.
 
 **1. `display` schlägt das `hidden`-Attribut.** Eine Regel wie `.grades{display:grid}`
@@ -458,6 +529,17 @@ zeigt statt einer toten Seite einen Knopf zum Zurücksetzen.
 der Bereich (lange Tafeln, polnische Vergangenheit), schiebt Flexbox den Anfang über den
 oberen Rand hinaus, wo er nicht erreichbar ist, und die klebrige Frage verdeckte ihn.
 Deshalb `.dmid.rev, .dmid.look{justify-content:flex-start}`, vorher `safe center`.
+
+**6. Service Worker überschrieb die App.** Jede Navigation wurde unter `./index.html`
+abgelegt; wer `kurzbefehl.html` online öffnete, startete danach offline die Anleitung statt
+der App. Jetzt gilt nur `/` und `/index.html` als App, andere Seiten liegen unter ihrer
+eigenen Adresse; das Netz bekommt 2,5 s, dann antwortet der Speicher. Cache-Name v12.
+
+**7. Escaping von Ids.** `i.id` ging ungeprüft in `data-e`/`data-x`; eine präparierte
+Sicherungsdatei konnte Skript ausführen. Jetzt `esc(i.id)`, und alle fremden Einträge
+(Datei, Fortschritts-Code) laufen durch `clean()`: Id nur aus Wortzeichen, Textfelder als
+Text, Lernstand als Zahlen. Dazu eine Content-Security-Policy im Kopf: Verbindungen nur
+zur eigenen Seite und zu `api.anthropic.com`.
 
 **4. Datumsgrenze nach Weltzeit.** `toISOString()` für den Tagesschlüssel ordnete
 alles zwischen Mitternacht und 02:00 dem Vortag zu. `today()` rechnet jetzt in
@@ -504,7 +586,12 @@ Formen-Abruf über die Attrappe), Kasuskarten (Stapel Substantive, Genus, sechs
 russische Fälle, Fragewörter), Adjektiv- und Pronomenkarten, Themen je Stapel,
 „Thema aufbereiten“ mit Dubletten über die Attrappe, Selbstheilung bei leerem Speicherstand und
 Offline-Start über den Service Worker. Jede Zeile der Ausgabe beginnt mit `OK` oder `FEHL`, der
-Exit-Code ist 1 bei Fehlschlägen. Neue Fälle dort ergänzen, nach demselben Muster:
+Exit-Code ist 1 bei Fehlschlägen. Stand: 138 Fälle, darunter Runden und Ergebnisblatt,
+gemischtes Neues, Tagesserie, Begrüßung mit Sprachwahl, Speicher v2 mit Übernahme aus
+v1, Sicherungsdatei hin und zurück, abgewiesene präparierte Importe, Doppeltipp-Sperre,
+`inert` beim Lernen und Offline-Start nach Besuch der Anleitung. Den Speicher lesen und
+schreiben die Fälle über `vtStore`; `browser.newContext` ist so umwickelt, dass die
+Doppeltipp-Sperre aus ist. Neue Fälle dort ergänzen, nach demselben Muster:
 
 ```js
 // Sichtbarkeit statt .hidden abfragen — sonst entgeht Falle 1

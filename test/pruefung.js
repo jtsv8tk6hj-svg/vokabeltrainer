@@ -77,8 +77,10 @@ async function server() {
     const cardA = states[0];
     // Nochmal → in 10 Minuten, Wiederanlauf markiert
     await p.click('#reveal'); await p.click('#n0'); await p.waitForTimeout(200);
+    // Wort- oder Formkarte: der Wiederanlauf kann in p oder g liegen
+    const rel = await p.evaluate(() => { const out = []; vtStore.read().items.forEach(i => { Object.values(i.p || {}).forEach(x => { if (x.r) out.push(x); });
+      Object.values(i.g || {}).forEach(gk => Object.values(gk).forEach(x => { if (x.r) out.push(x); })); }); return out; });
     states = await p.evaluate(STATES);
-    const rel = states.filter(x => x.r);
     ok('„Nochmal“ setzt Wiedervorlage auf ~10 Minuten', rel.length === 1 && rel[0].d - Date.now() < 7e5 && rel[0].d > Date.now(), JSON.stringify(states));
     await p.click('#stop'); await p.waitForTimeout(200);
     ok('Lernfenster geschlossen', !(await p.isVisible('#drill')));
@@ -173,14 +175,14 @@ async function server() {
     await p.click('#stop'); await p.waitForTimeout(100);
     const semCol = await p.evaluate(() => { const cs = getComputedStyle(document.documentElement); const v = n => cs.getPropertyValue(n).trim(); const col = (el, prop) => getComputedStyle(document.querySelector(el))[prop];
       const hex = h => { const m = h.match(/^#(..)(..)(..)$/); return m ? 'rgb(' + m.slice(1).map(x => parseInt(x, 16)).join(', ') + ')' : h; };
-      return { ok: v('--ok') !== v('--fr') && v('--bad') !== v('--en'), g3: col('#grades .g3 b', 'color') === hex(v('--ok')), g1: col('#grades .g1 b', 'color') === hex(v('--bad')), az: col('#ans', 'borderLeftColor') === hex(v('--ok')), bar: col('#grades .g1', 'boxShadow').includes(hex(v('--bad'))) }; });
+      return { ok: v('--ok') !== v('--fr') && v('--bad') !== v('--en'), g3: col('#grades .g3 b', 'color') === hex(v('--ok')), g1: col('#grades .g1 b', 'color') === hex(v('--bad')), az: col('#ans', 'boxShadow').includes(hex(v('--ok'))), bar: col('#grades .g1', 'boxShadow').includes(hex(v('--bad'))) }; });
     ok('Urteilsfarben getrennt von Sprachfarben: Leicht und Lösungskarte in --ok, Nochmal in --bad mit Balken', semCol.ok && semCol.g3 && semCol.g1 && semCol.az && semCol.bar, JSON.stringify(semCol));
     ok('Pensum zählt je Wort und Zielsprache', (await p.textContent('#cNew')) === '16', 'cNew=' + await p.textContent('#cNew'));
 
     // Tagespensum erreicht: Weitermachen in Schritten des Pensums, Zuschlag gilt nur heute
     const logHeute = await p.evaluate(() => { const d = vtStore.read(); const k = Object.keys(d.log)[0]; d.cfg.newPerDay = d.log[k]; vtStore.write(d); return d.log[k]; });
     await p.reload(); await p.waitForTimeout(400);
-    ok('Pensum erreicht: Startknopf meldet es, Knopf „Weiter lernen“ mit Schritt 5 sichtbar', (await p.textContent('#start')).trim() === 'Tagespensum erreicht' && await p.isVisible('#more') && (await p.textContent('#more')) === 'Weiter lernen: 5 neue Karten dazu' && (await p.textContent('#cNew')) === '0', (await p.textContent('#start')) + ' / ' + (await p.textContent('#more')));
+    ok('Pensum erreicht: Startknopf meldet es, Knopf „Weiter lernen“ mit Schritt 5 sichtbar', (await p.textContent('#start')).trim() === 'Für heute geschafft' && await p.isVisible('#more') && (await p.textContent('#more')) === 'Weiter lernen: 5 neue Karten dazu' && (await p.textContent('#cNew')) === '0', (await p.textContent('#start')) + ' / ' + (await p.textContent('#more')));
     await p.click('#more'); await p.waitForTimeout(200);
     const moreState = await p.evaluate(() => vtStore.read().more);
     ok('Weiter lernen: Runde startet sofort, Zuschlag 5 für heute gespeichert', await p.isVisible('#drill') && /^\d+ von \d+$/.test(await p.textContent('#counter')) && moreState && moreState.n === 5 && moreState.d === await p.evaluate(() => { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }), JSON.stringify(moreState));
